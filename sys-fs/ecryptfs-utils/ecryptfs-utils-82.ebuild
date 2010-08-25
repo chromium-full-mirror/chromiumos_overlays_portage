@@ -5,7 +5,7 @@
 EAPI="2"
 SUPPORT_PYTHON_ABIS="1"
 
-inherit flag-o-matic pam python
+inherit flag-o-matic pam python eutils
 
 DESCRIPTION="eCryptfs userspace utilities"
 HOMEPAGE="http://launchpad.net/ecryptfs"
@@ -41,6 +41,8 @@ pkg_setup() {
 src_prepare() {
 	# Python bindings are built/installed manually.
 	sed -e "/SUBDIRS =/s/ libecryptfs-swig//" -i src/Makefile.{am,in} || die "sed failed"
+
+	epatch ${FILESDIR}/pkgconfig.diff
 }
 
 src_configure() {
