@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=sys-fs/cryptsetup-1.0.5 >=dev-python/pygtk-2.8.0 >=sys-apps/hal-0.5 dev-util/pkgconfig
+DESCRIPTION=GUI frontend for dm-crypt/luks.
+HOMEPAGE=http://www.flyn.org/projects/luks-tools/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-fs/cryptsetup-1.0.5 >=dev-python/pygtk-2.8.0 >=sys-apps/hal-0.5
+SLOT=0
+SRC_URI=http://www.flyn.org/projects/luks-tools/luks-tools-0.0.13.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b3f3ab32a200185ce786207bd4b6f513

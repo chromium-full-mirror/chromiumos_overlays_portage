@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=sys-devel/bison sys-devel/flex
+DESCRIPTION=Compiles code written for Atmels AVR DOS assembler
+HOMEPAGE=http://www.tavrasm.org/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=sys-devel/bison sys-devel/flex
+SLOT=0
+SRC_URI=mirror://gentoo/tavrasm-1.22.tar.gz
+_eclasses_=versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=0a4f71727b339fab3604fbe705df71dd

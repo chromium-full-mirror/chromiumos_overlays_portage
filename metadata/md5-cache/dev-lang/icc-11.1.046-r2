@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst prepare
+DEPEND=app-arch/rpm
+DESCRIPTION=Intel C/C++ optimized compiler for Linux
+EAPI=2
+HOMEPAGE=http://www.intel.com/software/products/compilers/clin/
+KEYWORDS=~amd64
+LICENSE=Intel-SDP
+RDEPEND=~virtual/libstdc++-3.3 amd64? ( app-emulation/emul-linux-x86-compat )
+RESTRICT=mirror strip binchecks
+SLOT=0
+SRC_URI=http://registrationcenter-download.intel.com/irc_nas/1536/l_cproc_p_11.1.046.tgz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f9b98b457056832fa1dd7725686131cd

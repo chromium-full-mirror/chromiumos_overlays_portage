@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=sdl? ( media-libs/libsdl media-libs/sdl-gfx x11-libs/gtk+ alsa? ( media-libs/alsa-lib ) ) !sdl? ( x11-libs/libXext x11-libs/gtk+ ) alsa? ( media-libs/alsa-lib ) scsi? ( app-cdr/cdrtools )
+DESCRIPTION=The Umiquious Amiga Emulator
+HOMEPAGE=http://www.amigaemulator.org/
+IUSE=sdl alsa scsi
+KEYWORDS=~x86 ~ppc ~amd64
+LICENSE=GPL-2
+RDEPEND=sdl? ( media-libs/libsdl media-libs/sdl-gfx x11-libs/gtk+ alsa? ( media-libs/alsa-lib ) ) !sdl? ( x11-libs/libXext x11-libs/gtk+ ) alsa? ( media-libs/alsa-lib ) scsi? ( app-cdr/cdrtools )
+SLOT=0
+SRC_URI=ftp://ftp.amigaemulator.org/pub/uae/sources/develop/uae-0.8.29.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b719122c73bb364d179712b36ce6f975

@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=IE Activity Parser
+HOMEPAGE=http://sourceforge.net/projects/odessa/
+KEYWORDS=~amd64 ~ppc x86
+LICENSE=as-is
+SLOT=0
+SRC_URI=mirror://sourceforge/odessa/pasco_20040505_1.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e4b2863c015d5ccd15bb94dcc55d38b3

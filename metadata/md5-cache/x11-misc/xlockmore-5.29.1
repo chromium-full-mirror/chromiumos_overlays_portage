@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=x11-libs/libX11 x11-libs/libXext x11-libs/libXpm x11-libs/libXt x11-libs/libXmu opengl? ( media-libs/mesa truetype? ( >=media-libs/ftgl-2.1.3_rc5 ) ) truetype? ( media-libs/freetype:2 ) pam? ( virtual/pam ) nas? ( media-libs/nas ) esd? ( media-sound/esound ) motif? ( x11-libs/openmotif ) gtk? ( x11-libs/gtk+:2 ) xinerama? ( x11-libs/libXinerama ) dev-util/pkgconfig x11-proto/xineramaproto =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Just another screensaver application for X
+EAPI=2
+HOMEPAGE=http://www.tux.org/~bagleyd/xlockmore.html
+IUSE=crypt debug esd gtk motif nas opengl pam truetype xinerama xlockrc
+KEYWORDS=~alpha ~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86
+LICENSE=BSD GPL-2
+RDEPEND=x11-libs/libX11 x11-libs/libXext x11-libs/libXpm x11-libs/libXt x11-libs/libXmu opengl? ( media-libs/mesa truetype? ( >=media-libs/ftgl-2.1.3_rc5 ) ) truetype? ( media-libs/freetype:2 ) pam? ( virtual/pam ) nas? ( media-libs/nas ) esd? ( media-sound/esound ) motif? ( x11-libs/openmotif ) gtk? ( x11-libs/gtk+:2 ) xinerama? ( x11-libs/libXinerama )
+SLOT=0
+SRC_URI=http://ftp.tux.org/pub/tux/bagleyd/xlockmore/xlockmore-5.29.1/xlockmore-5.29.1.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pam	f794bf311d46a2b11d3d9362fe656bd0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6229770e5e5d11bbe43e83c554c768a2

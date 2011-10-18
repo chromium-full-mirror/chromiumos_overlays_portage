@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND=dev-libs/libxml2 media-libs/libpng media-libs/jpeg !<=x11-misc/electricsheep-2.6.8-r2
+DESCRIPTION=Tools and a library for creating flame fractal images
+HOMEPAGE=http://flam3.com/
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/libxml2 media-libs/libpng media-libs/jpeg !<=x11-misc/electricsheep-2.6.8-r2
+SLOT=0
+SRC_URI=http://flam3.com//flam3-2.7.18.tar.gz
+_md5_=6ebefa943ce3e77fc71e3379e2c46965

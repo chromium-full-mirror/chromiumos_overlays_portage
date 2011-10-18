@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DEPEND=app-arch/tar
+DESCRIPTION=GUI builder tool for wxWidgets
+HOMEPAGE=http://www.anthemion.co.uk/dialogblocks/
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=as-is
+RDEPEND=>=x11-libs/gtk+-2 x11-libs/libXinerama >=media-libs/libpng-1.2 media-libs/jpeg >=media-libs/tiff-3
+RESTRICT=strip
+SLOT=0
+SRC_URI=!amd64? ( http://www.anthemion.co.uk/dialogblocks/DialogBlocks-4.30-i386.tar.gz ) amd64? ( http://www.anthemion.co.uk/dialogblocks/DialogBlocks-4.30-x86_64.tar.gz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e9f684bf5d25004d300bafff2907699b

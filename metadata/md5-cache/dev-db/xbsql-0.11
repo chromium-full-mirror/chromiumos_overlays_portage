@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=sys-devel/automake sys-devel/libtool =dev-db/xbase-2.0.0 sys-libs/readline
+DESCRIPTION=XBSQL: An SQL Wrapper for the XBase library
+HOMEPAGE=http://www.rekallrevealed.org/
+IUSE=doc
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND==dev-db/xbase-2.0.0 sys-libs/readline
+SLOT=0
+SRC_URI=http://www.rekallrevealed.org/packages/xbsql-0.11.tgz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=33497a5d40d7572196bf2bd2311288e1

@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=LZMA Stream Compressor from the SDK
+HOMEPAGE=http://www.7-zip.org/sdk.html
+IUSE=doc
+KEYWORDS=~amd64 ~arm ~ia64 ~mips ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos
+LICENSE=LGPL-2.1
+SLOT=0
+SRC_URI=mirror://sourceforge/sevenzip/lzma465.tar.bz2
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=c08dea18fa75f810698017e3086cac7b

@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=An Object-Oriented Data Analysis Framework
+HOMEPAGE=http://root.cern.ch/
+KEYWORDS=~x86 ~ppc ~amd64
+LICENSE=as-is
+SLOT=0
+SRC_URI=ftp://root.cern.ch/root/html524.tar.gz
+_eclasses_=versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=888f9ae00035a3be212225aa1ab789bd

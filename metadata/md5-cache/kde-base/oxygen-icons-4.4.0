@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
+DEPEND=>=dev-util/cmake-2.6.2-r1 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=Oxygen SVG icon theme.
+EAPI=2
+HOMEPAGE=http://www.oxygen-icons.org/
+IUSE=aqua kdeprefix kdeenablefinal
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux
+LICENSE=LGPL-3
+RDEPEND=!kdeprefix? ( !kde-base/kdebase-data:4.1[-kdeprefix] ) !kdeprefix? ( !kde-base/kdebase-data:4.2[-kdeprefix] ) !kdeprefix? ( !<kde-base/kdebase-data-4.2.67:4.3[-kdeprefix] ) !kdeprefix? ( !kde-base/kdepim-icons:4.1[-kdeprefix] ) !kdeprefix? ( !kde-base/kdepim-icons:4.2[-kdeprefix] ) !kdeprefix? ( !<=kde-base/kdepim-icons-4.2.89:4.3[-kdeprefix] ) !kdeprefix? ( !kde-base/step:4.1[-kdeprefix] ) !kdeprefix? ( !kde-base/step:4.2[-kdeprefix] ) !kdeprefix? ( !<=kde-base/step-4.2.98:4.3[-kdeprefix] ) !kdeprefix? ( !kde-base/kmail:4.1[-kdeprefix] ) !kdeprefix? ( !kde-base/kmail:4.2[-kdeprefix] ) !kdeprefix? ( !<kde-base/kmail-4.3.2:4.3[-kdeprefix] ) !kdeprefix? ( !kde-base/oxygen-icons:4.1[-kdeprefix] ) !kdeprefix? ( !kde-base/oxygen-icons:4.2[-kdeprefix] ) !kdeprefix? ( !kde-base/oxygen-icons:4.3[-kdeprefix] ) !kdeprefix? ( !kde-base/oxygen-icons:4.5[-kdeprefix] ) !kdeprefix? ( !kde-base/oxygen-icons:live[-kdeprefix] )
+SLOT=4.4
+SRC_URI=mirror://kde/stable/4.4.0/src/oxygen-icons-4.4.0.tar.bz2
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	cmake-utils	6a1f5bd4039e55b76615db7bd9b70fed	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	kde4-base	4f201b7497bb24aec85eb044232dda2c	kde4-functions	67193781af5bca6ea586fa0a96c7114b	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=0229ccdde934dc547ac3c728aa876ec5

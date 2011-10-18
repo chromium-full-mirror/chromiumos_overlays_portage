@@ -1,0 +1,12 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=Critical Mass Modula-3 compiler (binary version)
+HOMEPAGE=http://www.elegosoft.com/cm3/
+KEYWORDS=~amd64 x86
+LICENSE=CMASS-M3 DEC-M3
+PROVIDE=virtual/m3
+RDEPEND=app-editors/gentoo-editor
+RESTRICT=strip
+SLOT=0
+SRC_URI=x86? ( http://www.elegosoft.com/cm3/cm3-min-POSIX-LINUXLIBC6-5.4.0.tgz ) amd64? ( http://www.elegosoft.com/cm3/cm3-min-POSIX-LINUXLIBC6-5.4.0.tgz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=78525d32fdd61bd44685956f8ba09fc7

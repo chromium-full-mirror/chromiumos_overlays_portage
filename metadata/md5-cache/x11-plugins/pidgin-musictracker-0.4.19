@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=>=net-im/pidgin-2.0.0 >=dev-libs/dbus-glib-0.73 dev-libs/libpcre >=sys-devel/gettext-0.17
+DESCRIPTION=A Pidgin now playing plugin to publicise the songs you are listening to in your status message
+EAPI=2
+HOMEPAGE=http://code.google.com/p/pidgin-musictracker/
+IUSE=debug
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=net-im/pidgin-2.0.0 >=dev-libs/dbus-glib-0.73 dev-libs/libpcre >=sys-devel/gettext-0.17
+SLOT=0
+SRC_URI=http://pidgin-musictracker.googlecode.com/files/pidgin-musictracker-0.4.19.tar.bz2
+_md5_=183597d234f24e0060f40b76361de7e1

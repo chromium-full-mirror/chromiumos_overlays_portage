@@ -1,0 +1,11 @@
+DEFINED_PHASES=install preinst prerm
+DESCRIPTION=Xbox boot loader precompiled binaries from xbox-linux.org
+HOMEPAGE=http://www.xbox-linux.org
+KEYWORDS=-* x86
+LICENSE=GPL-2
+PROVIDE=virtual/bootloader
+RESTRICT=strip
+SLOT=0
+SRC_URI=mirror://sourceforge/xbox-linux/cromwell-2.31.tar.gz
+_eclasses_=mount-boot	932166cd49a73ccf2631de9e6ac3866b
+_md5_=4b288255c46dd4d53e197e9f8144448e

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install
+DEPEND=>=dev-lang/ocaml-3.11[ocamlopt?] dev-ml/react ssl? ( >=dev-ml/ocaml-ssl-0.4.0 ) gtk? ( dev-ml/lablgtk dev-libs/glib:2 ) >=dev-ml/findlib-1.0.4-r1
+DESCRIPTION=Cooperative light-weight thread library for OCaml
+EAPI=2
+HOMEPAGE=http://ocsigen.org/lwt
+IUSE=gtk doc +ocamlopt ssl
+KEYWORDS=~amd64 ~x86 ~x86-fbsd
+LICENSE=LGPL-2.1 LGPL-2.1-linking-exception
+RDEPEND=>=dev-lang/ocaml-3.11[ocamlopt?] dev-ml/react ssl? ( >=dev-ml/ocaml-ssl-0.4.0 ) gtk? ( dev-ml/lablgtk dev-libs/glib:2 ) !<www-servers/ocsigen-1.1
+SLOT=0
+SRC_URI=http://ocsigen.org/download/lwt-2.0.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	findlib	d2cdd99abbdd240f5ccef654e38a4ea9	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=48d8b0407a97b751bf5988f38b0a8e90

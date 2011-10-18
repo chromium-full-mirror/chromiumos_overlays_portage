@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst prepare setup test unpack
+DEPEND=app-shells/tcsh X? ( x11-libs/libX11 ) dmalloc? ( dev-libs/dmalloc ) blas? ( virtual/blas ) fftw? ( sci-libs/fftw:3.0 ) gsl? ( sci-libs/gsl ) lapack? ( virtual/lapack ) mpi? ( virtual/mpi ) xml? ( dev-libs/libxml2 ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=The ultimate molecular dynamics simulation package
+EAPI=2
+HOMEPAGE=http://www.gromacs.org/
+IUSE=X blas dmalloc doc -double-precision +fftw fkernels gsl lapack mpi +single-precision static test +xml zsh-completion bash-completion debug
+KEYWORDS=alpha amd64 ppc64 sparc x86
+LICENSE=GPL-2
+PDEPEND=bash-completion? ( app-shells/bash-completion )
+RDEPEND=app-shells/tcsh X? ( x11-libs/libX11 ) dmalloc? ( dev-libs/dmalloc ) blas? ( virtual/blas ) fftw? ( sci-libs/fftw:3.0 ) gsl? ( sci-libs/gsl ) lapack? ( virtual/lapack ) mpi? ( virtual/mpi ) xml? ( dev-libs/libxml2 ) bash-completion? ( app-admin/eselect )
+SLOT=0
+SRC_URI=ftp://ftp.gromacs.org/pub/gromacs/gromacs-4.0.4.tar.gz test? ( ftp://ftp.gromacs.org/pub/tests/gmxtest-4.0.4.tgz ) doc? ( ftp://ftp.gromacs.org/pub/manual/manual-4.0.pdf )
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	bash-completion	f0fab76a98c0e4b3d72b6beb28d3f653	eutils	c89e7605f1414fa0f33eae391db1b5d3	fortran	bd0fac3e085b8c7c86b09139dbedac42	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0e7c1a4f4d169ecf7abb725519aef7fe

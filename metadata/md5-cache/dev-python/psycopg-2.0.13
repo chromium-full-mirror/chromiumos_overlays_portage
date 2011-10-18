@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND=>=virtual/postgresql-base-8.1 mxdatetime? ( dev-python/egenix-mx-base ) >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=PostgreSQL database adapter for Python.
+EAPI=2
+HOMEPAGE=http://initd.org/projects/psycopg2
+IUSE=debug doc examples mxdatetime
+KEYWORDS=alpha amd64 ia64 ppc ppc64 sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x86-solaris
+LICENSE=GPL-2
+RDEPEND=>=virtual/postgresql-base-8.1 mxdatetime? ( dev-python/egenix-mx-base ) >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=2
+SRC_URI=http://initd.org/pub/software/psycopg/psycopg2-2.0.13.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=4224f1d8f988584e6da7f133e6203266

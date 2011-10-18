@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install
+DEPEND=media-libs/imlib
+DESCRIPTION=Font Library
+HOMEPAGE=http://www.enlightenment.org/
+KEYWORDS=x86 ppc sparc alpha hppa amd64 ia64
+LICENSE=GPL-2
+RDEPEND=media-libs/imlib
+SLOT=0
+SRC_URI=mirror://sourceforge/enlightenment/fnlib-0.5.tar.gz
+_md5_=2c52f65be0ba64ea2b58608aefbd553e

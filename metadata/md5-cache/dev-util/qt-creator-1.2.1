@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup unpack
+DEPEND=app-arch/unzip >=x11-libs/qt-assistant-4.5.0_rc1 >=x11-libs/qt-gui-4.5.0_rc1[dbus,qt3support]
+DESCRIPTION=Lightweight IDE for C++ development centering around Qt
+EAPI=2
+HOMEPAGE=http://labs.qtsoftware.com/page/Projects/Tools/QtCreator
+IUSE=bineditor bookmarks +cmake debug +debugger +designer doc examples fakevim git kde perforce qtscript subversion linguas_de linguas_es linguas_it linguas_ja linguas_ru
+KEYWORDS=amd64 ppc ppc64 x86
+LICENSE=LGPL-2.1
+RDEPEND=app-arch/unzip >=x11-libs/qt-assistant-4.5.0_rc1 >=x11-libs/qt-gui-4.5.0_rc1[dbus,qt3support] >=x11-libs/qt-sql-4.5.0_rc1 >=x11-libs/qt-svg-4.5.0_rc1 >=x11-libs/qt-test-4.5.0_rc1 >=x11-libs/qt-webkit-4.5.0_rc1 !kde? ( || ( >=x11-libs/qt-phonon-4.5.0_rc1 media-sound/phonon ) ) kde? ( media-sound/phonon ) cmake? ( dev-util/cmake ) debugger? ( sys-devel/gdb ) examples? ( >=x11-libs/qt-demo-4.5.0_rc1 ) git? ( dev-util/git ) qtscript? ( >=x11-libs/qt-script-4.5.0_rc1 ) subversion? ( dev-util/subversion )
+SLOT=0
+SRC_URI=http://download.qtsoftware.com/qtcreator/qt-creator-1.2.1-src.zip
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4	83eabd1192f3f2c5a649ba2422a14d00	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=6a6359c98efd1d9ff67af14360b21ee3

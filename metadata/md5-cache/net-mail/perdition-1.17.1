@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install preinst
+DEPEND=dev-scheme/guile >=dev-libs/vanessa-logger-0.0.6 >=dev-libs/vanessa-adt-0.0.6 >=net-libs/vanessa-socket-0.0.7 ssl? ( dev-libs/openssl ) odbc? ( dev-db/unixODBC ) gdbm? ( sys-libs/gdbm ) mysql? ( virtual/mysql ) postgres? ( virtual/postgresql-server ) ldap? ( net-nds/openldap ) pam? ( sys-libs/pam ) nls? ( sys-devel/gettext )
+DESCRIPTION=modular and fully featured POP3 and IMAP4 proxy
+HOMEPAGE=http://www.vergenet.net/linux/perdition/
+IUSE=nls pam ssl mysql odbc postgres gdbm ldap
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-scheme/guile >=dev-libs/vanessa-logger-0.0.6 >=dev-libs/vanessa-adt-0.0.6 >=net-libs/vanessa-socket-0.0.7 ssl? ( dev-libs/openssl ) odbc? ( dev-db/unixODBC ) gdbm? ( sys-libs/gdbm ) mysql? ( virtual/mysql ) postgres? ( virtual/postgresql-server ) ldap? ( net-nds/openldap ) pam? ( sys-libs/pam ) nls? ( sys-devel/gettext )
+SLOT=0
+SRC_URI=http://www.vergenet.net/linux/perdition/download/1.17.1/perdition-1.17.1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3d8b5d989b270bea2e24f5f19384cac5

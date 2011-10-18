@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst postrm preinst
+DEPEND=dev-lisp/common-lisp-controller
+DESCRIPTION=Ironclad is a Common Lisp library similar to OpenSSL, GNU TLS or Crypto++
+HOMEPAGE=http://www.cliki.net/Ironclad
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=BSD
+SLOT=0
+SRC_URI=http://www.cs.rice.edu/~froydnj/lisp/ironclad_0.10.tar.gz
+_eclasses_=common-lisp	78bda507fdf240a712b120777127629c	common-lisp-common	a6e38969ed3937827ca1f284d015020a	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a528f3c540097a5f2e8c4c2a610ee01e

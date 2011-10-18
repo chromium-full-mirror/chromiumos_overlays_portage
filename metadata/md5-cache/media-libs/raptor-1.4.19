@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=unicode? ( >=dev-libs/glib-2 ) xml? ( >=dev-libs/libxml2-2.6.8 ) !xml? ( dev-libs/expat ) curl? ( net-misc/curl ) dev-libs/libxslt sys-devel/flex dev-util/pkgconfig
+DESCRIPTION=The RDF Parser Toolkit
+EAPI=2
+HOMEPAGE=http://librdf.org/raptor
+IUSE=curl debug unicode xml
+KEYWORDS=amd64 ~arm hppa ia64 ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE=LGPL-2.1 Apache-2.0
+RDEPEND=unicode? ( >=dev-libs/glib-2 ) xml? ( >=dev-libs/libxml2-2.6.8 ) !xml? ( dev-libs/expat ) curl? ( net-misc/curl ) dev-libs/libxslt
+SLOT=0
+SRC_URI=http://download.librdf.org/source/raptor-1.4.19.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c4c31266be90cbb370cc5fcc9b757875

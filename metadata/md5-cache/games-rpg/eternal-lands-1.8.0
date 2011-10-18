@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp x11-libs/libXext virtual/opengl virtual/glu media-libs/libsdl media-libs/sdl-net media-libs/sdl-image media-libs/openal media-libs/freealut media-libs/libvorbis dev-libs/libxml2 media-libs/cal3d[-16bit-indices] media-libs/libpng >=games-rpg/eternal-lands-data-1.8.0 >=app-admin/eselect-opengl-1.0.6-r1 app-arch/unzip doc? ( app-doc/doxygen media-gfx/graphviz )
+DESCRIPTION=An online MMORPG written in C and SDL
+EAPI=2
+HOMEPAGE=http://www.eternal-lands.com
+IUSE=debug doc kernel_linux
+KEYWORDS=~amd64 ~x86 ~x86-fbsd
+LICENSE=eternal_lands
+RDEPEND=x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp x11-libs/libXext virtual/opengl virtual/glu media-libs/libsdl media-libs/sdl-net media-libs/sdl-image media-libs/openal media-libs/freealut media-libs/libvorbis dev-libs/libxml2 media-libs/cal3d[-16bit-indices] media-libs/libpng >=games-rpg/eternal-lands-data-1.8.0
+SLOT=0
+SRC_URI=mirror://gentoo/elc_1.8.0.tar.bz2 mirror://gentoo/eternal-lands.png
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=478f3b5f8e7e944646d7aed8904f8ab2

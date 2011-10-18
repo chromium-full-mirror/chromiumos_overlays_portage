@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=doc? ( dev-python/sphinx ) test? ( >=dev-python/py-0.9.0 ) >=app-admin/eselect-python-20091230 >=dev-lang/python-2.4 dev-lang/python
+DESCRIPTION=Computer algebra system (CAS) in Python
+EAPI=2
+HOMEPAGE=http://code.google.com/p/sympy/
+IUSE=doc examples gtk imaging ipython latex mathml opengl pdf png test texmacs
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=BSD
+RDEPEND=mathml? ( dev-libs/libxml2[python] dev-libs/libxslt[python] gtk? ( x11-libs/gtkmathview[gtk] ) ) latex? ( virtual/latex-base png? ( app-text/dvipng ) pdf? ( app-text/ghostscript-gpl ) ) texmacs? ( app-office/texmacs ) ipython? ( dev-python/ipython ) opengl? ( dev-python/pyopengl ) imaging? ( dev-python/imaging ) || ( dev-python/ctypes >=dev-lang/python-2.5 ) >=dev-python/pexpect-2.0 >=app-admin/eselect-python-20091230 >=dev-lang/python-2.4 dev-lang/python
+SLOT=0
+SRC_URI=http://sympy.googlecode.com/files/sympy-0.6.6.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8e86558323c3f68e1a2df9ff7c3c9ac0

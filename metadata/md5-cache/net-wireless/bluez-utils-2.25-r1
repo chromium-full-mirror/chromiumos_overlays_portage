@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=sys-devel/bison sys-devel/flex >=sys-apps/sed-4 !net-wireless/bluez-pan !net-wireless/bluez >=net-wireless/bluez-libs-2.25 dev-libs/libusb alsa? ( >=media-libs/alsa-lib-1.0.9 ) cups? ( net-print/cups ) dbus? ( >=sys-apps/dbus-0.31 ) gtk? ( >=dev-python/pygtk-2.2 ) pcmcia? ( virtual/pcmcia sys-apps/setserial )
+DESCRIPTION=Bluetooth Tools and System Daemons for Linux
+HOMEPAGE=http://bluez.sourceforge.net/
+IUSE=alsa cups dbus gtk pcmcia
+KEYWORDS=amd64 arm hppa ppc x86
+LICENSE=GPL-2
+RDEPEND=!net-wireless/bluez-pan !net-wireless/bluez >=net-wireless/bluez-libs-2.25 dev-libs/libusb alsa? ( >=media-libs/alsa-lib-1.0.9 ) cups? ( net-print/cups ) dbus? ( >=sys-apps/dbus-0.31 ) gtk? ( >=dev-python/pygtk-2.2 ) pcmcia? ( virtual/pcmcia sys-apps/setserial )
+SLOT=0
+SRC_URI=http://bluez.sourceforge.net/download/bluez-utils-2.25.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=399eb7c4706d5b695f8a5a6cb58e4262

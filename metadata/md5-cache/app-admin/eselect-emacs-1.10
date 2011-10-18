@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=Manage multiple Emacs versions on one system
+HOMEPAGE=http://www.gentoo.org/proj/en/lisp/emacs/
+KEYWORDS=alpha amd64 arm hppa ia64 ppc ppc64 s390 sh sparc ~sparc-fbsd x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=>=app-admin/eselect-1.0.10 ~app-admin/eselect-ctags-1.10
+SLOT=0
+SRC_URI=mirror://gentoo/eselect-emacs-1.10.tar.bz2
+_md5_=3a1275f4fa16029f8b9527a28006a242

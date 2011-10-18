@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=!<net-fs/samba-libs-3.4
+DESCRIPTION=Samba talloc library
+EAPI=2
+HOMEPAGE=http://talloc.samba.org/
+IUSE=compat
+KEYWORDS=~amd64 ~hppa ~ppc64 ~x86
+LICENSE=GPL-3
+RDEPEND=!<net-fs/samba-libs-3.4
+SLOT=0
+SRC_URI=http://samba.org/ftp/talloc/talloc-2.0.0.tar.gz
+_eclasses_=confutils	a80706bb5b9ddcf6bbd14365656d4985	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=928bf3b5d7342d322e4e74608fa623f4

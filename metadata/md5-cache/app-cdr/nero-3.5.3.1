@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup unpack
+DEPEND=>=app-arch/rpm2targz-9.0.0.3g >=sys-apps/sed-4 kernel_linux? ( virtual/modutils ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+DESCRIPTION=Nero Burning ROM for Linux
+EAPI=2
+HOMEPAGE=http://nerolinux.nero.com
+IUSE=doc kernel_linux
+KEYWORDS=~amd64 ~x86
+LICENSE=Nero-EULA-US
+PROPERTIES=interactive
+RDEPEND=x11-libs/libX11 x11-libs/pango[X] >=x11-libs/gtk+-2:2 kernel_linux? ( virtual/modutils )
+RESTRICT=strip mirror test
+SLOT=0
+SRC_URI=x86? ( mirror://nero/nerolinux-3.5.3.1-x86.rpm ) amd64? ( mirror://nero/nerolinux-3.5.3.1-x86_64.rpm )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	linux-info	8d722422d00ae99ed52a790b20b9bfc4	linux-mod	07a3d250a1268d811d3e8730e5741394	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	rpm	e703d62d2e2b396a7fb0262b79fdba53	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=d5059f691ed8b9181aa3497f5929b3d2

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_jruby? ( dev-java/jruby )
+DESCRIPTION=RFC 2229 client in Ruby
+EAPI=2
+HOMEPAGE=http://www.caliban.org/ruby/ruby-dict.shtml
+IUSE=ruby_targets_ruby18 ruby_targets_jruby
+KEYWORDS=~amd64 ~ppc ~sparc ~x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_jruby? ( dev-java/jruby )
+SLOT=0
+SRC_URI=http://www.caliban.org/files/ruby/ruby-dict-0.9.4.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby-ng	94f1106cb53283c8f691122e3077c9e1	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7b0d254d2a27ad9b246c30ee1f5f0a5c

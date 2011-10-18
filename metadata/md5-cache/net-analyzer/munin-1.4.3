@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile config install postinst prepare setup
+DEPEND=dev-lang/perl sys-process/procps ssl? ( dev-perl/Net-SSLeay ) mysql? ( virtual/mysql ) postgres? ( dev-perl/DBD-Pg virtual/postgresql-base ) irc? ( dev-perl/Net-IRC ) dev-perl/DateManip dev-perl/Log-Log4perl dev-perl/Net-CIDR dev-perl/Net-Netmask dev-perl/Net-SNMP dev-perl/libwww-perl dev-perl/net-server virtual/perl-Digest-MD5 virtual/perl-Getopt-Long virtual/perl-MIME-Base64 virtual/perl-Storable virtual/perl-Text-Balanced virtual/perl-Time-HiRes !minimal? ( dev-perl/HTML-Template net-analyzer/rrdtool[perl] )
+DESCRIPTION=Munin Server Monitoring Tool
+EAPI=2
+HOMEPAGE=http://munin.projects.linpro.no/
+IUSE=doc minimal irc mysql postgres ssl
+KEYWORDS=~amd64 ~mips ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/perl sys-process/procps ssl? ( dev-perl/Net-SSLeay ) mysql? ( virtual/mysql ) postgres? ( dev-perl/DBD-Pg virtual/postgresql-base ) irc? ( dev-perl/Net-IRC ) dev-perl/DateManip dev-perl/Log-Log4perl dev-perl/Net-CIDR dev-perl/Net-Netmask dev-perl/Net-SNMP dev-perl/libwww-perl dev-perl/net-server virtual/perl-Digest-MD5 virtual/perl-Getopt-Long virtual/perl-MIME-Base64 virtual/perl-Storable virtual/perl-Text-Balanced virtual/perl-Time-HiRes !minimal? ( dev-perl/HTML-Template net-analyzer/rrdtool[perl] ) !minimal? ( virtual/cron )
+SLOT=0
+SRC_URI=mirror://sourceforge/munin/munin-1.4.3.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=da86c565dafc3f742e8bdeccbb829ba2

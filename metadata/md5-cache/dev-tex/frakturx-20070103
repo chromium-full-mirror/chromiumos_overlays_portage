@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=app-arch/unzip virtual/latex-base >=sys-apps/texinfo-4.2-r5
+DESCRIPTION=Collection of blackletter fonts for LaTeX
+HOMEPAGE=http://www.gaehrken.de/fraktur/
+KEYWORDS=~amd64 ~x86
+LICENSE=LPPL-1.2 free-noncomm
+RDEPEND=virtual/latex-base
+SLOT=0
+SRC_URI=mirror://gentoo/frakturx-20070103-base.zip mirror://gentoo/frakturx-20070103-tfrak.zip mirror://gentoo/frakturx-20070103-obibel.zip mirror://gentoo/frakturx-20070103-odedruck.zip mirror://gentoo/frakturx-20070103-odeschmk.zip mirror://gentoo/frakturx-20070103-oweissfr.zip mirror://gentoo/frakturx-20070103-oweissgo.zip mirror://gentoo/frakturx-20070103-talteswab.zip mirror://gentoo/frakturx-20070103-tbrtkpf.zip mirror://gentoo/frakturx-20070103-tkngsbg.zip mirror://gentoo/frakturx-20070103-twieynk.zip mirror://gentoo/frakturx-20070103-twieyvig.zip mirror://gentoo/frakturx-20070103-tzentenar.zip
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	latex-package	b72cedae879ef8e8af6524f196fcf449	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=5b352da9f29dd7955368171eba5be77c

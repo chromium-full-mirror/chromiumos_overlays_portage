@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install preinst prerm unpack
+DESCRIPTION=Xbox boot loader
+HOMEPAGE=http://www.xbox-linux.org/wiki/Cromwell
+KEYWORDS=-* x86
+LICENSE=GPL-2
+PROVIDE=virtual/bootloader
+RESTRICT=strip
+SLOT=0
+SRC_URI=mirror://gentoo/cromwell-2.40.tar.bz2 mirror://gentoo/cromwell-2.40-r3-cvs-fixes.patch.lzma
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	mount-boot	932166cd49a73ccf2631de9e6ac3866b	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=36e7018a514892c78ed49b52f263f59c

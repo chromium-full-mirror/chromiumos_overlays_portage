@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=x11-libs/libX11 sys-libs/zlib media-libs/libpng media-libs/jpeg
+DESCRIPTION=a collection of programs for creating high dynamic range images
+HOMEPAGE=http://comparametric.sourceforge.net/
+KEYWORDS=ppc x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/libX11 sys-libs/zlib media-libs/libpng media-libs/jpeg
+SLOT=0
+SRC_URI=mirror://sourceforge/comparametric/videorbits-2.201.tgz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=5fbe96689c60fb989a78b9508ba08300

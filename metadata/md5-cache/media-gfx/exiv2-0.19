@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare
+DEPEND=virtual/libiconv nls? ( virtual/libintl ) xmp? ( dev-libs/expat ) zlib? ( sys-libs/zlib ) contrib? ( >=dev-libs/boost-1.37 ) doc? ( dev-lang/python app-doc/doxygen dev-libs/libxslt dev-util/pkgconfig media-gfx/graphviz ) nls? ( sys-devel/gettext )
+DESCRIPTION=EXIF and IPTC metadata C++ library and command line utility
+EAPI=2
+HOMEPAGE=http://www.exiv2.org/
+IUSE=contrib doc examples nls unicode xmp zlib linguas_de linguas_es linguas_fi linguas_fr linguas_pl linguas_ru linguas_sk
+KEYWORDS=~alpha ~amd64 ~arm hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=virtual/libiconv nls? ( virtual/libintl ) xmp? ( dev-libs/expat ) zlib? ( sys-libs/zlib )
+SLOT=0
+SRC_URI=http://www.exiv2.org/exiv2-0.19.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=4e4683a3147bf91eb1506e72ad664362

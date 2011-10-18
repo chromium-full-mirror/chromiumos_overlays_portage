@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=virtual/mta sys-libs/gdbm !mail-mta/sendmail
+DESCRIPTION=automatic mail answering program
+HOMEPAGE=http://vacation.sourceforge.net/
+KEYWORDS=~alpha ~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=virtual/mta sys-libs/gdbm
+SLOT=0
+SRC_URI=mirror://sourceforge/vacation/vacation-1.2.7.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=fec25b26dfe8353106d0e080e27aac21

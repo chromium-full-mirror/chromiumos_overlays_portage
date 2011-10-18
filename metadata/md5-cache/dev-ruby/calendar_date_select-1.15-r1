@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=doc? ( dev-ruby/activesupport[ruby_targets_ruby18?] ) doc? ( dev-ruby/hoe[ruby_targets_ruby18?] ) test? ( dev-ruby/rspec[ruby_targets_ruby18?] ) test? ( dev-ruby/actionpack[ruby_targets_ruby18?] ) test? ( dev-ruby/activesupport[ruby_targets_ruby18?] ) test? ( dev-ruby/hoe[ruby_targets_ruby18?] ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) doc? ( dev-ruby/rake[ruby_targets_ruby18?] ) test? ( dev-ruby/rake[ruby_targets_ruby18?] ) test? ( virtual/rubygems[ruby_targets_ruby18?] )
+DESCRIPTION=A popular and flexible JavaScript DatePicker for RubyOnRails
+EAPI=2
+HOMEPAGE=http://code.google.com/p/calendardateselect/
+IUSE=doc doc test test test test ruby_targets_ruby18 doc doc test test test
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) virtual/rubygems[ruby_targets_ruby18?]
+SLOT=0
+SRC_URI=mirror://rubygems/calendar_date_select-1.15.gem
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby-fakegem	2768bd9a49d90592f8e7b88ab4077f20	ruby-ng	94f1106cb53283c8f691122e3077c9e1	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a6e3e21bb24c589ec7d5006b5bf9d2c6

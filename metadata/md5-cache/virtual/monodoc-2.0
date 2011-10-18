@@ -1,0 +1,7 @@
+DEFINED_PHASES=-
+DESCRIPTION=Virtual for monodoc
+KEYWORDS=amd64 ppc ~sparc x86 ~x86-fbsd
+PROPERTIES=virtual
+RDEPEND=~dev-util/monodoc-2.0
+SLOT=0
+_md5_=b4012b509a615050055f937d9c173927

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=media-libs/libsdl[video] media-libs/sdl-image[png] media-libs/sdl-mixer[vorbis] media-libs/sdl-net media-libs/sdl-ttf media-libs/sdl-gfx media-libs/libpng dev-libs/boost dev-games/ggz-client-libs app-arch/p7zip dev-util/scons
+DESCRIPTION=A game similar to Settlers 2
+EAPI=2
+HOMEPAGE=http://www.widelands.org/
+KEYWORDS=~amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=media-libs/libsdl[video] media-libs/sdl-image[png] media-libs/sdl-mixer[vorbis] media-libs/sdl-net media-libs/sdl-ttf media-libs/sdl-gfx media-libs/libpng dev-libs/boost dev-games/ggz-client-libs
+SLOT=0
+SRC_URI=mirror://sourceforge/widelands/widelands/build-14/Widelands-Build14-src.7z
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=a3080138ac9a2ea328963ca3b31ab10b

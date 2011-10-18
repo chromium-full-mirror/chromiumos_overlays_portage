@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND=dev-python/setuptools >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=An easy to use multimedia transcoder for the GNOME Desktop
+EAPI=2
+HOMEPAGE=http://programmer-art.org/projects/arista-transcoder
+IUSE=+faac +xvid
+KEYWORDS=~x86
+LICENSE=LGPL-2.1
+RDEPEND=dev-lang/python[xml] >=x11-libs/gtk+-2.16 >=dev-python/pygtk-2.14 dev-python/pygobject dev-python/pycairo dev-python/gconf-python dev-python/dbus-python >=media-libs/gstreamer-0.10.22 dev-python/gst-python media-libs/gst-plugins-base:0.10 media-libs/gst-plugins-good:0.10 media-plugins/gst-plugins-meta:0.10 media-plugins/gst-plugins-ffmpeg:0.10 faac? ( media-plugins/gst-plugins-faac:0.10 ) xvid? ( media-plugins/gst-plugins-xvid:0.10 ) >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=http://programmer-art.org/media/releases/arista-transcoder/arista-0.9.3.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=00c6d2e76064c40c12e9b1154d429e90

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-perl/Error dev-perl/URI >=dev-perl/Net-DNS-0.65 >=dev-perl/NetAddr-IP-4.026 >=dev-perl/Net-DNS-Resolver-Programmable-0.003 virtual/perl-version !dev-perl/Mail-SPF-Query >=virtual/perl-Module-Build-0.33 dev-lang/perl[-build]
+DESCRIPTION=Sender Permitted From - Object Oriented
+EAPI=2
+HOMEPAGE=http://search.cpan.org/dist/Mail-SPF/
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~sparc ~x86
+LICENSE=BSD
+RDEPEND=dev-perl/Error dev-perl/URI >=dev-perl/Net-DNS-0.65 >=dev-perl/NetAddr-IP-4.026 >=dev-perl/Net-DNS-Resolver-Programmable-0.003 virtual/perl-version !dev-perl/Mail-SPF-Query dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/J/JM/JMEHNLE/mail-spf/Mail-SPF-v2.007.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=bccaf6af7d660f2700c13dafe95e4705

@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install
+DEPEND=virtual/mysql
+DESCRIPTION=NSS MySQL Library.
+EAPI=2
+HOMEPAGE=http://libnss-mysql.sourceforge.net/
+IUSE=debug
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=virtual/mysql
+SLOT=0
+SRC_URI=http://libnss-mysql.sourceforge.net/snapshot/libnss-mysql-20060915.tgz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7dca9f0b0194476194ee883ad5e0f4fc

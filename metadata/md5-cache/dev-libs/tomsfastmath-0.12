@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=portable fixed precision math library geared towards doing one thing very fast
+HOMEPAGE=http://libtom.org/
+KEYWORDS=~amd64 ~arm ~ppc ~x86
+LICENSE=public-domain
+SLOT=0
+SRC_URI=http://libtom.org/files/tfm-0.12.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9f4290b9ea6f8a676585454813f9721a

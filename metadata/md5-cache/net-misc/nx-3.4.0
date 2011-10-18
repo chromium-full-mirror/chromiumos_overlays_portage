@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=x11-libs/libXau x11-libs/libXcomposite x11-libs/libXdamage x11-libs/libXdmcp x11-libs/libXpm x11-libs/libXrandr x11-libs/libXtst >=media-libs/jpeg-6b-r4 >=media-libs/libpng-1.2.8 >=sys-libs/zlib-1.2.3 x11-misc/gccmakedep x11-misc/imake x11-proto/inputproto =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=NX compression technology core libraries
+EAPI=2
+HOMEPAGE=http://www.nomachine.com/developers.php
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/libXau x11-libs/libXcomposite x11-libs/libXdamage x11-libs/libXdmcp x11-libs/libXpm x11-libs/libXrandr x11-libs/libXtst >=media-libs/jpeg-6b-r4 >=media-libs/libpng-1.2.8 >=sys-libs/zlib-1.2.3
+SLOT=0
+SRC_URI=http://web04.nomachine.com/download/3.4.0/sources/nx-X11-3.4.0-1.tar.gz http://web04.nomachine.com/download/3.4.0/sources/nxagent-3.4.0-3.tar.gz http://web04.nomachine.com/download/3.4.0/sources/nxproxy-3.4.0-2.tar.gz http://web04.nomachine.com/download/3.4.0/sources/nxauth-3.4.0-1.tar.gz http://web04.nomachine.com/download/3.4.0/sources/nxcompext-3.4.0-1.tar.gz http://web04.nomachine.com/download/3.4.0/sources/nxcompshad-3.4.0-1.tar.gz http://web04.nomachine.com/download/3.4.0/sources/nxcomp-3.4.0-1.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=254c794242861d24c8958bf7fa639c8a

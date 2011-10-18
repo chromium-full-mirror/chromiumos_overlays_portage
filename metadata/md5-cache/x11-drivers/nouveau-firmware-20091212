@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst setup
+DESCRIPTION=firmware for nouveau
+HOMEPAGE=http://nouveau.freedesktop.org/
+KEYWORDS=~amd64 ~x86
+LICENSE=NVIDIA
+RESTRICT=bindist mirror
+SLOT=0
+SRC_URI=http://people.freedesktop.org/~pq/nouveau-drm/nouveau-firmware-20091212.tar.gz
+_eclasses_=linux-info	8d722422d00ae99ed52a790b20b9bfc4	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=e2d0c00a98b5de5ad8d77488140320e5

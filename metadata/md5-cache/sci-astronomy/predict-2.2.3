@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=sys-libs/ncurses gtk? ( =x11-libs/gtk+-1.2* ) xforms? ( x11-libs/xforms ) xplanet? ( || ( x11-misc/xplanet x11-misc/xearth ) )
+DESCRIPTION=Satellite tracking and orbital prediction.
+HOMEPAGE=http://www.qsl.net/kd2bd/predict.html
+IUSE=doc gtk nls xforms xplanet
+KEYWORDS=amd64 ~ppc x86
+LICENSE=GPL-2
+RDEPEND=sys-libs/ncurses gtk? ( =x11-libs/gtk+-1.2* ) xforms? ( x11-libs/xforms ) xplanet? ( || ( x11-misc/xplanet x11-misc/xearth ) )
+SLOT=0
+SRC_URI=http://www.amsat.org/amsat/ftp/software/Linux/predict-2.2.3.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=410f47cbda0254004492a7fb3c9af0c7

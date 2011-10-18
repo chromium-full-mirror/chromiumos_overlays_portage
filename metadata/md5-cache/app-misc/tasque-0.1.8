@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare setup
+DEPEND=>=dev-dotnet/gtk-sharp-2.12.7-r5 >=dev-dotnet/gnome-sharp-2.24.0 >=dev-dotnet/notify-sharp-0.4.0_pre20080912 >=dev-dotnet/dbus-sharp-0.6 >=dev-dotnet/dbus-glib-sharp-0.4 eds? ( >=dev-dotnet/evolution-sharp-0.18.1 ) sqlite? ( dev-db/sqlite:3 ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Tasky is a simple task management app (TODO list) for the Linux Desktop
+EAPI=2
+HOMEPAGE=http://live.gnome.org/Tasque
+IUSE=+rememberthemilk eds +sqlite hiveminder debug
+KEYWORDS=~x86 ~amd64
+LICENSE=MIT
+RDEPEND=>=dev-dotnet/gtk-sharp-2.12.7-r5 >=dev-dotnet/gnome-sharp-2.24.0 >=dev-dotnet/notify-sharp-0.4.0_pre20080912 >=dev-dotnet/dbus-sharp-0.6 >=dev-dotnet/dbus-glib-sharp-0.4 eds? ( >=dev-dotnet/evolution-sharp-0.18.1 ) sqlite? ( dev-db/sqlite:3 )
+SLOT=0
+SRC_URI=mirror://gnome/sources/tasque/0.1/tasque-0.1.8.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	gnome.org	6d236bfa516020939a4adbc435063f79	libtool	4dd71cbef362174302a0d79d1360336e	mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8178b4f60af3af1bc5ba86d65de63589

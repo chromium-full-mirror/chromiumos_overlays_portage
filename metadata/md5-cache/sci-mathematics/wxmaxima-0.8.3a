@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst postrm prepare
+DEPEND=dev-libs/libxml2 x11-libs/wxGTK:2.8
+DESCRIPTION=Graphical frontend to Maxima, using the wxWidgets toolkit.
+EAPI=2
+HOMEPAGE=http://wxmaxima.sourceforge.net/
+IUSE=unicode
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/libxml2 x11-libs/wxGTK:2.8 media-fonts/jsmath sci-visualization/gnuplot[wxwidgets] sci-mathematics/maxima
+SLOT=0
+SRC_URI=mirror://sourceforge/wxmaxima/wxMaxima-0.8.3a.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	wxwidgets	a63777cd98e5f0d521e43c451fe4cf43
+_md5_=1cac59e9822c418ee8e951121c4d2b35

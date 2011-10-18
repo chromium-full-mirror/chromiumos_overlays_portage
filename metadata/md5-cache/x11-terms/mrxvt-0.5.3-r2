@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=png? ( media-libs/libpng ) utempter? ( sys-libs/libutempter ) jpeg? ( media-libs/jpeg ) truetype? ( x11-libs/libXft media-libs/fontconfig media-libs/freetype ) x11-libs/libX11 x11-libs/libXt xpm? ( x11-libs/libXpm ) x11-libs/libXrender x11-proto/xproto
+DESCRIPTION=Multi-tabbed rxvt clone with XFT, transparent background and CJK support
+HOMEPAGE=http://materm.sourceforge.net/
+IUSE=debug png jpeg session truetype menubar utempter xpm linguas_el linguas_ja linguas_ko linguas_th linguas_zh_CN linguas_zh_TW
+KEYWORDS=alpha amd64 ~mips ppc x86
+LICENSE=GPL-2
+RDEPEND=png? ( media-libs/libpng ) utempter? ( sys-libs/libutempter ) jpeg? ( media-libs/jpeg ) truetype? ( x11-libs/libXft media-libs/fontconfig media-libs/freetype ) x11-libs/libX11 x11-libs/libXt xpm? ( x11-libs/libXpm ) x11-libs/libXrender
+SLOT=0
+SRC_URI=mirror://sourceforge/materm/mrxvt-0.5.3.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2755fa8a6e20515bbbfb2a92c6bd5632

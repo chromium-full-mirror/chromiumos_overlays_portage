@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=virtual/libpcap >=net-libs/libnet-1.1.1 >=dev-libs/libdnet-1.7
+DESCRIPTION=A tool for determining a firewall's rule set
+HOMEPAGE=http://www.packetfactory.net/firewalk/
+KEYWORDS=amd64 ~ppc x86
+LICENSE=BSD
+RDEPEND=virtual/libpcap >=net-libs/libnet-1.1.1 >=dev-libs/libdnet-1.7
+SLOT=0
+SRC_URI=http://www.packetfactory.net/firewalk/dist/firewalk-5.0.tgz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=47488cc05bf8a3a8405370b77d23b027

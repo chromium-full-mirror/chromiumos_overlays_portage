@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=dev-embedded/gputils-0.13.2 dev-libs/boehm-gc
+DESCRIPTION=Small device C compiler (for various microprocessors).
+HOMEPAGE=http://sdcc.sourceforge.net/
+IUSE=doc
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=!dev-embedded/sdcc-svn !dev-embedded/sdcc-svn
+SLOT=0
+SRC_URI=http://sdcc.sourceforge.net/snapshots/sdcc-src/sdcc-src-20060502.tar.gz doc? ( http://sdcc.sourceforge.net/snapshots/docs/sdcc-doc-20060502.tar.gz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f4e732cd96768c379af3cdf582c30844

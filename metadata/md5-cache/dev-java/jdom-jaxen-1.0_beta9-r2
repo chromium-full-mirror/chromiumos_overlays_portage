@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install preinst setup unpack
+DEPEND=>=virtual/jdk-1.4 app-arch/unzip ~dev-java/jdom-1.0_beta9 =dev-java/jaxen-1.1* dev-java/saxpath >=dev-java/java-config-2.1.9-r1
+DESCRIPTION=Jaxen binding for jdom.
+HOMEPAGE=http://www.jdom.org
+IUSE=elibc_FreeBSD
+KEYWORDS=amd64 ppc ppc64 ~x86
+LICENSE=JDOM
+RDEPEND=>=virtual/jre-1.4 ~dev-java/jdom-1.0_beta9 =dev-java/jaxen-1.1* dev-java/saxpath >=dev-java/java-config-2.1.9-r1
+SLOT=1.0_beta9
+SRC_URI=http://www.jdom.org/dist/source/archive/jdom-b9.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	java-pkg-2	39b2c3db200ad244ca675b2a1363aa75	java-utils-2	9c079d63349fb3fcd154c1630807a59a	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=2f94f72dd4ab5171b38420741863fc4d

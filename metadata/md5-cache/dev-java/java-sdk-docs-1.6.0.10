@@ -1,0 +1,10 @@
+DEFINED_PHASES=install nofetch
+DEPEND=app-arch/unzip
+DESCRIPTION=Sun's documentation bundle (including API) for Java SE
+HOMEPAGE=http://java.sun.com/javase/6/docs/
+KEYWORDS=amd64 ppc ppc64 x86 ~amd64-linux ~x86-linux
+LICENSE=sun-j2sl-6
+RESTRICT=fetch
+SLOT=1.6.0
+SRC_URI=jdk-6u10-docs.zip
+_md5_=46c35f9c0e3007f8555486bf7db6e11f

@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst postrm prepare
+DEPEND=dev-libs/libxml2 sys-libs/zlib nls? ( virtual/libintl ) python? ( >=dev-lang/python-2.3 ) dev-util/pkgconfig doc? ( app-doc/doxygen ) graphviz? ( media-gfx/graphviz ) nls? ( sys-devel/gettext ) test? ( >=dev-util/cppunit-1.9.6 ) >=app-admin/eselect-python-20091230
+DESCRIPTION=Provide access to (SM)BIOS information
+EAPI=2
+HOMEPAGE=http://linux.dell.com/libsmbios/main/index.html
+IUSE=doc graphviz nls python test
+KEYWORDS=amd64 ia64 x86
+LICENSE=GPL-2 OSL-2.0
+RDEPEND=dev-libs/libxml2 sys-libs/zlib nls? ( virtual/libintl ) python? ( >=dev-lang/python-2.3 ) >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://linux.dell.com/libsmbios/download/libsmbios/libsmbios-2.2.19/libsmbios-2.2.19.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9bd77d4b0596ccff3565676b07e160ab

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install preinst setup
+DEPEND=>=virtual/jdk-1.4 >=sys-apps/sed-4.1.4 app-arch/unzip >=dev-java/java-config-2.1.9-r1
+DESCRIPTION=JIF is an IDE for the creation of text adventures based on Graham Nelson's Inform standard.
+HOMEPAGE=http://www.slade.altervista.org/JIF/
+IUSE=elibc_FreeBSD
+KEYWORDS=x86
+LICENSE=GPL-2
+RDEPEND=>=virtual/jre-1.4 >=dev-lang/inform-6.21.4 >=games-engines/gargoyle-20051002 >=dev-java/java-config-2.1.9-r1
+SLOT=0
+SRC_URI=http://www.slade.altervista.org/downloads/JIF31_src_RC1.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	java-pkg-2	39b2c3db200ad244ca675b2a1363aa75	java-utils-2	9c079d63349fb3fcd154c1630807a59a	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=1d4403207c1faf23ba869591111804a3

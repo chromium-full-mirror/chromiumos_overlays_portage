@@ -1,0 +1,13 @@
+DEFINED_PHASES=install prepare
+DEPEND=>=net-misc/anyremote-4.4[bluetooth?] dev-python/PyQt4[X] kde-base/pykde4 bluetooth? ( dev-python/pybluez )
+DESCRIPTION=KDE frontend to Anyremote
+EAPI=2
+HOMEPAGE=http://anyremote.sourceforge.net/
+IUSE=bluetooth
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=net-misc/anyremote-4.4[bluetooth?] dev-python/PyQt4[X] kde-base/pykde4 bluetooth? ( dev-python/pybluez )
+SLOT=0
+SRC_URI=mirror://sourceforge/anyremote/kanyremote-5.11.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1bb52848d989460a53bc049599d759a0

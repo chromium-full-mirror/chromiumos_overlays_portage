@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm preinst setup
+DESCRIPTION=Mozilla runtime package that can be used to bootstrap XUL+XPCOM applications
+HOMEPAGE=http://developer.mozilla.org/en/docs/XULRunner
+KEYWORDS=-* amd64 x86
+LICENSE=|| ( MPL-1.1 GPL-2 LGPL-2.1 )
+RDEPEND=x11-libs/libXrender x11-libs/libXt x11-libs/libXmu x86? ( >=x11-libs/gtk+-2.2 <media-libs/jpeg-7 ) amd64? ( app-emulation/emul-linux-x86-baselibs app-emulation/emul-linux-x86-gtklibs )
+RESTRICT=strip
+SLOT=0
+SRC_URI=mirror://gentoo/xulrunner-bin-1.8.1.19.tbz2 http://dev.gentoo.org/~armin76/dist/xulrunner-bin-1.8.1.19.tbz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	mozilla-launcher	f09ba615401e296ab573d4014405556a	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	nsplugins	88b65b6dd727ee2810964926b2654bdd	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d5f45f6af63c31de5daf9c43538377a4

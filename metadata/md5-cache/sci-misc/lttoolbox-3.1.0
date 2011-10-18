@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND=dev-libs/libxml2 dev-libs/libxslt dev-libs/libpcre sys-libs/libunwind sys-devel/flex
+DESCRIPTION=lttoolbox is a toolbox for lexical processing, morphological analysis and generation of words
+HOMEPAGE=http://apertium.sourceforge.net
+KEYWORDS=~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/libxml2 dev-libs/libxslt dev-libs/libpcre sys-libs/libunwind sys-devel/flex
+SLOT=0
+SRC_URI=mirror://sourceforge/apertium/lttoolbox-3.1.0.tar.gz
+_md5_=7fc4daee32ebeb24691dff1120af1069

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst setup
+DEPEND==www-servers/apache-2*
+DESCRIPTION=A web client debugging tool for Apache2.
+HOMEPAGE=http://www.snert.com/Software/mod_loopback/index.shtml
+KEYWORDS=ppc ppc64 x86
+LICENSE=as-is
+RDEPEND==www-servers/apache-2*
+SLOT=2
+SRC_URI=http://www.snert.com/Software/download/mod_loopback201.tgz
+_eclasses_=apache-module	075afd5430fb1c448d318e76dbe83dc6	depend.apache	a471783c63e68987a2b20eb46f9edf68	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7da5d771d12eb9ffbfc2c0e708cf4b7e

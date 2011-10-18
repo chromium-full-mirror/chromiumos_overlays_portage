@@ -1,0 +1,10 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=Header file allowing to call Fortran routines from C and C++
+HOMEPAGE=http://www-zeus.desy.de/~burow/cfortran/
+IUSE=examples
+KEYWORDS=alpha amd64 hppa ~ia64 ppc ppc64 sparc x86 ~amd64-linux ~x86-linux
+LICENSE=LGPL-2
+SLOT=0
+SRC_URI=mirror://debian/pool/main/c/cfortran/cfortran_4.4.orig.tar.gz mirror://debian/pool/main/c/cfortran/cfortran_4.4-13.diff.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7c582e76e53e9cfae619eeddb6ad011e

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
+DEPEND=>=dev-perl/DateTime-0.51 >=dev-perl/DateTime-Format-Builder-0.7901 dev-lang/perl
+DESCRIPTION=Parse and format SQLite dates and times
+HOMEPAGE=http://search.cpan.org/dist/DateTime-Format-SQLite/
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( Artistic GPL-2 )
+RDEPEND=>=dev-perl/DateTime-0.51 >=dev-perl/DateTime-Format-Builder-0.7901 dev-lang/perl
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/C/CF/CFAERBER//DateTime-Format-SQLite-0.11.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b89e7634593da4b037de3b8ed4a788ec

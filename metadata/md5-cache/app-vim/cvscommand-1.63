@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm
+DEPEND=|| ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 )
+DESCRIPTION=vim plugin: CVS integration plugin
+HOMEPAGE=http://www.vim.org/scripts/script.php?script_id=90
+KEYWORDS=x86 alpha sparc ia64 ~ppc
+LICENSE=public-domain
+RDEPEND=dev-util/cvs || ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 )
+SLOT=0
+SRC_URI=mirror://gentoo/cvscommand-1.63.tar.bz2
+_eclasses_=vim-doc	6bd5bb2529af326fe3359e975a3439d0	vim-plugin	ad1471f55b183500f4224c8992df8205
+_md5_=a4cbf5caa1beaf64e3038f83b6cb1c54

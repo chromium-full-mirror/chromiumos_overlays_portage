@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=app-text/ispell
+DESCRIPTION=A dutch (spelling 2005) dictionary for ispell
+HOMEPAGE=http://opentaal.nl
+KEYWORDS=~alpha amd64 hppa ~mips ~ppc ~sparc x86
+LICENSE=LGPL-2.1
+RDEPEND=app-text/ispell
+SLOT=0
+SRC_URI=mirror://gentoo/ispell-nl-1.00.tar.bz2
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=02ec75a1a47b490dfc5acce78bd48164

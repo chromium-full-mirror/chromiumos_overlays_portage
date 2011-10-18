@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=finding and running system commands made easy
+KEYWORDS=~amd64 ~ppc ~x86
+RDEPEND=~perl-core/IPC-Cmd-0.54
+SLOT=0
+_md5_=9d7ea0ddc9aab406b86b1dec99a24029

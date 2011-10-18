@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst prerm setup unpack
+DEPEND=>=dev-lang/perl-5.8.5-r2 >=app-admin/webapp-config-1.50.15
+DESCRIPTION=Monitor the status of mirrors
+HOMEPAGE=http://people.cs.uu.nl/henkp/mirmon/
+IUSE=vhosts
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/perl-5.8.5-r2 dev-perl/Socket6 virtual/perl-File-Temp >=app-admin/webapp-config-1.50.15
+SLOT=1.38-r2
+SRC_URI=http://people.cs.uu.nl/henkp/mirmon/src/mirmon/src/mirmon-1.38.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	webapp	b5c5b98a2289a6050810cf6022ac00be
+_md5_=211f55fc85fbdaa3f1f94d4b3716a8a1

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DESCRIPTION=Arkanoid with Gnomes
+EAPI=2
+HOMEPAGE=http://www.jardinains2.com
+KEYWORDS=~amd64 x86
+LICENSE=jardinains
+RDEPEND=virtual/opengl virtual/glu virtual/libstdc++ amd64? ( >=app-emulation/emul-linux-x86-xlibs-1.0-r1 )
+RESTRICT=strip
+SLOT=0
+SRC_URI=mirror://gentoo/JN2_1_FREE_LIN.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=af620e2411525df8dc2a7d9b9a33d579

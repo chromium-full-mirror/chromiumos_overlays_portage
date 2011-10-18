@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=>=virtual/emacs-21
+DESCRIPTION=Show Common Lisp operators and variables information in echo area
+HOMEPAGE=http://homepage1.nifty.com/bmonkey/lisp/index-en.html
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=app-emacs/slime >=virtual/emacs-21
+SLOT=0
+SRC_URI=mirror://gentoo/cldoc-1.16.el.bz2
+_eclasses_=elisp	4fb60944284f0928ba836a482f598807	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f4aafa46a98d716e99903f183140f053

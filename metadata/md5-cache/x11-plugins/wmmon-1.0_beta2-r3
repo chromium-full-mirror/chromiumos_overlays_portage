@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=x11-libs/libX11 x11-libs/libXext x11-libs/libXpm x11-proto/xextproto >=sys-apps/sed-4
+DESCRIPTION=Dockable system resources monitor applet for WindowMaker
+HOMEPAGE=http://www.bensinclair.com/dockapp/
+KEYWORDS=amd64 ~ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/libX11 x11-libs/libXext x11-libs/libXpm
+SLOT=0
+SRC_URI=http://rpig.dyndns.org/~anstinus/Linux/wmmon-1_0b2.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=cc2973b2bae0b4a7a13e61a25b8a8f73

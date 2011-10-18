@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=virtual/latex-base >=sys-apps/texinfo-4.2-r5
+DESCRIPTION=Prosper is a LaTeX class for writing transparencies
+HOMEPAGE=http://prosper.sf.net/
+KEYWORDS=x86 ppc sparc amd64
+LICENSE=GPL-2
+RDEPEND=virtual/latex-base
+SLOT=0
+SRC_URI=mirror://sourceforge/prosper/prosper-1.00.4.tar.gz mirror://sourceforge/prosper/contrib-prosper-1.0.0.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	latex-package	b72cedae879ef8e8af6524f196fcf449	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2c12a64fad710a773ecbbb42c9e84cb4

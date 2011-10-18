@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=An ANSI C implementation of dynamic arrays to provide a crude approximation to the C++ vector class
+HOMEPAGE=http://cvector.sourceforge.net/
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=LGPL-2.1
+SLOT=0
+SRC_URI=mirror://sourceforge/cvector/cvector/CVector-1.0.3/CVector-1.0.3.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=f16b3625292a2ac8907699b15a019b5d

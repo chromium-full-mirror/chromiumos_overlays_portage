@@ -1,0 +1,11 @@
+DEFINED_PHASES=configure install prepare unpack
+DEPEND=!app-arch/lzma !app-arch/lzma-utils !<app-arch/p7zip-4.57 sys-devel/gettext dev-util/cvs >=sys-devel/libtool-2 >=dev-util/git-1.6 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=utils for managing LZMA compressed files
+EAPI=2
+HOMEPAGE=http://tukaani.org/xz/
+IUSE=nls static-libs +threads
+LICENSE=LGPL-2.1
+RDEPEND=!app-arch/lzma !app-arch/lzma-utils !<app-arch/p7zip-4.57
+SLOT=0
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	git	551824b681382dda2f4f5040597fdc07	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=5e988f2d539e6db40a4316cfc7896a44

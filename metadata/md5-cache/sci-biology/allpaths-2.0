@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=>=sys-devel/gcc-4.3.2
+DESCRIPTION=De novo assembly of whole-genome shotgun microreads
+EAPI=2
+HOMEPAGE=http://www.broadinstitute.org/science/programs/genome-biology/crd
+KEYWORDS=amd64 x86
+LICENSE=Whitehead-MIT
+SLOT=0
+SRC_URI=ftp://ftp.broad.mit.edu/pub/crd/ALLPATHS/Release-2-0/allpaths-2.0.tar.gz ftp://ftp.broad.mit.edu/pub/crd/ALLPATHS/Release-2-0/allpaths-2.0.manual.docx
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8281a357e4b11d0091fa040c13c885af

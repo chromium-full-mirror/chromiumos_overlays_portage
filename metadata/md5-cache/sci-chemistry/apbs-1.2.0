@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=dev-libs/maloc[mpi=] blas? ( virtual/blas ) python? ( dev-lang/python ) sys-libs/readline arpack? ( sci-libs/arpack ) mpi? ( virtual/mpi ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b >=app-admin/eselect-python-20091230
+DESCRIPTION=Software for evaluating the electrostatic properties of nanoscale biomolecular systems
+EAPI=2
+HOMEPAGE=http://apbs.sourceforge.net/
+IUSE=arpack blas doc mpi python openmp debug
+KEYWORDS=~x86 ~amd64 ~ppc
+LICENSE=BSD
+RDEPEND=dev-libs/maloc[mpi=] blas? ( virtual/blas ) python? ( dev-lang/python ) sys-libs/readline arpack? ( sci-libs/arpack ) mpi? ( virtual/mpi ) >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=mirror://sourceforge/apbs/apbs-1.2-source.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	fortran	bd0fac3e085b8c7c86b09139dbedac42	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=04b9e86fe7a2e3979d0c15ba8336276e

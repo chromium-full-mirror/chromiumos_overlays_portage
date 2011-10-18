@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=>=dev-libs/glib-2.16.1 >=x11-libs/gtk+-2.14 >=gnome-base/orbit-2.9.8 >=gnome-base/libbonobo-2.20.3 >=gnome-base/gconf-2 >=gnome-base/libglade-2 >=dev-libs/libxml2-2 >=net-libs/libsoup-2.4 >=dev-libs/libgweather-2.25.4 >=dev-libs/libical-0.43 gnome-keyring? ( >=gnome-base/gnome-keyring-2.20.1 ) >=dev-db/sqlite-3.5 ssl? ( >=dev-libs/nspr-4.4 >=dev-libs/nss-3.9 ) sys-libs/zlib =sys-libs/db-4* ldap? ( >=net-nds/openldap-2.0 ) kerberos? ( virtual/krb5 ) krb4? ( app-crypt/mit-krb5[krb4] ) >=dev-util/pkgconfig-0.9 >=dev-util/intltool-0.35.5 >=gnome-base/gnome-common-2 >=dev-util/gtk-doc-am-1.9 doc? ( >=dev-util/gtk-doc-1.9 ) >=sys-apps/sed-4
+DESCRIPTION=Evolution groupware backend
+EAPI=2
+HOMEPAGE=http://www.gnome.org/projects/evolution/
+IUSE=doc ipv6 kerberos gnome-keyring krb4 ldap ssl debug
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux ~x86-solaris
+LICENSE=LGPL-2 BSD DB
+RDEPEND=>=dev-libs/glib-2.16.1 >=x11-libs/gtk+-2.14 >=gnome-base/orbit-2.9.8 >=gnome-base/libbonobo-2.20.3 >=gnome-base/gconf-2 >=gnome-base/libglade-2 >=dev-libs/libxml2-2 >=net-libs/libsoup-2.4 >=dev-libs/libgweather-2.25.4 >=dev-libs/libical-0.43 gnome-keyring? ( >=gnome-base/gnome-keyring-2.20.1 ) >=dev-db/sqlite-3.5 ssl? ( >=dev-libs/nspr-4.4 >=dev-libs/nss-3.9 ) sys-libs/zlib =sys-libs/db-4* ldap? ( >=net-nds/openldap-2.0 ) kerberos? ( virtual/krb5 ) krb4? ( app-crypt/mit-krb5[krb4] )
+SLOT=0
+SRC_URI=mirror://gnome/sources/evolution-data-server/2.28/evolution-data-server-2.28.2.tar.bz2
+_eclasses_=db-use	8d7baa3efc7c38c7d5c5e7353c5460dc	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=0f6844c0e66bd36459dec6359dab1cc3

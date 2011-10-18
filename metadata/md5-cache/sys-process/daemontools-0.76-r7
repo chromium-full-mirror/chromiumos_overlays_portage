@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=>=sys-apps/sed-4
+DESCRIPTION=Collection of tools for managing UNIX services
+HOMEPAGE=http://cr.yp.to/daemontools.html
+IUSE=selinux static
+KEYWORDS=alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86
+LICENSE=public-domain
+RDEPEND=selinux? ( sec-policy/selinux-daemontools ) !app-doc/daemontools-man
+SLOT=0
+SRC_URI=http://cr.yp.to/daemontools/daemontools-0.76.tar.gz http://smarden.org/pape/djb/manpages/daemontools-0.76-man-20020131.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fixheadtails	059c47dd86229aa6382393274677acfe	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qmail	da46b9f1b7b186f3defde9c45e37082f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=784682c92ad1e63897e65a4a001e6832

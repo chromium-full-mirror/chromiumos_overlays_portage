@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst setup test unpack
+DEPEND=mpi? ( >=sys-cluster/mpich2-1.0.6 net-fs/nfs-utils ) ssl? ( dev-libs/openssl ) szip? ( sci-libs/szip ) zlib? ( sys-libs/zlib ) sys-apps/coreutils sys-process/time >=sys-apps/sed-4 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=General purpose library and file format for storing scientific data
+HOMEPAGE=http://hdf.ncsa.uiuc.edu/HDF5/
+IUSE=cxx debug fortran mpi ssl szip threads tools zlib debug
+KEYWORDS=~amd64 ~hppa ~ppc ~ppc64 ~x86 ~sparc
+LICENSE=NCSA-HDF
+RDEPEND=mpi? ( >=sys-cluster/mpich2-1.0.6 net-fs/nfs-utils ) ssl? ( dev-libs/openssl ) szip? ( sci-libs/szip ) zlib? ( sys-libs/zlib ) sys-apps/coreutils sys-process/time dev-lang/perl
+SLOT=0
+SRC_URI=ftp://ftp.hdfgroup.org/HDF5/current/src/hdf5-1.6.7.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fixheadtails	059c47dd86229aa6382393274677acfe	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	fortran	bd0fac3e085b8c7c86b09139dbedac42	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=5a059f66b17789c2572383143b1b8aa7

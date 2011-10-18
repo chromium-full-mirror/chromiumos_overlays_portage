@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-lang/perl dev-perl/gtk2-perl >=media-video/lsdvd-0.10 media-video/mplayer[encode] encode? ( >=media-sound/lame-3.92 ) dev-lang/perl[-build]
+DESCRIPTION=A gtk-perl mplayer/mencoder frontend for ripping DVDs
+EAPI=2
+HOMEPAGE=http://untrepid.com/acidrip/
+IUSE=encode
+KEYWORDS=amd64 ~ppc x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/perl dev-perl/gtk2-perl >=media-video/lsdvd-0.10 media-video/mplayer[encode] encode? ( >=media-sound/lame-3.92 ) dev-lang/perl[-build]
+RESTRICT=mirror
+SLOT=0
+SRC_URI=mirror://gentoo/acidrip-0.14.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-app	514b28d9656ef299fc6f266f2c9c11a4	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1a90ad3e34080b55b4e9e933e025e9d4

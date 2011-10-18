@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst unpack
+DEPEND=sys-apps/sed >=sys-apps/sed-4
+DESCRIPTION=display or set the kernel time variables
+HOMEPAGE=http://www.ibiblio.org/linsearch/lsms/adjtimex.html
+KEYWORDS=alpha amd64 ppc x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=mirror://debian/pool/main/a/adjtimex/adjtimex_1.20-6.diff.gz mirror://debian/pool/main/a/adjtimex/adjtimex_1.20.orig.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fixheadtails	059c47dd86229aa6382393274677acfe	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=12cee78eb802eb18c3e6de066e25ff7f

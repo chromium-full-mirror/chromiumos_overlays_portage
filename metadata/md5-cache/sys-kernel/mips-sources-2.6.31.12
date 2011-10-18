@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DEPEND=>=sys-devel/gcc-4.1.1 !build? ( sys-apps/sed >=sys-devel/binutils-2.11.90.0.31 )
+DESCRIPTION=Linux-Mips GIT sources for MIPS-based machines, dated 20100213
+HOMEPAGE=http://www.linux-mips.org/ http://www.gentoo.org/
+IUSE=cobalt ip27 ip28 ip30 ip32r10k impactdebug symlink build
+KEYWORDS=-* ~mips
+LICENSE=GPL-2
+PDEPEND=!build? ( virtual/dev-manager )
+PROVIDE=virtual/linux-sources virtual/alsa
+RDEPEND=!build? ( >=sys-libs/ncurses-5.2 sys-devel/make )
+RESTRICT=binchecks strip
+SLOT=2.6.31
+SRC_URI=mirror://kernel/linux/kernel/v2.6/patch-2.6.31.12.bz2 mirror://kernel/linux/kernel/v2.6/linux-2.6.31.tar.bz2 mirror://gentoo/mipsgit-2.6.31-20100213.diff.bz2 mirror://gentoo/mips-sources-2.6.31-patches-v1.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	kernel-2	fac988fb09b9b9b87d85d60efe37d03f	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=530f558d3e58efed10c1f215717b7763

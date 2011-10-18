@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=!qt-static? ( x11-libs/qt-core:4 ) >=sys-apps/sed-4
+DESCRIPTION=A P2P-VoiceIP client.
+EAPI=2
+HOMEPAGE=http://www.skype.com/
+IUSE=qt-static
+KEYWORDS=~amd64 ~x86
+LICENSE=skype-eula
+PROPERTIES=interactive
+RDEPEND=amd64? ( >=app-emulation/emul-linux-x86-xlibs-20091231 >=app-emulation/emul-linux-x86-baselibs-20091231 >=app-emulation/emul-linux-x86-soundlibs-20091231 !qt-static? ( >=app-emulation/emul-linux-x86-qtlibs-20091231 ) ) x86? ( >=media-libs/alsa-lib-1.0.11 x11-libs/libXScrnSaver x11-libs/libXv qt-static? ( media-libs/alsa-lib x11-libs/libXv x11-libs/libXScrnSaver x11-libs/libSM x11-libs/libICE x11-libs/libXi x11-libs/libXrender x11-libs/libXrandr media-libs/freetype media-libs/fontconfig x11-libs/libXext x11-libs/libX11 dev-libs/glib:2 ) !qt-static? ( media-libs/alsa-lib x11-libs/libXv x11-libs/libXScrnSaver x11-libs/qt-gui:4[accessibility,dbus] x11-libs/qt-dbus:4 x11-libs/libXext x11-libs/libX11 ) )
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=!qt-static? ( http://download.skype.com/linux/skype-2.1.0.81.tar.bz2 ) qt-static? ( http://download.skype.com/linux/skype_static-2.1.0.81.tar.bz2 )
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pax-utils	0bce06fc565015448fab5af5dbffc5e3	portability	0be430f759a631e692678ed796e09f5c	qt4	83eabd1192f3f2c5a649ba2422a14d00	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=745a922aa16fc1720cdc3f56178635b8

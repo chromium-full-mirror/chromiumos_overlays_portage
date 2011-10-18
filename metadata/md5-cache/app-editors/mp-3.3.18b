@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=!dev-util/rej ncurses? ( sys-libs/ncurses ) gtk? ( >=x11-libs/gtk+-2 >=x11-libs/pango-1.8.0 ) !gtk? ( sys-libs/ncurses ) nls? ( sys-devel/gettext ) pcre? ( dev-libs/libpcre ) dev-lang/perl dev-util/pkgconfig
+DESCRIPTION=Minimum Profit: A text editor for programmers
+HOMEPAGE=http://www.triptico.com/software/mp.html
+IUSE=gtk ncurses nls pcre
+KEYWORDS=alpha amd64 ia64 ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=!dev-util/rej ncurses? ( sys-libs/ncurses ) gtk? ( >=x11-libs/gtk+-2 >=x11-libs/pango-1.8.0 ) !gtk? ( sys-libs/ncurses ) nls? ( sys-devel/gettext ) pcre? ( dev-libs/libpcre ) dev-lang/perl
+SLOT=0
+SRC_URI=http://www.triptico.com/download/mp-3.3.18b.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=900ddc5298d75be69fa619e7360ff05e

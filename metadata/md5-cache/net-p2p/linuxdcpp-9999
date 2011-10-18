@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=>=gnome-base/libglade-2.4 >=x11-libs/gtk+-2.6 app-arch/bzip2 dev-libs/openssl media-libs/fontconfig >=dev-util/scons-0.96 dev-util/pkgconfig >=dev-libs/boost-1.35.0-r2 >=dev-vcs/bzr-1.5
+DESCRIPTION=Direct connect client, looks and works like famous DC++
+HOMEPAGE=https://launchpad.net/linuxdcpp
+IUSE=debug
+LICENSE=GPL-2
+RDEPEND=>=gnome-base/libglade-2.4 >=x11-libs/gtk+-2.6 app-arch/bzip2 dev-libs/openssl
+SLOT=0
+_eclasses_=bzr	a9f084be63208482abbc229f90dc846f	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=53e767385fc9e1c1c69eadd27241de3f

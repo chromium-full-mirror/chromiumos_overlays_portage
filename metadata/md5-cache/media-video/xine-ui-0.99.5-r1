@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup unpack
+DEPEND=>=media-libs/libpng-1.2.8 >=media-libs/xine-lib-1.1.0 lirc? ( app-misc/lirc ) aalib? ( media-libs/aalib ) libcaca? ( media-libs/libcaca ) curl? ( >=net-misc/curl-7.10.2 ) X? ( x11-libs/libX11 x11-libs/libXrender x11-libs/libICE x11-libs/libSM x11-libs/libXext x11-libs/libXxf86vm x11-libs/libXv x11-libs/libXtst x11-libs/libXft xinerama? ( x11-libs/libXinerama ) ) nls? ( virtual/libintl ) nls? ( sys-devel/gettext ) X? ( x11-libs/libXt x11-proto/xf86vidmodeproto x11-proto/inputproto xinerama? ( x11-proto/xineramaproto ) ) dev-util/pkgconfig =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Xine movie player
+HOMEPAGE=http://xine.sourceforge.net/
+IUSE=X nls lirc aalib libcaca readline curl vdr xinerama debug
+KEYWORDS=alpha amd64 ~hppa ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=>=media-libs/libpng-1.2.8 >=media-libs/xine-lib-1.1.0 lirc? ( app-misc/lirc ) aalib? ( media-libs/aalib ) libcaca? ( media-libs/libcaca ) curl? ( >=net-misc/curl-7.10.2 ) X? ( x11-libs/libX11 x11-libs/libXrender x11-libs/libICE x11-libs/libSM x11-libs/libXext x11-libs/libXxf86vm x11-libs/libXv x11-libs/libXtst x11-libs/libXft xinerama? ( x11-libs/libXinerama ) ) nls? ( virtual/libintl )
+SLOT=0
+SRC_URI=mirror://sourceforge/xine/xine-ui-0.99.5.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c03f1e3ff7eee787aa8cb862796a487d

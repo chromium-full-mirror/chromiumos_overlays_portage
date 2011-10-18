@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=sys-libs/zlib app-crypt/mhash dev-libs/libmcrypt
+DESCRIPTION=Plausible deniable file cryptography
+HOMEPAGE=http://www.winstonsmith.info/julia/elettra/
+KEYWORDS=~amd64 ~ppc ~ppc64
+LICENSE=WTFPL-2
+RDEPEND=sys-libs/zlib app-crypt/mhash dev-libs/libmcrypt
+SLOT=0
+SRC_URI=http://www.winstonsmith.info/julia/elettra/elettra-src-1.0.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=27981645d30126e99302a43c46c75a6f

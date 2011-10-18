@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install test unpack
+DEPEND=>=sys-libs/gdbm-1.8.0 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=A Unix system friendly Scheme Interpreter
+HOMEPAGE=http://gauche.sf.net/
+IUSE=ipv6
+KEYWORDS=~amd64 ~ia64 ~ppc ~sparc x86
+LICENSE=BSD
+RDEPEND=>=sys-libs/gdbm-1.8.0
+SLOT=0
+SRC_URI=mirror://sourceforge/gauche/Gauche-0.8.13.tgz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=624827997c73cce0ed973b4e7ce17b23

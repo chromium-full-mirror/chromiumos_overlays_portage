@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=>=dev-lang/perl-5.6.1 dev-perl/perl-tk dev-perl/Config-Simple dev-perl/X11-Protocol x11-apps/xlsfonts
+DESCRIPTION=Concurrent Multi-Server Terminal Access.
+HOMEPAGE=http://clusterssh.sourceforge.net
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/perl-5.6.1 dev-perl/perl-tk dev-perl/Config-Simple dev-perl/X11-Protocol x11-apps/xlsfonts
+SLOT=0
+SRC_URI=mirror://sourceforge/clusterssh/clusterssh-3.24.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=5e76c9eedb65d0fe3d6aba16dd4bdf57

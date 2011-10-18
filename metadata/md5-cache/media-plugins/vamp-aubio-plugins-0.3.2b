@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=media-libs/aubio-0.3.2 media-libs/vamp-plugin-sdk =sci-libs/fftw-3*
+DESCRIPTION=Onset detection, pitch tracking, note tracking and tempo tracking plugins
+HOMEPAGE=http://www.vamp-plugins.org/
+KEYWORDS=~amd64 ~ppc ppc64 x86
+LICENSE=GPL-2
+RDEPEND=>=media-libs/aubio-0.3.2 media-libs/vamp-plugin-sdk =sci-libs/fftw-3*
+SLOT=0
+SRC_URI=mirror://sourceforge/vamp/vamp-aubio-plugins-0.3.2b.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=cd97f3f0e25ba723e8f242e104f40e5d

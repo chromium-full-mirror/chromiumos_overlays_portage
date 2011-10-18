@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=dev-scheme/guile[deprecated] virtual/latex-base app-text/ghostscript-gpl media-libs/freetype x11-libs/libXext x11-apps/xmodmap imlib? ( media-libs/imlib2 ) jpeg? ( || ( media-gfx/imagemagick media-gfx/jpeg2ps ) ) svg? ( || ( media-gfx/inkscape gnome-base/librsvg ) ) netpbm? ( media-libs/netpbm ) spell? ( || ( >=app-text/ispell-3.2 >=app-text/aspell-0.5 ) ) x11-proto/xproto =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Wysiwyg text processor with high-quality maths
+EAPI=2
+HOMEPAGE=http://www.texmacs.org/
+IUSE=imlib jpeg netpbm svg spell
+KEYWORDS=alpha amd64 ppc sparc x86
+LICENSE=GPL-3
+RDEPEND=dev-scheme/guile[deprecated] virtual/latex-base app-text/ghostscript-gpl media-libs/freetype x11-libs/libXext x11-apps/xmodmap imlib? ( media-libs/imlib2 ) jpeg? ( || ( media-gfx/imagemagick media-gfx/jpeg2ps ) ) svg? ( || ( media-gfx/inkscape gnome-base/librsvg ) ) netpbm? ( media-libs/netpbm ) spell? ( || ( >=app-text/ispell-3.2 >=app-text/aspell-0.5 ) )
+SLOT=0
+SRC_URI=ftp://ftp.texmacs.org/pub/TeXmacs/targz/TeXmacs-1.0.7.2-src.tar.gz ftp://ftp.texmacs.org/pub/TeXmacs/targz/TeXmacs-600dpi-fonts.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1df9e47f1989e46434db8263e94fe1ab

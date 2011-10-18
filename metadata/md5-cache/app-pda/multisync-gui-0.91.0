@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=<=app-pda/libopensync-0.35 evo? ( >=app-pda/libopensync-plugin-evolution2-0.20 ) >=gnome-base/libgnomeui-2 >=x11-libs/gtk+-2.6 >=dev-util/pkgconfig-0.22
+DESCRIPTION=OpenSync multisync-gui
+HOMEPAGE=http://www.opensync.org/
+IUSE=evo
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=<=app-pda/libopensync-0.35 evo? ( >=app-pda/libopensync-plugin-evolution2-0.20 ) >=gnome-base/libgnomeui-2 >=x11-libs/gtk+-2.6
+SLOT=0
+SRC_URI=http://dev.gentooexperimental.org/~peper/distfiles/multisync-gui-0.91.0.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3148d5ae5997265fcf51841f745eef40

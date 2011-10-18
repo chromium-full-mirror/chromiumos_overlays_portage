@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
+DEPEND=sys-libs/ncurses perl? ( dev-lang/perl ) java? ( virtual/jre ) tk? ( dev-lang/tcl dev-tcltk/itcl dev-lang/tk ) python? ( dev-lang/python ) png? ( media-libs/libpng ) readline? ( sys-libs/readline )
+DESCRIPTION=suite of tools for moving data between a Palm device and a desktop
+HOMEPAGE=http://www.pilot-link.org/
+IUSE=perl java tk python png readline
+KEYWORDS=alpha amd64 ia64 ppc sparc ~x86
+LICENSE=|| ( GPL-2 LGPL-2 )
+RDEPEND=sys-libs/ncurses perl? ( dev-lang/perl ) java? ( virtual/jre ) tk? ( dev-lang/tcl dev-tcltk/itcl dev-lang/tk ) python? ( dev-lang/python ) png? ( media-libs/libpng ) readline? ( sys-libs/readline )
+SLOT=0
+SRC_URI=http://pilot-link.org/source/pilot-link-0.11.8.tar.bz2
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=53b5ef59498708ec47978763af819cff

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
+DEPEND=>=x11-libs/gtk+-2.14 gnome-base/gconf >=x11-libs/gtksourceview-2.6 >=app-editors/gedit-2.26.1[python] >=dev-python/pygtk-2.14 charmap? ( >=gnome-extra/gucharmap-2.24.3 ) session? ( dev-lang/python[xml] ) python? ( >=dev-python/pygtksourceview-2.2.0 ) terminal? ( >=x11-libs/vte-0.19.4[python] ) dev-util/pkgconfig dev-util/intltool >=sys-apps/sed-4 >=app-admin/eselect-python-20091230
+DESCRIPTION=Offical plugins for gedit.
+EAPI=2
+HOMEPAGE=http://live.gnome.org/GeditPlugins
+IUSE=bookmarks +bracketcompletion charmap colorpicker +drawspaces +joinlines python +session showtabbar smartspaces terminal
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2.14 gnome-base/gconf >=x11-libs/gtksourceview-2.6 >=app-editors/gedit-2.26.1[python] >=dev-python/pygtk-2.14 charmap? ( >=gnome-extra/gucharmap-2.24.3 ) session? ( dev-lang/python[xml] ) python? ( >=dev-python/pygtksourceview-2.2.0 ) terminal? ( >=x11-libs/vte-0.19.4[python] ) >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=mirror://gnome/sources/gedit-plugins/2.28/gedit-plugins-2.28.0.tar.bz2
+_eclasses_=fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b807c39786adc7ef72e1fb0180770165

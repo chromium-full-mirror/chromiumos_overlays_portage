@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
+DEPEND=dev-libs/libpcre media-libs/portaudio sci-libs/arpack sci-libs/fftw:3.0 sci-libs/umfpack sys-libs/ncurses virtual/lapack virtual/opengl x11-libs/qt-gui:4 x11-libs/qt-opengl:4 x11-libs/qt-svg:4 volpack? ( media-libs/volpack ) dev-util/pkgconfig >=dev-util/cmake-2.6.2-r1 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=Environment for rapid engineering and scientific processing
+EAPI=2
+HOMEPAGE=http://freemat.sourceforge.net/
+IUSE=volpack
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/libpcre media-libs/portaudio sci-libs/arpack sci-libs/fftw:3.0 sci-libs/umfpack sys-libs/ncurses virtual/lapack virtual/opengl x11-libs/qt-gui:4 x11-libs/qt-opengl:4 x11-libs/qt-svg:4 volpack? ( media-libs/volpack )
+SLOT=0
+SRC_URI=mirror://sourceforge/freemat/FreeMat-4.0-Source.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	cmake-utils	6a1f5bd4039e55b76615db7bd9b70fed	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9ae2945cfb26b18300509933c1c45893

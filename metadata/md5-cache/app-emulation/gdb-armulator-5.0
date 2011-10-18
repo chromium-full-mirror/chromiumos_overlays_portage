@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=sys-libs/ncurses media-libs/freetype >=x11-libs/gtk+-2 >=dev-libs/glib-2 x11-libs/pango nls? ( sys-devel/gettext ) dev-util/pkgconfig
+DESCRIPTION=emulate armnommu/uClinux in GDB
+HOMEPAGE=http://www.uclinux.org/pub/uClinux/utilities/armulator/
+IUSE=nls
+KEYWORDS=-amd64 ~x86
+LICENSE=GPL-2 LGPL-2
+RDEPEND=sys-libs/ncurses media-libs/freetype >=x11-libs/gtk+-2 >=dev-libs/glib-2 x11-libs/pango
+RESTRICT=test
+SLOT=0
+SRC_URI=http://ftp.gnu.org/gnu/gdb/gdb-5.0.tar.bz2 http://www.uclinux.org/pub/uClinux/utilities/armulator/gdb-5.0.tar.bz2 http://www.uclinux.org/pub/uClinux/utilities/armulator/gdb-5.0-uclinux-armulator-20021127.patch.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=36df2f9f0e1042ce2f1d63073d04fd06

@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=tcmalloc? ( dev-util/google-perftools ) sqlite? ( dev-db/sqlite:3 )
+DESCRIPTION=a C client and protocol library for the Drizzle project
+EAPI=2
+HOMEPAGE=http://launchpad.net/libdrizzle
+IUSE=debug tcmalloc +sqlite static-libs
+KEYWORDS=~amd64
+LICENSE=BSD
+RDEPEND=tcmalloc? ( dev-util/google-perftools ) sqlite? ( dev-db/sqlite:3 )
+SLOT=0
+SRC_URI=http://launchpad.net/libdrizzle/trunk/0.7/+download/libdrizzle-0.7.tar.gz
+_md5_=5eba0d9eb4b7042f07abd8aafafce2e0

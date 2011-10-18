@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst postrm preinst setup
+DESCRIPTION=distributed.net client
+HOMEPAGE=http://www.distributed.net
+KEYWORDS=~x86 -*
+LICENSE=distributed.net
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://http.distributed.net/pub/dcti/v2.9011/dnetc498-linux-x86-elf-uclibc.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=2f576b16d03acc2d013d31c3e711bfe7

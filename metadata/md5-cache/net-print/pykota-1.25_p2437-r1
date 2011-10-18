@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=dev-lang/python dev-python/egenix-mx-base net-print/pkpgcounter dev-python/chardet dev-python/pkipplib ldap? ( dev-python/python-ldap ) mysql? ( dev-python/mysql-python ) postgres? ( virtual/postgresql-server dev-db/pygresql ) sqlite? ( =dev-python/pysqlite-2* ) snmp? ( net-analyzer/net-snmp =dev-python/pysnmp-3.4* ) xml? ( dev-python/jaxml ) >=app-admin/eselect-python-20091230 >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=Flexible print quota and accounting package for use with CUPS and lpd.
+HOMEPAGE=http://www.pykota.com
+IUSE=ldap mysql postgres snmp sqlite snmp xml
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/python dev-python/egenix-mx-base net-print/pkpgcounter dev-python/chardet dev-python/pkipplib ldap? ( dev-python/python-ldap ) mysql? ( dev-python/mysql-python ) postgres? ( virtual/postgresql-server dev-db/pygresql ) sqlite? ( =dev-python/pysqlite-2* ) snmp? ( net-analyzer/net-snmp =dev-python/pysnmp-3.4* ) xml? ( dev-python/jaxml ) >=app-admin/eselect-python-20091230 >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=http://scriptkitty.com/files/pykota-1.25_p2437.tar.bz2
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=270122e2a84e2980987ac7074304c6ed

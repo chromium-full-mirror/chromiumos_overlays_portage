@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=>=dev-python/twisted-2.5 >=dev-python/twisted-web-8.1.0 net-zope/zope-interface >=app-admin/eselect-python-20091230 =dev-lang/python-2* >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DESCRIPTION=A web templating framework that provides LivePage, an automatic AJAX toolkit.
+EAPI=2
+HOMEPAGE=http://divmod.org/trac/wiki/DivmodNevow http://pypi.python.org/pypi/Nevow
+IUSE=doc
+KEYWORDS=alpha ~amd64 ia64 ppc sparc x86
+LICENSE=MIT
+RDEPEND=>=dev-python/twisted-2.5 >=dev-python/twisted-web-8.1.0 net-zope/zope-interface >=app-admin/eselect-python-20091230 =dev-lang/python-2* >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+SLOT=0
+SRC_URI=http://pypi.python.org/packages/source/N/Nevow/Nevow-0.10.0.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	twisted	b8ba94e8ee03d301a1eebc496249b8f3	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=d4b5502a526569df9a3aff40823e278f

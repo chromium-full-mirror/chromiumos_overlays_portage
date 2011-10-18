@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=>=net-im/jabber-base-0.01 >=dev-libs/expat-1.95 >=dev-lang/erlang-11.2.5 odbc? ( dev-db/unixODBC ) ldap? ( =net-nds/openldap-2* ) ssl? ( >=dev-libs/openssl-0.9.8e ) zlib? ( sys-libs/zlib )
+DESCRIPTION=The Erlang Jabber Daemon
+HOMEPAGE=http://www.ejabberd.im/
+IUSE=debug mod_irc mod_muc mod_pubsub ldap odbc pam ssl web zlib
+KEYWORDS=amd64 ~arm ~ia64 ~ppc x86
+LICENSE=GPL-2
+PROVIDE=virtual/jabber-server
+RDEPEND=>=net-im/jabber-base-0.01 >=dev-libs/expat-1.95 >=dev-lang/erlang-11.2.5 odbc? ( dev-db/unixODBC ) ldap? ( =net-nds/openldap-2* ) ssl? ( >=dev-libs/openssl-0.9.8e ) zlib? ( sys-libs/zlib )
+SLOT=0
+SRC_URI=http://www.process-one.net/downloads/ejabberd/2.0.5/ejabberd-2.0.5.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a314231bc491ac5e9d6f2a4bd6913b83

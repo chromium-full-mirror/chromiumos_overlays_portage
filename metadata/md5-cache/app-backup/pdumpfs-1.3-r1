@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install test
+DEPEND=>=virtual/ruby-1.8.1
+DESCRIPTION=a daily backup system similar to Plan9's dumpfs
+HOMEPAGE=http://0xcc.net/pdumpfs/
+IUSE=cjk
+KEYWORDS=amd64 ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=>=virtual/ruby-1.8.1
+SLOT=0
+SRC_URI=http://0xcc.net/pdumpfs/pdumpfs-1.3.tar.gz
+_md5_=218958438fb0ea4a540973b9318cb4d3

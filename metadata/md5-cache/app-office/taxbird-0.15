@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst
+DEPEND=>=dev-libs/libgeier-0.11 >=gnome-extra/gtkhtml-3.8 gnome-base/libgnomeui sys-devel/gettext >=dev-scheme/guile-1.8.0[regex,deprecated]
+DESCRIPTION=Taxbird provides a GUI to submit tax forms to the german digital tax project ELSTER.
+EAPI=2
+HOMEPAGE=http://www.taxbird.de/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/libgeier-0.11 >=gnome-extra/gtkhtml-3.8 gnome-base/libgnomeui sys-devel/gettext >=dev-scheme/guile-1.8.0[regex,deprecated]
+SLOT=0
+SRC_URI=http://www.taxbird.de/download/taxbird/0.15/taxbird-0.15.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8dc988a6f31bcd4a98f72f2a2fca1e43

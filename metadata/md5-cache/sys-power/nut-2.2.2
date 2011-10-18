@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst prepare setup
+DEPEND=cgi? ( >=media-libs/gd-2[png] ) snmp? ( net-analyzer/net-snmp ) usb? ( =virtual/libusb-0* ) hal? ( >=sys-apps/hal-0.5.9.1 ) ssl? ( dev-libs/openssl ) xml? ( >=net-misc/neon-0.25.0 ) >=sys-fs/udev-114 >=sys-apps/sed-4 >=sys-devel/autoconf-2.58 >=sys-apps/sed-4 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Network-UPS Tools
+EAPI=2
+HOMEPAGE=http://www.networkupstools.org/
+IUSE=cgi snmp usb ssl hal xml
+KEYWORDS=~alpha ~amd64 ~ppc ppc64 ~sparc ~x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=cgi? ( >=media-libs/gd-2[png] ) snmp? ( net-analyzer/net-snmp ) usb? ( =virtual/libusb-0* ) hal? ( >=sys-apps/hal-0.5.9.1 ) ssl? ( dev-libs/openssl ) xml? ( >=net-misc/neon-0.25.0 ) >=sys-fs/udev-114
+SLOT=0
+SRC_URI=http://random.networkupstools.org/source/2.2/nut-2.2.2.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fixheadtails	059c47dd86229aa6382393274677acfe	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=cce55b228190ea43b88b939afff1f2f6

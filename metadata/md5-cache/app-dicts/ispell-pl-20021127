@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=app-text/ispell
+DESCRIPTION=Polish dictionary for ispell
+HOMEPAGE=http://ispell-pl.sourceforge.net/
+KEYWORDS=~alpha ~amd64 ~hppa ~mips ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=app-text/ispell
+SLOT=0
+SRC_URI=mirror://sourceforge/ispell-pl/ispell-pl-20021127.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0468cd84bbfa9762117d7adbb0329bb8

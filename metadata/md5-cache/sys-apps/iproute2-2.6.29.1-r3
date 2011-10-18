@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=!net-misc/arpd !minimal? ( berkdb? ( sys-libs/db ) ) atm? ( net-dialup/linux-atm ) elibc_glibc? ( >=sys-libs/glibc-2.7 ) >=virtual/os-headers-2.6.27
+DESCRIPTION=kernel routing and traffic control utilities
+EAPI=2
+HOMEPAGE=http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
+IUSE=atm berkdb minimal
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=!net-misc/arpd !minimal? ( berkdb? ( sys-libs/db ) ) atm? ( net-dialup/linux-atm )
+SLOT=0
+SRC_URI=http://developer.osdl.org/dev/iproute2/download/iproute2-2.6.29-1.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=38f3c7ec139555b496cbd4c3e9d804ef

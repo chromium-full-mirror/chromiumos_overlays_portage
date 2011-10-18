@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile config install postinst unpack
+DEPEND=ssl? ( dev-libs/openssl )
+DESCRIPTION=IMAP server for Maildir
+HOMEPAGE=http://www.bincimap.org/
+IUSE=ssl
+KEYWORDS=amd64 ~hppa ~ppc x86
+LICENSE=GPL-2
+PROVIDE=virtual/imapd
+RDEPEND=ssl? ( dev-libs/openssl ) sys-process/daemontools sys-apps/ucspi-tcp net-mail/checkpassword !virtual/imapd
+SLOT=0
+SRC_URI=http://www.bincimap.org/dl/tarballs/1.2/bincimap-1.2.13final.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=5b4e213912ba1c6c162af988cda038f8

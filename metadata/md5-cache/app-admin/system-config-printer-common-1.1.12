@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=!app-admin/system-config-printer:0 dev-libs/libxml2[python] dev-python/dbus-python dev-python/pycups dev-python/pygobject net-print/cups[dbus] doc? ( dev-python/epydoc ) >=app-admin/eselect-python-20091230 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Common modules of Red Hat's printer administration tool
+EAPI=2
+HOMEPAGE=http://cyberelk.net/tim/software/system-config-printer/
+IUSE=doc
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~x86
+LICENSE=GPL-2
+RDEPEND=!app-admin/system-config-printer:0 dev-libs/libxml2[python] dev-python/dbus-python dev-python/pycups dev-python/pygobject net-print/cups[dbus] >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://cyberelk.net/tim/data/system-config-printer/1.1/system-config-printer-1.1.12.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f28190c04ce017a175d258403aac6719

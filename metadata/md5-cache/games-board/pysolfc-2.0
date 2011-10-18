@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[tk] =dev-lang/python-2.6*[tk] )
+DESCRIPTION=A collection of more than 1000 solitaire card games
+EAPI=2
+HOMEPAGE=http://pysolfc.sourceforge.net/
+IUSE=extra-cardsets minimal +sound
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=sound? ( dev-python/pygame ) !minimal? ( dev-python/imaging[tk] dev-tcltk/tktable ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[tk] =dev-lang/python-2.6*[tk] )
+SLOT=0
+SRC_URI=mirror://sourceforge/pysolfc/PySolFC-2.0.tar.bz2 extra-cardsets? ( mirror://sourceforge/pysolfc/PySolFC-Cardsets-2.0.tar.bz2 )
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=37ea0aec323c42ff999c8e2999dd6455

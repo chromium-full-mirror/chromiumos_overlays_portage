@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare
+DEPEND=virtual/libusb:0
+DESCRIPTION=Control utility for some special features of some special Logitech USB mice!
+EAPI=2
+HOMEPAGE=http://freshmeat.net/projects/logitech_applet/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=virtual/libusb:0
+SLOT=0
+SRC_URI=http://www.frogmouth.net/logitech_applet-0.4test1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=05147f70ad866e4f51f6fde2c708fc15

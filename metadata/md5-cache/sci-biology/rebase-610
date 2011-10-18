@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=emboss? ( >=sci-biology/emboss-3.0.0-r1 )
+DESCRIPTION=A restriction enzyme database
+HOMEPAGE=http://rebase.neb.com
+IUSE=emboss minimal
+KEYWORDS=amd64 ppc ppc64 ~sparc x86
+LICENSE=public-domain
+RDEPEND=emboss? ( >=sci-biology/emboss-3.0.0-r1 )
+SLOT=0
+SRC_URI=mirror://gentoo/rebase-610.tar.bz2
+_md5_=a5b5da9b9c40d9c6a4738ac1c169e2c0

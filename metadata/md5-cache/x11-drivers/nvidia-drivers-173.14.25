@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install postinst postrm preinst prepare setup unpack
+DEPEND=<x11-base/xorg-server-1.7.99 kernel_linux? ( >=sys-libs/glibc-2.6.1 ) multilib? ( app-emulation/emul-linux-x86-xlibs ) >=app-admin/eselect-opengl-1.0.9 kernel_linux? ( virtual/linux-sources ) kernel_linux? ( virtual/modutils ) sys-apps/sed kernel_linux? ( virtual/linux-sources ) sys-apps/pciutils
+DESCRIPTION=NVIDIA X11 driver and GLX libraries
+EAPI=2
+HOMEPAGE=http://www.nvidia.com/
+IUSE=acpi custom-cflags gtk multilib kernel_linux kernel_linux
+KEYWORDS=-* ~amd64 ~x86 ~x86-fbsd
+LICENSE=NVIDIA
+PDEPEND=gtk? ( media-video/nvidia-settings )
+RDEPEND=<x11-base/xorg-server-1.7.99 kernel_linux? ( >=sys-libs/glibc-2.6.1 ) multilib? ( app-emulation/emul-linux-x86-xlibs ) >=app-admin/eselect-opengl-1.0.9 kernel_linux? ( virtual/modutils ) acpi? ( sys-power/acpid ) kernel_linux? ( virtual/modutils )
+RESTRICT=strip
+SLOT=0
+SRC_URI=x86? ( ftp://download.nvidia.com/XFree86/Linux-x86/173.14.25/NVIDIA-Linux-x86-173.14.25-pkg0.run ) amd64? ( ftp://download.nvidia.com/XFree86/Linux-x86_64/173.14.25/NVIDIA-Linux-x86_64-173.14.25-pkg2.run ) x86-fbsd? ( ftp://download.nvidia.com/freebsd/173.14.25/NVIDIA-FreeBSD-x86-173.14.25.tar.gz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	linux-info	8d722422d00ae99ed52a790b20b9bfc4	linux-mod	07a3d250a1268d811d3e8730e5741394	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	nvidia-driver	f195f64263551aa3c4a9aff69ed97059	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=f5c47123a923518db936e92f5a46ef70

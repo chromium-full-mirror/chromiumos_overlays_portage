@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND=net-misc/curl sys-libs/readline dev-libs/libxml2 dev-libs/libpcre
+DESCRIPTION=Online backups for the truly paranoid
+HOMEPAGE=http://www.tarsnap.com/
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=net-misc/curl sys-libs/readline dev-libs/libxml2 dev-libs/libpcre
+SLOT=0
+SRC_URI=https://www.tarsnap.com/download/tarsnap-autoconf-1.0.26.tgz
+_md5_=6ed99ee98e8908d730828982e5c990cc

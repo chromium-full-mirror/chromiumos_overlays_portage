@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install setup test unpack
+DEPEND=sys-fs/e2fsprogs || ( >=sys-fs/lvm2-2.02.45 sys-fs/device-mapper ) >=sys-apps/baselayout-1.9.4-r6 gtk? ( =x11-libs/gtk+-1* =dev-libs/glib-1* ) hb? ( !hb2? ( =sys-cluster/heartbeat-1* ) ) hb2? ( >=sys-cluster/heartbeat-2 ) ncurses? ( sys-libs/ncurses >=dev-libs/glib-2.12.4-r1 ) gtk? ( dev-util/pkgconfig ) ncurses? ( dev-util/pkgconfig ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Utilities for the IBM Enterprise Volume Management System
+HOMEPAGE=http://www.sourceforge.net/projects/evms
+IUSE=debug gtk hb hb2 ncurses nls
+KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=sys-fs/e2fsprogs || ( >=sys-fs/lvm2-2.02.45 sys-fs/device-mapper ) >=sys-apps/baselayout-1.9.4-r6 gtk? ( =x11-libs/gtk+-1* =dev-libs/glib-1* ) hb? ( !hb2? ( =sys-cluster/heartbeat-1* ) ) hb2? ( >=sys-cluster/heartbeat-2 ) ncurses? ( sys-libs/ncurses >=dev-libs/glib-2.12.4-r1 )
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://sourceforge/evms/evms-2.5.5.tar.gz mirror://gentoo/evms-patches-2.5.5-2.tbz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	linux-info	8d722422d00ae99ed52a790b20b9bfc4	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=bddc5819da8ebc74cd8e65f29bac8b1a

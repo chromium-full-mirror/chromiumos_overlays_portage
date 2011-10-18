@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst setup
+DEPEND=>=app-admin/eselect-opengl-1.0.8-r1 doc? ( app-doc/opengl-manpages ) x11-proto/glproto
+DESCRIPTION=Links to Apple's OpenGL X11 implementation
+EAPI=3
+HOMEPAGE=http://www.apple.com/
+IUSE=doc
+KEYWORDS=-* ~ppc-macos ~x64-macos ~x86-macos
+LICENSE=as-is
+RDEPEND=>=app-admin/eselect-opengl-1.0.8-r1 doc? ( app-doc/opengl-manpages ) x11-proto/glproto
+SLOT=0
+_md5_=561b2aa6a039df289900c64f7786f41d

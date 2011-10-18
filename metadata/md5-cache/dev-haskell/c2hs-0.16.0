@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst prerm setup
+DEPEND=>=dev-lang/ghc-6.6.1 >=dev-haskell/cabal-1.2 dev-haskell/filepath >=dev-haskell/language-c-0.3.1.1 doc? ( ~app-text/docbook-xml-dtd-4.2 app-text/docbook-xsl-stylesheets >=dev-libs/libxslt-1.1.2 ) >=dev-haskell/cabal-1.1.4
+DESCRIPTION=C->Haskell FFI tool that gives some cross-language type safety
+HOMEPAGE=http://www.cse.unsw.edu.au/~chak/haskell/c2hs/
+IUSE=doc
+KEYWORDS=~amd64 x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/gmp
+SLOT=0
+SRC_URI=http://hackage.haskell.org/packages/archive/c2hs/0.16.0/c2hs-0.16.0.tar.gz
+_eclasses_=ghc-package	a0576f38fd872706ee22bf4f6c0c6152	haskell-cabal	fde11633d9b6632dafa46c1f669b2a78	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=abbc3deefefa42c5c88b58bf07601e93

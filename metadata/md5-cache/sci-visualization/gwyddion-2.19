@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst postrm prerm
+DEPEND=>=x11-libs/gtk+-2.8 x11-libs/cairo x11-libs/pango x11-libs/libXmu fftw? ( >=sci-libs/fftw-3 ) gnome? ( gnome-base/gconf ) kde? ( >=kde-base/kdelibs-4 ) opengl? ( virtual/opengl x11-libs/gtkglext ) perl? ( dev-lang/perl ) python? ( dev-python/pygtk ) ruby? ( dev-ruby/narray ) sourceview? ( >=x11-libs/gtksourceview-2 ) xml? ( dev-libs/libxml2 ) dev-util/pkgconfig doc? ( dev-util/gtk-doc ) >=sys-apps/sed-4
+DESCRIPTION=A software framework for SPM data analysis
+EAPI=2
+HOMEPAGE=http://gwyddion.net/
+IUSE=doc fftw gnome kde nls opengl perl python ruby sourceview xml X
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2.8 x11-libs/cairo x11-libs/pango x11-libs/libXmu fftw? ( >=sci-libs/fftw-3 ) gnome? ( gnome-base/gconf ) kde? ( >=kde-base/kdelibs-4 ) opengl? ( virtual/opengl x11-libs/gtkglext ) perl? ( dev-lang/perl ) python? ( dev-python/pygtk ) ruby? ( dev-ruby/narray ) sourceview? ( >=x11-libs/gtksourceview-2 ) xml? ( dev-libs/libxml2 )
+SLOT=0
+SRC_URI=http://gwyddion.net/download/2.19/gwyddion-2.19.tar.bz2
+_eclasses_=fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407
+_md5_=316ce4fd32debfeb9a3f3716d7a6f058

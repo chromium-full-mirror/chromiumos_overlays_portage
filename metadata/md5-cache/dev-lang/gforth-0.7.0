@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=dev-libs/ffcall emacs? ( virtual/emacs )
+DESCRIPTION=GNU Forth is a fast and portable implementation of the ANSI Forth language
+HOMEPAGE=http://www.gnu.org/software/gforth
+IUSE=emacs
+KEYWORDS=amd64 ppc x86 ~x86-fbsd ~x86-freebsd ~x86-linux ~ppc-macos
+LICENSE=GPL-3
+RDEPEND=dev-libs/ffcall emacs? ( virtual/emacs )
+SLOT=0
+SRC_URI=ftp://ftp.gnu.org/pub/gnu/gforth/gforth-0.7.0.tar.gz
+_eclasses_=elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=888ee6981d1761d584ef1df972b78b77

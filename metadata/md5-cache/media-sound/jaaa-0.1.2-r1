@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=media-sound/jack-audio-connection-kit >=media-libs/libclalsadrv-1.0.1 >=media-libs/libclthreads-1.0.2 >=media-libs/libclxclient-1.0.1 >=sci-libs/fftw-3.0.0 >=x11-libs/gtk+-2.0.0
+DESCRIPTION=The JACK and ALSA Audio Analyser is an audio signal generator and spectrum analyser
+HOMEPAGE=http://users.skynet.be/solaris/linuxaudio
+KEYWORDS=amd64 ~ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=media-sound/jack-audio-connection-kit >=media-libs/libclalsadrv-1.0.1 >=media-libs/libclthreads-1.0.2 >=media-libs/libclxclient-1.0.1 >=sci-libs/fftw-3.0.0 >=x11-libs/gtk+-2.0.0
+SLOT=0
+SRC_URI=http://users.skynet.be/solaris/linuxaudio/downloads/jaaa-0.1.2.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3689d071113150894378e7e68b1e769f

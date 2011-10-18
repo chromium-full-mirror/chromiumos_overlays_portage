@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DESCRIPTION=Fast-paced first-person-shooter online multiplayer game, similar to Tribes
+HOMEPAGE=http://legendsthegame.net/
+IUSE=dedicated
+KEYWORDS=-* x86
+LICENSE=as-is
+RDEPEND=>=media-libs/libsdl-1.2 media-libs/libogg media-libs/libvorbis media-libs/openal sys-libs/glibc amd64? ( >=app-emulation/emul-linux-x86-sdl-2.1 >=app-emulation/emul-linux-x86-soundlibs-2.1 ) media-fonts/font-adobe-75dpi
+RESTRICT=strip
+SLOT=0
+SRC_URI=http://legendsthegame.net/files/legends_linux-0.4.1.43.run mirror://gentoo/legends.png http://dev.gentoo.org/~wolf31o2/sources/dump/legends.png
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0a2c6302cec8b1cf53b0133f2c94607c

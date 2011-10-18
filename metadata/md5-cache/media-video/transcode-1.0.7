@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup unpack
+DEPEND=a52? ( >=media-libs/a52dec-0.7.4 ) dv? ( >=media-libs/libdv-0.99 ) dvd? ( >=media-libs/libdvdread-0.9.0 ) xvid? ( >=media-libs/xvid-1.0.2 ) mjpeg? ( >=media-video/mjpegtools-1.6.2-r3 ) lzo? ( =dev-libs/lzo-2* ) fame? ( >=media-libs/libfame-0.9.1 ) imagemagick? ( >=media-gfx/imagemagick-6.4.0.6 ) mpeg? ( media-libs/libmpeg3 ) mp3? ( >=media-sound/lame-3.93 ) sdl? ( media-libs/libsdl ) quicktime? ( >=media-libs/libquicktime-0.9.8 ) vorbis? ( media-libs/libvorbis ) ogg? ( media-libs/libogg ) nuv? ( =dev-libs/lzo-2* ) theora? ( media-libs/libtheora ) jpeg? ( media-libs/jpeg ) truetype? ( >=media-libs/freetype-2 ) >=media-video/ffmpeg-0.4.9_p20081014 || ( sys-libs/glibc dev-libs/libiconv ) >=media-libs/libmpeg2-0.4.0b xml? ( dev-libs/libxml2 ) X? ( x11-libs/libXaw x11-libs/libXv ) dev-util/pkgconfig v4l2? ( >=sys-kernel/linux-headers-2.6.11 ) =sys-devel/automake-1.8* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Utilities for transcoding video, audio and container formats.
+HOMEPAGE=http://www.transcoding.org/cgi-bin/transcode
+IUSE=X 3dnow a52 altivec dv dvd extrafilters mp3 fame truetype iconv imagemagick jpeg lzo mjpeg mpeg mmx network nuv ogg oss vorbis quicktime sdl sse sse2 theora v4l2 xvid xml
+KEYWORDS=alpha amd64 ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=a52? ( >=media-libs/a52dec-0.7.4 ) dv? ( >=media-libs/libdv-0.99 ) dvd? ( >=media-libs/libdvdread-0.9.0 ) xvid? ( >=media-libs/xvid-1.0.2 ) mjpeg? ( >=media-video/mjpegtools-1.6.2-r3 ) lzo? ( =dev-libs/lzo-2* ) fame? ( >=media-libs/libfame-0.9.1 ) imagemagick? ( >=media-gfx/imagemagick-6.4.0.6 ) mpeg? ( media-libs/libmpeg3 ) mp3? ( >=media-sound/lame-3.93 ) sdl? ( media-libs/libsdl ) quicktime? ( >=media-libs/libquicktime-0.9.8 ) vorbis? ( media-libs/libvorbis ) ogg? ( media-libs/libogg ) nuv? ( =dev-libs/lzo-2* ) theora? ( media-libs/libtheora ) jpeg? ( media-libs/jpeg ) truetype? ( >=media-libs/freetype-2 ) >=media-video/ffmpeg-0.4.9_p20081014 || ( sys-libs/glibc dev-libs/libiconv ) >=media-libs/libmpeg2-0.4.0b xml? ( dev-libs/libxml2 ) X? ( x11-libs/libXaw x11-libs/libXv )
+SLOT=0
+SRC_URI=http://fromani.exit1.org/transcode-1.0.7.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=025896ba02a0e7abdcb302e4f3d21740

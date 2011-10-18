@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install postinst unpack
+DESCRIPTION=Alpha Linux boot loader for SRM
+HOMEPAGE=http://aboot.sourceforge.net/
+KEYWORDS=-* alpha
+LICENSE=GPL-2
+PROVIDE=virtual/bootloader
+SLOT=0
+SRC_URI=http://aboot.sourceforge.net/tarballs/aboot-1.0_pre20040408.tar.bz2 mirror://gentoo/gentoo-headers-base-2.6.22.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f043c619f841f09db04a169ce74215cc

@@ -1,0 +1,13 @@
+DEFINED_PHASES=install prepare
+DEPEND=x11-libs/libXtst x11-libs/libX11
+DESCRIPTION=Simulate keyboard input and mouse activity, move and resize windows.
+EAPI=2
+HOMEPAGE=http://www.semicomplete.com/projects/xdotool/
+IUSE=examples
+KEYWORDS=~x86 ~amd64
+LICENSE=as-is
+RDEPEND=x11-libs/libXtst x11-libs/libX11
+SLOT=0
+SRC_URI=http://semicomplete.googlecode.com/files/xdotool-20090815.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=072b8dd052ed0b5a0076e95c121bb7a4

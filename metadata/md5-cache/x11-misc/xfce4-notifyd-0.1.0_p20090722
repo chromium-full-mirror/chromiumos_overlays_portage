@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=>=dev-libs/dbus-glib-0.72 >=gnome-base/libglade-2.6 >=x11-libs/gtk+-2.10:2 >=xfce-base/libxfce4util-4.6 >=xfce-base/libxfcegui4-4.6 >=xfce-base/xfconf-4.6 xfce-base/exo libsexy? ( >=x11-libs/libsexy-0.1.6 ) dev-util/pkgconfig dev-util/xfce4-dev-tools nls? ( dev-util/intltool sys-devel/gettext ) !<x11-libs/libnotify-0.4.5 !x11-misc/notification-daemon !xfce-extra/notification-daemon-xfce =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Xfce4 notification daemon
+EAPI=2
+HOMEPAGE=http://spuriousinterrupt.org/projects/xfce4-notifyd
+IUSE=debug nls +libsexy
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/dbus-glib-0.72 >=gnome-base/libglade-2.6 >=x11-libs/gtk+-2.10:2 >=xfce-base/libxfce4util-4.6 >=xfce-base/libxfcegui4-4.6 >=xfce-base/xfconf-4.6 xfce-base/exo libsexy? ( >=x11-libs/libsexy-0.1.6 )
+SLOT=0
+SRC_URI=mirror://gentoo/xfce4-notifyd-0.1.0_p20090722.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c6056ece05fd28a8799f6e9c13bbed4f

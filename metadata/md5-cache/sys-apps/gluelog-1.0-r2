@@ -1,0 +1,7 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Pipe and socket fittings for the system and kernel logs
+HOMEPAGE=http://www.linuxuser.co.za/projects.php3
+KEYWORDS=x86 ppc sparc amd64
+LICENSE=GPL-2
+SLOT=0
+_md5_=a008b64c1b6f43b2fdbe18a00d5d7807

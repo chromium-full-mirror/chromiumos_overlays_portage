@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=!!dev-util/cocom app-arch/zip >=dev-libs/boost-1.35.0-r5 >=media-gfx/enblend-3.0_p20080807 media-gfx/exiv2 media-libs/jpeg >=media-libs/libpano13-2.9.14 media-libs/libpng media-libs/openexr media-libs/tiff sys-libs/zlib virtual/glut x11-libs/wxGTK:2.8[opengl,-odbc] lapack? ( virtual/lapack ) sift? ( media-gfx/autopano-sift-C ) >=dev-util/cmake-2.6.2-r1 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=GUI for the creation & processing of panoramic images
+EAPI=2
+HOMEPAGE=http://hugin.sf.net
+IUSE=lapack +sift linguas_bg linguas_ca linguas_cs linguas_de linguas_en_GB linguas_es linguas_fr linguas_hu linguas_it linguas_ja linguas_ko linguas_nl linguas_pl linguas_pt_BR linguas_ru linguas_sk linguas_sl linguas_sv linguas_uk linguas_zh_CN linguas_zh_TW
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2 SIFT
+RDEPEND=!!dev-util/cocom app-arch/zip >=dev-libs/boost-1.35.0-r5 >=media-gfx/enblend-3.0_p20080807 media-gfx/exiv2 media-libs/jpeg >=media-libs/libpano13-2.9.14 media-libs/libpng media-libs/openexr media-libs/tiff sys-libs/zlib virtual/glut x11-libs/wxGTK:2.8[opengl,-odbc] lapack? ( virtual/lapack ) sift? ( media-gfx/autopano-sift-C ) media-libs/exiftool
+SLOT=0
+SRC_URI=mirror://sourceforge/hugin/hugin-2010.0.0_rc1.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	cmake-utils	6a1f5bd4039e55b76615db7bd9b70fed	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5	wxwidgets	a63777cd98e5f0d521e43c451fe4cf43
+_md5_=ae0c5d782c8ddef2532959079c6e7fd5

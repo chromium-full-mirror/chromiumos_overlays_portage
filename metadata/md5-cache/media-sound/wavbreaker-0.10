@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=dev-libs/libxml2 >=x11-libs/gtk+-2:2 alsa? ( media-libs/alsa-lib ) pulseaudio? ( media-sound/pulseaudio ) nls? ( sys-devel/gettext ) dev-util/pkgconfig =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=wavbreaker/wavmerge GTK+ utility to break or merge WAV files
+EAPI=2
+HOMEPAGE=http://wavbreaker.sourceforge.net
+IUSE=alsa nls oss pulseaudio
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/libxml2 >=x11-libs/gtk+-2:2 alsa? ( media-libs/alsa-lib ) pulseaudio? ( media-sound/pulseaudio )
+SLOT=0
+SRC_URI=mirror://sourceforge/wavbreaker/wavbreaker-0.10.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=17f23eef5dfc0806eb371d6802dce78c

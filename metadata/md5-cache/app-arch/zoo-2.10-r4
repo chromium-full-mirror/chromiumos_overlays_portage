@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Manipulate archives of files in compressed form.
+HOMEPAGE=ftp://ftp.kiarchive.ru/pub/unix/arcers
+KEYWORDS=alpha amd64 hppa ppc ppc64 sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~m68k-mint ~sparc-solaris ~x86-solaris
+LICENSE=zoo
+SLOT=0
+SRC_URI=ftp://ftp.kiarchive.ru/pub/unix/arcers/zoo-2.10pl1.tar.gz mirror://gentoo/zoo-2.10-gcc-issues-fix.patch
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=670e809dfe65a83fd5fa56be159d5a3c

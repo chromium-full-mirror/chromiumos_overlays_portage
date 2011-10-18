@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install test unpack
+DEPEND=virtual/mpi !sys-cluster/lam-mpi >=dev-lang/mono-2.0 dev-lang/perl =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=C# bindings for various MPI-implementations
+HOMEPAGE=http://www.osl.iu.edu/research/mpi.net
+IUSE=doc examples
+KEYWORDS=~amd64 ~ppc x86
+LICENSE=Boost-1.0
+RDEPEND=virtual/mpi !sys-cluster/lam-mpi >=dev-lang/mono-2.0
+RESTRICT=test
+SLOT=0
+SRC_URI=http://www.osl.iu.edu/research/mpi.net/files/1.0.0/mpi.net-1.0.0.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ae7f440fd77bf904ed909d2a2f1f3301

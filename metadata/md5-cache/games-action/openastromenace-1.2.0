@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup test unpack
+DEPEND=virtual/opengl virtual/glu media-libs/libsdl[joystick,video] media-libs/openal media-libs/freealut media-libs/libogg media-libs/libvorbis media-libs/jpeg >=dev-util/cmake-2.6.2-r1 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=Modern 3D space shooter with spaceship upgrade possibilities
+EAPI=2
+HOMEPAGE=http://sourceforge.net/projects/openastromenace/
+IUSE=linguas_en linguas_de linguas_ru
+KEYWORDS=amd64 x86
+LICENSE=GPL-3
+RDEPEND=virtual/opengl virtual/glu media-libs/libsdl[joystick,video] media-libs/openal media-libs/freealut media-libs/libogg media-libs/libvorbis media-libs/jpeg
+SLOT=0
+SRC_URI=mirror://sourceforge/openastromenace/openamenace-src-1.2.0.tar.bz2 mirror://sourceforge/openastromenace/oamenace-data-1.2.0.tar.bz2 linguas_en? ( mirror://sourceforge/openastromenace/oamenace-lang-en-1.2.0.tar.bz2 ) linguas_de? ( mirror://sourceforge/openastromenace/oamenace-lang-de-1.2.0.tar.bz2 ) linguas_ru? ( mirror://sourceforge/openastromenace/oamenace-lang-ru-1.2.0.tar.bz2 ) !linguas_en? ( !linguas_de? ( !linguas_ru? ( mirror://sourceforge/openastromenace/oamenace-lang-en-1.2.0.tar.bz2 ) ) ) mirror://gentoo/openastromenace.png
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	cmake-utils	6a1f5bd4039e55b76615db7bd9b70fed	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8ad2006b8ef1de6529a7fc524f0059c0

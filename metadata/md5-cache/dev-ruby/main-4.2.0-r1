@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=test? ( virtual/ruby-test-unit[ruby_targets_ruby18?] ) test? ( >=dev-ruby/fattr-2.1.0[ruby_targets_ruby18?] ) test? ( >=dev-ruby/arrayfields-4.7.4[ruby_targets_ruby18?] ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) test? ( virtual/rubygems[ruby_targets_ruby18?] )
+DESCRIPTION=A class factory and dsl for generating command line programs real quick.
+EAPI=2
+HOMEPAGE=http://rubyforge.org/projects/codeforpeople
+IUSE=doc test test test test ruby_targets_ruby18 test
+KEYWORDS=~amd64 ~x86
+LICENSE=Ruby
+RDEPEND=>=dev-ruby/fattr-2.1.0[ruby_targets_ruby18?] >=dev-ruby/arrayfields-4.7.4[ruby_targets_ruby18?] ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) virtual/rubygems[ruby_targets_ruby18?]
+SLOT=0
+SRC_URI=mirror://rubygems/main-4.2.0.gem
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby-fakegem	2768bd9a49d90592f8e7b88ab4077f20	ruby-ng	94f1106cb53283c8f691122e3077c9e1	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9dbf1e287a12aad367da21944d2106d8

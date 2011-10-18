@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup
+DEPEND=app-emulation/open-vm-tools-kmod >=dev-libs/glib-2 dev-libs/libdnet sys-apps/ethtool sys-process/procps virtual/pam X? ( dev-cpp/gtkmm x11-base/xorg-server x11-drivers/xf86-input-vmmouse x11-drivers/xf86-video-vmware x11-libs/gtk+ x11-libs/libnotify x11-libs/libX11 x11-libs/libXtst ) fuse? ( sys-fs/fuse ) icu? ( dev-libs/icu ) unity? ( dev-libs/uriparser x11-libs/libXScrnSaver ) xinerama? ( x11-libs/libXinerama ) dev-util/pkgconfig virtual/linux-sources doc? ( app-doc/doxygen )
+DESCRIPTION=Opensourced tools for VMware guests
+EAPI=2
+HOMEPAGE=http://open-vm-tools.sourceforge.net/
+IUSE=X doc fuse icu +pic unity xinerama
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2
+RDEPEND=app-emulation/open-vm-tools-kmod >=dev-libs/glib-2 dev-libs/libdnet sys-apps/ethtool sys-process/procps virtual/pam X? ( dev-cpp/gtkmm x11-base/xorg-server x11-drivers/xf86-input-vmmouse x11-drivers/xf86-video-vmware x11-libs/gtk+ x11-libs/libnotify x11-libs/libX11 x11-libs/libXtst ) fuse? ( sys-fs/fuse ) icu? ( dev-libs/icu ) unity? ( dev-libs/uriparser x11-libs/libXScrnSaver ) xinerama? ( x11-libs/libXinerama )
+SLOT=0
+SRC_URI=mirror://sourceforge/open-vm-tools/open-vm-tools-2009.12.16-217847.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pam	f794bf311d46a2b11d3d9362fe656bd0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=29b5b4459ecf412695cbe07c39d002b4

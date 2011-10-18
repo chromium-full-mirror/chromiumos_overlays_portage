@@ -1,0 +1,11 @@
+DEFINED_PHASES=-
+DESCRIPTION=kdeartwork - merge this to pull in all kdeartwork-derived packages
+EAPI=2
+HOMEPAGE=http://www.kde.org/
+IUSE=aqua kdeprefix
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux
+LICENSE=GPL-2
+RDEPEND=!kdeprefix? ( >=kde-base/kdeartwork-colorschemes-4.3.4[aqua=,-kdeprefix] ) kdeprefix? ( >=kde-base/kdeartwork-colorschemes-4.3.4:4.3[aqua=,kdeprefix] ) !kdeprefix? ( >=kde-base/kdeartwork-desktopthemes-4.3.4[aqua=,-kdeprefix] ) kdeprefix? ( >=kde-base/kdeartwork-desktopthemes-4.3.4:4.3[aqua=,kdeprefix] ) !kdeprefix? ( >=kde-base/kdeartwork-emoticons-4.3.4[aqua=,-kdeprefix] ) kdeprefix? ( >=kde-base/kdeartwork-emoticons-4.3.4:4.3[aqua=,kdeprefix] ) !kdeprefix? ( >=kde-base/kdeartwork-iconthemes-4.3.4[aqua=,-kdeprefix] ) kdeprefix? ( >=kde-base/kdeartwork-iconthemes-4.3.4:4.3[aqua=,kdeprefix] ) !kdeprefix? ( >=kde-base/kdeartwork-kscreensaver-4.3.4[aqua=,-kdeprefix] ) kdeprefix? ( >=kde-base/kdeartwork-kscreensaver-4.3.4:4.3[aqua=,kdeprefix] ) !kdeprefix? ( >=kde-base/kdeartwork-sounds-4.3.4[aqua=,-kdeprefix] ) kdeprefix? ( >=kde-base/kdeartwork-sounds-4.3.4:4.3[aqua=,kdeprefix] ) !kdeprefix? ( >=kde-base/kdeartwork-styles-4.3.4[aqua=,-kdeprefix] ) kdeprefix? ( >=kde-base/kdeartwork-styles-4.3.4:4.3[aqua=,kdeprefix] ) !kdeprefix? ( >=kde-base/kdeartwork-wallpapers-4.3.4[aqua=,-kdeprefix] ) kdeprefix? ( >=kde-base/kdeartwork-wallpapers-4.3.4:4.3[aqua=,kdeprefix] ) !kdeprefix? ( >=kde-base/kdeartwork-weatherwallpapers-4.3.4[aqua=,-kdeprefix] ) kdeprefix? ( >=kde-base/kdeartwork-weatherwallpapers-4.3.4:4.3[aqua=,kdeprefix] ) !kdeprefix? ( !kde-base/kdeartwork-meta:4.1[-kdeprefix] ) !kdeprefix? ( !kde-base/kdeartwork-meta:4.2[-kdeprefix] ) !kdeprefix? ( !kde-base/kdeartwork-meta:4.4[-kdeprefix] ) !kdeprefix? ( !kde-base/kdeartwork-meta:4.5[-kdeprefix] ) !kdeprefix? ( !kde-base/kdeartwork-meta:live[-kdeprefix] )
+SLOT=4.3
+_eclasses_=kde4-functions	67193781af5bca6ea586fa0a96c7114b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=dbfaba27c970847c83d0d29e3689b7ea

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=>=dev-libs/glib-2.18 >=x11-libs/gtk+-2 >=gnome-base/gconf-2.12 >=gnome-base/librsvg-2 sys-apps/dbus app-text/iso-codes x11-libs/libX11 >=dev-lang/python-2.5 >=dev-python/pygobject-2.14 nls? ( virtual/libintl ) dev-util/pkgconfig doc? ( >=dev-util/gtk-doc-1.9 ) nls? ( >=sys-devel/gettext-0.16.1 ) >=app-admin/eselect-python-20091230
+DESCRIPTION=Intelligent Input Bus for Linux / Unix OS
+EAPI=1
+HOMEPAGE=http://code.google.com/p/ibus/
+IUSE=doc nls
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND=>=dev-libs/glib-2.18 >=x11-libs/gtk+-2 >=gnome-base/gconf-2.12 >=gnome-base/librsvg-2 sys-apps/dbus app-text/iso-codes x11-libs/libX11 >=dev-lang/python-2.5 >=dev-python/pygobject-2.14 nls? ( virtual/libintl ) dev-python/pygtk >=dev-python/dbus-python-0.83 dev-python/pyxdg >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://ibus.googlecode.com/files/ibus-1.1.0.20090829.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=46485c020eb27c8776082624cf6c3648

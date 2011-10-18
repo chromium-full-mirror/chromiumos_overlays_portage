@@ -1,0 +1,9 @@
+DEFINED_PHASES=setup
+DESCRIPTION=Shoreline Firewall is an iptables-based firewall for Linux.
+HOMEPAGE=http://www.shorewall.net/
+KEYWORDS=~alpha ~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=>=net-firewall/shorewall-common-4.0
+SLOT=0
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b371ca9ff4b2cc86329340cbe0e0fa3d

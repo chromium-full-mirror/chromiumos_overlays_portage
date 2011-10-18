@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare unpack
+DEPEND==dev-python/pytools-9999 dev-libs/boost[python] >=dev-util/nvidia-cuda-toolkit-2.0 >=dev-python/numpy-1.0.4 virtual/opengl >=dev-util/git-1.6 >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=Python wrapper for NVIDIA CUDA
+EAPI=2
+HOMEPAGE=http://mathema.tician.de/software/pycuda
+IUSE=examples opengl
+LICENSE=GPL-2
+RDEPEND==dev-python/pytools-9999 dev-libs/boost[python] >=dev-util/nvidia-cuda-toolkit-2.0 >=dev-python/numpy-1.0.4 virtual/opengl >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	git	551824b681382dda2f4f5040597fdc07	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3a495fd146443ce7cea8e9e25f5b8ff3

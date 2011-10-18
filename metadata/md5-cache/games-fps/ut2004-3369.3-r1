@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile config configure install postinst postrm preinst prepare setup unpack
+DEPEND=app-arch/p7zip
+DESCRIPTION=Editor's Choice Edition plus Mega Pack for the critically-acclaimed first-person shooter
+EAPI=2
+HOMEPAGE=http://www.unrealtournament2004.com/
+IUSE=dedicated opengl
+KEYWORDS=amd64 x86
+LICENSE=ut2003
+PROPERTIES=interactive
+RDEPEND=sys-libs/glibc games-fps/ut2004-data games-fps/ut2004-bonuspack-ece games-fps/ut2004-bonuspack-mega dedicated? ( !games-server/ut2004-ded ) opengl? ( =virtual/libstdc++-3.3 virtual/opengl x11-libs/libXext x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp media-libs/libsdl media-libs/openal ) !dedicated? ( !opengl? ( =virtual/libstdc++-3.3 virtual/opengl x11-libs/libXext x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp media-libs/libsdl media-libs/openal ) )
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=mirror://3dgamers/unrealtourn2k4/ut2004-lnxpatch3369-2.tar.bz2 http://speculum.twistedgamer.com/pub/0day.icculus.org/ut2004/ut2004-lnxpatch3369-2.tar.bz2 http://treefort.icculus.org/ut2004/ut2004-lnxpatch3369-2.tar.bz2 http://sonic-lux.net/data/mirror/ut2004/ut2004-lnxpatch3369-2.tar.bz2 mirror://gentoo/ut2004-v3369-3-linux-dedicated.7z
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2f318197f0b24056006c48322b60e1d5

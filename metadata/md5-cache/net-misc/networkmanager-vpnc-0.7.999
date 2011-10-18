@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install
+DEPEND=>=net-misc/networkmanager-0.7.999 >=dev-libs/dbus-glib-0.74 >=net-misc/vpnc-0.5 gnome? ( >=x11-libs/gtk+-2.6 gnome-base/gconf:2 gnome-base/gnome-keyring gnome-base/libglade:2.0 ) sys-devel/gettext dev-util/intltool dev-util/pkgconfig
+DESCRIPTION=NetworkManager VPNC plugin
+EAPI=2
+HOMEPAGE=http://www.gnome.org/projects/NetworkManager/
+IUSE=gnome
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=net-misc/networkmanager-0.7.999 >=dev-libs/dbus-glib-0.74 >=net-misc/vpnc-0.5 gnome? ( >=x11-libs/gtk+-2.6 gnome-base/gconf:2 gnome-base/gnome-keyring gnome-base/libglade:2.0 )
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://gnome/sources/NetworkManager-vpnc/0.7/NetworkManager-vpnc-0.7.999.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	gnome.org	6d236bfa516020939a4adbc435063f79	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=213e2ad198c2016d937952c2fab1c0a2

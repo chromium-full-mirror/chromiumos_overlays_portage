@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Port of 7-Zip archiver for Unix
+HOMEPAGE=http://p7zip.sourceforge.net/
+IUSE=static doc
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+LICENSE=LGPL-2.1
+SLOT=0
+SRC_URI=mirror://sourceforge/p7zip/p7zip_4.58_src_all.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=86e6a14492e045ddbe249e5107e47a15

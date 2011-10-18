@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Free Unix Spectrum Emulator by Philip Kendall
+HOMEPAGE=http://fuse-emulator.sourceforge.net/
+IUSE=gtk sdl svga fbcon libdsk xml png
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/perl xml? ( dev-libs/libxml2 ) png? ( media-libs/libpng ) ~app-emulation/libspectrum-0.2.2 || ( gtk? ( >=x11-libs/gtk+-2 ) sdl? ( media-libs/libsdl ) svga? ( media-libs/svgalib ) fbcon? ( virtual/linux-sources ) !svga? ( !fbcon? ( !sdl? ( x11-libs/libX11 x11-libs/libXext ) ) ) ) >=dev-libs/glib-2 libdsk? ( >=app-emulation/libdsk-1.1.5 app-emulation/lib765 )
+SLOT=0
+SRC_URI=mirror://sourceforge/fuse-emulator/fuse-0.7.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9bbf8aa70b3ee319321ef2b84e4aef6f

@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare
+DEPEND=dev-java/sun-jdk:1.6 dev-libs/openssl
+DESCRIPTION=Decrypt keys from an AACS source (HD DVD / Blu-Ray)
+EAPI=2
+HOMEPAGE=http://forum.doom9.org/showthread.php?t=123311
+KEYWORDS=~amd64
+LICENSE=as-is
+RDEPEND=dev-libs/openssl
+SLOT=0
+SRC_URI=mirror://gentoo/aacskeys-0.4.0c.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a0ef3b4e79f40583abd9ad95d33a58b4

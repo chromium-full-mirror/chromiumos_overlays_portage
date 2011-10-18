@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm preinst
+DESCRIPTION=distributed.net client
+HOMEPAGE=http://www.distributed.net
+KEYWORDS=amd64 x86
+LICENSE=distributed.net
+RDEPEND=net-dns/bind-tools
+RESTRICT=mirror
+SLOT=0
+SRC_URI=x86? ( http://http.distributed.net/pub/dcti/v2.9011/dnetc496-linux-x86-elf-uclibc.tar.gz ) amd64? ( http://http.distributed.net/pub/dcti/v2.9011/dnetc496-linux-amd64-elf.tar.gz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=80a2693b4389289f22b898d8bde53064

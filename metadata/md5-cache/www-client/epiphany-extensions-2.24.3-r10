@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup unpack
+DEPEND=>=www-client/epiphany-2.24 app-text/opensp >=dev-libs/glib-2.15.5 >=gnome-base/gconf-2.0 >=dev-libs/libxml2-2.6 >=x11-libs/gtk+-2.11.6 >=gnome-base/libglade-2 =net-libs/xulrunner-1.9* dbus? ( >=dev-libs/dbus-glib-0.34 ) pcre? ( >=dev-libs/libpcre-3.9-r2 ) python? ( >=dev-python/pygtk-2.11 ) gnome-base/gnome-common >=dev-util/intltool-0.40 >=dev-util/pkgconfig-0.20 >=app-text/gnome-doc-utils-0.3.2 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b >=sys-apps/sed-4 >=app-admin/eselect-python-20091230
+DESCRIPTION=Extensions for the Epiphany web browser
+HOMEPAGE=http://www.gnome.org/projects/epiphany/extensions.html
+IUSE=dbus examples pcre python debug
+KEYWORDS=~alpha amd64 ~hppa ~ia64 ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=>=www-client/epiphany-2.24 app-text/opensp >=dev-libs/glib-2.15.5 >=gnome-base/gconf-2.0 >=dev-libs/libxml2-2.6 >=x11-libs/gtk+-2.11.6 >=gnome-base/libglade-2 =net-libs/xulrunner-1.9* dbus? ( >=dev-libs/dbus-glib-0.34 ) pcre? ( >=dev-libs/libpcre-3.9-r2 ) python? ( >=dev-python/pygtk-2.11 ) >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=mirror://gnome/sources/epiphany-extensions/2.24/epiphany-extensions-2.24.3.tar.bz2 mirror://gentoo/epiphany-extensions-2.21.92-sessionsaver-v4.patch.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=a04ae53d8b5b15484fde558566a665f3

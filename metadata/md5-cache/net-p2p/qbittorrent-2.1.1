@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup unpack
+DEPEND=net-libs/rb_libtorrent x11-libs/qt-core:4 X? ( x11-libs/qt-gui:4 libnotify? ( x11-libs/qt-gui:4[glib] ) ) >=dev-libs/boost-1.34.1 dev-util/pkgconfig
+DESCRIPTION=BitTorrent client in C++ and Qt
+EAPI=2
+HOMEPAGE=http://www.qbittorrent.org/
+IUSE=+X geoip libnotify
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=net-libs/rb_libtorrent x11-libs/qt-core:4 X? ( x11-libs/qt-gui:4 libnotify? ( x11-libs/qt-gui:4[glib] ) ) >=dev-libs/boost-1.34.1 >=dev-lang/python-2.3 geoip? ( dev-libs/geoip ) libnotify? ( x11-libs/libnotify )
+SLOT=0
+SRC_URI=mirror://sourceforge/qbittorrent/qbittorrent-2.1.1.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	confutils	a80706bb5b9ddcf6bbd14365656d4985	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4-r2	9324cde5d9328d2445c95232dd8bc158	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9f6cb8d7739108f63d0860b6842cae39

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile config install postinst
+DEPEND=>=dev-libs/bglibs-1.022 >=net-libs/cvm-0.71
+DESCRIPTION=Mail server network protocol front-ends
+HOMEPAGE=http://untroubled.org/mailfront/
+KEYWORDS=~ppc ~sparc x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/bglibs-1.022 >=net-libs/cvm-0.71 virtual/qmail net-libs/cvm
+SLOT=0
+SRC_URI=http://untroubled.org/mailfront/archive/mailfront-0.98.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=32ec4f82e205fd864baf279445664944

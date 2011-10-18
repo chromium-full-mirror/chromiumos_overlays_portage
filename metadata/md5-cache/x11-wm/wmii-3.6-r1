@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=~sys-libs/libixp-0.4 x11-libs/libX11
+DESCRIPTION=A dynamic window manager for X11
+HOMEPAGE=http://wmii.suckless.org/
+KEYWORDS=~amd64 ~ppc64 ~x86
+LICENSE=MIT
+RDEPEND=~sys-libs/libixp-0.4 x11-libs/libX11 x11-apps/xmessage x11-apps/xsetroot x11-misc/dmenu
+SLOT=0
+SRC_URI=http://www.suckless.org/download/wmii-3.6.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c645efbe7bc41f100e70b4efd1b537f4

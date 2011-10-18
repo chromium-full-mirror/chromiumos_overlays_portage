@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=!sys-process/schedutils !sys-apps/setarch >=sys-libs/ncurses-5.2-r2 !<sys-libs/e2fsprogs-libs-1.41.8 !<sys-fs/e2fsprogs-1.41.8 perl? ( dev-lang/perl ) selinux? ( sys-libs/libselinux ) slang? ( sys-libs/slang ) nls? ( sys-devel/gettext ) virtual/os-headers
+DESCRIPTION=Various useful Linux utilities
+EAPI=2
+HOMEPAGE=http://www.kernel.org/pub/linux/utils/util-linux-ng/
+IUSE=crypt loop-aes nls old-linux perl selinux slang uclibc unicode
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=!sys-process/schedutils !sys-apps/setarch >=sys-libs/ncurses-5.2-r2 !<sys-libs/e2fsprogs-libs-1.41.8 !<sys-fs/e2fsprogs-1.41.8 perl? ( dev-lang/perl ) selinux? ( sys-libs/libselinux ) slang? ( sys-libs/slang )
+SLOT=0
+SRC_URI=mirror://kernel/linux/utils/util-linux-ng/v2.17/util-linux-ng-2.17.tar.bz2 loop-aes? ( http://loop-aes.sourceforge.net/updates/util-linux-ng-2.17-20100120.diff.bz2 )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=98f562eec486841136d8ef57a0c6ded5

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install test unpack
+DEPEND=doc? ( dev-ruby/rake ) test? ( dev-ruby/rake dev-ruby/mocha dev-ruby/test-spec >=dev-ruby/pdf-reader-0.7.3 dev-ruby/ttfunk ) virtual/ruby
+DESCRIPTION=Fast, Nimble PDF Generation For Ruby
+EAPI=2
+HOMEPAGE=http://prawn.majesticseacreature.com/
+IUSE=doc examples test
+KEYWORDS=~amd64
+LICENSE=|| ( GPL-2 Ruby )
+RDEPEND=dev-ruby/ttfunk virtual/ruby
+SLOT=0
+SRC_URI=http://github.com/sandal/prawn/tarball/0.4.1 -> prawn-0.4.1.tgz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby	dfc4f482954636675998a350b1d078b5	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d42ff330e11c424b3a3f3a1ae7463c8b

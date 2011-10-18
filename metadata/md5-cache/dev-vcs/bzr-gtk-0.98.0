@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=>=dev-vcs/bzr-1.6_rc1 >=dev-python/pygtk-2.8 nautilus? ( dev-python/nautilus-python ) >=dev-python/pycairo-1.0 >=app-admin/eselect-python-20091230 >=dev-lang/python-2.4 >=app-admin/eselect-python-20091230 >=dev-lang/python-2.4 dev-lang/python
+DESCRIPTION=A GTK+ interfaces to most Bazaar operations
+EAPI=1
+HOMEPAGE=http://bazaar-vcs.org/bzr-gtk
+IUSE=gconf gnome-keyring gpg +sourceview libnotify nautilus
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-vcs/bzr-1.6_rc1 >=dev-python/pygtk-2.8 nautilus? ( dev-python/nautilus-python ) >=dev-python/pycairo-1.0 gnome-keyring? ( dev-python/gnome-keyring-python ) gpg? ( app-crypt/seahorse ) sourceview? ( dev-python/pygtksourceview gconf? ( dev-python/gconf-python ) ) >=app-admin/eselect-python-20091230 >=dev-lang/python-2.4 >=app-admin/eselect-python-20091230 >=dev-lang/python-2.4 dev-lang/python
+SLOT=0
+SRC_URI=http://launchpad.net/bzr-gtk/trunk/0.98.0/+download/bzr-gtk-0.98.0.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2cde05a15c3bec539bbfd1340eebe166

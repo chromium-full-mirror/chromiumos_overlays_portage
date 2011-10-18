@@ -1,0 +1,10 @@
+DEFINED_PHASES=install unpack
+DEPEND=>=sys-devel/libtool-1.4.1-r8 dev-libs/openssl
+DESCRIPTION=libdomainkeys is a library usable by MTAs to verify and create signatures of e-mail headers.
+HOMEPAGE=http://domainkeys.sourceforge.net/
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86
+LICENSE=libdomainkeys-1.1
+SLOT=0
+SRC_URI=mirror://sourceforge/domainkeys/libdomainkeys-0.68.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8f271fbcc19d4ef39b73e3f60f25f509

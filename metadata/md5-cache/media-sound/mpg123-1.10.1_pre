@@ -1,0 +1,11 @@
+DEFINED_PHASES=configure install
+DEPEND=alsa? ( media-libs/alsa-lib ) jack? ( media-sound/jack-audio-connection-kit ) nas? ( media-libs/nas ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-sound/pulseaudio ) sdl? ( media-libs/libsdl ) sys-devel/libtool dev-util/pkgconfig
+DESCRIPTION=a realtime MPEG 1.0/2.0/2.5 audio player for layers 1, 2 and 3
+EAPI=2
+HOMEPAGE=http://www.mpg123.org/
+IUSE=3dnow 3dnowext alsa altivec ipv6 jack mmx nas +network oss portaudio pulseaudio sdl sse
+LICENSE=GPL-2 LGPL-2.1
+RDEPEND=alsa? ( media-libs/alsa-lib ) jack? ( media-sound/jack-audio-connection-kit ) nas? ( media-libs/nas ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-sound/pulseaudio ) sdl? ( media-libs/libsdl ) sys-devel/libtool
+SLOT=0
+SRC_URI=http://www.mpg123.org/download/mpg123-1.10.1-prerelease.tar.bz2
+_md5_=6f1f275738d45a335c13445a2b050339

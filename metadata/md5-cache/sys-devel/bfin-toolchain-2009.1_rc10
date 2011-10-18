@@ -1,0 +1,12 @@
+DEFINED_PHASES=install unpack
+DEPEND=>=app-arch/rpm2targz-9.0.0.3g
+DESCRIPTION=toolchain for Blackfin processors
+HOMEPAGE=http://blackfin.uclinux.org/
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND==sys-libs/readline-5*
+RESTRICT=strip
+SLOT=0
+SRC_URI=amd64? ( http://blackfin.uclinux.org/gf/download/frsrelease/449/6862/blackfin-toolchain-09r1-10.x86_64.tar.bz2 http://blackfin.uclinux.org/gf/download/frsrelease/449/6864/blackfin-toolchain-elf-gcc-4.1-09r1-10.x86_64.tar.bz2 http://blackfin.uclinux.org/gf/download/frsrelease/449/6870/blackfin-toolchain-uclibc-default-09r1-10.x86_64.tar.bz2 http://blackfin.uclinux.org/gf/download/frsrelease/449/6860/blackfin-jtag-tools-09r1-10.x86_64.tar.bz2 ) x86? ( http://blackfin.uclinux.org/gf/download/frsrelease/449/6843/blackfin-toolchain-09r1-10.i386.tar.bz2 http://blackfin.uclinux.org/gf/download/frsrelease/449/6845/blackfin-toolchain-elf-gcc-4.1-09r1-10.i386.tar.bz2 http://blackfin.uclinux.org/gf/download/frsrelease/449/6848/blackfin-toolchain-uclibc-default-09r1-10.i386.tar.bz2 http://blackfin.uclinux.org/gf/download/frsrelease/449/6841/blackfin-jtag-tools-09r1-10.i386.tar.bz2 )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	rpm	e703d62d2e2b396a7fb0262b79fdba53	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=49f57b277d63bb848ff4fe2fb785162a

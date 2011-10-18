@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
+DEPEND=>=dev-libs/glib-2.6.0 >=x11-libs/gtk+-2.11.0 >=gnome-base/gnome-keyring-0.6.0 >=sys-apps/hal-0.5.9 >=dev-libs/dbus-glib-0.71 >=gnome-base/libglade-2.5.0 >=x11-libs/libnotify-0.4.3 >=x11-libs/libwnck-2.10.0 >=x11-libs/cairo-1.0.0 >=gnome-base/gnome-panel-2 >=gnome-base/gconf-2.10 >=media-libs/libcanberra-0.10[gtk] >=sys-apps/devicekit-001 >=sys-apps/devicekit-power-005 >=dev-libs/libunique-1 >=x11-apps/xrandr-1.2 x11-libs/libX11 x11-libs/libXext policykit? ( >=sys-auth/policykit-0.8 >=sys-apps/hal-0.5.12_rc1-r2[policykit] >=gnome-extra/policykit-gnome-0.8 ) sys-devel/gettext app-text/scrollkeeper app-text/docbook-xml-dtd:4.3 >=dev-util/pkgconfig-0.9 >=dev-util/intltool-0.35 >=app-text/gnome-doc-utils-0.3.2 doc? ( app-text/xmlto app-text/docbook-sgml-utils app-text/docbook-xml-dtd:4.4 app-text/docbook-sgml-dtd:4.1 app-text/docbook-xml-dtd:4.1.2 ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b >=sys-apps/sed-4 test? ( !prefix? ( x11-base/xorg-server ) x11-apps/xhost )
+DESCRIPTION=Gnome Power Manager
+EAPI=2
+HOMEPAGE=http://www.gnome.org/projects/gnome-power-manager/
+IUSE=doc policykit test debug test
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/glib-2.6.0 >=x11-libs/gtk+-2.11.0 >=gnome-base/gnome-keyring-0.6.0 >=sys-apps/hal-0.5.9 >=dev-libs/dbus-glib-0.71 >=gnome-base/libglade-2.5.0 >=x11-libs/libnotify-0.4.3 >=x11-libs/libwnck-2.10.0 >=x11-libs/cairo-1.0.0 >=gnome-base/gnome-panel-2 >=gnome-base/gconf-2.10 >=media-libs/libcanberra-0.10[gtk] >=sys-apps/devicekit-001 >=sys-apps/devicekit-power-005 >=dev-libs/libunique-1 >=x11-apps/xrandr-1.2 x11-libs/libX11 x11-libs/libXext policykit? ( >=sys-auth/policykit-0.8 >=sys-apps/hal-0.5.12_rc1-r2[policykit] >=gnome-extra/policykit-gnome-0.8 )
+SLOT=0
+SRC_URI=mirror://gnome/sources/gnome-power-manager/2.26/gnome-power-manager-2.26.4.tar.bz2 mirror://gentoo/gnome-power-manager-2.26.4-cpufreq-patches.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	virtualx	e9162f65645513120b4e12863a5fa972
+_md5_=152d3d747799e480d6681eefa2de9f7d

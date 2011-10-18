@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst preinst unpack
+DEPEND=media-libs/jpeg sys-libs/libcap media-tv/linuxtv-dvb-headers
+DESCRIPTION=Video Disk Recorder - turns a pc into a powerful set top box for DVB
+HOMEPAGE=http://www.tvdr.de/
+IUSE=vanilla aio bigpatch jumpplay dolby-record-switch dvbplayer lnbsharing sourcecaps cmdsubmenu dxr3-audio-denoise child-protection yaepg setup-plugin submenu subtitles rotor noepg
+KEYWORDS=~amd64 ~ppc x86
+LICENSE=GPL-2
+PDEPEND=setup-plugin? ( >=media-plugins/vdr-setup-0.3.1-r1 )
+RDEPEND=media-libs/jpeg sys-libs/libcap dev-lang/perl || ( >=media-tv/gentoo-vdr-scripts-0.4.2 media-tv/vdrplugin-rebuild ) >=media-tv/gentoo-vdr-scripts-0.3.5
+SLOT=0
+SRC_URI=ftp://ftp.tvdr.de/vdr/vdr-1.4.6.tar.bz2 mirror://gentoo/gentoo-vdr-patchset-1.4.6-1.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=22ce0b8f3e300fbd91b922857beaf7c5

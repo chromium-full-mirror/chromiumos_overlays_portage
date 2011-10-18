@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=>=app-text/aspell-0.60
+DESCRIPTION=Spanish language dictionary for aspell
+HOMEPAGE=http://aspell.net
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd
+LICENSE=GPL-2
+PROVIDE=virtual/aspell-dict
+RDEPEND=>=app-text/aspell-0.60
+SLOT=0
+SRC_URI=mirror://gnu/aspell/dict/es/aspell6-es-1.9a-1.tar.bz2
+_eclasses_=aspell-dict	e91c58c692daf98ca6d2d259a8204a21
+_md5_=c06c86cce18f67bb1fe680a002671de4

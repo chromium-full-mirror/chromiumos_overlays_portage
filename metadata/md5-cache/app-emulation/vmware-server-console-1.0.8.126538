@@ -1,0 +1,12 @@
+DEFINED_PHASES=config install postinst postrm preinst setup unpack
+DEPEND=>=sys-libs/glibc-2.3.5 virtual/os-headers >=dev-lang/perl-5 >=sys-apps/portage-2.0.54 app-arch/unzip x11-misc/shared-mime-info
+DESCRIPTION=VMware Remote Console for Linux
+HOMEPAGE=http://www.vmware.com/
+KEYWORDS=-* amd64 x86
+LICENSE=vmware
+RDEPEND=>=sys-libs/glibc-2.3.5 amd64? ( app-emulation/emul-linux-x86-gtklibs ) !amd64? ( x11-libs/libSM x11-libs/libICE x11-libs/libX11 x11-libs/libXau x11-libs/libXcursor x11-libs/libXdmcp x11-libs/libXext x11-libs/libXfixes x11-libs/libXft x11-libs/libXi x11-libs/libXrandr x11-libs/libXrender x11-libs/libXt x11-libs/libXtst ) >=dev-lang/perl-5 !<sys-apps/dbus-0.62
+RESTRICT=strip
+SLOT=0
+SRC_URI=mirror://vmware/software/vmserver/VMware-server-linux-client-1.0.8-126538.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pax-utils	0bce06fc565015448fab5af5dbffc5e3	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5	vmware	8792edbeb1cb50c41256961f440e9f96
+_md5_=6e701283ed2c55cf076e39d46fe24790

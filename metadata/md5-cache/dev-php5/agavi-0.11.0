@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup
+DEPEND=>=dev-php/PEAR-PEAR-1.6.2-r1 >=dev-php5/phing-2.2.0 dev-php/PEAR-PhpDocumentor =dev-lang/php-5* dev-lang/php >=dev-php/PEAR-PEAR-1.6.1
+DESCRIPTION=PHP5 MVC Application Framework.
+HOMEPAGE=http://www.agavi.org/
+IUSE=minimal
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1 as-is public-domain CCPL-Attribution-ShareAlike-2.5
+RDEPEND=>=dev-php5/phing-2.2.0 !minimal? ( dev-php5/creole dev-php5/propel ) =dev-lang/php-5* dev-lang/php >=dev-php/PEAR-PEAR-1.6.1
+SLOT=0
+SRC_URI=http://agavi.org/downloads/releases/0.11.0.tgz
+_eclasses_=depend.php	b574aac6c7b0a3d079a293788cd20aaf	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	php-pear-lib-r1	f8a94c3d473ac3f83126f14fdffbb8da	phpconfutils	f0ebaebc168cafb7b6e951280ab2dce5	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6505137038187fb48855f79164ade62d

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=>=dev-libs/eventlog-0.2 spoof-source? ( net-libs/libnet ) tcpd? ( >=sys-apps/tcp-wrappers-7.6 ) >=dev-libs/glib-2.2 dev-util/pkgconfig sys-devel/flex >=sys-apps/sed-4
+DESCRIPTION=syslog replacement with advanced filtering features
+HOMEPAGE=http://www.balabit.com/products/syslog_ng/
+IUSE=hardened ipv6 selinux spoof-source static tcpd
+KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+PROVIDE=virtual/logger
+RDEPEND=>=dev-libs/eventlog-0.2 spoof-source? ( net-libs/libnet ) tcpd? ( >=sys-apps/tcp-wrappers-7.6 ) >=dev-libs/glib-2.2
+SLOT=0
+SRC_URI=http://www.balabit.com/downloads/files/syslog-ng/sources/2.0/src/syslog-ng-2.0.10.tar.gz
+_eclasses_=fixheadtails	059c47dd86229aa6382393274677acfe
+_md5_=7971221070d0b3621fb333456be88723

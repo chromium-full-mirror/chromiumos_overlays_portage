@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
+DEPEND=>=sys-libs/ncurses-5 >=dev-perl/Curses-1.06 dev-lang/perl
+DESCRIPTION=Curses::Widgets is designed to provide high level APIs for rapid user interface design on the console in Perl.
+HOMEPAGE=http://www.digitalmages.com/perl/CursesWidgets/index.html
+KEYWORDS=amd64 ia64 ppc s390 sparc x86
+LICENSE=GPL-2
+RDEPEND=>=sys-libs/ncurses-5 >=dev-perl/Curses-1.06 dev-lang/perl
+SLOT=0
+SRC_URI=http://www.digitalmages.com/perl/CursesWidgets/downloads/CursesWidgets-1.997.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a64f3a787b368b36a88be2ef09adcf63

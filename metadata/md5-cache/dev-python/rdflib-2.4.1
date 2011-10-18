@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=>=dev-python/setuptools-0.6_rc5 >=app-admin/eselect-python-20091230 >=dev-lang/python-2.3 dev-lang/python
+DESCRIPTION=RDF library containing a triple store and parser/serializer
+EAPI=2
+HOMEPAGE=http://rdflib.net/
+IUSE=berkdb examples mysql redland sqlite zodb
+KEYWORDS=~amd64 ~x86 ~x86-linux
+LICENSE=BSD-2
+RDEPEND=mysql? ( dev-python/mysql-python ) sqlite? ( >=dev-db/sqlite-3.3.13 || ( dev-python/pysqlite >=dev-lang/python-2.5 ) ) berkdb? ( sys-libs/db ) redland? ( dev-libs/redland-bindings[python] ) zodb? ( net-zope/zodb ) >=app-admin/eselect-python-20091230 >=dev-lang/python-2.3 dev-lang/python
+RESTRICT=test
+SLOT=0
+SRC_URI=http://rdflib.net/rdflib-2.4.1.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6ca8779af1061a274770f47a05c983c2

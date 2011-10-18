@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=app-editors/xemacs
+DESCRIPTION=Miscellaneous editor extensions, you probably need this.
+HOMEPAGE=http://xemacs.org/
+KEYWORDS=alpha amd64 ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=app-xemacs/xemacs-base app-xemacs/xemacs-devel app-xemacs/fsf-compat app-xemacs/dired app-xemacs/mail-lib
+SLOT=0
+SRC_URI=http://ftp.xemacs.org/pub/xemacs/packages/edit-utils-2.39-pkg.tar.gz
+_eclasses_=xemacs-packages	6dd96054b458a462c15a08ea670d9ac6
+_md5_=a895497c1462b961de6f38d96800fd07

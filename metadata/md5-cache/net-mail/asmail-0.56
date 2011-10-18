@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=jpeg? ( media-libs/jpeg ) X? ( x11-libs/libXpm ) X? ( x11-proto/xextproto )
+DESCRIPTION=Afterstep mail-checker like xbiff
+HOMEPAGE=http://asmail.sourceforge.net/
+IUSE=X jpeg
+KEYWORDS=~amd64 x86 ~ppc
+LICENSE=GPL-2
+RDEPEND=jpeg? ( media-libs/jpeg ) X? ( x11-libs/libXpm )
+SLOT=0
+SRC_URI=mirror://sourceforge/asmail/asmail-0.56.tar.gz
+_md5_=c38e4daca97bd837e5a6ec8f9cf7378e

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=sys-apps/hal >=net-libs/gnet-2.0.0 !app-pda/synce-dccm !app-pda/synce-vdccm !app-pda/synce-odccm =app-pda/synce-libsynce-0.14* =app-pda/synce-librapi2-0.14* =app-pda/synce-librra-0.14*
+DESCRIPTION=SynCE - hal connection manager
+HOMEPAGE=http://sourceforge.net/projects/synce/
+KEYWORDS=~x86 ~amd64
+LICENSE=MIT
+RDEPEND=sys-apps/hal >=net-libs/gnet-2.0.0 !app-pda/synce-dccm !app-pda/synce-vdccm !app-pda/synce-odccm =app-pda/synce-libsynce-0.14* =app-pda/synce-librapi2-0.14* =app-pda/synce-librra-0.14* =app-pda/synce-sync-engine-0.14* app-pda/synce-serial net-misc/dhcp
+SLOT=0
+SRC_URI=mirror://sourceforge/synce/synce-hal-0.14.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=5f1b8d41575ef1cd05fe05081d687793

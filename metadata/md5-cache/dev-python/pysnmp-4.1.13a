@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND=>=dev-python/pyasn1-0.0.6a dev-python/pycrypto >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DESCRIPTION=SNMP framework in Python. Not a wrapper.
+EAPI=2
+HOMEPAGE=http://pysnmp.sf.net/ http://pypi.python.org/pypi/pysnmp
+KEYWORDS=~amd64 ~ia64 ~ppc ~sparc ~x86
+LICENSE=BSD
+RDEPEND=>=dev-python/pyasn1-0.0.6a dev-python/pycrypto dev-python/setuptools >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+SLOT=0
+SRC_URI=http://pypi.python.org/packages/source/p/pysnmp/pysnmp-4.1.13a.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=48599729e20e3fea436d1c8f5c5f1da3

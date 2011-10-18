@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=virtual/libusb:0 doc? ( app-doc/doxygen ) python? ( dev-lang/swig >=dev-lang/python-2.1.0 )
+DESCRIPTION=Provides a generic and flexible way to access and interact with USB HID devices
+EAPI=1
+HOMEPAGE=http://libhid.alioth.debian.org/
+IUSE=debug doc python
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=virtual/libusb:0
+SLOT=0
+SRC_URI=http://beta.magicaltux.net/libhid-0.2.16.tar.gz
+_md5_=6c009dcedeeb12c792a32da7ba01d152

@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND=>=media-sound/gmpc-0.18.0 dev-libs/libxml2 x11-libs/xosd dev-util/pkgconfig
+DESCRIPTION=This plugin provides an on-screen-display using xosd
+HOMEPAGE=http://gmpcwiki.sarine.nl/index.php/Osd
+KEYWORDS=amd64 ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=>=media-sound/gmpc-0.18.0 dev-libs/libxml2 x11-libs/xosd
+SLOT=0
+SRC_URI=mirror://sourceforge/musicpd/gmpc-osd-0.18.0.tar.gz
+_md5_=fba18ff30b62f61ad61e342315583e9a

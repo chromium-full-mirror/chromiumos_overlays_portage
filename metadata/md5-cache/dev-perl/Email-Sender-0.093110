@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=virtual/perl-Scalar-List-Utils virtual/perl-File-Spec >=dev-perl/Email-Abstract-3 dev-perl/Email-Simple dev-perl/List-MoreUtils dev-perl/Sys-Hostname-Long virtual/perl-libnet dev-perl/Moose dev-perl/Email-Address test? ( dev-perl/Capture-Tiny ) dev-lang/perl[-build]
+DESCRIPTION=A library for sending email
+EAPI=2
+HOMEPAGE=http://search.cpan.org/dist/Email-Sender/
+IUSE=test
+KEYWORDS=amd64 x86
+LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
+RDEPEND=virtual/perl-Scalar-List-Utils virtual/perl-File-Spec >=dev-perl/Email-Abstract-3 dev-perl/Email-Simple dev-perl/List-MoreUtils dev-perl/Sys-Hostname-Long virtual/perl-libnet dev-perl/Moose dev-perl/Email-Address dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/R/RJ/RJBS//Email-Sender-0.093110.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=bb877da786271e7e684329b41014204a

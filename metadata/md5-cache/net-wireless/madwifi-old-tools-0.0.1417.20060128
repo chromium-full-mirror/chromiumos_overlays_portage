@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst setup unpack
+DEPEND=virtual/libc
+DESCRIPTION=Tools for configuration of Atheros based IEEE 802.11a/b/g wireless LAN cards
+HOMEPAGE=http://www.madwifi-project.org/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=|| ( BSD GPL-2 )
+RDEPEND=!net-wireless/madwifi-ng-tools
+SLOT=0
+SRC_URI=http://snapshots.madwifi-project.org/madwifi-old/madwifi-old-r1417-20060128.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=58b3f5f393dbc9e773ecc6bae6c8a0a4

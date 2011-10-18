@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=sys-apps/findutils app-arch/unzip
+DESCRIPTION=Digital Mars D Compiler
+HOMEPAGE=http://www.digitalmars.com/d/
+KEYWORDS=~x86
+LICENSE=DMD
+RDEPEND=amd64? ( app-emulation/emul-linux-x86-compat ) x86? ( ~virtual/libstdc++-3.3 )
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=http://ftp.digitalmars.com/dmd.1.016.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=99b3ffb4b4cd4985d63970cb16b5eb8a

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=dev-libs/expat net-libs/udns >=net-dns/libidn-0.3 >=virtual/gsasl-0.2.27 berkdb? ( >=sys-libs/db-4.1.25 ) mysql? ( virtual/mysql ) ldap? ( >=net-nds/openldap-2.1.0 ) pam? ( virtual/pam ) postgres? ( virtual/postgresql-base ) ssl? ( >=dev-libs/openssl-0.9.6b ) sqlite? ( >=dev-db/sqlite-3 ) zlib? ( sys-libs/zlib )
+DESCRIPTION=Open Source Jabber Server
+HOMEPAGE=http://jabberd2.xiaoka.com/
+IUSE=berkdb debug memdebug mysql ldap pam postgres sqlite ssl zlib
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/expat net-libs/udns >=net-dns/libidn-0.3 >=virtual/gsasl-0.2.27 berkdb? ( >=sys-libs/db-4.1.25 ) mysql? ( virtual/mysql ) ldap? ( >=net-nds/openldap-2.1.0 ) pam? ( virtual/pam ) postgres? ( virtual/postgresql-base ) ssl? ( >=dev-libs/openssl-0.9.6b ) sqlite? ( >=dev-db/sqlite-3 ) zlib? ( sys-libs/zlib ) >=net-im/jabber-base-0.01 !net-im/jabberd
+SLOT=0
+SRC_URI=http://ftp.xiaoka.com/jabberd2/releases/jabberd-2.2.8.tar.bz2
+_eclasses_=db-use	8d7baa3efc7c38c7d5c5e7353c5460dc	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pam	f794bf311d46a2b11d3d9362fe656bd0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=79c8436eca4bb30aef5482832a3d4daf

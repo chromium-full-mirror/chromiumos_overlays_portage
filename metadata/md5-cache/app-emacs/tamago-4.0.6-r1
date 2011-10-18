@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=app-arch/gzip >=sys-apps/sed-4 >=virtual/emacs-21
+DESCRIPTION=Emacs Backend for Sj3 Ver.2, FreeWnn, Wnn6 and Canna
+HOMEPAGE=http://www.m17n.org/tamago/index.en.html
+IUSE=canna
+KEYWORDS=alpha ~amd64 ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=canna? ( app-i18n/canna ) >=virtual/emacs-21
+SLOT=0
+SRC_URI=ftp://ftp.m17n.org/pub/tamago/tamago-4.0.6.tar.gz http://cgi18.plala.or.jp/nyy/canna/canna-20011204.diff.gz mirror://gentoo/tamago-4.0.6-canna-gentoo.patch.gz
+_eclasses_=elisp	4fb60944284f0928ba836a482f598807	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f24d552cc13cd92e912547027db1149b

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst test unpack
+DEPEND=>=dev-libs/glib-2.11.1 >=x11-libs/gtk+-2.6 >=gnome-base/libbonobo-1.107 >=gnome-extra/at-spi-1.5.2 >=gnome-base/orbit-2.3.100 x11-libs/libX11 x11-libs/libXtst x11-libs/libXdamage x11-libs/libXfixes x11-libs/libXrender x11-libs/libXcomposite >=dev-util/pkgconfig-0.9 >=dev-util/intltool-0.35 x11-proto/xextproto x11-proto/xproto >=sys-apps/sed-4 test? ( !prefix? ( x11-base/xorg-server ) x11-apps/xhost )
+DESCRIPTION=Gnome magnification service definition
+HOMEPAGE=http://www.gnome.org/
+IUSE=debug test
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+LICENSE=LGPL-2
+RDEPEND=>=dev-libs/glib-2.11.1 >=x11-libs/gtk+-2.6 >=gnome-base/libbonobo-1.107 >=gnome-extra/at-spi-1.5.2 >=gnome-base/orbit-2.3.100 x11-libs/libX11 x11-libs/libXtst x11-libs/libXdamage x11-libs/libXfixes x11-libs/libXrender x11-libs/libXcomposite
+SLOT=1
+SRC_URI=mirror://gnome/sources/gnome-mag/0.15/gnome-mag-0.15.9.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	virtualx	e9162f65645513120b4e12863a5fa972
+_md5_=8e39f07fda9c87e64b56da6b4d6c367a

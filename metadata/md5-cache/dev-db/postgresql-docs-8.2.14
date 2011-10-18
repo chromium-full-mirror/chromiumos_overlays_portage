@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=PostgreSQL documentation
+HOMEPAGE=http://www.postgresql.org/
+KEYWORDS=amd64 hppa ppc x86
+LICENSE=POSTGRESQL
+RESTRICT=test
+SLOT=8.2
+SRC_URI=mirror://postgresql/source/v8.2.14/postgresql-8.2.14.tar.bz2
+_eclasses_=versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=dda0cbc0e0e8b720eef51816e698c510

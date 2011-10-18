@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install
+DEPEND=>=net-libs/aqbanking-4.2.0[qt4] dev-util/pkgconfig
+DESCRIPTION=Onlinebanking frontend for aqbanking
+EAPI=2
+HOMEPAGE=http://www.aquamaniac.de/aqbanking/
+IUSE=debug
+KEYWORDS=amd64 ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=>=net-libs/aqbanking-4.2.0[qt4]
+SLOT=0
+SRC_URI=http://www2.aquamaniac.de/sites/download/download.php?package=04&release=05&file=01&dummy=qbankmanager-0.9.52beta.tar.gz -> qbankmanager-0.9.52_beta.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=10e12b2161f58640e41120be09bd2382

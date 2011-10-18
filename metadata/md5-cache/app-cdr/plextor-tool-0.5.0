@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=gnome? ( gnome-base/gnome-panel )
+DESCRIPTION=Tool to change the parameters of a Plextor CD-ROM drive
+HOMEPAGE=http://plextor-tool.sourceforge.net/
+IUSE=static gnome
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=gnome? ( gnome-base/gnome-panel )
+SLOT=0
+SRC_URI=mirror://sourceforge/plextor-tool/plextor-tool-0.5.0.src.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8755c0af1a21d1127ac6075c34edf21b

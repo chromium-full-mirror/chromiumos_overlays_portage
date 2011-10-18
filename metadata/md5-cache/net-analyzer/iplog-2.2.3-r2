@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=net-libs/libpcap
+DESCRIPTION=iplog is a TCP/IP traffic logger
+HOMEPAGE=http://ojnk.sourceforge.net/
+KEYWORDS=alpha ppc sparc x86 ~amd64
+LICENSE=|| ( GPL-2 FDL-1.1 )
+RDEPEND=net-libs/libpcap
+SLOT=0
+SRC_URI=mirror://sourceforge/ojnk/iplog-2.2.3.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ba03ee8362dfae77d0519749e363ad9f

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=app-editors/xemacs
+DESCRIPTION=Ruby support.
+HOMEPAGE=http://xemacs.org/
+KEYWORDS=alpha amd64 hppa ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=app-xemacs/xemacs-base app-xemacs/debug
+SLOT=0
+SRC_URI=http://ftp.xemacs.org/pub/xemacs/packages/ruby-modes-1.02-pkg.tar.gz
+_eclasses_=xemacs-packages	6dd96054b458a462c15a08ea670d9ac6
+_md5_=00fb26a0ca9daeeca2fc3927f6cb0fc5

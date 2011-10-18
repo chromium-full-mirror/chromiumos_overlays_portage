@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-lang/perl[-build]
+DESCRIPTION=sprintf-like string formatting capabilities with arbitrary format definitions
+EAPI=2
+HOMEPAGE=http://search.cpan.org/dist/String-Format/
+KEYWORDS=amd64 ~ppc ~ppc64 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris
+LICENSE=GPL-2
+RDEPEND=dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/D/DA/DARREN//String-Format-1.16.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=40335089f93672d008a41dc466184736

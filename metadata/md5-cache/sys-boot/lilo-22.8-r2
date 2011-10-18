@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=>=sys-devel/bin86-0.15.5
+DESCRIPTION=Standard Linux boot loader
+HOMEPAGE=http://lilo.go.dyndns.org/pub/linux/lilo/
+IUSE=static minimal pxeserial device-mapper
+KEYWORDS=-* x86 amd64
+LICENSE=BSD GPL-2
+PROVIDE=virtual/bootloader
+RDEPEND=device-mapper? ( || ( >=sys-fs/lvm2-2.02.45 >=sys-fs/device-mapper-1.02.12 ) )
+SLOT=0
+SRC_URI=http://home.san.rr.com/johninsd/pub/linux/lilo/lilo-22.8.src.tar.gz ftp://metalab.unc.edu/pub/Linux/system/boot/lilo/lilo-22.8.src.tar.gz ftp://metalab.unc.edu/pub/Linux/system/boot/lilo/obsolete/lilo-22.8.src.tar.gz mirror://gentoo/dolilo-0.5.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9f843c8969b3897a9f22181a41405b4a

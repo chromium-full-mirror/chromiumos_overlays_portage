@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=media-libs/libsdl[opengl] media-libs/sdl-image media-libs/sdl-mixer dev-lang/python virtual/opengl virtual/glu virtual/glut dev-lang/swig >=app-admin/eselect-python-20091230
+DESCRIPTION=Fun 3D puzzle game using SDL/OpenGL
+EAPI=2
+HOMEPAGE=http://kiki.sourceforge.net/
+KEYWORDS=ppc x86
+LICENSE=public-domain
+RDEPEND=media-libs/libsdl[opengl] media-libs/sdl-image media-libs/sdl-mixer dev-lang/python virtual/opengl virtual/glu virtual/glut >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=mirror://sourceforge/kiki/kiki-1.0.2-src.tgz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a29d8961df5bcccf7d6d695bfd07ac5b

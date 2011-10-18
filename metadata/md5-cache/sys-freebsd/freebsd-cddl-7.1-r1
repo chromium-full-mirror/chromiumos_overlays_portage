@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup unpack
+DEPEND==sys-freebsd/freebsd-lib-7.1* =sys-freebsd/freebsd-libexec-7.1* build? ( sys-apps/baselayout ) dev-libs/libedit dev-libs/libelf =sys-freebsd/freebsd-mk-defs-7.1* !build? ( =sys-freebsd/freebsd-sources-7.1* ) virtual/pmake virtual/pmake
+DESCRIPTION=FreeBSD CDDL (opensolaris/zfs) extra software
+HOMEPAGE=http://www.freebsd.org/
+IUSE=build profile
+KEYWORDS=~x86-fbsd
+LICENSE=CDDL
+RDEPEND==sys-freebsd/freebsd-lib-7.1* =sys-freebsd/freebsd-libexec-7.1* build? ( sys-apps/baselayout ) dev-libs/libedit dev-libs/libelf
+SLOT=0
+SRC_URI=mirror://gentoo/freebsd-cddl-7.1.tar.bz2 mirror://gentoo/freebsd-contrib-7.1.tar.bz2 mirror://gentoo/freebsd-ubin-7.1.tar.bz2 mirror://gentoo/freebsd-lib-7.1.tar.bz2 mirror://gentoo/freebsd-sbin-7.1.tar.bz2 mirror://gentoo/freebsd-sys-7.1.tar.bz2 build? ( mirror://gentoo/freebsd-sys-7.1.tar.bz2 mirror://gentoo/freebsd-include-7.1.tar.bz2 )
+_eclasses_=bsdmk	e4567dd3ca01b982aae9efa82d7888de	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	freebsd	eec0d719dac82eebb2ab3c90eed15546	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=a3d9f9346fe9e5523912a67ef1303cde

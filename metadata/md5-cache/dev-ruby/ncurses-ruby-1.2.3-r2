@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=sys-libs/ncurses-5.3 virtual/ruby
+DESCRIPTION=Ruby wrappers of ncurses and PDCurses libs
+HOMEPAGE=http://ncurses-ruby.berlios.de/
+IUSE=examples
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86
+LICENSE=LGPL-2.1
+RDEPEND=>=sys-libs/ncurses-5.3 virtual/ruby
+SLOT=0
+SRC_URI=mirror://berlios/ncurses-ruby/ncurses-ruby-1.2.3.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby	dfc4f482954636675998a350b1d078b5	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ba6e97a7a5f95953d1d52f5c71d121ea

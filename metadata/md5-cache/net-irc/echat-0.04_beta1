@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=sys-libs/ncurses >=sys-apps/sed-4
+DESCRIPTION=Console vypress chat clone for *nix like systems.
+HOMEPAGE=http://echat.deep.perm.ru/
+KEYWORDS=~x86 ~s390 ~ppc
+LICENSE=GPL-2
+RDEPEND=sys-libs/ncurses
+SLOT=0
+SRC_URI=http://echat.deep.perm.ru/files/echat-0.04beta1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=15035afa5f996dbb4efde1b1e04a83f0

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup test unpack
+DEPEND=mpi? ( || ( sys-cluster/openmpi sys-cluster/lam-mpi sys-cluster/mpich2[cxx] ) ) python? ( >=dev-lang/python-2.0 ) cg? ( media-gfx/nvidia-cg-toolkit ) tcl? ( >=dev-lang/tcl-8.2.3 ) tk? ( >=dev-lang/tk-8.2.3 ) java? ( >=virtual/jre-1.5 ) qt4? ( x11-libs/qt-core:4 x11-libs/qt-opengl:4 x11-libs/qt-gui:4 ) examples? ( x11-libs/qt-core:4[qt3support] x11-libs/qt-gui:4[qt3support] ) dev-libs/expat dev-libs/libxml2 media-libs/freetype media-libs/jpeg media-libs/libpng media-libs/tiff virtual/opengl x11-libs/libXmu java? ( >=virtual/jdk-1.5 ) boost? ( >=dev-libs/boost-1.40.0 ) >=dev-util/cmake-2.6 java? ( >=dev-java/java-config-2.1.9-r1 ) >=app-admin/eselect-python-20091230 >=dev-util/cmake-2.6.2-r1 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=The Visualization Toolkit
+EAPI=2
+HOMEPAGE=http://www.vtk.org
+IUSE=boost cg doc examples mpi patented python tcl tk threads qt4 elibc_FreeBSD java
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD LGPL-2
+RDEPEND=mpi? ( || ( sys-cluster/openmpi sys-cluster/lam-mpi sys-cluster/mpich2[cxx] ) ) python? ( >=dev-lang/python-2.0 ) cg? ( media-gfx/nvidia-cg-toolkit ) tcl? ( >=dev-lang/tcl-8.2.3 ) tk? ( >=dev-lang/tk-8.2.3 ) java? ( >=virtual/jre-1.5 ) qt4? ( x11-libs/qt-core:4 x11-libs/qt-opengl:4 x11-libs/qt-gui:4 ) examples? ( x11-libs/qt-core:4[qt3support] x11-libs/qt-gui:4[qt3support] ) dev-libs/expat dev-libs/libxml2 media-libs/freetype media-libs/jpeg media-libs/libpng media-libs/tiff virtual/opengl x11-libs/libXmu java? ( >=dev-java/java-config-2.1.9-r1 ) >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://www.vtk.org/files/release/5.4/vtk-5.4.2.tar.gz examples? ( http://www.vtk.org/files/release/5.4/vtkdata-5.4.2.tar.gz ) doc? ( http://www.vtk.org/doc/release/5.4/vtkDocHtml-5.4.2.tar.gz )
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	cmake-utils	6a1f5bd4039e55b76615db7bd9b70fed	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	java-pkg-opt-2	31a1663247652448431dcc8c194e2752	java-utils-2	9c079d63349fb3fcd154c1630807a59a	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	qt3	823f11abd98cfc43cf92b8622e420f1f	qt4	83eabd1192f3f2c5a649ba2422a14d00	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=64c6621da1a5ca48b6543f6bb5a37eaa

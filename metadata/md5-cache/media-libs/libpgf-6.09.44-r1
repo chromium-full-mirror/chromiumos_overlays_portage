@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare
+DEPEND=doc? ( app-doc/doxygen ) app-arch/unzip =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Library to load, handle and manipulate images in the PGF format
+EAPI=2
+HOMEPAGE=http://www.libpgf.org/
+IUSE=doc
+KEYWORDS=amd64 x86
+LICENSE=LGPL-2.1
+SLOT=0
+SRC_URI=mirror://sourceforge/libpgf/libpgf-6.09.44-src.zip
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3a9f03248a27566a64d6fa0aa93010e2

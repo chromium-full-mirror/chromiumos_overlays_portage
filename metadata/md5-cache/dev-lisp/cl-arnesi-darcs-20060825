@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst postrm preinst unpack
+DEPEND=dev-lisp/common-lisp-controller virtual/commonlisp dev-util/darcs dev-lisp/common-lisp-controller
+DESCRIPTION=arnesi is a Common Lisp utility suite used with bese projects
+HOMEPAGE=http://common-lisp.net/project/bese/arnesi.html
+KEYWORDS=~x86 ~amd64 ~sparc ~ppc
+LICENSE=BSD
+RDEPEND=dev-lisp/common-lisp-controller virtual/commonlisp
+SLOT=0
+_eclasses_=common-lisp	78bda507fdf240a712b120777127629c	common-lisp-common	a6e38969ed3937827ca1f284d015020a	darcs	8e8b8f884639fe502dd878cbc0738589	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d3cf47d005e1092676be898826f9a77f

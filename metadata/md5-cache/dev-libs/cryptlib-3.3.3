@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare unpack
+DEPEND=sys-libs/zlib ldap? ( net-nds/openldap ) odbc? ( dev-db/unixODBC ) !dev-python/cryptlib_py app-arch/unzip >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+DESCRIPTION=Powerful security toolkit for adding encryption to software
+EAPI=2
+HOMEPAGE=http://www.cs.auckland.ac.nz/~pgut001/cryptlib/
+IUSE=doc ldap odbc python
+KEYWORDS=amd64 x86
+LICENSE=DB
+RDEPEND=sys-libs/zlib ldap? ( net-nds/openldap ) odbc? ( dev-db/unixODBC ) !dev-python/cryptlib_py >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+SLOT=0
+SRC_URI=ftp://ftp.franken.de/pub/crypt/cryptlib/cl333.zip doc? ( mirror://gentoo/cryptlib-3.3.3-manual.pdf.bz2 )
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=fe2576390f447c56d2f1352a05f80be5

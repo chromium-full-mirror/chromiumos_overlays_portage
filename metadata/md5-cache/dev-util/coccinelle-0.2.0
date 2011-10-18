@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install test
+DEPEND=python? ( dev-lang/python ) >=dev-lang/ocaml-3.10[ocamlopt?] doc? ( virtual/latex-base || ( dev-texlive/texlive-latexextra app-text/ptex ) )
+DESCRIPTION=Program matching and transformation engine
+EAPI=2
+HOMEPAGE=http://coccinelle.lip6.fr/
+IUSE=doc +ocamlopt python
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=python? ( dev-lang/python ) >=dev-lang/ocaml-3.10[ocamlopt?]
+SLOT=0
+SRC_URI=http://coccinelle.lip6.fr/distrib/coccinelle-0.2.0.tgz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8541cd96c84bdf4178ab6e93b91cc855

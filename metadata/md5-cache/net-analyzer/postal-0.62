@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=ssl? ( >=dev-libs/openssl-0.9.6b )
+DESCRIPTION=SMTP and POP mailserver benchmark - the mad postman. Supports SSL, randomized user accounts and more.
+HOMEPAGE=http://www.coker.com.au/postal/
+IUSE=ssl
+KEYWORDS=~x86 ~sparc ppc ~hppa
+LICENSE=GPL-2
+RDEPEND=ssl? ( >=dev-libs/openssl-0.9.6b )
+SLOT=0
+SRC_URI=http://www.coker.com.au/postal/postal-0.62.tgz
+_md5_=5428bb2d2cb90c8d088528b85019c0bf

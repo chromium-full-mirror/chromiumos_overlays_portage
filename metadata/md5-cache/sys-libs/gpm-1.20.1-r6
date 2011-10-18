@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=sys-libs/ncurses
+DESCRIPTION=Console-based mouse driver
+HOMEPAGE=http://linux.schottelius.org/gpm/
+IUSE=selinux
+KEYWORDS=alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86
+LICENSE=GPL-2
+RDEPEND=selinux? ( sec-policy/selinux-gpm )
+SLOT=0
+SRC_URI=ftp://arcana.linux.it/pub/gpm/gpm-1.20.1.tar.bz2 ftp://ftp.schottelius.org/pub/linux/gpm/gpm-1.20.1.tar.bz2 mirror://gentoo/gpm-1.20.1-patches-1.6.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=08c2489602264d2bff89d82e0d2b0ccc

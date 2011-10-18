@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare
+DEPEND=ssl? ( dev-libs/openssl ) >=dev-libs/libnl-1.1 madwifi? ( || ( >net-wireless/madwifi-ng-tools-0.9.3 net-wireless/madwifi-old ) )
+DESCRIPTION=IEEE 802.11 wireless LAN Host AP daemon
+EAPI=2
+HOMEPAGE=http://hostap.epitest.fi
+IUSE=debug ipv6 logwatch madwifi +ssl +wps
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=|| ( GPL-2 BSD )
+RDEPEND=ssl? ( dev-libs/openssl ) >=dev-libs/libnl-1.1 madwifi? ( || ( >net-wireless/madwifi-ng-tools-0.9.3 net-wireless/madwifi-old ) )
+SLOT=0
+SRC_URI=http://hostap.epitest.fi/releases/hostapd-0.7.1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=11257a7acc044f2dbe3fdb5639cc151c

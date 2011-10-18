@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=sys-apps/grep sys-apps/groff >=sys-apps/sed-4
+DESCRIPTION=Simple yet powerful mailing list manager for qmail.
+HOMEPAGE=http://www.ezmlm.org
+KEYWORDS=alpha amd64 hppa mips ppc sparc x86
+LICENSE=as-is
+RDEPEND=virtual/qmail
+SLOT=0
+SRC_URI=http://gd.tuwien.ac.at/infosys/mail/qmail/ezmlm-patches/ezmlm-idx-0.40.tar.gz http://cr.yp.to/software/ezmlm-0.53.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fixheadtails	059c47dd86229aa6382393274677acfe	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=909a2dbec094f167a78d0f66be03ec04

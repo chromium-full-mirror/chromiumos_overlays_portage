@@ -1,0 +1,10 @@
+DEFINED_PHASES=install unpack
+DEPEND=>=app-arch/rpm2targz-9.0.0.3g
+DESCRIPTION=firmware for the intel gma500 (poulsbo)
+HOMEPAGE=http://www.happyassassin.net/2009/05/13/native-poulsbo-gma-500-graphics-driver-for-fedora-10/
+KEYWORDS=~x86
+LICENSE=intel-psb
+SLOT=0
+SRC_URI=http://adamwill.fedorapeople.org/poulsbo/src/psb-firmware-0.30-3.fc11.src.rpm
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	rpm	e703d62d2e2b396a7fb0262b79fdba53	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0f855f280256885d8e0964d73f38be4c

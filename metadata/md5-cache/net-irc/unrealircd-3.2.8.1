@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare setup
+DEPEND=ssl? ( dev-libs/openssl ) zlib? ( sys-libs/zlib ) curl? ( net-misc/curl ) dev-libs/tre >=net-dns/c-ares-1.5.3 >=sys-apps/sed-4 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b ssl? ( dev-libs/openssl )
+DESCRIPTION=aimed to be an advanced (not easy) IRCd
+EAPI=2
+HOMEPAGE=http://www.unrealircd.com/
+IUSE=curl +hub ipv6 +operoverride +spoof operoverride-verify +prefixaq showlistmodes shunnotices ssl topicisnuhost +usermod zlib ssl
+KEYWORDS=~amd64 ppc sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=ssl? ( dev-libs/openssl ) zlib? ( sys-libs/zlib ) curl? ( net-misc/curl ) dev-libs/tre >=net-dns/c-ares-1.5.3
+SLOT=0
+SRC_URI=http://unrealircd.icedslash.com/Unreal3.2.8.1.tar.gz http://unreal.brueggisite.de/Unreal3.2.8.1.tar.gz http://www.blurryfox.com/unreal/Unreal3.2.8.1.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ssl-cert	031d86ef31449c1482f12ddd8aa0d4eb	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=ace8efa39ead06b90e6242082729db53

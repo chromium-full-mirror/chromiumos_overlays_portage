@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install test
+DEPEND=>=dev-lang/ocaml-3.10[ocamlopt] dev-ml/type-conv >=dev-ml/findlib-1.0.4-r1
+DESCRIPTION=Library for automated conversion of OCaml-values to and from S-expressions
+EAPI=2
+HOMEPAGE=http://www.ocaml.info/home/ocaml_sources.html
+KEYWORDS=~amd64
+LICENSE=LGPL-2.1
+RDEPEND=>=dev-lang/ocaml-3.10[ocamlopt] dev-ml/type-conv
+SLOT=0
+SRC_URI=http://ocaml.info/ocaml_sources/sexplib310-4.2.16.tar.gz
+_eclasses_=findlib	d2cdd99abbdd240f5ccef654e38a4ea9
+_md5_=5f140ada429f7a442579f84f7ef6d80c

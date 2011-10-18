@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=|| ( =sci-libs/openfoam-meta-1.5* =sci-libs/openfoam-1.5* =sci-libs/openfoam-bin-1.5* )
+DESCRIPTION=OpenFOAM - sources
+EAPI=2
+HOMEPAGE=http://www.opencfd.co.uk/openfoam/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=|| ( =sci-libs/openfoam-meta-1.5* =sci-libs/openfoam-1.5* =sci-libs/openfoam-bin-1.5* )
+SLOT=1.5
+SRC_URI=mirror://sourceforge/foam/OpenFOAM-1.5.General.gtgz -> OpenFOAM-1.5.General.tgz http://omploader.org/vMWRlMQ/OpenFOAM-git-1.5_p20090311.patch http://omploader.org/vMWRlMA/OpenFOAM-1.5-svn.patch mirror://gentoo/OpenFOAM-1.5-compile-2.patch.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=c90ad478bd4582be549bdec5f9684cb8

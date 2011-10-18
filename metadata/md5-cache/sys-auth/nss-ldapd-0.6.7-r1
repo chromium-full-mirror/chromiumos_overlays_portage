@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=net-nds/openldap sasl? ( dev-libs/cyrus-sasl ) kerberos? ( virtual/krb5 ) !sys-auth/nss_ldap
+DESCRIPTION=NSS module for name lookups using LDAP
+HOMEPAGE=http://ch.tudelft.nl/~arthur/nss-ldapd/
+IUSE=debug kerberos sasl
+KEYWORDS=~amd64
+LICENSE=LGPL-2.1
+RDEPEND=net-nds/openldap sasl? ( dev-libs/cyrus-sasl ) kerberos? ( virtual/krb5 ) !sys-auth/nss_ldap
+SLOT=0
+SRC_URI=http://ch.tudelft.nl/~arthur/nss-ldapd/nss-ldapd-0.6.7.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ba9c7726d8c96c37fdf9bd8416d31506

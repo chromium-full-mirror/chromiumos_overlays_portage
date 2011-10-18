@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=>=dev-perl/Moose-0.74 >=dev-perl/MooseX-Object-Pluggable-0.0009 >=dev-perl/MooseX-Getopt-0.18 >=dev-perl/MooseX-AttributeHelpers-0.16 dev-perl/namespace-clean dev-perl/File-HomeDir virtual/perl-File-Spec virtual/perl-Term-ANSIColor dev-perl/PPI dev-perl/Data-Dump-Streamer dev-perl/File-Next dev-perl/B-Keywords dev-perl/Lexical-Persistence dev-perl/App-Nopaste dev-perl/Module-Refresh dev-lang/perl[-build]
+DESCRIPTION=a modern perl interactive shell
+EAPI=2
+HOMEPAGE=http://search.cpan.org/dist/Devel-REPL/
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
+RDEPEND=>=dev-perl/Moose-0.74 >=dev-perl/MooseX-Object-Pluggable-0.0009 >=dev-perl/MooseX-Getopt-0.18 >=dev-perl/MooseX-AttributeHelpers-0.16 dev-perl/namespace-clean dev-perl/File-HomeDir virtual/perl-File-Spec virtual/perl-Term-ANSIColor dev-perl/PPI dev-perl/Data-Dump-Streamer dev-perl/File-Next dev-perl/B-Keywords dev-perl/Lexical-Persistence dev-perl/App-Nopaste dev-perl/Module-Refresh dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/M/MS/MSTROUT//Devel-REPL-1.003007.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9fea4670d2d9afd573e8967cab150ffd

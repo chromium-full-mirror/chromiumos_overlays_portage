@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile config install postinst postrm setup test unpack
+DEPEND=~dev-db/postgresql-base-7.4.27:7.4 perl? ( >=dev-lang/perl-5.6.1-r2 ) python? ( >=dev-lang/python-2.2 dev-python/egenix-mx-base ) selinux? ( sec-policy/selinux-postgresql ) tcl? ( >=dev-lang/tcl-8 ) xml? ( dev-libs/libxml2 dev-libs/libxslt ) sys-devel/flex xml? ( dev-util/pkgconfig ) >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=PostgreSQL server
+EAPI=1
+HOMEPAGE=http://www.postgresql.org/
+IUSE=doc perl python selinux tcl xml nls kernel_linux linguas_cs linguas_de linguas_es linguas_fr linguas_hr linguas_hu linguas_it linguas_nb linguas_pt_BR linguas_ru linguas_sl linguas_sv linguas_tr linguas_zh_CN linguas_zh_TW
+KEYWORDS=amd64 ~hppa ~ppc ~x86
+LICENSE=POSTGRESQL
+PDEPEND=doc? ( dev-db/postgresql-docs:7.4 )
+RDEPEND=~dev-db/postgresql-base-7.4.27:7.4 perl? ( >=dev-lang/perl-5.6.1-r2 ) python? ( >=dev-lang/python-2.2 dev-python/egenix-mx-base ) selinux? ( sec-policy/selinux-postgresql ) tcl? ( >=dev-lang/tcl-8 ) xml? ( dev-libs/libxml2 dev-libs/libxslt )
+SLOT=7.4
+SRC_URI=mirror://postgresql/source/v7.4.27/postgresql-7.4.27.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=e8d3d0eccb1e0dc65ed52c0ef0c191d3

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm
+DESCRIPTION=A simple but powerful template language for C++
+EAPI=2
+HOMEPAGE=http://code.google.com/p/google-ctemplate/
+IUSE=doc emacs vim-syntax
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=vim-syntax? ( >=app-editors/vim-core-7 ) emacs? ( virtual/emacs )
+SLOT=0
+SRC_URI=http://google-ctemplate.googlecode.com/files/ctemplate-0.95.tar.gz
+_eclasses_=elisp-common	3322f14f031ddc95feccd9089c9adc59
+_md5_=61f94a639e8325d56b5dc1723c44e7cd

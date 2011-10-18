@@ -1,0 +1,10 @@
+DEFINED_PHASES=config install postinst prerm
+DESCRIPTION=Acts like a Zope folder but can store many more items
+HOMEPAGE=http://hathaway.freezope.org/Software/BTreeFolder2/
+KEYWORDS=x86
+LICENSE=ZPL
+RDEPEND=net-zope/zope app-admin/zprod-manager
+SLOT=0
+SRC_URI=http://hathaway.freezope.org/Software/BTreeFolder2/BTreeFolder2-0.5.0.tar.gz
+_eclasses_=zproduct	d54241e49843f5a439323be5e3a1742e
+_md5_=1a90021e54de488512c0ad904d0f1e68

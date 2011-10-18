@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install
+DEPEND=sqlite? ( >=dev-db/sqlite-3 ) nls? ( virtual/libintl ) bzip2? ( app-arch/bzip2 ) app-arch/xz-utils doc? ( dev-python/docutils ) nls? ( sys-devel/gettext )
+DESCRIPTION=Search and query ebuilds, portage incl. local settings, ext. overlays, version changes, and more
+EAPI=3
+HOMEPAGE=http://eix.sourceforge.net
+IUSE=+bzip2 debug doc hardened nls optimization strong-optimization sqlite tools
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~ppc-aix ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~ia64-hpux ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x86-solaris
+LICENSE=GPL-2
+RDEPEND=sqlite? ( >=dev-db/sqlite-3 ) nls? ( virtual/libintl ) bzip2? ( app-arch/bzip2 )
+SLOT=0
+SRC_URI=mirror://sourceforge/eix/eix-0.20.1.tar.xz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=de61510fc47f24488c183b60b61f6a43

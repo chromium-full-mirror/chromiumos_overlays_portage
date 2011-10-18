@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=>=dev-libs/glib-2.6 dev-libs/libxml2 sys-devel/gettext >=sys-apps/hal-0.4.0 >=sys-apps/pmount-0.8 >=sys-devel/libtool-1.5 dev-util/pkgconfig
+DESCRIPTION=Daemon to mount/unmount devices, based on info from HAL
+HOMEPAGE=http://ivman.sf.net
+IUSE=debug
+KEYWORDS=amd64 ppc ppc64 sparc x86
+LICENSE=GPL-2 QPL
+RDEPEND=>=dev-libs/glib-2.6 dev-libs/libxml2 sys-devel/gettext >=sys-apps/hal-0.4.0 >=sys-apps/pmount-0.8
+SLOT=0
+SRC_URI=mirror://sourceforge/ivman/ivman-0.6.14.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b51afc76e29536ea9dd76e3d5b308294

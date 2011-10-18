@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm setup
+DEPEND=X? ( x11-apps/mkfontdir media-fonts/encodings ) >=media-libs/fontconfig-2.4.0
+DESCRIPTION=Japanese TrueType font from Vine Linux
+HOMEPAGE=http://dicey.org/vlgothic/
+IUSE=X
+KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+LICENSE=vlgothic mplus-fonts BSD-2
+SLOT=0
+SRC_URI=mirror://sourceforge.jp/vlgothic/44517/VLGothic-20091118.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	font	bc3df4ed373e09f86a90e8fad39034d6	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=711347942be57deb153b00baf7eb7c5e

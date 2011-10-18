@@ -1,0 +1,14 @@
+DEFINED_PHASES=install nofetch postinst setup test unpack
+DEPEND=test? ( ifc? ( dev-lang/ifc ) gfortran? ( sys-devel/gcc:4.2 ) !gfortran? ( !ifc? ( sys-devel/gcc:4.2 ) ) ) app-admin/eselect-blas app-admin/eselect-lapack =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=AMD Core Math Library for x86 and amd64 CPUs
+EAPI=1
+HOMEPAGE=http://developer.amd.com/acml.jsp
+IUSE=doc examples gfortran ifc int64 openmp test debug
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=ACML
+RDEPEND=ifc? ( dev-lang/ifc ) gfortran? ( sys-devel/gcc:4.2 ) !gfortran? ( !ifc? ( sys-devel/gcc:4.2 ) ) app-admin/eselect-blas app-admin/eselect-lapack doc? ( app-doc/blas-docs app-doc/lapack-docs )
+RESTRICT=strip fetch
+SLOT=0
+SRC_URI=amd64? ( ifc? ( acml-4-1-0-ifort-64bit.tgz int64? ( acml-4-1-0-ifort-64bit-int64.tgz ) ) gfortran? ( acml-4-1-0-gfortran-64bit.tgz int64? ( acml-4-1-0-gfortran-64bit-int64.tgz ) ) !ifc? ( !gfortran? ( acml-4-1-0-gfortran-64bit.tgz int64? ( acml-4-1-0-gfortran-64bit-int64.tgz ) ) ) ) x86? ( ifc? ( acml-4-1-0-ifort-32bit.tgz ) gfortran? ( acml-4-1-0-gfortran-32bit.tgz ) !ifc? ( !gfortran? ( acml-4-1-0-gfortran-32bit.tgz ) ) )
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fortran	bd0fac3e085b8c7c86b09139dbedac42	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=bf8818f878a9ee5d7cf96cd762103baf

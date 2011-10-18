@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-lang/perl
+DESCRIPTION=The UCAR/Unidata Units library
+HOMEPAGE=http://www.unidata.ucar.edu/packages/udunits/
+KEYWORDS=x86 ~ppc ~sparc alpha ~mips ~hppa
+LICENSE=UCAR-Unidata
+RDEPEND=dev-lang/perl
+SLOT=0
+SRC_URI=ftp://unidata.ucar.edu/pub/udunits/udunits-1.12.0.tar.Z
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=acd592d7ff9d6f318b1d6068f0ab14f1

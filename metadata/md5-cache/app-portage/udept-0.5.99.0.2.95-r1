@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=app-shells/bash sys-apps/portage
+DESCRIPTION=A Portage analysis toolkit
+HOMEPAGE=http://catmur.co.uk/gentoo/udept
+IUSE=bash-completion
+KEYWORDS=~amd64 ~ppc ~mips ~sparc ~x86
+LICENSE=GPL-2
+PDEPEND=bash-completion? ( app-shells/bash-completion )
+RDEPEND=app-shells/bash sys-apps/portage bash-completion? ( app-admin/eselect )
+SLOT=0
+SRC_URI=http://files.catmur.co.uk/udept/udept-0.5.99.0.2.95.tar.bz2
+_eclasses_=bash-completion	f0fab76a98c0e4b3d72b6beb28d3f653	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=91e8ecbcaa290849fdf7de941fd6874a

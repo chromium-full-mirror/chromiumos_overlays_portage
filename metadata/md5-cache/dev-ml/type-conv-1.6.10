@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DEPEND=>=dev-lang/ocaml-3.10 >=dev-ml/findlib-1.0.4-r1
+DESCRIPTION=Mini library required for some other preprocessing libraries
+EAPI=2
+HOMEPAGE=http://www.ocaml.info/home/ocaml_sources.html
+KEYWORDS=~amd64
+LICENSE=LGPL-2.1
+RDEPEND=>=dev-lang/ocaml-3.10
+SLOT=0
+SRC_URI=http://ocaml.info/ocaml_sources/type-conv-1.6.10.tar.gz
+_eclasses_=findlib	d2cdd99abbdd240f5ccef654e38a4ea9
+_md5_=b9c988a01222a49fb0ffdbdef45ac93b

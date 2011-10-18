@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=x11-libs/openmotif sys-devel/bc
+DESCRIPTION=CMU Common Lisp is an implementation of ANSI Common Lisp
+HOMEPAGE=http://www.cons.org/cmucl/
+KEYWORDS=~x86
+LICENSE=public-domain
+PROVIDE=virtual/commonlisp
+RDEPEND=x11-libs/openmotif sys-devel/bc
+SLOT=0
+SRC_URI=http://common-lisp.net/project/cmucl/downloads/release/19d/cmucl-src-19d.tar.bz2 http://common-lisp.net/project/cmucl/downloads/release/19d/cmucl-19d-x86-linux.tar.bz2
+_eclasses_=common-lisp-common-3	a532ed59ec656ff59b05240f6dc38bad	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d7b69648dfff84f6050573f04d058a47

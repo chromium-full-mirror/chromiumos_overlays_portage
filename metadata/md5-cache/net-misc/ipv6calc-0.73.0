@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=geoip? ( >=dev-libs/geoip-1.4.1 ) >=sys-apps/sed-4
+DESCRIPTION=IPv6 address calculator
+HOMEPAGE=http://www.deepspace6.net/projects/ipv6calc.html
+IUSE=geoip
+KEYWORDS=~alpha amd64 hppa ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=geoip? ( >=dev-libs/geoip-1.4.1 )
+SLOT=0
+SRC_URI=ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/ipv6calc-0.73.0.tar.gz
+_eclasses_=fixheadtails	059c47dd86229aa6382393274677acfe
+_md5_=8cf907ddc11ad50a5936807885c92fc1

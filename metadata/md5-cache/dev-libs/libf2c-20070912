@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=app-arch/unzip
+DESCRIPTION=Library that converts FORTRAN to C source.
+HOMEPAGE=ftp://ftp.netlib.org/f2c/index.html
+KEYWORDS=alpha amd64 ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE=libf2c
+SLOT=0
+SRC_URI=http://dev.gentoo.org/~dberkholz/distfiles/libf2c-20070912.zip mirror://gentoo/libf2c-20070912.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7c72ec414e1b003060d9cadec5729970

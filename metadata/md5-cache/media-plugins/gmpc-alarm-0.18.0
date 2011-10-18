@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare
+DEPEND=>=media-sound/gmpc-0.18.0 dev-libs/libxml2 sys-apps/sed dev-util/pkgconfig =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=This plugin can start/stop/pause your music at a preset time
+EAPI=2
+HOMEPAGE=http://gmpcwiki.sarine.nl/index.php/Alarm
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=>=media-sound/gmpc-0.18.0 dev-libs/libxml2
+SLOT=0
+SRC_URI=mirror://sourceforge/musicpd/gmpc-alarm-0.18.0.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b69142eea2b5b36353cb0c9625c2e99e

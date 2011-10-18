@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=>=sci-libs/fftw-3.0.1 audacious? ( media-sound/audacious media-libs/libsndfile ) jack? ( media-sound/jack-audio-connection-kit media-libs/libsndfile )
+DESCRIPTION=High Quality Reverb and Impulse Response Convolution library including XMMS/Audacious Effect plugins
+EAPI=2
+HOMEPAGE=http://freeverb3.sourceforge.net/
+IUSE=audacious jack plugdouble sse sse2 3dnow forcefpu
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=sci-libs/fftw-3.0.1 audacious? ( media-sound/audacious media-libs/libsndfile ) jack? ( media-sound/jack-audio-connection-kit media-libs/libsndfile )
+SLOT=0
+SRC_URI=mirror://sourceforge/freeverb3/freeverb3-2.4.0rc2.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=0f0f699dea218f0c6e137a580da3c9cf

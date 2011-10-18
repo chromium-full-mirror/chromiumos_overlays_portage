@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst setup
+DEPEND=net-firewall/iptables >=net-libs/libnfnetlink-0.0.39 >=net-libs/libnetfilter_conntrack-0.0.95 >=net-libs/libnetfilter_log-0.0.15 mysql? ( virtual/mysql ) postgres? ( virtual/postgresql-base ) pcap? ( net-libs/libpcap ) sys-devel/autoconf:2.5 doc? ( app-text/linuxdoc-tools app-text/texlive-core )
+DESCRIPTION=A userspace logging daemon for netfilter/iptables related logging
+EAPI=1
+HOMEPAGE=http://netfilter.org/projects/ulogd/index.html
+IUSE=doc mysql postgres pcap
+KEYWORDS=~amd64 ~ia64 ~ppc -sparc ~x86
+LICENSE=GPL-2
+RDEPEND=net-firewall/iptables >=net-libs/libnfnetlink-0.0.39 >=net-libs/libnetfilter_conntrack-0.0.95 >=net-libs/libnetfilter_log-0.0.15 mysql? ( virtual/mysql ) postgres? ( virtual/postgresql-base ) pcap? ( net-libs/libpcap )
+SLOT=0
+SRC_URI=http://ftp.netfilter.org/pub/ulogd/ulogd-2.0.0beta3.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2a82715b6f7532f133270f5ba48b49b4

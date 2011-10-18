@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile configure install preinst prepare unpack
+DEPEND=net-libs/xulrunner:1.9 x11-libs/gtk+:2 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b dev-util/subversion net-misc/rsync =dev-lang/mono-2.0.9999* >=dev-util/pkgconfig-0.23 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=A simple library to embed Gecko (xulrunner) in the Mono Winforms WebControl
+EAPI=2
+HOMEPAGE=http://mono-project.com/Gluezilla
+LICENSE=LGPL-2 MPL-1.1
+RDEPEND=net-libs/xulrunner:1.9 x11-libs/gtk+:2 =dev-lang/mono-2.0.9999*
+SLOT=0
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	go-mono	bac0dbd0beee800925ca0d36c194b4e4	libtool	4dd71cbef362174302a0d79d1360336e	mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	subversion	5781247c771be19b5dbcbb7253078ad2	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=f363ad131fc9fb6405118f4e4bb4ea2e

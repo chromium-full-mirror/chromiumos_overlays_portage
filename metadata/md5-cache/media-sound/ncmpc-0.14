@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install
+DEPEND=>=dev-libs/glib-2.4:2 dev-libs/popt sys-libs/ncurses dev-util/pkgconfig
+DESCRIPTION=A ncurses client for the Music Player Daemon (MPD)
+EAPI=2
+HOMEPAGE=http://mpd.wikia.com/wiki/Client:Ncmpc
+IUSE=artist-screen colors debug +help-screen key-screen lyrics-screen mouse nls search-screen song-screen
+KEYWORDS=amd64 hppa ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/glib-2.4:2 dev-libs/popt sys-libs/ncurses
+SLOT=0
+SRC_URI=http://downloads.sourceforge.net/musicpd/ncmpc-0.14.tar.bz2
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ff409463e10cbef78b66709c98af4fea

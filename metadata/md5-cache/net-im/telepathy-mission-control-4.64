@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=>=net-libs/libtelepathy-0.3.2 net-libs/telepathy-glib >=dev-libs/dbus-glib-0.51 >=gnome-base/gconf-2 >=dev-libs/glib-2 dev-util/pkgconfig dev-libs/libxslt doc? ( >=dev-util/gtk-doc-1.3 ) virtual/python
+DESCRIPTION=Nokia's implementation of a Telepathy Mission Control
+HOMEPAGE=http://mission-control.sourceforge.net/
+IUSE=doc
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND=>=net-libs/libtelepathy-0.3.2 net-libs/telepathy-glib >=dev-libs/dbus-glib-0.51 >=gnome-base/gconf-2 >=dev-libs/glib-2
+SLOT=0
+SRC_URI=mirror://sourceforge/mission-control/telepathy-mission-control-4.64.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9c9d43b2889613009cd0f4f0eec469da

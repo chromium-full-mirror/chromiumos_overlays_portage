@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst prepare
+DEPEND=>=x11-libs/gtk+-2.12 >=dev-cpp/gtkmm-2.14 >=dev-cpp/glibmm-2.16.3 >=dev-cpp/libglademm-2.4 >=dev-cpp/libxmlpp-2.20 >=app-text/enchant-1.1.0 opengl? ( >=dev-cpp/gtkglextmm-1.2 ) >=media-libs/gstreamer-0.10 >=media-libs/gst-plugins-good-0.10 >=media-plugins/gst-plugins-meta-0.10-r2:0.10 >=media-plugins/gst-plugins-pango-0.10 app-text/iso-codes >=dev-util/intltool-0.40 dev-util/pkgconfig
+DESCRIPTION=GTK+2 subtitle editing tool.
+EAPI=2
+HOMEPAGE=http://home.gna.org/subtitleeditor/
+IUSE=debug opengl
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2.12 >=dev-cpp/gtkmm-2.14 >=dev-cpp/glibmm-2.16.3 >=dev-cpp/libglademm-2.4 >=dev-cpp/libxmlpp-2.20 >=app-text/enchant-1.1.0 opengl? ( >=dev-cpp/gtkglextmm-1.2 ) >=media-libs/gstreamer-0.10 >=media-libs/gst-plugins-good-0.10 >=media-plugins/gst-plugins-meta-0.10-r2:0.10 >=media-plugins/gst-plugins-pango-0.10 app-text/iso-codes
+SLOT=0
+SRC_URI=http://download.gna.org/subtitleeditor/0.33/subtitleeditor-0.33.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b6b8f1132fa8d993ee7e70e9455aaa9f

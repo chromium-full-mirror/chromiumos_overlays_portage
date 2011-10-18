@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=net-libs/libpcap gif? ( media-libs/netpbm app-text/ghostscript-gpl dev-lang/perl ) =dev-libs/glib-1.2*
+DESCRIPTION=Generate traffic stats in html, ps, text and gif format
+HOMEPAGE=http://www.mindrot.org/traffic-vis.html
+IUSE=gif
+KEYWORDS=~amd64 ~ppc x86
+LICENSE=BSD
+RDEPEND=net-libs/libpcap gif? ( media-libs/netpbm app-text/ghostscript-gpl dev-lang/perl ) =dev-libs/glib-1.2*
+SLOT=0
+SRC_URI=http://www.mindrot.org/files/traffic-vis-0.35.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=daefef9f72de1cbf90bd1e1ce7a9ae7c

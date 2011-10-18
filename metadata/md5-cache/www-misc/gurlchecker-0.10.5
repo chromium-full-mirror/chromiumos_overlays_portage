@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=>=x11-libs/gtk+-2.6 >=gnome-base/libgnomeui-2 >=gnome-base/libglade-2 >=dev-libs/libxml2-2.6 >=net-libs/gnet-2 >=dev-libs/libcroco-0.6 tidy? ( app-text/htmltidy ) clamav? ( app-antivirus/clamav ) gnutls? ( >=net-libs/gnutls-1 ) >=dev-util/pkgconfig-0.9 >=dev-util/intltool-0.30 app-text/docbook-sgml-utils dev-util/gtk-doc-am doc? ( >dev-util/gtk-doc-1.1 ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b >=sys-apps/sed-4
+DESCRIPTION=Gnome tool that checks links on web pages/sites
+EAPI=2
+HOMEPAGE=http://gurlchecker.labs.libre-entreprise.org/
+IUSE=clamav doc gnutls tidy
+KEYWORDS=amd64 hppa ppc x86
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2.6 >=gnome-base/libgnomeui-2 >=gnome-base/libglade-2 >=dev-libs/libxml2-2.6 >=net-libs/gnet-2 >=dev-libs/libcroco-0.6 tidy? ( app-text/htmltidy ) clamav? ( app-antivirus/clamav ) gnutls? ( >=net-libs/gnutls-1 )
+SLOT=0
+SRC_URI=http://labs.libre-entreprise.org/frs/download.php/737/gurlchecker-0.10.5.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6a90ba5deff1cde594ef1dc8db4d6e2d

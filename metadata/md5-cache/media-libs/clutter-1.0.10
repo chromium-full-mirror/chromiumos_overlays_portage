@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=>=dev-libs/glib-2.16 >=x11-libs/cairo-1.4 >=x11-libs/pango-1.20 gtk? ( >=x11-libs/gtk+-2.0 ) opengl? ( virtual/opengl x11-libs/libX11 x11-libs/libXext x11-libs/libXdamage x11-libs/libXi x11-proto/inputproto >=x11-libs/libXfixes-3 >=x11-libs/libXcomposite-0.4 ) !opengl? ( media-libs/libsdl ) sys-devel/gettext dev-util/gtk-doc-am doc? ( >=dev-util/gtk-doc-1.11 >=app-text/docbook-sgml-utils-0.6.14[jadetex] app-text/xmlto ) introspection? ( >=dev-libs/gobject-introspection-0.6.4 >=dev-libs/gir-repository-0.6.3[pango] ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b dev-util/pkgconfig
+DESCRIPTION=Clutter is a library for creating graphical user interfaces
+EAPI=2
+HOMEPAGE=http://www.clutter-project.org/
+IUSE=debug doc +gtk introspection +opengl
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2
+RDEPEND=>=dev-libs/glib-2.16 >=x11-libs/cairo-1.4 >=x11-libs/pango-1.20 gtk? ( >=x11-libs/gtk+-2.0 ) opengl? ( virtual/opengl x11-libs/libX11 x11-libs/libXext x11-libs/libXdamage x11-libs/libXi x11-proto/inputproto >=x11-libs/libXfixes-3 >=x11-libs/libXcomposite-0.4 ) !opengl? ( media-libs/libsdl )
+SLOT=1.0
+SRC_URI=http://www.clutter-project.org/sources/clutter/1.0/clutter-1.0.10.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	clutter	2397f911137a31dce4a8156e62f35102	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=c00e7fdfe27d3a947d2daad35b7d28eb

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup unpack
+DEPEND=>=virtual/emacs-21
+DESCRIPTION=A navigator for 2ch
+EAPI=3
+HOMEPAGE=http://navi2ch.sourceforge.net/
+KEYWORDS=~alpha ~amd64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos
+LICENSE=GPL-2
+RDEPEND=>=virtual/emacs-21
+SLOT=0
+SRC_URI=mirror://sourceforge/navi2ch/navi2ch-1.8.3.tar.gz
+_eclasses_=elisp	4fb60944284f0928ba836a482f598807	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f287d7dca794bb66def8a2bd002e2c0a

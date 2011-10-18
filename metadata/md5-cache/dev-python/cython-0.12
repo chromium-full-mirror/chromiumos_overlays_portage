@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=>=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=A language for writing Python extension modules based on pyrex
+EAPI=2
+HOMEPAGE=http://www.cython.org/ http://pypi.python.org/pypi/Cython
+IUSE=doc examples
+KEYWORDS=amd64 ~arm hppa ~ia64 ppc ~ppc64 ~sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x64-solaris ~x86-solaris
+LICENSE=PSF-2.4
+RDEPEND=>=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=http://pypi.python.org/packages/source/C/Cython/Cython-0.12.tar.gz http://www.cython.org/release/Cython-0.12.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1f5eace4d9f8d480d8968d14025f2e24

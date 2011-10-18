@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=>=gnome-base/libbonobo-2 >=gnome-extra/at-spi-1.7.10 >=virtual/jdk-1.4 >=dev-util/pkgconfig-0.9 >=dev-java/java-config-2.1.9-r1 >=sys-apps/sed-4 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Gnome Java Accessibility Bridge
+EAPI=2
+HOMEPAGE=http://developer.gnome.org/projects/gap/
+IUSE=elibc_FreeBSD debug
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+LICENSE=LGPL-2
+RDEPEND=>=gnome-base/libbonobo-2 >=gnome-extra/at-spi-1.7.10 >=virtual/jre-1.4 >=dev-java/java-config-2.1.9-r1
+SLOT=0
+SRC_URI=mirror://gnome/sources/java-access-bridge/1.26/java-access-bridge-1.26.0.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	java-pkg-2	39b2c3db200ad244ca675b2a1363aa75	java-utils-2	9c079d63349fb3fcd154c1630807a59a	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=639a8c57639361c5e67243399abad6e6

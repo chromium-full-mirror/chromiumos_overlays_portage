@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=test? ( dev-python/nose ) >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=Dulwich is a pure-Python implementation of the Git file formats and protocols.
+EAPI=2
+HOMEPAGE=http://samba.org/~jelmer/dulwich/ http://pypi.python.org/pypi/dulwich
+IUSE=test
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=>=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=http://samba.org/~jelmer/dulwich/dulwich-0.4.0.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a43532c583bfbedbfd76c286ac8a1551

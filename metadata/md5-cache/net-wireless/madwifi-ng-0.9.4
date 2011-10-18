@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup unpack
+DEPEND=kernel_linux? ( virtual/modutils ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+DESCRIPTION=Next Generation driver for Atheros based IEEE 802.11a/b/g wireless LAN cards
+HOMEPAGE=http://www.madwifi-project.org/
+IUSE=injection kernel_linux
+KEYWORDS=amd64 ppc x86
+LICENSE=atheros-hal || ( BSD GPL-2 )
+RDEPEND=!net-wireless/madwifi-old net-wireless/wireless-tools ~net-wireless/madwifi-ng-tools-0.9.4 kernel_linux? ( virtual/modutils )
+SLOT=0
+SRC_URI=mirror://sourceforge/madwifi/madwifi-0.9.4.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	linux-info	8d722422d00ae99ed52a790b20b9bfc4	linux-mod	07a3d250a1268d811d3e8730e5741394	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=0431dc6682a4f131a8e231d43cd64745

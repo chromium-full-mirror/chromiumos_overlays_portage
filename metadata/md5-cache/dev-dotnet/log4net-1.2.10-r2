@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install prepare setup
+DEPEND=>=dev-lang/mono-2.0 >=dev-dotnet/nant-0.85
+DESCRIPTION=tool to help the programmer output log statements to a variety of output targets.
+EAPI=2
+HOMEPAGE=http://logging.apache.org/log4net/
+IUSE=doc examples
+KEYWORDS=~x86 ~amd64
+LICENSE=Apache-2.0
+RDEPEND=>=dev-lang/mono-2.0
+SLOT=0
+SRC_URI=mirror://debian/pool/main/l/log4net/log4net_1.2.10+dfsg.orig.tar.gz -> log4net-1.2.10.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=43eec593e5e023a34e71f81f0dc61eb3

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare unpack
+DEPEND=dev-libs/glib:2 dev-libs/gmp dev-libs/mpfr dev-libs/popt sys-libs/ncurses sys-libs/readline gnome? ( x11-libs/gtk+:2 gnome-base/libgnome gnome-base/libgnomeui gnome-base/libglade x11-libs/gtksourceview x11-libs/vte ) dev-util/intltool || ( sys-devel/bison dev-util/yacc ) sys-devel/flex app-text/scrollkeeper nls? ( sys-devel/gettext ) >=sys-apps/sed-4
+DESCRIPTION=Genius Mathematics Tool and the GEL Language
+EAPI=2
+HOMEPAGE=http://www.jirka.org/genius.html
+IUSE=doc gnome nls debug
+KEYWORDS=~x86
+LICENSE=GPL-3
+RDEPEND=dev-libs/glib:2 dev-libs/gmp dev-libs/mpfr dev-libs/popt sys-libs/ncurses sys-libs/readline gnome? ( x11-libs/gtk+:2 gnome-base/libgnome gnome-base/libgnomeui gnome-base/libglade x11-libs/gtksourceview x11-libs/vte )
+SLOT=0
+SRC_URI=http://ftp.gnome.org/pub/GNOME/sources/genius/1.0/genius-1.0.9.tar.bz2 doc? ( http://www.jirka.org/genius-reference.pdf )
+_eclasses_=fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=cb76ef287257b7774e6b4ef833052b18

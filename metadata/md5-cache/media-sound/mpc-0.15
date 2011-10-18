@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install postinst
+DEPEND=iconv? ( virtual/libiconv )
+DESCRIPTION=A commandline client for Music Player Daemon (media-sound/mpd)
+EAPI=2
+HOMEPAGE=http://www.musicpd.org
+IUSE=iconv bash-completion
+KEYWORDS=amd64 hppa ppc ppc64 sparc x86
+LICENSE=GPL-2
+PDEPEND=bash-completion? ( app-shells/bash-completion )
+RDEPEND=iconv? ( virtual/libiconv ) bash-completion? ( app-admin/eselect )
+SLOT=0
+SRC_URI=mirror://sourceforge/musicpd/mpc-0.15.tar.bz2
+_eclasses_=bash-completion	f0fab76a98c0e4b3d72b6beb28d3f653
+_md5_=c03e1d2c069e8154c74542e368ae3308

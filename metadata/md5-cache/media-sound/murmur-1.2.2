@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare setup unpack
+DEPEND=dev-libs/openssl >=dev-libs/protobuf-2.2.0 >=sys-libs/libcap-2.15 x11-libs/qt-core:4[ssl] || ( x11-libs/qt-sql:4[sqlite] x11-libs/qt-sql:4[mysql] ) x11-libs/qt-xmlpatterns:4 dbus? ( x11-libs/qt-dbus:4 ) ice? ( dev-cpp/Ice ) zeroconf? ( || ( net-dns/avahi[mdnsresponder-compat] net-misc/mDNSResponder ) ) >=dev-libs/boost-1.36.0-r1 dev-util/pkgconfig
+DESCRIPTION=Mumble is an open source, low-latency, high quality voice chat software.
+EAPI=2
+HOMEPAGE=http://mumble.sourceforge.net/
+IUSE=+dbus debug +ice pch zeroconf
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=dev-libs/openssl >=dev-libs/protobuf-2.2.0 >=sys-libs/libcap-2.15 x11-libs/qt-core:4[ssl] || ( x11-libs/qt-sql:4[sqlite] x11-libs/qt-sql:4[mysql] ) x11-libs/qt-xmlpatterns:4 dbus? ( x11-libs/qt-dbus:4 ) ice? ( dev-cpp/Ice ) zeroconf? ( || ( net-dns/avahi[mdnsresponder-compat] net-misc/mDNSResponder ) )
+SLOT=0
+SRC_URI=http://mumble.info/snapshot/mumble-1.2.2.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4	83eabd1192f3f2c5a649ba2422a14d00	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=3cd95a25d9badcac323dae79dd3e3026

@@ -1,0 +1,13 @@
+DEFINED_PHASES=install nofetch postinst setup test unpack
+DEPEND=openmp? ( >=sys-devel/gcc-4.2 ) !openmp? ( =sys-devel/gcc-4.1* ) app-admin/eselect-blas app-admin/eselect-lapack =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=AMD Core Math Library (ACML) for x86 and amd64 CPUs
+HOMEPAGE=http://developer.amd.com/acml.jsp
+IUSE=openmp int64 doc examples debug
+KEYWORDS=~amd64 ~x86
+LICENSE=ACML
+RDEPEND=openmp? ( >=sys-devel/gcc-4.2 ) !openmp? ( =sys-devel/gcc-4.1* ) app-admin/eselect-blas app-admin/eselect-lapack doc? ( app-doc/blas-docs app-doc/lapack-docs )
+RESTRICT=strip fetch
+SLOT=0
+SRC_URI=x86? ( acml-3-6-1-gfortran-32bit.tgz ) amd64? ( acml-3-6-1-gfortran-64bit.tgz int64? ( acml-3-6-1-gfortran-64bit-int64.tgz ) )
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fortran	bd0fac3e085b8c7c86b09139dbedac42	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1600d8ad36ef47b690e0f2d4c670a98e

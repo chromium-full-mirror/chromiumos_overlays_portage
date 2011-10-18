@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=sys-apps/debianutils-1.16 >=sys-power/powermgmt-base-1.22 X? ( x11-libs/libX11 x11-libs/libXaw x11-libs/libXmu x11-libs/libSM x11-libs/libICE x11-libs/libXt x11-libs/libXext ) virtual/os-headers
+DESCRIPTION=Advanced Power Management Daemon
+HOMEPAGE=http://www.worldvisions.ca/~apenwarr/apmd/
+IUSE=X nls
+KEYWORDS=amd64 arm ppc ppc64 x86
+LICENSE=GPL-2
+RDEPEND=>=sys-apps/debianutils-1.16 >=sys-power/powermgmt-base-1.22 X? ( x11-libs/libX11 x11-libs/libXaw x11-libs/libXmu x11-libs/libSM x11-libs/libICE x11-libs/libXt x11-libs/libXext )
+SLOT=0
+SRC_URI=mirror://debian/pool/main/a/apmd/apmd_3.2.2.orig.tar.gz mirror://debian/pool/main/a/apmd/apmd_3.2.2-5.diff.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9b65ff053e3772289cab971cd75951f3

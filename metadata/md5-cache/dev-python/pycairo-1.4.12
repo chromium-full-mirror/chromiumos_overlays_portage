@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm test unpack
+DEPEND=>=x11-libs/cairo-1.4.12 dev-util/pkgconfig >=app-admin/eselect-python-20091230 >=dev-lang/python-2.4 dev-lang/python
+DESCRIPTION=Python wrapper for cairo vector graphics library
+HOMEPAGE=http://cairographics.org/pycairo/
+IUSE=examples
+KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~x86-fbsd
+LICENSE=|| ( LGPL-2.1 MPL-1.1 )
+RDEPEND=>=x11-libs/cairo-1.4.12 >=app-admin/eselect-python-20091230 >=dev-lang/python-2.4 dev-lang/python
+SLOT=0
+SRC_URI=http://cairographics.org/releases/pycairo-1.4.12.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e3e8dc2c7abc597f650d6c6b630e2550

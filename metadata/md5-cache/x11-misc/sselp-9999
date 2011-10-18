@@ -1,0 +1,9 @@
+DEFINED_PHASES=install unpack
+DEPEND=x11-libs/libX11 dev-vcs/mercurial
+DESCRIPTION=Simple X selection printer
+HOMEPAGE=http://www.suckless.org/programs/sselp.html
+LICENSE=MIT
+RDEPEND=x11-libs/libX11
+SLOT=0
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	mercurial	70764f711413ded990af184cc3a548f0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6934518f911f070df32f502a4afb09f9

@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=Testing-Framework for guile
+HOMEPAGE=http://gna.org/projects/greg/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-scheme/guile
+SLOT=0
+SRC_URI=http://download.gna.org/greg/greg-2.0.0.tar.gz
+_md5_=b3af474dee9d66c4520c03ad54d5bfb6

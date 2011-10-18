@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst postrm prepare setup unpack
+DEPEND=spell? ( || ( app-text/aspell app-text/ispell ) ) dev-python/PyQt4[X] >=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[xml]
+DESCRIPTION=TreeLine is a structured information storage program.
+EAPI=2
+HOMEPAGE=http://treeline.bellz.org/
+IUSE=spell linguas_de linguas_fr
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=spell? ( || ( app-text/aspell app-text/ispell ) ) dev-python/PyQt4[X] >=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[xml]
+SLOT=0
+SRC_URI=mirror://berlios/treeline/treeline-1.2.3.tar.gz linguas_de? ( mirror://berlios/treeline/treeline-i18n-1.2.3a.tar.gz ) linguas_fr? ( mirror://berlios/treeline/treeline-i18n-1.2.3a.tar.gz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9fb3bdeed386e1806abed896944cabe7

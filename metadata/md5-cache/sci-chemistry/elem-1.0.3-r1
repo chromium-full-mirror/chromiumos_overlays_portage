@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=x11-libs/xforms
+DESCRIPTION=periodic table of the elements
+HOMEPAGE=http://elem.sourceforge.net/
+KEYWORDS=amd64 sparc x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/xforms
+SLOT=0
+SRC_URI=mirror://sourceforge/elem/elem-src-1.0.3-Linux.tgz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6c3c4d4781bbac90f26c85aeb3dd0fae

@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DESCRIPTION=Export from mythtv recorded NuppelVideo files
+EAPI=2
+HOMEPAGE=http://www.forevermore.net/mythtv/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=as-is
+RDEPEND=dev-perl/DBI dev-perl/DBD-mysql dev-perl/DateManip media-video/ffmpeg[faac,encode,threads,xvid] media-video/mjpegtools media-video/transcode[mjpeg] media-libs/id3lib media-video/mplayer =media-tv/mythtv-0.21*
+SLOT=0
+SRC_URI=http://www.forevermore.net/files/nuvexport/nuvexport-0.5-0.20080311.svn.tar.bz2
+_md5_=f424e41ccc0fcfa1bf4b08351ecce9ce

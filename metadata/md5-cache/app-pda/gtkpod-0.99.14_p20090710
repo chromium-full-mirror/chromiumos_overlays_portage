@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=>=x11-libs/gtk+-2.8 >=media-libs/libid3tag-0.15 >=gnome-base/libglade-2.4 >=gnome-base/libgnomecanvas-2.14 >=media-libs/libgpod-0.7 >=net-misc/curl-7.10 mp3? ( media-sound/lame ) gnome? ( >=gnome-base/gnome-vfs-2.6 ) hal? ( =sys-apps/hal-0.5* ) aac? ( media-libs/libmp4v2 ) ogg? ( media-libs/libvorbis media-sound/vorbis-tools ) flac? ( media-libs/flac ) dev-util/pkgconfig sys-devel/flex nls? ( dev-util/intltool sys-devel/gettext ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=GUI for iPod using GTK2
+EAPI=2
+HOMEPAGE=http://gtkpod.sourceforge.net/
+IUSE=aac flac gnome hal mp3 nls ogg
+KEYWORDS=amd64 ppc ppc64 sparc x86
+LICENSE=GPL-2 FDL-1.2
+RDEPEND=>=x11-libs/gtk+-2.8 >=media-libs/libid3tag-0.15 >=gnome-base/libglade-2.4 >=gnome-base/libgnomecanvas-2.14 >=media-libs/libgpod-0.7 >=net-misc/curl-7.10 mp3? ( media-sound/lame ) gnome? ( >=gnome-base/gnome-vfs-2.6 ) hal? ( =sys-apps/hal-0.5* ) aac? ( media-libs/libmp4v2 ) ogg? ( media-libs/libvorbis media-sound/vorbis-tools ) flac? ( media-libs/flac )
+SLOT=0
+SRC_URI=mirror://gentoo/gtkpod-0.99.14_p20090710.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3a3e7ae147d431025053832e7adfbc02

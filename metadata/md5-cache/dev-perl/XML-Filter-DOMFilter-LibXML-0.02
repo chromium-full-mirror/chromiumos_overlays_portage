@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
+DEPEND=>=dev-perl/XML-LibXML-1.53 dev-lang/perl
+DESCRIPTION=SAX Filter allowing DOM processing of selected subtrees
+HOMEPAGE=http://search.cpan.org/~pajas/
+KEYWORDS=amd64 hppa ia64 sparc ~x86
+LICENSE=Artistic
+RDEPEND=>=dev-perl/XML-LibXML-1.53 dev-lang/perl
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/P/PA/PAJAS/XML-Filter-DOMFilter-LibXML-0.02.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2e258bb7e36c0f630e5e796db8a480d2

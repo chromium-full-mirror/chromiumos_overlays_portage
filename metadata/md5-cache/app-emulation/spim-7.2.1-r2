@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install test unpack
+DEPEND=X? ( x11-libs/libXaw x11-libs/libXp ) X? ( x11-misc/imake x11-proto/xproto ) >=sys-apps/sed-4 sys-devel/bison
+DESCRIPTION=MIPS Simulator
+HOMEPAGE=http://www.cs.wisc.edu/~larus/spim.html
+IUSE=X
+KEYWORDS=amd64 ~ppc ~sparc ~x86
+LICENSE=as-is
+RDEPEND=X? ( x11-libs/libXaw x11-libs/libXp )
+SLOT=0
+SRC_URI=http://www.cs.wisc.edu/~larus/SPIM/spim-7.2.1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=be217cb8e2ca341f642d66f6b2107d57

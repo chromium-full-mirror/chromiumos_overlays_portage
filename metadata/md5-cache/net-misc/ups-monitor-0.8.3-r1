@@ -1,0 +1,10 @@
+DEFINED_PHASES=install unpack
+DEPEND=dev-util/desktop-file-utils
+DESCRIPTION=A UPS monitor for NUT (Network UPS Tools)
+HOMEPAGE=http://rudd-o.com/wp-content/projects/files/ups-monitor
+KEYWORDS=~x86 ~amd64
+LICENSE=GPL-2
+RDEPEND=>=dev-python/gnome-python-2 >=gnome-base/libglade-2 >=dev-python/pygtk-2.4 >=dev-python/pyorbit-2.0.1
+SLOT=0
+SRC_URI=http://rudd-o.com/wp-content/projects/files/ups-monitor/ups-monitor-0.8.3.tar.gz
+_md5_=7a6a2ee3b3118357f734c8c0efce617d

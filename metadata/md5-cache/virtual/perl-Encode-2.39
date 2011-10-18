@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=Virtual for Encode
+KEYWORDS=~amd64 ~x86
+RDEPEND=~perl-core/Encode-2.39
+SLOT=0
+_md5_=8294080c0654e0789cfd900db6009c39

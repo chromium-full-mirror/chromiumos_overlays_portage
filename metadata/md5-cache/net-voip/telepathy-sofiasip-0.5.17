@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=net-libs/sofia-sip-1.12.10 >=net-libs/telepathy-glib-0.7.27 >=dev-libs/glib-2.16 sys-apps/dbus dev-libs/dbus-glib dev-libs/libxslt dev-lang/python test? ( dev-python/twisted ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=A SIP connection manager for Telepathy based around the Sofia-SIP library.
+HOMEPAGE=http://telepathy.freedesktop.org/
+IUSE=debug test
+KEYWORDS=~amd64 ~ia64 ~ppc ~sparc ~x86
+LICENSE=LGPL-2.1
+RDEPEND=>=net-libs/sofia-sip-1.12.10 >=net-libs/telepathy-glib-0.7.27 >=dev-libs/glib-2.16 sys-apps/dbus dev-libs/dbus-glib
+SLOT=0
+SRC_URI=http://telepathy.freedesktop.org/releases/telepathy-sofiasip/telepathy-sofiasip-0.5.17.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f7629cdc7ecfbb97ff87e1cad9bea80d

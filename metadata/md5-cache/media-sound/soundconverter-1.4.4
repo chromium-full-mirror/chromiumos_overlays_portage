@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst unpack
+DEPEND=>=dev-python/pygtk-2.12 >=dev-python/gnome-python-2.12 gnome-base/libglade gnome-base/gconf =dev-python/gst-python-0.10* =media-plugins/gst-plugins-gnomevfs-0.10* vorbis? ( =media-plugins/gst-plugins-vorbis-0.10* =media-plugins/gst-plugins-ogg-0.10* ) mp3? ( =media-plugins/gst-plugins-lame-0.10* =media-plugins/gst-plugins-mad-0.10* =media-plugins/gst-plugins-taglib-0.10* ) flac? ( =media-plugins/gst-plugins-flac-0.10* ) aac? ( =media-plugins/gst-plugins-faac-0.10* ) dev-util/pkgconfig sys-devel/gettext dev-util/intltool >=sys-apps/sed-4
+DESCRIPTION=A simple sound converter application for the GNOME environment.
+HOMEPAGE=http://soundconverter.berlios.de
+IUSE=aac flac mp3 vorbis debug
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=>=dev-python/pygtk-2.12 >=dev-python/gnome-python-2.12 gnome-base/libglade gnome-base/gconf =dev-python/gst-python-0.10* =media-plugins/gst-plugins-gnomevfs-0.10* vorbis? ( =media-plugins/gst-plugins-vorbis-0.10* =media-plugins/gst-plugins-ogg-0.10* ) mp3? ( =media-plugins/gst-plugins-lame-0.10* =media-plugins/gst-plugins-mad-0.10* =media-plugins/gst-plugins-taglib-0.10* ) flac? ( =media-plugins/gst-plugins-flac-0.10* ) aac? ( =media-plugins/gst-plugins-faac-0.10* )
+SLOT=0
+SRC_URI=mirror://berlios/soundconverter/soundconverter-1.4.4.tar.bz2
+_eclasses_=fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2422a951f1b4c8879a7c3e514ced6686

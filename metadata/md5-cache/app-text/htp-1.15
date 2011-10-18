@@ -1,0 +1,8 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=An HTML preprocessor
+HOMEPAGE=http://htp.sourceforge.net/
+KEYWORDS=~x86 ~ppc ~sparc ~alpha
+LICENSE=Clarified-Artistic
+SLOT=0
+SRC_URI=mirror://sourceforge/htp/htp-1.15.tar.gz
+_md5_=d200d1433ffe65176ef2b71447e99c3e

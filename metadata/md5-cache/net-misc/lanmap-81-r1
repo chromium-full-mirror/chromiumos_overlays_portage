@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=net-libs/libpcap media-gfx/graphviz
+DESCRIPTION=lanmap sits quietly on a network and builds a picture of what it sees
+EAPI=2
+HOMEPAGE=http://www.parseerror.com/lanmap
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=net-libs/libpcap media-gfx/graphviz
+SLOT=0
+SRC_URI=http://www.parseerror.com/lanmap/rev/lanmap-2006-03-07-rev81.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=de41c912032d99c6db9058d38b98dc73

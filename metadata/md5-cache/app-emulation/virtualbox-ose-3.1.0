@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup unpack
+DEPEND=!app-emulation/virtualbox-bin ~app-emulation/virtualbox-modules-3.1.0 dev-libs/libIDL >=dev-libs/libxslt-1.1.19 net-misc/curl !headless? ( qt4? ( x11-libs/qt-gui:4 x11-libs/qt-core:4 x11-libs/qt-opengl:4 ) opengl? ( virtual/opengl virtual/glut ) x11-libs/libXcursor media-libs/libsdl[X,video] x11-libs/libXt ) >=dev-util/kbuild-0.1.5-r1 >=dev-lang/yasm-0.6.2 sys-devel/bin86 sys-devel/dev86 sys-power/iasl media-libs/libpng sys-libs/libcap dev-util/pkgconfig alsa? ( >=media-libs/alsa-lib-1.0.13 ) hal? ( sys-apps/hal ) pulseaudio? ( media-sound/pulseaudio ) python? ( >=dev-lang/python-2.3 ) vboxwebsrv? ( >=net-libs/gsoap-2.7.13 )
+DESCRIPTION=Software family of powerful x86 virtualization
+EAPI=2
+HOMEPAGE=http://www.virtualbox.org/
+IUSE=+additions alsa +hal headless pulseaudio +opengl python +qt4 sdk vboxwebsrv
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=!app-emulation/virtualbox-bin ~app-emulation/virtualbox-modules-3.1.0 dev-libs/libIDL >=dev-libs/libxslt-1.1.19 net-misc/curl !headless? ( qt4? ( x11-libs/qt-gui:4 x11-libs/qt-core:4 x11-libs/qt-opengl:4 ) opengl? ( virtual/opengl virtual/glut ) x11-libs/libXcursor media-libs/libsdl[X,video] x11-libs/libXt ) additions? ( ~app-emulation/virtualbox-ose-additions-3.1.0 )
+SLOT=0
+SRC_URI=http://download.virtualbox.org/virtualbox/3.1.0/VirtualBox-3.1.0-OSE.tar.bz2
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	linux-info	8d722422d00ae99ed52a790b20b9bfc4	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pax-utils	0bce06fc565015448fab5af5dbffc5e3	portability	0be430f759a631e692678ed796e09f5c	qt4	83eabd1192f3f2c5a649ba2422a14d00	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=b0297f6f4970003f81fd04e42aa617dd

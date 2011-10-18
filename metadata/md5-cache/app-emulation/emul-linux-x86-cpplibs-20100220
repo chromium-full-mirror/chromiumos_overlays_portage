@@ -1,0 +1,12 @@
+DEFINED_PHASES=install unpack
+DEPEND=>=sys-apps/findutils-4.2.26
+DESCRIPTION=Provides precompiled 32bit libraries
+HOMEPAGE=http://dev.gentoo.org/~pacho/emul.html
+KEYWORDS=-* ~amd64
+LICENSE=Boost-1.0 LGPL-2.1
+RDEPEND=~app-emulation/emul-linux-x86-baselibs-20100220
+RESTRICT=strip
+SLOT=0
+SRC_URI=mirror://gentoo/emul-linux-x86-cpplibs-20100220.tar.bz2
+_eclasses_=emul-linux-x86	214021dd240de4a00ca5f2d2684e3a5a
+_md5_=dae815502bb44a84489c8c93af779dcb

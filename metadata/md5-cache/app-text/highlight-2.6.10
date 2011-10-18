@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup unpack
+DEPEND=wxwindows? ( =x11-libs/wxGTK-2.6* )
+DESCRIPTION=converts source code to formatted text ((X)HTML, RTF, (La)TeX, XSL-FO, XML) with syntax highlight
+HOMEPAGE=http://www.andre-simon.de
+IUSE=wxwindows
+KEYWORDS=amd64 ~hppa ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=wxwindows? ( =x11-libs/wxGTK-2.6* )
+SLOT=0
+SRC_URI=http://www.andre-simon.de/zip/highlight-2.6.10.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	wxwidgets	a63777cd98e5f0d521e43c451fe4cf43
+_md5_=f86ba0d7a93cd9ccbbd2a59f91ce8d31

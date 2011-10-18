@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst setup
+DEPEND=app-arch/unzip
+DESCRIPTION=Open-source version of Google Chrome web browser (binary version)
+EAPI=2
+HOMEPAGE=http://code.google.com/chromium/
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=app-arch/bzip2 gnome-base/gconf >=media-libs/alsa-lib-1.0.19 <media-libs/jpeg-7 media-libs/libpng >=sys-devel/gcc-4.2 >=dev-libs/nspr-4.7 >=dev-libs/nss-3.12.3 sys-libs/zlib >=x11-libs/gtk+-2.14.7 x11-misc/xdg-utils || ( x11-themes/gnome-icon-theme x11-themes/tango-icon-theme x11-themes/xfce4-icon-theme )
+SLOT=0
+SRC_URI=x86? ( http://build.chromium.org/buildbot/snapshots/chromium-rel-linux/35884/chrome-linux.zip -> chromium-bin-x86-35884.zip ) amd64? ( http://build.chromium.org/buildbot/snapshots/chromium-rel-linux-64/35884/chrome-linux.zip -> chromium-bin-amd64-35884.zip )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=dedaf01654a144e8c64e29f04f9a2e8b

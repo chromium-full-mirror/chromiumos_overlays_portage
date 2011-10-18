@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=PALO : PArisc Linux Loader
+HOMEPAGE=http://parisc-linux.org/
+KEYWORDS=-* hppa
+LICENSE=GPL-2
+PROVIDE=virtual/bootloader
+SLOT=0
+SRC_URI=mirror://debian/pool/main/p/palo/palo_1.16+nmu1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1d3657ff6a8f7b32f9a3f20e6e6d2438

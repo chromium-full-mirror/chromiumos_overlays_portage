@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=virtual/glut dev-python/pygtkglext >=dev-python/numpy-0.9.8 virtual/opengl virtual/glu x11-libs/libXmu >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=Software toolkit and library of routines for the analysis and manipulation of macromolecular structural models
+HOMEPAGE=http://pymmlib.sourceforge.net/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=Artistic
+RDEPEND=virtual/glut dev-python/pygtkglext >=dev-python/numpy-0.9.8 virtual/opengl virtual/glu x11-libs/libXmu >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=mirror://sourceforge/pymmlib/pymmlib-1.0.0.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ec2cf335ba17ef6044fa6f394828cb7b

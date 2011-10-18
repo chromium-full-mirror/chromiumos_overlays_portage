@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=>=sys-libs/gdbm-1.8.0 emacs? ( virtual/emacs ) readline? ( sys-libs/readline ) sys-apps/texinfo =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Shared library implementing a Lisp dialect
+HOMEPAGE=http://librep.sourceforge.net/
+IUSE=emacs readline
+KEYWORDS=alpha ~amd64 ia64 ppc ~ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=>=sys-libs/gdbm-1.8.0 emacs? ( virtual/emacs ) readline? ( sys-libs/readline )
+SLOT=0
+SRC_URI=mirror://sourceforge/librep/librep-0.17.tar.gz mirror://gentoo/librep-0.17_p20070101.patch.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f425c178c54065012c70562dcd97071a

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=A collection of several tools related to OpenPGP
+EAPI=2
+HOMEPAGE=http://pgp-tools.alioth.debian.org/
+IUSE=iconv recode
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=>=app-crypt/gnupg-1.3.92 dev-perl/GnuPG-Interface dev-perl/text-template dev-perl/MIME-tools >=dev-perl/MailTools-1.62 virtual/mailx virtual/mta !app-crypt/keylookup dev-lang/perl iconv? ( dev-perl/Text-Iconv ) recode? ( app-text/recode )
+SLOT=0
+SRC_URI=mirror://debian/pool/main/s/signing-party/signing-party_1.1.2.orig.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9d7fe1ff575904c051066ecb3c5cb36c

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=>=sys-libs/gdbm-1.8.0 slp? ( net-libs/openslp )
+DESCRIPTION=Network Information Service server
+HOMEPAGE=http://www.linux-nis.org/nis/
+IUSE=slp
+KEYWORDS=amd64 ia64 ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=>=sys-libs/gdbm-1.8.0 slp? ( net-libs/openslp ) || ( net-nds/rpcbind net-nds/portmap )
+SLOT=0
+SRC_URI=mirror://kernel/linux/utils/net/NIS/ypserv-2.19.tar.bz2
+_md5_=f6754b00090ca5cc9d6fc9b17e6d1994

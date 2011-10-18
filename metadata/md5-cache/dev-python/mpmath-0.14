@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=doc? ( dev-python/sphinx ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* test? ( dev-python/py )
+DESCRIPTION=A python library for arbitrary-precision floating-point arithmetic
+EAPI=2
+HOMEPAGE=http://code.google.com/p/mpmath/ http://pypi.python.org/pypi/mpmath
+IUSE=doc examples gmp test
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=gmp? ( dev-python/gmpy ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+SLOT=0
+SRC_URI=http://mpmath.googlecode.com/files/mpmath-0.14.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a6fc35ec4b4bcf72a1a56ad6c3dd5c2b

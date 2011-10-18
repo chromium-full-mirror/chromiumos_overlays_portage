@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=>=dev-libs/libburn-0.6.4 >=dev-libs/libisofs-0.6.20 acl? ( virtual/acl ) readline? ( sys-libs/readline ) xattr? ( sys-apps/attr ) zlib? ( sys-libs/zlib ) dev-util/pkgconfig
+DESCRIPTION=Enables creation and expansion of ISO-9660 filesystems on all CD/DVD media supported by libburn
+EAPI=2
+HOMEPAGE=http://libburnia-project.org/
+IUSE=acl readline xattr zlib
+KEYWORDS=~amd64 ~hppa ppc ppc64 x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/libburn-0.6.4 >=dev-libs/libisofs-0.6.20 acl? ( virtual/acl ) readline? ( sys-libs/readline ) xattr? ( sys-apps/attr ) zlib? ( sys-libs/zlib )
+SLOT=0
+SRC_URI=http://files.libburnia-project.org/releases/libisoburn-0.4.0.pl01.tar.gz
+_md5_=90abeb66dd2bbbdd6107c38a6f789437

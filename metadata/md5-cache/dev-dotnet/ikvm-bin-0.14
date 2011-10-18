@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=>=dev-lang/mono-1.1 !dev-dotnet/ikvm
+DESCRIPTION=Java VM for .NET
+HOMEPAGE=http://www.ikvm.net/
+KEYWORDS=~x86 ~amd64
+LICENSE=as-is
+RDEPEND=>=dev-lang/mono-1.1 !dev-dotnet/ikvm
+SLOT=0
+SRC_URI=http://www.go-mono.com/sources/ikvm/ikvm-0.14.tar.gz
+_eclasses_=mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=747ae337b53522bece9a55f0a0887ffd

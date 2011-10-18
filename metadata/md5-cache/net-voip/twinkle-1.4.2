@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=>=net-libs/ccrtp-1.6.0 >=dev-cpp/commoncpp2-1.6.1 x11-libs/qt:3 media-libs/libsndfile dev-libs/boost speex? ( >=media-libs/speex-1.2_beta3 ) ilbc? ( dev-libs/ilbc-rfc3951 ) zrtp? ( >=net-libs/libzrtpcpp-1.3.0 ) media-libs/alsa-lib dev-util/pkgconfig =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=a soft phone for your VOIP communcations using SIP
+EAPI=2
+HOMEPAGE=http://www.twinklephone.com/
+IUSE=speex ilbc zrtp
+KEYWORDS=amd64 ppc ~ppc64 x86
+LICENSE=GPL-2
+RDEPEND=>=net-libs/ccrtp-1.6.0 >=dev-cpp/commoncpp2-1.6.1 x11-libs/qt:3 media-libs/libsndfile dev-libs/boost speex? ( >=media-libs/speex-1.2_beta3 ) ilbc? ( dev-libs/ilbc-rfc3951 ) zrtp? ( >=net-libs/libzrtpcpp-1.3.0 ) media-libs/alsa-lib
+SLOT=0
+SRC_URI=http://www.xs4all.nl/~mfnboer/twinkle/download/twinkle-1.4.2.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt3	823f11abd98cfc43cf92b8622e420f1f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=b8044c59a14d9b3dcef9d238e0306d16

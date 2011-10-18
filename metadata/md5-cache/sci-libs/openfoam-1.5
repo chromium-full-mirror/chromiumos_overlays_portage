@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup test unpack
+DEPEND=!=sci-libs/openfoam-bin-1.5* !=sci-libs/openfoam-kernel-1.5* !=sci-libs/openfoam-meta-1.5* !=sci-libs/openfoam-solvers-1.5* !=sci-libs/openfoam-utilities-1.5* !=sci-libs/openfoam-wmake-1.5* sci-libs/parmetis sci-libs/parmgridgen || ( >sci-visualization/paraview-3.0 sci-visualization/opendx ) virtual/mpi
+DESCRIPTION=Open Field Operation and Manipulation - CFD Simulation Toolbox
+HOMEPAGE=http://www.opencfd.co.uk/openfoam/
+IUSE=examples doc
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=!=sci-libs/openfoam-bin-1.5* !=sci-libs/openfoam-kernel-1.5* !=sci-libs/openfoam-meta-1.5* !=sci-libs/openfoam-solvers-1.5* !=sci-libs/openfoam-utilities-1.5* !=sci-libs/openfoam-wmake-1.5* sci-libs/parmetis sci-libs/parmgridgen || ( >sci-visualization/paraview-3.0 sci-visualization/opendx ) virtual/mpi
+SLOT=1.5
+SRC_URI=mirror://sourceforge/foam/OpenFOAM-1.5.General.gtgz mirror://gentoo/OpenFOAM-1.5-compile-1.patch.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=5c97c362d66e728b1a5ffd893a51de4c

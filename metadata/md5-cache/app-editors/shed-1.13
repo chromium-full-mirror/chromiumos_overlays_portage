@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install
+DEPEND=>=sys-libs/ncurses-5.3
+DESCRIPTION=Simple Hex EDitor
+HOMEPAGE=http://shed.sourceforge.net/
+KEYWORDS=amd64 ~ppc x86
+LICENSE=GPL-2
+RDEPEND=>=sys-libs/ncurses-5.3
+SLOT=0
+SRC_URI=mirror://sourceforge/shed/shed-1.13.tar.gz
+_md5_=5c4bf772a2f2d3038c5b7ceb71689c3a

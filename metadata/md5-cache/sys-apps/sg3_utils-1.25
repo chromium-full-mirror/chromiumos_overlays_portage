@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DEPEND=sys-devel/libtool
+DESCRIPTION=Apps for querying the sg SCSI interface
+HOMEPAGE=http://sg.danny.cz/sg/
+KEYWORDS=amd64 hppa ~ia64 ppc ppc64 sparc x86
+LICENSE=GPL-2
+PDEPEND=>=sys-apps/rescan-scsi-bus-1.24
+RDEPEND=sys-apps/sdparm !>=sys-apps/sdparm-1.04
+SLOT=0
+SRC_URI=http://sg.danny.cz/sg/p/sg3_utils-1.25.tgz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=cdae8dc285d1287cb2324cc00f7d9242

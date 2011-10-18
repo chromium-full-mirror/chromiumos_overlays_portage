@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=net-misc/asterisk-1.2.0 !=net-misc/asterisk-1.0*
+DESCRIPTION=Asterisk plugin to intercept an unanswered call
+HOMEPAGE=http://www.pbxfreeware.org/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=>=net-misc/asterisk-1.2.0 !=net-misc/asterisk-1.0*
+SLOT=0
+SRC_URI=http://www.netdomination.org/pub/asterisk/asterisk-app_intercept-20060120.tar.bz2 mirror://gentoo/asterisk-app_intercept-20060120.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=603b0517094a491c194d91c02c8643d1

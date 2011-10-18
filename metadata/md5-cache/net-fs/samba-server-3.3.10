@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare setup
+DEPEND=!<net-fs/samba-3.3 ads? ( virtual/krb5 sys-fs/e2fsprogs net-fs/samba-libs[ads] ) dev-libs/popt virtual/libiconv avahi? ( net-dns/avahi ) zeroconf? ( !avahi? ( || ( net-dns/avahi[mdnsresponder-compat] net-misc/mDNSResponder ) ) ) caps? ( sys-libs/libcap ) cups? ( net-print/cups ) debug? ( dev-libs/dmalloc ) ldap? ( net-nds/openldap ) syslog? ( virtual/logger ) net-fs/samba-libs[caps?,cluster?,cups?,ldap?,syslog?,winbind?]
+DESCRIPTION=Libraries from Samba
+EAPI=2
+HOMEPAGE=http://www.samba.org/
+IUSE=acl ads aio avahi caps cluster cups debug doc examples fam ldap quota swat syslog winbind zeroconf
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ppc ~ppc64 ~x86
+LICENSE=GPL-3
+RDEPEND=!<net-fs/samba-3.3 ads? ( virtual/krb5 sys-fs/e2fsprogs net-fs/samba-libs[ads] ) dev-libs/popt virtual/libiconv avahi? ( net-dns/avahi ) zeroconf? ( !avahi? ( || ( net-dns/avahi[mdnsresponder-compat] net-misc/mDNSResponder ) ) ) caps? ( sys-libs/libcap ) cups? ( net-print/cups ) debug? ( dev-libs/dmalloc ) ldap? ( net-nds/openldap ) syslog? ( virtual/logger ) net-fs/samba-libs[caps?,cluster?,cups?,ldap?,syslog?,winbind?]
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://samba/samba-3.3.10.tar.gz
+_eclasses_=confutils	a80706bb5b9ddcf6bbd14365656d4985	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pam	f794bf311d46a2b11d3d9362fe656bd0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=db0ff635b79db675503cc98872cb0a0a

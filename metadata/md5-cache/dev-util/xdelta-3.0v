@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=>=dev-lang/python-2.5 sys-apps/sed >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=a binary diff and differential compression tools. VCDIFF (RFC 3284) delta compression.
+EAPI=2
+HOMEPAGE=http://xdelta.org
+IUSE=test
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/python-2.5 >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=3
+SRC_URI=http://xdelta.googlecode.com/files/xdelta3.0v2.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b0e5d8e8ffd414db45745119d7d280f2

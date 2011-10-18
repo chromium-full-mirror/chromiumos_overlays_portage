@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=nls? ( >=sys-devel/gettext-0.16.1 ) kerberos? ( virtual/krb5 ) idn? ( net-dns/libidn ) gnutls? ( net-libs/gnutls )
+DESCRIPTION=The GNU SASL client, server, and library
+HOMEPAGE=http://www.gnu.org/software/gsasl/
+IUSE=doc gnutls idn kerberos nls
+KEYWORDS=~amd64 ~ia64 ~ppc ~sparc ~x86
+LICENSE=GPL-3
+RDEPEND=nls? ( >=sys-devel/gettext-0.16.1 ) kerberos? ( virtual/krb5 ) idn? ( net-dns/libidn ) gnutls? ( net-libs/gnutls )
+SLOT=0
+SRC_URI=ftp://alpha.gnu.org/pub/gnu/gsasl/gsasl-0.2.29.tar.gz
+_md5_=282de3748f52b930b9969a60941d7879

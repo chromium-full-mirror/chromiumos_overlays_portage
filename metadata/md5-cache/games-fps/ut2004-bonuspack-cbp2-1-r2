@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=app-arch/unzip
+DESCRIPTION=UT2004 Community Bonus Pack 2 volumes 1 and 2 - Community Bonus Pack 2 volumes 1 and 2
+EAPI=2
+HOMEPAGE=http://www.planetunreal.com/cbp/
+IUSE=dedicated opengl
+KEYWORDS=amd64 x86
+LICENSE=freedist
+RDEPEND=games-fps/ut2004-bonuspack-cbp1 games-fps/ut2004-bonuspack-mega dedicated? ( || ( games-server/ut2004-ded games-fps/ut2004[dedicated] ) ) opengl? ( || ( games-fps/ut2004[opengl] games-fps/ut2004[-dedicated] ) ) !dedicated? ( !opengl? ( || ( games-fps/ut2004[opengl] games-fps/ut2004[-dedicated] ) ) )
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=http://downloads.unrealadmin.org/UT2004/BonusPack/cbp2-volume1_zip.zip http://www.i4games.eu/downloads/ut2k4/cbp2-volume1_zip.zip http://downloads.unrealadmin.org/UT2004/BonusPack/cbp2-volume2_zip.zip http://www.i4games.eu/downloads/ut2k4/cbp2-volume2_zip.zip
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	games-mods	aa58110c9e7b2d0d4215a06e00ba22bf	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=04628a699941c9a0249315e9956d99d7

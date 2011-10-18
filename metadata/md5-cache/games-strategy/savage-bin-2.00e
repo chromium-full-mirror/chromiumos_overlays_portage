@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=app-arch/unzip
+DESCRIPTION=Unique mix of strategy and FPS
+EAPI=2
+HOMEPAGE=http://www.s2games.com/savage/ http://www.notforidiots.com/SFE/ http://www.newerth.com/
+KEYWORDS=amd64 x86
+LICENSE=as-is
+RDEPEND=virtual/opengl x86? ( media-libs/libsdl >=media-libs/freetype-2 <media-libs/jpeg-7 ) amd64? ( app-emulation/emul-linux-x86-sdl )
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=http://www.newerth.com/downloads/SFE-Standalone.tar.gz http://www.newerth.com/downloads/lin-client-auth-patch.zip
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=78848a037452a17e37e27a465e747c52

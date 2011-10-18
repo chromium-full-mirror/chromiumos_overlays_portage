@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst unpack
+DESCRIPTION=CadSoft EAGLE schematic and printed circuit board (PCB) layout editor
+HOMEPAGE=http://www.cadsoft.de
+IUSE=linguas_de doc
+KEYWORDS=amd64 x86
+LICENSE=cadsoft
+RDEPEND=sys-libs/glibc x11-libs/libXext x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp amd64? ( app-emulation/emul-linux-x86-baselibs app-emulation/emul-linux-x86-xlibs )
+RESTRICT=strip
+SLOT=0
+SRC_URI=linguas_de? ( ftp://ftp.cadsoft.de/pub/program/4.16r2/eagle-lin-ger-4.16r2.tgz doc? ( mirror://gentoo/cadsoft_eagle_manual-ger-2006.12.13.pdf ) ) !linguas_de? ( ftp://ftp.cadsoft.de/pub/program/4.16r2/eagle-lin-eng-4.16r2.tgz doc? ( mirror://gentoo/cadsoft_eagle_manual-eng-2006.12.13.pdf ) )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=83e2d1ce5aeb353acfadc2befdef752f

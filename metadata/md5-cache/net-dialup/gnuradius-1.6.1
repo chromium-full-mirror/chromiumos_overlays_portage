@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install unpack
+DEPEND=!net-dialup/freeradius !net-dialup/cistronradius guile? ( >=dev-scheme/guile-1.4 ) mysql? ( virtual/mysql ) postgres? ( virtual/postgresql-server ) odbc? ( || ( dev-db/unixODBC dev-db/libiodbc ) ) readline? ( sys-libs/readline ) dbm? ( sys-libs/gdbm ) snmp? ( net-analyzer/net-snmp ) pam? ( virtual/pam )
+DESCRIPTION=GNU radius authentication server
+EAPI=2
+HOMEPAGE=http://www.gnu.org/software/radius/radius.html
+IUSE=guile mysql postgres odbc dbm nls snmp pam static debug readline
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=!net-dialup/freeradius !net-dialup/cistronradius guile? ( >=dev-scheme/guile-1.4 ) mysql? ( virtual/mysql ) postgres? ( virtual/postgresql-server ) odbc? ( || ( dev-db/unixODBC dev-db/libiodbc ) ) readline? ( sys-libs/readline ) dbm? ( sys-libs/gdbm ) snmp? ( net-analyzer/net-snmp ) pam? ( virtual/pam )
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://gnu/radius/radius-1.6.1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pam	f794bf311d46a2b11d3d9362fe656bd0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e1142f32c3e059640ff77abf7cd7f140

@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=sys-devel/libtool
+DESCRIPTION=Library to check account numbers and bank codes of German banks
+EAPI=2
+HOMEPAGE=http://ktoblzcheck.sourceforge.net/
+IUSE=python
+KEYWORDS=amd64 ppc ~ppc64 sparc x86
+LICENSE=LGPL-2.1
+RDEPEND=sys-devel/libtool
+SLOT=0
+SRC_URI=mirror://sourceforge/ktoblzcheck/ktoblzcheck-1.24.tar.gz
+_md5_=6ac4bf2968ab2201acb9a9f1d6a95138

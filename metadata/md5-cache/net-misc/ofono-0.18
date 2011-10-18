@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=>=sys-apps/dbus-1.3 bluetooth? ( >=net-wireless/bluez-4.61 ) >=dev-libs/glib-2.16 udev? ( >=sys-fs/udev-143 ) dev-util/pkgconfig
+DESCRIPTION=Open Source mobile telephony (GSM/UMTS) daemon.
+EAPI=2
+HOMEPAGE=http://ofono.org/
+IUSE=bluetooth threads +udev
+KEYWORDS=~arm ~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-apps/dbus-1.3 bluetooth? ( >=net-wireless/bluez-4.61 ) >=dev-libs/glib-2.16 udev? ( >=sys-fs/udev-143 )
+SLOT=0
+SRC_URI=mirror://kernel/linux/network/ofono/ofono-0.18.tar.gz
+_md5_=74d955ef30a61573f1e7e3cd6c73efea

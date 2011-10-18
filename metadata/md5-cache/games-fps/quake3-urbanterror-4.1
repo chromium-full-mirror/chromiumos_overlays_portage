@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DEPEND=app-arch/unzip
+DESCRIPTION=Quake III Urban Terror - total transformation realism based MOD
+HOMEPAGE=http://www.urbanterror.net/
+IUSE=dedicated opengl dedicated opengl
+KEYWORDS=-* ~amd64 ~ppc ~x86
+LICENSE=freedist
+RDEPEND=dedicated? ( || ( games-fps/quake3 games-fps/quake3-bin ) ) opengl? ( || ( games-fps/quake3 games-fps/quake3-bin ) ) !dedicated? ( !opengl? ( || ( games-fps/quake3 games-fps/quake3-bin ) ) )
+RESTRICT=mirror strip
+SLOT=3
+SRC_URI=ftp://ftp.snt.utwente.nl/pub/games/urbanterror/UrbanTerror_41_FULL.zip
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	games-mods	aa58110c9e7b2d0d4215a06e00ba22bf	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=bd663b268df2dd123a6ce47ea72083e5

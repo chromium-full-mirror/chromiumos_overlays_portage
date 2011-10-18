@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst setup unpack
+DEPEND=media-libs/libpng media-libs/jpeg media-libs/libmng media-libs/lcms sys-libs/zlib cups? ( net-print/cups ) firebird? ( dev-db/firebird ) mysql? ( virtual/mysql ) opengl? ( virtual/opengl virtual/glu ) postgres? ( virtual/postgresql-server )
+DESCRIPTION=Embedded Linux port of Qt
+HOMEPAGE=http://www.qtsoftware.com/products/platform/qt-for-embedded-linux
+IUSE=cups debug doc firebird gif ipv6 mysql nis odbc opengl postgres sqlite
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=|| ( QPL-1.0 GPL-2 GPL-3 )
+PDEPEND=odbc? ( ~dev-db/qt-unixODBC-3.3.8b )
+RDEPEND=media-libs/libpng media-libs/jpeg media-libs/libmng media-libs/lcms sys-libs/zlib cups? ( net-print/cups ) firebird? ( dev-db/firebird ) mysql? ( virtual/mysql ) opengl? ( virtual/opengl virtual/glu ) postgres? ( virtual/postgresql-server )
+SLOT=3
+SRC_URI=ftp://ftp.qtsoftware.com/qt/source/qt-embedded-free-3.3.8b.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8670b0b909cb3915ab0014c5cc0dfd45

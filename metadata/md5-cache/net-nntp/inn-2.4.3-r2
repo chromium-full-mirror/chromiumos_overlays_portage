@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile config install postinst postrm unpack
+DEPEND=virtual/mta kerberos? ( virtual/krb5 ) sasl? ( >=dev-libs/cyrus-sasl-2 ) ssl? ( dev-libs/openssl ) perl? ( dev-lang/perl ) python? ( dev-lang/python ) berkdb? ( sys-libs/db ) >=sys-apps/sed-4 ssl? ( dev-libs/openssl ) =sys-devel/automake-1.10* =sys-devel/autoconf-2.1* >=sys-devel/libtool-2.2.6b
+DESCRIPTION=The Internet News daemon, fully featured NNTP server
+HOMEPAGE=http://www.isc.org/products/INN
+IUSE=ipv6 kerberos sasl ssl perl python berkdb inntaggedhash innkeywords ssl
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=as-is BSD GPL-2
+RDEPEND=virtual/mta kerberos? ( virtual/krb5 ) sasl? ( >=dev-libs/cyrus-sasl-2 ) ssl? ( dev-libs/openssl ) perl? ( dev-lang/perl ) python? ( dev-lang/python ) berkdb? ( sys-libs/db )
+SLOT=0
+SRC_URI=ftp://ftp.isc.org/isc/inn/inn-2.4.3.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fixheadtails	059c47dd86229aa6382393274677acfe	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ssl-cert	031d86ef31449c1482f12ddd8aa0d4eb	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=57c8a5b9906d022789aaa36b11939fa7

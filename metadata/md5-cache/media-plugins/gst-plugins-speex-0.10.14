@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=media-libs/speex-1.1.6 >=media-libs/gstreamer-0.10.22 >=media-libs/gst-plugins-base-0.10.22 dev-util/pkgconfig =media-libs/gst-plugins-base-0.10* >=sys-apps/sed-4 dev-util/pkgconfig
+DESCRIPTION=GStreamer plugin to allow encoding and decoding of speex
+HOMEPAGE=http://gstreamer.freedesktop.org/
+KEYWORDS=alpha amd64 ~arm hppa ~ia64 ppc ppc64 ~sparc x86
+LICENSE=GPL-2
+RDEPEND=>=media-libs/speex-1.1.6 >=media-libs/gstreamer-0.10.22 >=media-libs/gst-plugins-base-0.10.22 =media-libs/gst-plugins-base-0.10*
+RESTRICT=test
+SLOT=0.10
+SRC_URI=http://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-0.10.14.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	gst-plugins-good	b31195b64fabfffe7f52d50de730ad81	gst-plugins10	0b0ab1ffca50e11277845f9a7d5bda02	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=063445bf1b3e3c85aa17e32759d2d114

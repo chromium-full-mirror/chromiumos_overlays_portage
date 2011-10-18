@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst preinst unpack
+DEPEND=virtual/libiconv dev-libs/expat
+DESCRIPTION=GNU locale utilities
+HOMEPAGE=http://www.gnu.org/software/gettext/gettext.html
+IUSE=emacs nls doc nocxx
+KEYWORDS=alpha amd64 arm hppa ia64 m68k mips ppc ppc64 s390 sh sparc ~sparc-fbsd x86 ~x86-fbsd
+LICENSE=GPL-2 LGPL-2
+PDEPEND=emacs? ( app-emacs/po-mode )
+RDEPEND=virtual/libiconv dev-libs/expat
+SLOT=0
+SRC_URI=mirror://gnu/gettext/gettext-0.16.1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e11cf7cb33bae82c26a8932cdb838151

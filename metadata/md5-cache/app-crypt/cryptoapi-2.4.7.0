@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup
+DEPEND=>=sys-apps/util-linux-2.11o-r2 virtual/linux-sources kernel_linux? ( virtual/modutils ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+DESCRIPTION=Modules that add encryption ability at the kernel level.
+HOMEPAGE=http://www.sourceforge.net/projects/cryptoapi
+IUSE=kernel_linux
+KEYWORDS=x86 -ppc
+LICENSE=GPL-2
+RDEPEND=>=sys-apps/util-linux-2.11o-r2 virtual/linux-sources kernel_linux? ( virtual/modutils )
+SLOT=0
+SRC_URI=mirror://sourceforge/cryptoapi/cryptoapi-2.4.7.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	linux-info	8d722422d00ae99ed52a790b20b9bfc4	linux-mod	07a3d250a1268d811d3e8730e5741394	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=f694570bd266a689cd9bc7f3133101e1

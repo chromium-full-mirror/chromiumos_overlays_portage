@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install nofetch preinst setup unpack
+DEPEND=doc? ( app-arch/unzip ) >=dev-java/java-config-2.1.9-r1
+DESCRIPTION=JDBC 3.0 Drivers for Oracle
+HOMEPAGE=http://www.oracle.com/technology/software/tech/java/sqlj_jdbc/index.html
+IUSE=debug dms doc examples nls ons elibc_FreeBSD
+KEYWORDS=amd64 ppc x86
+LICENSE=oracle-jdbc
+RDEPEND=>=virtual/jre-1.4 >=dev-java/java-config-2.1.9-r1
+RESTRICT=fetch
+SLOT=10.2
+SRC_URI=!dms? ( !debug? ( jdbc-oracle-bin-10.2.0.3-ojdbc14.jar ) debug? ( jdbc-oracle-bin-10.2.0.3-ojdbc14_g.jar ) ) dms? ( !debug? ( jdbc-oracle-bin-10.2.0.3-ojdbc14dms.jar ) debug? ( jdbc-oracle-bin-10.2.0.3-ojdbc14dms_g.jar ) ) doc? ( jdbc-oracle-bin-10.2.0.1-javadoc.zip ) examples? ( jdbc-oracle-bin-10.2.0.3-demo.tar ) nls? ( jdbc-oracle-bin-10.2.0.3-orai18n.jar ) ons? ( jdbc-oracle-bin-10.2.0.3-ons.jar )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	java-pkg-2	39b2c3db200ad244ca675b2a1363aa75	java-utils-2	9c079d63349fb3fcd154c1630807a59a	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=e98c833941d2925b6884d46e6d299bac

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst preinst prerm unpack
+DEPEND=>=sys-libs/ncurses-5.2-r5 dev-libs/lzo truetype? ( media-libs/freetype ) dev-lang/ruby =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b >=dev-vcs/bzr-1.5
+DESCRIPTION=GNU GRUB 2 boot loader
+HOMEPAGE=http://www.gnu.org/software/grub/
+IUSE=custom-cflags debug truetype multislot static
+LICENSE=GPL-3
+PROVIDE=virtual/bootloader
+RDEPEND=>=sys-libs/ncurses-5.2-r5 dev-libs/lzo truetype? ( media-libs/freetype )
+SLOT=0
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	bzr	a9f084be63208482abbc229f90dc846f	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	mount-boot	932166cd49a73ccf2631de9e6ac3866b	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=53f6ae60bf7566bc6911d2ab97340691

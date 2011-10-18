@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-libs/expat virtual/ruby
+DESCRIPTION=A fast Ruby XML API written in C with pretty-printing, entity en-/decoding, marshalling and regex addressing.
+HOMEPAGE=http://quixml.rubyforge.org/
+KEYWORDS=hppa ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/expat virtual/ruby
+SLOT=0
+SRC_URI=http://rubyforge.org/download.php/89/quixml-0.2.1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby	dfc4f482954636675998a350b1d078b5	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9bc6fe613b403fdf69b2222d71c13a54

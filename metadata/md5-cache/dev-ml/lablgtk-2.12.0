@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare
+DEPEND=>=x11-libs/gtk+-2.10 >=dev-lang/ocaml-3.10[ocamlopt?] svg? ( >=gnome-base/librsvg-2.2 ) glade? ( >=gnome-base/libglade-2.0.1 ) gnomecanvas? ( >=gnome-base/libgnomecanvas-2.2 ) gnome? ( >=gnome-base/gnome-panel-2.4.0 >=gnome-base/libgnomeui-2.4.0 ) opengl? ( >=dev-ml/lablgl-0.98 >=x11-libs/gtkglarea-1.9 ) spell? ( app-text/gtkspell ) sourceview? ( =x11-libs/gtksourceview-1* ) dev-util/pkgconfig
+DESCRIPTION=Objective CAML interface for Gtk+2
+EAPI=2
+HOMEPAGE=http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/lablgtk.html
+IUSE=debug examples glade gnome gnomecanvas sourceview +ocamlopt opengl spell svg
+KEYWORDS=alpha amd64 hppa ia64 ppc sparc x86 ~x86-fbsd
+LICENSE=LGPL-2.1 as-is
+RDEPEND=>=x11-libs/gtk+-2.10 >=dev-lang/ocaml-3.10[ocamlopt?] svg? ( >=gnome-base/librsvg-2.2 ) glade? ( >=gnome-base/libglade-2.0.1 ) gnomecanvas? ( >=gnome-base/libgnomecanvas-2.2 ) gnome? ( >=gnome-base/gnome-panel-2.4.0 >=gnome-base/libgnomeui-2.4.0 ) opengl? ( >=dev-ml/lablgl-0.98 >=x11-libs/gtkglarea-1.9 ) spell? ( app-text/gtkspell ) sourceview? ( =x11-libs/gtksourceview-1* )
+SLOT=2
+SRC_URI=http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/dist/lablgtk-2.12.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=192cb40882533a30033ddb6979d22b58

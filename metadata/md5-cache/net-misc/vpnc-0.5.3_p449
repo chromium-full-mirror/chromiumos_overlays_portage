@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst
+DEPEND=>=dev-libs/libgcrypt-1.1.91 >=sys-apps/iproute2-2.6.19.20061214 net-libs/gnutls
+DESCRIPTION=Free client for Cisco VPN routing software
+HOMEPAGE=http://www.unix-ag.uni-kl.de/~massar/vpnc/
+IUSE=resolvconf
+KEYWORDS=~amd64 ~arm ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2 BSD
+RDEPEND=>=dev-libs/libgcrypt-1.1.91 >=sys-apps/iproute2-2.6.19.20061214 net-libs/gnutls resolvconf? ( net-dns/openresolv )
+SLOT=0
+SRC_URI=http://www.unix-ag.uni-kl.de/~massar/vpnc/vpnc-0.5.3_p449.tar.bz2
+_md5_=3a439e32fc075bc51df7299fe2f7a21e

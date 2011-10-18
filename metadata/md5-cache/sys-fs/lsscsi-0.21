@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DEPEND=>=sys-fs/sysfsutils-1.2.0
+DESCRIPTION=SCSI sysfs query tool
+HOMEPAGE=http://sg.danny.cz/scsi/lsscsi.html
+KEYWORDS=alpha amd64 hppa ~ia64 ~mips ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=>=sys-fs/sysfsutils-1.2.0
+SLOT=0
+SRC_URI=http://sg.danny.cz/scsi/lsscsi-0.21.tgz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=06c38a5bdafbe399edc7cc13178bc63e

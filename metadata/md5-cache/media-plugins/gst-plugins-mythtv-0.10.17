@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=media-libs/gmyth-0.4 <=media-libs/gmyth-0.7.99 >=media-libs/gstreamer-0.10.25 >=media-libs/gst-plugins-base-0.10.25 dev-util/pkgconfig =media-libs/gstreamer-0.10* =media-libs/gst-plugins-base-0.10* >=dev-libs/glib-2.6 >=dev-libs/liboil-0.3 sys-apps/sed dev-util/pkgconfig sys-devel/gettext
+DESCRIPTION=plugin for gstreamer
+HOMEPAGE=http://gstreamer.freedesktop.org/
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=media-libs/gmyth-0.4 <=media-libs/gmyth-0.7.99 >=media-libs/gstreamer-0.10.25 >=media-libs/gst-plugins-base-0.10.25 =media-libs/gstreamer-0.10* =media-libs/gst-plugins-base-0.10* >=dev-libs/glib-2.6 >=dev-libs/liboil-0.3
+RESTRICT=test
+SLOT=0.10
+SRC_URI=http://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-0.10.17.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	gst-plugins-bad	2d233745902ad66d844bcc8268e2cb26	gst-plugins10	0b0ab1ffca50e11277845f9a7d5bda02	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=592e6900ac7b1bf3bc2a52cda8acced1

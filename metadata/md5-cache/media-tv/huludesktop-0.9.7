@@ -1,0 +1,13 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=Hulu desktop
+EAPI=2
+HOMEPAGE=http://www.hulu.com/labs/hulu-desktop-linux
+IUSE=lirc
+KEYWORDS=~amd64 ~x86
+LICENSE=Hulu-EULA
+RDEPEND=sys-libs/glibc sys-libs/zlib www-plugins/adobe-flash x11-libs/gtk+:2 dev-libs/glib:2 lirc? ( app-misc/lirc )
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=amd64? ( http://download.hulu.com/huludesktop_amd64.deb -> huludesktop-0.9.7_amd64.deb ) x86? ( http://download.hulu.com/huludesktop_i386.deb -> huludesktop-0.9.7_i386.deb )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=35580440bd12dc65e746c69c5d14074f

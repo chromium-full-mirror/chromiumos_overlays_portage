@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install
+DEPEND=>=dev-ml/findlib-1.0 >=dev-ml/pcre-ocaml-5 >=dev-lang/ocaml-3.10.2[tk?,ocamlopt?] gtk? ( >=dev-ml/lablgtk-2 ) ssl? ( >=dev-ml/ocaml-ssl-0.4 ) zip? ( dev-ml/camlzip ) >=dev-ml/findlib-1.0.4-r1
+DESCRIPTION=Modules for OCaml application-level Internet protocols
+EAPI=2
+HOMEPAGE=http://projects.camlcity.org/projects/ocamlnet.html
+IUSE=gtk ssl tk httpd +ocamlopt zip
+KEYWORDS=~amd64 ~ppc ~x86 ~x86-fbsd
+LICENSE=as-is GPL-2
+RDEPEND=>=dev-ml/findlib-1.0 >=dev-ml/pcre-ocaml-5 >=dev-lang/ocaml-3.10.2[tk?,ocamlopt?] gtk? ( >=dev-ml/lablgtk-2 ) ssl? ( >=dev-ml/ocaml-ssl-0.4 ) zip? ( dev-ml/camlzip )
+RESTRICT=installsources
+SLOT=0
+SRC_URI=http://download.camlcity.org/download/ocamlnet-3.0test2.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	findlib	d2cdd99abbdd240f5ccef654e38a4ea9	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d44a7b533056616d01c5f439cafcd185

@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=>=media-video/ffmpeg-0.5[encode] >=media-video/xine-ui-0.99.1 x11-libs/wxGTK:2.8[X] || ( >=media-libs/wxsvg-1.0.2 >=media-libs/wxsvg-1[ffmpeg] ) >=media-libs/libexif-0.6.16 gnome? ( >=gnome-base/libgnomeui-2 ) dev-util/pkgconfig app-text/xmlto >=sys-devel/gettext-0.17 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=DVDStyler is a cross-platform DVD authoring System
+EAPI=2
+HOMEPAGE=http://www.dvdstyler.de
+IUSE=debug gnome
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+PDEPEND=>=app-cdr/dvdisaster-0.71.0
+RDEPEND=>=media-video/ffmpeg-0.5[encode] >=media-video/xine-ui-0.99.1 x11-libs/wxGTK:2.8[X] || ( >=media-libs/wxsvg-1.0.2 >=media-libs/wxsvg-1[ffmpeg] ) >=media-libs/libexif-0.6.16 gnome? ( >=gnome-base/libgnomeui-2 ) virtual/cdrtools >=media-video/dvdauthor-0.6.14 >=app-cdr/dvd+rw-tools-7.1
+SLOT=0
+SRC_URI=mirror://sourceforge/dvdstyler/DVDStyler-1.7.4.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	wxwidgets	a63777cd98e5f0d521e43c451fe4cf43
+_md5_=8dcf6bc9f5d19a2fb2ec7cc57a9b675c

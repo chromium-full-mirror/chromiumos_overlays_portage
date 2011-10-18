@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst prerm setup unpack
+DEPEND=!dev-lang/ghc-bin >=sys-devel/gcc-2.95.3 >=sys-devel/binutils-2.17 >=dev-lang/perl-5.6.1 >=dev-libs/gmp-4.1 =sys-libs/readline-5*
+DESCRIPTION=The Glasgow Haskell Compiler
+HOMEPAGE=http://www.haskell.org/ghc/
+IUSE=binary doc ghcbootstrap
+KEYWORDS=~alpha ~amd64 ~ppc ~sparc ~x86
+LICENSE=BSD
+PDEPEND=>=dev-haskell/cabal-1.1.6.1
+RDEPEND=!dev-lang/ghc-bin >=sys-devel/gcc-2.95.3 >=sys-devel/binutils-2.17 >=dev-lang/perl-5.6.1 >=dev-libs/gmp-4.1 =sys-libs/readline-5*
+SLOT=0
+SRC_URI=!binary? ( http://haskell.org/ghc/dist/6.6/ghc-6.6-src.tar.bz2 ) doc? ( mirror://gentoo/ghc-6.6-libraries.tar.gz mirror://gentoo/ghc-6.6-users_guide.tar.gz ) alpha? ( mirror://gentoo/ghc-bin-6.6-alpha.tbz2 ) amd64? ( mirror://gentoo/ghc-bin-6.6-amd64.tbz2 ) ppc? ( mirror://gentoo/ghc-bin-6.6-ppc.tbz2 ) sparc? ( mirror://gentoo/ghc-bin-6.6-sparc.tbz2 ) x86? ( mirror://gentoo/ghc-bin-6.6-x86.tbz2 )
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	ghc-package	a0576f38fd872706ee22bf4f6c0c6152	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=692995e338c57d1a61e818568ce4cac3

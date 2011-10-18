@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup unpack
+DEPEND=|| ( app-emacs/nxml-mode >=virtual/emacs-23 ) ropemacs? ( app-emacs/pymacs ) semantic? ( app-emacs/cedet ) >=virtual/emacs-22
+DESCRIPTION=In-buffer completion front-end
+EAPI=2
+HOMEPAGE=http://nschum.de/src/emacs/company-mode/
+IUSE=ropemacs semantic
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=|| ( app-emacs/nxml-mode >=virtual/emacs-23 ) ropemacs? ( app-emacs/pymacs ) semantic? ( app-emacs/cedet ) >=virtual/emacs-22
+SLOT=0
+SRC_URI=http://nschum.de/src/emacs/company-mode/company-0.4.3.tar.bz2
+_eclasses_=elisp	4fb60944284f0928ba836a482f598807	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ea2d27cf6a8ed9d0d03dcd941cc582d7

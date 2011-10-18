@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=sys-libs/ncurses
+DESCRIPTION=Tig: text mode interface for git
+HOMEPAGE=http://jonas.nitro.dk/tig/
+IUSE=bash-completion
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE=GPL-2
+PDEPEND=bash-completion? ( app-shells/bash-completion )
+RDEPEND=sys-libs/ncurses dev-util/git bash-completion? ( app-admin/eselect )
+SLOT=0
+SRC_URI=http://jonas.nitro.dk/tig/releases/tig-0.15.tar.gz
+_eclasses_=bash-completion	f0fab76a98c0e4b3d72b6beb28d3f653
+_md5_=ab2bc380f1835f48ea3724e597024da1

@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=>=sys-devel/libtool-2.2.6b =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 dev-perl/XML-LibXML >=dev-lang/mono-2.0.1 >=sys-apps/sed-4 >=dev-util/pkgconfig-0.23 >=app-shells/bash-3.1
+DESCRIPTION=GtkSharp's gtk-gapi module of the gtk-sharp tarball
+EAPI=2
+HOMEPAGE=http://www.mono-project.com/GtkSharp
+IUSE=debug
+KEYWORDS=amd64 ppc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux
+LICENSE=LGPL-2.1
+RDEPEND=!<=dev-dotnet/gtk-sharp-2.12.7:2 dev-perl/XML-LibXML >=dev-lang/mono-2.0.1
+RESTRICT=test
+SLOT=2
+SRC_URI=mirror://gentoo/gtk-sharp-2.12.7.patch.bz2 mirror://gnome/sources/gtk-sharp/2.12/gtk-sharp-2.12.9.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	gtk-sharp-module	f9f1b7061dbbe3b7a11b0fd0d3e0a629	libtool	4dd71cbef362174302a0d79d1360336e	mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=f29064a0c16ddc7e298f489b8bd7f332

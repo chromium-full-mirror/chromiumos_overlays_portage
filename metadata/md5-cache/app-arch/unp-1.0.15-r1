@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=dev-lang/perl
+DESCRIPTION=Script for unpacking various file formats
+HOMEPAGE=http://packages.qa.debian.org/u/unp.html
+KEYWORDS=amd64 ~hppa ~ppc x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/perl
+SLOT=0
+SRC_URI=mirror://debian/pool/main/u/unp/unp_1.0.15.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=da7024ea28b016ff51e1835fde640a54

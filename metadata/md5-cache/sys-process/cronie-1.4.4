@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install postinst
+DEPEND=pam? ( virtual/pam ) >=sys-apps/sed-4.0.5
+DESCRIPTION=Cronie is a standard UNIX daemon cron based on the original vixie-cron.
+EAPI=2
+HOMEPAGE=https://fedorahosted.org/cronie/wiki
+IUSE=inotify pam
+KEYWORDS=~amd64 ~x86
+LICENSE=ISC BSD BSD-2
+PROVIDE=virtual/cron
+RDEPEND=pam? ( virtual/pam ) !virtual/cron virtual/mta >=sys-process/cronbase-0.3.2
+SLOT=0
+SRC_URI=https://fedorahosted.org/releases/c/r/cronie/cronie-1.4.4.tar.gz
+_eclasses_=cron	78ca2916a353e761ce9e790a15475a73	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pam	f794bf311d46a2b11d3d9362fe656bd0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=15a507a80fe8ed808b07385386ff7360

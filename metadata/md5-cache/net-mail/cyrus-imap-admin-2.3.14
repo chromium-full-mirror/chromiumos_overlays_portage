@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
+DEPEND=>=sys-libs/db-3.2 >=dev-lang/perl-5.6.1 >=dev-libs/cyrus-sasl-2.1.13 dev-perl/Term-ReadLine-Perl dev-perl/TermReadKey ssl? ( >=dev-libs/openssl-0.9.6 ) kerberos? ( virtual/krb5 ) sys-devel/libtool >=sys-devel/autoconf-2.58 sys-devel/automake >=sys-apps/sed-4 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Utilities and Perl modules to administer a Cyrus IMAP server.
+HOMEPAGE=http://asg.web.cmu.edu/cyrus/imapd/
+IUSE=ssl kerberos
+KEYWORDS=amd64 hppa ppc ppc64 sparc x86
+LICENSE=as-is
+RDEPEND=>=sys-libs/db-3.2 >=dev-lang/perl-5.6.1 >=dev-libs/cyrus-sasl-2.1.13 dev-perl/Term-ReadLine-Perl dev-perl/TermReadKey ssl? ( >=dev-libs/openssl-0.9.6 ) kerberos? ( virtual/krb5 )
+SLOT=0
+SRC_URI=ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/cyrus-imapd-2.3.14.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-app	514b28d9656ef299fc6f266f2c9c11a4	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ebc9265c02f42ad8d648442e75775e3f

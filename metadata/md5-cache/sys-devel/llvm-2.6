@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup
+DEPEND=dev-lang/perl >=sys-devel/make-3.79 >=sys-devel/flex-2.5.4 >=sys-devel/bison-1.28 !~sys-devel/bison-1.85 !~sys-devel/bison-1.875 >=sys-devel/gcc-3.0 >=sys-devel/binutils-2.18 libffi? ( virtual/libffi ) llvm-gcc? ( sys-devel/llvm-gcc ) ocaml? ( dev-lang/ocaml ) test? ( dev-util/dejagnu )
+DESCRIPTION=Low Level Virtual Machine
+EAPI=2
+HOMEPAGE=http://llvm.org/
+IUSE=alltargets debug +libffi llvm-gcc ocaml test
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=UoI-NCSA
+RDEPEND=dev-lang/perl
+SLOT=0
+SRC_URI=http://llvm.org/releases/2.6/llvm-2.6.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ce8dcc70a4a758840d1d653c0306fa08

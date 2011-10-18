@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=Virtual for monodoc
+PROPERTIES=virtual
+RDEPEND=~dev-lang/mono-9999
+SLOT=0
+_md5_=4a88fd57f3c6f7d322849d0dbf315ded

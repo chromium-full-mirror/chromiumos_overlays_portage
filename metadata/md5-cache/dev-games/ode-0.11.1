@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=examples? ( virtual/opengl virtual/glu ) doc? ( app-doc/doxygen )
+DESCRIPTION=Open Dynamics Engine SDK
+EAPI=2
+HOMEPAGE=http://ode.org/
+IUSE=debug doc double-precision examples gyroscopic
+KEYWORDS=amd64 ppc ppc64 ~sparc x86 ~x86-fbsd
+LICENSE=|| ( LGPL-2.1 BSD )
+RDEPEND=examples? ( virtual/opengl virtual/glu )
+SLOT=0
+SRC_URI=mirror://sourceforge/opende/ode-0.11.1.tar.bz2
+_md5_=507192d9149846d1f786d8e3d9001d97

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=x11-libs/openmotif dev-lang/cfortran sci-physics/cernlib sci-physics/paw virtual/latex-base x11-misc/imake x11-misc/makedepend
+DESCRIPTION=CERN's detector description and simulation Tool
+EAPI=2
+HOMEPAGE=http://wwwasd.web.cern.ch/wwwasd/geant/index.html
+KEYWORDS=amd64 hppa sparc x86
+LICENSE=GPL-2 LGPL-2 BSD
+RDEPEND=x11-libs/openmotif dev-lang/cfortran sci-physics/cernlib sci-physics/paw
+SLOT=3
+SRC_URI=mirror://debian/pool/main/g/geant321/geant321_3.21.14.dfsg.orig.tar.gz mirror://debian/pool/main/g/geant321/geant321_3.21.14.dfsg-8.diff.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=18d94f68ee2de1051c011f1f4307d3f0

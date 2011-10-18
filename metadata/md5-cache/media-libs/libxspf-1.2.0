@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup unpack
+DEPEND=>=dev-libs/uriparser-0.7.5 >=dev-libs/expat-2 dev-util/pkgconfig test? ( >=dev-util/cpptest-1.1 ) doc? ( >=app-doc/doxygen-1.5.8 >=x11-libs/qt-assistant-4 media-gfx/graphviz )
+DESCRIPTION=Playlist handling library
+EAPI=2
+HOMEPAGE=http://libspiff.sourceforge.net
+IUSE=doc test
+KEYWORDS=amd64 ppc sparc x86
+LICENSE=BSD LGPL-2.1
+RDEPEND=>=dev-libs/uriparser-0.7.5 >=dev-libs/expat-2
+SLOT=0
+SRC_URI=mirror://sourceforge/libspiff/libxspf-1.2.0.tar.bz2
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4	83eabd1192f3f2c5a649ba2422a14d00	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=5f5359a703395e12710b5c1b805791ad

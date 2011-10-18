@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=>=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+DESCRIPTION=identify a file's format by scanning binary data for patterns
+HOMEPAGE=ftp://ftp.astron.com/pub/file/
+IUSE=python
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd
+LICENSE=as-is
+RDEPEND=>=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+SLOT=0
+SRC_URI=ftp://ftp.astron.com/pub/file/file-5.04.tar.gz ftp://ftp.gw.com/mirrors/pub/unix/file/file-5.04.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=bd243fd1e6315a12d4b2aa34cabd6efd

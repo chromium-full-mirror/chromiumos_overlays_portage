@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=!sys-cluster/torque
+DESCRIPTION=Server statics collector supporting many FPS games
+HOMEPAGE=http://www.qstat.org/
+IUSE=debug
+KEYWORDS=~alpha amd64 hppa ppc ppc64 x86
+LICENSE=Artistic
+RDEPEND=!sys-cluster/torque
+SLOT=0
+SRC_URI=mirror://sourceforge/qstat/qstat-2.11.tar.gz
+_md5_=6afabe749f989bfa06fefc9ff26df5fa

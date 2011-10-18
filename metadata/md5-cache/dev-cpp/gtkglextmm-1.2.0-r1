@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst unpack
+DEPEND=>=x11-libs/gtkglext-1 >=dev-libs/libsigc++-2.0 >=dev-cpp/glibmm-2.4 >=dev-cpp/gtkmm-2.4 virtual/opengl virtual/glu dev-util/pkgconfig >=sys-apps/sed-4
+DESCRIPTION=C++ bindings for gtkglext
+HOMEPAGE=http://gtkglext.sourceforge.net/
+IUSE=doc debug
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2 LGPL-2.1
+RDEPEND=>=x11-libs/gtkglext-1 >=dev-libs/libsigc++-2.0 >=dev-cpp/glibmm-2.4 >=dev-cpp/gtkmm-2.4 virtual/opengl virtual/glu
+SLOT=1.0
+SRC_URI=mirror://sourceforge/gtkglext/gtkglextmm-1.2.0.tar.bz2
+_eclasses_=fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e69c0fabd2ef69b54b0253d46943bcd3

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=>=dev-lang/mono-2 dev-dotnet/dbus-glib-sharp >=dev-dotnet/podsleuth-0.6.4 >=dev-dotnet/gtk-sharp-2.12 doc? ( >=virtual/monodoc-1.1.8 ) dev-util/pkgconfig
+DESCRIPTION=ipod-sharp provides high-level feature support for Apple's iPod and binds libipoddevice.
+EAPI=2
+HOMEPAGE=http://banshee-project.org/Ipod-sharp
+IUSE=doc
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/mono-2 dev-dotnet/dbus-glib-sharp >=dev-dotnet/podsleuth-0.6.4 >=dev-dotnet/gtk-sharp-2.12
+SLOT=0
+SRC_URI=http://banshee-project.org/files/ipod-sharp/ipod-sharp-0.8.2.tar.gz mirror://gentoo/ipod-sharp-0.8.2-fix_ipod_podcast_playlist.patch.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=248f9e17ccbadf545d89f354c61a5117

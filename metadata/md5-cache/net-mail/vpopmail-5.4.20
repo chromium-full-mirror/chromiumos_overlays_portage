@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=virtual/qmail maildrop? ( mail-filter/maildrop ) mysql? ( virtual/mysql ) >=sys-apps/sed-4 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=A collection of programs to manage virtual email domains and accounts on your Qmail mail servers.
+HOMEPAGE=http://www.inter7.com/index.php?page=vpopmail
+IUSE=clearpasswd ipalias maildrop mysql
+KEYWORDS=~amd64 ~arm ~hppa ~ppc ~s390 ~sh ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=virtual/qmail maildrop? ( mail-filter/maildrop ) mysql? ( virtual/mysql )
+SLOT=0
+SRC_URI=mirror://sourceforge/vpopmail/vpopmail-5.4.20.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fixheadtails	059c47dd86229aa6382393274677acfe	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9be14838be85b533310476e1e655b8b2

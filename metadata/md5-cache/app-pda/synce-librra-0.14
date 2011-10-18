@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND=dev-lang/python dev-python/pyrex dev-libs/libmimedir !app-pda/synce-rra =app-pda/synce-libsynce-0.14* =app-pda/synce-librapi2-0.14*
+DESCRIPTION=SynCE - RRA protocol library
+HOMEPAGE=http://sourceforge.net/projects/synce/
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+SLOT=0
+SRC_URI=mirror://sourceforge/synce/librra-0.14.tar.gz
+_eclasses_=versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=979832908e63169bae16259520b6c7db

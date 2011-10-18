@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install postinst
+DESCRIPTION=Ajaxterm is a web based terminal
+HOMEPAGE=http://antony.lesuisse.org/qweb/trac/wiki/AjaxTerm
+KEYWORDS=~amd64 ~sparc ~x86
+LICENSE=public-domain LGPL-2
+RDEPEND=>=dev-lang/python-2.0
+SLOT=0
+SRC_URI=http://antony.lesuisse.org/qweb/files/Ajaxterm-0.10.tar.gz
+_md5_=5c4536a805e1f3d95ba5190ca276ca7c

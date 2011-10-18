@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DESCRIPTION=Anglo-Saxon medieval army battles and resource management
+HOMEPAGE=http://www.linuxgamepublishing.com/info.php?id=knights
+KEYWORDS=x86
+LICENSE=knights-demo
+RDEPEND=sys-libs/glibc x86? ( x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp x11-libs/libXext x11-libs/libXi ) amd64? ( app-emulation/emul-linux-x86-xlibs )
+RESTRICT=strip
+SLOT=0
+SRC_URI=mirror://gentoo/knights-demo-1.32.run
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=741e28ea92f5f51e509cf3a546bb7988

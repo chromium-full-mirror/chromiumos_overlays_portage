@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install test unpack
+DEPEND=virtual/ruby
+DESCRIPTION=A mail handling library for Ruby
+HOMEPAGE=http://www.lickey.com/rubymail/
+KEYWORDS=alpha amd64 hppa ia64 ~mips ppc ppc64 sparc x86
+LICENSE=BSD
+RDEPEND=virtual/ruby
+SLOT=0
+SRC_URI=http://rubyforge.org/frs/download.php/30221/rmail-1.0.0.tgz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby	dfc4f482954636675998a350b1d078b5	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a5bf13ad3e66d73bfccd429fe8ba6770

@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND=>=x11-libs/gtk+-2.12 >=dev-util/intltool-0.31 dev-util/pkgconfig sys-devel/gettext
+DESCRIPTION=A GTK+ 2.0 based 'post-it' note system.
+HOMEPAGE=http://mterry.name/xpad
+KEYWORDS=~alpha ~amd64 ~ppc ~sparc ~x86 ~x86-fbsd
+LICENSE=GPL-3
+RDEPEND=>=x11-libs/gtk+-2.12
+SLOT=0
+SRC_URI=http://launchpad.net/xpad/stable/3.0/+download/xpad-3.0.tar.bz2
+_md5_=2d086c8b97d4cd68c8cc9b78efab7136

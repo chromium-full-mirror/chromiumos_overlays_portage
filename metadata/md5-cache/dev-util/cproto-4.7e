@@ -1,0 +1,8 @@
+DEFINED_PHASES=install
+DESCRIPTION=Generate C function prototypes from C source code
+HOMEPAGE=http://invisible-island.net/cproto/
+KEYWORDS=alpha amd64 ppc x86 ~amd64-linux ~x86-linux ~ppc-macos
+LICENSE=public-domain
+SLOT=0
+SRC_URI=ftp://invisible-island.net/cproto/cproto-4_7e.tgz
+_md5_=fe2292bf89773817dff78f623d5584d8

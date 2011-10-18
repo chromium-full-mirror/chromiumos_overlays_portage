@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=>=x11-libs/gtk+-2.10.0 >=gnome-base/libglade-2.6.0 >=app-emulation/libvirt-0.6.0 >=net-libs/gtk-vnc-0.3.8 >=dev-libs/libxml2-2.6.0 nsplugin? ( >=dev-libs/nspr-4.0.0 >=net-libs/xulrunner-1.9.1 )
+DESCRIPTION=Graphical console client for connecting to virtual machines
+EAPI=2
+HOMEPAGE=http://virt-manager.org/
+IUSE=nsplugin
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2.10.0 >=gnome-base/libglade-2.6.0 >=app-emulation/libvirt-0.6.0 >=net-libs/gtk-vnc-0.3.8 >=dev-libs/libxml2-2.6.0 nsplugin? ( >=dev-libs/nspr-4.0.0 >=net-libs/xulrunner-1.9.1 )
+SLOT=0
+SRC_URI=http://virt-manager.org/download/sources/virt-viewer/virt-viewer-0.2.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b90b7029a47cf263f174c098c871811c

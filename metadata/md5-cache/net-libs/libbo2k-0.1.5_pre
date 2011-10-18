@@ -1,0 +1,8 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=Linux BO2K communication library.
+HOMEPAGE=http://www.bo2k.com/
+KEYWORDS=~x86 ~ppc
+LICENSE=LGPL-2
+SLOT=0
+SRC_URI=mirror://sourceforge/bo2k/libbo2k-0.1.5pre.tar.gz
+_md5_=5b5721e82da897a330b7d3c97ee513fe

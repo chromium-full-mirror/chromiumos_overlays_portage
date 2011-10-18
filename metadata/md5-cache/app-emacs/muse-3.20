@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=>=virtual/emacs-21
+DESCRIPTION=Muse-mode is similar to EmacsWikiMode, but more focused on publishing to various formats
+HOMEPAGE=http://mwolson.org/projects/EmacsMuse.html
+KEYWORDS=~amd64 ~ppc ~sparc x86 ~x86-fbsd
+LICENSE=GPL-3 FDL-1.2 GPL-2 MIT
+RDEPEND=>=virtual/emacs-21
+SLOT=0
+SRC_URI=http://download.gna.org/muse-el/muse-3.20.tar.gz
+_eclasses_=elisp	4fb60944284f0928ba836a482f598807	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1771395bdd2d8a728118dbda5284f4df

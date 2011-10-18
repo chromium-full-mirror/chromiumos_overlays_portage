@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=A generic input parsing/checking mechanism
+KEYWORDS=~amd64 ~ppc ~x86
+RDEPEND=|| ( ~dev-lang/perl-5.10.1 ~perl-core/Params-Check-0.26 )
+SLOT=0
+_md5_=ef0e0acc129a8b41a91253d4d6bf4eab

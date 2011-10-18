@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=sys-libs/ncurses virtual/libpcap
+DESCRIPTION=Displays various tables of DNS traffic on your network.
+HOMEPAGE=http://dnstop.measurement-factory.com/
+IUSE=ipv6
+KEYWORDS=amd64 ~hppa ~ppc sparc x86
+LICENSE=BSD
+RDEPEND=sys-libs/ncurses virtual/libpcap
+SLOT=0
+SRC_URI=http://dnstop.measurement-factory.com/src/dnstop-20090128.tar.gz
+_md5_=554cbcef8d9ff1d3fdd2862c1b26d314

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare setup test unpack
+DEPEND=fuse? ( sys-fs/fuse ) perl? ( dev-lang/perl ) php? ( dev-lang/php ) python? ( dev-lang/python ) tcl? ( dev-lang/tcl ) usb? ( dev-libs/libusb ) zeroconf? ( || ( net-dns/avahi[mdnsresponder-compat] net-misc/mDNSResponder ) ) perl? ( dev-lang/swig ) php? ( dev-lang/swig ) python? ( dev-lang/swig ) dev-lang/perl[-build]
+DESCRIPTION=Access 1-Wire devices like a filesystem
+EAPI=2
+HOMEPAGE=http://www.owfs.org/ http://owfs.sourceforge.net/
+IUSE=debug fuse ftpd httpd parport perl php python server tcl usb zeroconf
+KEYWORDS=~amd64 ~arm ~x86
+LICENSE=GPL-2
+RDEPEND=fuse? ( sys-fs/fuse ) perl? ( dev-lang/perl ) php? ( dev-lang/php ) python? ( dev-lang/python ) tcl? ( dev-lang/tcl ) usb? ( dev-libs/libusb ) zeroconf? ( || ( net-dns/avahi[mdnsresponder-compat] net-misc/mDNSResponder ) ) dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://sourceforge/owfs/owfs-2.7p21.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	depend.php	b574aac6c7b0a3d079a293788cd20aaf	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	phpconfutils	f0ebaebc168cafb7b6e951280ab2dce5	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6161d0f567d17106dd712bf9794869dc

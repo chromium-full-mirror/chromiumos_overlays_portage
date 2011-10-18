@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=dev-db/sqlite-2.8.16 || ( >=dev-db/unixODBC-2.2 >=dev-db/libiodbc-3.5 ) sqlite? ( >=dev-db/sqlite-3.5 ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=ODBC driver to access local SQLite database files.
+HOMEPAGE=http://www.ch-werner.de/sqliteodbc/
+IUSE=sqlite static
+KEYWORDS=amd64 ppc x86
+LICENSE=BSD
+SLOT=0
+SRC_URI=http://www.ch-werner.de/sqliteodbc/sqliteodbc-0.79.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3c536c483822a9ad56e1a7846e73cd19

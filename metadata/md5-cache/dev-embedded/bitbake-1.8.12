@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND=dev-lang/python dev-python/pysqlite
+DESCRIPTION=package management tool for OpenEmbedded
+HOMEPAGE=http://developer.berlios.de/projects/bitbake/
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/python dev-python/pysqlite
+SLOT=0
+SRC_URI=mirror://berlios/bitbake/bitbake-1.8.12.tar.gz
+_md5_=5a5cdc986a1ca853af49424d59b5e5ad

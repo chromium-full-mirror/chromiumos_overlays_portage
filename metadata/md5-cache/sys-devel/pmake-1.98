@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=sys-apps/sed-4
+DESCRIPTION=BSD build tool to create programs in parallel. Debian's version of NetBSD's make
+HOMEPAGE=http://www.netbsd.org/
+KEYWORDS=alpha amd64 arm ia64 ~mips ppc ppc64 sparc x86
+LICENSE=BSD
+SLOT=0
+SRC_URI=mirror://debian/pool/main/p/pmake/pmake_1.98.orig.tar.gz mirror://debian/pool/main/p/pmake/pmake_1.98-3.diff.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3619df36064dc75678797c441ac8a744

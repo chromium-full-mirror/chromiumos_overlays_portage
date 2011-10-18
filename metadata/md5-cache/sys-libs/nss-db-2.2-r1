@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=sys-libs/db-3.2.3-r1 sys-devel/gettext !>=sys-libs/glibc-2.3
+DESCRIPTION=Allows important system files to be stored in a fast database file rather than plain text
+HOMEPAGE=http://www.gnu.org/
+KEYWORDS=x86 -ppc
+LICENSE=GPL-2 LGPL-2
+RDEPEND=>=sys-libs/db-3.2.3-r1
+SLOT=0
+SRC_URI=mirror://gnu/glibc/nss_db-2.2.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e5116b564c449201be77e24ee1ffeb53

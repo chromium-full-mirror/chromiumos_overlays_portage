@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst prepare unpack
+DEPEND=X? ( x11-libs/libX11 )
+DESCRIPTION=A many featured astrology chart calculation program
+EAPI=2
+HOMEPAGE=http://www.astrolog.org/astrolog.htm
+IUSE=X
+KEYWORDS=amd64 ppc ppc64 x86
+LICENSE=astrolog
+RDEPEND=X? ( x11-libs/libX11 )
+SLOT=0
+SRC_URI=http://www.astrolog.org/ftp/ast54unx.shr
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=888fcef72a78499231e24a6160ab33c2

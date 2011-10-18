@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst preinst setup
+DEPEND=>=virtual/jdk-1.5 =dev-libs/apr-1* dev-libs/openssl >=virtual/jre-1.5 >=dev-java/java-config-2.1.9-r1
+DESCRIPTION=Native APR library for Tomcat
+HOMEPAGE=http://tomcat.apache.org/
+IUSE=elibc_FreeBSD
+KEYWORDS=amd64 x86
+LICENSE=Apache-2.0
+RDEPEND==dev-libs/apr-1* dev-libs/openssl >=virtual/jre-1.5 >=dev-java/java-config-2.1.9-r1
+SLOT=0
+SRC_URI=mirror://apache/tomcat/tomcat-connectors/native/tomcat-native-1.1.15-src.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	java-pkg-2	39b2c3db200ad244ca675b2a1363aa75	java-utils-2	9c079d63349fb3fcd154c1630807a59a	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=7859014db5f00e569b9f4db9417137ef

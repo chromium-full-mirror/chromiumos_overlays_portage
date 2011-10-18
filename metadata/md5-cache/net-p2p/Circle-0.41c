@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=virtual/python >=dev-python/pygtk-1.99.14 >=x11-libs/gtk+-2 vorbis? ( dev-python/pyogg dev-python/pyvorbis ) gnome? ( dev-python/gnome-python ) >=app-admin/eselect-python-20091230
+DESCRIPTION=The Circle messaging and file sharing system
+HOMEPAGE=http://thecircle.org.au/
+IUSE=vorbis gnome
+KEYWORDS=x86 ~ppc
+LICENSE=GPL-2
+RDEPEND=virtual/python >=dev-python/pygtk-1.99.14 >=x11-libs/gtk+-2 vorbis? ( dev-python/pyogg dev-python/pyvorbis ) gnome? ( dev-python/gnome-python ) >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://thecircle.org.au/Circle-0.41c.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f0f463b3c5492626aa26cdd0bb8010a1

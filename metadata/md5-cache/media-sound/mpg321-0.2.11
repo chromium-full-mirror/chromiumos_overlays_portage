@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=sys-libs/zlib media-libs/libmad media-libs/libid3tag media-libs/libao[alsa?]
+DESCRIPTION=a realtime MPEG 1.0/2.0/2.5 audio player for layers 1, 2 and 3
+EAPI=2
+HOMEPAGE=http://mpg321.sourceforge.net/
+IUSE=alsa ipv6
+KEYWORDS=~alpha ~amd64 ~hppa -mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE=GPL-2
+RDEPEND=sys-libs/zlib media-libs/libmad media-libs/libid3tag media-libs/libao[alsa?]
+SLOT=0
+SRC_URI=mirror://sourceforge/mpg321/mpg321_0.2.11.tar.gz
+_md5_=bd766958838a9ed6e8b2decec23d053a

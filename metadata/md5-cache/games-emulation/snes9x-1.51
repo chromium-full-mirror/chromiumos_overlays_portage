@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DEPEND=x11-libs/libXext dga? ( x11-libs/libXxf86dga x11-libs/libXxf86vm ) media-libs/libpng amd64? ( app-emulation/emul-linux-x86-xlibs ) opengl? ( virtual/opengl virtual/glu ) x86? ( dev-lang/nasm ) x11-proto/xextproto x11-proto/xproto dga? ( x11-proto/xf86dgaproto x11-proto/xf86vidmodeproto ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Super Nintendo Entertainment System (SNES) emulator
+HOMEPAGE=http://www.snes9x.com/
+IUSE=debug dga joystick netplay opengl zlib
+KEYWORDS=amd64 ~ppc64 x86 ~amd64-linux ~x86-linux ~x86-solaris
+LICENSE=as-is GPL-2 LGPL-2
+RDEPEND=x11-libs/libXext dga? ( x11-libs/libXxf86dga x11-libs/libXxf86vm ) media-libs/libpng amd64? ( app-emulation/emul-linux-x86-xlibs ) opengl? ( virtual/opengl virtual/glu )
+SLOT=0
+SRC_URI=http://files.ipherswipsite.com/snes9x/snes9x-1.51-src.tar.bz2 http://vincent.grigorieff.free.fr/snes9x/snes9x-1.51-src.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	games	dd242b42e6cf30a93dce9ab15dfea1ca	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=238f4e2c791b567c033795774326c29d

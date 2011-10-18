@@ -1,0 +1,8 @@
+DEFINED_PHASES=install unpack
+DEPEND=dev-util/cvs
+DESCRIPTION=tools for generating YAFFS images
+HOMEPAGE=http://www.aleph1.co.uk/yaffs/
+LICENSE=GPL-2
+SLOT=0
+_eclasses_=cvs	0cbb6dfff9961866e21c7e06e8c6530b	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=fd6aaefd24472c1c8c71426d2476731b

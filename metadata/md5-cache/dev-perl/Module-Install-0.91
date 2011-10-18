@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=>=dev-perl/File-Remove-1.42 >=virtual/perl-File-Spec-3.27.01 >=virtual/perl-Module-Build-0.33 >=virtual/perl-Archive-Tar-1.44 >=virtual/perl-Parse-CPAN-Meta-1.39 >=dev-perl/YAML-Tiny-1.38 >=virtual/perl-ExtUtils-ParseXS-2.19 >=dev-perl/PAR-Dist-0.29 >=dev-perl/Module-ScanDeps-0.89 >=dev-perl/JSON-2.14 >=virtual/perl-Module-CoreList-2.17 test? ( >=virtual/perl-Test-Harness-3.13 >=virtual/perl-Test-Simple-0.86 ) dev-lang/perl[-build]
+DESCRIPTION=Standalone, extensible Perl module installer
+EAPI=2
+HOMEPAGE=http://search.cpan.org/dist/Module-Install/
+IUSE=test
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
+RDEPEND=>=dev-perl/File-Remove-1.42 >=virtual/perl-File-Spec-3.27.01 >=virtual/perl-Module-Build-0.33 >=virtual/perl-Archive-Tar-1.44 >=virtual/perl-Parse-CPAN-Meta-1.39 >=dev-perl/YAML-Tiny-1.38 >=virtual/perl-ExtUtils-ParseXS-2.19 >=dev-perl/PAR-Dist-0.29 >=dev-perl/Module-ScanDeps-0.89 >=dev-perl/JSON-2.14 >=virtual/perl-Module-CoreList-2.17 dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/A/AD/ADAMK//Module-Install-0.91.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=46ac166b29a3e78a25a8f3329ac082f2

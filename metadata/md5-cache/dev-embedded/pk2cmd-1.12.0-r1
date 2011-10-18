@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-libs/libusb
+DESCRIPTION=An application for working with the Microchip PicKit2 PIC programmer
+HOMEPAGE=http://www.microchip.com/pickit2
+KEYWORDS=~amd64 ppc ppc64 ~x86
+LICENSE=MicroChip-PK2
+RDEPEND=dev-libs/libusb
+SLOT=0
+SRC_URI=http://ww1.microchip.com/downloads/en/DeviceDoc/pk2cmdv1.12.0LinuxMacSource.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=84062fe19d0af213c6c6e519371b4a7d

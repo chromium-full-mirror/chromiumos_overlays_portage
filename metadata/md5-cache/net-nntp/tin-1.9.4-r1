@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=crypt? ( app-crypt/gnupg ) idn? ( net-dns/libidn ) nls? ( sys-devel/gettext ) socks5? ( net-proxy/dante ) unicode? ( dev-libs/icu ) dev-libs/libpcre dev-libs/uulib sys-libs/ncurses[unicode?]
+DESCRIPTION=A threaded NNTP and spool based UseNet newsreader
+EAPI=2
+HOMEPAGE=http://www.tin.org/
+IUSE=cancel-locks crypt debug evil forgery idn ipv6 nls unicode socks5 +etiquette
+KEYWORDS=~amd64 ~arm ~ia64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=crypt? ( app-crypt/gnupg ) idn? ( net-dns/libidn ) nls? ( sys-devel/gettext ) socks5? ( net-proxy/dante ) unicode? ( dev-libs/icu ) dev-libs/libpcre dev-libs/uulib sys-libs/ncurses[unicode?] net-misc/urlview
+SLOT=0
+SRC_URI=ftp://ftp.tin.org/pub/news/clients/tin/v1.9/tin-1.9.4.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=607f3776e592e0ee314002d93e45ed75

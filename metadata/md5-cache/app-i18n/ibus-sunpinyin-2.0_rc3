@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst postrm prepare
+DEPEND=x11-libs/gtk+:2 dev-libs/glib:2 dev-db/sqlite:3 >=app-i18n/ibus-1.1 >=dev-lang/python-2.5 nls? ( virtual/libintl ) dev-util/pkgconfig nls? ( sys-devel/gettext ) >=app-admin/eselect-python-20091230
+DESCRIPTION=SunPinyin is a SLM (Statistical Language Model) based IME
+EAPI=2
+HOMEPAGE=http://code.google.com/p/ibus-sunpinyin/
+IUSE=debug nls
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1 CDDL
+RDEPEND=x11-libs/gtk+:2 dev-libs/glib:2 dev-db/sqlite:3 >=app-i18n/ibus-1.1 >=dev-lang/python-2.5 nls? ( virtual/libintl ) >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://ibus-sunpinyin.googlecode.com/files/ibus-sunpinyin-2.0_rc3.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=dc8d7730ad015de808da16c2493407f8

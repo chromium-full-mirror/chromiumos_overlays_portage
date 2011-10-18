@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=x11-libs/fltk:1.1 =media-libs/pdflib-7* sci-biology/clustalw sci-biology/muscle
+DESCRIPTION=A graphical multiple sequence alignment editor
+EAPI=1
+HOMEPAGE=http://pbil.univ-lyon1.fr/software/seaview.html
+LICENSE=public-domain
+RDEPEND=x11-libs/fltk:1.1 =media-libs/pdflib-7* sci-biology/clustalw sci-biology/muscle
+SLOT=0
+SRC_URI=mirror://gentoo/seaview-20071113.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=51cbfcc77c8cb1ef0d1cf2052752a477

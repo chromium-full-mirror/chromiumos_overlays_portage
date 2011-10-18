@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=sys-devel/bison sys-devel/flex
+DESCRIPTION=Intel ACPI Source Language (ASL) compiler
+HOMEPAGE=http://www.intel.com/technology/iapc/acpi/
+KEYWORDS=amd64 ppc x86 ~x86-fbsd
+LICENSE=iASL
+SLOT=0
+SRC_URI=http://www.intel.com/technology/iapc/acpi/downloads/acpica-unix-20060912.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=371e940c48d21169d7c9fdc47a54eccb

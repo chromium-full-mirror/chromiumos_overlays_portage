@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup unpack
+DEPEND=net-dialup/capi4k-utils kernel_linux? ( virtual/modutils ) sys-apps/sed kernel_linux? ( virtual/linux-sources ) >=app-arch/rpm2targz-9.0.0.3g
+DESCRIPTION=SuSE's 2.6 AVM kernel modules for fcclassic, fcpci, fcpcmcia, fcpnp, fcusb, fcusb2, fxusb_CZ, fxusb, e2220pc and e5520pc
+HOMEPAGE=http://www.avm.de/
+IUSE=pcmcia usb kernel_linux
+KEYWORDS=~amd64 x86
+LICENSE=LGPL-2
+RDEPEND=net-dialup/capi4k-utils kernel_linux? ( virtual/modutils )
+SLOT=0
+SRC_URI=!amd64? ( ftp://ftp.suse.com/pub/suse/i386/10.1/SUSE-Linux10.1-Beta3-Extra/suse/i586/km_fritzcapi-2.6-43.i586.rpm ) amd64? ( ftp://ftp.suse.com/pub/suse/i386/10.1/SUSE-Linux10.1-Beta3-Extra/suse/x86_64/km_fritzcapi-2.6-43.x86_64.rpm )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	linux-info	8d722422d00ae99ed52a790b20b9bfc4	linux-mod	07a3d250a1268d811d3e8730e5741394	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	rpm	e703d62d2e2b396a7fb0262b79fdba53	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=04ba8982c4a995c4304379ecb8a0d8d8

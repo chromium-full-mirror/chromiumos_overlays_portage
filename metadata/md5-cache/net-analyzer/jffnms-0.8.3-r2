@@ -1,0 +1,12 @@
+DEFINED_PHASES=install setup unpack
+DEPEND=net-analyzer/rrdtool media-libs/gd dev-php/PEAR-PEAR net-analyzer/net-snmp sys-apps/diffutils app-mobilephone/smsclient =www-servers/apache-2* virtual/php
+DESCRIPTION=Network Management and Monitoring System.
+HOMEPAGE=http://www.jffnms.org/
+IUSE=mysql postgres snmp
+KEYWORDS=~x86
+LICENSE=GPL-2
+RDEPEND=net-analyzer/rrdtool media-libs/gd dev-php/PEAR-PEAR net-analyzer/net-snmp sys-apps/diffutils app-mobilephone/smsclient media-gfx/graphviz net-analyzer/nmap net-analyzer/fping =www-servers/apache-2* virtual/php
+SLOT=0
+SRC_URI=mirror://sourceforge/jffnms/jffnms-0.8.3.tar.gz
+_eclasses_=depend.apache	a471783c63e68987a2b20eb46f9edf68	depend.php	b574aac6c7b0a3d079a293788cd20aaf	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	phpconfutils	f0ebaebc168cafb7b6e951280ab2dce5	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7a65b31ee145661123fdcac1fc33d4ff

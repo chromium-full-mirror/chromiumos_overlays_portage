@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst setup unpack
+DEPEND=ldap? ( >=net-nds/openldap-2.0.25 ) mysql? ( virtual/mysql ) postgres? ( >=virtual/postgresql-base-7.2 ) ssl? ( >=dev-libs/openssl-0.9.6g ) radius? ( >=net-dialup/radiusclient-0.3.2 ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Nagios 1.4.14 plugins - Pack of plugins to make Nagios work properly
+EAPI=1
+HOMEPAGE=http://www.nagios.org/
+IUSE=+ssl samba mysql postgres ldap snmp nagios-dns nagios-ntp nagios-ping nagios-ssh nagios-game ups ipv6 radius +suid
+KEYWORDS=alpha amd64 hppa ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=ldap? ( >=net-nds/openldap-2.0.25 ) mysql? ( virtual/mysql ) postgres? ( >=virtual/postgresql-base-7.2 ) ssl? ( >=dev-libs/openssl-0.9.6g ) radius? ( >=net-dialup/radiusclient-0.3.2 ) >=dev-lang/perl-5.6.1-r7 samba? ( >=net-fs/samba-2.2.5-r1 ) snmp? ( >=dev-perl/Net-SNMP-4.0.1-r1 >=net-analyzer/net-snmp-5.0.6 ) mysql? ( dev-perl/DBI dev-perl/DBD-mysql ) nagios-dns? ( >=net-dns/bind-tools-9.2.2_rc1 ) nagios-ntp? ( >=net-misc/ntp-4.1.1a ) nagios-ping? ( >=net-analyzer/fping-2.4_beta2-r1 ) nagios-ssh? ( >=net-misc/openssh-3.5_p1 ) ups? ( >=sys-power/nut-1.4 ) !sparc? ( nagios-game? ( >=games-util/qstat-2.6 ) )
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://sourceforge/nagiosplug/nagios-plugins-1.4.14.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=444634ace6930d903b2a176b0234571e

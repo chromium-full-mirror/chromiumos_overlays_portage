@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare setup
+DEPEND=>=sci-physics/clhep-2.0.4.2 motif? ( x11-libs/openmotif ) athena? ( x11-libs/libXaw ) qt4? ( x11-libs/qt-gui:4 ) openinventor? ( >=media-libs/openinventor-2.1.5.10-r3 ) raytracerx? ( x11-libs/libX11 x11-libs/libXmu ) opengl? ( virtual/opengl athena? ( x11-libs/Xaw3d ) qt4? ( x11-libs/qt-opengl:4 ) ) gdml? ( dev-libs/xerces-c ) geant3? ( sci-physics/geant:3 ) dawn? ( media-gfx/dawn ) zlib? ( sys-libs/zlib )
+DESCRIPTION=Toolkit for simulation of passage of particles through matter
+EAPI=2
+HOMEPAGE=http://geant4.cern.ch/
+IUSE=athena +data dawn debug examples gdml geant3 global minimal +motif +opengl openinventor qt4 +raytracerx static +vrml zlib
+KEYWORDS=~amd64 ~hppa ~sparc ~x86
+LICENSE=geant4
+RDEPEND=>=sci-physics/clhep-2.0.4.2 motif? ( x11-libs/openmotif ) athena? ( x11-libs/libXaw ) qt4? ( x11-libs/qt-gui:4 ) openinventor? ( >=media-libs/openinventor-2.1.5.10-r3 ) raytracerx? ( x11-libs/libX11 x11-libs/libXmu ) opengl? ( virtual/opengl athena? ( x11-libs/Xaw3d ) qt4? ( x11-libs/qt-opengl:4 ) ) gdml? ( dev-libs/xerces-c ) geant3? ( sci-physics/geant:3 ) dawn? ( media-gfx/dawn ) zlib? ( sys-libs/zlib )
+SLOT=4
+SRC_URI=http://geant4.web.cern.ch/geant4/support/source/geant4.9.3.tar.gz data? ( http://geant4.web.cern.ch/geant4/support/source/G4NDL.3.13.tar.gz ) data? ( http://geant4.web.cern.ch/geant4/support/source/G4EMLOW.6.2.tar.gz ) data? ( http://geant4.web.cern.ch/geant4/support/source/G4RadioactiveDecay.3.2.tar.gz ) data? ( http://geant4.web.cern.ch/geant4/support/source/PhotonEvaporation.2.0.tar.gz ) data? ( http://geant4.web.cern.ch/geant4/support/source/G4ABLA.3.0.tar.gz ) data? ( http://geant4.web.cern.ch/geant4/support/source/RealSurface.1.0.tar.gz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=ad0c206793d6e55d291f6e6e88a609a5

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst prepare prerm setup
+DEPEND=dev-util/git sys-libs/zlib dev-libs/openssl cgi? ( virtual/httpd-cgi ) doc? ( app-text/asciidoc ) >=app-admin/webapp-config-1.50.15
+DESCRIPTION=a fast web-interface for git repositories
+EAPI=2
+HOMEPAGE=http://hjemli.net/git/cgit/about/
+IUSE=+cgi doc vhosts
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-util/git sys-libs/zlib dev-libs/openssl cgi? ( virtual/httpd-cgi ) >=app-admin/webapp-config-1.50.15
+SLOT=0.8.3.1-r1
+SRC_URI=mirror://kernel/software/scm/git/git-1.6.4.3.tar.bz2 http://hjemli.net/git/cgit/snapshot/cgit-0.8.3.1.tar.bz2
+_eclasses_=webapp	b5c5b98a2289a6050810cf6022ac00be
+_md5_=e3b1093b931e89219ee1a58061906468

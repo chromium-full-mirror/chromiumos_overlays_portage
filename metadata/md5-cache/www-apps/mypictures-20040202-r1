@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst prerm setup unpack
+DEPEND=>=app-admin/webapp-config-1.50.15
+DESCRIPTION=Simple photo-gallery for websites
+HOMEPAGE=http://www.splitbrain.org/Programming/PHP/mypictures/index.php
+IUSE=vhosts
+KEYWORDS=~x86 ~ppc
+LICENSE=GPL-2
+RDEPEND=media-gfx/imagemagick >=app-admin/webapp-config-1.50.15
+SLOT=20040202-r1
+SRC_URI=http://www.splitbrain.org/Programming/PHP/mypictures/mypictures.tgz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	webapp	b5c5b98a2289a6050810cf6022ac00be
+_md5_=cacbb269e4761f614b5651c186fe8177

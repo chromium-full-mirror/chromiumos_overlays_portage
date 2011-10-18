@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=X? ( ( x11-libs/libX11 x11-libs/libXxf86dga x11-libs/libXext x11-libs/libXxf86vm ) ) svga? ( >=media-libs/svgalib-1.4.3 ) aalib? ( media-libs/aalib ) sys-libs/zlib media-libs/libpng X? ( ( x11-proto/xf86vidmodeproto x11-proto/xextproto x11-proto/xf86dgaproto x11-proto/xproto ) )
+DESCRIPTION=A very fast real-time fractal zoomer
+HOMEPAGE=http://sourceforge.net/projects/xaos/
+IUSE=X svga aalib nls
+KEYWORDS=amd64 ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=X? ( ( x11-libs/libX11 x11-libs/libXxf86dga x11-libs/libXext x11-libs/libXxf86vm ) ) svga? ( >=media-libs/svgalib-1.4.3 ) aalib? ( media-libs/aalib ) sys-libs/zlib media-libs/libpng
+SLOT=0
+SRC_URI=mirror://sourceforge/xaos/XaoS-3.2.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=85a603b41a12a2e4198f3ce0d9527e08

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=x11-libs/libX11 x11-libs/libXpm x11-libs/libXext motif? ( x11-libs/openmotif ) x11-proto/xproto
+DESCRIPTION=rxvt -- nice small x11 terminal
+HOMEPAGE=http://rxvt.sourceforge.net/ http://www.giga.it.okayama-u.ac.jp/~ishihara/opensource/
+IUSE=motif cjk xgetdefault linuxkeys
+KEYWORDS=alpha amd64 hppa ~mips ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/libX11 x11-libs/libXpm x11-libs/libXext motif? ( x11-libs/openmotif )
+SLOT=0
+SRC_URI=mirror://sourceforge/rxvt/rxvt-2.7.10.tar.gz http://www.giga.it.okayama-u.ac.jp/~ishihara/opensource/rxvt-2.7.10-xim-fix.patch.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d7e45c4843d65ae92df08995cc8e8fce

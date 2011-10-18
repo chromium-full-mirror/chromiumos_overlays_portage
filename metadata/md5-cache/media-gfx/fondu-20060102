@@ -1,0 +1,10 @@
+DEFINED_PHASES=install prepare
+DESCRIPTION=Utilities for converting between and manipulating mac fonts and unix fonts
+EAPI=2
+HOMEPAGE=http://fondu.sourceforge.net/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=BSD
+SLOT=0
+SRC_URI=http://fondu.sourceforge.net/fondu_src-060102.tgz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6fac49441b4ee1273c4b595576bc5509

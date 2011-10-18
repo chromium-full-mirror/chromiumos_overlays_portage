@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=>=dev-lang/lua-5.1.1[deprecated] dev-util/scons
+DESCRIPTION=A tool to integrate C/C++ code with Lua.
+EAPI=2
+HOMEPAGE=http://www.codenix.com/~tolua/
+KEYWORDS=alpha amd64 ppc ppc64 sparc x86
+LICENSE=as-is
+RDEPEND=>=dev-lang/lua-5.1.1[deprecated]
+SLOT=0
+SRC_URI=http://www.codenix.com/~tolua/tolua++-1.0.93.tar.bz2
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=bec06a134d7d539ec465be5228e917fd

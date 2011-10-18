@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=app-editors/xemacs
+DESCRIPTION=Emacs interface to X server.
+HOMEPAGE=http://xemacs.org/
+KEYWORDS=alpha amd64 ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=app-xemacs/xemacs-base
+SLOT=0
+SRC_URI=http://ftp.xemacs.org/pub/xemacs/packages/xlib-1.14-pkg.tar.gz
+_eclasses_=xemacs-packages	6dd96054b458a462c15a08ea670d9ac6
+_md5_=f89bd0f4caaeaf3fb08f31e377b0ad5d

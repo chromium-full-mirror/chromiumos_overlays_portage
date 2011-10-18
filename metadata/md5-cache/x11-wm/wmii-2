@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=x11-libs/libX11 python? ( dev-python/pyrex )
+DESCRIPTION=window manager improved 2 -- the next generation of the WMI project.
+HOMEPAGE=http://www.wmii.net
+IUSE=python
+KEYWORDS=~amd64 ~hppa ~ppc ~x86
+LICENSE=MIT
+RDEPEND=x11-libs/libX11 python? ( dev-python/pyrex ) x11-apps/xdpyinfo x11-apps/xmessage x11-apps/xsetroot
+SLOT=0
+SRC_URI=http://wmi.modprobe.de/download/wmii-2.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=bd37f60cabfdc953c006146d988ea84c

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND==sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=library for decoding DTS Coherent Acoustics streams used in DVD
+HOMEPAGE=http://www.videolan.org/developers/libdca.html
+IUSE=oss debug
+KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE=GPL-2
+RDEPEND=!media-libs/libdts
+SLOT=0
+SRC_URI=http://www.videolan.org/pub/videolan/libdca/0.0.5/libdca-0.0.5.tar.bz2 mirror://gentoo/libdca-0.0.5-constant.patch.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=31b92453438d997fec74398c112b86f2

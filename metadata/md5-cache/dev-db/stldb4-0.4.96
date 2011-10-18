@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install
+DEPEND=>=dev-libs/ferrisloki-3.0.1 >=dev-libs/libferrisstreams-0.5.2 dev-libs/STLport
+DESCRIPTION=a nice C++ wrapper for db4
+HOMEPAGE=http://witme.sourceforge.net/libferris.web/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/ferrisloki-3.0.1 >=dev-libs/libferrisstreams-0.5.2 dev-libs/STLport
+SLOT=0
+SRC_URI=mirror://sourceforge/witme/stldb4-0.4.96.tar.bz2
+_md5_=df19b2b9b4b138ec74cc9ab3653aec99

@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst postrm preinst unpack
+DEPEND=dev-lisp/common-lisp-controller
+DESCRIPTION=A thin compatibility layer between Gray Stream Common Lisp implementations
+HOMEPAGE=http://common-lisp.net/project/cl-plus-ssl/#trivial-gray-streams
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=MIT
+SLOT=0
+SRC_URI=http://common-lisp.net/project/cl-plus-ssl/download/trivial-gray-streams-2005-12-04.tar.gz
+_eclasses_=common-lisp	78bda507fdf240a712b120777127629c	common-lisp-common	a6e38969ed3937827ca1f284d015020a	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=70ea4254da6b869baa6f02db7e5df05c

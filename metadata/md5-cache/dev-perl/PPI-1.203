@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
+DEPEND=>=virtual/perl-Scalar-List-Utils-1.19 >=dev-perl/Params-Util-0.10 >=dev-perl/Clone-0.25 virtual/perl-Digest-MD5 dev-perl/IO-String >=dev-perl/List-MoreUtils-0.16 dev-lang/perl test? ( >=dev-perl/File-Remove-0.39 virtual/perl-File-Spec dev-perl/Test-SubCalls dev-perl/Test-Object dev-perl/Test-ClassAPI )
+DESCRIPTION=Parse, Analyze and Manipulate Perl (without perl)
+HOMEPAGE=http://search.cpan.org/dist/PPI/
+IUSE=test
+KEYWORDS=amd64 ~ppc sparc x86
+LICENSE=|| ( Artistic GPL-2 )
+RDEPEND=>=virtual/perl-Scalar-List-Utils-1.19 >=dev-perl/Params-Util-0.10 >=dev-perl/Clone-0.25 virtual/perl-Digest-MD5 dev-perl/IO-String >=dev-perl/List-MoreUtils-0.16 dev-lang/perl
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/A/AD/ADAMK//PPI-1.203.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=fae2be54676c9ff3893e39f757271e46

@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst postrm
+DEPEND=dev-python/PyQt4 app-text/dvipng virtual/latex-base >=app-admin/eselect-python-20091230
+DESCRIPTION=A program aimed at helping you making your exercise sheets
+EAPI=2
+HOMEPAGE=http://snouffy.free.fr/blog-en/index.php/category/TeXamator
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-python/PyQt4 app-text/dvipng virtual/latex-base >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://snouffy.free.fr/blog-en/public/TeXamator/TeXamator.v.1.5b.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=49c45f18c8ff990c0d2a1857ea04881e

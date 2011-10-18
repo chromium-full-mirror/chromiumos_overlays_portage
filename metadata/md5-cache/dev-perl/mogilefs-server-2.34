@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare setup test unpack
+DEPEND=dev-perl/Net-Netmask >=dev-perl/Danga-Socket-1.61 >=dev-perl/Sys-Syscall-0.22 >=dev-perl/Perlbal-1.73 dev-perl/IO-AIO dev-perl/libwww-perl >=dev-perl/MogileFS-Client-1.09 dev-perl/Cache-Memcached mysql? ( dev-perl/DBD-mysql ) postgres? ( dev-perl/DBD-Pg ) sqlite? ( dev-perl/DBD-SQLite ) dev-lang/perl[-build]
+DESCRIPTION=Server for the MogileFS distributed file system
+EAPI=2
+HOMEPAGE=http://www.danga.com/mogilefs/
+IUSE=mysql sqlite postgres
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=|| ( Artistic GPL-2 )
+RDEPEND=dev-perl/Net-Netmask >=dev-perl/Danga-Socket-1.61 >=dev-perl/Sys-Syscall-0.22 >=dev-perl/Perlbal-1.73 dev-perl/IO-AIO dev-perl/libwww-perl >=dev-perl/MogileFS-Client-1.09 dev-perl/Cache-Memcached mysql? ( dev-perl/DBD-mysql ) postgres? ( dev-perl/DBD-Pg ) sqlite? ( dev-perl/DBD-SQLite ) dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/D/DO/DORMANDO//mogilefs-server-2.34.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=4007b54af3d2627eaea9a0bac81b0d83

@@ -1,0 +1,12 @@
+DEFINED_PHASES=install unpack
+DEPEND=dev-libs/dvutil
+DESCRIPTION=dvenv provides polymorphic tree-structured environments, generalizing the Dv::Util::Props class
+HOMEPAGE=http://tinf2.vub.ac.be/~dvermeir/software/dv/dvenv/html/
+IUSE=doc
+KEYWORDS=~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/dvutil
+SLOT=0
+SRC_URI=http://tinf2.vub.ac.be/~dvermeir/software/dv/dvenv/download/dvenv-0.2.2.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=57eb2628dc9716491b29aed471558d47

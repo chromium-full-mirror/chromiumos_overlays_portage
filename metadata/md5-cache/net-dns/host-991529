@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=sys-apps/sed-4
+DESCRIPTION=the standalone host tool, supports LOC reporting (RFC1876)
+HOMEPAGE=http://www.dtek.chalmers.se/~d3august/xt/
+KEYWORDS=alpha amd64 hppa mips ppc ppc64 sparc x86
+LICENSE=as-is
+RDEPEND=>=sys-apps/sed-4
+RESTRICT=test
+SLOT=0
+SRC_URI=ftp://ftp.ripe.net/tools/dns/host.tar.Z
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=654e45b857466800e736aee2583f11fa

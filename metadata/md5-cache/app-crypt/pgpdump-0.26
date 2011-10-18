@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=sys-libs/zlib app-arch/bzip2
+DESCRIPTION=A PGP packet visualizer
+HOMEPAGE=http://www.mew.org/~kazu/proj/pgpdump/
+KEYWORDS=amd64 ppc sparc x86
+LICENSE=as-is
+RDEPEND=sys-libs/zlib app-arch/bzip2
+SLOT=0
+SRC_URI=http://www.mew.org/~kazu/proj/pgpdump/pgpdump-0.26.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=68cb71e7f90c1158f699408165877e44

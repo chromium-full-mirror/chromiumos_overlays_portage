@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile config install postinst postrm preinst setup unpack
+DESCRIPTION=Sequel to the 1999 Game of the Year multi-player first-person shooter
+HOMEPAGE=http://www.unrealtournament2003.com/
+IUSE=dedicated
+KEYWORDS=amd64 x86
+LICENSE=ut2003
+RDEPEND=dedicated? ( games-server/ut2003-ded ) !dedicated? ( virtual/opengl ) games-fps/ut2003-data amd64? ( app-emulation/emul-linux-x86-compat app-emulation/emul-linux-x86-xlibs )
+RESTRICT=strip
+SLOT=0
+SRC_URI=ftp://ftp.infogrames.net/misc/ut2003/ut2003lnx_patch2225.tar.tar
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a17fec08eafd7604f3726e304b755302

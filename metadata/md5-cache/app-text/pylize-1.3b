@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=virtual/python dev-python/empy dev-python/imaging >=app-admin/eselect-python-20091230
+DESCRIPTION=Python HTML Slideshow Generator using HTML and CSS
+HOMEPAGE=http://www.chrisarndt.de/en/software/pylize/
+KEYWORDS=ppc x86
+LICENSE=GPL-2
+RDEPEND=virtual/python dev-python/empy dev-python/imaging >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://www.chrisarndt.de/en/software/pylize/download/pylize-1.3b.tar.bz2
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=980187e88b06a348b395e40b1f436f3f

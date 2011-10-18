@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare prerm setup
+DEPEND=dev-python/setuptools >=dev-python/docutils-0.3.9 dev-python/flup >=dev-python/genshi-0.5 dev-python/pygments dev-python/pytz cgi? ( virtual/httpd-cgi ) fastcgi? ( virtual/httpd-fastcgi ) mysql? ( >=dev-python/mysql-python-1.2.1 >=virtual/mysql-4.1 ) postgres? ( >=dev-python/psycopg-2 ) sqlite? ( >=dev-db/sqlite-3.3.4 || ( >=dev-lang/python-2.5[sqlite] >=dev-python/pysqlite-2.3.2 ) ) subversion? ( >=dev-util/subversion-1.4.2[python] ) !www-apps/trac-webadmin >=app-admin/eselect-python-20091230 dev-lang/python >=app-admin/webapp-config-1.50.15
+DESCRIPTION=Trac is a minimalistic web-based project management, wiki and bug/issue tracking system.
+EAPI=2
+HOMEPAGE=http://trac.edgewall.com/
+IUSE=cgi fastcgi mysql postgres +sqlite subversion vhosts
+KEYWORDS=amd64 ppc ~ppc64 ~sparc x86
+LICENSE=BSD
+RDEPEND=dev-python/setuptools >=dev-python/docutils-0.3.9 dev-python/flup >=dev-python/genshi-0.5 dev-python/pygments dev-python/pytz cgi? ( virtual/httpd-cgi ) fastcgi? ( virtual/httpd-fastcgi ) mysql? ( >=dev-python/mysql-python-1.2.1 >=virtual/mysql-4.1 ) postgres? ( >=dev-python/psycopg-2 ) sqlite? ( >=dev-db/sqlite-3.3.4 || ( >=dev-lang/python-2.5[sqlite] >=dev-python/pysqlite-2.3.2 ) ) subversion? ( >=dev-util/subversion-1.4.2[python] ) !www-apps/trac-webadmin >=app-admin/eselect-python-20091230 dev-lang/python >=app-admin/webapp-config-1.50.15
+SLOT=0
+SRC_URI=http://ftp.edgewall.com/pub/trac/Trac-0.11.6.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	webapp	b5c5b98a2289a6050810cf6022ac00be
+_md5_=90bef52582ca218af1637fc8a3f61f9f

@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Move/copy/append/link multiple files according to a set of wildcard patterns.
+HOMEPAGE=http://packages.debian.org/unstable/utils/mmv
+KEYWORDS=amd64 ppc x86
+LICENSE=freedist
+SLOT=0
+SRC_URI=mirror://debian/pool/main/m/mmv/mmv_1.01b.orig.tar.gz mirror://debian/pool/main/m/mmv/mmv_1.01b-14.diff.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ce45ab7deb856b2a2f16723d189ba43e

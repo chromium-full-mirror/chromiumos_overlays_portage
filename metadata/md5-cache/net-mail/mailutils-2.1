@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install postinst prepare
+DEPEND=!virtual/mailx !mail-client/nmh !mail-filter/libsieve bidi? ( dev-libs/fribidi ) guile? ( dev-scheme/guile ) gdbm? ( sys-libs/gdbm ) ldap? ( net-nds/openldap ) mysql? ( virtual/mysql ) nls? ( sys-devel/gettext ) postgres? ( virtual/postgresql-base ) tokyocabinet? ( dev-db/tokyocabinet ) virtual/mta test? ( dev-util/dejagnu ) >=app-admin/eselect-python-20091230
+DESCRIPTION=A useful collection of mail servers, clients, and filters.
+EAPI=2
+HOMEPAGE=http://www.gnu.org/software/mailutils/mailutils.html
+IUSE=bidi gdbm guile ldap mysql nls pam postgres python test tokyocabinet
+KEYWORDS=~alpha ~amd64 ~hppa ~ppc ~sparc ~x86
+LICENSE=GPL-2 LGPL-2.1
+PROVIDE=virtual/mailx
+RDEPEND=!virtual/mailx !mail-client/nmh !mail-filter/libsieve bidi? ( dev-libs/fribidi ) guile? ( dev-scheme/guile ) gdbm? ( sys-libs/gdbm ) ldap? ( net-nds/openldap ) mysql? ( virtual/mysql ) nls? ( sys-devel/gettext ) postgres? ( virtual/postgresql-base ) tokyocabinet? ( dev-db/tokyocabinet ) virtual/mta >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://ftp.gnu.org/gnu/mailutils/mailutils-2.1.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=5e222f34ff932ec83cf4851ad45f4c42

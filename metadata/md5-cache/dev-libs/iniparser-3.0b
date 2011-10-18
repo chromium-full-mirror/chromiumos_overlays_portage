@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=A free stand-alone ini file parsing library.
+HOMEPAGE=http://ndevilla.free.fr/iniparser/
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+SLOT=0
+SRC_URI=http://ndevilla.free.fr/iniparser/iniparser3.0b.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f54d2772efd31e0b01f94c5174fbe04a

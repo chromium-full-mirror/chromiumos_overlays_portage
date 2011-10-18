@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=test? ( >=dev-ruby/mocha-0.9.8[ruby_targets_ruby18?] ) test? ( >=dev-ruby/shoulda-2.10.3[ruby_targets_ruby18?] ) test? ( >=dev-ruby/hoe-2.4.0[ruby_targets_ruby18?] ) test? ( virtual/ruby-test-unit[ruby_targets_ruby18?] ) test? ( >=dev-ruby/activesupport-2.3.5[ruby_targets_ruby18?] ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) doc? ( dev-ruby/rake[ruby_targets_ruby18?] ) test? ( dev-ruby/rake[ruby_targets_ruby18?] ) test? ( virtual/rubygems[ruby_targets_ruby18?] )
+DESCRIPTION=A framework to allow Ruby applications to generate file/folder stubs.
+EAPI=2
+HOMEPAGE=http://drnic.github.com/rubigen
+IUSE=test test test test test ruby_targets_ruby18 doc doc test test test
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=>=dev-ruby/activesupport-2.3.5[ruby_targets_ruby18?] ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) virtual/rubygems[ruby_targets_ruby18?]
+SLOT=0
+SRC_URI=mirror://rubygems/rubigen-1.5.4.gem
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby-fakegem	2768bd9a49d90592f8e7b88ab4077f20	ruby-ng	94f1106cb53283c8f691122e3077c9e1	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7066de7f6d3680830f7197c87dd4be75

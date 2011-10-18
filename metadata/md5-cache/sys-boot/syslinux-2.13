@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install
+DEPEND=sys-fs/mtools dev-lang/nasm
+DESCRIPTION=SysLinux, IsoLinux and PXELinux bootloader
+HOMEPAGE=http://syslinux.zytor.com/
+KEYWORDS=-* amd64 x86
+LICENSE=GPL-2
+RDEPEND=sys-fs/mtools
+SLOT=0
+SRC_URI=mirror://kernel/linux/utils/boot/syslinux/Old/syslinux-2.13.tar.bz2
+_md5_=87356b71e2805dafa9e2b0ff5bb21059

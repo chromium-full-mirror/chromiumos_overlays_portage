@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst setup unpack
+DEPEND=>=sys-apps/sed-4 >=sys-libs/ncurses-5.1 pam? ( virtual/pam ) ssl? ( dev-libs/openssl ) ldap? ( net-nds/openldap ) kerberos? ( app-crypt/mit-krb5 )
+DESCRIPTION=A tool for reading, sending and managing electronic messages.
+HOMEPAGE=http://www.washington.edu/pine/ http://staff.washington.edu/chappa/pine/
+IUSE=ssl ldap kerberos largeterminal pam passfile debug
+KEYWORDS=alpha amd64 ppc sparc x86 ~x86-fbsd
+LICENSE=PICO
+RDEPEND=>=sys-apps/sed-4 >=sys-libs/ncurses-5.1 pam? ( virtual/pam ) ssl? ( dev-libs/openssl ) ldap? ( net-nds/openldap ) kerberos? ( app-crypt/mit-krb5 ) app-misc/mime-types net-mail/uw-mailutils !<=net-mail/uw-imap-2004g
+SLOT=0
+SRC_URI=ftp://ftp.cac.washington.edu/pine/pine4.64.tar.bz2 mirror://gentoo/pine-4.64-r7-chappa-all.patch.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=92f8516f247311e2cf2a009dfbf4f4df

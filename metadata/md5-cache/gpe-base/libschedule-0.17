@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=gpe-base/libgpewidget >=dev-libs/glib-2.6.3 dev-util/gtk-doc-am >=dev-util/intltool-0.29 >=dev-util/pkgconfig-0.12.0
+DESCRIPTION=RTC alarm handling library for the GPE Palmtop Environment
+HOMEPAGE=http://gpe.linuxtogo.org
+IUSE=nls
+KEYWORDS=~arm ~amd64 ~x86
+LICENSE=LGPL-2
+RDEPEND=gpe-base/libgpewidget >=dev-libs/glib-2.6.3
+SLOT=0
+SRC_URI=http://gpe.linuxtogo.org/download/source/libschedule-0.17.tar.bz2
+_eclasses_=gpe	7892305937cd38b71822f2a6c5751c61	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=18ac59e4d6d56cee4bd247860712f79c

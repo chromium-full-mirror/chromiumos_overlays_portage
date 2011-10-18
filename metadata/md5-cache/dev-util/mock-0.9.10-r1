@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst
+DESCRIPTION=Mock creates chroots and builds packages in them for Fedora and RedHat.
+EAPI=2
+HOMEPAGE=http://fedoraproject.org/wiki/Projects/Mock
+KEYWORDS=~x86 ~amd64
+LICENSE=GPL-2
+RDEPEND=sys-apps/yum dev-python/decoratortools
+SLOT=0
+SRC_URI=https://fedorahosted.org/mock/attachment/wiki/MockTarballs/mock-0.9.10.tar.gz?format=raw -> mock-0.9.10.tar.gz
+_md5_=8aa5bc35782d8fdaee203bad2e4b8248

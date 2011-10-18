@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm preinst
+DEPEND=dev-lisp/cl-uffi net-misc/curl dev-lisp/common-lisp-controller
+DESCRIPTION=Common Lisp interface to libcurl, a multi-protocol file transfer library
+HOMEPAGE=http://sourceforge.net/projects/cl-curl/
+KEYWORDS=~x86
+LICENSE=LLGPL-2.1
+RDEPEND=dev-lisp/cl-uffi net-misc/curl
+SLOT=0
+SRC_URI=mirror://gentoo/cl-curl-20050609.tar.gz
+_eclasses_=common-lisp	78bda507fdf240a712b120777127629c	common-lisp-common	a6e38969ed3937827ca1f284d015020a	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=36f882ff8aece1357a6761b08bc0bc7f

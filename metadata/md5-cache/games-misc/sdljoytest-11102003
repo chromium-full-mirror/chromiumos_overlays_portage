@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=media-libs/libsdl virtual/opengl media-libs/sdl-image
+DESCRIPTION=SDL app to test joysticks and game controllers
+HOMEPAGE=http://sdljoytest.sourceforge.net/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=media-libs/libsdl virtual/opengl media-libs/sdl-image
+SLOT=0
+SRC_URI=mirror://sourceforge/sdljoytest/SDLJoytest-GL-11102003.tar.bz2
+_md5_=bbcd33a137ca164cdcd26121d713ae94

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=>=virtual/emacs-23 >=virtual/emacs-21
+DESCRIPTION=Gentoo support for Emacs running as a server in the background
+HOMEPAGE=http://www.gentoo.org/proj/en/lisp/emacs/
+KEYWORDS=alpha amd64 arm hppa ia64 ppc ppc64 s390 sh sparc x86
+LICENSE=GPL-2
+RDEPEND=>=virtual/emacs-23 >=virtual/emacs-21
+SLOT=0
+SRC_URI=mirror://gentoo/emacs-daemon-0.15.tar.bz2
+_eclasses_=elisp	4fb60944284f0928ba836a482f598807	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=782ecfb8a8b39ec1299c554e82f060bf

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup unpack
+DEPEND=kernel_linux? ( virtual/modutils ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+DESCRIPTION=Kernel modules for Digium compatible hardware (formerly known as Zaptel).
+HOMEPAGE=http://www.asterisk.org
+IUSE=kernel_linux
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND=kernel_linux? ( virtual/modutils )
+SLOT=0
+SRC_URI=http://downloads.digium.com/pub/telephony/dahdi-linux/releases/dahdi-linux-2.2.0.2.tar.gz http://downloads.digium.com/pub/telephony/firmware/releases/dahdi-fwload-vpmadt032-1.17.0.tar.gz http://downloads.digium.com/pub/telephony/firmware/releases/dahdi-fw-oct6114-064-1.05.01.tar.gz http://downloads.digium.com/pub/telephony/firmware/releases/dahdi-fw-oct6114-128-1.05.01.tar.gz http://downloads.digium.com/pub/telephony/firmware/releases/dahdi-fw-tc400m-MR6.12.tar.gz http://downloads.digium.com/pub/telephony/firmware/releases/dahdi-fw-vpmadt032-1.07.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	linux-info	8d722422d00ae99ed52a790b20b9bfc4	linux-mod	07a3d250a1268d811d3e8730e5741394	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=2415b797940e193b5d30fe5b6725195e

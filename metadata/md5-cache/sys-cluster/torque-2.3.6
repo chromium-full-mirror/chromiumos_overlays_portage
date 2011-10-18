@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile config install postinst preinst setup
+DEPEND=sys-libs/ncurses sys-libs/readline tk? ( dev-lang/tk ) syslog? ( virtual/logger ) !virtual/pbs !sys-cluster/openpbs-common !games-util/qstat sys-apps/ed
+DESCRIPTION=Resource manager and queuing system based on OpenPBS
+HOMEPAGE=http://www.clusterresources.com/products/torque/
+IUSE=tk crypt server syslog doc cpusets kernel_linux
+KEYWORDS=alpha amd64 hppa ia64 ~mips ppc ppc64 sparc x86
+LICENSE=openpbs
+PROVIDE=virtual/pbs
+RDEPEND=sys-libs/ncurses sys-libs/readline tk? ( dev-lang/tk ) syslog? ( virtual/logger ) !virtual/pbs !sys-cluster/openpbs-common !games-util/qstat crypt? ( net-misc/openssh ) !crypt? ( net-misc/netkit-rsh )
+SLOT=0
+SRC_URI=http://www.clusterresources.com/downloads/torque/torque-2.3.6.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	linux-info	8d722422d00ae99ed52a790b20b9bfc4	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=b98e2eb26cdafdfa8b5e4e4d6a9bbb02

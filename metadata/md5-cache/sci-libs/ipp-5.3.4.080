@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install setup unpack
+DESCRIPTION=Intel(R) Integrated Performance Primitive library for multimedia and data processing
+HOMEPAGE=http://developer.intel.com/software/products/ipp/
+KEYWORDS=~amd64 ~x86 ~ia64
+LICENSE=Intel-SDP
+RESTRICT=strip mirror
+SLOT=0
+SRC_URI=amd64? ( http://registrationcenter-download.intel.com/irc_nas/1096/l_ipp_em64t_p_5.3.4.080.tgz ) x86? ( http://registrationcenter-download.intel.com/irc_nas/1096/l_ipp_ia32_p_5.3.4.080.tgz ) ia64? ( http://registrationcenter-download.intel.com/irc_nas/1096/l_ipp_itanium_p_5.3.4.080.tgz )
+_eclasses_=check-reqs	10d634df7440d633474090700e0d3320	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3088d62c7abce68dd52a78fd2d048493

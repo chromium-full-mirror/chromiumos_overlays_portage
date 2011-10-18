@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare test
+DEPEND=sys-libs/readline X? ( x11-libs/libX11 ) emacs? ( virtual/emacs ) gmp? ( dev-libs/gmp ) doc? ( virtual/latex-base )
+DESCRIPTION=A software package for computer-aided number theory
+EAPI=2
+HOMEPAGE=http://pari.math.u-bordeaux.fr/
+IUSE=doc emacs X elliptic galois gmp static
+KEYWORDS=~alpha ~amd64 ~hppa ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=sys-libs/readline X? ( x11-libs/libX11 ) emacs? ( virtual/emacs ) gmp? ( dev-libs/gmp )
+SLOT=0
+SRC_URI=http://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.3.4.tar.gz elliptic? ( http://pari.math.u-bordeaux.fr/pub/pari/packages/elldata.tgz ) galois? ( http://pari.math.u-bordeaux.fr/pub/pari/packages/galdata.tgz )
+_eclasses_=elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=607b913ef90b7ac943fb2228ea54a7e1

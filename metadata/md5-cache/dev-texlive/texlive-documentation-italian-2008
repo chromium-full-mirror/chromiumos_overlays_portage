@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm
+DEPEND=>=dev-texlive/texlive-documentation-base-2008 >=app-text/texlive-core-2008 || ( app-arch/xz-utils app-arch/lzma-utils )
+DESCRIPTION=TeXLive Italian documentation
+HOMEPAGE=http://www.tug.org/texlive/
+IUSE=source
+KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+LICENSE=GPL-2 GPL-1
+RDEPEND=>=dev-texlive/texlive-documentation-base-2008 >=app-text/texlive-core-2008
+SLOT=0
+SRC_URI=mirror://gentoo/texlive-module-amsldoc-it-2008.tar.lzma mirror://gentoo/texlive-module-amsmath-it-2008.tar.lzma mirror://gentoo/texlive-module-amsthdoc-it-2008.tar.lzma mirror://gentoo/texlive-module-fancyhdr-it-2008.tar.lzma mirror://gentoo/texlive-module-l2tabu-it-2008.tar.lzma mirror://gentoo/texlive-module-lshort-italian-2008.tar.lzma mirror://gentoo/texlive-module-psfrag-italian-2008.tar.lzma mirror://gentoo/texlive-module-collection-documentation-italian-2008.tar.lzma mirror://gentoo/texlive-module-amsldoc-it.doc-2008.tar.lzma mirror://gentoo/texlive-module-amsmath-it.doc-2008.tar.lzma mirror://gentoo/texlive-module-amsthdoc-it.doc-2008.tar.lzma mirror://gentoo/texlive-module-fancyhdr-it.doc-2008.tar.lzma mirror://gentoo/texlive-module-l2tabu-it.doc-2008.tar.lzma mirror://gentoo/texlive-module-lshort-italian.doc-2008.tar.lzma mirror://gentoo/texlive-module-psfrag-italian.doc-2008.tar.lzma
+_eclasses_=texlive-common	052133dbded22024cfda72be0fbebe79	texlive-module	9bfd0a1481edc20b25a5b32e8970e579
+_md5_=5d0a037524ff304e675b53f6d72c2136

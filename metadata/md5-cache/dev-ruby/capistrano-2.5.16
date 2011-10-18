@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=test? ( >=dev-ruby/net-ssh-2.0.14[ruby_targets_ruby18?] ) test? ( >=dev-ruby/net-sftp-2.0.2[ruby_targets_ruby18?] ) test? ( >=dev-ruby/net-scp-1.0.2[ruby_targets_ruby18?] ) test? ( >=dev-ruby/net-ssh-gateway-1.0.0[ruby_targets_ruby18?] ) test? ( >=dev-ruby/highline-1.2.7[ruby_targets_ruby18?] ) test? ( dev-ruby/mocha[ruby_targets_ruby18?] ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) test? ( dev-ruby/rake[ruby_targets_ruby18?] ) test? ( virtual/rubygems[ruby_targets_ruby18?] )
+DESCRIPTION=A distributed application deployment system
+EAPI=2
+HOMEPAGE=http://capify.org/
+IUSE=test test test test test test ruby_targets_ruby18 test test test
+KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~x86
+LICENSE=MIT
+PDEPEND=dev-ruby/capistrano-launcher
+RDEPEND=>=dev-ruby/net-ssh-2.0.14[ruby_targets_ruby18?] >=dev-ruby/net-sftp-2.0.2[ruby_targets_ruby18?] >=dev-ruby/net-scp-1.0.2[ruby_targets_ruby18?] >=dev-ruby/net-ssh-gateway-1.0.0[ruby_targets_ruby18?] >=dev-ruby/highline-1.2.7[ruby_targets_ruby18?] ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) virtual/rubygems[ruby_targets_ruby18?]
+SLOT=2
+SRC_URI=mirror://rubygems/capistrano-2.5.16.gem
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby-fakegem	2768bd9a49d90592f8e7b88ab4077f20	ruby-ng	94f1106cb53283c8f691122e3077c9e1	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0a0752ba8d97a915a3efcb9e9616b968

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=x11-libs/qt-gui:4 x11-libs/qt-svg:4 doc? ( app-doc/doxygen )
+DESCRIPTION=Qt4 application to design electric diagrams
+EAPI=2
+HOMEPAGE=http://www.qt-apps.org/content/show.php?content=90198
+IUSE=debug doc
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=x11-libs/qt-gui:4 x11-libs/qt-svg:4
+SLOT=0
+SRC_URI=http://download.tuxfamily.org/qet/tags/20090627/qelectrotech-0.2-src.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4-r2	9324cde5d9328d2445c95232dd8bc158	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=25ea1e055965cb6f4a7f3eb695c59c76

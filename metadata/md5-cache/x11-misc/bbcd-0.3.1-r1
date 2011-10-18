@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=virtual/blackbox media-libs/libcdaudio
+DESCRIPTION=Basic CD Player for blackbox wm
+HOMEPAGE=http://tranber1.free.fr/bbcd.html
+KEYWORDS=~amd64 ppc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=virtual/blackbox media-libs/libcdaudio
+SLOT=0
+SRC_URI=http://tranber1.free.fr/bbcd-0.3.1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d214fe3afd9a613b0c0acb429130a59a

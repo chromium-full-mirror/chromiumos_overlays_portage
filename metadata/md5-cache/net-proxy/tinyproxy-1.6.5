@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst prepare
+DEPEND=socks5? ( net-proxy/dante )
+DESCRIPTION=A lightweight HTTP/SSL proxy
+EAPI=2
+HOMEPAGE=http://www.banu.com/tinyproxy/
+IUSE=debug socks5 +http-via-header transparent-proxy
+KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=socks5? ( net-proxy/dante )
+SLOT=0
+SRC_URI=http://www.banu.com/pub/tinyproxy/1.6/tinyproxy-1.6.5.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c5cb966170e9db100ac32354ae4758b4

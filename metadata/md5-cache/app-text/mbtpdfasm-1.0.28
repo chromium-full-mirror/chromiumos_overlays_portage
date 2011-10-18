@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=mbtPdfAsm can assemble/merge PDF files, extract information from PDF files, and update the metadata in PDF files.
+HOMEPAGE=http://thierry.schmit.free.fr/dev/mbtPdfAsm/mbtPdfAsm2.html
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~sparc-solaris
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=http://thierry.schmit.free.fr/spip/IMG/gz/mbtPdfAsm-1.0.28.tar.gz http://sbriesen.de/gentoo/distfiles/mbtpdfasm-1.0.28-manual.pdf.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0eb6168e7247a624014eea21c256cc4b

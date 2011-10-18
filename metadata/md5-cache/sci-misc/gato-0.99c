@@ -1,0 +1,13 @@
+DEFINED_PHASES=install prepare
+DEPEND=dev-lang/python[tk] >=app-admin/eselect-python-20091230
+DESCRIPTION=Graph Animation Toolbox
+EAPI=2
+HOMEPAGE=http://gato.sourceforge.net/
+IUSE=doc
+KEYWORDS=~x86 ~ppc ~amd64
+LICENSE=LGPL-2
+RDEPEND=dev-lang/python[tk] >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://gato.sourceforge.net/Download/Gato-0.99C.tar.gz doc? ( http://gato.sourceforge.net/Download/Gato-Doc-0.99C.tar.gz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=347b4fcae0eff24a7973d5219a7b2f2e

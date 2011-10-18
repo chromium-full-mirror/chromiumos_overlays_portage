@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=>=x11-libs/gtk+-2.4:2 media-libs/alsa-lib >=media-libs/libsdl-1.2.12[audio,joystick,video] sys-libs/zlib virtual/opengl virtual/glu
+DESCRIPTION=NEStopia is a portable Nintendo Entertainment System emulator written in C++
+EAPI=2
+HOMEPAGE=http://rbelmont.mameworld.info/?page_id=200
+KEYWORDS=~amd64 x86
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2.4:2 media-libs/alsa-lib >=media-libs/libsdl-1.2.12[audio,joystick,video] sys-libs/zlib virtual/opengl virtual/glu
+SLOT=0
+SRC_URI=mirror://sourceforge/nestopia/Nestopia140src.zip http://rbelmont.mameworld.info/nst140_lnx_release_h.zip
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=983b8afd0578c0f1b8346cba83d26071

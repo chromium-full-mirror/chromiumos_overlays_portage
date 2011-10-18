@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=>=dev-lang/python-2.3 virtual/mta virtual/cron virtual/httpd-cgi >=app-admin/eselect-python-20091230
+DESCRIPTION=A python-based mailing list server with an extensive web interface
+HOMEPAGE=http://www.list.org/
+KEYWORDS=amd64 ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/python-2.3 virtual/mta virtual/cron virtual/httpd-cgi >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=mirror://sourceforge/mailman/mailman-2.1.12.tgz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8d26095e69c853b56b5d664aaf374283

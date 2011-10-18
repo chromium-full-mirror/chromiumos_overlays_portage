@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DEPEND=>=dev-libs/dbus-glib-0.74 >=dev-libs/glib-2.16 net-print/cups >=sys-apps/dbus-1.2 >=sys-apps/hal-0.5.10 dev-util/pkgconfig
+DESCRIPTION=Hal cups utilities
+EAPI=2
+HOMEPAGE=https://fedorahosted.org/hal-cups-utils/
+KEYWORDS=alpha ~amd64 ~hppa ia64 ppc ppc64 sparc ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/dbus-glib-0.74 >=dev-libs/glib-2.16 net-print/cups >=sys-apps/dbus-1.2 >=sys-apps/hal-0.5.10 app-admin/system-config-printer-common
+SLOT=0
+SRC_URI=https://fedorahosted.org/releases/h/a/hal-cups-utils/hal-cups-utils-0.6.19.tar.gz
+_md5_=6f023e3f69d9051bdc086cfa14cabb34

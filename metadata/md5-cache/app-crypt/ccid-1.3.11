@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=!nousb? ( >=sys-apps/pcsc-lite-1.3.3 virtual/libusb:0 )
+DESCRIPTION=CCID free software driver
+EAPI=2
+HOMEPAGE=http://pcsclite.alioth.debian.org/ccid.html
+IUSE=twinserial nousb
+KEYWORDS=amd64 hppa ppc ppc64 x86
+LICENSE=GPL-2
+RDEPEND=!nousb? ( >=sys-apps/pcsc-lite-1.3.3 virtual/libusb:0 )
+SLOT=0
+SRC_URI=http://alioth.debian.org/download.php/3080/ccid-1.3.11.tar.bz2
+_md5_=00fca7ffb726778d3bc9396f4e9ae900

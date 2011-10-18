@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=x11-libs/qt-gui:4[debug?] x11-libs/qt-opengl:4[debug?] x11-libs/qt-qt3support:4[debug?] x11-libs/qt-svg:4[debug?] x11-libs/qt-xmlpatterns:4[debug?] sci-libs/gsl sci-libs/cfitsio
+DESCRIPTION=Fast real-time large-dataset viewing and plotting tool for KDE4
+EAPI=2
+HOMEPAGE=http://kst.kde.org/
+IUSE=debug
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2 LGPL-2 FDL-1.2
+RDEPEND=x11-libs/qt-gui:4[debug?] x11-libs/qt-opengl:4[debug?] x11-libs/qt-qt3support:4[debug?] x11-libs/qt-svg:4[debug?] x11-libs/qt-xmlpatterns:4[debug?] sci-libs/gsl sci-libs/cfitsio
+SLOT=0
+SRC_URI=mirror://kde/unstable/apps/KDE4.x/scientific/kst-2.0.0-beta2.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4-r2	9324cde5d9328d2445c95232dd8bc158	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e3600ac370f38af048f56064ed36e210

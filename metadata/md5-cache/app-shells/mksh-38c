@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install test unpack
+DEPEND=app-arch/cpio
+DESCRIPTION=MirBSD KSH Shell
+HOMEPAGE=http://mirbsd.de/mksh
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=BSD
+SLOT=0
+SRC_URI=http://www.mirbsd.org/MirOS/dist/mir/mksh/mksh-R38c.cpio.gz http://www.mirbsd.org/MirOS/dist/hosted/other/arc4random.c.1.14
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=dee2496cd3d4b404fd4419c26dedb704

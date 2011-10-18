@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
+DEPEND=sci-libs/hdf5[mpi=] mpi? ( || ( sys-cluster/openmpi sys-cluster/mpich2[cxx] ) ) python? ( dev-lang/python:2.6 ) gui? ( x11-libs/qt-gui:4 x11-libs/qt-qt3support:4 x11-libs/qt-opengl:4 x11-libs/qt-assistant:4 ) mysql? ( virtual/mysql ) postgres? ( virtual/postgresql-base ) odbc? ( dev-db/unixODBC ) dev-libs/libxml2 media-libs/libpng media-libs/jpeg media-libs/tiff media-video/ffmpeg dev-libs/expat sys-libs/zlib media-libs/freetype >=app-admin/eselect-opengl-1.0.6-r1 virtual/opengl sci-libs/netcdf x11-libs/libXmu boost? ( >=dev-libs/boost-1.40.0 ) doc? ( app-doc/doxygen ) >=dev-util/cmake-2.6.4 >=app-admin/eselect-python-20091230 dev-lang/python >=app-admin/eselect-python-20091230 >=dev-util/cmake-2.6.2-r1 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=ParaView is a powerful scientific data visualization application
+EAPI=2
+HOMEPAGE=http://www.paraview.org
+IUSE=mpi +python doc examples +gui plugins boost streaming cg overview mysql postgres odbc
+KEYWORDS=~x86 ~amd64
+LICENSE=paraview GPL-2
+RDEPEND=sci-libs/hdf5[mpi=] mpi? ( || ( sys-cluster/openmpi sys-cluster/mpich2[cxx] ) ) python? ( dev-lang/python:2.6 ) gui? ( x11-libs/qt-gui:4 x11-libs/qt-qt3support:4 x11-libs/qt-opengl:4 x11-libs/qt-assistant:4 ) mysql? ( virtual/mysql ) postgres? ( virtual/postgresql-base ) odbc? ( dev-db/unixODBC ) dev-libs/libxml2 media-libs/libpng media-libs/jpeg media-libs/tiff media-video/ffmpeg dev-libs/expat sys-libs/zlib media-libs/freetype >=app-admin/eselect-opengl-1.0.6-r1 virtual/opengl sci-libs/netcdf x11-libs/libXmu >=app-admin/eselect-python-20091230 dev-lang/python >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=mirror://gentoo/paraview-3.6.2.tar.gz mirror://gentoo/paraview-3.6.2-openfoam-gpl-r173.patch.bz2 mirror://gentoo/paraview-3.6.2-openfoam-r173.patch.bz2
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	cmake-utils	6a1f5bd4039e55b76615db7bd9b70fed	distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	qt4	83eabd1192f3f2c5a649ba2422a14d00	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=221225640680909791d1bd06291b039f

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=x11-libs/gtk+-2.6.10-r1 >=app-pda/pilot-link-0.11.8 >=app-pda/jpilot-0.99.7-r1 dev-util/pkgconfig
+DESCRIPTION=Plucker plugin for jpilot
+HOMEPAGE=http://jasonday.home.att.net/code/jpilot-plucker/jpilot-plucker.html
+KEYWORDS=~alpha ~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2.6.10-r1 >=app-pda/pilot-link-0.11.8 >=app-pda/jpilot-0.99.7-r1
+SLOT=0
+SRC_URI=http://jasonday.home.att.net/code/jpilot-plucker/jpilot-plucker-0.01.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e6b218a6218cef90b8dceedc4aaef7ca

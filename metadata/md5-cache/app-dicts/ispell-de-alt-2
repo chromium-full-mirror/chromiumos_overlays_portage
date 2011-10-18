@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=app-text/ispell
+DESCRIPTION=German dictionary (traditional orthography) for ispell
+HOMEPAGE=http://www.lasr.cs.ucla.edu/geoff/ispell-dictionaries.html
+KEYWORDS=alpha amd64 hppa ~mips ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=app-text/ispell
+SLOT=0
+SRC_URI=ftp://ftp.informatik.uni-kiel.de/pub/kiel/dicts/hk2-deutsch.tar.gz http://www.j3e.de/ispell/hk2/hkgerman_2-patch-bj1.diff.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=06d2ce880ccbfc3c0395955a022781c6

@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=>=dev-libs/redland-1.0.10-r1 perl? ( dev-lang/perl ) python? ( dev-lang/python ) php? ( virtual/php ) ruby? ( dev-lang/ruby dev-ruby/log4r ) dev-lang/swig sys-apps/sed perl? ( sys-apps/findutils )
+DESCRIPTION=Language bindings for Redland
+EAPI=2
+HOMEPAGE=http://librdf.org/bindings/
+IUSE=perl python php ruby
+KEYWORDS=~amd64 ~ppc ~x86 ~x86-linux ~ppc-macos
+LICENSE=Apache-2.0 GPL-2 LGPL-2.1
+RDEPEND=>=dev-libs/redland-1.0.10-r1 perl? ( dev-lang/perl ) python? ( dev-lang/python ) php? ( virtual/php ) ruby? ( dev-lang/ruby dev-ruby/log4r )
+SLOT=0
+SRC_URI=http://download.librdf.org/source/redland-bindings-1.0.10.1.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=cb95c4578ab51af95b6a5bdbf401d7bd

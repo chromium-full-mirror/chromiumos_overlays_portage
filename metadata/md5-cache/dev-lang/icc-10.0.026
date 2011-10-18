@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst setup unpack
+DEPEND=>=app-arch/rpm2targz-9.0.0.3g
+DESCRIPTION=Intel C/C++ optimized compiler for Linux
+HOMEPAGE=http://www.intel.com/software/products/compilers/clin/
+KEYWORDS=amd64 ia64 x86
+LICENSE=Intel-SDP
+RDEPEND=~virtual/libstdc++-3.3 amd64? ( app-emulation/emul-linux-x86-compat )
+RESTRICT=test strip mirror
+SLOT=0
+SRC_URI=amd64? ( http://registrationcenter-download.intel.com/irc_nas/786/l_cc_c_10.0.026_intel64.tar.gz ) ia64? ( http://registrationcenter-download.intel.com/irc_nas/786/l_cc_c_10.0.026_ia64.tar.gz ) x86? ( http://registrationcenter-download.intel.com/irc_nas/786/l_cc_c_10.0.026_ia32.tar.gz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	rpm	e703d62d2e2b396a7fb0262b79fdba53	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=09ae4919866c89689e5bb653cafa211e

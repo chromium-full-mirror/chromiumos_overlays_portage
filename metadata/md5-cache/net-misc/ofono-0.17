@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=>=sys-apps/dbus-1.2 >=dev-libs/glib-2.16 udev? ( >=sys-fs/udev-143 ) dev-util/pkgconfig
+DESCRIPTION=Open Source mobile telephony (GSM/UMTS) daemon.
+EAPI=2
+HOMEPAGE=http://ofono.org/
+IUSE=threads +udev
+KEYWORDS=~arm ~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-apps/dbus-1.2 >=dev-libs/glib-2.16 udev? ( >=sys-fs/udev-143 )
+SLOT=0
+SRC_URI=mirror://kernel/linux/network/ofono/ofono-0.17.tar.gz
+_md5_=394cefd674f3e1318b04b26f9aa396b0

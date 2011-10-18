@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst setup
+DEPEND=external-fuse? ( >=sys-fs/fuse-2.6.0 ) hal? ( sys-apps/hal ) sys-apps/attr
+DESCRIPTION=Open source read-write NTFS driver that runs under FUSE
+EAPI=2
+HOMEPAGE=http://www.tuxera.com/community/ntfs-3g-download/
+IUSE=acl debug hal suid +external-fuse
+KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=external-fuse? ( >=sys-fs/fuse-2.6.0 ) hal? ( sys-apps/hal )
+SLOT=0
+SRC_URI=http://tuxera.com/opensource/ntfs-3g-2010.3.6.tgz
+_eclasses_=linux-info	8d722422d00ae99ed52a790b20b9bfc4	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=aa42ad4821dfcb95e0ff92ab77e31141

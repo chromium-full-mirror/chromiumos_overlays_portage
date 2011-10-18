@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst setup test unpack
+DEPEND=dev-lang/perl >=dev-lang/python-2.3 romio? ( net-fs/nfs-utils ) pvfs2? ( >=sys-cluster/pvfs2-2.7.0 ) dev-libs/libaio !media-sound/mpd !sys-cluster/mpiexec !sys-cluster/openmpi !sys-cluster/lam-mpi !sys-cluster/mpich sys-devel/libtool =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=MPICH2 - A portable MPI implementation
+EAPI=1
+HOMEPAGE=http://www.mcs.anl.gov/research/projects/mpich2/index.php
+IUSE=+cxx debug doc fortran pvfs2 threads romio mpi-threads debug
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+LICENSE=as-is
+RDEPEND=dev-lang/perl >=dev-lang/python-2.3 romio? ( net-fs/nfs-utils ) pvfs2? ( >=sys-cluster/pvfs2-2.7.0 ) dev-libs/libaio !media-sound/mpd !sys-cluster/mpiexec !sys-cluster/openmpi !sys-cluster/lam-mpi !sys-cluster/mpich net-misc/openssh
+SLOT=0
+SRC_URI=http://www.mcs.anl.gov/research/projects/mpich2/downloads/tarballs/1.2.1/mpich2-1.2.1.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fortran	bd0fac3e085b8c7c86b09139dbedac42	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7ecfdcc78ceaa59f801cba3917078c9e

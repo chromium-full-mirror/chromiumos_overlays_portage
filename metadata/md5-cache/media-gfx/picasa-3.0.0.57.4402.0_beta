@@ -1,0 +1,14 @@
+DEFINED_PHASES=install unpack
+DEPEND=>=app-arch/rpm2targz-9.0.0.3g
+DESCRIPTION=Google's photo organizer
+EAPI=2
+HOMEPAGE=http://picasa.google.com
+IUSE=nsplugin
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=google-picasa
+RDEPEND=x86? ( dev-libs/atk dev-libs/glib dev-libs/libxml2 sys-libs/zlib x11-libs/gtk+ x11-libs/libICE x11-libs/libSM x11-libs/libX11 x11-libs/libXext x11-libs/libXi x11-libs/libXt x11-libs/pango ) amd64? ( app-emulation/emul-linux-x86-gtklibs ) nsplugin? ( || ( >=net-libs/xulrunner-1.9 >=www-client/mozilla-firefox-3.0.0 ) )
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=http://dl.google.com/linux/rpm/testing/i386/picasa-3.0-current.i386.rpm -> picasa-3.0.0.57.4402.0_beta.i386.rpm
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	nsplugins	88b65b6dd727ee2810964926b2654bdd	portability	0be430f759a631e692678ed796e09f5c	rpm	e703d62d2e2b396a7fb0262b79fdba53	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=306483c6efbf44528e4ae01026162d6c

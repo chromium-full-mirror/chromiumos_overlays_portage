@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst prepare
+DESCRIPTION=Configurable and full featured theme for FVWM, with lots of transparency
+EAPI=2
+HOMEPAGE=http://fvwm-crystal.org/
+KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=>=x11-wm/fvwm-2.5.13 dev-lang/python media-gfx/imagemagick || ( x11-misc/stalonetray x11-misc/trayer ) || ( x11-misc/habak x11-misc/hsetroot ) x11-apps/xwd media-gfx/imagemagick[png]
+SLOT=0
+SRC_URI=http://download.gna.org/fvwm-crystal/3.0.6/fvwm-crystal-3.0.6.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=474917a0fc7cfa4cbffa8ea615d30a9d

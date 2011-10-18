@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND=virtual/pam
+DESCRIPTION=pam.d files used by several KDE components.
+HOMEPAGE=http://www.kde.org
+KEYWORDS=alpha amd64 ~arm hppa ia64 ~mips ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE=as-is
+RDEPEND=virtual/pam
+SLOT=0
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pam	f794bf311d46a2b11d3d9362fe656bd0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b3df83aeaf89c72b7ffb2ef8e08717dc

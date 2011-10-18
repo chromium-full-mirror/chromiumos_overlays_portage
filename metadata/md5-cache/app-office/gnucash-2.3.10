@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
+DEPEND=>=dev-libs/glib-2.6.3 >=dev-scheme/guile-1.8.3[deprecated,regex] dev-scheme/guile-www >=dev-scheme/slib-3.1.4 >=sys-libs/zlib-1.1.4 >=dev-libs/popt-1.5 >=x11-libs/gtk+-2.10 >=gnome-base/libgnomeui-2.4 >=gnome-base/libglade-2.4 >=dev-libs/libxml2-2.5.10 >=gnome-base/gconf-2 >=x11-libs/goffice-0.6[gnome] ofx? ( >=dev-libs/libofx-0.9.1 ) hbci? ( >=net-libs/aqbanking-4.2[qt4] chipcard? ( sys-libs/libchipcard ) ) quotes? ( dev-perl/DateManip >=dev-perl/Finance-Quote-1.11 dev-perl/HTML-TableExtract ) webkit? ( net-libs/webkit-gtk ) !webkit? ( >=gnome-extra/gtkhtml-3.14 ) sqlite? ( dev-db/libdbi dev-db/libdbi-drivers[sqlite3] ) postgres? ( dev-db/libdbi dev-db/libdbi-drivers[postgres] ) mysql? ( dev-db/libdbi dev-db/libdbi-drivers[mysql] ) media-libs/libart_lgpl x11-libs/pango dev-util/pkgconfig dev-util/intltool sys-devel/libtool >=app-text/scrollkeeper-0.3 >=sys-apps/sed-4
+DESCRIPTION=A personal finance manager
+EAPI=2
+HOMEPAGE=http://www.gnucash.org/
+IUSE=+doc ofx hbci chipcard debug quotes sqlite postgres mysql webkit debug
+KEYWORDS=~alpha ~amd64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+PDEPEND=doc? ( >=app-doc/gnucash-docs-2.2.0 )
+RDEPEND=>=dev-libs/glib-2.6.3 >=dev-scheme/guile-1.8.3[deprecated,regex] dev-scheme/guile-www >=dev-scheme/slib-3.1.4 >=sys-libs/zlib-1.1.4 >=dev-libs/popt-1.5 >=x11-libs/gtk+-2.10 >=gnome-base/libgnomeui-2.4 >=gnome-base/libglade-2.4 >=dev-libs/libxml2-2.5.10 >=gnome-base/gconf-2 >=x11-libs/goffice-0.6[gnome] ofx? ( >=dev-libs/libofx-0.9.1 ) hbci? ( >=net-libs/aqbanking-4.2[qt4] chipcard? ( sys-libs/libchipcard ) ) quotes? ( dev-perl/DateManip >=dev-perl/Finance-Quote-1.11 dev-perl/HTML-TableExtract ) webkit? ( net-libs/webkit-gtk ) !webkit? ( >=gnome-extra/gtkhtml-3.14 ) sqlite? ( dev-db/libdbi dev-db/libdbi-drivers[sqlite3] ) postgres? ( dev-db/libdbi dev-db/libdbi-drivers[postgres] ) mysql? ( dev-db/libdbi dev-db/libdbi-drivers[mysql] ) media-libs/libart_lgpl x11-libs/pango
+SLOT=0
+SRC_URI=mirror://sourceforge/gnucash/gnucash-2.3.10.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=790f9bbc2f0d2d1afe31fc0dd5950de7

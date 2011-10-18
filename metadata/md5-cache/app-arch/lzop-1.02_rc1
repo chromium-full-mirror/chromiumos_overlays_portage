@@ -1,0 +1,11 @@
+DEFINED_PHASES=install test
+DEPEND=<dev-libs/lzo-2
+DESCRIPTION=Utility for fast (even real-time) compression/decompression
+HOMEPAGE=http://www.oberhumer.com/opensource/lzop/
+KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=<dev-libs/lzo-2
+SLOT=0
+SRC_URI=http://www.oberhumer.com/opensource/lzop/download/lzop-1.02rc1.tar.gz
+_eclasses_=versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=411e9ae9acfbbe960f53aec48810d754

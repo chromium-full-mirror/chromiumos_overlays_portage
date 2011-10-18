@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DEPEND=>=sys-devel/binutils-2.17 !build? ( sys-apps/sed >=sys-devel/binutils-2.11.90.0.31 )
+DESCRIPTION=Full sources for a dom0/domU Linux kernel to run under Xen
+HOMEPAGE=http://xen.org/
+IUSE=symlink build
+KEYWORDS=~x86 ~amd64
+LICENSE=GPL-2
+PDEPEND=!build? ( virtual/dev-manager )
+PROVIDE=virtual/linux-sources virtual/alsa
+RDEPEND=>=sys-devel/binutils-2.17 !build? ( >=sys-libs/ncurses-5.2 sys-devel/make )
+RESTRICT=binchecks strip
+SLOT=2.6.29-r4
+SRC_URI=mirror://kernel/linux/kernel/v2.6/linux-2.6.29.tar.bz2 mirror://gentoo/genpatches-2.6.29-6.base.tar.bz2 http://gentoo-xen-kernel.googlecode.com/files/xen-patches-2.6.29-6.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	kernel-2	fac988fb09b9b9b87d85d60efe37d03f	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=6a40ed8ac2e5c2387ca25d01d25a8480

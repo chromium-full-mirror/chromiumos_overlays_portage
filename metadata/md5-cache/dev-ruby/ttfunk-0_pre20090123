@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=virtual/ruby
+DESCRIPTION=Get Ya TrueType Funk On! (Font Metrics Parser for Prawn)
+EAPI=2
+HOMEPAGE=http://github.com/sandal/ttfunk/tree/master
+KEYWORDS=~amd64
+LICENSE=as-is
+RDEPEND=virtual/ruby
+SLOT=0
+SRC_URI=http://github.com/sandal/ttfunk/tarball/900032abee9272485e77f6b68e87c9ad6346f69b -> ttfunk-0_pre20090123.tgz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby	dfc4f482954636675998a350b1d078b5	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b823a6bf46b2ea9972f6480921dcff92

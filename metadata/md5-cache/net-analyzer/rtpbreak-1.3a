@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=net-libs/libnet:1.1 >=net-libs/libpcap-0.7
+DESCRIPTION=Detects, reconstructs and analyzes any RTP session through heuristics over the UDP network traffic
+EAPI=1
+HOMEPAGE=http://xenion.reactive-search.com/?page_id=7
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=net-libs/libnet:1.1 >=net-libs/libpcap-0.7
+SLOT=0
+SRC_URI=http://xenion.antifork.org/rtpbreak/rtpbreak-1.3a.tgz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=cb31e28fe332b50614bdc1377d30dc69

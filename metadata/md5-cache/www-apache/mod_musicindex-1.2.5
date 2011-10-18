@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst setup
+DEPEND=mp3? ( media-libs/libmad ) mp4? ( media-libs/libmp4v2 ) flac? ( media-libs/flac ) vorbis? ( media-libs/liboggz ) =www-servers/apache-2*
+DESCRIPTION=mod_musicindex allows nice displaying of directories containing music files
+EAPI=2
+HOMEPAGE=http://www.parisc-linux.org/~varenet/musicindex/
+IUSE=+mp3 +mp4 +flac +vorbis
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND==www-servers/apache-2*
+SLOT=0
+SRC_URI=http://www.parisc-linux.org/~varenet/musicindex/mod_musicindex-1.2.5.tar.gz
+_eclasses_=apache-module	075afd5430fb1c448d318e76dbe83dc6	depend.apache	a471783c63e68987a2b20eb46f9edf68	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=dd0c5ba4c54cc7d981c9d94a78b30ef6

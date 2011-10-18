@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=>=dev-lang/python-2.5 >=app-i18n/ibus-1.2 >=app-i18n/libhangul-0.0.10 nls? ( virtual/libintl ) dev-util/pkgconfig nls? ( >=sys-devel/gettext-0.16.1 )
+DESCRIPTION=The Hangul engine for IBus input platform
+HOMEPAGE=http://code.google.com/p/ibus/
+IUSE=nls
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/python-2.5 >=app-i18n/ibus-1.2 >=app-i18n/libhangul-0.0.10 nls? ( virtual/libintl )
+SLOT=0
+SRC_URI=http://ibus.googlecode.com/files/ibus-hangul-1.2.0.20091031.tar.gz
+_md5_=31faf29c622d8e227178640c38489ea5

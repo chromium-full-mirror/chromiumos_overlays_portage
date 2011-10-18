@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=ssl? ( >=dev-libs/openssl-0.9.7d ) perl? ( dev-lang/perl ) sasl? ( >=dev-libs/cyrus-sasl-2 ) ares? ( net-dns/c-ares )
+DESCRIPTION=An advanced IRC Bouncer
+HOMEPAGE=http://znc.sourceforge.net
+IUSE=ares debug extras ipv6 nomodules perl ssl sasl
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=ssl? ( >=dev-libs/openssl-0.9.7d ) perl? ( dev-lang/perl ) sasl? ( >=dev-libs/cyrus-sasl-2 ) ares? ( net-dns/c-ares )
+SLOT=0
+SRC_URI=mirror://sourceforge/znc/znc-0.078.tar.gz
+_md5_=8bcc02ec2e56824859d83917e1997051

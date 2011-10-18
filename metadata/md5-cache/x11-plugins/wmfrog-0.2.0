@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=x11-libs/libXext x11-libs/libXpm x11-libs/libX11 x11-proto/xextproto
+DESCRIPTION=a weather application, it shows the weather in a graphical way.
+HOMEPAGE=http://wiki.colar.net/wmfrog_dockapp
+KEYWORDS=amd64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/libXext x11-libs/libXpm x11-libs/libX11
+SLOT=0
+SRC_URI=mirror://sourceforge/wmfrog/wmfrog-0.2.0.tgz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=613e1c77a0f13c1016a3454b55811f92

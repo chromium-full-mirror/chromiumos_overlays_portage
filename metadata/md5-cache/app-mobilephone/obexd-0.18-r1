@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=eds? ( gnome-extra/evolution-data-server ) net-wireless/bluez >=dev-libs/openobex-1.4 dev-libs/glib:2 sys-apps/dbus server? ( !app-mobilephone/obex-data-server ) dev-util/pkgconfig
+DESCRIPTION=OBEX Server and Client
+EAPI=2
+HOMEPAGE=http://www.bluez.org/
+IUSE=debug -eds -server
+KEYWORDS=~amd64 ~hppa ~x86
+LICENSE=GPL-2
+RDEPEND=eds? ( gnome-extra/evolution-data-server ) net-wireless/bluez >=dev-libs/openobex-1.4 dev-libs/glib:2 sys-apps/dbus server? ( !app-mobilephone/obex-data-server )
+SLOT=0
+SRC_URI=mirror://kernel/linux/bluetooth/obexd-0.18.tar.gz
+_md5_=e2ec3b9ca79dd80940511d09aab0e816

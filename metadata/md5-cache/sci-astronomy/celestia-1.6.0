@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=virtual/glu media-libs/jpeg media-libs/libpng >=dev-lang/lua-5.0 gtk? ( !gnome? ( >=x11-libs/gtk+-2.6 >=x11-libs/gtkglext-1.0 ) ) gnome? ( >=x11-libs/gtk+-2.6 >=x11-libs/gtkglext-1.0 >=gnome-base/libgnomeui-2.0 ) !gtk? ( !gnome? ( virtual/glut ) ) cairo? ( x11-libs/cairo ) theora? ( media-libs/libtheora ) dev-util/pkgconfig >=sys-apps/sed-4 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=OpenGL 3D space simulator
+EAPI=2
+HOMEPAGE=http://www.shatters.net/celestia/
+IUSE=cairo gnome gtk nls pch theora threads debug
+KEYWORDS=amd64 ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=virtual/glu media-libs/jpeg media-libs/libpng >=dev-lang/lua-5.0 gtk? ( !gnome? ( >=x11-libs/gtk+-2.6 >=x11-libs/gtkglext-1.0 ) ) gnome? ( >=x11-libs/gtk+-2.6 >=x11-libs/gtkglext-1.0 >=gnome-base/libgnomeui-2.0 ) !gtk? ( !gnome? ( virtual/glut ) ) cairo? ( x11-libs/cairo ) theora? ( media-libs/libtheora )
+SLOT=0
+SRC_URI=mirror://sourceforge/celestia/celestia-1.6.0.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a3cdc32f0c3707636f675706102e98c7

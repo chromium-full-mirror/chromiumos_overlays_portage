@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DEPEND=app-arch/unzip
+DESCRIPTION=3D arcade with unique fighting system and antropomorphic characters
+HOMEPAGE=http://www.wolfire.com/lugaru
+KEYWORDS=amd64 x86
+LICENSE=as-is
+RDEPEND=sys-libs/glibc amd64? ( app-emulation/emul-linux-x86-xlibs ) x86? ( x11-libs/libX11 x11-libs/libXext )
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=http://cdn.wolfire.com/games/lugaru-linux-x86-1.0b.bin
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=44c249c412917de57852b5120f0e5071

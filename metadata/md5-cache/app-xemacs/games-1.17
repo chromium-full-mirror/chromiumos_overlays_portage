@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=app-editors/xemacs
+DESCRIPTION=Tetris, Sokoban, and Snake.
+HOMEPAGE=http://xemacs.org/
+KEYWORDS=alpha amd64 ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=app-xemacs/xemacs-base
+SLOT=0
+SRC_URI=http://ftp.xemacs.org/pub/xemacs/packages/games-1.17-pkg.tar.gz
+_eclasses_=xemacs-packages	6dd96054b458a462c15a08ea670d9ac6
+_md5_=c1f9831559b90f855614e0e914d5c7ba

@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst postrm prepare
+DEPEND=x11-libs/qt-gui:4[qt3support] media-libs/ladspa-sdk x11-libs/libSM app-misc/lirc media-sound/jack-audio-connection-kit media-libs/alsa-lib media-libs/dssi media-libs/liblo media-libs/liblrdf =sci-libs/fftw-3* media-libs/libsamplerate[sndfile]
+DESCRIPTION=MIDI and audio sequencer and notation editor
+EAPI=2
+HOMEPAGE=http://www.rosegardenmusic.com/
+IUSE=debug
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/qt-gui:4[qt3support] media-libs/ladspa-sdk x11-libs/libSM app-misc/lirc media-sound/jack-audio-connection-kit media-libs/alsa-lib media-libs/dssi media-libs/liblo media-libs/liblrdf =sci-libs/fftw-3* media-libs/libsamplerate[sndfile]
+SLOT=0
+SRC_URI=mirror://sourceforge/rosegarden/rosegarden-10.02-beta.tar.bz2
+_eclasses_=fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9cf2fa695da767bef389170d453810d9

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prerm unpack
+DEPEND=app-text/openjade app-text/opensp app-text/sgml-common >=dev-lang/perl-5.004 sys-apps/gawk sys-apps/groff !<app-text/sgmltools-lite-3.0.3-r10 !<app-text/tetex-3 >=app-text/sgml-common-0.6.3-r2
+DESCRIPTION=A toolset for processing LinuxDoc DTD SGML files
+HOMEPAGE=http://packages.qa.debian.org/l/linuxdoc-tools.html
+IUSE=latex
+KEYWORDS=amd64 ~ia64 ppc x86 ~x86-fbsd
+LICENSE=KenMacLeod SGMLUG
+RDEPEND=app-text/openjade app-text/opensp app-text/sgml-common >=dev-lang/perl-5.004 sys-apps/gawk sys-apps/groff !<app-text/sgmltools-lite-3.0.3-r10 !<app-text/tetex-3 latex? ( virtual/latex-base )
+SLOT=0
+SRC_URI=mirror://debian/pool/main/l/linuxdoc-tools/linuxdoc-tools_0.9.21-0.11.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	sgml-catalog	a4d9b97f60f3331317a2d4279eecbe7d	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9f0decca44b57bd82ba67a597974ce44

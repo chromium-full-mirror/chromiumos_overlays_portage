@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=>=dev-lang/python-2.2.3 dev-python/egenix-mx-base firebird? ( >=dev-python/kinterbasdb-3.1_pre7 ) mysql? ( >=dev-python/mysql-python-0.9.2 ) postgres? ( <=dev-python/psycopg-1.99 ) >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=The Object Relational Membrane is an attempt to write an Object Relational Layer that is as thin as possible.
+HOMEPAGE=http://www.tux4web.de/computer/software/orm/
+IUSE=firebird mysql postgres
+KEYWORDS=~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/python-2.2.3 dev-python/egenix-mx-base firebird? ( >=dev-python/kinterbasdb-3.1_pre7 ) mysql? ( >=dev-python/mysql-python-0.9.2 ) postgres? ( <=dev-python/psycopg-1.99 ) >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=http://www.tux4web.de/computer/software/orm/download/orm-0.15.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1baf6e50100ec63f5156f172b1ad4b04

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm test unpack
+DEPEND=dev-lang/python dev-python/pyrex dev-libs/boost dev-python/pyprotocols dev-python/pyopengl dev-python/pygame dev-python/imaging 3ds? ( media-libs/lib3ds ) dev-util/scons >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=Python library for creating 3D images
+HOMEPAGE=http://cgkit.sourceforge.net
+IUSE=3ds
+KEYWORDS=~amd64 ~ppc x86
+LICENSE=LGPL-2.1 MPL-1.1 GPL-2
+RDEPEND=dev-lang/python dev-python/pyrex dev-libs/boost dev-python/pyprotocols dev-python/pyopengl dev-python/pygame dev-python/imaging 3ds? ( media-libs/lib3ds ) >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=mirror://sourceforge/cgkit/cgkit-2.0.0alpha8.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f4dbc2e4cd5ab829a1b04642773b135d

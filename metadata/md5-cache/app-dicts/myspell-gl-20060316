@@ -1,0 +1,8 @@
+DEFINED_PHASES=-
+DESCRIPTION=Galician dictionaries for myspell/hunspell
+HOMEPAGE=http://lingucomponent.openoffice.org/
+KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ppc ~ppc64 ~sh sparc x86 ~x86-fbsd
+LICENSE=GPL-2 LGPL-2.1
+RDEPEND=app-dicts/myspell-es
+SLOT=0
+_md5_=86d9e81d98eaeeae726011fe090bf5ab

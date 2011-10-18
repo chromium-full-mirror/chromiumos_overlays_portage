@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=Extract closed captioning subtitles from video to SRT
+HOMEPAGE=http://ccextractor.sourceforge.net/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=mirror://sourceforge/ccextractor/ccextractor.0.55.zip
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7d25a64654268d125a206fe162befa72

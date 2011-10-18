@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install preinst setup unpack
+DEPEND=x11-libs/qt-gui:4 x11-libs/qt-svg:4 webkit? ( >=x11-libs/qt-webkit-4.3.3 ) exif? ( media-gfx/exiv2 ) proj? ( sci-libs/proj ) gdal? ( sci-libs/gdal ) dev-util/subversion net-misc/rsync
+DESCRIPTION=A Qt4 based map editor for the openstreetmap.org project
+EAPI=1
+HOMEPAGE=http://www.merkaartor.org
+IUSE=nls webkit exif proj gdal
+LICENSE=GPL-2
+RDEPEND=x11-libs/qt-gui:4 x11-libs/qt-svg:4 webkit? ( >=x11-libs/qt-webkit-4.3.3 ) exif? ( media-gfx/exiv2 ) proj? ( sci-libs/proj ) gdal? ( sci-libs/gdal )
+SLOT=0
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4	83eabd1192f3f2c5a649ba2422a14d00	subversion	5781247c771be19b5dbcbb7253078ad2	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=a615263429052319f75645f7d6a4144e

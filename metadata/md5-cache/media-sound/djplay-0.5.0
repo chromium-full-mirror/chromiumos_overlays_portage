@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=media-libs/alsa-lib x11-libs/qt:3 =dev-libs/glib-1.2* media-libs/libsamplerate media-libs/id3lib dev-libs/libxml2 media-plugins/tap-plugins media-plugins/swh-plugins media-sound/jack-audio-connection-kit media-libs/libdjconsole media-libs/libogg media-libs/libvorbis media-libs/libsdl audiofile? ( media-libs/audiofile ) cdparanoia? ( media-sound/cdparanoia ) mad? ( media-libs/libmad ) mpeg? ( media-libs/libmpeg3 ) dev-util/pkgconfig sys-devel/gettext =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=A live DJing application.
+EAPI=1
+HOMEPAGE=http://djplay.sf.net/
+IUSE=audiofile cdparanoia mad mpeg
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=media-libs/alsa-lib x11-libs/qt:3 =dev-libs/glib-1.2* media-libs/libsamplerate media-libs/id3lib dev-libs/libxml2 media-plugins/tap-plugins media-plugins/swh-plugins media-sound/jack-audio-connection-kit media-libs/libdjconsole media-libs/libogg media-libs/libvorbis media-libs/libsdl audiofile? ( media-libs/audiofile ) cdparanoia? ( media-sound/cdparanoia ) mad? ( media-libs/libmad ) mpeg? ( media-libs/libmpeg3 )
+SLOT=0
+SRC_URI=mirror://sourceforge/djplay/djplay-0.5.0.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt3	823f11abd98cfc43cf92b8622e420f1f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=6f752830e8673ea926614376eb8044b5

@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=app-arch/unzip
+DESCRIPTION=Quake III Alternate Fire - adds unique new secondary attacks to weapons
+EAPI=2
+HOMEPAGE=http://www.planetquake.com/alternatefire/
+IUSE=dedicated opengl dedicated opengl
+KEYWORDS=amd64 ~ppc x86
+LICENSE=freedist
+RDEPEND=dedicated? ( || ( games-fps/quake3[dedicated] games-fps/quake3-bin[dedicated] ) ) opengl? ( || ( || ( games-fps/quake3[opengl] games-fps/quake3[-dedicated] ) || ( games-fps/quake3-bin[opengl] games-fps/quake3-bin[-dedicated] ) ) ) !dedicated? ( !opengl? ( || ( || ( games-fps/quake3[opengl] games-fps/quake3[-dedicated] ) || ( games-fps/quake3-bin[opengl] games-fps/quake3-bin[-dedicated] ) ) ) )
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=mirror://quakeunity/modifications/alternatefire/alternatefire-2.0.zip
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	games-mods	aa58110c9e7b2d0d4215a06e00ba22bf	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c53598d508f670b01c1bfd6f89a56835

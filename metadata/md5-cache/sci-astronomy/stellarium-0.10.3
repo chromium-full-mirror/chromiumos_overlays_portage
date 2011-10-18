@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=virtual/opengl virtual/glu media-libs/libpng media-libs/freetype:2 media-libs/jpeg >=x11-libs/qt-core-4.6.0:4 x11-libs/qt-gui:4 x11-libs/qt-opengl:4 x11-libs/qt-script:4 x11-libs/qt-svg:4 x11-libs/qt-sql:4 x11-libs/qt-test:4 nls? ( virtual/libintl ) dev-libs/boost >=dev-util/cmake-2.4.7 nls? ( sys-devel/gettext ) x11-libs/libXt >=dev-util/cmake-2.6.2-r1 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=Stellarium renders 3D photo-realistic skies in real time.
+EAPI=2
+HOMEPAGE=http://www.stellarium.org/
+IUSE=nls stars
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+LICENSE=GPL-2 BitstreamVera
+RDEPEND=virtual/opengl virtual/glu media-libs/libpng media-libs/freetype:2 media-libs/jpeg >=x11-libs/qt-core-4.6.0:4 x11-libs/qt-gui:4 x11-libs/qt-opengl:4 x11-libs/qt-script:4 x11-libs/qt-svg:4 x11-libs/qt-sql:4 x11-libs/qt-test:4 nls? ( virtual/libintl )
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://sourceforge/stellarium/stellarium-0.10.3.tar.gz stars? ( mirror://sourceforge/stellarium/stars_4_1v0_0.cat mirror://sourceforge/stellarium/stars_5_2v0_0.cat mirror://sourceforge/stellarium/stars_6_2v0_0.cat mirror://sourceforge/stellarium/stars_7_2v0_0.cat mirror://sourceforge/stellarium/stars_8_2v0_0.cat )
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	cmake-utils	6a1f5bd4039e55b76615db7bd9b70fed	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=07e92315357b31591c570b6ae5a63ff5

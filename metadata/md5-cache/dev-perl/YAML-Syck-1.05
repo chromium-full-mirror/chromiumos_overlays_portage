@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
+DEPEND=|| ( dev-libs/syck >=dev-lang/ruby-1.8 ) dev-lang/perl
+DESCRIPTION=Fast, lightweight YAML loader and dumper
+HOMEPAGE=http://search.cpan.org/dist/YAML-Syck/
+KEYWORDS=amd64 ~ia64 ~ppc sparc x86
+LICENSE=MIT
+RDEPEND=|| ( dev-libs/syck >=dev-lang/ruby-1.8 ) dev-lang/perl
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/A/AU/AUDREYT//YAML-Syck-1.05.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0f17be289657a89f5e4a8012cb2c5fc7

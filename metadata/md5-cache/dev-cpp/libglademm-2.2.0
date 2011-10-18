@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst unpack
+DEPEND=>=dev-util/pkgconfig-0.12.0 >=gnome-base/libglade-2 =dev-cpp/gtkmm-2.2* >=sys-apps/sed-4
+DESCRIPTION=C++ bindings for libglade
+HOMEPAGE=http://www.gtkmm.org
+IUSE=debug
+KEYWORDS=-amd64 ~hppa ppc ppc64 ~sparc x86
+LICENSE=LGPL-2.1
+RDEPEND=>=gnome-base/libglade-2 =dev-cpp/gtkmm-2.2*
+SLOT=2
+SRC_URI=mirror://gnome/sources/libglademm/2.2/libglademm-2.2.0.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=74c717852c59024d257d73e14fb3fbd0

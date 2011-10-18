@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=sys-apps/sed-4
+DESCRIPTION=IPv6 address calculator
+HOMEPAGE=http://www.deepspace6.net/projects/ipv6calc.html
+KEYWORDS=amd64 hppa ppc sparc x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/ipv6calc-0.51.tar.gz
+_eclasses_=fixheadtails	059c47dd86229aa6382393274677acfe
+_md5_=86a9479c25fe888e1c467fc47f58c316

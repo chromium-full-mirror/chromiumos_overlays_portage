@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=virtual/cdrtools virtual/eject
+DESCRIPTION=performs full/incremental backups of local/remote filesystems onto CD-R(W)s
+HOMEPAGE=http://cdbkup.sourceforge.net/
+KEYWORDS=~x86 ~ppc ~amd64
+LICENSE=GPL-2
+RDEPEND=virtual/cdrtools virtual/eject !app-misc/cdcat
+SLOT=0
+SRC_URI=mirror://sourceforge/cdbkup/cdbkup-1.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=5cadd0d708539839c58898fd2d9b43e2

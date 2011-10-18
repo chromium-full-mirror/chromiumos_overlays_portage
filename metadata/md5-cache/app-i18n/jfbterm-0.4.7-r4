@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=sys-libs/ncurses-5.6 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=The J Framebuffer Terminal/Multilingual Enhancement with UTF-8 support
+HOMEPAGE=http://jfbterm.sourceforge.jp/
+IUSE=debug
+KEYWORDS=amd64 ppc ppc64 sparc x86
+LICENSE=BSD
+RDEPEND=media-fonts/unifont media-fonts/font-misc-misc media-fonts/intlfonts
+SLOT=0
+SRC_URI=mirror://sourceforge.jp/jfbterm/13501/jfbterm-0.4.7.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=433dbd7ee8475e88469ae379a2502c44

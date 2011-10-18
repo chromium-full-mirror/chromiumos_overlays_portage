@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst prerm setup
+DEPEND==dev-lang/ghc-6.4*
+DESCRIPTION=GLUT bindings for Haskell
+HOMEPAGE=http://www.haskell.org/HOpenGL/
+KEYWORDS=~x86 ~amd64
+LICENSE=BSD
+RDEPEND==dev-lang/ghc-6.4*
+SLOT=0
+_eclasses_=ghc-package	a0576f38fd872706ee22bf4f6c0c6152	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=ef9bbf0ae541966b6e0e5b26c402ea8e

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst preinst prerm
+DEPEND=app-shells/dash >=sys-apps/module-init-tools-3.6 >=sys-apps/util-linux-2.16 crypt? ( sys-fs/cryptsetup ) dmraid? ( sys-fs/dmraid ) lvm? ( >=sys-fs/lvm2-2.02.33 ) md? ( sys-fs/mdadm ) nfs? ( net-fs/nfs-utils net-nds/rpcbind sys-apps/iproute2 net-misc/dhcp net-misc/bridge-utils ) iscsi? ( sys-block/open-iscsi[utils] sys-apps/iproute2 net-misc/dhcp net-misc/bridge-utils ) nbd? ( sys-block/nbd sys-apps/iproute2 net-misc/dhcp net-misc/bridge-utils ) selinux? ( sys-libs/libselinux sys-libs/libsepol )
+DESCRIPTION=Generic initramfs generation tool
+EAPI=2
+HOMEPAGE=http://sourceforge.net/projects/dracut/
+IUSE=crypt dmraid iscsi lvm nbd nfs md selinux
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=app-shells/dash >=sys-apps/module-init-tools-3.6 >=sys-apps/util-linux-2.16 crypt? ( sys-fs/cryptsetup ) dmraid? ( sys-fs/dmraid ) lvm? ( >=sys-fs/lvm2-2.02.33 ) md? ( sys-fs/mdadm ) nfs? ( net-fs/nfs-utils net-nds/rpcbind sys-apps/iproute2 net-misc/dhcp net-misc/bridge-utils ) iscsi? ( sys-block/open-iscsi[utils] sys-apps/iproute2 net-misc/dhcp net-misc/bridge-utils ) nbd? ( sys-block/nbd sys-apps/iproute2 net-misc/dhcp net-misc/bridge-utils ) selinux? ( sys-libs/libselinux sys-libs/libsepol )
+SLOT=0
+SRC_URI=mirror://sourceforge/dracut/dracut-004.tar.bz2
+_eclasses_=mount-boot	932166cd49a73ccf2631de9e6ac3866b
+_md5_=785795baff4df20f9112a7c15b9890e3

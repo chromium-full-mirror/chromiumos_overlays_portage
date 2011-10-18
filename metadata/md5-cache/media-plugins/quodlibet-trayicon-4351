@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm setup
+DEPEND=>=app-admin/eselect-python-20091230
+DESCRIPTION=Trayicon for Quod Libet
+HOMEPAGE=http://svn.sacredchao.net/svn/quodlibet/trunk/plugins/events/trayicon.py
+KEYWORDS=~alpha amd64 ~ppc ~ppc64 ~sparc x86
+LICENSE=GPL-2
+RDEPEND=>=media-sound/quodlibet-2 >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=mirror://gentoo/quodlibet-trayicon-4351.tar.bz2 http://dev.gentoo.org/~ssuominen/quodlibet-trayicon-4351.tar.bz2
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=890a158978d025d98d0607102fcd4afa

@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DEPEND=>=dev-lang/mono-2.0 sys-libs/readline !dev-lang/mercury >=dev-util/pkgconfig-0.20
+DESCRIPTION=Debugger for .NET managed and unmanaged applications
+HOMEPAGE=http://www.go-mono.com
+KEYWORDS=-* ~x86 ~amd64
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/mono-2.0 sys-libs/readline
+RESTRICT=test
+SLOT=0
+SRC_URI=http://go-mono.com/sources/mono-debugger/mono-debugger-2.0.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0b078e45cbb9bbe5c5ab72eef482e718

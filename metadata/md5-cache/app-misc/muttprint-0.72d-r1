@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=Script for pretty printing of your mails
+EAPI=2
+HOMEPAGE=http://muttprint.sf.net/
+KEYWORDS=alpha amd64 ia64 ppc ppc64 x86
+LICENSE=GPL-2
+RDEPEND=virtual/latex-base dev-texlive/texlive-latexextra dev-lang/perl dev-perl/TimeDate dev-perl/Text-Iconv dev-perl/File-Which app-text/psutils
+SLOT=0
+SRC_URI=mirror://sourceforge/muttprint/muttprint-0.72d.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=5d68f6912d5d3d5560058d8471f8b1ff

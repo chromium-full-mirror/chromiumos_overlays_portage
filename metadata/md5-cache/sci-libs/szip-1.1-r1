@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Szip is an implementation of the extended-Rice lossless compression algorithm
+HOMEPAGE=http://hdf.ncsa.uiuc.edu/HDF5/doc_resource/SZIP/
+KEYWORDS=amd64 ppc ppc64 sparc x86
+LICENSE=szip
+SLOT=0
+SRC_URI=ftp://ftp.ncsa.uiuc.edu/HDF/szip/src/szip1.1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d6b7569a6aa8fea421c4f007d8579fc5

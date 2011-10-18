@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst preinst prepare
+DEPEND==net-misc/nxnode-3.4.0*
+DESCRIPTION=Free edition NX server from NoMachine
+EAPI=2
+HOMEPAGE=http://www.nomachine.com/
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=nomachine
+RDEPEND==net-misc/nxnode-3.4.0* media-fonts/font-misc-misc media-fonts/font-cursor-misc x11-apps/xauth x11-apps/xhost
+RESTRICT=strip
+SLOT=0
+SRC_URI=amd64? ( http://64.34.161.181/download/3.4.0/Linux/FE/nxserver-3.4.0-12.x86_64.tar.gz ) x86? ( http://64.34.161.181/download/3.4.0/Linux/FE/nxserver-3.4.0-12.i386.tar.gz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=23541ab11d9bc69bf264adbd868dc89a

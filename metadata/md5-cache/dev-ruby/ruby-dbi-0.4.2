@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst test unpack
+DEPEND=dev-ruby/deprecated test? ( virtual/ruby-test-unit ) virtual/ruby
+DESCRIPTION=Ruby/DBI - a database independent interface for accessing databases - similar to Perl's DBI
+HOMEPAGE=http://ruby-dbi.rubyforge.org
+IUSE=examples odbc postgres mysql sqlite sqlite3 test
+KEYWORDS=~amd64 ~ia64 ~ppc ~sparc ~x86
+LICENSE=BSD
+PDEPEND=mysql? ( dev-ruby/dbd-mysql ) postgres? ( dev-ruby/dbd-pg ) odbc? ( dev-ruby/dbd-odbc ) sqlite? ( dev-ruby/dbd-sqlite ) sqlite3? ( dev-ruby/dbd-sqlite3 )
+RDEPEND=dev-ruby/deprecated test? ( virtual/ruby-test-unit ) virtual/ruby
+SLOT=0
+SRC_URI=mirror://rubyforge/ruby-dbi/dbi-0.4.2.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby	dfc4f482954636675998a350b1d078b5	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3d1bc8640cc7d2841c88523b7f4b4ae0

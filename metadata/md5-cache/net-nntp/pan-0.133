@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=dev-libs/glib-2.4.0 >=x11-libs/gtk+-2.4.0 >=dev-libs/libpcre-5.0 =dev-libs/gmime-2.2* spell? ( >=app-text/gtkspell-2.0.7 ) >=dev-util/intltool-0.21 dev-util/pkgconfig sys-devel/gettext
+DESCRIPTION=A newsreader for the Gnome2 desktop
+HOMEPAGE=http://pan.rebelbase.com/
+IUSE=spell
+KEYWORDS=alpha amd64 hppa ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/glib-2.4.0 >=x11-libs/gtk+-2.4.0 >=dev-libs/libpcre-5.0 =dev-libs/gmime-2.2* spell? ( >=app-text/gtkspell-2.0.7 )
+SLOT=0
+SRC_URI=http://pan.rebelbase.com/download/releases/0.133/source/pan-0.133.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d64233f7fc53612a6f190eb0d5d528f3

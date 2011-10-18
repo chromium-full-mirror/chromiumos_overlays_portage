@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=>=virtual/emacs-21
+DESCRIPTION=The Gnus newsreader and mail-reader
+HOMEPAGE=http://gnus.org/
+KEYWORDS=alpha amd64 ppc sparc x86
+LICENSE=GPL-3 FDL-1.2
+RDEPEND=!app-emacs/gnus-cvs !app-emacs/ngnus >=virtual/emacs-21
+SLOT=0
+SRC_URI=http://quimby.gnus.org/gnus/dist/gnus-5.10.10.tar.gz
+_eclasses_=elisp	4fb60944284f0928ba836a482f598807	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c71d20399c9c02889102ae65eabc1aab

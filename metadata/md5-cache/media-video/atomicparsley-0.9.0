@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=app-arch/unzip
+DESCRIPTION=command line program for reading, parsing and setting iTunes-style metadata in MPEG4 files
+EAPI=2
+HOMEPAGE=http://atomicparsley.sourceforge.net
+KEYWORDS=amd64 ~ppc ppc64 sparc x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=mirror://sourceforge/atomicparsley/AtomicParsley-source-0.9.0.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a288b74155edf31b2064f1a37b0e0588

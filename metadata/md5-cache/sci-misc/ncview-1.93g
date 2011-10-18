@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install
+DEPEND=sci-libs/netcdf media-libs/netpbm x11-libs/libXaw udunits? ( sci-libs/udunits )
+DESCRIPTION=X-based viewer for netCDF files
+EAPI=2
+HOMEPAGE=http://meteora.ucsd.edu/~pierce/ncview_home_page.html
+IUSE=udunits
+KEYWORDS=~x86 ~amd64 ~ppc
+LICENSE=GPL-2
+RDEPEND=sci-libs/netcdf media-libs/netpbm x11-libs/libXaw udunits? ( sci-libs/udunits )
+SLOT=0
+SRC_URI=ftp://cirrus.ucsd.edu/pub/ncview/ncview-1.93g.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1a3d91fa3d0966572be3978aa2fae32b

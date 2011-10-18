@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DESCRIPTION=VDR - Skin Plugin: enigma-ng logos
+HOMEPAGE=http://andreas.vdr-developer.org/enigmang/download.html
+IUSE=dxr3
+KEYWORDS=x86 ~amd64
+LICENSE=GPL-2
+RDEPEND=media-plugins/vdr-skinenigmang
+SLOT=0
+SRC_URI=!dxr3? ( http://andreas.vdr-developer.org/enigmang/download/skinenigmang-logos-xpm-hi-20070214.tgz ) dxr3? ( http://andreas.vdr-developer.org/enigmang/download/skinenigmang-logos-xpm-lo-20070214.tgz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=118567a7e3e7309b531d75acec68d15d

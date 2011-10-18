@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=>=dev-lang/python-2.3 >=dev-python/pygtk-2.4 >=gnome-base/libglade-2.4.2 >=dev-python/kiwi-1.9.11 >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=Gazpacho is a glade-like gtk interface designer.
+HOMEPAGE=http://gazpacho.sicem.biz/
+KEYWORDS=-amd64 -ppc ~x86
+LICENSE=LGPL-2.1
+RDEPEND=>=dev-lang/python-2.3 >=dev-python/pygtk-2.4 >=gnome-base/libglade-2.4.2 >=dev-python/kiwi-1.9.11 >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=mirror://gnome/sources/gazpacho/0.7/gazpacho-0.7.0.tar.bz2
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	gnome.org	6d236bfa516020939a4adbc435063f79	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=34ea32b0a80dc649fa75a68c6cd3f20d

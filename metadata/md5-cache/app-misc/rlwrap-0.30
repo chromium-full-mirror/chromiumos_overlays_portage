@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=sys-libs/readline
+DESCRIPTION=GNU readline wrapper
+HOMEPAGE=http://utopia.knoware.nl/~hlub/uck/rlwrap
+IUSE=debug
+KEYWORDS=amd64 ~mips ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=sys-libs/readline
+SLOT=0
+SRC_URI=http://utopia.knoware.nl/~hlub/uck/rlwrap/rlwrap-0.30.tar.gz
+_md5_=0a1a3c815354863fcc995974cb1bb9e0

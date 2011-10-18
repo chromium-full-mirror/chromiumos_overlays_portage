@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup unpack
+DEPEND=!app-emulation/virtualbox-bin !app-emulation/virtualbox-ose-additions !app-emulation/virtualbox-modules dev-libs/libIDL >=dev-libs/libxslt-1.1.19 dev-libs/xalan-c dev-libs/xerces-c net-misc/curl sys-libs/libcap !headless? ( qt4? ( x11-libs/qt-gui:4 x11-libs/qt-core:4 x11-libs/qt-opengl:4 ) x11-libs/libXcursor media-libs/libsdl x11-libs/libXt media-libs/mesa ) >dev-util/kbuild-0.1.5 >=dev-lang/yasm-0.6.2 sys-devel/bin86 sys-devel/dev86 sys-power/iasl media-libs/libpng >=media-libs/alsa-lib-1.0.13 pulseaudio? ( media-sound/pulseaudio ) python? ( >=dev-lang/python-2.3 ) kernel_linux? ( virtual/modutils ) sys-apps/sed kernel_linux? ( virtual/linux-sources ) dev-util/subversion net-misc/rsync
+DESCRIPTION=Softwarefamily of powerful x86 virtualization
+EAPI=1
+HOMEPAGE=http://www.virtualbox.org/
+IUSE=alsa headless pulseaudio python +qt4 sdk kernel_linux
+LICENSE=GPL-2
+RDEPEND=!app-emulation/virtualbox-bin !app-emulation/virtualbox-ose-additions !app-emulation/virtualbox-modules dev-libs/libIDL >=dev-libs/libxslt-1.1.19 dev-libs/xalan-c dev-libs/xerces-c net-misc/curl sys-libs/libcap !headless? ( qt4? ( x11-libs/qt-gui:4 x11-libs/qt-core:4 x11-libs/qt-opengl:4 ) x11-libs/libXcursor media-libs/libsdl x11-libs/libXt media-libs/mesa ) sys-apps/usermode-utilities net-misc/bridge-utils sys-apps/hal kernel_linux? ( virtual/modutils )
+SLOT=0
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	linux-info	8d722422d00ae99ed52a790b20b9bfc4	linux-mod	07a3d250a1268d811d3e8730e5741394	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pax-utils	0bce06fc565015448fab5af5dbffc5e3	portability	0be430f759a631e692678ed796e09f5c	qt4	83eabd1192f3f2c5a649ba2422a14d00	subversion	5781247c771be19b5dbcbb7253078ad2	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=0ead317ba87130243e274adc8f4818d7

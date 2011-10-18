@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND=net-zope/zope-interface net-zope/zope-tal app-arch/unzip dev-python/setuptools >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=Zope 3 Template Application Language Expression Syntax (TALES)
+EAPI=2
+HOMEPAGE=http://pypi.python.org/pypi/zope.tales
+KEYWORDS=~alpha ~amd64 ~ppc ~sparc ~x86
+LICENSE=ZPL
+RDEPEND=net-zope/zope-interface net-zope/zope-tal >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=http://pypi.python.org/packages/source/z/zope.tales/zope.tales-3.5.0.zip
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=687c05740e08f7e1731e46fea9fad9bc

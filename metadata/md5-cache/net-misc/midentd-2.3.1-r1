@@ -1,0 +1,10 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=ident daemon with masquerading and fake replies support
+HOMEPAGE=http://panorama.sth.ac.at/midentd/
+KEYWORDS=~amd64 ~sparc x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/perl
+SLOT=0
+SRC_URI=http://panorama.sth.ac.at/midentd/files/midentd-2.3.1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=58327a1aa3f1cf09e68916a4413e9091

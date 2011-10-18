@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install preinst prepare setup test unpack
+DEPEND=>=dev-libs/crypto++-5.6.0-r1 sys-libs/zlib x11-libs/libX11 >=x11-libs/qt-core-4.5 >=x11-libs/qt-gui-4.5 >=x11-libs/qt-sql-4.5 dcc_video? ( media-libs/libv4l theora? ( media-libs/libogg media-libs/libtheora ) ) kde? ( >=kde-base/kdelibs-4 ) oss? ( audiofile? ( media-libs/audiofile ) ) perl? ( dev-lang/perl ) phonon? ( || ( media-sound/phonon >=x11-libs/qt-phonon-4.5 ) ) qt-dbus? ( >=x11-libs/qt-dbus-4.5 ) qt-webkit? ( >=x11-libs/qt-webkit-4.5 ) ssl? ( dev-libs/openssl ) >=dev-util/cmake-2.6.4 dev-util/pkgconfig x11-proto/scrnsaverproto nls? ( sys-devel/gettext ) doc? ( app-doc/doxygen ) >=dev-util/cmake-2.6.2-r1 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* ) dev-util/subversion net-misc/rsync
+DESCRIPTION=Advanced IRC Client
+EAPI=3
+HOMEPAGE=http://www.kvirc.net/
+IUSE=audiofile dcc_video +dcc_voice debug doc gsm +ipc ipv6 kde +nls oss +perl +phonon profile +python +qt-dbus qt-webkit +ssl theora +transparency
+LICENSE=kvirc
+RDEPEND=>=dev-libs/crypto++-5.6.0-r1 sys-libs/zlib x11-libs/libX11 >=x11-libs/qt-core-4.5 >=x11-libs/qt-gui-4.5 >=x11-libs/qt-sql-4.5 dcc_video? ( media-libs/libv4l theora? ( media-libs/libogg media-libs/libtheora ) ) kde? ( >=kde-base/kdelibs-4 ) oss? ( audiofile? ( media-libs/audiofile ) ) perl? ( dev-lang/perl ) phonon? ( || ( media-sound/phonon >=x11-libs/qt-phonon-4.5 ) ) qt-dbus? ( >=x11-libs/qt-dbus-4.5 ) qt-webkit? ( >=x11-libs/qt-webkit-4.5 ) ssl? ( dev-libs/openssl ) gsm? ( media-sound/gsm ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+SLOT=4
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	cmake-utils	6a1f5bd4039e55b76615db7bd9b70fed	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	subversion	5781247c771be19b5dbcbb7253078ad2	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=073bc5287e7ac4d10fb25f3e2251f527

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup unpack
+DEPEND=app-arch/unzip kernel_linux? ( virtual/modutils ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+DESCRIPTION=kernel drivers for intel ixp4xx systems (like the NSLU2)
+HOMEPAGE=http://www.intel.com/design/network/products/npfamily/ixp420.htm
+IUSE=kernel_linux
+KEYWORDS=-* arm
+LICENSE=ixp4xx
+RDEPEND=kernel_linux? ( virtual/modutils )
+RESTRICT=mirror
+SLOT=0
+SRC_URI=ftp://aiedownload.intel.com/df-support/9515/eng/IPL_ixp400AccessLibrary-2_1.zip ftp://aiedownload.intel.com/df-support/9517/eng/IPL_ixp400NpeLibrary-2_1.zip ftp://aiedownload.intel.com/df-support/9519/eng/GPL_ixp400LinuxEthernetDriverPatch-1_5.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	linux-info	8d722422d00ae99ed52a790b20b9bfc4	linux-mod	07a3d250a1268d811d3e8730e5741394	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=6cff2dc647a8131289a36dceba53d37d

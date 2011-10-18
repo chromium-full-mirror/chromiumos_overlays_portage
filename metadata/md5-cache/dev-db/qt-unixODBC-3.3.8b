@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=~x11-libs/qt-3.3.8b dev-db/unixODBC
+DESCRIPTION=QT version 3.3.8b
+HOMEPAGE=http://www.trolltech.com/
+KEYWORDS=alpha amd64 hppa ia64 ~mips ppc ppc64 sparc x86
+LICENSE=|| ( QPL-1.0 GPL-2 GPL-3 )
+RDEPEND=~x11-libs/qt-3.3.8b dev-db/unixODBC
+SLOT=3
+SRC_URI=ftp://ftp.trolltech.com/qt/source/qt-x11-free-3.3.8b.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=5865ccd1cb3cd7d74f53079af22d7cca

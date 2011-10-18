@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst postrm unpack
+DEPEND=sci-chemistry/apbs sci-chemistry/pdb2pqr !<sci-chemistry/pymol-1.2.2-r1 >=app-admin/eselect-python-20091230
+DESCRIPTION=APBS plugin for pymol
+EAPI=2
+HOMEPAGE=http://sourceforge.net/projects/pymolapbsplugin/
+KEYWORDS=~amd64 ~x86
+LICENSE=pymol
+RDEPEND=sci-chemistry/apbs sci-chemistry/pdb2pqr !<sci-chemistry/pymol-1.2.2-r1 >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://pymolapbsplugin.svn.sourceforge.net/viewvc/pymolapbsplugin/trunk/src/apbsplugin.py?revision=11 -> pymol-apbs-plugin-0_p11.py
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d0fc7d613f417ca91dc2ec36e703db55

@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst
+DEPEND=>=app-i18n/ibus-table-1.1 >=dev-lang/python-2.5 dev-util/pkgconfig
+DESCRIPTION=The CangJie for IBus Tables
+HOMEPAGE=http://code.google.com/p/ibus/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2 public-domain
+RDEPEND=>=app-i18n/ibus-table-1.1 >=dev-lang/python-2.5
+SLOT=0
+SRC_URI=http://ibus.googlecode.com/files/ibus-table-cangjie-1.1.0.20090601.tar.gz
+_md5_=83877f5304d44621e89e5946ea6b4121

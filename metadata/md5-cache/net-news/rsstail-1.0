@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=>=net-libs/libmrss-0.17.1
+DESCRIPTION=A tail-like RSS-reader
+HOMEPAGE=http://www.vanheusden.com/rsstail/
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=>=net-libs/libmrss-0.17.1
+SLOT=0
+SRC_URI=http://www.vanheusden.com/rsstail/rsstail-1.0.tgz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=13410e873f978bbedee6a5df3a1423d3

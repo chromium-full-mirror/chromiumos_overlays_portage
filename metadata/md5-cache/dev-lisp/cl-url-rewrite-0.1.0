@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm preinst
+DEPEND=dev-lisp/common-lisp-controller virtual/commonlisp dev-lisp/common-lisp-controller
+DESCRIPTION=Rewrite (X)HTML attributes with Common Lisp.
+HOMEPAGE=http://www.weitz.de/url-rewrite/
+KEYWORDS=~amd64 ppc ~sparc x86
+LICENSE=BSD
+RDEPEND=dev-lisp/common-lisp-controller virtual/commonlisp
+SLOT=0
+SRC_URI=mirror://gentoo/url-rewrite-0.1.0.tar.gz
+_eclasses_=common-lisp	78bda507fdf240a712b120777127629c	common-lisp-common	a6e38969ed3937827ca1f284d015020a	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=99b4a65b5a68f066e9565d0615a4a148

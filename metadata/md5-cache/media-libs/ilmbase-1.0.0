@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=!<media-libs/openexr-1.5.0
+DESCRIPTION=OpenEXR ILM Base libraries
+HOMEPAGE=http://openexr.com/
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+LICENSE=BSD
+RDEPEND=!<media-libs/openexr-1.5.0
+SLOT=0
+SRC_URI=http://download.savannah.gnu.org/releases/openexr/ilmbase-1.0.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a70fdc0afbfa1adba32133b4b97a2930

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare setup
+DEPEND=>=sys-libs/zlib-1.1.4 dev-libs/gmp !bacula-clientonly? ( postgres? ( >=virtual/postgresql-server-7.4 ) mysql? ( virtual/mysql ) sqlite? ( =dev-db/sqlite-2* ) sqlite3? ( >=dev-db/sqlite-3.0.0 ) virtual/mta ) bacula-console? ( wxwidgets? ( x11-libs/wxGTK:2.6[X] ) qt4? ( x11-libs/qt-svg:4 >=x11-libs/qwt-5 ) gnome? ( >=gnome-base/libgnome-2 x11-libs/gksu ) ) ssl? ( dev-libs/openssl ) logrotate? ( app-admin/logrotate ) logwatch? ( sys-apps/logwatch ) tcpd? ( >=sys-apps/tcp-wrappers-7.6 ) readline? ( >=sys-libs/readline-4.1 ) doc? ( app-text/ghostscript-gpl dev-tex/latex2html[png] )
+DESCRIPTION=Featureful client/server network backup suite
+EAPI=2
+HOMEPAGE=http://www.bacula.org/
+IUSE=bacula-clientonly bacula-console bacula-nodir bacula-nosd doc gnome ipv6 logrotate logwatch mysql postgres python qt4 readline sqlite sqlite3 ssl static tcpd wxwidgets X
+KEYWORDS=~amd64 ~hppa ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-libs/zlib-1.1.4 dev-libs/gmp !bacula-clientonly? ( postgres? ( >=virtual/postgresql-server-7.4 ) mysql? ( virtual/mysql ) sqlite? ( =dev-db/sqlite-2* ) sqlite3? ( >=dev-db/sqlite-3.0.0 ) virtual/mta ) bacula-console? ( wxwidgets? ( x11-libs/wxGTK:2.6[X] ) qt4? ( x11-libs/qt-svg:4 >=x11-libs/qwt-5 ) gnome? ( >=gnome-base/libgnome-2 x11-libs/gksu ) ) ssl? ( dev-libs/openssl ) logrotate? ( app-admin/logrotate ) logwatch? ( sys-apps/logwatch ) tcpd? ( >=sys-apps/tcp-wrappers-7.6 ) readline? ( >=sys-libs/readline-4.1 ) doc? ( app-text/ghostscript-gpl dev-tex/latex2html[png] ) !bacula-clientonly? ( sys-block/mtx app-arch/mt-st )
+SLOT=0
+SRC_URI=mirror://sourceforge/bacula/bacula-2.4.4.tar.gz doc? ( mirror://sourceforge/bacula/bacula-docs-2.4.4.tar.bz2 )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	wxwidgets	a63777cd98e5f0d521e43c451fe4cf43
+_md5_=30d8eb49d4731393a0a6f9642c184926

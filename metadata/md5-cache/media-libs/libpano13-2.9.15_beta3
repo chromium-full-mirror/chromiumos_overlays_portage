@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install preinst setup
+DEPEND=media-libs/jpeg media-libs/libpng media-libs/tiff sys-libs/zlib java? ( >=virtual/jdk-1.3 ) java? ( >=dev-java/java-config-2.1.9-r1 )
+DESCRIPTION=Helmut Dersch's panorama toolbox library
+HOMEPAGE=http://panotools.sf.net
+IUSE=java elibc_FreeBSD java
+KEYWORDS=~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE=GPL-2
+RDEPEND=media-libs/jpeg media-libs/libpng media-libs/tiff sys-libs/zlib java? ( >=virtual/jdk-1.3 ) java? ( >=dev-java/java-config-2.1.9-r1 )
+SLOT=0
+SRC_URI=mirror://sourceforge/panotools/libpano13-2.9.15_beta3.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	java-pkg-opt-2	31a1663247652448431dcc8c194e2752	java-utils-2	9c079d63349fb3fcd154c1630807a59a	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=d824766f1a2af51f119af4336a6ad2fa

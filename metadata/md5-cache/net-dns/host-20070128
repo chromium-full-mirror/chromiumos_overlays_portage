@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=sys-apps/sed-4
+DESCRIPTION=A powerful command-line DNS query and test tool implementing many additional protocols
+HOMEPAGE=http://www.weird.com/~woods/projects/host.html
+IUSE=debug
+KEYWORDS=~alpha ~amd64 hppa ~ppc ~sparc ~x86
+LICENSE=as-is
+RESTRICT=test
+SLOT=0
+SRC_URI=ftp://ftp.weird.com/pub/local/host-20070128.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8d9734bb92bd3cdde8ad067d6329bae9

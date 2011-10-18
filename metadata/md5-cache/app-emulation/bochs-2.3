@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup unpack
+DEPEND=X? ( x11-libs/libICE x11-libs/libSM x11-libs/libX11 x11-libs/libXpm ) sdl? ( media-libs/libsdl ) wxwidgets? ( =x11-libs/wxGTK-2.6* ) readline? ( sys-libs/readline ) ncurses? ( sys-libs/ncurses ) X? ( x11-proto/xproto ) >=sys-apps/sed-4 >=app-text/opensp-1.5 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=a LGPL-ed pc emulator
+HOMEPAGE=http://bochs.sourceforge.net/
+IUSE=debugger readline sdl wxwidgets X ncurses vnc
+KEYWORDS=alpha amd64 ppc ~sparc x86
+LICENSE=LGPL-2.1
+RDEPEND=X? ( x11-libs/libICE x11-libs/libSM x11-libs/libX11 x11-libs/libXpm ) sdl? ( media-libs/libsdl ) wxwidgets? ( =x11-libs/wxGTK-2.6* ) readline? ( sys-libs/readline ) ncurses? ( sys-libs/ncurses )
+SLOT=0
+SRC_URI=mirror://sourceforge/bochs/bochs-2.3.tar.gz http://bochs.sourceforge.net/guestos/dlxlinux4.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	wxwidgets	a63777cd98e5f0d521e43c451fe4cf43
+_md5_=450c4660b0966c7aa38c2ce24418058b

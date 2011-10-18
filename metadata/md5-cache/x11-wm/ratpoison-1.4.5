@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare
+DEPEND=x11-libs/libXinerama x11-libs/libXtst virtual/perl-PodParser emacs? ( virtual/emacs ) history? ( sys-libs/readline ) xft? ( x11-libs/libXft ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Ratpoison is an extremely light-weight and barebones wm modelled after screen
+EAPI=2
+HOMEPAGE=http://www.nongnu.org/ratpoison/
+IUSE=debug emacs +history +xft
+KEYWORDS=amd64 hppa ppc sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=x11-libs/libXinerama x11-libs/libXtst virtual/perl-PodParser emacs? ( virtual/emacs ) history? ( sys-libs/readline ) xft? ( x11-libs/libXft )
+SLOT=0
+SRC_URI=http://savannah.nongnu.org/download/ratpoison/ratpoison-1.4.5.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=615812ea1441f3d54e32eb2c77819952

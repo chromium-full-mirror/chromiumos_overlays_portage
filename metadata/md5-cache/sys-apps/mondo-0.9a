@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst setup
+DEPEND=>=sys-apps/lm_sensors-2.6.3
+DESCRIPTION=A System Health Monitor
+HOMEPAGE=http://mondo-daemon.sourceforge.net/
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=>=sys-apps/lm_sensors-2.6.3
+SLOT=0
+SRC_URI=mirror://sourceforge/mondo-daemon/mondo-0.9a.tar.bz2
+_md5_=6cdd17500c27fc133c3ea6977843aa3a

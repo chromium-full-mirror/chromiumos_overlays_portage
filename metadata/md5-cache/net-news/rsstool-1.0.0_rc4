@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=dev-libs/libxml2
+DESCRIPTION=cmdline tool to read, parse, merge, and write RSS (and Atom) feeds
+HOMEPAGE=http://rsstool.y7.ath.cx/
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=dev-libs/libxml2
+SLOT=0
+SRC_URI=mirror://berlios/rsstool/rsstool-1.0.0rc4-src.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=8dee6d1389ecbe01333d3cc3fbce9eba

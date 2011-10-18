@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst prepare
+DEPEND=x11-libs/libXpm >=media-libs/jpeg-6 media-libs/libpng x11-apps/rgb x11-misc/imake app-text/rman
+DESCRIPTION=A set of tools for creating TeX documents with graphics
+EAPI=2
+HOMEPAGE=http://www.xfig.org/
+KEYWORDS=alpha amd64 ~hppa ia64 ~ppc ppc64 sparc x86
+LICENSE=BSD
+RDEPEND=x11-libs/libXpm >=media-libs/jpeg-6 media-libs/libpng x11-apps/rgb
+SLOT=0
+SRC_URI=http://xfig.org/software/xfig/3.2.5/transfig.3.2.5c.tar.gz mirror://gentoo/fig2mpdf-1.1.2.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=5c5bf8a63c2a9d2b547735c9dda28b2a

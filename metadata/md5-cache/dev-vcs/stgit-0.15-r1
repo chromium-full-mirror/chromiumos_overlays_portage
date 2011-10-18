@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=>=dev-util/git-1.6.3.3 doc? ( =app-text/asciidoc-8.2* app-text/xmlto dev-lang/perl ) >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=Manage a stack of patches using GIT as a backend
+EAPI=2
+HOMEPAGE=http://www.procode.org/stgit/
+IUSE=doc bash-completion
+KEYWORDS=~alpha ~amd64 ~ppc ~ppc64 ~x86
+LICENSE=GPL-2
+PDEPEND=bash-completion? ( app-shells/bash-completion )
+RDEPEND=>=dev-util/git-1.6.3.3 >=app-admin/eselect-python-20091230 dev-lang/python bash-completion? ( app-admin/eselect )
+SLOT=0
+SRC_URI=http://download.gna.org/stgit/stgit-0.15.tar.gz mirror://gentoo/stgit-0.15-missing-patches.tar.gz
+_eclasses_=bash-completion	f0fab76a98c0e4b3d72b6beb28d3f653	distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d6a346e4bf5a9903307be10934962f48

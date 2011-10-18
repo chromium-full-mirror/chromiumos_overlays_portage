@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst
+DEPEND=media-libs/libexif >=x11-libs/gtk+-2.10 >=dev-libs/glib-2.12 dev-libs/dbus-glib <xfce-base/thunar-1.1.0 >=xfce-base/libxfce4util-4.4 >=xfce-base/libxfcegui4-4.4 dev-util/pkgconfig dev-util/intltool sys-devel/gettext >=sys-apps/sed-4
+DESCRIPTION=Image viewer and browser for Xfce4
+HOMEPAGE=http://goodies.xfce.org/projects/applications/ristretto
+IUSE=debug
+KEYWORDS=alpha amd64 ~hppa ia64 ppc ~ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=media-libs/libexif >=x11-libs/gtk+-2.10 >=dev-libs/glib-2.12 dev-libs/dbus-glib <xfce-base/thunar-1.1.0 >=xfce-base/libxfce4util-4.4 >=xfce-base/libxfcegui4-4.4
+SLOT=0
+SRC_URI=http://goodies.xfce.org/releases/ristretto/ristretto-0.0.22.tar.gz
+_eclasses_=fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407
+_md5_=b97241a9e5071de36937f1224966885f

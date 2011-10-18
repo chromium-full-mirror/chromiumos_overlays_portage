@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=Virtual for Module-CoreList
+KEYWORDS=~amd64 ~ppc ~x86
+RDEPEND=~perl-core/Module-CoreList-2.24
+SLOT=0
+_md5_=539d523f10717c48eff0957cafbae9f1

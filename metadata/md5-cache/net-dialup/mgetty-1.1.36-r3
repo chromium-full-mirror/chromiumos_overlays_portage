@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst setup unpack
+DEPEND=doc? ( virtual/latex-base virtual/texi2dvi ) >=sys-apps/sed-4 sys-apps/gawk sys-apps/groff dev-lang/perl sys-apps/texinfo fax? ( !net-misc/hylafax )
+DESCRIPTION=fax and voice modem programs
+EAPI=1
+HOMEPAGE=http://mgetty.greenie.net/
+IUSE=doc +fax fidonet
+KEYWORDS=alpha amd64 hppa ia64 ~mips ppc ~ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=doc? ( virtual/latex-base virtual/texi2dvi ) >=sys-apps/sed-4 sys-apps/gawk sys-apps/groff dev-lang/perl sys-apps/texinfo fax? ( !net-misc/hylafax ) fax? ( media-libs/netpbm app-text/ghostscript-gpl )
+SLOT=0
+SRC_URI=ftp://mgetty.greenie.net/pub/mgetty/source/1.1/mgetty1.1.36-Jun15.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9f327525720ecc850c94fe498400b80b

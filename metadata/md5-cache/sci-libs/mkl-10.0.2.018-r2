@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst setup test unpack
+DEPEND=app-admin/eselect-blas app-admin/eselect-cblas app-admin/eselect-lapack =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Intel(R) Math Kernel Library: linear algebra, fft, math functions
+HOMEPAGE=http://developer.intel.com/software/products/mkl/
+IUSE=doc fftw fortran95 int64 mpi debug
+KEYWORDS=~amd64 ~ia64 ~x86
+LICENSE=Intel-SDP
+RDEPEND=app-admin/eselect-blas app-admin/eselect-cblas app-admin/eselect-lapack doc? ( app-doc/blas-docs app-doc/lapack-docs ) mpi? ( virtual/mpi )
+RESTRICT=strip mirror
+SLOT=0
+SRC_URI=http://registrationcenter-download.intel.com/irc_nas/967/l_mkl_p_10.0.2.018.tgz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	check-reqs	10d634df7440d633474090700e0d3320	eutils	c89e7605f1414fa0f33eae391db1b5d3	fortran	bd0fac3e085b8c7c86b09139dbedac42	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b0fc113d3dd4c3b8b8de4db135486b30

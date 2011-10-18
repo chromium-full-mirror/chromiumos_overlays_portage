@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst postrm setup unpack
+DESCRIPTION=Family of powerful x86 virtualization products for enterprise as well as home use
+EAPI=2
+HOMEPAGE=http://www.virtualbox.org/
+IUSE=+additions +chm headless python sdk vboxwebsrv
+KEYWORDS=~amd64 ~x86
+LICENSE=PUEL
+PROPERTIES=interactive
+RDEPEND=!!app-emulation/virtualbox-ose !app-emulation/virtualbox-ose-additions ~app-emulation/virtualbox-modules-3.1.0 !headless? ( x11-libs/libXcursor media-libs/libsdl[X] x11-libs/libXrender x11-libs/libXfixes media-libs/libpng x11-libs/libXi x11-libs/libXrandr x11-libs/libXinerama x11-libs/libXft media-libs/freetype media-libs/fontconfig x11-libs/libXext dev-libs/glib chm? ( dev-libs/expat ) ) x11-libs/libXt dev-libs/libxml2 x11-libs/libXau x11-libs/libX11 x11-libs/libSM x11-libs/libICE x11-libs/libXdmcp python? ( dev-lang/python )
+RESTRICT=mirror
+SLOT=0
+SRC_URI=amd64? ( http://download.virtualbox.org/virtualbox/3.1.0/VirtualBox-3.1.0-55467-Linux_amd64.run ) x86? ( http://download.virtualbox.org/virtualbox/3.1.0/VirtualBox-3.1.0-55467-Linux_x86.run ) sdk? ( http://download.virtualbox.org/virtualbox/3.1.0/VirtualBoxSDK-3.1.0-55467.zip )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pax-utils	0bce06fc565015448fab5af5dbffc5e3	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a538976c702609c7e37bfc5fed40e0f1

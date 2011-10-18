@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=mysql? ( virtual/mysql )
+DESCRIPTION=System performance benchmark
+HOMEPAGE=http://sysbench.sourceforge.net/
+IUSE=mysql
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=mysql? ( virtual/mysql )
+SLOT=0
+SRC_URI=mirror://sourceforge/sysbench/sysbench-0.4.10.tar.gz
+_md5_=d761a8bd7a55186e6ff1adc002adbd3f

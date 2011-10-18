@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Netkit - timed
+HOMEPAGE=ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/
+KEYWORDS=~amd64 ~mips ~ppc ppc64 sparc x86
+LICENSE=BSD
+SLOT=0
+SRC_URI=ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/netkit-timed-0.17.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=fba2aa71b9a2e48d8f4e871763dcf18d

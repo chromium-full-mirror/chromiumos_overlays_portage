@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm preinst unpack
+DEPEND=dev-lisp/cl-ch-util dev-lisp/common-lisp-controller
+DESCRIPTION=Cyrus Harmon's Common Lisp matrix mathematics library.
+HOMEPAGE=http://www.cyrusharmon.org/cl/blog/
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=BSD
+RDEPEND=dev-lisp/cl-ch-util
+SLOT=0
+SRC_URI=http://cyrusharmon.org/cl/static/releases/clem-0.1.6-20060104.tar.gz
+_eclasses_=common-lisp	78bda507fdf240a712b120777127629c	common-lisp-common	a6e38969ed3937827ca1f284d015020a	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=cf78d65fc8cb583315460e7698382830

@@ -1,0 +1,9 @@
+DEFINED_PHASES=-
+DEPEND==app-doc/linux-gazette-01
+DESCRIPTION=Sharing ideas and discoveries and Making Linux just a little more fun
+HOMEPAGE=http://linuxgazette.net/
+KEYWORDS=alpha amd64 arm hppa ia64 m68k mips ppc ppc64 s390 sh sparc x86
+LICENSE=OPL
+RDEPEND==app-doc/linux-gazette-01
+SLOT=03
+_md5_=5e7c7274d38a7524011b09a41244a0be

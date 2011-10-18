@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-lang/ghc !>=dev-lang/ghc-6.6 sys-libs/readline >=sys-apps/sed-4
+DESCRIPTION=a make tool for Haskell programs
+HOMEPAGE=http://www.haskell.org/hmake/
+KEYWORDS=~amd64 ~ppc64 ~sparc ~x86
+LICENSE=nhc98
+RDEPEND=dev-lang/ghc sys-libs/readline >=sys-apps/sandbox-1.2.12
+SLOT=0
+SRC_URI=http://www.haskell.org/hmake/hmake-3.10.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	fixheadtails	059c47dd86229aa6382393274677acfe	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=05d0df213a22252848a738a7f9a23ada

@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst prepare prerm setup
+DEPEND=|| ( virtual/httpd-cgi virtual/httpd-fastcgi ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
+DESCRIPTION=dotProject is a PHP web-based project management framework
+EAPI=2
+HOMEPAGE=http://www.dotproject.net/
+IUSE=vhosts
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=>=app-text/poppler-0.12.3-r3[utils] virtual/httpd-php >=app-admin/webapp-config-1.50.15
+SLOT=2.1.2-r1
+SRC_URI=mirror://sourceforge/dotproject/dotproject-2.1.2.tar.gz mirror://gentoo/dotproject-2.1.2-r5791_5840.patch.bz2
+_eclasses_=depend.php	b574aac6c7b0a3d079a293788cd20aaf	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	phpconfutils	f0ebaebc168cafb7b6e951280ab2dce5	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	webapp	b5c5b98a2289a6050810cf6022ac00be
+_md5_=1797e1aae0dd516a5d44006b4b5f2c7d

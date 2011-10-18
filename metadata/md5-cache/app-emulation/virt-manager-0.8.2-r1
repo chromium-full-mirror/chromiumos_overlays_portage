@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare unpack
+DEPEND=>=dev-lang/python-2.4.0 >=dev-python/pygtk-1.99.12 >=app-emulation/libvirt-0.4.5[python] >=dev-libs/libxml2-2.6.23[python] >=app-emulation/virtinst-0.500.1 >=gnome-base/librsvg-2 >=x11-libs/vte-0.12.2[python] >=net-libs/gtk-vnc-0.3.4[python] >=dev-python/dbus-python-0.61 >=dev-python/gconf-python-1.99.11 dev-python/libgnome-python dev-python/urlgrabber gnome-keyring? ( dev-python/gnome-keyring-python ) policykit? ( gnome-extra/polkit-gnome ) app-text/rarian >=sys-apps/sed-4
+DESCRIPTION=A graphical tool for administering virtual machines (KVM/Xen)
+EAPI=2
+HOMEPAGE=http://virt-manager.org/
+IUSE=gnome-keyring policykit
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/python-2.4.0 >=dev-python/pygtk-1.99.12 >=app-emulation/libvirt-0.4.5[python] >=dev-libs/libxml2-2.6.23[python] >=app-emulation/virtinst-0.500.1 >=gnome-base/librsvg-2 >=x11-libs/vte-0.12.2[python] >=net-libs/gtk-vnc-0.3.4[python] >=dev-python/dbus-python-0.61 >=dev-python/gconf-python-1.99.11 dev-python/libgnome-python dev-python/urlgrabber gnome-keyring? ( dev-python/gnome-keyring-python ) policykit? ( gnome-extra/polkit-gnome )
+SLOT=0
+SRC_URI=http://virt-manager.org/download/sources/virt-manager/virt-manager-0.8.2.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=53090fdce8471f58d2fceb7486515b13

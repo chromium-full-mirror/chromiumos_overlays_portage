@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=>=dev-python/numpy-1.1 dev-python/python-dateutil dev-python/pytz media-libs/freetype:2 media-libs/libpng gtk? ( dev-python/pygtk ) tk? ( dev-lang/python[tk] ) wxwidgets? ( dev-python/wxpython:2.8 ) dev-python/pycxx dev-util/pkgconfig doc? ( >=dev-python/sphinx-0.5.1 || ( >=media-gfx/graphviz-2.24.0[cairo] <media-gfx/graphviz-2.24.0[cairo,png] ) || ( ( dev-texlive/texlive-latexextra dev-texlive/texlive-latexrecommended ) ( app-text/ptex dev-tex/latex-unicode ) ) app-text/dvipng dev-python/imaging dev-python/ipython ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DESCRIPTION=Pure python plotting library with matlab like syntax
+EAPI=2
+HOMEPAGE=http://matplotlib.sourceforge.net/ http://pypi.python.org/pypi/matplotlib
+IUSE=cairo doc excel examples fltk gtk latex qt4 traits tk wxwidgets
+KEYWORDS=~amd64 ~ppc ~x86 ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
+LICENSE=PYTHON BSD
+RDEPEND=>=dev-python/numpy-1.1 dev-python/python-dateutil dev-python/pytz media-libs/freetype:2 media-libs/libpng gtk? ( dev-python/pygtk ) tk? ( dev-lang/python[tk] ) wxwidgets? ( dev-python/wxpython:2.8 ) || ( media-fonts/dejavu media-fonts/ttf-bitstream-vera ) media-fonts/texcm-ttf cairo? ( dev-python/pycairo ) excel? ( dev-python/xlwt ) fltk? ( dev-python/pyfltk ) qt4? ( dev-python/PyQt4[X] ) traits? ( dev-python/traits dev-python/configobj ) latex? ( virtual/latex-base app-text/ghostscript-gpl app-text/dvipng >=app-text/poppler-0.12.3-r3[utils] || ( dev-texlive/texlive-fontsrecommended app-text/ptex ) ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+SLOT=0
+SRC_URI=mirror://sourceforge/matplotlib/matplotlib-0.99.1.1.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	wxwidgets	a63777cd98e5f0d521e43c451fe4cf43
+_md5_=925df7b980d15c5a6c157a216b8d082a

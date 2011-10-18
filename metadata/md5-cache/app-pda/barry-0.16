@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=dev-libs/libusb dev-libs/openssl dev-util/pkgconfig sys-libs/zlib boost? ( >=dev-libs/boost-1.33 ) doc? ( >=app-doc/doxygen-1.5.6 ) gui? ( >=dev-cpp/gtkmm-2.4 >=dev-cpp/libglademm-2.4 >=dev-cpp/glibmm-2.4 =dev-libs/libtar-1.2.11-r2 ) opensync? ( =app-pda/libopensync-0.22* )
+DESCRIPTION=Allow synchronization, backup, restore, program management, and charging for BlackBerry devices
+HOMEPAGE=http://www.netdirect.ca/software/packages/barry/
+IUSE=boost doc gui opensync
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/libusb sys-libs/zlib boost? ( >=dev-libs/boost-1.33 ) gui? ( >=dev-cpp/gtkmm-2.4 >=dev-cpp/libglademm-2.4 >=dev-cpp/glibmm-2.4 ) opensync? ( =app-pda/libopensync-0.22* )
+SLOT=0
+SRC_URI=mirror://sourceforge/barry/barry-0.16.tar.bz2
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=959c7853d5c21c4784996564b1f57003

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup unpack
+DEPEND==x11-libs/wxGTK-2.8* x11-libs/gtk+ >=sys-devel/autoconf-2.5.0 >=sys-devel/automake-1.7 >=sys-devel/libtool-1.4 app-arch/zip =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Free cross-platform C/C++ IDE
+HOMEPAGE=http://www.codeblocks.org/
+IUSE=contrib debug pch static
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND==x11-libs/wxGTK-2.8* x11-libs/gtk+
+SLOT=0
+SRC_URI=mirror://sourceforge/codeblocks/codeblocks-8.02-src.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	wxwidgets	a63777cd98e5f0d521e43c451fe4cf43
+_md5_=b1d7ce6bbdf114a3e7dcff83aba0a3ec

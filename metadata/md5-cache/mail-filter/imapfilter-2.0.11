@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=dev-libs/openssl dev-libs/libpcre >=dev-lang/lua-5.1
+DESCRIPTION=An IMAP mail filtering utility
+HOMEPAGE=http://imapfilter.hellug.gr
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=as-is
+RDEPEND=dev-libs/openssl dev-libs/libpcre >=dev-lang/lua-5.1
+SLOT=0
+SRC_URI=http://imapfilter.hellug.gr/source/imapfilter-2.0.11.tar.bz2
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=be0c3161e8ccbe12ff9548db619eabe0

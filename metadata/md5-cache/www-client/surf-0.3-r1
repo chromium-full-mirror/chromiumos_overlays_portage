@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=>=net-libs/webkit-gtk-1.1.14
+DESCRIPTION=a simple web browser based on WebKit/GTK+
+EAPI=2
+HOMEPAGE=http://surf.suckless.org/
+IUSE=savedconfig
+KEYWORDS=~x86
+LICENSE=as-is
+RDEPEND=>=net-libs/webkit-gtk-1.1.14
+SLOT=0
+SRC_URI=http://dl.suckless.org/surf/surf-0.3.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	savedconfig	57e3db69f6728c3ef495ca243a4c9e47	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=000cb54deb8263864006d042ff0e4882

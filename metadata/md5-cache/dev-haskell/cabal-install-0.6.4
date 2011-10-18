@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst prerm setup
+DEPEND=<dev-lang/ghc-6.11 =dev-haskell/cabal-1.6* >=dev-haskell/filepath-1.0 >=dev-haskell/http-4000.0.2 dev-haskell/network >=dev-haskell/zlib-0.4 >=dev-haskell/cabal-1.1.4
+DESCRIPTION=The command-line interface for Cabal and Hackage.
+HOMEPAGE=http://www.haskell.org/cabal/
+IUSE=bash-completion
+KEYWORDS=~amd64 ~ppc64 ~sparc ~x86
+LICENSE=BSD
+PDEPEND=bash-completion? ( app-shells/bash-completion )
+RDEPEND=<dev-lang/ghc-6.11 =dev-haskell/cabal-1.6* bash-completion? ( app-admin/eselect )
+SLOT=0
+SRC_URI=http://hackage.haskell.org/packages/archive/cabal-install/0.6.4/cabal-install-0.6.4.tar.gz
+_eclasses_=bash-completion	f0fab76a98c0e4b3d72b6beb28d3f653	ghc-package	a0576f38fd872706ee22bf4f6c0c6152	haskell-cabal	fde11633d9b6632dafa46c1f669b2a78	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=bf4b441a69d72c575294116d27bd427b

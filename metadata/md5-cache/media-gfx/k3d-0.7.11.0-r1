@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-libs/boost >=dev-cpp/glibmm-2.6 >=dev-cpp/gtkmm-2.6 dev-libs/expat >=dev-libs/libsigc++-2.2 media-libs/mesa virtual/glu virtual/opengl >=x11-libs/gtkglext-1.0.6-r3 x11-libs/libICE x11-libs/libSM x11-libs/libXmu x11-libs/libXt 3ds? ( media-libs/lib3ds ) cuda? ( dev-util/nvidia-cuda-toolkit ) gnome? ( gnome-base/libgnome ) graphviz? ( media-gfx/graphviz ) gts? ( sci-libs/gts ) imagemagick? ( media-gfx/imagemagick ) jpeg? ( media-libs/jpeg ) openexr? ( media-libs/openexr ) png? ( media-libs/libpng ) python? ( >=dev-lang/python-2.3 dev-python/cgkit ) tiff? ( media-libs/tiff ) truetype? ( >=media-libs/freetype-2 ) dev-util/pkgconfig nls? ( sys-devel/gettext ) >=dev-util/cmake-2.6.2-r1 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=A free 3D modeling, animation, and rendering system
+EAPI=2
+HOMEPAGE=http://www.k-3d.org/
+IUSE=3ds cuda gnome graphviz gts imagemagick jpeg nls openexr png python tiff truetype
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/boost >=dev-cpp/glibmm-2.6 >=dev-cpp/gtkmm-2.6 dev-libs/expat >=dev-libs/libsigc++-2.2 media-libs/mesa virtual/glu virtual/opengl >=x11-libs/gtkglext-1.0.6-r3 x11-libs/libICE x11-libs/libSM x11-libs/libXmu x11-libs/libXt 3ds? ( media-libs/lib3ds ) cuda? ( dev-util/nvidia-cuda-toolkit ) gnome? ( gnome-base/libgnome ) graphviz? ( media-gfx/graphviz ) gts? ( sci-libs/gts ) imagemagick? ( media-gfx/imagemagick ) jpeg? ( media-libs/jpeg ) openexr? ( media-libs/openexr ) png? ( media-libs/libpng ) python? ( >=dev-lang/python-2.3 dev-python/cgkit ) tiff? ( media-libs/tiff ) truetype? ( >=media-libs/freetype-2 )
+SLOT=0
+SRC_URI=mirror://sourceforge/k3d/k3d-source-0.7.11.0.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	cmake-utils	6a1f5bd4039e55b76615db7bd9b70fed	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0c02f1d8b662a876b6f8fc55a6bbee19

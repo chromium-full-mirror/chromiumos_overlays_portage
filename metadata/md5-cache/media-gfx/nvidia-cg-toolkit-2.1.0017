@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst
+DESCRIPTION=NVIDIA's C graphics compiler toolkit
+HOMEPAGE=http://developer.nvidia.com/object/cg_toolkit.html
+KEYWORDS=~amd64 ~x86
+LICENSE=NVIDIA
+RDEPEND=virtual/glut
+RESTRICT=strip
+SLOT=0
+SRC_URI=x86? ( http://developer.download.nvidia.com/cg/Cg_2.1/2.1.0017/Cg-2.1_February2009_x86.tgz ) amd64? ( http://developer.download.nvidia.com/cg/Cg_2.1/2.1.0017/Cg-2.1_February2009_x86_64.tgz )
+_eclasses_=versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=6acf22ba3fedc2e468e9f4134b05383e

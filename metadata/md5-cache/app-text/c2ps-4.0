@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=Generates a beautified ps document from a source file (c/c++)
+HOMEPAGE=http://www.cs.technion.ac.il/users/c2ps
+KEYWORDS=amd64 ~mips ppc sparc x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=http://www.cs.technion.ac.il/users/c2ps/c2ps-4.0.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=16e37ae81e060866da5c4c8e0bb17bf9

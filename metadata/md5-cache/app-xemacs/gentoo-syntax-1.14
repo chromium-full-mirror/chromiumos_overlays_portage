@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=app-editors/xemacs-21.4.20-r5 app-xemacs/sh-script app-editors/xemacs
+DESCRIPTION=An Emacs mode for editing ebuilds and other Gentoo specific files.
+HOMEPAGE=http://www.gentoo.org/proj/en/lisp/emacs/index.xml
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=app-editors/xemacs-21.4.20-r5 app-xemacs/sh-script
+SLOT=0
+SRC_URI=mirror://gentoo/gentoo-syntax-1.14.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	xemacs-elisp	1792c6f390ee67c36b5abf92367a43ac	xemacs-elisp-common	6c302dea77069f49bb8e4282afa5e089
+_md5_=57517c2c49ce1cd18e5a0b871b217709

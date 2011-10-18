@@ -1,0 +1,9 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=MySQLTuner is a high-performance MySQL tuning script
+HOMEPAGE=http://www.mysqltuner.com
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=>=dev-lang/perl-5.6 virtual/perl-Getopt-Long >=virtual/mysql-3.23
+SLOT=0
+SRC_URI=mirror://gentoo/mysqltuner-49.pl
+_md5_=195c5fe4e5125f9cade09bf143f8649a

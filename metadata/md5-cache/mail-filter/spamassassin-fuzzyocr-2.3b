@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
+DEPEND=dev-lang/perl >=mail-filter/spamassassin-3.0.0
+DESCRIPTION=SpamAssassin plugin for performing Optical Character Recognition (OCR) on attached images
+HOMEPAGE=http://fuzzyocr.own-hero.net/
+KEYWORDS=~amd64 ~sparc x86
+LICENSE=Apache-2.0
+RDEPEND=dev-lang/perl >=mail-filter/spamassassin-3.0.0 media-libs/netpbm media-gfx/imagemagick media-libs/giflib app-text/gocr dev-perl/String-Approx virtual/perl-Digest-MD5
+SLOT=0
+SRC_URI=http://users.own-hero.net/~decoder/fuzzyocr/fuzzyocr-2.3b.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=cf215ff6a97d548e63f613af6dbb160b

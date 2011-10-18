@@ -1,0 +1,8 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=Tecla command-line editing library
+HOMEPAGE=http://www.astro.caltech.edu/~mcs/tecla/
+KEYWORDS=~ppc x86
+LICENSE=as-is
+SLOT=0
+SRC_URI=http://www.astro.caltech.edu/~mcs/tecla/libtecla-1.6.0.tar.gz
+_md5_=46b6dbca2f6e8b3dd42b60974b64566b

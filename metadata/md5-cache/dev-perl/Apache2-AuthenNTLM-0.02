@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
+DEPEND=dev-lang/perl virtual/perl-MIME-Base64 >=www-apache/mod_perl-2
+DESCRIPTION=Apache2::AuthenNTLM - Perform Microsoft NTLM and Basic User Authentication
+HOMEPAGE=http://search.cpan.org/~speeves/Apache2-AuthenNTLM-0.02/
+KEYWORDS=amd64 x86
+LICENSE=|| ( Artistic GPL-2 )
+RDEPEND=dev-lang/perl virtual/perl-MIME-Base64 >=www-apache/mod_perl-2
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/S/SP/SPEEVES/Apache2-AuthenNTLM-0.02.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e2e708de0a284b26d0a598c5e3f8f6dd

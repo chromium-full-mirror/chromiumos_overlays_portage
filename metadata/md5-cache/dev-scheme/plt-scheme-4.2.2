@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=X? ( x11-libs/libICE x11-libs/libSM x11-libs/libXaw >=x11-libs/libXft-2.1.12 x11-libs/libXrender media-libs/freetype media-libs/fontconfig cairo? ( x11-libs/cairo ) media-libs/jpeg opengl? ( virtual/opengl ) media-libs/libpng sys-libs/zlib ) !dev-tex/slatex virtual/latex-base >=sys-apps/texinfo-4.2-r5
+DESCRIPTION=DrScheme programming environment. Includes mzscheme.
+HOMEPAGE=http://www.plt-scheme.org
+IUSE=backtrace cairo cgc llvm opengl profile X
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=LGPL-2.1
+RDEPEND=X? ( x11-libs/libICE x11-libs/libSM x11-libs/libXaw >=x11-libs/libXft-2.1.12 x11-libs/libXrender media-libs/freetype media-libs/fontconfig cairo? ( x11-libs/cairo ) media-libs/jpeg opengl? ( virtual/opengl ) media-libs/libpng sys-libs/zlib ) virtual/latex-base
+SLOT=0
+SRC_URI=http://download.plt-scheme.org/bundles/4.2.2/plt/plt-4.2.2-src-unix.tgz http://pre.plt-scheme.org/installers/plt-4.2.2-src-unix.tgz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	latex-package	b72cedae879ef8e8af6524f196fcf449	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=43f064074c8075181871239f70924a93

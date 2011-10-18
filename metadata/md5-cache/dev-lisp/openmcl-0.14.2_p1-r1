@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=dev-lisp/openmcl-build-tools
+DESCRIPTION=OpenMCL is a Common Lisp implementation, derived from Digitool's MCL product
+HOMEPAGE=http://openmcl.clozure.com/ http://packages.debian.org/unstable/devel/openmcl
+KEYWORDS=~ppc
+LICENSE=LLGPL-2.1
+PROVIDE=virtual/commonlisp
+RDEPEND=dev-lisp/openmcl-build-tools
+SLOT=0
+SRC_URI=mirror://debian/pool/main/o/openmcl/openmcl_0.14.2.p1.o.tar.gz
+_eclasses_=common-lisp-common-3	a532ed59ec656ff59b05240f6dc38bad	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b1a421b54344420b8731499251a51ad6

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=fam? ( || ( app-admin/gamin app-admin/fam ) )
+DESCRIPTION=drop-in replacement for 'tail' which uses the kernel DNOTIFY-api
+HOMEPAGE=http://www.vanheusden.com/turbotail/
+IUSE=fam
+KEYWORDS=~amd64 hppa ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=fam? ( || ( app-admin/gamin app-admin/fam ) )
+SLOT=0
+SRC_URI=http://www.vanheusden.com/turbotail/turbotail-0.3.tgz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=94c08e1dcfcc422a8f5f56e05b491b4a

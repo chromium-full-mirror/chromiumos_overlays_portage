@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=x11-libs/gtk+:2 >=net-irc/xchat-2.0.1 dev-util/pkgconfig
+DESCRIPTION=An X-chat plugin for sending and receiving raw morse code over IRC
+EAPI=2
+HOMEPAGE=http://myspace.voo.be/pcoupard/cwirc/
+KEYWORDS=amd64 ~ppc x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/gtk+:2 >=net-irc/xchat-2.0.1
+SLOT=0
+SRC_URI=http://myspace.voo.be/pcoupard/cwirc/download/cwirc-2.0.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=93160d79f6fb2d4a82f8739dce377c56

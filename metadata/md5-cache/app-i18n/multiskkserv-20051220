@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst prepare
+DEPEND=dev-db/cdb >=sys-apps/sed-4
+DESCRIPTION=SKK server that handles multiple dictionaries
+EAPI=2
+HOMEPAGE=http://www3.big.or.jp/~sian/linux/products/
+KEYWORDS=~alpha ~amd64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+PROVIDE=virtual/skkserv
+RDEPEND=|| ( >=app-i18n/skk-jisyo-200705[cdb] app-i18n/skk-jisyo-cdb )
+SLOT=0
+SRC_URI=http://www3.big.or.jp/~sian/linux/products/multiskkserv-20051220.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fixheadtails	059c47dd86229aa6382393274677acfe	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c191e45dcd9c630d5ae65a8bb9cacc65

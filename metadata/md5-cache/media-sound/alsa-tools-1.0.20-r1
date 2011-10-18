@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup unpack
+DEPEND=>=media-libs/alsa-lib-1.0.20-r1 fltk? ( =x11-libs/fltk-1.1* ) gtk? ( =x11-libs/gtk+-2* ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Advanced Linux Sound Architecture tools
+HOMEPAGE=http://www.alsa-project.org
+IUSE=fltk gtk alsa_cards_hdsp alsa_cards_hdspm alsa_cards_mixart alsa_cards_vx222 alsa_cards_usb-usx2y alsa_cards_sb16 alsa_cards_sbawe alsa_cards_emu10k1 alsa_cards_emu10k1x alsa_cards_ice1712 alsa_cards_rme32 alsa_cards_rme96 alsa_cards_sscape alsa_cards_pcxhr alsa_cards_darla20 alsa_cards_gina20 alsa_cards_layla20 alsa_cards_darla24 alsa_cards_gina24 alsa_cards_layla24 alsa_cards_mona alsa_cards_mia alsa_cards_indigo alsa_cards_indigoio alsa_cards_echo3g
+KEYWORDS=amd64 ~mips ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=>=media-libs/alsa-lib-1.0.20-r1 fltk? ( =x11-libs/fltk-1.1* ) gtk? ( =x11-libs/gtk+-2* )
+SLOT=0.9
+SRC_URI=mirror://alsaproject/tools/alsa-tools-1.0.20.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=165f4569f57d04682362171a7b0ea23b

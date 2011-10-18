@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst prepare test unpack
+DEPEND=>=dev-perl/libwww-perl-5.801 >=dev-perl/XML-LibXML-1.70 >=dev-perl/XML-Parser-2.31 dev-perl/net-server >=virtual/perl-Scalar-List-Utils-1.20 dev-lang/perl[-build]
+DESCRIPTION=An implementation of XML-RPC
+EAPI=2
+HOMEPAGE=http://search.cpan.org/dist/RPC-XML/
+KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~sparc ~x86 ~x86-fbsd
+LICENSE=|| ( Artistic-2 LGPL-2.1 )
+RDEPEND=>=dev-perl/libwww-perl-5.801 >=dev-perl/XML-LibXML-1.70 >=dev-perl/XML-Parser-2.31 dev-perl/net-server >=virtual/perl-Scalar-List-Utils-1.20 dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/R/RJ/RJRAY//RPC-XML-0.72.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=000439619a87cc28ee2f2093738a70ec

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DESCRIPTION=Space-based MMORPG
+EAPI=2
+HOMEPAGE=http://www.vendetta-online.com/
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=guild
+RDEPEND=virtual/opengl x11-libs/gtk+:2
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=amd64? ( http://mirror.cle.vendetta-online.com/vendetta-linux-amd64-installer.sh -> vendetta-online-bin-1.8.82-amd64.sh http://mirror.milw.vendetta-online.com/vendetta-linux-amd64-installer.sh -> vendetta-online-bin-1.8.82-amd64.sh ) x86? ( http://mirror.cle.vendetta-online.com/vendetta-linux-ia32-installer.sh -> vendetta-online-bin-1.8.82-x86.sh http://mirror.milw.vendetta-online.com/vendetta-linux-ia32-installer.sh -> vendetta-online-bin-1.8.82-x86.sh )
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=76e27618d605d07be7aae3c88fffc2b5

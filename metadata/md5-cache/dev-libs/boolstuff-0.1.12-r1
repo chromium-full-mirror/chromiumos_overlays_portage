@@ -1,0 +1,10 @@
+DEFINED_PHASES=configure install prepare
+DESCRIPTION=A C++ library that supports a few operations on boolean expression binary trees.
+EAPI=2
+HOMEPAGE=http://perso.b2b2c.ca/sarrazip/dev/boolstuff.html
+IUSE=static
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=http://perso.b2b2c.ca/sarrazip/dev/boolstuff-0.1.12.tar.gz
+_md5_=370a7be3eb8ffb6970fdb7e7100feb0c

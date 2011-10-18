@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=dev-lang/perl[doc?] opengl? ( virtual/glut ) nls? ( sys-devel/gettext ) unicode? ( >=dev-libs/icu-2.6 ) gdbm? ( >=sys-libs/gdbm-1.8.3-r1 ) gmp? ( >=dev-libs/gmp-4.1.4 ) ssl? ( dev-libs/openssl ) pcre? ( dev-libs/libpcre )
+DESCRIPTION=Parrot is a virtual machine designed to efficiently compile and execute bytecode for dynamic languages
+EAPI=2
+HOMEPAGE=http://www.parrot.org/
+IUSE=opengl nls doc examples gdbm gmp ssl unicode pcre
+KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=Artistic-2
+RDEPEND=opengl? ( virtual/glut ) nls? ( sys-devel/gettext ) unicode? ( >=dev-libs/icu-2.6 ) gdbm? ( >=sys-libs/gdbm-1.8.3-r1 ) gmp? ( >=dev-libs/gmp-4.1.4 ) ssl? ( dev-libs/openssl ) pcre? ( dev-libs/libpcre )
+SLOT=0
+SRC_URI=ftp://ftp.parrot.org/pub/parrot/releases/stable/1.4.0/parrot-1.4.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=45d49e9d4f027a5678d43ccc020f7538

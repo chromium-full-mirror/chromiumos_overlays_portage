@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst unpack
+DESCRIPTION=GUI Console for sguil Network Security Monitoring
+EAPI=2
+HOMEPAGE=http://sguil.sf.net
+IUSE=ssl
+KEYWORDS=~amd64 ~x86
+LICENSE=QPL
+RDEPEND=>=dev-lang/tcl-8.3[-threads] >=dev-lang/tk-8.3 >=dev-tcltk/itcl-3.2 >=dev-tcltk/tclx-8.3 dev-tcltk/itk dev-tcltk/iwidgets dev-tcltk/tcllib ssl? ( >=dev-tcltk/tls-1.4.1 ) net-analyzer/wireshark
+SLOT=0
+SRC_URI=mirror://sourceforge/sguil/sguil-client-0.6.1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ebaa21c314b4b2e233faabd1ec707e5c

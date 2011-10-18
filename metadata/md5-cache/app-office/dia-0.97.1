@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=>=x11-libs/gtk+-2.6.0 >=dev-libs/glib-2.6.0 >=x11-libs/pango-1.8 >=dev-libs/libxml2-2.3.9 >=dev-libs/libxslt-1 >=media-libs/freetype-2.0.95 dev-libs/popt zlib? ( sys-libs/zlib ) png? ( media-libs/libpng >=media-libs/libart_lgpl-2 ) gnome? ( >=gnome-base/libgnome-2.0 >=gnome-base/libgnomeui-2.0 ) cairo? ( >=x11-libs/cairo-1 ) python? ( >=dev-lang/python-1.5.2 >=dev-python/pygtk-1.99 ) doc? ( ~app-text/docbook-xml-dtd-4.5 app-text/docbook-xsl-stylesheets ) >=dev-util/intltool-0.35.0 dev-util/pkgconfig doc? ( dev-libs/libxslt ) >=sys-apps/sed-4 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b >=app-admin/eselect-python-20091230
+DESCRIPTION=Diagram/flowchart creation program
+EAPI=2
+HOMEPAGE=http://www.gnome.org/projects/dia/
+IUSE=cairo doc gnome png python zlib debug
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2.6.0 >=dev-libs/glib-2.6.0 >=x11-libs/pango-1.8 >=dev-libs/libxml2-2.3.9 >=dev-libs/libxslt-1 >=media-libs/freetype-2.0.95 dev-libs/popt zlib? ( sys-libs/zlib ) png? ( media-libs/libpng >=media-libs/libart_lgpl-2 ) gnome? ( >=gnome-base/libgnome-2.0 >=gnome-base/libgnomeui-2.0 ) cairo? ( >=x11-libs/cairo-1 ) python? ( >=dev-lang/python-1.5.2 >=dev-python/pygtk-1.99 ) doc? ( ~app-text/docbook-xml-dtd-4.5 app-text/docbook-xsl-stylesheets ) >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=mirror://gnome/sources/dia/0.97/dia-0.97.1.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=6b77bb157fa8a2166ebe64c8081205eb

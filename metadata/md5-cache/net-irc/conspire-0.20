@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=nls? ( dev-util/intltool ) dev-util/pkgconfig
+DESCRIPTION=A high quality IRC client which uses a multitude of interfaces
+HOMEPAGE=http://www.nenolod.net/conspire/
+IUSE=python gnutls ipv6 nls mmx socks5 dbus
+KEYWORDS=amd64 ~ia64 ~sparc x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/libmowgli-0.6.0 >=x11-libs/gtk+-2.10 >=dev-libs/glib-2.14 x11-libs/libnotify x11-libs/libsexy dbus? ( >=dev-libs/dbus-glib-0.60 ) python? ( >=dev-lang/python-2.2 )
+SLOT=0
+SRC_URI=http://distfiles.atheme.org/conspire-0.20.tbz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b3b045dae38cce462d47e47189fed4e4

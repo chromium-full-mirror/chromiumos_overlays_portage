@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DESCRIPTION=Open-ended space opera with trading, building & fighting
+HOMEPAGE=http://www.linuxgamepublishing.com/info.php?id=x2
+IUSE=bonusscripts dynamic langpacks linguas_de modkit
+KEYWORDS=~amd64 ~x86
+LICENSE=as-is
+RDEPEND=media-libs/alsa-lib sys-libs/glibc x86? ( media-libs/libsdl media-libs/openal sys-libs/zlib x11-libs/gtk+ x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp x11-libs/libXext x11-libs/libXi ) amd64? ( app-emulation/emul-linux-x86-gtklibs app-emulation/emul-linux-x86-sdl )
+RESTRICT=strip
+SLOT=0
+SRC_URI=http://updatefiles.linuxgamepublishing.com/x2/x2-1.4-1.4.01-x86.run http://updatefiles.linuxgamepublishing.com/x2/x2-1.4.01-1.4.02-x86.run http://updatefiles.linuxgamepublishing.com/x2/x2-1.4.02-1.4.03-x86.run http://updatefiles.linuxgamepublishing.com/x2/x2-1.4.03-1.4.04-x86.run http://updatefiles.linuxgamepublishing.com/x2/x2-1.4.04-1.4.05-x86.run
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=af4c32e918493f26c578c68483eed08a

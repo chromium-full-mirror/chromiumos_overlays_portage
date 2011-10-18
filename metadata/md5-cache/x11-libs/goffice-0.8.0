@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=>=dev-libs/glib-2.16 >=gnome-extra/libgsf-1.14.9[gnome?] >=dev-libs/libxml2-2.4.12 >=x11-libs/pango-1.8.1 >=gnome-base/libglade-2.3.6 >=x11-libs/cairo-1.2[svg] x11-libs/libXext x11-libs/libXrender >=x11-libs/gtk+-2.16 gnome? ( >=gnome-base/gconf-2 ) >=dev-util/pkgconfig-0.18 >=dev-util/intltool-0.35 doc? ( >=dev-util/gtk-doc-1.4 ) >=sys-apps/sed-4
+DESCRIPTION=A library of document-centric objects and utilities
+EAPI=2
+HOMEPAGE=http://freshmeat.net/projects/goffice/
+IUSE=doc gnome
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~x64-solaris
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/glib-2.16 >=gnome-extra/libgsf-1.14.9[gnome?] >=dev-libs/libxml2-2.4.12 >=x11-libs/pango-1.8.1 >=gnome-base/libglade-2.3.6 >=x11-libs/cairo-1.2[svg] x11-libs/libXext x11-libs/libXrender >=x11-libs/gtk+-2.16 gnome? ( >=gnome-base/gconf-2 )
+SLOT=0.8
+SRC_URI=mirror://gnome/sources/goffice/0.8/goffice-0.8.0.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ab1308db27d0915121689044c165fdc6

@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DESCRIPTION=release metatool used for creating Gentoo and Funtoo releases
+EAPI=2
+HOMEPAGE=http://www.github.com/funtoo/metro
+IUSE=+ccache +git threads
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/python threads? ( app-arch/pbzip2 ) ccache? ( dev-util/ccache ) git? ( dev-util/git )
+SLOT=0
+SRC_URI=http://www.funtoo.org/metro/metro-1.4.1.tar.bz2
+_md5_=e2d20a07b775ea66f420855c64661773

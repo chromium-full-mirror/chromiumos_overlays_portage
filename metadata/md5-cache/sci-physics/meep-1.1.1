@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install
+DEPEND=sci-libs/fftw !bindist? ( sci-libs/gsl ) bindist? ( <sci-libs/gsl-1.10 ) sci-physics/harminv guile? ( >=sci-libs/libctl-3.0.3 ) hdf5? ( sci-libs/hdf5 ) mpi? ( virtual/mpi )
+DESCRIPTION=Simulation software to model electromagnetic systems
+EAPI=2
+HOMEPAGE=http://ab-initio.mit.edu/meep/
+IUSE=bindist examples hdf5 guile mpi
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=sci-libs/fftw !bindist? ( sci-libs/gsl ) bindist? ( <sci-libs/gsl-1.10 ) sci-physics/harminv guile? ( >=sci-libs/libctl-3.0.3 ) hdf5? ( sci-libs/hdf5 ) mpi? ( virtual/mpi )
+SLOT=0
+SRC_URI=http://ab-initio.mit.edu/meep/meep-1.1.1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=64a24eb3f2ba5c346b3e1419ef63cf0d

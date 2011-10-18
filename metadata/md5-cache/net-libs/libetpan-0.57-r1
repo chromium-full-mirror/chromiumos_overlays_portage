@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=berkdb? ( sys-libs/db ) gnutls? ( net-libs/gnutls ) !gnutls? ( ssl? ( dev-libs/openssl ) ) sasl? ( dev-libs/cyrus-sasl ) liblockfile? ( net-libs/liblockfile )
+DESCRIPTION=A portable, efficient middleware for different kinds of mail access.
+HOMEPAGE=http://libetpan.sourceforge.net
+IUSE=berkdb debug gnutls ipv6 liblockfile sasl ssl
+KEYWORDS=~alpha ~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE=BSD
+RDEPEND=berkdb? ( sys-libs/db ) gnutls? ( net-libs/gnutls ) !gnutls? ( ssl? ( dev-libs/openssl ) ) sasl? ( dev-libs/cyrus-sasl ) liblockfile? ( net-libs/liblockfile )
+SLOT=0
+SRC_URI=mirror://sourceforge/libetpan/libetpan-0.57.tar.gz
+_md5_=ac05d3e4b93c43da5b9b9cbb621df034

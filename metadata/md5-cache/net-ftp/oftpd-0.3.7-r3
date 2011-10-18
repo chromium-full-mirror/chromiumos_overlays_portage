@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=net-ftp/ftpbase
+DESCRIPTION=Secure, small, anonymous only ftpd
+HOMEPAGE=http://www.time-travellers.org/oftpd
+KEYWORDS=amd64 arm ~ppc ppc64 sh sparc x86
+LICENSE=as-is
+RDEPEND=net-ftp/ftpbase
+SLOT=0
+SRC_URI=http://www.time-travellers.org/oftpd/oftpd-0.3.7.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=487507bd45e000a0c2a875ae3ad0ebc7

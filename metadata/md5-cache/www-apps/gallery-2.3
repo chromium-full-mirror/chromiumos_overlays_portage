@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst prerm setup
+DEPEND=|| ( virtual/httpd-cgi virtual/httpd-fastcgi ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
+DESCRIPTION=Web based (PHP Script) photo album viewer/creator
+HOMEPAGE=http://gallery.sourceforge.net/
+IUSE=ffmpeg gd imagemagick mysql netpbm postgres raw unzip zip vhosts
+KEYWORDS=alpha amd64 hppa ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=raw? ( >=media-gfx/dcraw-8.03 ) ffmpeg? ( >=media-video/ffmpeg-0.4.9_p20051216 ) imagemagick? ( >media-gfx/imagemagick-6.2.4 ) netpbm? ( >=media-libs/netpbm-9.12 >=media-gfx/jhead-2.2 ) unzip? ( app-arch/unzip ) zip? ( app-arch/zip ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
+SLOT=2.3
+SRC_URI=mirror://sourceforge/gallery/gallery-2.3-full.tar.gz
+_eclasses_=confutils	a80706bb5b9ddcf6bbd14365656d4985	depend.php	b574aac6c7b0a3d079a293788cd20aaf	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	phpconfutils	f0ebaebc168cafb7b6e951280ab2dce5	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	webapp	b5c5b98a2289a6050810cf6022ac00be
+_md5_=ff2e5f8af2dd137d04e0332c997a909a

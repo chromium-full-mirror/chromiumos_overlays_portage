@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst preinst unpack
+DEPEND=>=sys-apps/findutils-4.2.26
+DESCRIPTION=Provides precompiled 32bit libraries
+HOMEPAGE=http://dev.gentoo.org/~pacho/emul.html
+KEYWORDS=-* ~amd64
+LICENSE=GPL-3 GPL-2 LGPL-2 LGPL-2.1 FTL MIT || ( LGPL-2.1 MPL-1.1 )
+RDEPEND=~app-emulation/emul-linux-x86-baselibs-20100220 ~app-emulation/emul-linux-x86-xlibs-20100220
+RESTRICT=strip
+SLOT=0
+SRC_URI=mirror://gentoo/emul-linux-x86-gtklibs-20100220.tar.bz2
+_eclasses_=emul-linux-x86	214021dd240de4a00ca5f2d2684e3a5a
+_md5_=30fd0eee59c1d9f2d95227a8220cface

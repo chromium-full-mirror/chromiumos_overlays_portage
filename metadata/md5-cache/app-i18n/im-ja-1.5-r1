@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile config install postinst postrm preinst unpack
+DEPEND=>=dev-libs/glib-2.4 >=dev-libs/atk-1.6 >=x11-libs/gtk+-2.4 >=x11-libs/pango-1.2.1 >=gnome-base/gconf-2.4 >=gnome-base/libglade-2.4 >=gnome-base/libgnomeui-2.4 gnome? ( >=gnome-base/gnome-panel-2.0 ) freewnn? ( app-i18n/freewnn ) canna? ( app-i18n/canna ) skk? ( virtual/skkserv ) anthy? ( app-i18n/anthy ) dev-lang/perl dev-perl/URI dev-util/pkgconfig =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b >=sys-apps/sed-4
+DESCRIPTION=A Japanese input module for GTK2 and XIM
+HOMEPAGE=http://im-ja.sourceforge.net/
+IUSE=gnome canna freewnn skk anthy debug
+KEYWORDS=~alpha ~amd64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/glib-2.4 >=dev-libs/atk-1.6 >=x11-libs/gtk+-2.4 >=x11-libs/pango-1.2.1 >=gnome-base/gconf-2.4 >=gnome-base/libglade-2.4 >=gnome-base/libgnomeui-2.4 gnome? ( >=gnome-base/gnome-panel-2.0 ) freewnn? ( app-i18n/freewnn ) canna? ( app-i18n/canna ) skk? ( virtual/skkserv ) anthy? ( app-i18n/anthy )
+SLOT=0
+SRC_URI=http://im-ja.sourceforge.net/im-ja-1.5.tar.gz http://im-ja.sourceforge.net/old/im-ja-1.5.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=aa49171e00cc7ce00a7dd9309bef84b9

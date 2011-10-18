@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=sci-libs/ccp4-libs sci-libs/mmdb virtual/blas virtual/lapack =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Macromolecular crystallographic refinement program
+EAPI=2
+HOMEPAGE=http://www.ysbl.york.ac.uk/~garib/refmac/
+IUSE=test debug
+KEYWORDS=~amd64 ~x86
+LICENSE=ccp4
+RDEPEND=sci-libs/ccp4-libs sci-libs/mmdb virtual/blas virtual/lapack
+SLOT=0
+SRC_URI=http://www.ysbl.york.ac.uk/~garib/refmac/data/refmac_stable/refmac_5.5.0109.tar.gz test? ( http://dev.gentooexperimental.org/~jlec/distfiles/test-framework.tar.gz )
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	fortran	bd0fac3e085b8c7c86b09139dbedac42	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=20eb4e1071b75bec9399dd5b27e5f622

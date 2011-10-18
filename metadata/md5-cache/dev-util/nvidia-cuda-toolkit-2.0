@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst unpack
+DESCRIPTION=NVIDIA CUDA Toolkit
+HOMEPAGE=http://developer.nvidia.com/cuda
+IUSE=doc
+KEYWORDS=amd64 x86
+LICENSE=NVIDIA
+RESTRICT=strip
+SLOT=0
+SRC_URI=amd64? ( http://developer.download.nvidia.com/compute/cuda/2_0/linux/toolkit/NVIDIA_CUDA_Toolkit_2.0_suse10.3_x86_64.run ) x86? ( http://developer.download.nvidia.com/compute/cuda/2_0/linux/toolkit/NVIDIA_CUDA_Toolkit_2.0_suse10.3_x86.run )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b26234f918088a05e617210b3fca28bf

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=facedetect? ( media-libs/opencv ) scale0tilt? ( media-libs/gavl ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=A minimalistic plugin API for video effects
+EAPI=2
+HOMEPAGE=http://www.piksel.org/frei0r/
+IUSE=doc facedetect scale0tilt
+KEYWORDS=amd64 ~ppc ~ppc64 x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=facedetect? ( media-libs/opencv ) scale0tilt? ( media-libs/gavl )
+SLOT=0
+SRC_URI=http://propirate.net/frei0r/frei0r-plugins-1.1.22.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=bf3917031a43af05997a0d1ffa9b9f54

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup unpack
+DEPEND=>=dev-lang/erlang-11.2.5[emacs] >=virtual/emacs-21
+DESCRIPTION=Distributed Emacs Lisp for Erlang
+EAPI=2
+HOMEPAGE=http://fresh.homeunix.net/~luke/distel/
+IUSE=doc
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=>=dev-lang/erlang-11.2.5[emacs] >=virtual/emacs-21
+SLOT=0
+SRC_URI=http://distel.googlecode.com/files/distel-4.03.tgz
+_eclasses_=elisp	4fb60944284f0928ba836a482f598807	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1cf6de97ea4ccfea999a57b5bf09788f

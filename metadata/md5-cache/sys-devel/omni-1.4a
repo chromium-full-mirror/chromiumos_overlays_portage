@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=java? ( virtual/jdk app-arch/zip ) sys-apps/sed
+DESCRIPTION=The Omni OpenMP Compiler
+HOMEPAGE=http://phase.hpcc.jp/Omni/home.html
+IUSE=java doc
+KEYWORDS=x86
+LICENSE=Omni
+RDEPEND=java? ( virtual/jdk )
+RESTRICT=fetch
+SLOT=0
+_md5_=6636bf3107b8e97674cf7c41438016ac

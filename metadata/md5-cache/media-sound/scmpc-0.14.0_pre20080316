@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst
+DESCRIPTION=a client for MPD which submits your tracks to last.fm
+EAPI=1
+HOMEPAGE=http://ngls.zakx.de/scmpc/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/glib:2 dev-libs/confuse net-misc/curl
+SLOT=0
+SRC_URI=http://ngls.zakx.de/scmpc/scmpc-0.14.0_pre20080316.tar.bz2
+_md5_=2c2be4453d23278a82b3d0f2a8a27bf3

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install preinst prepare
+DEPEND=>=dev-util/scons-0.98 x11-libs/libXt x11-proto/inputproto >=dev-libs/openssl-0.9.6 ffmpeg? ( >=media-video/ffmpeg-0.4.9_p20080326 ) jpeg? ( media-libs/jpeg ) media-libs/tiff >=dev-lang/python-2.4 nls? ( >=media-libs/freetype-2.0 virtual/libintl >=media-libs/ftgl-2.1 ) openal? ( >=media-libs/openal-1.6.372 >=media-libs/freealut-1.1.0-r1 ) openexr? ( media-libs/openexr ) png? ( media-libs/libpng ) quicktime? ( media-libs/libquicktime ) >=media-libs/libsdl-1.2 blender-game? ( >=media-libs/libsdl-1.2[joystick] ) virtual/opengl >=app-admin/eselect-python-20091230
+DESCRIPTION=3D Creation/Animation/Publishing System
+EAPI=2
+HOMEPAGE=http://www.blender.org/
+IUSE=blender-game ffmpeg jpeg nls openal openexr openmp player png quicktime verse
+KEYWORDS=amd64 ppc ppc64 sparc x86
+LICENSE=|| ( GPL-2 BL )
+RDEPEND=>=dev-libs/openssl-0.9.6 ffmpeg? ( >=media-video/ffmpeg-0.4.9_p20080326 ) jpeg? ( media-libs/jpeg ) media-libs/tiff >=dev-lang/python-2.4 nls? ( >=media-libs/freetype-2.0 virtual/libintl >=media-libs/ftgl-2.1 ) openal? ( >=media-libs/openal-1.6.372 >=media-libs/freealut-1.1.0-r1 ) openexr? ( media-libs/openexr ) png? ( media-libs/libpng ) quicktime? ( media-libs/libquicktime ) >=media-libs/libsdl-1.2 blender-game? ( >=media-libs/libsdl-1.2[joystick] ) virtual/opengl >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://download.blender.org/source/blender-2.48a.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=5aa9b5d60e463ccf58470c1bbc9f5ac8

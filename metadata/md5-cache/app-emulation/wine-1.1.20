@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=>=media-libs/freetype-2.0.0 media-fonts/corefonts dev-lang/perl dev-perl/XML-Simple ncurses? ( >=sys-libs/ncurses-5.2 ) jack? ( media-sound/jack-audio-connection-kit ) dbus? ( sys-apps/dbus ) gnutls? ( net-libs/gnutls ) hal? ( sys-apps/hal ) X? ( x11-libs/libXcursor x11-libs/libXrandr x11-libs/libXi x11-libs/libXmu x11-libs/libXxf86vm x11-apps/xmessage ) xinerama? ( x11-libs/libXinerama ) alsa? ( media-libs/alsa-lib ) esd? ( media-sound/esound ) nas? ( media-libs/nas ) cups? ( net-print/cups ) opengl? ( virtual/opengl ) jpeg? ( media-libs/jpeg ) ldap? ( net-nds/openldap ) lcms? ( media-libs/lcms ) samba? ( >=net-fs/samba-3.0.25 ) xml? ( dev-libs/libxml2 dev-libs/libxslt ) scanner? ( media-gfx/sane-backends ) ssl? ( dev-libs/openssl ) png? ( media-libs/libpng ) !win64? ( amd64? ( X? ( >=app-emulation/emul-linux-x86-xlibs-2.1 >=app-emulation/emul-linux-x86-soundlibs-2.1 ) app-emulation/emul-linux-x86-baselibs >=sys-kernel/linux-headers-2.6 ) ) X? ( x11-proto/inputproto x11-proto/xextproto x11-proto/xf86vidmodeproto ) xinerama? ( x11-proto/xineramaproto ) sys-devel/bison sys-devel/flex
+DESCRIPTION=free implementation of Windows(tm) on Unix
+EAPI=2
+HOMEPAGE=http://www.winehq.org/
+IUSE=alsa cups custom-cflags dbus esd +gecko gnutls hal jack jpeg lcms ldap nas ncurses +opengl oss png samba scanner ssl win64 +X xcomposite xinerama xml
+KEYWORDS=-* amd64 x86 ~x86-fbsd
+LICENSE=LGPL-2.1
+RDEPEND=>=media-libs/freetype-2.0.0 media-fonts/corefonts dev-lang/perl dev-perl/XML-Simple ncurses? ( >=sys-libs/ncurses-5.2 ) jack? ( media-sound/jack-audio-connection-kit ) dbus? ( sys-apps/dbus ) gnutls? ( net-libs/gnutls ) hal? ( sys-apps/hal ) X? ( x11-libs/libXcursor x11-libs/libXrandr x11-libs/libXi x11-libs/libXmu x11-libs/libXxf86vm x11-apps/xmessage ) xinerama? ( x11-libs/libXinerama ) alsa? ( media-libs/alsa-lib ) esd? ( media-sound/esound ) nas? ( media-libs/nas ) cups? ( net-print/cups ) opengl? ( virtual/opengl ) jpeg? ( media-libs/jpeg ) ldap? ( net-nds/openldap ) lcms? ( media-libs/lcms ) samba? ( >=net-fs/samba-3.0.25 ) xml? ( dev-libs/libxml2 dev-libs/libxslt ) scanner? ( media-gfx/sane-backends ) ssl? ( dev-libs/openssl ) png? ( media-libs/libpng ) !win64? ( amd64? ( X? ( >=app-emulation/emul-linux-x86-xlibs-2.1 >=app-emulation/emul-linux-x86-soundlibs-2.1 ) app-emulation/emul-linux-x86-baselibs >=sys-kernel/linux-headers-2.6 ) )
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://sourceforge/wine/wine-1.1.20.tar.bz2 gecko? ( mirror://sourceforge/wine/wine_gecko-0.9.1.cab )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=acc60e3a3a1737d7db451eb5661c2257

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=app-editors/xemacs
+DESCRIPTION=Validated HTML/SGML editing.
+HOMEPAGE=http://xemacs.org/
+KEYWORDS=~alpha ~amd64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=app-xemacs/xemacs-base app-xemacs/edit-utils app-xemacs/edebug app-xemacs/xemacs-devel app-xemacs/mail-lib app-xemacs/fsf-compat app-xemacs/xemacs-eterm app-xemacs/sh-script app-xemacs/ps-print
+SLOT=0
+SRC_URI=http://ftp.xemacs.org/pub/xemacs/packages/psgml-1.45-pkg.tar.gz
+_eclasses_=xemacs-packages	6dd96054b458a462c15a08ea670d9ac6
+_md5_=91c644e0570541621c03cd57c1c513c7

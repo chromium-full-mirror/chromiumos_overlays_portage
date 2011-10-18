@@ -1,0 +1,12 @@
+DEFINED_PHASES=install setup unpack
+DESCRIPTION=Watch live, interactive TV and radio on the Livestation player
+HOMEPAGE=http://www.livestation.com
+KEYWORDS=~amd64
+LICENSE=GPL-3 LGPL-3 Livestation-EULA
+PROPERTIES=interactive
+RDEPEND=amd64? ( >=app-emulation/emul-linux-x86-baselibs-20091231 >=app-emulation/emul-linux-x86-xlibs-20091231 >=app-emulation/emul-linux-x86-qtlibs-20091231 )
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://updates.livestation.com/releases/Livestation-3.0.0.run
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3e47f60167a6c6d4035ff74fe4029211

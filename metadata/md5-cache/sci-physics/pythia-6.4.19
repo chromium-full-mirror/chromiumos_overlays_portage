@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare setup unpack
+DEPEND==sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Lund Monte Carlo high-energy physics event generator
+EAPI=2
+HOMEPAGE=http://projects.hepforge.org/pythia6/
+IUSE=doc examples debug
+KEYWORDS=amd64 ~hppa sparc x86
+LICENSE=public-domain
+SLOT=6
+SRC_URI=mirror://gentoo/pythia-6.4.19.tar.bz2 ftp://root.cern.ch/root/pythia6.tar.gz doc? ( http://home.thep.lu.se/~torbjorn/pythia/lutp0613man2.pdf ) examples? ( mirror://gentoo/pythia-6.4.18-examples.tar.bz2 )
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fortran	bd0fac3e085b8c7c86b09139dbedac42	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=3b65cf2620b16045031ced9542a7f64f

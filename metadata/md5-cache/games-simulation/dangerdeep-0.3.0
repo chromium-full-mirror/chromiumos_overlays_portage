@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=virtual/opengl virtual/glu sci-libs/fftw:3.0 media-libs/libsdl media-libs/sdl-mixer[vorbis] media-libs/sdl-image[jpeg,png] media-libs/sdl-net app-arch/unzip dev-util/scons
+DESCRIPTION=a World War II German submarine simulation
+EAPI=2
+HOMEPAGE=http://dangerdeep.sourceforge.net/
+IUSE=sse debug
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2 CCPL-Attribution-NonCommercial-NoDerivs-2.0
+RDEPEND=virtual/opengl virtual/glu sci-libs/fftw:3.0 media-libs/libsdl media-libs/sdl-mixer[vorbis] media-libs/sdl-image[jpeg,png] media-libs/sdl-net
+SLOT=0
+SRC_URI=mirror://sourceforge/dangerdeep/dangerdeep-0.3.0.tar.gz mirror://sourceforge/dangerdeep/dangerdeep-data-0.3.0.zip
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f75b7bccac1bb4df40c66cd8ece2c948

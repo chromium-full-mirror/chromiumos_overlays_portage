@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare test
+DEPEND=>=dev-libs/glib-2.8.0 >=x11-libs/pango-1.16.0 >=dev-libs/atk-1.12.0 >=x11-libs/gtk+-2.13.6 >=gnome-base/libglade-2.5.0 >=dev-python/pycairo-1.0.2 >=dev-python/pygobject-2.16.1 dev-python/numpy doc? ( dev-libs/libxslt >=app-text/docbook-xsl-stylesheets-1.70.1 ) >=dev-util/pkgconfig-0.9 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b >=app-admin/eselect-python-20091230 =dev-lang/python-2* test? ( !prefix? ( x11-base/xorg-server ) x11-apps/xhost )
+DESCRIPTION=GTK+2 bindings for Python
+EAPI=2
+HOMEPAGE=http://www.pygtk.org/
+IUSE=doc examples test
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sh ~sparc ~x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE=LGPL-2.1
+RDEPEND=>=dev-libs/glib-2.8.0 >=x11-libs/pango-1.16.0 >=dev-libs/atk-1.12.0 >=x11-libs/gtk+-2.13.6 >=gnome-base/libglade-2.5.0 >=dev-python/pycairo-1.0.2 >=dev-python/pygobject-2.16.1 dev-python/numpy >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+SLOT=2
+SRC_URI=mirror://gnome/sources/pygtk/2.16/pygtk-2.16.0.tar.bz2
+_eclasses_=alternatives	eb864f6e50a20036e4cd47c8fd8f64d1	autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	gnome.org	6d236bfa516020939a4adbc435063f79	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	virtualx	e9162f65645513120b4e12863a5fa972
+_md5_=4f9dc18472008c120db5d192448cef1d

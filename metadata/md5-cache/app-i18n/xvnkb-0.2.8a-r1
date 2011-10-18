@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=x11-libs/libX11 xft? ( x11-libs/libXft ) x11-proto/xproto
+DESCRIPTION=Vietnamese input keyboard for X
+HOMEPAGE=http://xvnkb.sourceforge.net/
+IUSE=spell xft
+KEYWORDS=x86 ppc
+LICENSE=GPL-2
+RDEPEND=x11-libs/libX11 xft? ( x11-libs/libXft )
+SLOT=0
+SRC_URI=http://xvnkb.sourceforge.net/xvnkb/xvnkb-0.2.8a.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3a3cf993bbed02a9c27f1935ae877834

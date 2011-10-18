@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=>=dev-libs/glib-2.21.2 >=sys-apps/dbus-1.0 dev-libs/libxml2 net-misc/openssh >=sys-fs/udev-138 archive? ( app-arch/libarchive ) avahi? ( >=net-dns/avahi-0.6 ) bluetooth? ( >=app-mobilephone/obex-data-server-0.4.5 dev-libs/dbus-glib net-wireless/bluez dev-libs/expat ) fuse? ( sys-fs/fuse ) gdu? ( >=sys-apps/gnome-disk-utility-2.28 ) gnome? ( >=gnome-base/gconf-2.0 ) gnome-keyring? ( >=gnome-base/gnome-keyring-1.0 ) gphoto2? ( >=media-libs/libgphoto2-2.4.7 ) udev? ( cdda? ( >=dev-libs/libcdio-0.78.2[-minimal] ) >=sys-fs/udev-145[extras] ) hal? ( cdda? ( >=dev-libs/libcdio-0.78.2[-minimal] ) >=sys-apps/hal-0.5.10 ) http? ( >=net-libs/libsoup-gnome-2.25.1 ) samba? ( || ( net-fs/samba-libs[smbclient] <=net-fs/samba-3.3 ) ) >=dev-util/intltool-0.40 >=dev-util/pkgconfig-0.19 dev-util/gtk-doc-am doc? ( >=dev-util/gtk-doc-1 ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b >=sys-apps/sed-4
+DESCRIPTION=GNOME Virtual Filesystem Layer
+EAPI=2
+HOMEPAGE=http://www.gnome.org
+IUSE=archive avahi bluetooth cdda doc fuse gdu gnome gnome-keyring gphoto2 hal +http samba +udev bash-completion
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2
+PDEPEND=bash-completion? ( app-shells/bash-completion )
+RDEPEND=>=dev-libs/glib-2.21.2 >=sys-apps/dbus-1.0 dev-libs/libxml2 net-misc/openssh >=sys-fs/udev-138 archive? ( app-arch/libarchive ) avahi? ( >=net-dns/avahi-0.6 ) bluetooth? ( >=app-mobilephone/obex-data-server-0.4.5 dev-libs/dbus-glib net-wireless/bluez dev-libs/expat ) fuse? ( sys-fs/fuse ) gdu? ( >=sys-apps/gnome-disk-utility-2.28 ) gnome? ( >=gnome-base/gconf-2.0 ) gnome-keyring? ( >=gnome-base/gnome-keyring-1.0 ) gphoto2? ( >=media-libs/libgphoto2-2.4.7 ) udev? ( cdda? ( >=dev-libs/libcdio-0.78.2[-minimal] ) >=sys-fs/udev-145[extras] ) hal? ( cdda? ( >=dev-libs/libcdio-0.78.2[-minimal] ) >=sys-apps/hal-0.5.10 ) http? ( >=net-libs/libsoup-gnome-2.25.1 ) samba? ( || ( net-fs/samba-libs[smbclient] <=net-fs/samba-3.3 ) ) bash-completion? ( app-admin/eselect )
+SLOT=0
+SRC_URI=mirror://gnome/sources/gvfs/1.4/gvfs-1.4.3.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	bash-completion	f0fab76a98c0e4b3d72b6beb28d3f653	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=583611b3784318f8e531ccc4faa1ff35

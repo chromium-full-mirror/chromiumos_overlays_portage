@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install setup
+DEPEND=|| ( >=sys-fs/udev-096 >=sys-apps/hotplug-20040920 ) !sys-apps/pcmcia-cs
+DESCRIPTION=PCMCIA CIS files for use with pcmciautils
+HOMEPAGE=http://pcmcia-cs.sourceforge.net
+KEYWORDS=~amd64 ~ppc x86
+LICENSE=GPL-2
+RDEPEND=|| ( >=sys-fs/udev-096 >=sys-apps/hotplug-20040920 ) !sys-apps/pcmcia-cs
+SLOT=0
+SRC_URI=mirror://sourceforge/pcmcia-cs/pcmcia-cs-3.2.8.tar.gz
+_eclasses_=linux-info	8d722422d00ae99ed52a790b20b9bfc4	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=63f7bb745113a833d3c17d227d489de5

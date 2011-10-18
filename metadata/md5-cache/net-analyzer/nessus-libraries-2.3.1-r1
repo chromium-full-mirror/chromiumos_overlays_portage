@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-libs/openssl net-libs/libpcap
+DESCRIPTION=A remote security scanner for Linux (nessus-libraries)
+HOMEPAGE=http://www.nessus.org/
+KEYWORDS=~alpha ~amd64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/openssl net-libs/libpcap
+SLOT=0
+SRC_URI=ftp://ftp.nessus.org/pub/nessus/experimental/nessus-2.3.1/src/nessus-libraries-2.3.1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9b6ea9a4de9ea4705a1d466fa91bf565

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup unpack
+DEPEND=>=dev-lang/python-2.4 >=dev-python/pygtk-2.6 >=dev-python/gnome-python-desktop-2.14.0 >=dev-python/gst-python-0.10 gnome-base/gconf >=media-plugins/gst-plugins-gnomevfs-0.10 muine? ( media-sound/muine ) dev-python/pyxml sys-devel/gettext dev-util/intltool dev-util/pkgconfig =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b >=sys-apps/sed-4 >=app-admin/eselect-python-20091230
+DESCRIPTION=An application for writing CD-Audio discs. It aims for simplicity, usability and compability.
+HOMEPAGE=http://irrepupavel.com/projects/serpentine/
+IUSE=muine
+KEYWORDS=~amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/python-2.4 >=dev-python/pygtk-2.6 >=dev-python/gnome-python-desktop-2.14.0 >=dev-python/gst-python-0.10 gnome-base/gconf >=media-plugins/gst-plugins-gnomevfs-0.10 muine? ( media-sound/muine ) dev-python/pyxml >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=mirror://berlios/serpentine/serpentine-0.9.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=731e4c7f1924c3f89de3a511d187be13

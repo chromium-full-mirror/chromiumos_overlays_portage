@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=virtual/mta xinetd? ( virtual/inetd ) gdbm? ( sys-libs/gdbm ) !gdbm? ( ~sys-libs/db-1.85 ) pam? ( virtual/pam >=net-mail/mailbase-0.00-r8 ) ssl? ( dev-libs/openssl )
+DESCRIPTION=A POP3 Server
+HOMEPAGE=http://www.eudora.com/products/unsupported/qpopper/index.html
+IUSE=apop debug gdbm mailbox pam ssl xinetd
+KEYWORDS=~amd64 sparc x86
+LICENSE=qpopper
+RDEPEND=virtual/mta xinetd? ( virtual/inetd ) gdbm? ( sys-libs/gdbm ) !gdbm? ( ~sys-libs/db-1.85 ) pam? ( virtual/pam >=net-mail/mailbase-0.00-r8 ) ssl? ( dev-libs/openssl )
+SLOT=0
+SRC_URI=ftp://ftp.qualcomm.com/eudora/servers/unix/popper/qpopper4.0.5.tar.gz http://www.ibiblio.org/gentoo/distfiles/qpopper-files.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=41a3b851ce1fe458979da5ac772ac5e1

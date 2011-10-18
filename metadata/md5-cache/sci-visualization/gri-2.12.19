@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND=>=sci-libs/netcdf-3.5.0 virtual/latex-base media-gfx/imagemagick app-text/ghostscript-gpl emacs? ( virtual/emacs )
+DESCRIPTION=language for scientific graphics programming
+EAPI=2
+HOMEPAGE=http://gri.sourceforge.net/
+IUSE=doc emacs examples
+KEYWORDS=amd64 ~ppc x86
+LICENSE=GPL-2
+RDEPEND=>=sci-libs/netcdf-3.5.0 virtual/latex-base media-gfx/imagemagick app-text/ghostscript-gpl emacs? ( virtual/emacs )
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://sourceforge/gri/gri-2.12.19.tar.gz
+_eclasses_=elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f25e3eac84131de91a2e4d1fd83a0de3

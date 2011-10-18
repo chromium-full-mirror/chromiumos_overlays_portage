@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=app-text/ghostscript-gpl >=app-arch/bzip2-1.0.1-r4 >=app-arch/gzip-1.2.4a-r6 sys-apps/file
+DESCRIPTION=Customizable, extensible automatic printer filter
+HOMEPAGE=http://www.pell.portland.or.us/~orc/Code/magicfilter/
+KEYWORDS=x86
+LICENSE=BSD GPL-2
+RDEPEND=app-text/ghostscript-gpl >=app-arch/bzip2-1.0.1-r4 >=app-arch/gzip-1.2.4a-r6 sys-apps/file virtual/lpr
+SLOT=0
+SRC_URI=http://www.pell.portland.or.us/~orc/Code/magicfilter/magicfilter-2.3.a.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=92858e86ac8cd18a3bc3bc7cefee7e9c

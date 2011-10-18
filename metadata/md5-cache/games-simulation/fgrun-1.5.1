@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=dev-games/simgear || ( <x11-libs/fltk-1.1.9:1.1[opengl] >=x11-libs/fltk-1.1.9:1.1[opengl,threads] ) x11-libs/libXi x11-libs/libXmu =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=A graphical frontend for the FlightGear Flight Simulator
+EAPI=2
+HOMEPAGE=http://sourceforge.net/projects/fgrun
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-games/simgear || ( <x11-libs/fltk-1.1.9:1.1[opengl] >=x11-libs/fltk-1.1.9:1.1[opengl,threads] ) x11-libs/libXi x11-libs/libXmu >=games-simulation/flightgear-1.9.0
+SLOT=0
+SRC_URI=mirror://sourceforge/fgrun/fgrun-1.5.1.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=54f108e12db018aba95f1857f78430a2

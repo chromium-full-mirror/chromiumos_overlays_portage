@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=Virtual for texi2dvi (and texi2pdf)
+KEYWORDS=alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x86-solaris
+RDEPEND=sys-apps/texinfo virtual/latex-base || ( dev-texlive/texlive-texinfo app-text/ptex )
+SLOT=0
+_md5_=cf99ca2618bb2b382a6da33f678fda16

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DEPEND=media-libs/sdl-image media-libs/sdl-net media-libs/libsdl
+DESCRIPTION=GPL Arcade Volleyball
+HOMEPAGE=http://gav.sourceforge.net/
+KEYWORDS=amd64 ppc sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=media-libs/sdl-image media-libs/sdl-net media-libs/libsdl
+SLOT=0
+SRC_URI=mirror://sourceforge/gav/gav-0.9.0.tar.gz mirror://gentoo/fabeach.tgz mirror://gentoo/florindo.tgz mirror://gentoo/inverted.tgz mirror://gentoo/naive.tgz mirror://gentoo/unnamed.tgz mirror://gentoo/yisus.tgz mirror://gentoo/yisus2.tgz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7363eb70e5352633ec6f1e9d1cf4e29e

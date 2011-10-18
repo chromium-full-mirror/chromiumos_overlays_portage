@@ -1,0 +1,10 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=light-weight performance monitoring tool capable of reporting interactively as well as logging to disk
+HOMEPAGE=http://collectl.sourceforge.net/
+KEYWORDS=~alpha ~amd64 ~ia64 ~x86
+LICENSE=GPL-2 Artistic
+RDEPEND=>=dev-lang/perl-5.8.8 virtual/perl-Time-HiRes >=dev-perl/Archive-Zip-1.20 sys-apps/ethtool sys-apps/pciutils
+SLOT=0
+SRC_URI=mirror://sourceforge/collectl/collectl-3.4.0.src.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7828c882793e6e28f5169a3a992b47ab

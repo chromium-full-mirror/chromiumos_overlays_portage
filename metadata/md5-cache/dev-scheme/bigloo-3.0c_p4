@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm
+DEPEND=emacs? ( virtual/emacs ) java? ( virtual/jdk )
+DESCRIPTION=Bigloo is a Scheme implementation.
+HOMEPAGE=http://www-sop.inria.fr/mimosa/fp/Bigloo/bigloo.html
+IUSE=emacs java
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=emacs? ( virtual/emacs ) java? ( virtual/jdk )
+SLOT=0
+SRC_URI=ftp://ftp-sop.inria.fr/mimosa/fp/Bigloo/bigloo3.0c-4.tar.gz
+_eclasses_=elisp-common	3322f14f031ddc95feccd9089c9adc59	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=41cbc4bc702aba5617172eba26b9abb5

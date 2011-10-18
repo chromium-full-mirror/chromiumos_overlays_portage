@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=>=sys-libs/glibc-2.3.3 >=dev-util/scons-0.96.1 >=dev-libs/libaio-0.3 >=sys-fs/fuse-2.6.1 dev-vcs/mercurial
+DESCRIPTION=An implementation of the ZFS filesystem for FUSE/Linux
+HOMEPAGE=http://www.wizy.org/wiki/ZFS_on_FUSE
+IUSE=doc debug
+LICENSE=CDDL
+RDEPEND=>=sys-fs/fuse-2.6.1
+SLOT=0
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	mercurial	70764f711413ded990af184cc3a548f0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2fb7cc8e1afa9d1963218532ac5f1e62

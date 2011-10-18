@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install postinst postrm preinst
+DEPEND=>=x11-misc/icon-naming-utils-0.8.90 media-gfx/imagemagick[png?] >=gnome-base/librsvg-2.12.3 >=x11-themes/hicolor-icon-theme-0.9 dev-util/pkgconfig dev-util/intltool sys-devel/gettext >=sys-apps/sed-4
+DESCRIPTION=SVG and PNG icon theme from the Tango project
+EAPI=2
+HOMEPAGE=http://tango.freedesktop.org
+IUSE=png
+KEYWORDS=amd64 ppc ppc64 sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE=public-domain
+RDEPEND=>=x11-misc/icon-naming-utils-0.8.90 media-gfx/imagemagick[png?] >=gnome-base/librsvg-2.12.3 >=x11-themes/hicolor-icon-theme-0.9
+RESTRICT=binchecks strip
+SLOT=0
+SRC_URI=http://tango.freedesktop.org/releases/tango-icon-theme-0.8.90.tar.gz
+_eclasses_=gnome2-utils	0067e2e4dc66e2ff223a9c527e329407
+_md5_=5f234e2be74e36e2d4f3ccd03bba01a7

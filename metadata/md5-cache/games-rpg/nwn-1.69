@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DESCRIPTION=role-playing game set in a huge medieval fantasy world of Dungeons and Dragons
+EAPI=2
+HOMEPAGE=http://nwn.bioware.com/downloads/linuxclient.html
+IUSE=sou hou
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=NWN-EULA
+RDEPEND=|| ( >=games-rpg/nwn-data-1.29-r3[sou?,hou?,linguas_en] >=games-rpg/nwn-data-1.29-r3[sou?,hou?,-linguas_fr,-linguas_de,-linguas_es,-linguas_it] ) virtual/opengl >=media-libs/libsdl-1.2.5 !<games-rpg/nwmouse-0.1-r1 x86? ( =virtual/libstdc++-3.3 x11-libs/libXext x11-libs/libX11 ) amd64? ( app-emulation/emul-linux-x86-baselibs app-emulation/emul-linux-x86-compat app-emulation/emul-linux-x86-xlibs )
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=http://dev.gentoo.org/~calchan/distfiles/nwn-libsdl-1.2.13.tar.bz2 http://dev.gentoo.org/~calchan/distfiles/nwn-libelf-0.1.tar.bz2 !sou? ( !hou? ( http://files.bioware.com/neverwinternights/updates/linux/169/English_linuxclient169_orig.tar.gz ) ) sou? ( !hou? ( http://files.bioware.com/neverwinternights/updates/linux/169/English_linuxclient169_xp1.tar.gz ) ) hou? ( http://files.bioware.com/neverwinternights/updates/linux/169/English_linuxclient169_xp2.tar.gz )
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9d0e11fa55200f2bb258f93844af7b57

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm preinst unpack
+DEPEND=>=x11-libs/gtk+-2.12 >=dev-libs/glib-2.14 >=gnome-base/gconf-2.4.0 >=gnome-base/gnome-panel-2.6 >=gnome-base/gconf-2.6 >=gnome-base/libgnomeui-2.14 >=gnome-base/libglade-2.0 dev-libs/dbus-glib >=dev-libs/gmime-2.2.7:0 >=x11-libs/libnotify-0.4.1 pop? ( gnome-base/gnome-keyring ) imap? ( gnome-base/gnome-keyring ) gmail? ( gnome-base/gnome-keyring ) ssl? ( >=dev-libs/openssl-0.9.6 ) sasl? ( >=dev-libs/cyrus-sasl-2 ) evo? ( >=mail-client/evolution-2.24 ) sylpheed? ( mail-client/sylpheed ) app-text/scrollkeeper dev-util/pkgconfig >=dev-util/intltool-0.35.0 >=sys-apps/sed-4
+DESCRIPTION=A GNOME trayicon which checks for email, with support for many online and offline mailbox formats.
+EAPI=1
+HOMEPAGE=http://www.nongnu.org/mailnotify/
+IUSE=evo gmail imap ipv6 maildir mbox mh mozilla pop sasl ssl sylpheed debug
+KEYWORDS=amd64 hppa ppc sparc x86
+LICENSE=GPL-3
+RDEPEND=>=x11-libs/gtk+-2.12 >=dev-libs/glib-2.14 >=gnome-base/gconf-2.4.0 >=gnome-base/gnome-panel-2.6 >=gnome-base/gconf-2.6 >=gnome-base/libgnomeui-2.14 >=gnome-base/libglade-2.0 dev-libs/dbus-glib >=dev-libs/gmime-2.2.7:0 >=x11-libs/libnotify-0.4.1 pop? ( gnome-base/gnome-keyring ) imap? ( gnome-base/gnome-keyring ) gmail? ( gnome-base/gnome-keyring ) ssl? ( >=dev-libs/openssl-0.9.6 ) sasl? ( >=dev-libs/cyrus-sasl-2 ) evo? ( >=mail-client/evolution-2.24 ) sylpheed? ( mail-client/sylpheed )
+SLOT=0
+SRC_URI=http://savannah.nongnu.org/download/mailnotify/mail-notification-5.4.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d4864ce05b7a1c7157f87f0b7f0e3e2d

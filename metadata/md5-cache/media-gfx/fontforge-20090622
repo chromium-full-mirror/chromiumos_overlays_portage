@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst postrm prepare unpack
+DEPEND=gif? ( >=media-libs/giflib-4.1.0-r1 ) jpeg? ( >=media-libs/jpeg-6b-r2 ) png? ( >=media-libs/libpng-1.2.4 ) python? ( dev-lang/python ) tiff? ( >=media-libs/tiff-3.5.7-r1 ) truetype? ( >=media-libs/freetype-2.1.4 ) truetype-debugger? ( >=media-libs/freetype-2.3.8[fontforge,-bindist] ) svg? ( >=dev-libs/libxml2-2.6.7 ) unicode? ( >=media-libs/libuninameslist-030713 ) cairo? ( >=x11-libs/cairo-1.6.4[X] ) pango? ( >=x11-libs/pango-1.20.3[X] ) x11-libs/libXi x11-proto/inputproto !media-gfx/pfaedit nls? ( sys-devel/gettext )
+DESCRIPTION=postscript font editor and converter
+EAPI=2
+HOMEPAGE=http://fontforge.sourceforge.net/
+IUSE=cjk cairo doc gif debug jpeg nls pasteafter png +python tiff tilepath truetype truetype-debugger pango type3 svg unicode +X
+KEYWORDS=alpha amd64 arm hppa ia64 ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+LICENSE=BSD
+RDEPEND=gif? ( >=media-libs/giflib-4.1.0-r1 ) jpeg? ( >=media-libs/jpeg-6b-r2 ) png? ( >=media-libs/libpng-1.2.4 ) python? ( dev-lang/python ) tiff? ( >=media-libs/tiff-3.5.7-r1 ) truetype? ( >=media-libs/freetype-2.1.4 ) truetype-debugger? ( >=media-libs/freetype-2.3.8[fontforge,-bindist] ) svg? ( >=dev-libs/libxml2-2.6.7 ) unicode? ( >=media-libs/libuninameslist-030713 ) cairo? ( >=x11-libs/cairo-1.6.4[X] ) pango? ( >=x11-libs/pango-1.20.3[X] ) x11-libs/libXi x11-proto/inputproto !media-gfx/pfaedit
+SLOT=0
+SRC_URI=mirror://sourceforge/fontforge/fontforge_full-20090622.tar.bz2 doc? ( mirror://sourceforge/fontforge/fontforge_htdocs-20090622.tar.bz2 ) cjk? ( mirror://gentoo/cidmaps-20090121.tgz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0448b5898640b7c09aac93fc2aba8499

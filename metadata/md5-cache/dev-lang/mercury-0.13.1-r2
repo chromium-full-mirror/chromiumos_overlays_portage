@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install test unpack
+DEPEND=!dev-libs/mpatrol !dev-util/mono-debugger readline? ( sys-libs/readline )
+DESCRIPTION=Mercury is a modern general-purpose logic/functional programming language
+HOMEPAGE=http://www.cs.mu.oz.au/research/mercury/index.html
+IUSE=debug minimal readline test threads
+KEYWORDS=amd64 ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=!dev-libs/mpatrol !dev-util/mono-debugger readline? ( sys-libs/readline )
+SLOT=0
+SRC_URI=ftp://ftp.mercury.cs.mu.oz.au/pub/mercury/mercury-compiler-0.13.1.tar.gz test? ( ftp://ftp.mercury.cs.mu.oz.au/pub/mercury/mercury-tests-0.13.1.tar.gz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=4c053390d6918991624f42f5ffa70da0

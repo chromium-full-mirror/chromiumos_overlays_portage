@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst prepare setup
+DEPEND=virtual/mta xinetd? ( virtual/inetd ) gdbm? ( sys-libs/gdbm ) !gdbm? ( ~sys-libs/db-1.85 ) drac? ( mail-client/drac ) pam? ( >=sys-libs/pam-0.72 >=net-mail/mailbase-0.00-r8 ) ssl? ( dev-libs/openssl ) ssl? ( dev-libs/openssl )
+DESCRIPTION=A POP3 Server
+EAPI=2
+HOMEPAGE=http://www.eudora.com/products/unsupported/qpopper/index.html
+IUSE=debug drac gdbm mailbox pam ssl xinetd apop ssl
+KEYWORDS=~amd64 sparc x86
+LICENSE=qpopper ISOC-rfc
+RDEPEND=virtual/mta xinetd? ( virtual/inetd ) gdbm? ( sys-libs/gdbm ) !gdbm? ( ~sys-libs/db-1.85 ) drac? ( mail-client/drac ) pam? ( >=sys-libs/pam-0.72 >=net-mail/mailbase-0.00-r8 ) ssl? ( dev-libs/openssl )
+SLOT=0
+SRC_URI=ftp://ftp.qualcomm.com/eudora/servers/unix/popper/qpopper4.0.16.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ssl-cert	031d86ef31449c1482f12ddd8aa0d4eb	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b29d590bd6ec9e0585b40ff7d8ba7624

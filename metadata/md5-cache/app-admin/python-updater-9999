@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install preinst unpack
+DEPEND=sys-apps/help2man dev-util/subversion net-misc/rsync
+DESCRIPTION=Script used to remerge python packages when changing Python version.
+HOMEPAGE=http://www.gentoo.org/proj/en/Python
+LICENSE=GPL-2
+RDEPEND=!<dev-lang/python-2.3.6-r2 dev-lang/python || ( >=sys-apps/portage-2.1.2 sys-apps/pkgcore sys-apps/paludis )
+SLOT=0
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	subversion	5781247c771be19b5dbcbb7253078ad2	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3233dfcfdcc66eb66a1accf0acbf46cd

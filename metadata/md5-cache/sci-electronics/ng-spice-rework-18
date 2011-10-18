@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install test unpack
+DEPEND=readline? ( >=sys-libs/readline-5.0 ) X? ( x11-libs/libXaw x11-libs/libXt x11-libs/libX11 sci-visualization/xgraph ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=The Next Generation Spice (Electronic Circuit Simulator).
+HOMEPAGE=http://ngspice.sourceforge.net
+IUSE=X debug doc readline
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=BSD GPL-2
+RDEPEND=readline? ( >=sys-libs/readline-5.0 ) X? ( x11-libs/libXaw x11-libs/libXt x11-libs/libX11 sci-visualization/xgraph )
+SLOT=0
+SRC_URI=mirror://sourceforge/ngspice/ng-spice-rework-18.tar.gz doc? ( http://users.ece.gatech.edu/~mrichard/Xspice/Xspice_Users_Manual.pdf http://users.ece.gatech.edu/~mrichard/Xspice/XSpice_SoftwareDesignDoc_Sep92.pdf http://users.ece.gatech.edu/~mrichard/Xspice/XSpice_InterfaceDesignDoc_Sep92.pdf http://users.ece.gatech.edu/~mrichard/Xspice/XSpice_CodeModelSubsysSoftwareDesign.pdf http://users.ece.gatech.edu/~mrichard/Xspice/XSpice_CodeModelSubsysInterfaceDesign.pdf )
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d0a444f9e7b8c51b6243ef442018241e

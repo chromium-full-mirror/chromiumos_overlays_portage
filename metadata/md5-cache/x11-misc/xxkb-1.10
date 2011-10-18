@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=x11-libs/libX11 x11-libs/libXt x11-libs/libXpm app-text/rman x11-misc/imake
+DESCRIPTION=eXtended XKB - assign different keymaps to different windows
+HOMEPAGE=http://sourceforge.net/projects/xxkb/
+KEYWORDS=~amd64 ~ppc x86
+LICENSE=Artistic
+RDEPEND=x11-libs/libX11 x11-libs/libXt x11-libs/libXpm
+SLOT=0
+SRC_URI=mirror://sourceforge/xxkb/xxkb-1.10.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3a23619d6bca3b246e48ca7bea73c6ef

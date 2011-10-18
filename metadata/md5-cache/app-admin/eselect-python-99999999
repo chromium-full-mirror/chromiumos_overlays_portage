@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst preinst prepare setup unpack
+DEPEND=>=app-admin/eselect-1.2.3 sys-devel/autoconf >=sys-devel/gcc-3.4 dev-util/subversion net-misc/rsync
+DESCRIPTION=Eselect module for management of multiple Python versions
+EAPI=2
+HOMEPAGE=http://www.gentoo.org
+LICENSE=GPL-2
+RDEPEND=>=app-admin/eselect-1.2.3
+SLOT=0
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	subversion	5781247c771be19b5dbcbb7253078ad2	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7145954cc9e4b4bea8998683ca937c73

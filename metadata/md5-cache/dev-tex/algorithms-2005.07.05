@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=!>=app-text/tetex-3.0 virtual/latex-base >=sys-apps/texinfo-4.2-r5
+DESCRIPTION=algorithms -- an environment for describing algorithms
+HOMEPAGE=http://algorithms.berlios.de/
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos
+LICENSE=LGPL-2.1
+RDEPEND=!>=app-text/tetex-3.0 virtual/latex-base
+SLOT=0
+SRC_URI=mirror://berlios/algorithms/algorithms-2005-07-05.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	latex-package	b72cedae879ef8e8af6524f196fcf449	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a66d220601bcc4ab570ffc0b3a0a4e23

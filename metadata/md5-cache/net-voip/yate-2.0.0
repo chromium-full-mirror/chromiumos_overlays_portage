@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=sys-libs/glibc alsa? ( media-libs/alsa-lib ) amrnb? ( media-libs/amrnb ) gsm? ( media-sound/gsm ) h323? ( dev-libs/pwlib net-libs/openh323 ) ilbc? ( dev-libs/ilbc-rfc3951 ) mysql? ( virtual/mysql ) oss? ( sys-kernel/linux-headers ) postgres? ( virtual/postgresql-base ) qt4? ( x11-libs/qt-core:4 x11-libs/qt-gui:4 ) spandsp? ( >=media-libs/spandsp-0.0.3 ) speex? ( media-libs/speex ) ssl? ( dev-libs/openssl ) zaptel? ( net-misc/zaptel ) dev-util/pkgconfig =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Yet Another Telephony Engine
+EAPI=2
+HOMEPAGE=http://yate.null.ro/
+IUSE=alsa amrnb debug doc gsm h323 ilbc mysql oss postgres qt4 sctp spandsp speex ssl zaptel
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=sys-libs/glibc alsa? ( media-libs/alsa-lib ) amrnb? ( media-libs/amrnb ) gsm? ( media-sound/gsm ) h323? ( dev-libs/pwlib net-libs/openh323 ) ilbc? ( dev-libs/ilbc-rfc3951 ) mysql? ( virtual/mysql ) oss? ( sys-kernel/linux-headers ) postgres? ( virtual/postgresql-base ) qt4? ( x11-libs/qt-core:4 x11-libs/qt-gui:4 ) spandsp? ( >=media-libs/spandsp-0.0.3 ) speex? ( media-libs/speex ) ssl? ( dev-libs/openssl ) zaptel? ( net-misc/zaptel )
+SLOT=0
+SRC_URI=http://yate.null.ro/tarballs/yate2/yate-2.0.0-1.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1652e4fdc10a3263269a2cba0a2d4639

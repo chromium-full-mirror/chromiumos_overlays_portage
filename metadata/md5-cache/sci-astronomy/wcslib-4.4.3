@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install prepare test
+DEPEND=sci-libs/pgplot sci-libs/cfitsio test? ( media-fonts/font-misc-misc media-fonts/font-cursor-misc ) test? ( !prefix? ( x11-base/xorg-server ) x11-apps/xhost )
+DESCRIPTION=Astronomical World Coordinate System transformations library
+EAPI=2
+HOMEPAGE=http://www.atnf.csiro.au/people/mcalabre/WCS/
+IUSE=doc test test
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-3
+RDEPEND=sci-libs/pgplot sci-libs/cfitsio
+SLOT=0
+SRC_URI=ftp://ftp.atnf.csiro.au/pub/software/wcslib/wcslib-4.4.3.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	virtualx	e9162f65645513120b4e12863a5fa972
+_md5_=6b2b91d66de25886574268eec426271d

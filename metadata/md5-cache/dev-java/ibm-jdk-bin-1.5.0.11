@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install nofetch postinst postrm prerm setup unpack
+DEPEND==dev-java/java-config-2*
+DESCRIPTION=IBM Java SE Development Kit
+HOMEPAGE=http://www.ibm.com/developerworks/java/jdk/
+IUSE=X alsa doc examples javacomm nsplugin odbc
+KEYWORDS=-* amd64 ppc ppc64 x86
+LICENSE=IBM-J1.5
+RDEPEND==virtual/libstdc++-3.3 X? ( x11-libs/libXext x11-libs/libXft x11-libs/libXi x11-libs/libXmu x11-libs/libXp x11-libs/libXtst x11-libs/libXt x11-libs/libX11 ) alsa? ( media-libs/alsa-lib ) doc? ( =dev-java/java-sdk-docs-1.5.0* ) nsplugin? ( x86? ( =x11-libs/gtk+-2* =x11-libs/gtk+-1* ) ppc? ( =x11-libs/gtk+-1* ) ) odbc? ( dev-db/unixODBC ) =dev-java/java-config-2*
+RESTRICT=fetch
+SLOT=1.5
+SRC_URI=x86? ( ibm-java2-sdk-5.0-11.0-linux-i386.tgz ) amd64? ( ibm-java2-sdk-5.0-11.0-linux-x86_64.tgz ) ppc? ( ibm-java2-sdk-5.0-11.0-linux-ppc.tgz ) ppc64? ( ibm-java2-sdk-5.0-11.0-linux-ppc64.tgz ) javacomm? ( x86? ( ibm-java2-javacomm-5.0-11.0-linux-i386.tgz ) amd64? ( ibm-java2-javacomm-5.0-11.0-linux-x86_64.tgz ) ppc? ( ibm-java2-javacomm-5.0-11.0-linux-ppc.tgz ) ppc64? ( ibm-java2-javacomm-5.0-11.0-linux-ppc64.tgz ) )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	java-vm-2	1f212b8a508fe54444797b761bf17527	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=02bf0f5785a85e5111afa6112b3ddc86

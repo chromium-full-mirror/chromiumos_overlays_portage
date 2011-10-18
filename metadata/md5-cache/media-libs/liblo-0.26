@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=doc? ( app-doc/doxygen )
+DESCRIPTION=Lightweight OSC (Open Sound Control) implementation
+EAPI=2
+HOMEPAGE=http://plugin.org.uk/liblo
+IUSE=doc ipv6
+KEYWORDS=amd64 ppc ~ppc64 x86 ~ppc-macos
+LICENSE=GPL-2
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://sourceforge/liblo/liblo-0.26.tar.gz
+_md5_=e0a34ca61a093b4d29c42b8c09c356b2

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install
+DEPEND=ssl? ( dev-libs/openssl ) !virtual/mailx
+DESCRIPTION=Nail is an enhanced mailx-compatible mail client
+HOMEPAGE=http://nail.sourceforge.net/
+IUSE=ssl net
+KEYWORDS=alpha amd64 hppa ia64 ~mips ppc ppc64 sparc x86
+LICENSE=BSD
+PROVIDE=virtual/mailx
+RDEPEND=ssl? ( dev-libs/openssl ) !virtual/mailx
+SLOT=0
+SRC_URI=mirror://sourceforge/nail/nail-11.25.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=780299aa0098aeed91b7683027c5f076

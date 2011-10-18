@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-perl/Class-ErrorHandler dev-perl/Feed-Find dev-perl/URI-Fetch >=dev-perl/XML-RSS-1.44 >=dev-perl/XML-Atom-0.32 dev-perl/DateTime dev-perl/DateTime-Format-Mail dev-perl/DateTime-Format-W3CDTF dev-perl/HTML-Parser dev-perl/libwww-perl virtual/perl-Module-Pluggable virtual/perl-Module-Build dev-lang/perl[-build]
+DESCRIPTION=Syndication feed parser and auto-discovery
+EAPI=2
+HOMEPAGE=http://search.cpan.org/dist/XML-Feed/
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
+RDEPEND=dev-perl/Class-ErrorHandler dev-perl/Feed-Find dev-perl/URI-Fetch >=dev-perl/XML-RSS-1.44 >=dev-perl/XML-Atom-0.32 dev-perl/DateTime dev-perl/DateTime-Format-Mail dev-perl/DateTime-Format-W3CDTF dev-perl/HTML-Parser dev-perl/libwww-perl virtual/perl-Module-Pluggable dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/S/SI/SIMONW//XML-Feed-0.43.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e533e285f34ab32dc923840b358f243f

@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=dev-util/subversion x11-libs/qt-core >=dev-util/git-1.6
+DESCRIPTION=Importer for one time conversion from svn to git.
+EAPI=2
+HOMEPAGE=http://gitorious.org/svn2git/svn2git
+LICENSE=GPL-3
+RDEPEND=dev-util/subversion x11-libs/qt-core dev-util/git
+SLOT=0
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	git	551824b681382dda2f4f5040597fdc07	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4-r2	9324cde5d9328d2445c95232dd8bc158	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=91de3278569c628995c9d01aa576f9b7

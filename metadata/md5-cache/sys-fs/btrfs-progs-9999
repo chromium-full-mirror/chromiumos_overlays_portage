@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=debug-utils? ( dev-python/matplotlib ) acl? ( sys-apps/acl sys-fs/e2fsprogs ) >=dev-util/git-1.6
+DESCRIPTION=Btrfs filesystem utilities
+HOMEPAGE=http://btrfs.wiki.kernel.org/
+IUSE=acl debug-utils
+LICENSE=GPL-2
+RDEPEND=debug-utils? ( dev-python/matplotlib ) acl? ( sys-apps/acl sys-fs/e2fsprogs )
+SLOT=0
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	git	551824b681382dda2f4f5040597fdc07	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=58752281f984bbc09aee5a42a9799d49

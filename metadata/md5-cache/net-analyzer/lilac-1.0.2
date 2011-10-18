@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst prerm setup
+DEPEND=virtual/httpd-php >=app-admin/webapp-config-1.50.15
+DESCRIPTION=Web-based configuration tool written to configure Nagios
+EAPI=2
+HOMEPAGE=http://www.lilacplatform.com
+IUSE=nmap vhosts
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=virtual/mysql-5.0 >=net-analyzer/nagios-3.0 >=dev-php/PEAR-PEAR-1.6.1 dev-lang/php[curl,json,mysql,pcntl,pdo,posix,simplexml] nmap? ( >=net-analyzer/nmap-4.76 ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
+SLOT=1.0.2
+SRC_URI=http://www.lilacplatform.com/downloads/lilac-1.0.2.tar.gz
+_eclasses_=depend.php	b574aac6c7b0a3d079a293788cd20aaf	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	phpconfutils	f0ebaebc168cafb7b6e951280ab2dce5	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	webapp	b5c5b98a2289a6050810cf6022ac00be
+_md5_=215a8fd4da178cfcd7670309a841e2a5

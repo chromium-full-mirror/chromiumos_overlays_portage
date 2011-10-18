@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=>=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=Retrieves and processes .nzb files
+HOMEPAGE=http://www.hellanzb.com/
+IUSE=libnotify ssl
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-solaris
+LICENSE=BSD
+RDEPEND=>=dev-python/twisted-2.0 dev-python/twisted-web || ( app-arch/unrar app-arch/rar ) app-arch/par2cmdline ssl? ( dev-python/pyopenssl ) libnotify? ( dev-python/notify-python ) >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=http://www.hellanzb.com/distfiles/hellanzb-0.13.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3aeef9585fc9574859d9305167b589d3

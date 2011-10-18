@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=IRTrans ASCII Client
+HOMEPAGE=http://www.irtrans.de
+KEYWORDS=~x86 ~amd64
+LICENSE=BSD
+SLOT=0
+SRC_URI=ftp://mars.arge.at/irtrans/irserver-src-5.9.07.tar.gz http://ftp.mars.arge.at/irtrans/irserver-src-5.9.07.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ae525a530efe4db7a6bc074cfa35696a

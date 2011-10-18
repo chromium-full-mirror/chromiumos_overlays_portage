@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=>=app-emacs/dropdown-list-20080316 >=virtual/emacs-21
+DESCRIPTION=Yet another snippet extension for Emacs
+HOMEPAGE=http://code.google.com/p/yasnippet/
+IUSE=doc
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT GPL-2
+RDEPEND=>=app-emacs/dropdown-list-20080316 >=virtual/emacs-21
+SLOT=0
+SRC_URI=http://yasnippet.googlecode.com/files/yasnippet-0.5.10.tar.bz2 doc? ( http://yasnippet.googlecode.com/files/yasnippet-doc-0.5.10.tar.bz2 )
+_eclasses_=elisp	4fb60944284f0928ba836a482f598807	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9e9acd5b3a320ddcd5ad31ea8dd9fb1c

@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm
+DEPEND=>=app-admin/eselect-python-20091230
+DESCRIPTION=Official set of extra plugins for Supybot
+HOMEPAGE=http://supybot.com
+KEYWORDS=~x86
+LICENSE=BSD
+RDEPEND=>=net-irc/supybot-0.83.4 >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=mirror://sourceforge/supybot/Supybot-plugins-20060723.tar.bz2
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=22cdea842176ba3fe3fefadf217fa45f

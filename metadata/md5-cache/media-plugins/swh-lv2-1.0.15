@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install prepare
+DEPEND==sci-libs/fftw-3* dev-libs/libxslt dev-util/pkgconfig
+DESCRIPTION=Large collection of LV2 audio plugins/effects
+EAPI=2
+HOMEPAGE=http://plugin.org.uk/
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND==sci-libs/fftw-3*
+SLOT=0
+SRC_URI=http://plugin.org.uk/lv2/swh-lv2-1.0.15.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=405706abaa66d7e758de9f14ac81e381

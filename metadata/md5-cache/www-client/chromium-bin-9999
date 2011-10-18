@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst setup unpack
+DEPEND=app-arch/unzip
+DESCRIPTION=Open-source version of Google Chrome web browser (binary version)
+EAPI=2
+HOMEPAGE=http://code.google.com/chromium/
+IUSE=+plugins-symlink
+LICENSE=GPL-2
+RDEPEND=app-arch/bzip2 gnome-base/gconf >=media-libs/alsa-lib-1.0.19 <media-libs/jpeg-7 media-libs/libpng >=sys-devel/gcc-4.2 >=dev-libs/nspr-4.7 >=dev-libs/nss-3.12.3 sys-libs/zlib >=x11-libs/gtk+-2.14.7 x11-libs/libXScrnSaver x11-misc/xdg-utils || ( x11-themes/gnome-icon-theme x11-themes/tango-icon-theme x11-themes/xfce4-icon-theme )
+SLOT=0
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b0e45f7e8f9b61e111a52188a5112ca6

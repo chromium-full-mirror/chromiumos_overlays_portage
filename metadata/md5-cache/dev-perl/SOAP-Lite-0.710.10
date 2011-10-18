@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
+DEPEND=dev-perl/XML-Parser dev-perl/libwww-perl virtual/perl-libnet dev-perl/MIME-Lite virtual/perl-MIME-Base64 ssl? ( dev-perl/Crypt-SSLeay ) jabber? ( dev-perl/Net-Jabber ) ssl? ( dev-perl/IO-Socket-SSL ) virtual/perl-IO-Compress >=dev-perl/MIME-tools-5.413 virtual/perl-version dev-lang/perl
+DESCRIPTION=Provides a simple and lightweight interface to the SOAP protocol (sic) both on client and server side.
+HOMEPAGE=http://search.cpan.org/dist/SOAP-Lite/
+IUSE=jabber ssl
+KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=|| ( Artistic GPL-2 )
+RDEPEND=dev-perl/XML-Parser dev-perl/libwww-perl virtual/perl-libnet dev-perl/MIME-Lite virtual/perl-MIME-Base64 ssl? ( dev-perl/Crypt-SSLeay ) jabber? ( dev-perl/Net-Jabber ) ssl? ( dev-perl/IO-Socket-SSL ) virtual/perl-IO-Compress >=dev-perl/MIME-tools-5.413 virtual/perl-version dev-lang/perl
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/M/MK/MKUTTER//SOAP-Lite-0.710.10.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6028fe1ec19d1f080a2f17f248580d8a

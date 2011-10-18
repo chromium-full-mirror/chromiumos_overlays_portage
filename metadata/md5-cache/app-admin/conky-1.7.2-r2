@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst
+DEPEND=X? ( imlib? ( media-libs/imlib2 ) lua-cairo? ( >=dev-lang/toluapp-1.0.93 x11-libs/cairo[X] ) lua-imlib? ( >=dev-lang/toluapp-1.0.93 media-libs/imlib2 ) nvidia? ( media-video/nvidia-settings ) truetype? ( x11-libs/libXft >=media-libs/freetype-2 ) x11-libs/libX11 x11-libs/libXdamage x11-libs/libXext ) alsa? ( media-libs/alsa-lib ) audacious? ( >=media-sound/audacious-1.5 ) curl? ( net-misc/curl ) eve? ( net-misc/curl dev-libs/libxml2 ) portmon? ( dev-libs/glib ) lua? ( >=dev-lang/lua-5.1 ) rss? ( dev-libs/libxml2 net-misc/curl dev-libs/glib ) wifi? ( net-wireless/wireless-tools ) weather-metar? ( net-misc/curl ) weather-xoap? ( dev-libs/libxml2 net-misc/curl ) sys-libs/zlib virtual/libiconv dev-util/pkgconfig
+DESCRIPTION=An advanced, highly configurable system monitor for X
+EAPI=2
+HOMEPAGE=http://conky.sourceforge.net/
+IUSE=alsa apcupsd audacious curl debug eve hddtemp imlib iostats lua lua-cairo lua-imlib math moc mpd nano-syntax nvidia +portmon rss thinkpad truetype vim-syntax weather-metar weather-xoap wifi X
+KEYWORDS=alpha ~amd64 ppc ppc64 sparc x86
+LICENSE=GPL-3 BSD LGPL-2.1 MIT
+RDEPEND=X? ( imlib? ( media-libs/imlib2 ) lua-cairo? ( >=dev-lang/toluapp-1.0.93 x11-libs/cairo[X] ) lua-imlib? ( >=dev-lang/toluapp-1.0.93 media-libs/imlib2 ) nvidia? ( media-video/nvidia-settings ) truetype? ( x11-libs/libXft >=media-libs/freetype-2 ) x11-libs/libX11 x11-libs/libXdamage x11-libs/libXext ) alsa? ( media-libs/alsa-lib ) audacious? ( >=media-sound/audacious-1.5 ) curl? ( net-misc/curl ) eve? ( net-misc/curl dev-libs/libxml2 ) portmon? ( dev-libs/glib ) lua? ( >=dev-lang/lua-5.1 ) rss? ( dev-libs/libxml2 net-misc/curl dev-libs/glib ) wifi? ( net-wireless/wireless-tools ) weather-metar? ( net-misc/curl ) weather-xoap? ( dev-libs/libxml2 net-misc/curl ) sys-libs/zlib virtual/libiconv apcupsd? ( sys-power/apcupsd ) hddtemp? ( app-admin/hddtemp ) moc? ( media-sound/moc ) nano-syntax? ( app-editors/nano ) vim-syntax? ( || ( app-editors/vim app-editors/gvim ) )
+SLOT=0
+SRC_URI=mirror://sourceforge/conky/conky-1.7.2.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=32f5cc72f7d084b80f61058f31c09a44

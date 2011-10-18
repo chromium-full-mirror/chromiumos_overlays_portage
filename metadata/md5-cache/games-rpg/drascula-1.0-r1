@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=>=games-engines/scummvm-0.13.1 app-arch/unzip
+DESCRIPTION=Drascula: The Vampire Strikes Back
+EAPI=2
+HOMEPAGE=http://www.alcachofasoft.com/
+IUSE=+audio linguas_es linguas_de linguas_fr linguas_it
+KEYWORDS=amd64 x86
+LICENSE=drascula
+RDEPEND=>=games-engines/scummvm-0.13.1
+RESTRICT=mirror
+SLOT=0
+SRC_URI=mirror://sourceforge/scummvm/drascula-1.0.zip http://scummvm.svn.sourceforge.net/svnroot/scummvm/scummvm/tags/release-0-13-1/dists/engine-data/drascula.dat -> drascula-0.13.1.dat audio? ( mirror://sourceforge/scummvm/drascula-audio-1.1.zip ) linguas_es? ( mirror://sourceforge/scummvm/drascula-int-1.0.zip ) linguas_de? ( mirror://sourceforge/scummvm/drascula-int-1.0.zip ) linguas_fr? ( mirror://sourceforge/scummvm/drascula-int-1.0.zip ) linguas_it? ( mirror://sourceforge/scummvm/drascula-int-1.0.zip )
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0d55001f8589dfc33ea0f8267b12cd58

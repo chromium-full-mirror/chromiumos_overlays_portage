@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 ) test? ( virtual/rubygems[ruby_targets_ruby18?,ruby_targets_ruby19?] )
+DESCRIPTION=a library for serial port (rs232) access in ruby
+EAPI=2
+HOMEPAGE=http://rubyforge.org/projects/ruby-serialport/
+IUSE=ruby_targets_ruby18 ruby_targets_ruby19 test
+KEYWORDS=~ia64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 ) virtual/rubygems[ruby_targets_ruby18?,ruby_targets_ruby19?]
+SLOT=0
+SRC_URI=mirror://rubygems/serialport-1.0.1.gem
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby-fakegem	2768bd9a49d90592f8e7b88ab4077f20	ruby-ng	94f1106cb53283c8f691122e3077c9e1	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f32e45bea51ed5b3d6209240a565ea97

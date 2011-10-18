@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND=dev-python/pygobject dev-python/dbus-python dev-libs/libxml2 dev-libs/libxslt dev-python/pyxml =app-pda/synce-hal-0.14* =app-pda/synce-librra-0.14* ~app-pda/synce-librtfcomp-1.1 dev-python/PyQt4[X] dev-python/setuptools >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=The KDE (and Gnome) PDA Manager is an application to manage WM5/WM6 PDA devices from Linux.
+EAPI=2
+HOMEPAGE=http://www.guidodiepen.nl/category/synce/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-python/pygobject dev-python/dbus-python dev-libs/libxml2 dev-libs/libxslt dev-python/pyxml =app-pda/synce-hal-0.14* =app-pda/synce-librra-0.14* ~app-pda/synce-librtfcomp-1.1 dev-python/PyQt4[X] >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=mirror://sourceforge/synce/synce-kpm-0.14.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=5925d34cfb6b72e5983869b5e99a00ff

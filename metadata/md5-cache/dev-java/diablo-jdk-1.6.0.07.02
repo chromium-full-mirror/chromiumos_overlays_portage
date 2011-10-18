@@ -1,0 +1,13 @@
+DEFINED_PHASES=install nofetch postinst postrm prerm setup
+DEPEND=jce? ( =dev-java/sun-jce-bin-1.6.0* ) =dev-java/java-config-2*
+DESCRIPTION=Java Development Kit
+HOMEPAGE=http://www.FreeBSDFoundation.org/downloads/java.shtml
+IUSE=X examples nsplugin jce
+KEYWORDS=-* ~x86-fbsd
+LICENSE=sun-bcla-java-vm
+RDEPEND=X? ( x11-libs/libICE x11-libs/libSM x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp x11-libs/libXext x11-libs/libXi x11-libs/libXp x11-libs/libXt x11-libs/libXtst ) =sys-freebsd/freebsd-lib-7* jce? ( =dev-java/sun-jce-bin-1.6.0* ) =dev-java/java-config-2*
+RESTRICT=fetch
+SLOT=1.6
+SRC_URI=diablo-caffe-freebsd7-i386-1.6.0_07-b02.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	java-vm-2	1f212b8a508fe54444797b761bf17527	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=cfae895dba5e7589d7107e404566fe46

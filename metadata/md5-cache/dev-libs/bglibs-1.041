@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install test unpack
+DEPEND=>=sys-apps/sed-4
+DESCRIPTION=Bruce Guenters Libraries Collection
+HOMEPAGE=http://untroubled.org/bglibs/
+KEYWORDS=alpha amd64 hppa ~mips ppc sparc x86 ~ppc64
+LICENSE=LGPL-2.1
+SLOT=0
+SRC_URI=http://untroubled.org/bglibs/archive/bglibs-1.041.tar.gz
+_eclasses_=fixheadtails	059c47dd86229aa6382393274677acfe	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c7fc8adb99af329f9a7777e1f84801cc

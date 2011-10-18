@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst prerm setup unpack
+DEPEND=>=sys-libs/db-4.2 >=sys-libs/zlib-1.1.4 >=media-libs/libpng-1.2 >=media-libs/gd-1.8.3 geoip? ( dev-libs/geoip ) >=app-admin/webapp-config-1.50.15 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Webserver log file analyzer
+HOMEPAGE=http://www.mrunix.net/webalizer/
+IUSE=geoip nls xtended vhosts
+KEYWORDS=~alpha ~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-libs/db-4.2 >=sys-libs/zlib-1.1.4 >=media-libs/libpng-1.2 >=media-libs/gd-1.8.3 geoip? ( dev-libs/geoip ) >=app-admin/webapp-config-1.50.15
+SLOT=0
+SRC_URI=ftp://ftp.mrunix.net/pub/webalizer/webalizer-2.01-10-src.tar.bz2 geoip? ( http://sysd.org/stas/files/active/0/geolizer_2.01-10-patch.20070115.tar.gz ) xtended? ( http://patrickfrei.ch/webalizer/rb21/webalizer-2.01-10-RB21-patch.tar.gz ) mirror://gentoo/webalizer.conf.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	confutils	a80706bb5b9ddcf6bbd14365656d4985	db-use	8d7baa3efc7c38c7d5c5e7353c5460dc	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5	webapp	b5c5b98a2289a6050810cf6022ac00be
+_md5_=d625fb7aa32920b9126117b9259f8967

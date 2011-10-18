@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=ewf? ( app-forensics/libewf ) fuse? ( sys-fs/fuse ) ncurses? ( sys-libs/ncurses ) python? ( dev-lang/python ) readline? ( sys-libs/readline ) s3? ( net-misc/curl dev-libs/expat ) sys-libs/zlib dev-libs/openssl
+DESCRIPTION=Library that implements the AFF image standard
+HOMEPAGE=http://www.afflib.org/
+IUSE=ewf fuse ncurses python qemu readline s3 threads
+KEYWORDS=~amd64 ~arm ~hppa ~ppc ~s390 ~sparc ~x86
+LICENSE=BSD-4
+RDEPEND=ewf? ( app-forensics/libewf ) fuse? ( sys-fs/fuse ) ncurses? ( sys-libs/ncurses ) python? ( dev-lang/python ) readline? ( sys-libs/readline ) s3? ( net-misc/curl dev-libs/expat ) sys-libs/zlib dev-libs/openssl
+SLOT=0
+SRC_URI=http://www.afflib.org/downloads/afflib-3.5.8.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=cced2386385310e96c3f199bdaca5592

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=readline? ( sys-libs/readline ) sys-libs/zlib !dedicated? ( nls? ( virtual/libintl ) gtk? ( x11-libs/gtk+:2 ) !gtk? ( sdl? ( media-libs/libsdl media-libs/sdl-image media-libs/freetype ) !sdl? ( Xaw3d? ( x11-libs/Xaw3d ) !Xaw3d? ( x11-libs/libXaw ) ) ) ggz? ( dev-games/ggz-client-libs ) media-libs/libpng sdl? ( media-libs/sdl-mixer ) auth? ( virtual/mysql ) ) nls? ( sys-devel/gettext ) !dedicated? ( gtk? ( dev-util/pkgconfig ) x11-proto/xextproto ) >=sys-apps/sed-4
+DESCRIPTION=multiplayer strategy game (Civilization Clone)
+EAPI=2
+HOMEPAGE=http://www.freeciv.org/
+IUSE=auth dedicated ggz gtk nls readline sdl Xaw3d
+KEYWORDS=~alpha ~amd64 ~mips ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=readline? ( sys-libs/readline ) sys-libs/zlib !dedicated? ( nls? ( virtual/libintl ) gtk? ( x11-libs/gtk+:2 ) !gtk? ( sdl? ( media-libs/libsdl media-libs/sdl-image media-libs/freetype ) !sdl? ( Xaw3d? ( x11-libs/Xaw3d ) !Xaw3d? ( x11-libs/libXaw ) ) ) ggz? ( dev-games/ggz-client-libs ) media-libs/libpng sdl? ( media-libs/sdl-mixer ) auth? ( virtual/mysql ) )
+SLOT=0
+SRC_URI=mirror://sourceforge/freeciv/freeciv-2.1.11.tar.bz2
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=bdbb8d60db817450f3eeb43d953e3030

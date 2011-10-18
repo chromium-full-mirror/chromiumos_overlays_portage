@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst unpack
+DEPEND=dev-lisp/cl-spatial-trees dev-lisp/cl-clx doc? ( media-gfx/transfig media-libs/netpbm virtual/latex-base ) emacs? ( virtual/emacs ) dev-lisp/common-lisp-controller
+DESCRIPTION=McCLIM is a free software implementation of CLIM.
+HOMEPAGE=http://clim.mikemac.com/ http://clim.mikemac.com/spec/clim.html
+IUSE=emacs doc
+KEYWORDS=amd64 ppc ~sparc x86
+LICENSE=LLGPL-2.1
+RDEPEND=dev-lisp/cl-spatial-trees dev-lisp/cl-clx doc? ( media-gfx/transfig media-libs/netpbm virtual/latex-base ) emacs? ( virtual/emacs )
+SLOT=0
+SRC_URI=http://common-lisp.net/project/mcclim/downloads/mcclim-0.9.2.tar.gz
+_eclasses_=common-lisp	78bda507fdf240a712b120777127629c	common-lisp-common	a6e38969ed3937827ca1f284d015020a	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f8507d9e693035470860d0dc89a526ba

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-perl/Data-Alias >=dev-perl/Moose-0.89 >=dev-perl/namespace-clean-0.08 >=dev-perl/Tie-ToObject-0.01 test? ( dev-perl/Test-use-ok ) dev-lang/perl[-build]
+DESCRIPTION=A visitor for Perl data structures
+EAPI=2
+HOMEPAGE=http://search.cpan.org/dist/Data-Visitor/
+IUSE=test
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
+RDEPEND=dev-perl/Data-Alias >=dev-perl/Moose-0.89 >=dev-perl/namespace-clean-0.08 >=dev-perl/Tie-ToObject-0.01 dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/F/FL/FLORA//Data-Visitor-0.27.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7e0df7a8e1222fc03b1be03a187444f8

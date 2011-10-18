@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install preinst setup test unpack
+DEPEND=svg? ( >=virtual/jdk-1.5 ) !svg? ( >=virtual/jdk-1.4 ) app-arch/unzip dev-java/itext:0 svg? ( dev-java/svgsalamander:0 ) >=dev-java/java-config-2.1.9-r1 >=sys-apps/portage-2.1.2.7 source? ( app-arch/zip ) >=dev-java/ant-core-1.7.0 >=sys-apps/portage-2.1.2.7 >=dev-java/javatoolkit-0.3.0-r2
+DESCRIPTION=100% Java XHTML+CSS renderer
+EAPI=1
+HOMEPAGE=https://xhtmlrenderer.dev.java.net/
+IUSE=minimal svg elibc_FreeBSD doc source elibc_FreeBSD
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND=svg? ( >=virtual/jre-1.5 ) !svg? ( >=virtual/jre-1.4 ) dev-java/itext:0 svg? ( dev-java/svgsalamander:0 ) >=dev-java/java-config-2.1.9-r1 >=sys-apps/portage-2.1.2.7 source? ( app-arch/zip )
+RESTRICT=test
+SLOT=0
+SRC_URI=http://www.pdoubleya.com/projects/flyingsaucer/downloads/r7/flyingsaucer-R7final-src.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	java-ant-2	8ee2028cc96a10184ba4ed021eef48da	java-pkg-2	39b2c3db200ad244ca675b2a1363aa75	java-utils-2	9c079d63349fb3fcd154c1630807a59a	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=22e2d5ac9ed727fa520a077831145197

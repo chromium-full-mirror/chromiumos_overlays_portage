@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=Virtual for FORTRAN 77 BLAS implementation
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 s390 sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos
+RDEPEND=|| ( sci-libs/blas-reference >=sci-libs/blas-atlas-3.7.39 sci-libs/blas-goto >=sci-libs/mkl-9.1.023 sci-libs/acml )
+SLOT=0
+_md5_=31138c43df2d13cc8d45bc653e44a292

@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=dev-lang/ruby dev-lang/perl
+DESCRIPTION=File searcher similar to grep but with fancy output
+EAPI=3
+HOMEPAGE=http://www.incava.org/projects/glark/
+IUSE=bash-completion
+KEYWORDS=~amd64 ~hppa ~mips ~ppc ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos
+LICENSE=LGPL-2.1
+PDEPEND=bash-completion? ( app-shells/bash-completion )
+RDEPEND=dev-lang/ruby bash-completion? ( app-admin/eselect )
+SLOT=0
+SRC_URI=http://www.incava.org/pub/glark/glark-1.8.0.tar.gz
+_eclasses_=bash-completion	f0fab76a98c0e4b3d72b6beb28d3f653
+_md5_=eaf1c51afe25a793a1d8ab3797ae1a6c

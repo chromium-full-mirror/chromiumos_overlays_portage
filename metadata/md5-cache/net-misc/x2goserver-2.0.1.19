@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst unpack
+DESCRIPTION=The X2Go server
+EAPI=1
+HOMEPAGE=http://x2go.berlios.de
+IUSE=+fuse
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=app-admin/sudo net-misc/nx virtual/postgresql-server virtual/ssh fuse? ( sys-fs/sshfs-fuse )
+SLOT=0
+SRC_URI=http://x2go.obviously-nice.de/deb/pool-lenny/x2goserver/x2goserver_2.0.1-19_all.deb
+_eclasses_=versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=ec32ad9287f0f33e2cb9482d50a7e873

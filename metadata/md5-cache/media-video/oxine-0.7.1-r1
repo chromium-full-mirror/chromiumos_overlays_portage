@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup
+DEPEND=media-libs/xine-lib dev-libs/libcdio curl? ( net-misc/curl ) hal? ( sys-apps/hal ) joystick? ( media-libs/libjsw ) jpeg? ( media-gfx/imagemagick media-libs/netpbm media-video/mjpegtools ) lirc? ( app-misc/lirc ) nls? ( virtual/libintl sys-devel/gettext ) png? ( media-gfx/imagemagick media-libs/netpbm media-video/mjpegtools ) X? ( x11-libs/libXext x11-libs/libX11 ) dev-util/pkgconfig =sys-devel/automake-1.9* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=OSD frontend for Xine
+HOMEPAGE=http://oxine.sourceforge.net/
+IUSE=X curl debug dvb exif hal joystick jpeg lirc nls png v4l
+KEYWORDS=amd64 ppc ~ppc64 x86
+LICENSE=GPL-2
+RDEPEND=media-libs/xine-lib dev-libs/libcdio curl? ( net-misc/curl ) hal? ( sys-apps/hal ) joystick? ( media-libs/libjsw ) jpeg? ( media-gfx/imagemagick media-libs/netpbm media-video/mjpegtools ) lirc? ( app-misc/lirc ) nls? ( virtual/libintl sys-devel/gettext ) png? ( media-gfx/imagemagick media-libs/netpbm media-video/mjpegtools ) X? ( x11-libs/libXext x11-libs/libX11 ) virtual/eject
+SLOT=0
+SRC_URI=mirror://sourceforge/oxine/oxine-0.7.1.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1ee8749ba80fc30f68b6bfad9710924a

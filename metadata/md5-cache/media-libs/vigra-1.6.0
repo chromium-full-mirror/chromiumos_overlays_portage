@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare setup test
+DEPEND=png? ( media-libs/libpng ) tiff? ( media-libs/tiff ) jpeg? ( media-libs/jpeg ) fftw? ( >=sci-libs/fftw-3 ) dev-util/pkgconfig
+DESCRIPTION=C++ computer vision library with emphasize on customizable algorithms and data structures
+EAPI=2
+HOMEPAGE=http://kogs-www.informatik.uni-hamburg.de/~koethe/vigra/
+IUSE=doc fftw jpeg png tiff zlib test
+KEYWORDS=amd64 ppc ppc64 sparc x86
+LICENSE=MIT
+RDEPEND=png? ( media-libs/libpng ) tiff? ( media-libs/tiff ) jpeg? ( media-libs/jpeg ) fftw? ( >=sci-libs/fftw-3 )
+SLOT=0
+SRC_URI=http://kogs-www.informatik.uni-hamburg.de/~koethe/vigra/vigra1.6.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=96fa8a3421e001d29f3b9ce37f71f7a2

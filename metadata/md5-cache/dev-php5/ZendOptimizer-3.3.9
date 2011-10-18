@@ -1,0 +1,12 @@
+DEFINED_PHASES=install nofetch postinst setup
+DEPEND==dev-lang/php-5*
+DESCRIPTION=The Zend PHP optimizer and loader for encoded scripts.
+HOMEPAGE=http://www.zend.com/products/zend_optimizer
+KEYWORDS=~amd64 ~x86
+LICENSE=zend-optimizer
+RDEPEND=!dev-php5/xdebug !dev-php5/pecl-apc =dev-lang/php-5*
+RESTRICT=mirror fetch strip
+SLOT=0
+SRC_URI=amd64? ( ZendOptimizer-3.3.9-linux-glibc23-x86_64.tar.gz ) x86? ( ZendOptimizer-3.3.9-linux-glibc23-i386.tar.gz )
+_eclasses_=depend.php	b574aac6c7b0a3d079a293788cd20aaf	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	php-ext-base-r1	84c6f2c70aa8151a2187944b26ca008a	phpconfutils	f0ebaebc168cafb7b6e951280ab2dce5	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=362a5a983d57358aeea5e43438e7ec7e

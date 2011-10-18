@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=Virtual for Parse-CPAN-Meta
+KEYWORDS=~amd64 ~x86
+RDEPEND=|| ( ~dev-lang/perl-5.10.1 ~perl-core/Parse-CPAN-Meta-1.39 )
+SLOT=0
+_md5_=af1bdde06276e9722cd975ad4151a98f

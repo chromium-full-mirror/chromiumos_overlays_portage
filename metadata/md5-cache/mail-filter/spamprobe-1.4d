@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=berkdb? ( >=sys-libs/db-3.2 ) gif? ( media-libs/giflib ) jpeg? ( media-libs/jpeg:0 ) png? ( media-libs/libpng )
+DESCRIPTION=Fast, intelligent, automatic spam detector using Bayesian analysis.
+EAPI=2
+HOMEPAGE=http://spamprobe.sourceforge.net/
+IUSE=berkdb gif jpeg png
+KEYWORDS=amd64 ~ppc x86
+LICENSE=QPL
+RDEPEND=berkdb? ( >=sys-libs/db-3.2 ) gif? ( media-libs/giflib ) jpeg? ( media-libs/jpeg:0 ) png? ( media-libs/libpng )
+SLOT=0
+SRC_URI=mirror://sourceforge/spamprobe/spamprobe-1.4d.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=73ca94d00590edbe9e5a8c7a4296ceb2

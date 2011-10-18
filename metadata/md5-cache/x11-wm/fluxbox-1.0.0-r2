@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=nls? ( sys-devel/gettext ) x11-proto/xextproto xinerama? ( x11-proto/xineramaproto ) x11-libs/libXpm x11-libs/libXrandr xinerama? ( x11-libs/libXinerama ) x11-apps/xmessage x11-libs/libXft truetype? ( media-libs/freetype ) imlib? ( >=media-libs/imlib2-1.2.0[X] ) vim-syntax? ( app-vim/fluxbox-syntax ) !!<x11-themes/fluxbox-styles-fluxmod-20040809-r1 !!<=x11-misc/fluxconf-0.9.9 !!<=x11-misc/fbdesk-1.2.1
+DESCRIPTION=Fluxbox is an X11 window manager featuring tabs and an iconbar
+EAPI=2
+HOMEPAGE=http://www.fluxbox.org
+IUSE=nls xinerama truetype kde gnome +imlib +slit +toolbar vim-syntax
+KEYWORDS=alpha amd64 hppa ia64 ~mips ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE=MIT
+PROVIDE=virtual/blackbox
+RDEPEND=x11-libs/libXpm x11-libs/libXrandr xinerama? ( x11-libs/libXinerama ) x11-apps/xmessage x11-libs/libXft truetype? ( media-libs/freetype ) imlib? ( >=media-libs/imlib2-1.2.0[X] ) vim-syntax? ( app-vim/fluxbox-syntax ) !!<x11-themes/fluxbox-styles-fluxmod-20040809-r1 !!<=x11-misc/fluxconf-0.9.9 !!<=x11-misc/fbdesk-1.2.1
+SLOT=0
+SRC_URI=mirror://sourceforge/fluxbox/fluxbox-1.0.0.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ddd3f8f0aa623b8d2cbab7141b64d9a1

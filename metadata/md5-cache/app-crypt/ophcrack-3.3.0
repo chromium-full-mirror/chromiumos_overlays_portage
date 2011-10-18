@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install
+DEPEND=app-arch/unzip >=dev-util/pkgconfig-0.22 dev-libs/openssl net-libs/netwib qt4? ( x11-libs/qt-gui:4 )
+DESCRIPTION=A time-memory-trade-off-cracker
+EAPI=1
+HOMEPAGE=http://ophcrack.sourceforge.net/
+IUSE=qt4 debug
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=app-crypt/ophcrack-tables dev-libs/openssl net-libs/netwib qt4? ( x11-libs/qt-gui:4 )
+SLOT=0
+SRC_URI=mirror://sourceforge/ophcrack/ophcrack-3.3.0.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=008646a6994a4df0a17f997b06f35837

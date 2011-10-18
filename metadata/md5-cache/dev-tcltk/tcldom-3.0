@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=dev-lang/tcl-8.3.3 >=dev-tcltk/tcllib-1.2 ~dev-tcltk/tclxml-3.0 expat? ( dev-libs/expat )
+DESCRIPTION=Document Object Model For Tcl
+HOMEPAGE=http://tclxml.sourceforge.net/tcldom.html
+IUSE=expat xml threads
+KEYWORDS=~x86 ~ppc ~amd64
+LICENSE=BSD
+RDEPEND=>=dev-lang/tcl-8.3.3 >=dev-tcltk/tcllib-1.2 ~dev-tcltk/tclxml-3.0 expat? ( dev-libs/expat )
+SLOT=0
+SRC_URI=mirror://sourceforge/tclxml/tcldom-3.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2d93e404c86c9919f6ab85aaff7b6097

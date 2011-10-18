@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-libs/DirectFB >=media-libs/jpeg-6b-r7 dev-util/pkgconfig >=sys-apps/sed-4 x11-proto/xproto
+DESCRIPTION=Very thin VNC client for unix framebuffer systems
+HOMEPAGE=http://adam-lilienthal.de/directvnc/
+IUSE=mouse
+KEYWORDS=x86 ~ppc ~amd64
+LICENSE=GPL-2
+RDEPEND=dev-libs/DirectFB >=media-libs/jpeg-6b-r7
+SLOT=0
+SRC_URI=http://www.adam-lilienthal.de/directvnc/directvnc-0.7.5.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d6a0ff484fdf761bdd354f939c6b7caf

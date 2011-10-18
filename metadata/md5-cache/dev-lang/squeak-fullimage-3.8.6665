@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=app-arch/unzip
+DESCRIPTION=Squeak full image file
+HOMEPAGE=http://www.squeak.org/
+KEYWORDS=~x86 ~x86-linux ~ppc-macos
+LICENSE=Apple
+PROVIDE=virtual/squeak-image
+SLOT=3.8
+SRC_URI=http://ftp.squeak.org/current_stable/Squeak3.8-6665-full.zip http://ftp.squeak.org/current_stable/SqueakV3.sources.gz
+_md5_=9063552d2ab6c2b79f292685516a47ff

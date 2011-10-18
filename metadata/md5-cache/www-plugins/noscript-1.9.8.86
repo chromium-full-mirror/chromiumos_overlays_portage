@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst unpack
+DEPEND=|| ( >=www-client/mozilla-firefox-1.5 >=www-client/firefox-bin-1.5 >=www-client/seamonkey-1.1 >=www-client/seamonkey-bin-1.1 >=www-client/icecat-3.5 ) app-arch/unzip
+DESCRIPTION=Restrict active contents in your web browser
+HOMEPAGE=http://noscript.net/
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=|| ( >=www-client/mozilla-firefox-1.5 >=www-client/firefox-bin-1.5 >=www-client/seamonkey-1.1 >=www-client/seamonkey-bin-1.1 >=www-client/icecat-3.5 )
+SLOT=0
+SRC_URI=http://software.informaction.com/data/releases/noscript-1.9.8.86.xpi
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	mozextension	99b0ae4819a15e7d06175c930299b1d2	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=50fb4429c7f7b50efd240b61f18af6dc

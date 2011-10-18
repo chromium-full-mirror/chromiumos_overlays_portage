@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=>=dev-lisp/clisp-2.32 dev-util/cvs dev-vcs/rcs
+DESCRIPTION=Meta-CVS is a version control system built around CVS.
+HOMEPAGE=http://users.footprints.net/~kaz/mcvs.html
+KEYWORDS=~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lisp/clisp-2.32 dev-util/cvs dev-vcs/rcs
+SLOT=0
+SRC_URI=http://users.footprints.net/~kaz/mcvs-1.0.10.tar.gz mirror://debian/pool/main/m/mcvs/mcvs_1.0.10-3.diff.gz
+_eclasses_=common-lisp-common	a6e38969ed3937827ca1f284d015020a	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=43f8a3b61dabb3fb43fe940aa1980507

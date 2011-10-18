@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm test unpack
+DEPEND=>=dev-lang/python-2.4 emacs? ( virtual/emacs ) test? ( app-arch/unzip dev-python/pygments ) >=app-admin/eselect-python-20091230 dev-lang/python dev-vcs/mercurial
+DESCRIPTION=Scalable distributed SCM
+HOMEPAGE=http://www.selenic.com/mercurial/
+IUSE=bugzilla emacs gpg test tk zsh-completion bash-completion
+LICENSE=GPL-2
+PDEPEND=bash-completion? ( app-shells/bash-completion )
+RDEPEND=>=dev-lang/python-2.4 bugzilla? ( dev-python/mysql-python ) gpg? ( app-crypt/gnupg ) zsh-completion? ( app-shells/zsh ) bash-completion? ( app-admin/eselect ) >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+_eclasses_=bash-completion	f0fab76a98c0e4b3d72b6beb28d3f653	distutils	6913a81639c955969c9686be71b03a30	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	mercurial	70764f711413ded990af184cc3a548f0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f567f2d1ede3354b05f0f7f1b38f1d41

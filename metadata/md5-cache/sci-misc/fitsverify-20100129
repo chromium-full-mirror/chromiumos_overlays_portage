@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=>=sci-libs/cfitsio-3 dev-util/pkgconfig
+DESCRIPTION=FITS file format checker
+EAPI=2
+HOMEPAGE=http://heasarc.gsfc.nasa.gov/docs/software/ftools/fitsverify/
+KEYWORDS=~amd64 ~x86
+LICENSE=public-domain
+RDEPEND=>=sci-libs/cfitsio-3
+SLOT=0
+SRC_URI=http://heasarc.gsfc.nasa.gov/docs/software/ftools/fitsverify//fitsverify.tar
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3d13ca3fc47e6bac8f86cdb21c9202e4

@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test
+DEPEND=berkdb? ( sys-libs/db ) gdbm? ( sys-libs/gdbm ) ssl? ( dev-libs/openssl ) socks5? ( >=net-proxy/dante-1.1.13 ) tk? ( dev-lang/tk[threads] ) >=app-admin/eselect-ruby-20090909 !=dev-lang/ruby-cvs-1.9* !<dev-ruby/rdoc-2 !dev-ruby/rexml =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=An object-oriented scripting language
+EAPI=2
+HOMEPAGE=http://www.ruby-lang.org/
+IUSE=berkdb debug doc emacs examples gdbm ipv6 rubytests socks5 ssl tk xemacs
+KEYWORDS=~amd64 ~hppa ~x86 ~x86-fbsd
+LICENSE=|| ( Ruby GPL-2 )
+PDEPEND=emacs? ( app-emacs/ruby-mode ) xemacs? ( app-xemacs/ruby-modes )
+PROVIDE=virtual/ruby
+RDEPEND=berkdb? ( sys-libs/db ) gdbm? ( sys-libs/gdbm ) ssl? ( dev-libs/openssl ) socks5? ( >=net-proxy/dante-1.1.13 ) tk? ( dev-lang/tk[threads] ) >=app-admin/eselect-ruby-20090909 !=dev-lang/ruby-cvs-1.9* !<dev-ruby/rdoc-2 !dev-ruby/rexml
+SLOT=1.9
+SRC_URI=mirror://ruby/ruby-1.9.1-p243.tar.bz2 http://dev.a3li.info/gentoo/distfiles/ruby-patches-1.9.1_p243.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=24aa8ff2e1d2a1d4838e0ed3f963b409

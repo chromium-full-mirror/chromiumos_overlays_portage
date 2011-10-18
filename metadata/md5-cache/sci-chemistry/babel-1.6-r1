@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=!sci-chemistry/openbabel
+DESCRIPTION=Babel is a program to interconvert file formats used in molecular modeling.
+HOMEPAGE=http://smog.com/chem/babel/
+KEYWORDS=~x86 ~ppc ~sparc ~amd64
+LICENSE=as-is
+RDEPEND=!sci-chemistry/openbabel
+SLOT=0
+SRC_URI=http://smog.com/chem/babel/files/babel-1.6.tar.Z
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8bdafd4808782145db90aa1d6b937199

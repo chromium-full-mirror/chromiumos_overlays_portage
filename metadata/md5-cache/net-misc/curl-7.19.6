@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=gnutls? ( net-libs/gnutls app-misc/ca-certificates ) nss? ( !gnutls? ( dev-libs/nss app-misc/ca-certificates ) ) ssl? ( !gnutls? ( !nss? ( dev-libs/openssl app-misc/ca-certificates ) ) ) ldap? ( net-nds/openldap ) idn? ( net-dns/libidn ) ares? ( >=net-dns/c-ares-1.4.0 ) kerberos? ( virtual/krb5 ) libssh2? ( >=net-libs/libssh2-0.16 ) test? ( sys-apps/diffutils dev-lang/perl )
+DESCRIPTION=A Client that groks URLs
+HOMEPAGE=http://curl.haxx.se/ http://curl.planetmirror.com
+IUSE=ssl ipv6 ldap ares gnutls libssh2 nss idn kerberos test
+KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc ~sparc-fbsd x86 ~x86-fbsd
+LICENSE=MIT
+RDEPEND=gnutls? ( net-libs/gnutls app-misc/ca-certificates ) nss? ( !gnutls? ( dev-libs/nss app-misc/ca-certificates ) ) ssl? ( !gnutls? ( !nss? ( dev-libs/openssl app-misc/ca-certificates ) ) ) ldap? ( net-nds/openldap ) idn? ( net-dns/libidn ) ares? ( >=net-dns/c-ares-1.4.0 ) kerberos? ( virtual/krb5 ) libssh2? ( >=net-libs/libssh2-0.16 )
+SLOT=0
+SRC_URI=http://curl.haxx.se/download/curl-7.19.6.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=68ac3d6ca4acc2e80005d8ed6e771306

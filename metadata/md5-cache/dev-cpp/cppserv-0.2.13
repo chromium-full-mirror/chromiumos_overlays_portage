@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst setup test unpack
+DEPEND=net-libs/socket++ =dev-cpp/sptk-3.5* >=dev-libs/apr-1.2 dev-libs/boost =www-servers/apache-2*
+DESCRIPTION=CPPSERV is an application server providing Servlet-like API in C++ and a C++ Server Pages parser.
+HOMEPAGE=http://www.total-knowledge.com/progs/cppserv
+IUSE=debug
+KEYWORDS=~alpha ~x86 ~mips ~amd64
+LICENSE=LGPL-2
+RDEPEND=net-libs/socket++ =dev-cpp/sptk-3.5* >=dev-libs/apr-1.2 dev-libs/boost =www-servers/apache-2*
+SLOT=0
+SRC_URI=mirror://sourceforge/cppserv/cppserv-0.2.13.tar.bz2
+_eclasses_=apache-module	075afd5430fb1c448d318e76dbe83dc6	depend.apache	a471783c63e68987a2b20eb46f9edf68	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=44ffcc39b380b0553f7318295c6cea6c

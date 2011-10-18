@@ -1,0 +1,8 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=Linux firmware files
+HOMEPAGE=http://www.kernel.org/pub/linux/kernel/people/dwmw2/firmware
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=mirror://kernel/linux/kernel/people/dwmw2/firmware/linux-firmware-20090421.tar.bz2
+_md5_=5f05b817358e9cb50060dafa5401a280

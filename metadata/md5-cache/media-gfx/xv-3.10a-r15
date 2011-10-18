@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=x11-libs/libXt jpeg? ( >=media-libs/jpeg-6b ) tiff? ( >=media-libs/tiff-3.6.1-r2 ) png? ( >=media-libs/libpng-1.2 >=sys-libs/zlib-1.1.4 )
+DESCRIPTION=An interactive image manipulation program that supports a wide variety of image formats
+HOMEPAGE=http://www.trilon.com/xv/index.html http://www.sonic.net/~roelofs/greg_xv.html
+IUSE=jpeg tiff png
+KEYWORDS=alpha amd64 hppa ia64 ~mips ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE=xv
+RDEPEND=x11-libs/libXt jpeg? ( >=media-libs/jpeg-6b ) tiff? ( >=media-libs/tiff-3.6.1-r2 ) png? ( >=media-libs/libpng-1.2 >=sys-libs/zlib-1.1.4 )
+SLOT=0
+SRC_URI=mirror://sourceforge/png-mng/xv-3.10a-jumbo-patches-20070520.tar.gz ftp://ftp.cis.upenn.edu/pub/xv/xv-3.10a.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e1c3b7aa14d77e9e5371e438e6f57952

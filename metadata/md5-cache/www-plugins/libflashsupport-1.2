@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=gnutls? ( net-libs/gnutls ) !gnutls? ( ssl? ( dev-libs/openssl ) ) pulseaudio? ( media-sound/pulseaudio )
+DESCRIPTION=Adds pulseaudio/esd/oss audio output and HTTPS/RTMPS support to Adobe Flash 9
+HOMEPAGE=http://pulseaudio.org/wiki/FlashPlayer9Solution
+IUSE=pulseaudio esd oss ssl gnutls
+KEYWORDS=~amd64 ~x86
+LICENSE=Adobe-SourceCode
+RDEPEND=gnutls? ( net-libs/gnutls ) !gnutls? ( ssl? ( dev-libs/openssl ) ) pulseaudio? ( media-sound/pulseaudio ) esd? ( media-sound/esound ) !>=www-plugins/adobe-flash-10
+SLOT=0
+SRC_URI=https://svn.revolutionlinux.com/MILLE/XTERM/trunk/libflashsupport/Tarballs/libflashsupport-1.2.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=5ffa038c2c423f03959d45c6af402916

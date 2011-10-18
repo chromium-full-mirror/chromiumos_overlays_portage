@@ -1,0 +1,11 @@
+DEFINED_PHASES=configure install postinst postrm prepare test
+DEPEND=doc? ( app-doc/doxygen[latex] ) python? ( dev-lang/swig )
+DESCRIPTION=Les Houches Parton Density Function unified library
+EAPI=2
+HOMEPAGE=http://projects.hepforge.org/lhapdf/
+IUSE=cxx doc examples python test
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=http://www.hepforge.org/archive/lhapdf/lhapdf-5.8.0.tar.gz test? ( http://svn.hepforge.org/lhapdf/pdfsets/tags/5.8.0/cteq61.LHgrid http://svn.hepforge.org/lhapdf/pdfsets/tags/5.8.0/cteq61.LHpdf )
+_md5_=8a40e278065c0610a205321394aa9ce7

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=media-libs/libsdl media-libs/libpng media-libs/jpeg media-libs/libvorbis media-libs/freetype:2
+DESCRIPTION=Hover hockey
+EAPI=2
+HOMEPAGE=http://home.no.net/munsuun/tuxpuck/
+KEYWORDS=alpha amd64 ppc sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=media-libs/libsdl media-libs/libpng media-libs/jpeg media-libs/libvorbis
+SLOT=0
+SRC_URI=http://home.no.net/munsuun/tuxpuck/files/tuxpuck-0.8.2.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f47ea713a4704674ea5c8d2b1f2eade9

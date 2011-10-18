@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=media-libs/jpeg x11-libs/libX11 x11-libs/libXpm x11-libs/libSM x11-proto/xproto opengl? ( virtual/opengl ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=A graphical user interface toolkit for X
+EAPI=2
+HOMEPAGE=http://www.nongnu.org/xforms/
+IUSE=doc opengl
+KEYWORDS=~amd64 ~arm ~ppc ~ppc64 ~sh ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~sparc-solaris
+LICENSE=LGPL-2.1
+RDEPEND=media-libs/jpeg x11-libs/libX11 x11-libs/libXpm x11-libs/libSM x11-proto/xproto opengl? ( virtual/opengl )
+SLOT=0
+SRC_URI=http://savannah.nongnu.org/download/xforms/xforms-1.0.92sp2.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=0f2b9bda87ecf7fcac049e047e8c6bda

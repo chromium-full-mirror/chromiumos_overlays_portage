@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND==dev-libs/glib-1.2* dev-util/gtk-doc
+DESCRIPTION=Library to manipulate OLE2 Structured Storage files
+HOMEPAGE=http://www.gnome.org/
+KEYWORDS=alpha ~amd64 ppc sparc x86
+LICENSE=GPL-2
+RDEPEND==dev-libs/glib-1.2*
+SLOT=0
+SRC_URI=mirror://gnome/sources/libole2/0.2/libole2-0.2.4.tar.bz2
+_eclasses_=gnome.org	6d236bfa516020939a4adbc435063f79
+_md5_=3381b63cc80963064812146d557538db

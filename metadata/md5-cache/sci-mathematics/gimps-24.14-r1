@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm setup
+DEPEND=>=sys-libs/glibc-2.1
+DESCRIPTION=GIMPS - The Great Internet Mersenne Prime Search
+HOMEPAGE=http://mersenne.org/
+KEYWORDS=-* amd64 x86
+LICENSE=as-is
+RDEPEND=>=sys-libs/glibc-2.1
+SLOT=0
+SRC_URI=ftp://mersenne.org/gimps/sprime2414.tar.gz
+_eclasses_=linux-info	8d722422d00ae99ed52a790b20b9bfc4	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=4270955bbc34db0d3bb3e9912f486df7

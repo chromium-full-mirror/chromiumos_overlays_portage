@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst prepare setup test
+DEPEND=dev-libs/libevent || ( >=sys-apps/util-linux-2.16 <sys-libs/e2fsprogs-libs-1.41.8 ) tcmalloc? ( dev-util/google-perftools ) memcache? ( dev-libs/libmemcached ) drizzle? ( dev-db/libdrizzle ) sqlite? ( dev-db/sqlite:3 ) tokyocabinet? ( dev-db/tokyocabinet )
+DESCRIPTION=Generic framework to farm out work to other machines
+EAPI=2
+HOMEPAGE=http://www.gearman.org/
+IUSE=debug tcmalloc +memcache drizzle sqlite tokyocabinet
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=dev-libs/libevent || ( >=sys-apps/util-linux-2.16 <sys-libs/e2fsprogs-libs-1.41.8 ) tcmalloc? ( dev-util/google-perftools ) memcache? ( dev-libs/libmemcached ) drizzle? ( dev-db/libdrizzle ) sqlite? ( dev-db/sqlite:3 ) tokyocabinet? ( dev-db/tokyocabinet )
+SLOT=0
+SRC_URI=http://launchpad.net/gearmand/trunk/0.12/+download/gearmand-0.12.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=69099d173d1df9ee8fbfb63eb9475fda

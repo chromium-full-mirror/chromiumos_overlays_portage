@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm preinst prepare test
+DEPEND=dev-libs/boost[python] dev-libs/glib:2 dev-python/pygobject:2 dev-python/pygtk:2 media-libs/xine-lib >=net-libs/rb_libtorrent-0.14.1[python] || ( net-libs/xulrunner:1.9 net-libs/xulrunner:1.8 ) x11-libs/gtk+:2 x11-libs/libX11 >=dev-python/pyrex-0.9.6.4 dev-util/pkgconfig >=sys-apps/sed-4 >=app-admin/eselect-python-20091230 >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=Open source video player and podcast client
+EAPI=2
+HOMEPAGE=http://www.getmiro.com/
+IUSE=+gstreamer libnotify
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/boost[python] dev-libs/glib:2 dev-python/pygobject:2 dev-python/pygtk:2 media-libs/xine-lib >=net-libs/rb_libtorrent-0.14.1[python] || ( net-libs/xulrunner:1.9 net-libs/xulrunner:1.8 ) x11-libs/gtk+:2 x11-libs/libX11 gstreamer? ( dev-python/gst-python:0.10 ) libnotify? ( dev-python/notify-python ) || ( dev-lang/python[sqlite] dev-python/pysqlite:2 ) dev-python/dbus-python dev-python/gconf-python dev-python/gtkmozembed-python dev-python/pycairo >=app-admin/eselect-python-20091230 >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=http://ftp.osuosl.org/pub/pculture.org/miro/src/miro-2.5.4.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0fe161ef396227e3ebdae2d20a6e3c8a

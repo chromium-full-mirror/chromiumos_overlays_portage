@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=media-libs/libdvdread media-libs/libdvdnav
+DESCRIPTION=command line tool to automate the process of ripping and burning DVD
+HOMEPAGE=http://developer.berlios.de/projects/lxdvdrip/
+KEYWORDS=~x86 ~amd64 ~ppc
+LICENSE=GPL-2
+RDEPEND=media-libs/libdvdread media-libs/libdvdnav >=media-video/dvdauthor-0.6.9 media-video/streamdvd media-video/mpgtx
+SLOT=0
+SRC_URI=mirror://berlios/lxdvdrip/lxdvdrip-1.70.tgz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=dfb3209046944de7995b067a92ecd2a7

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=>=sys-devel/gcc-config-1.4 >=sys-libs/zlib-1.1.4 >=sys-apps/texinfo-4.2-r4 !build? ( >=sys-libs/ncurses-5.2-r2 ) !build? ( nls? ( sys-devel/gettext ) ) >=sys-apps/sed-4 sys-devel/gnuconfig
+DESCRIPTION=Modern C/C++ compiler written by the GNU people
+HOMEPAGE=http://gcc.gnu.org/
+IUSE=static nls build multislot nocxx fortran
+KEYWORDS=x86 ppc sparc alpha
+LICENSE=GPL-2 LGPL-2.1
+RDEPEND=>=sys-devel/gcc-config-1.4 >=sys-libs/zlib-1.1.4 >=sys-apps/texinfo-4.2-r4 !build? ( >=sys-libs/ncurses-5.2-r2 )
+SLOT=2.95
+SRC_URI=ftp://gcc.gnu.org/pub/gcc/releases/gcc-2.95.3/gcc-2.95.3.tar.gz mirror://gentoo/gcc-2.95.3-patches-1.2.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fixheadtails	059c47dd86229aa6382393274677acfe	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	gnuconfig	9200bfc8e0184357abfb86a08edd4fc3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=1cf975e8c037817b199946494c0b6669

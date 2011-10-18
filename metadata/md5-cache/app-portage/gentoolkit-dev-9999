@@ -1,0 +1,10 @@
+DEFINED_PHASES=install preinst prepare test unpack
+DEPEND=dev-lang/python[xml] dev-util/subversion net-misc/rsync
+DESCRIPTION=Collection of developer scripts for Gentoo
+EAPI=2
+HOMEPAGE=http://www.gentoo.org/proj/en/portage/tools/index.xml
+LICENSE=GPL-2
+RDEPEND=dev-lang/python[xml] sys-apps/portage dev-lang/perl
+SLOT=0
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	subversion	5781247c771be19b5dbcbb7253078ad2	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=12489b8bc52d26545a49528ecd243bdc

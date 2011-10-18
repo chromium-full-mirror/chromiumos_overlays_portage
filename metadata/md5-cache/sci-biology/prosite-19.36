@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=emboss? ( sci-biology/emboss )
+DESCRIPTION=A protein families and domains database
+HOMEPAGE=http://ca.expasy.org/prosite
+IUSE=emboss minimal
+KEYWORDS=amd64 ppc ppc64 ~sparc x86
+LICENSE=swiss-prot
+RDEPEND=emboss? ( sci-biology/emboss )
+SLOT=0
+SRC_URI=mirror://gentoo/prosite-19.36.tar.bz2
+_md5_=daf11b2222b2d7f2d2ff85c662ef347f

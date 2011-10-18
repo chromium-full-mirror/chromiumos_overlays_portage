@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND=>=x11-libs/gtk+-2 dev-util/pkgconfig
+DESCRIPTION=GTK+ Flat Theme Engine
+HOMEPAGE=http://themes.freshmeat.net/projects/gtk2flat
+KEYWORDS=alpha amd64 hppa ia64 ppc sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2
+SLOT=2
+SRC_URI=http://download.freshmeat.net/themes/gtk2flat/gtk2flat-default.tar.gz
+_md5_=d8f41534e9175a58f274b0f2d5ea271d

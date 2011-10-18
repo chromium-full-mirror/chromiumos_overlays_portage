@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
+DEPEND=virtual/perl-Module-Build virtual/perl-ExtUtils-CBuilder
+DESCRIPTION=Encode::Detect - An Encode::Encoding subclass that detects the encoding of data
+HOMEPAGE=http://search.cpan.org/dist/Encode-Detect/
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x86-solaris
+LICENSE=MPL-1.1
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/J/JG/JGMYERS//Encode-Detect-1.01.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9360178657e300ede70baf0e7a1d7f93

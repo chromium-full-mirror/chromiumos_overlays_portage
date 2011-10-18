@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install preinst prepare setup test unpack
+DEPEND=|| ( =virtual/jdk-1.5* =virtual/jdk-1.4* ) javamail? ( dev-java/sun-jaf:0 java-virtuals/javamail ) jms? ( java-virtuals/jms ) >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip ) >=dev-java/ant-core-1.7.0 >=dev-java/javatoolkit-0.3.0-r2
+DESCRIPTION=An easy-to-use Java logging toolkit designed for secure, performance-oriented logging.
+EAPI=2
+HOMEPAGE=http://avalon.apache.org/
+IUSE=elibc_FreeBSD doc javamail jms source elibc_FreeBSD
+KEYWORDS=amd64 ~ia64 ppc ppc64 x86
+LICENSE=Apache-1.1
+RDEPEND=>=virtual/jre-1.4 javamail? ( dev-java/sun-jaf:0 java-virtuals/javamail ) jms? ( java-virtuals/jms ) >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
+SLOT=1.2
+SRC_URI=mirror://apache/avalon/logkit/v1.2/LogKit-1.2-src.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	java-ant-2	8ee2028cc96a10184ba4ed021eef48da	java-pkg-2	39b2c3db200ad244ca675b2a1363aa75	java-utils-2	9c079d63349fb3fcd154c1630807a59a	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=3faa02504b78e77126709d1008c5a2df

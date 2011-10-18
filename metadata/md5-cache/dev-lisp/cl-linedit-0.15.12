@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm preinst unpack
+DEPEND=dev-lisp/cl-terminfo dev-lisp/cl-uffi dev-lisp/cl-osicat dev-lisp/common-lisp-controller
+DESCRIPTION=Linedit is a readline-style library written in Common Lisp that provides customizable line-editing features.
+HOMEPAGE=http://www.common-lisp.net/project/linedit/
+KEYWORDS=~amd64 ~ppc ~sparc x86
+LICENSE=MIT
+RDEPEND=dev-lisp/cl-terminfo dev-lisp/cl-uffi dev-lisp/cl-osicat
+SLOT=0
+SRC_URI=http://common-lisp.net/project/linedit/files/linedit_0.15.12.tar.gz
+_eclasses_=common-lisp	78bda507fdf240a712b120777127629c	common-lisp-common	a6e38969ed3937827ca1f284d015020a	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=fa5ad7f1eb2ed7e235bb1772564b028a

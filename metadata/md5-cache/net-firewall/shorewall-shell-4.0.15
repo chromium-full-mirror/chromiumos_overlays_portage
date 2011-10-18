@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=net-firewall/iptables sys-apps/iproute2 !<net-firewall/shorewall-4.0
+DESCRIPTION=Shoreline Firewall shell-based compiler.
+HOMEPAGE=http://www.shorewall.net/
+KEYWORDS=~alpha amd64 hppa ppc ppc64 ~sparc x86
+LICENSE=GPL-2
+PDEPEND==net-firewall/shorewall-common-4.0.15*
+RDEPEND=net-firewall/iptables sys-apps/iproute2 !<net-firewall/shorewall-4.0
+SLOT=0
+SRC_URI=http://www1.shorewall.net/pub/shorewall/4.0/shorewall-4.0.15/shorewall-shell-4.0.15.tar.bz2
+_eclasses_=versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=0acc80b00f0e14d1e88ecf22368dff9f

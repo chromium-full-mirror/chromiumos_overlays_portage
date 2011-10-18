@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=Synchronize Windows CE devices with Linux. Serial Library.
+HOMEPAGE=http://sourceforge.net/projects/synce/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=MIT
+RDEPEND=>=net-dialup/ppp-2.4.1
+SLOT=0
+SRC_URI=mirror://sourceforge/synce/synce-serial-0.11.tar.gz
+_md5_=52cc6a12030d469f653c37e64c8ae41f

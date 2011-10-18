@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm
+DEPEND=zlib? ( sys-libs/zlib ) x11-libs/openmotif virtual/opengl
+DESCRIPTION=Interactive Geometry Viewer
+HOMEPAGE=http://geomview.sourceforge.net
+IUSE=avg bzip2 debug emacs netpbm pdf zlib
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=LGPL-2.1
+RDEPEND=zlib? ( sys-libs/zlib ) x11-libs/openmotif virtual/opengl netpbm? ( >=media-libs/netpbm-10.37.0 ) bzip2? ( app-arch/bzip2 ) app-arch/gzip pdf? ( || ( app-text/xpdf app-text/gv app-text/gsview app-text/epdfview app-text/acroread ) ) virtual/w3m
+SLOT=0
+SRC_URI=http://mesh.dl.sourceforge.net/sourceforge/geomview/geomview-1.9.2.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b5ed02e811b20553050d00411a70028e

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=doc? ( dev-tex/latex2html )
+DESCRIPTION=A parallel port pin programming library
+HOMEPAGE=http://parapin.sourceforge.net/
+IUSE=doc
+KEYWORDS=x86 ~amd64
+LICENSE=LGPL-2.1
+SLOT=0
+SRC_URI=mirror://sourceforge/parapin/parapin-1.0.0.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=afc0a49af9d24095d20c15914e90300a

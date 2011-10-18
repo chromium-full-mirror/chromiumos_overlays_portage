@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst unpack
+DEPEND=net-analyzer/net-snmp dev-libs/openssl virtual/mysql =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Spine is a fast poller for Cacti (formerly known as Cactid)
+HOMEPAGE=http://cacti.net/spine_info.php
+KEYWORDS=amd64 ppc ppc64 sparc x86
+LICENSE=LGPL-2.1
+RDEPEND=net-analyzer/net-snmp dev-libs/openssl virtual/mysql >net-analyzer/cacti-0.8.7
+SLOT=0
+SRC_URI=http://www.cacti.net/downloads/spine/cacti-spine-0.8.7e.tar.gz http://www.cacti.net/downloads/spine/patches/snmp_v3_fix.patch http://www.cacti.net/downloads/spine/patches/mysql_client_reconnect.patch http://www.cacti.net/downloads/spine/patches/ping_reliability.patch
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=de0404267ed3a9336470ff8d4b382356

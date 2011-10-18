@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DEPEND=>=dev-lang/php-5.2.0 dev-lang/php >=dev-php/PEAR-PEAR-1.6.1
+DESCRIPTION=SabreAMF is a Flash Remoting server and client for PHP.
+HOMEPAGE=http://osflash.org/sabreamf
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=>=dev-lang/php-5.2.0 dev-lang/php >=dev-php/PEAR-PEAR-1.6.1
+SLOT=0
+SRC_URI=http://sabreamf.googlecode.com/files/SabreAMF-1.1.187.tgz
+_eclasses_=depend.php	b574aac6c7b0a3d079a293788cd20aaf	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	php-pear-lib-r1	f8a94c3d473ac3f83126f14fdffbb8da	phpconfutils	f0ebaebc168cafb7b6e951280ab2dce5	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=04829ee2a1333a28b31b46906c968116

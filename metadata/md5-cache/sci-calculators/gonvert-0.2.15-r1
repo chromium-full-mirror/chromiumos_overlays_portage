@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=>=dev-python/pygtk-2.8.2
+DESCRIPTION=Unit conversion utility written in PyGTK
+HOMEPAGE=http://unihedron.com/projects/gonvert/gonvert.php
+KEYWORDS=~amd64 ~x86 ~ppc
+LICENSE=GPL-2
+RDEPEND=>=dev-python/pygtk-2.8.2
+SLOT=0
+SRC_URI=http://unihedron.com/projects/gonvert/downloads/gonvert-0.2.15.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=543f3fc27b243468d5dc71bddf1be710

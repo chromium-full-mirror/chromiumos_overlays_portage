@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=>=app-emacs/apel-10.6 virtual/flim app-emacs/semi bbdb? ( app-emacs/bbdb ) >=virtual/emacs-21
+DESCRIPTION=Yet Another Message Interface on Emacsen
+HOMEPAGE=http://www.gohome.org/wl/
+IUSE=bbdb ssl linguas_ja
+KEYWORDS=~alpha ~amd64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=!app-emacs/wanderlust-cvs >=app-emacs/apel-10.6 virtual/flim app-emacs/semi bbdb? ( app-emacs/bbdb ) >=virtual/emacs-21
+SLOT=0
+SRC_URI=mirror://gentoo/wanderlust-2.15.7_pre20090820.tar.bz2
+_eclasses_=elisp	4fb60944284f0928ba836a482f598807	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e01d91567686fe5791ed1abd3b8d89a2

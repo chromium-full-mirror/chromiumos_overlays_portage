@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=sys-libs/ncurses-5.2 dev-lang/perl
+DESCRIPTION=the nice editor, easy to use for the beginner and powerful for the wizard
+HOMEPAGE=http://ne.dsi.unimi.it/
+KEYWORDS=amd64 ppc ppc64 x86
+LICENSE=GPL-2
+RDEPEND=>=sys-libs/ncurses-5.2
+SLOT=0
+SRC_URI=http://ne.dsi.unimi.it/ne-1.42.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1b1fb604dee821a25337e252059d4dff

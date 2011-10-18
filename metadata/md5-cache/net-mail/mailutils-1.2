@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install setup
+DEPEND=!virtual/mailx !mail-client/nmh !mail-filter/libsieve dev-scheme/guile gdbm? ( sys-libs/gdbm ) mysql? ( virtual/mysql ) postgres? ( virtual/postgresql-base ) nls? ( sys-devel/gettext ) virtual/mta test? ( dev-util/dejagnu )
+DESCRIPTION=A useful collection of mail servers, clients, and filters.
+HOMEPAGE=http://www.gnu.org/software/mailutils/mailutils.html
+IUSE=nls pam mysql postgres gdbm test
+KEYWORDS=~alpha ~amd64 ~hppa ~ppc ~sparc ~x86
+LICENSE=GPL-2 LGPL-2.1
+PROVIDE=virtual/mailx
+RDEPEND=!virtual/mailx !mail-client/nmh !mail-filter/libsieve dev-scheme/guile gdbm? ( sys-libs/gdbm ) mysql? ( virtual/mysql ) postgres? ( virtual/postgresql-base ) nls? ( sys-devel/gettext ) virtual/mta
+SLOT=0
+SRC_URI=http://ftp.gnu.org/gnu/mailutils/mailutils-1.2.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=017028fd2842a83ce37394e582036332

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst prepare setup
+DEPEND=dev-lang/lua usb? ( dev-libs/libusb:0 )
+DESCRIPTION=Entropy Key userspace daemon
+EAPI=2
+HOMEPAGE=http://www.entropykey.co.uk/
+IUSE=usb kernel_linux
+KEYWORDS=~amd64 ~x86
+LICENSE=as-is
+RDEPEND=dev-lang/lua usb? ( dev-libs/libusb:0 ) dev-libs/luasocket kernel_linux? ( sys-fs/udev ) usb? ( !kernel_linux? ( sys-apps/usbutils ) )
+SLOT=0
+SRC_URI=http://www.entropykey.co.uk/res/download/ekeyd-1.1.1.tar.gz
+_eclasses_=linux-info	8d722422d00ae99ed52a790b20b9bfc4	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=417cb8d17c20530c8dbc0ad9556148b4

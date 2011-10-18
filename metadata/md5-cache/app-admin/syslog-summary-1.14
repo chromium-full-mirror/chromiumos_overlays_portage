@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare
+DEPEND=>=app-admin/eselect-python-20091230 >=dev-lang/python-2.5
+DESCRIPTION=Summarizes the contents of a syslog log file.
+EAPI=2
+HOMEPAGE=http://github.com/dpaleino/syslog-summary
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=>=app-admin/eselect-python-20091230 >=dev-lang/python-2.5
+SLOT=0
+SRC_URI=http://cloud.github.com/downloads/dpaleino/syslog-summary/syslog-summary-1.14.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9da9d4451b2a5bdcc57c45764b52d618

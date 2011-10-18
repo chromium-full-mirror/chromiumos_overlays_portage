@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup
+DEPEND=gpm? ( sys-libs/gpm ) truetype? ( >=media-libs/freetype-2 ) png? ( >=media-libs/libpng-1.2.7 ) mng? ( media-libs/lcms media-libs/libmng ) >=media-libs/jpeg-6b:0 >=sys-apps/baselayout-1.9.4-r5 app-arch/cpio media-gfx/fbgrab !sys-apps/lcdsplash >=dev-libs/klibc-1.5 dev-util/pkgconfig =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Framebuffer splash utilities.
+EAPI=2
+HOMEPAGE=http://fbsplash.berlios.de
+IUSE=hardened +png +truetype +mng gpm fbcondecor
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=gpm? ( sys-libs/gpm ) truetype? ( >=media-libs/freetype-2 ) png? ( >=media-libs/libpng-1.2.7 ) mng? ( media-libs/lcms media-libs/libmng ) >=media-libs/jpeg-6b:0 >=sys-apps/baselayout-1.9.4-r5 app-arch/cpio media-gfx/fbgrab !sys-apps/lcdsplash
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://berlios/fbsplash/splashutils-lite-1.5.4.3.tar.bz2 mirror://berlios/fbsplash/splashutils-gentoo-1.0.16.tar.bz2 mirror://gentoo/miscsplashutils-0.1.8.tar.bz2 mirror://sourceforge/libpng/libpng-1.2.42.tar.bz2 ftp://ftp.uu.net/graphics/jpeg/jpegsrc.v8a.tar.gz mirror://sourceforge/freetype/freetype-2.3.12.tar.bz2 http://www.gzip.org/zlib/zlib-1.2.3.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=fca7665556a336d8f9e85ed4ed4ac68c

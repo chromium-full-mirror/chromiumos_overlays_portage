@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install prepare setup
+DEPEND=dev-libs/boost virtual/libusb:0 x11-libs/libX11 dev-util/scons
+DESCRIPTION=Userspace Xbox 360 Controller driver
+EAPI=2
+HOMEPAGE=http://pingus.seul.org/~grumbel/xboxdrv/
+IUSE=daemon
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=dev-libs/boost virtual/libusb:0 x11-libs/libX11 daemon? ( dev-python/dbus-python dev-python/pygobject )
+SLOT=0
+SRC_URI=http://pingus.seul.org/~grumbel/xboxdrv/xboxdrv-linux-0.4.10.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	linux-info	8d722422d00ae99ed52a790b20b9bfc4	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=c9c2c7e67dfdbbe266585c40023bb514

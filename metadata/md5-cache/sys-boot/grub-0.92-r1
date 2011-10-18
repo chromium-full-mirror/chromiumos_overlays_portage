@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst preinst prerm unpack
+DEPEND=>=sys-libs/ncurses-5.2-r5
+DESCRIPTION=GNU GRUB boot loader
+HOMEPAGE=http://www.gnu.org/software/grub/
+KEYWORDS=-* x86
+LICENSE=GPL-2
+PROVIDE=virtual/bootloader
+RDEPEND=>=sys-libs/ncurses-5.2-r5
+SLOT=0
+SRC_URI=ftp://alpha.gnu.org/gnu/grub/grub-0.92.tar.gz http://dev.gentoo.org/~seemant/distfiles/grub-0.92-gentoo-0.2.tar.bz2 http://dev.gentoo.org/~seemant/distfiles/splash.xpm.gz mirror://gentoo/splash.xpm.gz mirror://gentoo/grub-0.92-gentoo-0.2.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	mount-boot	932166cd49a73ccf2631de9e6ac3866b	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=bcf2ac153e2309c31d4de406949afc36

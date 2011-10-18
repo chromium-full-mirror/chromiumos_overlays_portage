@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst postrm setup test
+DEPEND=sys-libs/zlib emacs? ( virtual/emacs ) >=dev-libs/libpcre-7.6 >=dev-libs/botan-1.8.0 >=dev-db/sqlite-3.3.8 >=dev-lang/lua-5.1 net-dns/libidn >=dev-libs/boost-1.33.1 nls? ( >=sys-devel/gettext-0.11.5 ) doc? ( sys-apps/texinfo )
+DESCRIPTION=Monotone Distributed Version Control System
+EAPI=2
+HOMEPAGE=http://monotone.ca
+IUSE=doc emacs ipv6 nls bash-completion
+KEYWORDS=amd64 ~ia64 ppc x86
+LICENSE=GPL-2
+PDEPEND=bash-completion? ( app-shells/bash-completion )
+RDEPEND=sys-libs/zlib emacs? ( virtual/emacs ) >=dev-libs/libpcre-7.6 >=dev-libs/botan-1.8.0 >=dev-db/sqlite-3.3.8 >=dev-lang/lua-5.1 net-dns/libidn bash-completion? ( app-admin/eselect )
+SLOT=1
+SRC_URI=http://monotone.ca/downloads/0.45/monotone-0.45.tar.gz
+_eclasses_=bash-completion	f0fab76a98c0e4b3d72b6beb28d3f653	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a28f2cc95fcc0b74a2d564ee38ddc54c

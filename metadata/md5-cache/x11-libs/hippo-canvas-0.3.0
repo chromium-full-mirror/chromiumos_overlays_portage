@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=>=dev-libs/glib-2.6 dev-libs/libcroco >=x11-libs/gtk+-2.6 x11-libs/pango python? ( dev-lang/python dev-python/pycairo dev-python/pygtk ) dev-util/pkgconfig doc? ( dev-util/gtk-doc ) >=sys-apps/sed-4
+DESCRIPTION=A canvas library based on GTK+-2, Cairo, and Pango
+EAPI=2
+HOMEPAGE=http://live.gnome.org/HippoCanvas
+IUSE=doc python
+KEYWORDS=~amd64 x86
+LICENSE=LGPL-2
+RDEPEND=>=dev-libs/glib-2.6 dev-libs/libcroco >=x11-libs/gtk+-2.6 x11-libs/pango python? ( dev-lang/python dev-python/pycairo dev-python/pygtk )
+SLOT=0
+SRC_URI=mirror://gnome/sources/hippo-canvas/0.3/hippo-canvas-0.3.0.tar.bz2
+_eclasses_=fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f1c447938f0e10bd8f8a6ce3a975ba13

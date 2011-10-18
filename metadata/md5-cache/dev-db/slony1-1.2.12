@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=virtual/postgresql-server perl? ( dev-perl/DBD-Pg )
+DESCRIPTION=A replication system for the PostgreSQL Database Management System
+HOMEPAGE=http://slony.info/
+IUSE=perl
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=BSD
+RDEPEND=virtual/postgresql-server perl? ( dev-perl/DBD-Pg )
+SLOT=0
+SRC_URI=http://main.slony.info/downloads/1.2/source/slony1-1.2.12.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7d890dca71c57d65216702d44a3006df

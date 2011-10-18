@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst unpack
+DEPEND=opengl? ( app-admin/eselect-opengl ) >=sys-apps/findutils-4.2.26
+DESCRIPTION=Provides precompiled 32bit libraries
+HOMEPAGE=http://dev.gentoo.org/~pacho/emul.html
+IUSE=opengl
+KEYWORDS=-* ~amd64 ~amd64-linux
+LICENSE=BSD FTL GPL-2 LGPL-2 MIT MOTIF
+RDEPEND=~app-emulation/emul-linux-x86-baselibs-20100220 x11-libs/libX11 opengl? ( media-libs/mesa )
+RESTRICT=strip
+SLOT=0
+SRC_URI=mirror://gentoo/emul-linux-x86-xlibs-20100220.tar.bz2
+_eclasses_=emul-linux-x86	214021dd240de4a00ca5f2d2684e3a5a
+_md5_=68778b56e356066f94960b7a8a4023db

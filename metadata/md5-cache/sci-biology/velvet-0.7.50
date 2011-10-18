@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=doc? ( virtual/latex-base )
+DESCRIPTION=A sequence assembler for very short reads
+EAPI=2
+HOMEPAGE=http://www.ebi.ac.uk/~zerbino/velvet/
+IUSE=-doc
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=http://www.ebi.ac.uk/~zerbino/velvet/velvet_0.7.50.tgz
+_md5_=4ee80c6071d9260de83fb53891378759

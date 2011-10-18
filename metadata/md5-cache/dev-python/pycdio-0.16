@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=dev-libs/libcdio dev-lang/swig dev-python/setuptools test? ( dev-python/nose ) >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=Python OO interface to libcdio (CD Input and Control library)
+EAPI=2
+HOMEPAGE=http://savannah.gnu.org/projects/libcdio/ http://pypi.python.org/pypi/pycdio
+IUSE=doc test
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/libcdio >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=http://ftp.gnu.org/gnu/libcdio/pycdio-0.16.tar.gz http://pypi.python.org/packages/source/p/pycdio/pycdio-0.16.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c6f5178c4f7d827e6c20e71b7e181d7a

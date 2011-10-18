@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=media-libs/libpng
+DESCRIPTION=Framebuffer screenshot utility
+HOMEPAGE=http://hem.bredband.net/gmogmo/fbgrab/
+KEYWORDS=amd64 arm ~hppa ppc ~sparc x86
+LICENSE=GPL-2
+RDEPEND=media-libs/libpng
+SLOT=0
+SRC_URI=http://hem.bredband.net/gmogmo/fbgrab/fbgrab-1.0.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c26bf4fdcf1ba12860f2b3673500d2f6

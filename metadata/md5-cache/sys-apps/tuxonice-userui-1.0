@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst prepare
+DEPEND=fbsplash? ( >=media-gfx/splashutils-1.5.2.1 media-libs/libmng[lcms] )
+DESCRIPTION=User Interface for TuxOnIce
+EAPI=2
+HOMEPAGE=http://www.tuxonice.net
+IUSE=fbsplash
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=fbsplash? ( >=media-gfx/splashutils-1.5.2.1 media-libs/libmng[lcms] )
+SLOT=0
+SRC_URI=http://www.tuxonice.net/downloads/all/tuxonice-userui-1.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9c04f93ae00ed58bd80be7fdd4121714

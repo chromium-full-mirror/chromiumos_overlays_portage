@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm preinst unpack
+DEPEND=sys-devel/gettext dev-util/intltool dev-util/pkgconfig =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b >=sys-apps/sed-4
+DESCRIPTION=a GTK2 MPD (Music Player Daemon) client inspired by Rythmbox
+EAPI=1
+HOMEPAGE=http://ario-player.sourceforge.net
+IUSE=audioscrobbler dbus debug idle libnotify nls python taglib zeroconf
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/glib-2.14:2 gnome-base/libglade:2.0 net-misc/curl net-libs/gnutls >=x11-libs/gtk+-2.12:2 audioscrobbler? ( net-libs/libsoup:2.4 ) dbus? ( dev-libs/dbus-glib ) libnotify? ( x11-libs/libnotify ) python? ( dev-python/pygtk dev-python/pygobject ) taglib? ( media-libs/taglib ) zeroconf? ( net-dns/avahi )
+SLOT=0
+SRC_URI=mirror://sourceforge/ario-player/ario-1.3.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b8cbebba955268d740f4c35cf84aa34c

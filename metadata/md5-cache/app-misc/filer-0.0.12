@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-lang/perl >=dev-perl/gtk2-perl-1.080 dev-perl/gtk2-gladexml dev-perl/File-MimeInfo dev-perl/File-DirWalk virtual/perl-File-Temp dev-perl/TimeDate dev-perl/glib-perl >=x11-libs/gtk+-2.6 x11-misc/shared-mime-info dev-perl/Stat-lsMode sys-apps/findutils dev-perl/extutils-pkgconfig dev-perl/extutils-depends
+DESCRIPTION=Small file-manager written in perl
+HOMEPAGE=http://wiki.perldude.de/doku.php?id=filer
+KEYWORDS=amd64 ~hppa ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/perl >=dev-perl/gtk2-perl-1.080 dev-perl/gtk2-gladexml dev-perl/File-MimeInfo dev-perl/File-DirWalk virtual/perl-File-Temp dev-perl/TimeDate dev-perl/glib-perl >=x11-libs/gtk+-2.6 x11-misc/shared-mime-info dev-perl/Stat-lsMode
+SLOT=0
+SRC_URI=http://perldude.de/projects/filer/downloads/filer-0.0.12.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=16e6b7a2a4188655f0d21763d234b251

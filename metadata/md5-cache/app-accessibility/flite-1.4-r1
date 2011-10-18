@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install postinst prepare
+DESCRIPTION=Flite text to speech engine
+EAPI=2
+HOMEPAGE=http://www.speech.cs.cmu.edu/flite/index.html
+IUSE=alsa oss static-libs
+KEYWORDS=~alpha ~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86
+LICENSE=BSD as-is
+SLOT=0
+SRC_URI=http://www.speech.cs.cmu.edu/flite/packed/flite-1.4/flite-1.4-release.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=94f99e0cd8e3aa46a945fe701e506770

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=>=dev-lang/ocaml-3.07 >=sys-apps/sed-4
+DESCRIPTION=A bibtex to HTML converter
+HOMEPAGE=http://www.lri.fr/~filliatr/bibtex2html/
+KEYWORDS=amd64 ~ppc x86
+LICENSE=GPL-2
+RDEPEND=virtual/latex-base
+SLOT=0
+SRC_URI=http://www.lri.fr/~filliatr/ftp/bibtex2html/bibtex2html-1.80.tar.gz
+_eclasses_=fixheadtails	059c47dd86229aa6382393274677acfe
+_md5_=2c50e8f65160433eb72eff3944a91310

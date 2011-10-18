@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=A helper program for maintaining the package.keyword and package.unmask files
+HOMEPAGE=http://www.mpagano.com/blog/?page_id=3
+KEYWORDS=~amd64 ~ppc ~sparc ~x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=>=app-portage/gentoolkit-0.3.0_rc8-r1 >=sys-apps/portage-2.2_rc62
+SLOT=0
+SRC_URI=http://www.mpagano.com/downloads/portpeek-1.9.35.tar.gz
+_md5_=169da979b9be41b5e4d263b63e72bb44

@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=allows the user to attach/detach from interactive processes across the network
+HOMEPAGE=http://packages.debian.org/unstable/admin/detachtty
+KEYWORDS=x86 ppc ~amd64 ~sparc
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=mirror://debian/pool/main/d/detachtty/detachtty_9.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=eb6f2e0241ef46848a04355b2a2d847c

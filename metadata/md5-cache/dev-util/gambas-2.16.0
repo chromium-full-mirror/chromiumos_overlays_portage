@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup
+DEPEND=bzip2? ( >=app-arch/bzip2-1.0.5 ) corba? ( >=net-misc/omniORB-4.1.0 ) curl? ( >=net-misc/curl-7.15.5-r1 ) firebird? ( >=dev-libs/ibpp-2.5.3.1 ) gtk? ( >=x11-libs/gtk+-2.10.14 svg? ( >=gnome-base/librsvg-2.16.1-r2 ) ) mysql? ( >=virtual/mysql-5.0 ) odbc? ( >=dev-db/unixODBC-2.2.12 ) opengl? ( >=media-libs/mesa-7.0.2 ) pcre? ( >=dev-libs/libpcre-7.6-r1 ) pdf? ( >=app-text/poppler-0.12.3-r3 ) postgres? ( >=virtual/postgresql-base-8.2 ) qt3? ( x11-libs/qt:3 ) sdl? ( >=media-libs/sdl-image-1.2.6-r1 >=media-libs/sdl-mixer-1.2.7 ) smtp? ( >=dev-libs/glib-2.16.2 ) sqlite? ( =dev-db/sqlite-2* ) sqlite3? ( >=dev-db/sqlite-3.5.6 ) v4l? ( >=media-libs/libpng-1.2.26 >=media-libs/jpeg-6b-r8 ) xml? ( >=dev-libs/libxml2-2.6.31 >=dev-libs/libxslt-1.1.22 ) zlib? ( >=sys-libs/zlib-1.2.3-r1 ) virtual/libffi dev-util/pkgconfig =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Gambas is a free development environment based on a Basic interpreter with object extensions
+EAPI=2
+HOMEPAGE=http://gambas.sourceforge.net/
+IUSE=bzip2 corba curl debug doc examples firebird gtk mysql odbc opengl pcre pdf postgres qt3 sdl smtp sqlite sqlite3 svg v4l xml zlib
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=bzip2? ( >=app-arch/bzip2-1.0.5 ) corba? ( >=net-misc/omniORB-4.1.0 ) curl? ( >=net-misc/curl-7.15.5-r1 ) firebird? ( >=dev-libs/ibpp-2.5.3.1 ) gtk? ( >=x11-libs/gtk+-2.10.14 svg? ( >=gnome-base/librsvg-2.16.1-r2 ) ) mysql? ( >=virtual/mysql-5.0 ) odbc? ( >=dev-db/unixODBC-2.2.12 ) opengl? ( >=media-libs/mesa-7.0.2 ) pcre? ( >=dev-libs/libpcre-7.6-r1 ) pdf? ( >=app-text/poppler-0.12.3-r3 ) postgres? ( >=virtual/postgresql-base-8.2 ) qt3? ( x11-libs/qt:3 ) sdl? ( >=media-libs/sdl-image-1.2.6-r1 >=media-libs/sdl-mixer-1.2.7 ) smtp? ( >=dev-libs/glib-2.16.2 ) sqlite? ( =dev-db/sqlite-2* ) sqlite3? ( >=dev-db/sqlite-3.5.6 ) v4l? ( >=media-libs/libpng-1.2.26 >=media-libs/jpeg-6b-r8 ) xml? ( >=dev-libs/libxml2-2.6.31 >=dev-libs/libxslt-1.1.22 ) zlib? ( >=sys-libs/zlib-1.2.3-r1 ) virtual/libffi
+SLOT=2
+SRC_URI=mirror://sourceforge/gambas/gambas2-2.16.0.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt3	823f11abd98cfc43cf92b8622e420f1f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=48dcb83534d24c1d5e419ac5aa062362

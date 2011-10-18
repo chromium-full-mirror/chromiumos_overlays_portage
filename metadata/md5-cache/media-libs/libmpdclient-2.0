@@ -1,0 +1,8 @@
+DEFINED_PHASES=install
+DESCRIPTION=A library for interfacing Music Player Daemon (media-sound/mpd)
+HOMEPAGE=http://www.musicpd.org
+KEYWORDS=~amd64 ~hppa ~sparc ~x86
+LICENSE=BSD
+SLOT=0
+SRC_URI=mirror://sourceforge/musicpd/libmpdclient-2.0.tar.bz2
+_md5_=80d16a5b337265d26ebf8096a5a14eb4

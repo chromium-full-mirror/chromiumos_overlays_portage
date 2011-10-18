@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=>=dev-lang/mono-2.0 avahi? ( >=net-dns/avahi-0.6[mono] ) !avahi? ( net-misc/mDNSResponder ) dev-util/pkgconfig
+DESCRIPTION=a cross platform Zero Configuration Networking library for Mono and .NET.
+EAPI=2
+HOMEPAGE=http://www.mono-project.com/Mono.Zeroconf
+IUSE=doc +avahi
+KEYWORDS=amd64 ppc x86
+LICENSE=MIT
+RDEPEND=>=dev-lang/mono-2.0 avahi? ( >=net-dns/avahi-0.6[mono] ) !avahi? ( net-misc/mDNSResponder )
+SLOT=0
+SRC_URI=http://banshee-project.org/files/mono-zeroconf/mono-zeroconf-0.8.0.tar.bz2
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=aeb52f43284b7e6b576baa43cd5a01bf

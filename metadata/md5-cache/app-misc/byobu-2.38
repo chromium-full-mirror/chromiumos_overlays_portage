@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst prepare
+DEPEND=dev-util/debhelper
+DESCRIPTION=A set of profiles for the GNU Screen console window manager (app-misc/screen)
+EAPI=2
+HOMEPAGE=https://launchpad.net/byobu
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=app-misc/screen dev-libs/newt >=dev-lang/python-2.5
+SLOT=0
+SRC_URI=https://launchpad.net/ubuntu/karmic/+source/byobu/2.38-0ubuntu3/+files/byobu_2.38.orig.tar.gz https://launchpad.net/ubuntu/karmic/+source/byobu/2.38-0ubuntu3/+files/byobu_2.38-0ubuntu3.diff.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=4d601b9a12082e4b4f1b8d12e9e60e8d

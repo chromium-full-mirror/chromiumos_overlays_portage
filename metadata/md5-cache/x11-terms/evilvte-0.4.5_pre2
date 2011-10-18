@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst prepare
+DEPEND=x11-libs/vte >=x11-libs/gtk+-2:2 x11-libs/libXtst dev-util/pkgconfig
+DESCRIPTION=VTE based, super lightweight terminal emulator
+EAPI=2
+HOMEPAGE=http://www.calno.com/evilvte
+KEYWORDS=amd64 x86
+LICENSE=|| ( BSD GPL-2 LGPL-2.1 )
+RDEPEND=x11-libs/vte >=x11-libs/gtk+-2:2
+SLOT=0
+SRC_URI=http://www.calno.com/evilvte/evilvte-0.4.5~pre2.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=fd047f6bfe5acdf056ae5419c19c5ff6

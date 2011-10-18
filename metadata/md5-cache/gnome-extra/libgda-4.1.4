@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
+DEPEND=app-text/iso-codes >=dev-libs/glib-2.16 >=dev-libs/libxml2-2 dev-libs/libxslt dev-libs/libunique sys-libs/readline sys-libs/ncurses >=net-libs/libsoup-2.24:2.4 berkdb? ( sys-libs/db ) freetds? ( >=dev-db/freetds-0.62 ) !bindist? ( firebird? ( dev-db/firebird ) ) gtk? ( >=x11-libs/gtk+-2.12 canvas? ( x11-libs/goocanvas ) sourceview? ( x11-libs/gtksourceview:2.0 ) graphviz? ( media-gfx/graphviz ) ) ldap? ( >=net-nds/openldap-2.0.25 ) mysql? ( virtual/mysql ) odbc? ( >=dev-db/unixODBC-2.0.6 ) postgres? ( >=virtual/postgresql-base-7.2.1 ) xbase? ( dev-db/xbase ) >=dev-db/sqlite-3.6.22:3 >=dev-util/pkgconfig-0.18 >=dev-util/intltool-0.35.5 doc? ( >=dev-util/gtk-doc-1 ) >=sys-apps/sed-4 java? ( >=dev-java/java-config-2.1.9-r1 )
+DESCRIPTION=Gnome Database Access Library
+EAPI=2
+HOMEPAGE=http://www.gnome-db.org/
+IUSE=berkdb bindist canvas doc firebird freetds gtk graphviz ldap mysql oci8 odbc postgres sourceview xbase debug elibc_FreeBSD java
+KEYWORDS=~amd64 ~ppc ~x86 ~x86-fbsd
+LICENSE=GPL-2 LGPL-2
+RDEPEND=app-text/iso-codes >=dev-libs/glib-2.16 >=dev-libs/libxml2-2 dev-libs/libxslt dev-libs/libunique sys-libs/readline sys-libs/ncurses >=net-libs/libsoup-2.24:2.4 berkdb? ( sys-libs/db ) freetds? ( >=dev-db/freetds-0.62 ) !bindist? ( firebird? ( dev-db/firebird ) ) gtk? ( >=x11-libs/gtk+-2.12 canvas? ( x11-libs/goocanvas ) sourceview? ( x11-libs/gtksourceview:2.0 ) graphviz? ( media-gfx/graphviz ) ) ldap? ( >=net-nds/openldap-2.0.25 ) mysql? ( virtual/mysql ) odbc? ( >=dev-db/unixODBC-2.0.6 ) postgres? ( >=virtual/postgresql-base-7.2.1 ) xbase? ( dev-db/xbase ) >=dev-db/sqlite-3.6.22:3 java? ( >=dev-java/java-config-2.1.9-r1 )
+RESTRICT=test
+SLOT=4
+SRC_URI=mirror://gnome/sources/libgda/4.1/libgda-4.1.4.tar.bz2
+_eclasses_=db-use	8d7baa3efc7c38c7d5c5e7353c5460dc	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	java-pkg-opt-2	31a1663247652448431dcc8c194e2752	java-utils-2	9c079d63349fb3fcd154c1630807a59a	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=3f9640ae8d6dae64838d5718f8628e59

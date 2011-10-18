@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst preinst unpack
+DESCRIPTION=The OpenAFS distributed file system
+HOMEPAGE=http://www.openafs.org/
+IUSE=debug kerberos pam doc
+KEYWORDS=amd64 ~ppc ~ppc64 ~sparc x86
+LICENSE=IBM BSD openafs-krb5-a APSL-2 sun-rpc
+RDEPEND=~net-fs/openafs-kernel-1.4.6_p20080222 pam? ( sys-libs/pam ) kerberos? ( virtual/krb5 )
+SLOT=0
+SRC_URI=http://openafs.org/dl/openafs/1.4.6/openafs-1.4.6-src.tar.bz2 doc? ( http://openafs.org/dl/openafs/1.4.6/openafs-1.4.6-doc.tar.bz2 ) mirror://gentoo/openafs-gentoo-0.14.tar.bz2 mirror://gentoo/openafs-1.4.6-cvs20080222.patch.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pam	f794bf311d46a2b11d3d9362fe656bd0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=3f4c68d33813a756330603b47f68d492

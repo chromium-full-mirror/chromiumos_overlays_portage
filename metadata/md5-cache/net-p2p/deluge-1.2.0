@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=>=virtual/python-2.5 || ( app-arch/xz-utils app-arch/lzma-utils ) >=net-libs/rb_libtorrent-0.14.5[python] dev-python/setuptools >=app-admin/eselect-python-20091230 dev-lang/python >=app-admin/eselect-python-20091230
+DESCRIPTION=BitTorrent client with a client/server model.
+EAPI=2
+HOMEPAGE=http://deluge-torrent.org/
+IUSE=gtk libnotify webinterface
+KEYWORDS=~amd64 ~arm ~ppc x86
+LICENSE=GPL-2
+RDEPEND=>=virtual/python-2.5 || ( app-arch/xz-utils app-arch/lzma-utils ) >=net-libs/rb_libtorrent-0.14.5[python] dev-python/setuptools dev-python/chardet dev-python/pyopenssl dev-python/pyxdg || ( >=virtual/python-2.6 dev-python/simplejson ) >=dev-python/twisted-8.1 >=dev-python/twisted-web-8.1 gtk? ( dev-python/pygame dev-python/pygobject >=dev-python/pygtk-2.12 gnome-base/librsvg libnotify? ( dev-python/notify-python ) ) webinterface? ( dev-python/mako ) >=app-admin/eselect-python-20091230 dev-lang/python >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://download.deluge-torrent.org/source/deluge-1.2.0.tar.lzma
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=347de41ba656e1f8e38e4ecd8d84debc

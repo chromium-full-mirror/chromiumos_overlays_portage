@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=~sci-mathematics/octave-2.1.72 sci-libs/netcdf media-libs/jpeg media-libs/libpng sci-libs/gsl dev-libs/libpcre sys-libs/readline sys-apps/texinfo sys-libs/ncurses virtual/lapack virtual/blas X? ( x11-libs/libX11 ) !amd64? ( ginac? ( sci-mathematics/ginac ) ) qhull? ( >=media-libs/qhull-3.1-r1 )
+DESCRIPTION=A collection of custom scripts, functions and extensions for GNU Octave
+HOMEPAGE=http://octave.sourceforge.net/
+IUSE=ginac qhull X
+KEYWORDS=~amd64 ~ppc ~sparc x86
+LICENSE=as-is
+RDEPEND=~sci-mathematics/octave-2.1.72 sci-libs/netcdf media-libs/jpeg media-libs/libpng sci-libs/gsl dev-libs/libpcre sys-libs/readline sys-apps/texinfo sys-libs/ncurses virtual/lapack virtual/blas X? ( x11-libs/libX11 ) !amd64? ( ginac? ( sci-mathematics/ginac ) ) qhull? ( >=media-libs/qhull-3.1-r1 )
+SLOT=0
+SRC_URI=mirror://sourceforge/octave/octave-forge-2006.01.28.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d71a64ce30eaf80ff22d76eeeaedc2cc

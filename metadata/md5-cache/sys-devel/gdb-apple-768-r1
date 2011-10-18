@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=>=sys-libs/ncurses-5.2-r2 =dev-db/sqlite-3* nls? ( sys-devel/gettext )
+DESCRIPTION=Apple branch of the GNU Debugger, 10.5
+EAPI=3
+HOMEPAGE=http://sources.redhat.com/gdb/
+IUSE=nls
+KEYWORDS=~ppc-macos ~x86-macos
+LICENSE=APSL-2 GPL-2
+RDEPEND=>=sys-libs/ncurses-5.2-r2 =dev-db/sqlite-3*
+SLOT=0
+SRC_URI=http://www.opensource.apple.com/darwinsource/tarballs/other/gdb-768.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=19ac14b6d19764fb5b17886521b6bf56

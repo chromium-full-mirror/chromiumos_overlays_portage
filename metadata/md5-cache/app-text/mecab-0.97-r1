@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-lang/perl =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Yet Another Part-of-Speech and Morphological Analyzer
+HOMEPAGE=http://mecab.sourceforge.net/
+IUSE=unicode
+KEYWORDS=amd64 ~arm hppa ia64 ppc ppc64 sparc x86
+LICENSE=|| ( BSD LGPL-2.1 GPL-2 )
+PDEPEND=>=app-dicts/mecab-ipadic-2.7.0.20070610
+RDEPEND=dev-lang/perl
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://sourceforge/mecab/mecab-0.97.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b94ec182006b96dbb47bf9feac014e6d

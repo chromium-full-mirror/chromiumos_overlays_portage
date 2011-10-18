@@ -1,0 +1,8 @@
+DEFINED_PHASES=postinst
+DESCRIPTION=Meta ebuild for LXDE, the Lightweight X11 Desktop Environment
+HOMEPAGE=http://lxde.sf.net/
+KEYWORDS=amd64 arm ppc x86
+LICENSE=GPL-2
+RDEPEND==lxde-base/lxappearance-0.4* =lxde-base/lxde-icon-theme-0.0* ~lxde-base/lxde-common-0.5.0 =lxde-base/lxmenu-data-0.1* =lxde-base/lxinput-0.1* =lxde-base/lxpanel-0.5* =lxde-base/lxrandr-0.1* ~lxde-base/lxsession-0.4.1 =lxde-base/lxsession-edit-0.1* =lxde-base/lxshortcut-0.1* =lxde-base/lxtask-0.1* lxde-base/lxterminal media-gfx/gpicview x11-misc/pcmanfm x11-wm/openbox x11-misc/obconf
+SLOT=0
+_md5_=e7a1770ddca965b7a5f7c20606de59f6

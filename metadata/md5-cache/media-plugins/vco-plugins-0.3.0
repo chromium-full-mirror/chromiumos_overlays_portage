@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=media-libs/ladspa-sdk
+DESCRIPTION=SAW-VCO ladspa plugin package. Anti-aliased oscillators
+HOMEPAGE=http://www.kokkinizita.net/linuxaudio/
+KEYWORDS=x86 amd64 ~ppc
+LICENSE=GPL-2
+RDEPEND=media-libs/ladspa-sdk
+SLOT=0
+SRC_URI=http://www.kokkinizita.net/linuxaudio/downloads/VCO-plugins-0.3.0.tar.bz2
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3ecc483b663bdf6ef58584a28d8ab917

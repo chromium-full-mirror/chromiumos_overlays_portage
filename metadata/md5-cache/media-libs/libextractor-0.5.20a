@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=>=sys-devel/libtool-1.4.1 >=dev-libs/glib-2.0.0 media-libs/libmpeg2 nls? ( virtual/libintl ) gtk? ( >=x11-libs/gtk+-2.6.10 ) zlib? ( sys-libs/zlib ) vorbis? ( >=media-libs/libvorbis-1.0_beta4 )
+DESCRIPTION=A simple library for keyword extraction
+HOMEPAGE=http://www.gnunet.org/libextractor/
+IUSE=gtk nls vorbis zlib
+KEYWORDS=~amd64 ~arm ~ppc ~ppc64 ~sparc ~x86
+LICENSE=LGPL-2.1
+RESTRICT=test
+SLOT=0
+SRC_URI=http://gnunet.org/libextractor/download/libextractor-0.5.20a.tar.gz
+_eclasses_=libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e690fad1a3c7298bd4a7401818e40409

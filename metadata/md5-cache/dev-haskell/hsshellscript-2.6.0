@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install postinst prerm setup unpack
+DEPEND=>=dev-lang/ghc-6.4 >=dev-libs/glib-2.0 >=dev-haskell/haddock-0.6
+DESCRIPTION=A Haskell library for UNIX shell scripting tasks
+HOMEPAGE=http://www.volker-wysk.de/hsshellscript/
+KEYWORDS=~ppc ~x86 ~amd64
+LICENSE=LGPL-2.1
+SLOT=0
+SRC_URI=http://www.volker-wysk.de/hsshellscript/dist/hsshellscript-2.6.0.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	ghc-package	a0576f38fd872706ee22bf4f6c0c6152	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=35647b57e2fef4e4240577135ba752cb

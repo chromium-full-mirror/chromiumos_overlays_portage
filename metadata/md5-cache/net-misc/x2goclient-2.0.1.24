@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup unpack
+DEPEND=net-misc/nx x11-libs/qt-core:4 x11-libs/qt-gui:4 x11-libs/qt-svg:4 ldap? ( net-nds/openldap )
+DESCRIPTION=The X2Go Qt client
+EAPI=2
+HOMEPAGE=http://x2go.berlios.de
+IUSE=ldap
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=net-misc/nx x11-libs/qt-core:4 x11-libs/qt-gui:4 x11-libs/qt-svg:4 ldap? ( net-nds/openldap )
+SLOT=0
+SRC_URI=http://x2go.obviously-nice.de/deb/pool-lenny/x2goclient/x2goclient_2.0.1-24.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4	83eabd1192f3f2c5a649ba2422a14d00	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=855480909fbcef5517de36ba74c045eb

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup
+DEPEND=dev-python/numpy dev-python/pmw media-libs/freetype:2 media-libs/libpng media-video/mpeg-tools sys-libs/zlib virtual/glut apbs? ( dev-libs/maloc sci-chemistry/apbs sci-chemistry/pdb2pqr sci-chemistry/pymol-apbs-plugin ) >=app-admin/eselect-python-20091230 dev-lang/python[tk] dev-lang/python
+DESCRIPTION=A Python-extensible molecular graphics system.
+EAPI=3
+HOMEPAGE=http://pymol.sourceforge.net/
+IUSE=apbs numpy shaders vmd
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=PSF-2.2
+RDEPEND=dev-python/numpy dev-python/pmw media-libs/freetype:2 media-libs/libpng media-video/mpeg-tools sys-libs/zlib virtual/glut apbs? ( dev-libs/maloc sci-chemistry/apbs sci-chemistry/pdb2pqr sci-chemistry/pymol-apbs-plugin ) >=app-admin/eselect-python-20091230 dev-lang/python[tk] dev-lang/python
+SLOT=0
+SRC_URI=http://pymol.svn.sourceforge.net/viewvc/pymol/trunk/pymol.tar.gz?view=tar&pathrev=3891 -> pymol-1.2.3.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	prefix	21058c21ca48453d771df15500873ede	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=fe0b624d11e27d4abe81e59a9a9bc62b

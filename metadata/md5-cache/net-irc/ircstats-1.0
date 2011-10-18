@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install postinst
+DESCRIPTION=IRCStats tries to be a log analyzer for Linux similar to mIRCStats
+HOMEPAGE=http://humdi.net/ircstats/
+KEYWORDS=~x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=http://humdi.net/ircstats/IRCStats-1.0.tgz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=be08a9f4f8be5e61c083bb5cf9d09080

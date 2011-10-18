@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=net-misc/curl !media-libs/liblastfm
+DESCRIPTION=C++ library to scrobble tracks on Last.fm
+EAPI=2
+HOMEPAGE=http://code.google.com/p/lastfmlib
+IUSE=syslog debug
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=net-misc/curl !media-libs/liblastfm
+SLOT=0
+SRC_URI=http://lastfmlib.googlecode.com/files/lastfmlib-0.3.0.tar.gz
+_md5_=a824d44857cb427a18ed21a361f943d9

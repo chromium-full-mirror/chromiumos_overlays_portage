@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=gtk? ( dev-ruby/ruby-gtk2 >=dev-ruby/rcairo-1.8.0-r1[svg] ) dev-ruby/ruby-gettext virtual/eject media-sound/cd-discid media-sound/cdparanoia flac? ( media-libs/flac ) mp3? ( media-sound/lame ) vorbis? ( media-sound/vorbis-tools ) normalize? ( media-sound/normalize mp3? ( media-sound/mp3gain ) vorbis? ( media-sound/vorbisgain ) wav? ( media-sound/wavegain ) ) virtual/ruby !prefix? ( x11-base/xorg-server ) x11-apps/xhost
+DESCRIPTION=A secure audio ripper for Linux
+EAPI=2
+HOMEPAGE=http://code.google.com/p/rubyripper
+IUSE=cli flac +gtk +mp3 normalize +vorbis wav linguas_de linguas_es linguas_fr linguas_hu linguas_nl linguas_ru
+KEYWORDS=~amd64 ~sparc ~x86
+LICENSE=GPL-3
+RDEPEND=gtk? ( dev-ruby/ruby-gtk2 >=dev-ruby/rcairo-1.8.0-r1[svg] ) dev-ruby/ruby-gettext virtual/eject media-sound/cd-discid media-sound/cdparanoia flac? ( media-libs/flac ) mp3? ( media-sound/lame ) vorbis? ( media-sound/vorbis-tools ) normalize? ( media-sound/normalize mp3? ( media-sound/mp3gain ) vorbis? ( media-sound/vorbisgain ) wav? ( media-sound/wavegain ) ) virtual/ruby
+SLOT=0
+SRC_URI=http://rubyripper.googlecode.com/files/rubyripper-0.5.7.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby	dfc4f482954636675998a350b1d078b5	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	virtualx	e9162f65645513120b4e12863a5fa972
+_md5_=99eb0574fa90f44dd1d734e117ce1810

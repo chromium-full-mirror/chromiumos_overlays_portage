@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst preinst
+DEPEND=app-arch/unzip
+DESCRIPTION=Dutch dictionaries for myspell/hunspell
+HOMEPAGE=http://lingucomponent.openoffice.org/ http://www.goddijn.com/words.htm
+KEYWORDS=amd64 ppc sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=mirror://gentoo/myspell-nl_NL-20060316.zip mirror://gentoo/myspell-nl_med-20060316.zip mirror://gentoo/myspell-hyph_nl_NL-20060316.zip
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	myspell	838866d97f3fb0af2f64b09661ed92a7	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0670ec4cb82545a417e41b2b4a8a1792

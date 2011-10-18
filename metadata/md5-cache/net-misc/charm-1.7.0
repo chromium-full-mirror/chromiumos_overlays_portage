@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=>=app-admin/eselect-python-20091230 >=dev-lang/python-2.3 dev-lang/python
+DESCRIPTION=A text based livejournal client
+HOMEPAGE=http://ljcharm.sourceforge.net/
+KEYWORDS=~amd64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=>=app-admin/eselect-python-20091230 >=dev-lang/python-2.3 dev-lang/python
+SLOT=0
+SRC_URI=mirror://sourceforge/ljcharm/charm-1.7.0.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=04b6ea5e3da71a2b955bf2ced055fc81

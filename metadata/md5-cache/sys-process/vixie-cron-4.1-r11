@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DEPEND=selinux? ( sys-libs/libselinux ) pam? ( virtual/pam ) >=sys-apps/sed-4.0.5
+DESCRIPTION=Paul Vixie's cron daemon, a fully featured crond implementation
+HOMEPAGE=ftp://ftp.isc.org/isc/cron/
+IUSE=selinux pam debug
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~sparc-fbsd ~x86 ~x86-fbsd
+LICENSE=ISC BSD-2 BSD
+PROVIDE=virtual/cron
+RDEPEND=selinux? ( sys-libs/libselinux ) pam? ( virtual/pam ) !virtual/cron virtual/mta >=sys-process/cronbase-0.3.2
+SLOT=0
+SRC_URI=mirror://gentoo/vixie-cron-4.1.tar.bz2 mirror://gentoo/vixie-cron-4.1-gentoo-r4.patch.bz2
+_eclasses_=cron	78ca2916a353e761ce9e790a15475a73	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pam	f794bf311d46a2b11d3d9362fe656bd0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2459080caf0c677dbba2c2f5b2eeb697

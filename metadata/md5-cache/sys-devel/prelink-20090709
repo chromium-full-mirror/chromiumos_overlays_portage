@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst unpack
+DEPEND=>=dev-libs/elfutils-0.100 !dev-libs/libelf >=sys-libs/glibc-2.3.4
+DESCRIPTION=Modifies ELFs to avoid runtime symbol resolutions resulting in faster load times
+HOMEPAGE=http://people.redhat.com/jakub/prelink
+KEYWORDS=-arm ~alpha ~amd64 ~ppc ~ppc64 ~s390 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/elfutils-0.100 !dev-libs/libelf >=sys-libs/glibc-2.3.4 >=sys-devel/binutils-2.15.90.0.1
+SLOT=0
+SRC_URI=mirror://gentoo/prelink-20090709.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=4df8eb082343cd548a0601d973b31e27

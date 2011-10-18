@@ -1,0 +1,10 @@
+DEFINED_PHASES=install nofetch unpack
+DEPEND=app-arch/unzip
+DESCRIPTION=Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files 1.6.0
+HOMEPAGE=http://java.sun.com/javase/6/
+KEYWORDS=amd64 x86 ~x86-fbsd
+LICENSE=sun-bcla-java-vm
+RESTRICT=fetch
+SLOT=1.6
+SRC_URI=jce_policy-6.zip
+_md5_=44575424de8aa0c0f3d7feb77231461e

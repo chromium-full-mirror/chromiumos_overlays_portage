@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DEPEND=!build? ( sys-apps/sed >=sys-devel/binutils-2.11.90.0.31 )
+DESCRIPTION=Full sources including the Gentoo patchset for the 2.6 kernel tree
+HOMEPAGE=http://dev.gentoo.org/~mpagano/genpatches
+IUSE=symlink build
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sh ~sparc ~x86
+LICENSE=GPL-2
+PDEPEND=!build? ( virtual/dev-manager )
+PROVIDE=virtual/linux-sources virtual/alsa
+RDEPEND=!build? ( >=sys-libs/ncurses-5.2 sys-devel/make )
+RESTRICT=binchecks strip
+SLOT=2.6.30-r9
+SRC_URI=mirror://kernel/linux/kernel/v2.6/linux-2.6.30.tar.bz2 mirror://gentoo/genpatches-2.6.30-10.base.tar.bz2 mirror://gentoo/genpatches-2.6.30-10.extras.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	kernel-2	fac988fb09b9b9b87d85d60efe37d03f	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=3d01a14a769fb5b47559f9d41792bb9b

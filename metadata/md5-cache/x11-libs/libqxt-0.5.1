@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=doc? ( app-doc/doxygen )
+DESCRIPTION=The Qt eXTension library provides cross-platform utility classes for the Qt toolkit
+EAPI=2
+HOMEPAGE=http://libqxt.org/
+IUSE=berkdb crypt debug doc sql web
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( CPL-1.0 LGPL-2.1 )
+RDEPEND=x11-libs/qt-gui:4 x11-libs/qt-script:4 berkdb? ( x11-libs/qt-sql:4 sys-libs/db ) sql? ( x11-libs/qt-sql:4 ) crypt? ( >=dev-libs/openssl-0.9.8 x11-libs/qt-core:4[ssl] ) web? ( >=dev-libs/fcgi-2.4 )
+SLOT=0
+SRC_URI=http://bitbucket.org/libqxt/libqxt/downloads/libqxt-0.5.1.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4-r2	9324cde5d9328d2445c95232dd8bc158	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f94a42ae1e55cc060f1a50f6fddf5981

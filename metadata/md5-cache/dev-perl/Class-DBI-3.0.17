@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
+DEPEND=>=dev-perl/Class-Data-Inheritable-0.02 >=dev-perl/Class-Accessor-0.18 >=dev-perl/Class-Trigger-0.07 virtual/perl-File-Temp virtual/perl-Storable virtual/perl-Test-Simple virtual/perl-Scalar-List-Utils dev-perl/Clone >=dev-perl/Ima-DBI-0.33 virtual/perl-version >=dev-perl/UNIVERSAL-moniker-0.06 dev-lang/perl
+DESCRIPTION=Simple Database Abstraction
+HOMEPAGE=http://search.cpan.org/dist/Class-DBI/
+KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=|| ( Artistic GPL-2 )
+RDEPEND=>=dev-perl/Class-Data-Inheritable-0.02 >=dev-perl/Class-Accessor-0.18 >=dev-perl/Class-Trigger-0.07 virtual/perl-File-Temp virtual/perl-Storable virtual/perl-Test-Simple virtual/perl-Scalar-List-Utils dev-perl/Clone >=dev-perl/Ima-DBI-0.33 virtual/perl-version >=dev-perl/UNIVERSAL-moniker-0.06 dev-lang/perl
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/T/TM/TMTM//Class-DBI-v3.0.17.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=aa6910a94d80af607b3ca34057b6a9a7

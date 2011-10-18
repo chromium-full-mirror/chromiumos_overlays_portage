@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=dev-util/pkgconfig net-im/pidgin
+DESCRIPTION=Alternative MSN protocol plugin for libpurple
+HOMEPAGE=http://code.google.com/p/msn-pecan/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=net-im/pidgin
+SLOT=0
+SRC_URI=http://msn-pecan.googlecode.com/files/msn-pecan-0.0.19.tar.bz2
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=684195158f2d83cb4778a2af225809d3

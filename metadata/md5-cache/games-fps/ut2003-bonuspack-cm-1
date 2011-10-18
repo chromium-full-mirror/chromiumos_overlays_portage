@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DEPEND=app-arch/unzip
+DESCRIPTION=Community Bonus Pack for UT2003
+HOMEPAGE=http://www.unrealtournament2003.com/
+KEYWORDS=x86
+LICENSE=ut2003
+RDEPEND=games-fps/ut2003
+RESTRICT=mirror strip
+SLOT=1
+SRC_URI=ftp://dl3.edgefiles.com/games-fusion.net/www/patches/ut2003/cbp2003.zip ftp://ftp.multiplay.co.uk/pub/games/fps/unrealtournament2003/mappacks/cbp2003.zip http://ftp1.gamesweb.com/cq2ert6g/cbp2003.zip
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=4b4d50605737374103ce33de45acdab6

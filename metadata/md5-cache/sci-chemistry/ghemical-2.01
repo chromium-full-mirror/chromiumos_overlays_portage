@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst setup
+DEPEND=virtual/glut virtual/glu virtual/opengl >=x11-libs/gtk+-2.6 >=x11-libs/gtkglext-1.0.5 >=gnome-base/libglade-2.4 >=sci-libs/libghemical-2 openbabel? ( >=sci-chemistry/openbabel-2 ) threads? ( >=dev-libs/glib-2.4 ) x11-libs/libXmu >=dev-util/pkgconfig-0.15
+DESCRIPTION=Chemical quantum mechanics and molecular mechanics
+HOMEPAGE=http://bioinformatics.org/ghemical/
+IUSE=threads openbabel toolbar
+KEYWORDS=ppc x86
+LICENSE=GPL-2
+RDEPEND=virtual/glut virtual/glu virtual/opengl >=x11-libs/gtk+-2.6 >=x11-libs/gtkglext-1.0.5 >=gnome-base/libglade-2.4 >=sci-libs/libghemical-2 openbabel? ( >=sci-chemistry/openbabel-2 ) threads? ( >=dev-libs/glib-2.4 ) x11-libs/libXmu
+SLOT=0
+SRC_URI=http://bioinformatics.org/ghemical/download/ghemical-2.01.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=af558e90e0729e12a0fb628f38190874

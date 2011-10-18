@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DEPEND=app-arch/unzip
+DESCRIPTION=Neverwinter Nights Dedicated server
+HOMEPAGE=http://nwn.bioware.com/downloads/standaloneserver.html
+IUSE=linguas_en linguas_fr linguas_it linguas_es linguas_de linguas_ja
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=NWN-EULA
+RDEPEND=amd64? ( app-emulation/emul-linux-x86-baselibs app-emulation/emul-linux-x86-compat )
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=http://files.bioware.com/neverwinternights/updates/windows/server/NWNDedicatedServer1.68.zip linguas_en? ( http://files.bioware.com/neverwinternights/dialog//english/NWNEnglish1.68dialog.zip ) linguas_fr? ( http://files.bioware.com/neverwinternights/dialog//french/NWNFrench1.68dialog.zip ) linguas_de? ( http://files.bioware.com/neverwinternights/dialog//german/NWNGerman1.68dialog.zip ) linguas_it? ( http://files.bioware.com/neverwinternights/dialog//italian/NWNItalian1.68dialog.zip ) linguas_es? ( http://files.bioware.com/neverwinternights/dialog//spanish/NWNSpanish1.68dialog.zip ) linguas_ja? ( http://files.bioware.com/neverwinternights/dialog//japanese/NWNJapanese1.68dialog.zip )
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a3be3c8854016d2c411185c6533f5ac9

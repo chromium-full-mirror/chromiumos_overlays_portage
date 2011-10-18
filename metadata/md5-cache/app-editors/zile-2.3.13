@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install postinst
+DEPEND=sys-libs/ncurses sys-apps/help2man test? ( valgrind? ( dev-util/valgrind ) )
+DESCRIPTION=Zile is a small Emacs clone
+EAPI=2
+HOMEPAGE=http://www.gnu.org/software/zile/
+IUSE=livecd test valgrind
+KEYWORDS=alpha amd64 ppc sparc x86 ~sparc-fbsd ~x86-fbsd
+LICENSE=GPL-3
+RDEPEND=sys-libs/ncurses
+SLOT=0
+SRC_URI=mirror://gnu/zile/zile-2.3.13.tar.gz
+_md5_=d9864929d54ee09e766d586ab91b7f83

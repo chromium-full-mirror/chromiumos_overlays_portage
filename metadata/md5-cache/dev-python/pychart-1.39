@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=app-text/ghostscript-gpl >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=Python library for creating charts
+HOMEPAGE=http://home.gna.org/pychart/
+IUSE=doc examples
+KEYWORDS=~amd64 ~ia64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=app-text/ghostscript-gpl >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=http://download.gna.org/pychart/PyChart-1.39.tar.gz doc? ( http://download.gna.org/pychart/pychart-doc.tar.gz )
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=338d3243467d29d1e587ef593f9c7df2

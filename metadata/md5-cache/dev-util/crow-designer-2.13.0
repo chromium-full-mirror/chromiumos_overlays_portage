@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DEPEND=>=dev-libs/guiloader-2.13.1 >=dev-libs/guiloader-c++-2.13 dev-cpp/gtkmm >=dev-libs/dbus-glib-0.76 x11-misc/xdg-utils dev-util/pkgconfig
+DESCRIPTION=GTK+ GUI building tool
+EAPI=2
+HOMEPAGE=http://crow-designer.sourceforge.net
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=>=dev-libs/guiloader-2.13.1 >=dev-libs/guiloader-c++-2.13 dev-cpp/gtkmm >=dev-libs/dbus-glib-0.76 x11-misc/xdg-utils
+SLOT=0
+SRC_URI=mirror://sourceforge/crow-designer/crow-2.13.0.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2c9d2597f56a33cc469be07b9a2d2946

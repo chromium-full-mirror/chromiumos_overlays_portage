@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=>=sys-apps/sed-4
+DESCRIPTION=Small utility to generate XFree86 modelines and fbset timings
+HOMEPAGE=http://www.dynaweb.hu/opensource/videogen/
+KEYWORDS=amd64 ppc ppc64 x86
+LICENSE=GPL-2
+RDEPEND=>=sys-apps/sed-4
+SLOT=0
+SRC_URI=http://www.dynaweb.hu/opensource/videogen/download/videogen-0.32.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6ec5ddf5e10a38c739a9300bd7f4f095

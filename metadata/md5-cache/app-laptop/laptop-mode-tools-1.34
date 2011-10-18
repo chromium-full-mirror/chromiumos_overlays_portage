@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst setup unpack
+DEPEND=acpi? ( sys-power/acpid ) apm? ( sys-apps/apmd ) >=sys-apps/sed-4
+DESCRIPTION=Linux kernel laptop_mode user-space utilities
+HOMEPAGE=http://www.samwel.tk/laptop_mode/
+IUSE=acpi apm
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=acpi? ( sys-power/acpid ) apm? ( sys-apps/apmd )
+SLOT=0
+SRC_URI=http://www.samwel.tk/laptop_mode/tools/downloads/laptop-mode-tools_1.34.tar.gz
+_eclasses_=fixheadtails	059c47dd86229aa6382393274677acfe	linux-info	8d722422d00ae99ed52a790b20b9bfc4	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=285b8c586d6265fc31d80567c74a4d98

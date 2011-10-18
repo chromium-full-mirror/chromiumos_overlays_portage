@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=>=dev-libs/glib-2.16 >=dev-libs/dbus-glib-0.74 >=sys-apps/dbus-1.2 >=x11-libs/gtk+-2.14 >=gnome-base/gconf-2.20 >=gnome-extra/polkit-gnome-0.92 >=x11-libs/libnotify-0.4.3 >=gnome-base/libglade-2 >=gnome-base/gnome-keyring-2.20 >=dev-libs/libnl-1.1 >=net-misc/networkmanager-0.8 >=net-wireless/wireless-tools-28_pre9 >=net-wireless/wpa_supplicant-0.5.7 || ( >=gnome-base/gnome-panel-2 xfce-base/xfce4-panel x11-misc/trayer ) net-misc/mobile-broadband-provider-info bluetooth? ( >=net-wireless/gnome-bluetooth-2.27.6 ) dev-util/pkgconfig >=dev-util/intltool-0.35 >=sys-apps/sed-4
+DESCRIPTION=Gnome applet for NetworkManager.
+EAPI=2
+HOMEPAGE=http://projects.gnome.org/NetworkManager/
+IUSE=bluetooth debug
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/glib-2.16 >=dev-libs/dbus-glib-0.74 >=sys-apps/dbus-1.2 >=x11-libs/gtk+-2.14 >=gnome-base/gconf-2.20 >=gnome-extra/polkit-gnome-0.92 >=x11-libs/libnotify-0.4.3 >=gnome-base/libglade-2 >=gnome-base/gnome-keyring-2.20 >=dev-libs/libnl-1.1 >=net-misc/networkmanager-0.8 >=net-wireless/wireless-tools-28_pre9 >=net-wireless/wpa_supplicant-0.5.7 || ( >=gnome-base/gnome-panel-2 xfce-base/xfce4-panel x11-misc/trayer ) net-misc/mobile-broadband-provider-info bluetooth? ( >=net-wireless/gnome-bluetooth-2.27.6 )
+SLOT=0
+SRC_URI=mirror://gnome/sources/network-manager-applet/0.8/network-manager-applet-0.8.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0c33228e45aa039963d10af8805e9450

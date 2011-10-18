@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=flup? ( dev-python/flup ) openid? ( dev-python/python-openid ) dev-python/setuptools doc? ( dev-python/pudge dev-python/buildutils ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* test? ( dev-python/py )
+DESCRIPTION=Tools for using a Web Server Gateway Interface stack
+EAPI=2
+HOMEPAGE=http://pythonpaste.org http://pypi.python.org/pypi/Paste
+IUSE=doc flup openid test
+KEYWORDS=~amd64 ~x86 ~x86-interix ~amd64-linux ~x86-linux ~x86-macos ~sparc-solaris
+LICENSE=MIT
+RDEPEND=flup? ( dev-python/flup ) openid? ( dev-python/python-openid ) >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+SLOT=0
+SRC_URI=http://pypi.python.org/packages/source/P/Paste/Paste-1.7.2.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ab7aa3313dd976d1baf71c152207752c

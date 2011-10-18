@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup
+DEPEND=dev-lang/perl guionly? ( >=gnome-base/librsvg-2.4.0 >=dev-ml/lablgtk-2.6 ) gtk? ( >=gnome-base/librsvg-2.4.0 >=dev-ml/lablgtk-2.6[svg] ) gd? ( >=media-libs/gd-2.0.28[truetype] ) magic? ( sys-apps/file ) >=dev-lang/ocaml-3.10.2[ocamlopt?] sys-apps/sed =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=MLDonkey is a multi-network P2P application written in Ocaml, coming with its own Gtk GUI, web and telnet interface.
+EAPI=2
+HOMEPAGE=http://mldonkey.sourceforge.net/
+IUSE=doc fasttrack gd gnutella gtk guionly magic +ocamlopt
+KEYWORDS=~alpha amd64 hppa ~ia64 ppc ~sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=dev-lang/perl guionly? ( >=gnome-base/librsvg-2.4.0 >=dev-ml/lablgtk-2.6 ) gtk? ( >=gnome-base/librsvg-2.4.0 >=dev-ml/lablgtk-2.6[svg] ) gd? ( >=media-libs/gd-2.0.28[truetype] ) magic? ( sys-apps/file )
+SLOT=0
+SRC_URI=mirror://sourceforge/mldonkey/mldonkey-3.0.0.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=bcd0ba2e67760dc06ad5b08f393d1fd0

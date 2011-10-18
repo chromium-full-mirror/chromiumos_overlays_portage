@@ -1,0 +1,10 @@
+DEFINED_PHASES=-
+DEPEND=!<sci-electronics/geda-1.4.3-r1
+DESCRIPTION=Meta-package for the gEDA/gaf tools
+HOMEPAGE=http://www.gpleda.org/
+IUSE=doc examples
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND==sci-libs/libgeda-1.4.3* =sci-electronics/geda-gattrib-1.4.3* =sci-electronics/geda-gnetlist-1.4.3* =sci-electronics/geda-gschem-1.4.3* =sci-electronics/geda-gsymcheck-1.4.3* =sci-electronics/geda-symbols-1.4.3* =sci-electronics/geda-utils-1.4.3* doc? ( =sci-electronics/geda-docs-1.4.3* ) examples? ( =sci-electronics/geda-examples-1.4.3* )
+SLOT=0
+_md5_=c226fdef6557fb1834310900f4065758

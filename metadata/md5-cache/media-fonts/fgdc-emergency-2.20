@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm setup
+DEPEND=X? ( x11-apps/mkfontdir media-fonts/encodings ) >=media-libs/fontconfig-2.4.0
+DESCRIPTION=FGDC Emergency Response Symbology Prototype
+HOMEPAGE=http://www.fgdc.gov/HSWG/
+IUSE=X
+KEYWORDS=~x86 ~amd64
+LICENSE=public-domain
+SLOT=0
+SRC_URI=http://www.fgdc.gov/HSWG/symbol_downloads/ers_v220.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	font	bc3df4ed373e09f86a90e8fad39034d6	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2c328a8fa00372aa97e09c99e78cb06b

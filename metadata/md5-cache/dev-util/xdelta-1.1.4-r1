@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=dev-libs/glib-2 >=sys-libs/zlib-1.1.4 dev-util/pkgconfig =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Computes changes between binary or text files and creates deltas
+HOMEPAGE=http://xdelta.googlecode.com/
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/glib-2 >=sys-libs/zlib-1.1.4
+SLOT=0
+SRC_URI=http://xdelta.googlecode.com/files/xdelta-1.1.4.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c26e78d41b28b6acd3473ac4ee95e8bf

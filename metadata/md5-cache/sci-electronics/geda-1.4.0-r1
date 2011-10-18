@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup unpack
+DEPEND=>=x11-libs/gtk+-2.4 >=dev-scheme/guile-1.6.3 =sci-libs/libgeda-1.4.0
+DESCRIPTION=Core metapackage for all the necessary components you would need for a minimal gEDA/gaf system
+HOMEPAGE=http://www.geda.seul.org
+IUSE=doc examples gd threads
+KEYWORDS=amd64 ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2.4 >=dev-scheme/guile-1.6.3 =sci-libs/libgeda-1.4.0
+SLOT=0
+SRC_URI=http://www.geda.seul.org/release/v1.4/1.4.0/geda-gattrib-1.4.0.tar.gz http://www.geda.seul.org/release/v1.4/1.4.0/geda-gnetlist-1.4.0.tar.gz http://www.geda.seul.org/release/v1.4/1.4.0/geda-gschem-1.4.0.tar.gz http://www.geda.seul.org/release/v1.4/1.4.0/geda-gsymcheck-1.4.0.tar.gz http://www.geda.seul.org/release/v1.4/1.4.0/geda-symbols-1.4.0.tar.gz http://www.geda.seul.org/release/v1.4/1.4.0/geda-utils-1.4.0.tar.gz doc? ( http://www.geda.seul.org/release/v1.4/1.4.0/geda-docs-1.4.0.tar.gz ) examples? ( http://www.geda.seul.org/release/v1.4/1.4.0/geda-examples-1.4.0.tar.gz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=3987129eca98a8af1247c0497c16c7fa

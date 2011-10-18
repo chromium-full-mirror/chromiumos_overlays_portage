@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=!dev-lang/fpc-bin !dev-lang/fpc-source
+DESCRIPTION=Free Pascal Compiler
+EAPI=2
+HOMEPAGE=http://www.freepascal.org/
+IUSE=doc source
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=GPL-2 LGPL-2.1 LGPL-2.1-FPC
+RDEPEND=!dev-lang/fpc-bin !dev-lang/fpc-source
+RESTRICT=strip
+SLOT=0
+SRC_URI=mirror://sourceforge/freepascal/fpcbuild-2.4.0.tar.gz amd64? ( mirror://sourceforge/freepascal/fpc-2.4.0.x86_64-linux.tar ) ppc? ( mirror://sourceforge/freepascal/fpc-2.4.0.powerpc-linux.tar ) sparc? ( mirror://sourceforge/freepascal/fpc-2.2.4.sparc-linux.tar ) x86? ( mirror://sourceforge/freepascal/fpc-2.4.0.i386-linux.tar ) doc? ( mirror://sourceforge/freepascal/Documentation/2.4.0/doc-html.tar.gz -> fpc-2.4.0-doc-html.tar.gz mirror://gentoo/fpc-2.4.0-fpctoc.htx.bz2 )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=eb2d1eebc5fe15d9c5e031567697786f

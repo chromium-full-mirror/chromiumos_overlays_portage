@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=>dev-libs/dbus-glib-0.6 >=dev-libs/libdaemon-0.10 >=dev-libs/libmirage-1.0.0 alsa? ( >=media-libs/alsa-lib-1.0.0 >=media-libs/libsndfile-1.0.0 ) dev-util/unifdef
+DESCRIPTION=Daemon of the cdemu cd image mounting suite
+HOMEPAGE=http://www.cdemu.org
+IUSE=alsa
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=>dev-libs/dbus-glib-0.6 >=dev-libs/libdaemon-0.10 >=dev-libs/libmirage-1.0.0 alsa? ( >=media-libs/alsa-lib-1.0.0 >=media-libs/libsndfile-1.0.0 ) >=sys-fs/vhba-1.0.0
+SLOT=0
+SRC_URI=mirror://sourceforge/cdemu/cdemu-daemon-1.0.0.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b08e87229985094bf4cd631809c62c65

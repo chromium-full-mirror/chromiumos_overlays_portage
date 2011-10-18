@@ -1,0 +1,11 @@
+DEFINED_PHASES=install setup
+DEPEND=>=dev-php/PEAR-MDB2-2.5.0_beta2 =dev-lang/php-5* dev-lang/php || ( ( >=dev-php/PEAR-PEAR-1.6.1 <dev-php/PEAR-PEAR-1.8.1 ) >=dev-php/pear-1.8.1 )
+DESCRIPTION=Database Abstraction Layer, mysqli driver
+HOMEPAGE=http://pear.php.net/MDB2_Driver_mysqli
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
+LICENSE=BSD
+RDEPEND=>=dev-php/PEAR-MDB2-2.5.0_beta2 =dev-lang/php-5* dev-lang/php || ( ( >=dev-php/PEAR-PEAR-1.6.1 <dev-php/PEAR-PEAR-1.8.1 ) >=dev-php/pear-1.8.1 )
+SLOT=0
+SRC_URI=http://pear.php.net/get/MDB2_Driver_mysqli-1.5.0b2.tgz
+_eclasses_=depend.php	b574aac6c7b0a3d079a293788cd20aaf	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	php-pear-r1	fbd8227115d49d8906df3ea12d7faa1a	phpconfutils	f0ebaebc168cafb7b6e951280ab2dce5	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f6c71cf74b94a15557d862443df36598

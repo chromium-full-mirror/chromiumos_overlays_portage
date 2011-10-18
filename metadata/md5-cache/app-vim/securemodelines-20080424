@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm
+DEPEND=|| ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 )
+DESCRIPTION=vim plugin: Secure, user-configurable modeline support.
+HOMEPAGE=http://www.vim.org/scripts/script.php?script_id=1876
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~sparc-fbsd ~x86 ~x86-fbsd
+LICENSE=vim
+RDEPEND=|| ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 )
+SLOT=0
+SRC_URI=mirror://gentoo/securemodelines-20080424.tar.bz2
+_eclasses_=vim-doc	6bd5bb2529af326fe3359e975a3439d0	vim-plugin	ad1471f55b183500f4224c8992df8205
+_md5_=05a91e7fa80240c10f1cb74f5cc1549c

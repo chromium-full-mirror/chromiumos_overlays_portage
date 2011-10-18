@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup unpack
+DEPEND=x11-libs/qt-gui:4[accessibility] kde? ( media-sound/phonon[gstreamer] ) !kde? ( x11-libs/qt-phonon:4 )
+DESCRIPTION=Qt4 YouTube Client
+EAPI=2
+HOMEPAGE=http://flavio.tordini.org/minitube
+IUSE=debug kde linguas_cs linguas_de linguas_es linguas_es_AR linguas_fr linguas_he linguas_hr linguas_hu linguas_it linguas_ja linguas_pl linguas_pt_BR linguas_ru linguas_tr linguas_uk
+KEYWORDS=amd64 x86
+LICENSE=GPL-3
+RDEPEND=x11-libs/qt-gui:4[accessibility] kde? ( media-sound/phonon[gstreamer] ) !kde? ( x11-libs/qt-phonon:4 )
+SLOT=0
+SRC_URI=http://flavio.tordini.org/files/minitube/minitube-0.8.1.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4	83eabd1192f3f2c5a649ba2422a14d00	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=b02bf2a3bced6d4f219529e84b31874d

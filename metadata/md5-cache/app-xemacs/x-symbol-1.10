@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=app-editors/xemacs
+DESCRIPTION=Semi WYSIWYG for LaTeX, HTML, etc, using additional fonts.
+HOMEPAGE=http://xemacs.org/
+KEYWORDS=alpha amd64 ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=app-xemacs/xemacs-base app-xemacs/auctex app-xemacs/mail-lib
+SLOT=0
+SRC_URI=http://ftp.xemacs.org/pub/xemacs/packages/x-symbol-1.10-pkg.tar.gz
+_eclasses_=xemacs-packages	6dd96054b458a462c15a08ea670d9ac6
+_md5_=26e8811694d0be9e006c819e0bb22b18

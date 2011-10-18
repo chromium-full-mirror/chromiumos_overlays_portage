@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst unpack
+DEPEND=!dev-util/nvidia-cuda-profiler
+DESCRIPTION=NVIDIA CUDA Toolkit
+EAPI=2
+HOMEPAGE=http://developer.nvidia.com/cuda
+IUSE=debugger doc profiler
+KEYWORDS=~amd64 ~x86
+LICENSE=NVIDIA
+RDEPEND=!dev-util/nvidia-cuda-profiler >=sys-devel/gcc-4.0 profiler? ( x86? ( x11-libs/qt-gui x11-libs/qt-core x11-libs/qt-assistant x11-libs/qt-sql[sqlite] ) ) debugger? ( >=sys-libs/libtermcap-compat-2.0.8-r2 )
+RESTRICT=strip binchecks
+SLOT=0
+SRC_URI=amd64? ( http://developer.download.nvidia.com/compute/cuda/3_0-Beta1/toolkit/cudatoolkit_3.0-beta1_linux_64_rhel5.3.run ) x86? ( http://developer.download.nvidia.com/compute/cuda/3_0-Beta1/toolkit/cudatoolkit_3.0-beta1_linux_32_rhel5.3.run )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f638f806f12d86f2561cceedda3c905e

@@ -1,0 +1,10 @@
+DEFINED_PHASES=config install postinst prerm
+DESCRIPTION=Issue tracking system
+HOMEPAGE=http://www.zope.org/Members/peterbe/IssueTrackerProduct
+KEYWORDS=~ppc x86
+LICENSE=ZPL
+RDEPEND=>=dev-python/stripogram-1.4 net-zope/zope app-admin/zprod-manager
+SLOT=0
+SRC_URI=http://www.zope.org/Members/peterbe/IssueTrackerProduct/IssueTrackerProduct-0.5.0b.tgz
+_eclasses_=zproduct	d54241e49843f5a439323be5e3a1742e
+_md5_=8d7b77d4637ba29de8a2f9dd78225363

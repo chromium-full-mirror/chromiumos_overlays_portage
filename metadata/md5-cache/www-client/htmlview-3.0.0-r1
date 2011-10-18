@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=app-arch/rpm2targz-9.0.0.3g
+DESCRIPTION=A script which calls an installed HTML viewer.
+HOMEPAGE=http://www.redhat.com
+KEYWORDS=amd64 ia64 mips ppc x86
+LICENSE=public-domain
+SLOT=0
+SRC_URI=mirror://fedora/development/SRPMS/htmlview-3.0.0-8.src.rpm
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	rpm	e703d62d2e2b396a7fb0262b79fdba53	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=5d32ef9c89bfb3d03965ea5b9f77531a

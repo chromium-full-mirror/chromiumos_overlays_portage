@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=dev-libs/gmp virtual/libffi >=dev-libs/boehm-gc-7.1[threads?]
+DESCRIPTION=ECL is an embeddable Common Lisp implementation.
+EAPI=3
+HOMEPAGE=http://common-lisp.net/project/ecl/
+IUSE=debug doc precisegc +threads +unicode X
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=BSD LGPL-2
+PDEPEND=dev-lisp/gentoo-init
+PROVIDE=virtual/commonlisp
+RDEPEND=dev-libs/gmp virtual/libffi >=dev-libs/boehm-gc-7.1[threads?]
+SLOT=0
+SRC_URI=mirror://sourceforge/ecls/ecl-10.2.1.tgz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=534e6f86bce761f298ab533d27543bdd

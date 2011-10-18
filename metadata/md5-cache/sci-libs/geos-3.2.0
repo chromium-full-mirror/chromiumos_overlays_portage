@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=ruby? ( virtual/ruby ) python? ( virtual/python ) doc? ( app-doc/doxygen ) ruby? ( dev-lang/swig ) python? ( dev-lang/swig )
+DESCRIPTION=Geometry engine library for Geographic Information Systems
+EAPI=2
+HOMEPAGE=http://geos.refractions.net
+IUSE=doc python ruby
+KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris
+LICENSE=LGPL-2.1
+RDEPEND=ruby? ( virtual/ruby ) python? ( virtual/python )
+SLOT=0
+SRC_URI=http://download.osgeo.org/geos/geos-3.2.0.tar.bz2
+_md5_=b6c329eba45f932507fefee71e1869ac

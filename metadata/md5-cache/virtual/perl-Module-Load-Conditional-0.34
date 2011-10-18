@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=Looking up module information / loading at runtime
+KEYWORDS=~amd64 ~ppc ~x86
+RDEPEND=~perl-core/Module-Load-Conditional-0.34
+SLOT=0
+_md5_=39ce2223def8ecaa1d925ab69388bbb9

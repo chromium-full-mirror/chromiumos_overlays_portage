@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=nls? ( sys-devel/gettext ) kerberos? ( virtual/krb5 )
+DESCRIPTION=The GNU SASL client, server, and library
+HOMEPAGE=http://www.gnu.org/software/gsasl/
+IUSE=kerberos nls static doc
+KEYWORDS=amd64 ia64 ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=nls? ( sys-devel/gettext ) kerberos? ( virtual/krb5 )
+SLOT=0
+SRC_URI=http://josefsson.org/gsasl/releases/gsasl-0.2.4.tar.gz
+_md5_=7812de3cbd5a673e018858b12e46ce7b

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare unpack
+DEPEND=x11-themes/gnome-icon-theme >=dev-lang/mono-2 >=x11-libs/gtk+-2.6 >=dev-dotnet/gtk-sharp-2.12.9 >=dev-dotnet/glade-sharp-2.12.6 >=dev-dotnet/gnome-sharp-2.6 >=dev-dotnet/gconf-sharp-2.6 >=dev-dotnet/gnomevfs-sharp-2.6 >=dev-dotnet/dbus-sharp-0.4 >=dev-dotnet/dbus-glib-sharp-0.3 sys-libs/gdbm >=media-libs/flac-1.1.2 >=media-libs/libvorbis-1 >=media-libs/libid3tag-0.15.0b =media-libs/gstreamer-0.10* =media-libs/gst-plugins-base-0.10* =media-libs/gst-plugins-good-0.10* =media-plugins/gst-plugins-gconf-0.10* =media-plugins/gst-plugins-gnomevfs-0.10* flac? ( =media-plugins/gst-plugins-flac-0.10* ) mad? ( =media-plugins/gst-plugins-mad-0.10* ) vorbis? ( =media-plugins/gst-plugins-ogg-0.10* =media-plugins/gst-plugins-vorbis-0.10* ) dev-util/pkgconfig app-text/scrollkeeper gnome-base/gnome-common >=dev-util/intltool-0.29 virtual/monodoc >=sys-apps/sed-4
+DESCRIPTION=A music player for GNOME
+EAPI=2
+HOMEPAGE=http://muine-player.org
+IUSE=flac mad vorbis debug
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=x11-themes/gnome-icon-theme >=dev-lang/mono-2 >=x11-libs/gtk+-2.6 >=dev-dotnet/gtk-sharp-2.12.9 >=dev-dotnet/glade-sharp-2.12.6 >=dev-dotnet/gnome-sharp-2.6 >=dev-dotnet/gconf-sharp-2.6 >=dev-dotnet/gnomevfs-sharp-2.6 >=dev-dotnet/dbus-sharp-0.4 >=dev-dotnet/dbus-glib-sharp-0.3 sys-libs/gdbm >=media-libs/flac-1.1.2 >=media-libs/libvorbis-1 >=media-libs/libid3tag-0.15.0b =media-libs/gstreamer-0.10* =media-libs/gst-plugins-base-0.10* =media-libs/gst-plugins-good-0.10* =media-plugins/gst-plugins-gconf-0.10* =media-plugins/gst-plugins-gnomevfs-0.10* flac? ( =media-plugins/gst-plugins-flac-0.10* ) mad? ( =media-plugins/gst-plugins-mad-0.10* ) vorbis? ( =media-plugins/gst-plugins-ogg-0.10* =media-plugins/gst-plugins-vorbis-0.10* )
+SLOT=0
+SRC_URI=http://download.gnome.org/sources/muine/0.8/muine-0.8.11.tar.bz2
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=fadffb8f684201da8e1d74e7c3f06676

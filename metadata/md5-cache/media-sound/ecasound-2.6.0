@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst postrm
+DEPEND=python? ( dev-lang/python ) jack? ( media-sound/jack-audio-connection-kit ) media-libs/ladspa-sdk audiofile? ( media-libs/audiofile ) alsa? ( media-libs/alsa-lib ) vorbis? ( media-libs/libvorbis ) libsamplerate? ( media-libs/libsamplerate ) mikmod? ( media-libs/libmikmod ) ruby? ( dev-lang/ruby ) python? ( dev-lang/python ) ncurses? ( sys-libs/ncurses ) sndfile? ( media-libs/libsndfile ) sys-libs/readline >=app-admin/eselect-python-20091230
+DESCRIPTION=a package for multitrack audio processing
+EAPI=2
+HOMEPAGE=http://ecasound.seul.org/ecasound
+IUSE=alsa audiofile debug doc jack libsamplerate mikmod ncurses vorbis oss python ruby sndfile
+KEYWORDS=amd64 ~ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=python? ( dev-lang/python ) jack? ( media-sound/jack-audio-connection-kit ) media-libs/ladspa-sdk audiofile? ( media-libs/audiofile ) alsa? ( media-libs/alsa-lib ) vorbis? ( media-libs/libvorbis ) libsamplerate? ( media-libs/libsamplerate ) mikmod? ( media-libs/libmikmod ) ruby? ( dev-lang/ruby ) python? ( dev-lang/python ) ncurses? ( sys-libs/ncurses ) sndfile? ( media-libs/libsndfile ) sys-libs/readline >=app-admin/eselect-python-20091230
+SLOT=1
+SRC_URI=http://ecasound.seul.org/download/ecasound-2.6.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=91063fb093fd209c0e4d05ed61495eeb

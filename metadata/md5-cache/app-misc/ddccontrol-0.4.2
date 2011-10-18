@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-libs/libxml2 gtk? ( >=x11-libs/gtk+-2.4 ) gnome? ( >=gnome-base/gnome-panel-2.10 ) sys-apps/pciutils nls? ( sys-devel/gettext ) >=app-misc/ddccontrol-db-20060730 dev-perl/XML-Parser dev-util/intltool doc? ( >=app-text/docbook-xsl-stylesheets-1.65.1 >=dev-libs/libxslt-1.1.6 app-text/htmltidy ) sys-kernel/linux-headers =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=DDCControl allows control of monitor parameters via DDC
+HOMEPAGE=http://ddccontrol.sourceforge.net/
+IUSE=gtk gnome doc nls
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/libxml2 gtk? ( >=x11-libs/gtk+-2.4 ) gnome? ( >=gnome-base/gnome-panel-2.10 ) sys-apps/pciutils nls? ( sys-devel/gettext ) >=app-misc/ddccontrol-db-20060730
+SLOT=0
+SRC_URI=mirror://sourceforge/ddccontrol/ddccontrol-0.4.2.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f718e9274bec85a90640af0c59e714fd

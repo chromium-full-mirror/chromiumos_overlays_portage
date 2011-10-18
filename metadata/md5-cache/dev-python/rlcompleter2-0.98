@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND=>=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=Python command line completion
+EAPI=2
+HOMEPAGE=http://codespeak.net/rlcompleter2/ http://pypi.python.org/pypi/rlcompleter2
+KEYWORDS=~amd64 ~ia64 ~ppc x86
+LICENSE=MIT
+RDEPEND=>=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=http://pypi.python.org/packages/source/r/rlcompleter2/rlcompleter2-0.98.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=996ab0a85b343f47ba52f588c14fd7a4

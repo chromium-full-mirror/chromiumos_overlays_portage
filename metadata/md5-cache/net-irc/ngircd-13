@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=zlib? ( sys-libs/zlib ) ident? ( net-libs/libident ) tcpd? ( sys-apps/tcp-wrappers ) >=sys-apps/sed-4
+DESCRIPTION=A IRC server written from scratch.
+HOMEPAGE=http://ngircd.barton.de/
+IUSE=zlib tcpd debug ident
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=zlib? ( sys-libs/zlib ) ident? ( net-libs/libident ) tcpd? ( sys-apps/tcp-wrappers ) >=sys-apps/sed-4
+RESTRICT=test
+SLOT=0
+SRC_URI=ftp://ftp.berlios.de/pub/ngircd/ngircd-13.tar.gz ftp://ngircd.barton.de/pub/ngircd/ngircd-13.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=96b278d1f0784fa613d3e9b70a9c09b6

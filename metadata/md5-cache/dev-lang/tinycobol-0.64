@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=dev-libs/glib-2.0 sys-libs/db sys-devel/flex
+DESCRIPTION=COBOL for linux
+HOMEPAGE=http://tiny-cobol.sourceforge.net/
+KEYWORDS=ppc x86
+LICENSE=GPL-2 LGPL-2
+RDEPEND=>=dev-libs/glib-2.0 sys-libs/db
+SLOT=0
+SRC_URI=mirror://sourceforge/tiny-cobol/tinycobol-0.64.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8c09d38faa0fa8793f5dcdaa68476261

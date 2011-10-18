@@ -1,0 +1,8 @@
+DEFINED_PHASES=install postinst
+DESCRIPTION=Intel IA32 microcode update data
+HOMEPAGE=http://urbanmyth.org/microcode/
+KEYWORDS=~amd64 ~x86
+LICENSE=as-is
+SLOT=0
+SRC_URI=http://downloadmirror.intel.com/18148/eng/microcode-20090927.tgz
+_md5_=8cbfbbd47b23f513e0be6a4634f96de4

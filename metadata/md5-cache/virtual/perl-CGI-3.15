@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=Virtual for CGI
+KEYWORDS=~sparc-fbsd
+RDEPEND=|| ( ~dev-lang/perl-5.8.8 ~perl-core/CGI-3.15 )
+SLOT=0
+_md5_=8020f267b88acf1050627f83fd009502

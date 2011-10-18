@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=|| ( >=dev-perl/Email-Simple-2.100 >=dev-perl/Email-Simple-Creator-1.41 ) virtual/perl-Test-Simple >=dev-perl/Email-MIME-1.857 || ( >=dev-perl/Email-MIME-1.900 >=dev-perl/Email-MIME-Modifier-1.441 ) dev-perl/Email-Simple dev-lang/perl[-build]
+DESCRIPTION=Email::MIME constructor for starting anew
+EAPI=2
+HOMEPAGE=http://search.cpan.org/dist/Email-MIME-Creator/
+KEYWORDS=alpha amd64 ia64 ppc ppc64 sparc x86
+LICENSE=|| ( Artistic GPL-2 )
+RDEPEND=|| ( >=dev-perl/Email-Simple-2.100 >=dev-perl/Email-Simple-Creator-1.41 ) virtual/perl-Test-Simple >=dev-perl/Email-MIME-1.857 || ( >=dev-perl/Email-MIME-1.900 >=dev-perl/Email-MIME-Modifier-1.441 ) dev-perl/Email-Simple dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/R/RJ/RJBS//Email-MIME-Creator-1.454.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6d999a66f3b03deefb4324ac7603159d

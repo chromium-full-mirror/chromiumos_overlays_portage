@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install preinst setup unpack
+DEPEND=>=virtual/jdk-1.5 app-arch/unzip >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip ) >=dev-java/ant-core-1.7.0 >=dev-java/javatoolkit-0.3.0-r2
+DESCRIPTION=Glassfish reference implementation of Servlet API 2.5 and JSP API 2.1
+HOMEPAGE=https://glassfish.dev.java.net/javaee5/webtier/webtierhome.html
+IUSE=elibc_FreeBSD doc source elibc_FreeBSD
+KEYWORDS=~amd64 ~x86
+LICENSE=CDDL
+RDEPEND=>=virtual/jre-1.5 >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
+SLOT=2.5
+SRC_URI=http://download.java.net/javaee5/trunk/promoted/source/glassfish-v2-b44-src.zip
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	java-ant-2	8ee2028cc96a10184ba4ed021eef48da	java-pkg-2	39b2c3db200ad244ca675b2a1363aa75	java-utils-2	9c079d63349fb3fcd154c1630807a59a	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=5bc50d20924a2384cc0e4939f1b7807e

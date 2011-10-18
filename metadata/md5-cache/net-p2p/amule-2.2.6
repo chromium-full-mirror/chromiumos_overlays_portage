@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install preinst setup
+DEPEND==x11-libs/wxGTK-2.8* =dev-libs/crypto++-5.5* >=sys-libs/zlib-1.2.1 stats? ( >=media-libs/gd-2.0.26[jpeg] ) geoip? ( dev-libs/geoip ) upnp? ( >=net-libs/libupnp-1.6.6 ) remote? ( >=media-libs/libpng-1.2.0 unicode? ( >=media-libs/gd-2.0.26 ) )
+DESCRIPTION=aMule, the all-platform eMule p2p client
+EAPI=2
+HOMEPAGE=http://www.amule.org/
+IUSE=daemon debug geoip gtk nls remote stats unicode upnp
+KEYWORDS=~alpha ~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND==x11-libs/wxGTK-2.8* =dev-libs/crypto++-5.5* >=sys-libs/zlib-1.2.1 stats? ( >=media-libs/gd-2.0.26[jpeg] ) geoip? ( dev-libs/geoip ) upnp? ( >=net-libs/libupnp-1.6.6 ) remote? ( >=media-libs/libpng-1.2.0 unicode? ( >=media-libs/gd-2.0.26 ) )
+SLOT=0
+SRC_URI=mirror://sourceforge/amule/aMule-2.2.6.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	wxwidgets	a63777cd98e5f0d521e43c451fe4cf43
+_md5_=f70b28f64cc24b2c6159ef24c126e14a

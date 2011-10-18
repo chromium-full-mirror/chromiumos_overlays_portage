@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=>=dev-libs/libpcre-7.6 sys-apps/texinfo emacs? ( virtual/emacs )
+DESCRIPTION=Chicken is a Scheme interpreter and native Scheme to C compiler
+HOMEPAGE=http://www.call-with-current-continuation.org/
+IUSE=emacs
+KEYWORDS=~alpha ~amd64 ~ppc ~ppc64 ~x86
+LICENSE=BSD
+RDEPEND=>=dev-libs/libpcre-7.6 sys-apps/texinfo emacs? ( virtual/emacs )
+RESTRICT=test
+SLOT=0
+SRC_URI=http://chicken.wiki.br/releases/3.2.0/chicken-3.2.0.tar.gz
+_eclasses_=elisp-common	3322f14f031ddc95feccd9089c9adc59	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0fd4c4f46a2ccd2442af612338d7ce70

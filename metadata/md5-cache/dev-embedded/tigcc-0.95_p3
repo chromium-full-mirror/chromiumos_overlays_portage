@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=sys-devel/binutils-2.14.90.0.6-r1 >=sys-devel/bison-1.875 app-arch/unzip
+DESCRIPTION=Cross compiler for Texas Instruments TI-89, TI-92(+) and V200 calculators
+HOMEPAGE=http://tigcc.ticalc.org
+KEYWORDS=~x86 ~amd64 ~ppc
+LICENSE=GPL-2
+RDEPEND=>=sys-devel/binutils-2.14.90.0.6-r1 >=sys-devel/bison-1.875
+SLOT=0
+SRC_URI=mirror://gentoo/tigcc-0.95_p3.tar.bz2 mirror://gnu/gcc/releases/gcc-3.3.3/gcc-core-3.3.3.tar.bz2 http://cdn.mirror.garr.it/mirrors/gnuftp/binutils/binutils-2.14.tar.bz2 http://members.chello.at/gerhard.kofler/kevin/ti89prog/libfargo.zip http://members.chello.at/gerhard.kofler/kevin/ti89prog/flashosa.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=36bf509c3a9f34a2d121258e03bbd734

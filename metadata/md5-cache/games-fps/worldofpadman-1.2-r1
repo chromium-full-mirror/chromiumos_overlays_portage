@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=opengl? ( virtual/opengl media-libs/libsdl media-libs/libogg media-libs/libvorbis net-misc/curl openal? ( media-libs/openal ) ) !opengl? ( !dedicated? ( virtual/opengl media-libs/libsdl media-libs/libogg media-libs/libvorbis net-misc/curl openal? ( media-libs/openal ) ) ) maps? ( app-arch/unzip )
+DESCRIPTION=A cartoon style multiplayer first-person shooter
+EAPI=2
+HOMEPAGE=http://worldofpadman.com/
+IUSE=dedicated maps openal opengl
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2 worldofpadman
+RDEPEND=opengl? ( virtual/opengl media-libs/libsdl media-libs/libogg media-libs/libvorbis net-misc/curl openal? ( media-libs/openal ) ) !opengl? ( !dedicated? ( virtual/opengl media-libs/libsdl media-libs/libogg media-libs/libvorbis net-misc/curl openal? ( media-libs/openal ) ) )
+SLOT=0
+SRC_URI=ftp://kickchat.com/wop/wop-engine-1.2.tar.bz2 ftp://kickchat.com/wop/wop_patch_1_2.run http://thilo.kickchat.com/download/worldofpadman.run maps? ( http://thilo.kickchat.com/download/wop_padpack.zip )
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7da08052a7813605fa2102c28f215c17

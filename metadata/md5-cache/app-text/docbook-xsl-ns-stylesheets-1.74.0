@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst postrm
+DEPEND=dev-libs/libxml2 dev-libs/libxslt >=app-text/build-docbook-catalog-1.4
+DESCRIPTION=XSL Stylesheets for Docbook
+HOMEPAGE=http://wiki.docbook.org/topic/DocBookXslStylesheets
+KEYWORDS=alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc ~sparc-fbsd x86 ~x86-fbsd
+LICENSE=BSD
+RDEPEND=dev-libs/libxml2 dev-libs/libxslt >=app-text/build-docbook-catalog-1.4
+SLOT=0
+SRC_URI=mirror://sourceforge/docbook/docbook-xsl-ns-1.74.0.tar.bz2
+_md5_=53dae79be9c53285df14b3476f9eed3c

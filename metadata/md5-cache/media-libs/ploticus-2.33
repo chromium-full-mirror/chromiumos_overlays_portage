@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup test unpack
+DEPEND=media-libs/libpng gd? ( >=media-libs/gd-1.84 media-libs/jpeg ) flash? ( =media-libs/ming-0.2a ) truetype? ( =media-libs/freetype-2* ) X? ( x11-libs/libX11 ) !dev-lang/swi-prolog
+DESCRIPTION=A command line application for producing graphs and charts
+HOMEPAGE=http://ploticus.sourceforge.net
+IUSE=gd flash nls cpulimit svg svgz truetype X
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=media-libs/libpng gd? ( >=media-libs/gd-1.84 media-libs/jpeg ) flash? ( =media-libs/ming-0.2a ) truetype? ( =media-libs/freetype-2* ) X? ( x11-libs/libX11 ) !dev-lang/swi-prolog
+SLOT=0
+SRC_URI=mirror://sourceforge/ploticus/pl233src.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=85c4ae0ad2f361194752ee554f1b1663

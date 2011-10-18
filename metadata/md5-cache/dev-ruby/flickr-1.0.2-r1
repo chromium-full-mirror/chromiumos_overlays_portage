@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=test? ( dev-ruby/rake dev-ruby/rubygems ) doc? ( dev-ruby/rake dev-ruby/rubygems ) virtual/ruby
+DESCRIPTION=An insanely easy interface to the Flickr photo-sharing service.
+HOMEPAGE=http://rubyforge.org/projects/flickr/
+IUSE=test doc
+KEYWORDS=amd64
+LICENSE=MIT
+RDEPEND=dev-ruby/xml-simple virtual/ruby
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://gentoo/flickr-1.0.2-gentoo.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby	dfc4f482954636675998a350b1d078b5	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f212c023055d3cdab2fe6e54cb1cf2ec

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst setup
+DEPEND=|| ( app-shells/pdksh app-shells/ksh ) <net-analyzer/rrdtool-1.2
+DESCRIPTION=Program to report and analyze flow files
+HOMEPAGE=http://net.doit.wisc.edu/~plonka/FlowScan/
+KEYWORDS=~ppc x86
+LICENSE=GPL-2
+RDEPEND=|| ( app-shells/pdksh app-shells/ksh ) dev-lang/perl <net-analyzer/rrdtool-1.2 dev-perl/ConfigReader dev-perl/Boulder dev-perl/HTML-Table dev-perl/Net-Patricia dev-perl/Cflow
+SLOT=0
+SRC_URI=http://net.doit.wisc.edu/~plonka/FlowScan/FlowScan-1.006.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=214868ad8a6493de4d8f13969b6f5651

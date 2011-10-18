@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DEPEND=>=virtual/jdk-1.4 app-arch/unzip dev-java/ant-core lfd? ( sys-apps/xinetd ) source? ( app-arch/zip ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b >=dev-java/java-config-2.1.9-r1
+DESCRIPTION=Native lib providing serial and parallel communication for Java
+HOMEPAGE=http://rxtx.org/
+IUSE=doc source lfd elibc_FreeBSD
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2
+RDEPEND=>=virtual/jre-1.4 >=dev-java/java-config-2.1.9-r1
+SLOT=2
+SRC_URI=ftp://ftp.qbang.org/pub/rxtx/rxtx-2.1-7r2.zip
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	java-pkg-2	39b2c3db200ad244ca675b2a1363aa75	java-utils-2	9c079d63349fb3fcd154c1630807a59a	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=1ce83da3d55880c67f339cd19001870e

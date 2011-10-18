@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=sys-libs/db >=mail-mta/sendmail-8.9
+DESCRIPTION=A robust implementation of POP-before-SMTP
+HOMEPAGE=http://mail.cc.umanitoba.ca/drac/
+IUSE=debug
+KEYWORDS=x86
+LICENSE=as-is
+RDEPEND=sys-libs/db >=mail-mta/sendmail-8.9
+SLOT=0
+SRC_URI=ftp://ftp.cc.umanitoba.ca/src/drac.tar.Z
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=73e3026544c3ad5fac7c5379776a8c09

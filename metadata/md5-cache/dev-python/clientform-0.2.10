@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=>=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=Parse, fill out, and return HTML forms on the client side
+EAPI=2
+HOMEPAGE=http://wwwsearch.sourceforge.net/ClientForm/ http://pypi.python.org/pypi/ClientForm
+IUSE=examples
+KEYWORDS=~alpha amd64 ~ia64 ppc ~sparc x86 ~amd64-linux ~ia64-linux ~x86-linux ~x86-macos
+LICENSE=BSD
+RDEPEND=>=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=http://wwwsearch.sourceforge.net/ClientForm/src/ClientForm-0.2.10.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c74056e278cd48b59f4a4f836be59505

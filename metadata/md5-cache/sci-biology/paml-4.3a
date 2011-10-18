@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=Phylogenetic Analysis by Maximum Likelihood
+EAPI=2
+HOMEPAGE=http://abacus.gene.ucl.ac.uk/software/paml.html
+KEYWORDS=amd64 x86
+LICENSE=free-noncomm
+SLOT=0
+SRC_URI=http://abacus.gene.ucl.ac.uk/software/paml4.3a.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=acded2e8b934300bbd8a3a5c801bd99b

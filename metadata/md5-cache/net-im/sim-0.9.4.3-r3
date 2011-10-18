@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install nofetch postinst unpack
+DEPEND=x11-libs/qt:3 spell? ( app-text/aspell ) ssl? ( dev-libs/openssl ) dev-libs/libxml2 dev-libs/libxslt sys-libs/zlib x11-libs/libXScrnSaver sys-devel/flex app-arch/zip x11-proto/scrnsaverproto
+DESCRIPTION=Simple Instant Messenger (with KDE support). ICQ/AIM/Jabber/MSN/Yahoo.
+EAPI=1
+HOMEPAGE=http://sim-im.org/
+IUSE=debug spell ssl
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/qt:3 spell? ( app-text/aspell ) ssl? ( dev-libs/openssl ) dev-libs/libxml2 dev-libs/libxslt sys-libs/zlib x11-libs/libXScrnSaver
+RESTRICT=fetch
+SLOT=0
+SRC_URI=mirror://berlios/sim-im/sim-0.9.4.3.tar.bz2 http://dev.gentoo.org/~pva/sim-0.9.4.3-r1919_1924.patch.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt3	823f11abd98cfc43cf92b8622e420f1f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=9fd32dedfe783b2e985038efc40a1077

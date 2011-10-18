@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=>=dev-lang/mono-2 dev-libs/glib !dev-dotnet/ikvm-bin >=dev-dotnet/nant-0.85 >=virtual/jdk-1.6 app-arch/unzip dev-util/pkgconfig
+DESCRIPTION=Java VM for .NET
+EAPI=2
+HOMEPAGE=http://www.ikvm.net/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=as-is
+RDEPEND=>=dev-lang/mono-2 dev-libs/glib
+SLOT=0
+SRC_URI=mirror://sourceforge/ikvm/ikvm-0.36.0.11.zip mirror://sourceforge/ikvm/classpath-0.95-stripped.zip mirror://sourceforge/ikvm/openjdk-b13-stripped.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=cf6845fee36b7e472ffadd2d91f9c3f0

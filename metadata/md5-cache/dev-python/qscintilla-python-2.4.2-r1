@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=>=dev-python/sip-4.10 >=dev-python/PyQt4-4.7[X] ~x11-libs/qscintilla-2.4.2 >=app-admin/eselect-python-20091230
+DESCRIPTION=Python bindings for Qscintilla
+EAPI=2
+HOMEPAGE=http://www.riverbankcomputing.co.uk/software/qscintilla/intro
+IUSE=debug
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+LICENSE=|| ( GPL-2 GPL-3 )
+RDEPEND=>=dev-python/sip-4.10 >=dev-python/PyQt4-4.7[X] ~x11-libs/qscintilla-2.4.2 >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://www.riverbankcomputing.co.uk/static/Downloads/QScintilla2/QScintilla-gpl-2.4.2.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9ff95f4ae95c4c1c41c81b4d8b8f2ff9

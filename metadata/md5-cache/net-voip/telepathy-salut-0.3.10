@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=dev-libs/libxml2 >=dev-libs/glib-2.16 >=sys-apps/dbus-1.1.0 >=dev-libs/dbus-glib-0.61 >=net-libs/telepathy-glib-0.7.36 >=net-dns/avahi-0.6.22 net-libs/libsoup:2.4 ssl? ( dev-libs/openssl ) test? ( net-libs/libgsasl app-text/xmldiff >=dev-libs/check-0.9.4 dev-python/twisted-words ) dev-libs/libxslt >=dev-lang/python-2.4
+DESCRIPTION=A link-local XMPP connection manager for Telepathy
+EAPI=2
+HOMEPAGE=http://telepathy.freedesktop.org/wiki/Components
+IUSE=ssl test
+KEYWORDS=~amd64 ~ia64 ~ppc ~sparc ~x86
+LICENSE=LGPL-2.1
+RDEPEND=dev-libs/libxml2 >=dev-libs/glib-2.16 >=sys-apps/dbus-1.1.0 >=dev-libs/dbus-glib-0.61 >=net-libs/telepathy-glib-0.7.36 >=net-dns/avahi-0.6.22 net-libs/libsoup:2.4 ssl? ( dev-libs/openssl )
+SLOT=0
+SRC_URI=http://telepathy.freedesktop.org/releases/telepathy-salut/telepathy-salut-0.3.10.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=268aa17e7c8a9d21d8f6c0111ee0352b

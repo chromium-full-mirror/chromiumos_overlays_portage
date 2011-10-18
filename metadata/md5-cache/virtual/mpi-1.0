@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=Virtual for Message Passing Interface (MPI) implementation
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86
+RDEPEND=|| ( sys-cluster/openmpi sys-cluster/mpich2 sys-cluster/lam-mpi )
+SLOT=0
+_md5_=d0c3382874debe74f0c6b0144dd5a7e4

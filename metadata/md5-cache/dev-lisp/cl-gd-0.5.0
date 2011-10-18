@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm preinst prerm
+DEPEND=>=dev-lisp/cl-uffi-1.3.4 dev-lisp/cl-cffi media-libs/libpng media-libs/jpeg media-libs/freetype >=media-libs/gd-2.0.28 sys-libs/zlib dev-lisp/common-lisp-controller
+DESCRIPTION=CL-GD is a library for Common Lisp which interfaces ti the GD Graphics Library
+HOMEPAGE=http://weitz.de/cl-gd http://www.cliki.net/cl-gd
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=BSD
+RDEPEND=>=dev-lisp/cl-uffi-1.3.4 dev-lisp/cl-cffi media-libs/libpng media-libs/jpeg media-libs/freetype >=media-libs/gd-2.0.28 sys-libs/zlib
+SLOT=0
+SRC_URI=mirror://gentoo/cl-gd_0.5.0.orig.tar.gz
+_eclasses_=common-lisp	78bda507fdf240a712b120777127629c	common-lisp-common	a6e38969ed3937827ca1f284d015020a	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2498a068e2ff0c3c6412a5f047ccbeb3

@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=dev-lang/python app-text/docbook-xml-dtd:4.1.2 app-text/xmlto dev-util/intltool sys-devel/gettext >=app-admin/eselect-python-20091230 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=GNOME frontend for a Red Hat's printer administration tool
+EAPI=2
+HOMEPAGE=http://cyberelk.net/tim/software/system-config-printer/
+IUSE=gnome-keyring linguas_ar linguas_as linguas_bg linguas_bn_IN linguas_bn linguas_bs linguas_ca linguas_cs linguas_cy linguas_da linguas_de linguas_el linguas_en_GB linguas_es linguas_et linguas_fa linguas_fi linguas_fr linguas_gu linguas_he linguas_hi linguas_hr linguas_hu linguas_hy linguas_id linguas_is linguas_it linguas_ja linguas_ka linguas_kn linguas_ko linguas_lo linguas_lv linguas_mai linguas_mk linguas_ml linguas_mr linguas_ms linguas_nb linguas_nl linguas_nn linguas_or linguas_pa linguas_pl linguas_pt_BR linguas_pt linguas_ro linguas_ru linguas_si linguas_sk linguas_sl linguas_sr@latin linguas_sr linguas_sv linguas_ta linguas_te linguas_th linguas_tr linguas_uk linguas_vi linguas_zh_CN linguas_zh_TW
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/python >=app-admin/system-config-printer-common-1.1.16 dev-python/libgnome-python dev-python/notify-python >=dev-python/pygtk-2.4 dev-python/pyxml gnome-keyring? ( dev-python/gnome-keyring-python ) >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://cyberelk.net/tim/data/system-config-printer/1.1/system-config-printer-1.1.16.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ca35644dd39c2c3575b22d9055ef23d6

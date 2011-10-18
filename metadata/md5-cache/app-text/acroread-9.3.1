@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst postrm preinst setup unpack
+DEPEND=>=sys-apps/sed-4
+DESCRIPTION=Adobe's PDF reader
+HOMEPAGE=http://www.adobe.com/products/reader/
+IUSE=cups ldap minimal nsplugin linguas_de linguas_en linguas_fr linguas_ja
+KEYWORDS=-* amd64 x86
+LICENSE=Adobe
+RDEPEND=media-libs/fontconfig cups? ( net-print/cups ) x86? ( >=x11-libs/gtk+-2.0 ldap? ( net-nds/openldap ) !minimal? ( || ( net-libs/xulrunner net-libs/xulrunner-bin www-client/mozilla-firefox www-client/seamonkey www-client/seamonkey-bin ) ) ) amd64? ( >=app-emulation/emul-linux-x86-baselibs-2.4.2 >=app-emulation/emul-linux-x86-gtklibs-2.0 !minimal? ( || ( net-libs/xulrunner-bin www-client/seamonkey-bin ) ) )
+RESTRICT=strip mirror
+SLOT=0
+SRC_URI=linguas_de? ( http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.3.1/deu/AdbeRdr9.3.1-1_i486linux_deu.tar.bz2 ) linguas_en? ( http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.3.1/enu/AdbeRdr9.3.1-1_i486linux_enu.tar.bz2 ) linguas_fr? ( http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.3.1/fra/AdbeRdr9.3.1-1_i486linux_fra.tar.bz2 ) linguas_ja? ( http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.3.1/jpn/AdbeRdr9.3.1-1_i486linux_jpn.tar.bz2 ) !linguas_ja? ( !linguas_fr? ( !linguas_en? ( !linguas_de? ( http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.3.1/enu/AdbeRdr9.3.1-1_i486linux_enu.tar.bz2 ) ) ) )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	nsplugins	88b65b6dd727ee2810964926b2654bdd	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=364ac18bbaf0211e8915dbbb4fbbd8a8

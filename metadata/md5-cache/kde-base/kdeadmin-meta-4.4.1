@@ -1,0 +1,11 @@
+DEFINED_PHASES=-
+DESCRIPTION=KDE administration tools - merge this to pull in all kdeadmin-derived packages
+EAPI=3
+HOMEPAGE=http://www.kde.org/
+IUSE=aqua cups kdeprefix
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux
+LICENSE=GPL-2
+RDEPEND=!kdeprefix? ( >=kde-base/kcron-4.4.1[aqua=,-kdeprefix] ) kdeprefix? ( >=kde-base/kcron-4.4.1:4.4[aqua=,kdeprefix] ) !kdeprefix? ( >=kde-base/knetworkconf-4.4.1[aqua=,-kdeprefix] ) kdeprefix? ( >=kde-base/knetworkconf-4.4.1:4.4[aqua=,kdeprefix] ) !kdeprefix? ( >=kde-base/ksystemlog-4.4.1[aqua=,-kdeprefix] ) kdeprefix? ( >=kde-base/ksystemlog-4.4.1:4.4[aqua=,kdeprefix] ) !kdeprefix? ( >=kde-base/kuser-4.4.1[aqua=,-kdeprefix] ) kdeprefix? ( >=kde-base/kuser-4.4.1:4.4[aqua=,kdeprefix] ) cups? ( !kdeprefix? ( >=kde-base/system-config-printer-kde-4.4.1[aqua=,-kdeprefix] ) kdeprefix? ( >=kde-base/system-config-printer-kde-4.4.1:4.4[aqua=,kdeprefix] ) ) !kdeprefix? ( !kde-base/kdeadmin-meta:4.1[-kdeprefix] ) !kdeprefix? ( !kde-base/kdeadmin-meta:4.2[-kdeprefix] ) !kdeprefix? ( !kde-base/kdeadmin-meta:4.3[-kdeprefix] ) !kdeprefix? ( !kde-base/kdeadmin-meta:4.5[-kdeprefix] ) !kdeprefix? ( !kde-base/kdeadmin-meta:live[-kdeprefix] )
+SLOT=4.4
+_eclasses_=kde4-functions	67193781af5bca6ea586fa0a96c7114b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=c0160818284f3c929af6bec86a2a7346

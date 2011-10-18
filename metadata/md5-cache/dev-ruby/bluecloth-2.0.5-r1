@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=>=dev-ruby/rdoc-2.4.1[ruby_targets_ruby18?,ruby_targets_ruby19?] test? ( dev-ruby/rspec[ruby_targets_ruby18?,ruby_targets_ruby19?] ) test? ( dev-ruby/diff-lcs[ruby_targets_ruby18?,ruby_targets_ruby19?] ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 ) doc? ( dev-ruby/rake[ruby_targets_ruby18?,ruby_targets_ruby19?] ) test? ( dev-ruby/rake[ruby_targets_ruby18?,ruby_targets_ruby19?] ) test? ( virtual/rubygems[ruby_targets_ruby18?,ruby_targets_ruby19?] )
+DESCRIPTION=A Ruby implementation of Markdown
+EAPI=2
+HOMEPAGE=http://www.deveiate.org/projects/BlueCloth
+IUSE=test test ruby_targets_ruby18 ruby_targets_ruby19 doc doc test test test
+KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x86-solaris
+LICENSE=GPL-2
+RDEPEND=ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 ) virtual/rubygems[ruby_targets_ruby18?,ruby_targets_ruby19?]
+SLOT=0
+SRC_URI=http://www.deveiate.org/code/bluecloth-2.0.5.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby-fakegem	2768bd9a49d90592f8e7b88ab4077f20	ruby-ng	94f1106cb53283c8f691122e3077c9e1	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0db5b5614556bb9247c9b71b168a989f

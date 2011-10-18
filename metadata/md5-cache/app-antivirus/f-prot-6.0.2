@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst
+DESCRIPTION=Frisk Software's f-prot virus scanner
+HOMEPAGE=http://www.f-prot.com/
+KEYWORDS=amd64 -ppc -sparc x86 -x86-fbsd
+LICENSE=F-PROT-AV elibc_glibc? ( LGPL-2.1 ) elibc_FreeBSD? ( BSD-2 )
+PROVIDE=virtual/antivirus
+SLOT=0
+SRC_URI=x86? ( http://files.f-prot.com/files/unix-trial/fp-Linux-i686-ws-6.0.2.tar.gz ) amd64? ( http://files.f-prot.com/files/unix-trial/fp-Linux-x86_64-ws-6.0.2.tar.gz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d07fbc68f34b92937bb2a4ed2c14132c

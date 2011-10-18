@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND=>=app-arch/bzip2-1.0.2 >=dev-libs/libxml2-2.4.22
+DESCRIPTION=DirectConnect client library
+HOMEPAGE=http://sourceforge.net/projects/wxdcgui
+KEYWORDS=amd64 hppa ppc ppc64 x86
+LICENSE=GPL-2
+RDEPEND=>=app-arch/bzip2-1.0.2 >=dev-libs/libxml2-2.4.22
+SLOT=0
+SRC_URI=mirror://sourceforge/wxdcgui/dclib-0.3.23.tar.bz2
+_md5_=fb6b9050e7bed8545bd812d5230bb78c

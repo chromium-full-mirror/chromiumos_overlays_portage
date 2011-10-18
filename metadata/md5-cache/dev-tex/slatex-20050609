@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=dev-scheme/guile dev-scheme/scmxlate !dev-scheme/drscheme virtual/latex-base >=sys-apps/texinfo-4.2-r5
+DESCRIPTION=SLaTeX is a Scheme program that allows you to write Scheme code in your (La)TeX source.
+HOMEPAGE=http://www.ccs.neu.edu/home/dorai/slatex/slatxdoc.html
+KEYWORDS=~amd64 ~x86
+LICENSE=as-is
+RDEPEND=dev-scheme/guile virtual/latex-base
+SLOT=0
+SRC_URI=mirror://gentoo/slatex-20050609.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	latex-package	b72cedae879ef8e8af6524f196fcf449	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7301f962bd7dae6eb485204b59310e18

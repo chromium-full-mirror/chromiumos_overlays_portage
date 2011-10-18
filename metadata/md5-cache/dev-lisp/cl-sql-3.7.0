@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst unpack
+DEPEND=dev-lisp/common-lisp-controller virtual/commonlisp dev-lisp/cl-md5 >=dev-lisp/cl-uffi-1.5.7 postgres? ( virtual/postgresql-base ) mysql? ( virtual/mysql ) sqlite? ( =dev-db/sqlite-2* ) sqlite3? ( =dev-db/sqlite-3* ) odbc? ( dev-db/unixODBC ) dev-lisp/common-lisp-controller
+DESCRIPTION=A multi-platform SQL interface for Common Lisp
+HOMEPAGE=http://clsql.b9.com/ http://packages.debian.org/unstable/devel/cl-sql.html http://www.cliki.net/CLSQL
+IUSE=postgres mysql sqlite sqlite3 odbc
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=LLGPL-2.1
+RDEPEND=dev-lisp/common-lisp-controller virtual/commonlisp dev-lisp/cl-md5 >=dev-lisp/cl-uffi-1.5.7 postgres? ( virtual/postgresql-base ) mysql? ( virtual/mysql ) sqlite? ( =dev-db/sqlite-2* ) sqlite3? ( =dev-db/sqlite-3* ) odbc? ( dev-db/unixODBC )
+SLOT=0
+SRC_URI=http://files.b9.com/clsql/clsql-3.7.0.tar.gz
+_eclasses_=common-lisp	78bda507fdf240a712b120777127629c	common-lisp-common	a6e38969ed3937827ca1f284d015020a	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=42bea04c4419800448c30b6d859f2aa9

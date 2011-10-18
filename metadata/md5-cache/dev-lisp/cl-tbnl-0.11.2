@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst postrm preinst
+DEPEND=dev-lisp/cl-kmrcl dev-lisp/cl-md5 dev-lisp/cl-base64 dev-lisp/cl-url-rewrite dev-lisp/cl-ppcre dev-lisp/cl-rfc2388 dev-lisp/common-lisp-controller
+DESCRIPTION=TBNL is a toolkit for building dynamic websites with Common Lisp based on mod_lisp.
+HOMEPAGE=http://www.weitz.de/tbnl/
+IUSE=standalone
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=dev-lisp/cl-kmrcl dev-lisp/cl-md5 dev-lisp/cl-base64 dev-lisp/cl-url-rewrite dev-lisp/cl-ppcre dev-lisp/cl-rfc2388 !standalone? ( >=www-apache/mod_lisp2-1.2 )
+SLOT=0
+SRC_URI=mirror://gentoo/tbnl_0.11.2.orig.tar.gz
+_eclasses_=common-lisp	78bda507fdf240a712b120777127629c	common-lisp-common	a6e38969ed3937827ca1f284d015020a	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1c27351e8a62ca53c49657797d29cd82

@@ -1,0 +1,10 @@
+DEFINED_PHASES=install unpack
+DEPEND=>=dev-libs/glib-2.10 >=x11-libs/gtk+-2 >=x11-libs/libwnck-2.10 dev-util/pkgconfig dev-util/intltool sys-devel/gettext
+DESCRIPTION=A Window Matching utility similar to Sawfish's Matched Windows feature
+HOMEPAGE=http://www.burtonini.com/blog/computers/devilspie
+KEYWORDS=alpha amd64 ppc sparc x86 ~amd64-linux ~x86-linux
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/glib-2.10 >=x11-libs/gtk+-2 >=x11-libs/libwnck-2.10
+SLOT=0
+SRC_URI=http://www.burtonini.com/computing/devilspie-0.22.tar.gz
+_md5_=5d4fc4211994132394bc136d757de7b3

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND==x11-libs/qt-3* >=sys-apps/sed-4
+DESCRIPTION=A 2D CAD package based upon Qt.
+HOMEPAGE=http://www.ribbonsoft.com/qcad.html
+IUSE=doc linguas_cs linguas_da linguas_de linguas_el linguas_en linguas_es linguas_et linguas_fr linguas_hu linguas_it linguas_nl linguas_no linguas_pa linguas_pl linguas_ru linguas_sk linguas_tr
+KEYWORDS=amd64 hppa ppc ppc64 x86
+LICENSE=GPL-2
+RDEPEND==x11-libs/qt-3* >=sys-apps/sed-4
+SLOT=0
+SRC_URI=http://www.ribbonsoft.com/archives/qcad/qcad-2.0.5.0-1-community.src.tar.gz doc? ( linguas_cs? ( ftp://anonymous@ribbonsoft.com/archives/qcad/qcad-manual-cs-2.0.4.0-1.html.zip ) linguas_de? ( ftp://anonymous@ribbonsoft.com/archives/qcad/qcad-manual-de-2.1.0.0-1.html.zip ) ftp://anonymous@ribbonsoft.com/archives/qcad/qcad-manual-en-2.1.0.0-1.html.zip linguas_hu? ( ftp://anonymous@ribbonsoft.com/archives/qcad/qcad-manual-hu-2.0.4.0-1.html.zip ) )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt3	823f11abd98cfc43cf92b8622e420f1f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=3d5478642224544cf79b857aad5ac38f

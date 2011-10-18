@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install setup unpack
+DEPEND=>=dev-libs/libxml2-2.6.16 >=dev-libs/libxslt-1.1.12 virtual/ruby
+DESCRIPTION=Back-end XSLT processor for an XML-based web site
+EAPI=2
+HOMEPAGE=http://gentoo.neysx.org/mystuff/gorg/gorg.xml
+IUSE=apache2 fastcgi mysql
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/libxml2-2.6.16 >=dev-libs/libxslt-1.1.12 mysql? ( >=dev-ruby/ruby-dbi-0.0.21[mysql] ) apache2? ( www-servers/apache fastcgi? ( www-apache/mod_fcgid ) ) fastcgi? ( >=dev-ruby/ruby-fcgi-0.8.5-r1 ) virtual/ruby
+SLOT=0
+SRC_URI=http://gentoo.neysx.org/mystuff/gorg/gorg-0.6.4.tgz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby	dfc4f482954636675998a350b1d078b5	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=49494a003fd18397ede65199c57bcfff

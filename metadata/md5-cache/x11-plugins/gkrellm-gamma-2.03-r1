@@ -1,0 +1,11 @@
+DEFINED_PHASES=install setup unpack
+DEPEND=x11-libs/libXxf86vm x11-proto/xf86vidmodeproto =app-admin/gkrellm-2* dev-util/pkgconfig
+DESCRIPTION=A gamma control plugin for gkrellm
+HOMEPAGE=http://tripie.sweb.cz/gkrellm/gamma/
+KEYWORDS=ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/libXxf86vm =app-admin/gkrellm-2*
+SLOT=2
+SRC_URI=http://tripie.sweb.cz/gkrellm/gamma/dist/gkrellm-gamma-2.03.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	gkrellm-plugin	ed070af3b0d893d87445360bb28c119c	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b25b9ed78ad411d9622ef0ad9212dbd4

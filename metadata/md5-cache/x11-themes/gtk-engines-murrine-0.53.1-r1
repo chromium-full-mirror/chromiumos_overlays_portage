@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=x11-libs/gtk+-2.8 dev-util/pkgconfig
+DESCRIPTION=Murrine GTK+2 Cairo Engine
+HOMEPAGE=http://www.cimitan.com/murrine/
+KEYWORDS=amd64 ppc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2.8
+SLOT=0
+SRC_URI=http://cimi.netsons.org/media/download_gallery/murrine/murrine-0.53.1.tar.bz2 http://cimi.netsons.org/media/download_gallery/MurrinaFancyCandy.tar.bz2 http://cimi.netsons.org/media/download_gallery/MurrinaVerdeOlivo.tar.bz2 http://cimi.netsons.org/media/download_gallery/MurrinaGilouche.tar.bz2 http://cimi.netsons.org/media/download_gallery/MurrinaLoveGray.tar.bz2 http://cimi.netsons.org/media/download_gallery/MurrineThemePack.tar.bz2 http://cimi.netsons.org/media/download_gallery/MurrineXfwm.tar.bz2 http://www.kernow-webhosting.com/~bvc/theme/mcity/Murrine.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=fc7977ea85d970ef2d3b2b1a8c464109

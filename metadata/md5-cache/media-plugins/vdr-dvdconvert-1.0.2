@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile config install postinst postrm setup unpack
+DEPEND=>=media-tv/gentoo-vdr-scripts-0.4.2 media-tv/linuxtv-dvb-headers
+DESCRIPTION=VDR plugin: for exec dvd2vdr & dvd2dvd scripts
+HOMEPAGE=http://home.lausitz.net/lini/vdr/
+IUSE=projectx
+KEYWORDS=~x86 ~amd64
+LICENSE=GPL-2
+RDEPEND=media-video/vdr >=media-video/dvdauthor-0.6.10 >=media-video/vobcopy-1.0.0 >=media-video/m2vrequantizer-20060306 media-video/transcode media-video/tcmplex-panteltje media-libs/a52dec media-sound/lame media-sound/toolame projectx? ( media-video/projectx ) >=media-tv/gentoo-vdr-scripts-0.4.2 >=app-admin/eselect-vdr-0.0.2
+SLOT=0
+SRC_URI=http://home.lausitz.net/lini/vdr/vdr-dvdconvert-1.0.2.tar.bz2 projectx? ( http://dev.gentoo.org/~hd_brummy/distfiles/px-files-20070104.tar.bz2 )
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	vdr-plugin	197973b71da01f1b44f98f14572e49c1
+_md5_=4b4ebc15ad794cde5fe45e5029c503a9

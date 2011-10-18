@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=dev-lang/python[ncurses,threads] sys-libs/zlib hvm? ( media-libs/libsdl ) acm? ( dev-libs/libxml2 ) api? ( dev-libs/libxml2 net-misc/curl ) sys-devel/gettext sys-devel/gcc dev-lang/perl dev-lang/python[ssl] app-misc/pax-utils doc? ( app-doc/doxygen dev-tex/latex2html[png,gif] dev-texlive/texlive-latexextra media-gfx/transfig media-gfx/graphviz ) hvm? ( x11-proto/xproto sys-devel/dev86 ) >=app-admin/eselect-python-20091230
+DESCRIPTION=Xend daemon and tools
+EAPI=2
+HOMEPAGE=http://xen.org/
+IUSE=doc debug screen custom-cflags pygrub hvm api acm flask
+KEYWORDS=~amd64 x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/python[ncurses,threads] sys-libs/zlib hvm? ( media-libs/libsdl ) acm? ( dev-libs/libxml2 ) api? ( dev-libs/libxml2 net-misc/curl ) sys-apps/iproute2 net-misc/bridge-utils dev-python/pyxml screen? ( app-misc/screen app-admin/logrotate ) || ( sys-fs/udev sys-apps/hotplug ) >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://bits.xensource.com/oss-xen/release/3.4.2/xen-3.4.2.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b8bdb07303a9f55e284e0fdfa5d6bb61

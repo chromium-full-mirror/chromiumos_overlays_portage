@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare
+DEPEND=>=dev-lang/mono-1.0 >=dev-dotnet/gtk-sharp-2.4.0 >=dev-dotnet/gnome-sharp-2.4.0 =x11-libs/gtksourceview-1* dev-dotnet/gtk-sharp-gapi !<dev-dotnet/gtksourceview-sharp-0.12 >=dev-util/pkgconfig-0.19 >=virtual/monodoc-1.1.8
+DESCRIPTION=A C# Binding to gtksourceview
+EAPI=2
+HOMEPAGE=http://www.go-mono.com/
+KEYWORDS=~x86 ~ppc ~amd64
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/mono-1.0 >=dev-dotnet/gtk-sharp-2.4.0 >=dev-dotnet/gnome-sharp-2.4.0 =x11-libs/gtksourceview-1* dev-dotnet/gtk-sharp-gapi !<dev-dotnet/gtksourceview-sharp-0.12
+SLOT=1
+SRC_URI=http://www.go-mono.com/sources/gtksourceview-sharp-2.0/gtksourceview-sharp-2.0-0.12.tar.bz2
+_eclasses_=mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=979670fab5760ebe5ee1b1ed7327edee

@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 ) ruby_targets_jruby? ( dev-java/jruby )
+DESCRIPTION=Virtual ebuild for the Ruby minitest library
+EAPI=2
+IUSE=ruby_targets_ruby18 ruby_targets_ruby19 ruby_targets_jruby
+KEYWORDS=~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86
+RDEPEND=ruby_targets_ruby18? ( dev-ruby/minitest[ruby_targets_ruby18] ) ruby_targets_ruby19? ( || ( dev-ruby/minitest[ruby_targets_ruby19] dev-lang/ruby:1.9 ) ) ruby_targets_jruby? ( dev-ruby/minitest[ruby_targets_jruby] ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 ) ruby_targets_jruby? ( dev-java/jruby )
+SLOT=0
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby-ng	94f1106cb53283c8f691122e3077c9e1	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=41b08f6586db4a18c4adfbc4726f2a62

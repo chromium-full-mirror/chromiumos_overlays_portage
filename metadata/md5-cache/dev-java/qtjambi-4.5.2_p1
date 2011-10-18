@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install preinst prepare setup unpack
+DEPEND==x11-libs/qt-gui-4.5*:4 =x11-libs/qt-sql-4.5*:4 =x11-libs/qt-svg-4.5*:4 opengl? ( =x11-libs/qt-opengl-4.5*:4 ) phonon? ( =x11-libs/qt-phonon-4.5*:4 ) webkit? ( =x11-libs/qt-phonon-4.5*:4 =x11-libs/qt-webkit-4.5*:4 ) xmlpatterns? ( =x11-libs/qt-xmlpatterns-4.5*:4 ) >=virtual/jdk-1.6 >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip ) >=dev-java/ant-core-1.7.0 dev-java/ant-trax >=dev-java/javatoolkit-0.3.0-r2
+DESCRIPTION=QtJambi is a set of Java bindings and utilities for the Qt C++ toolkit.
+EAPI=2
+HOMEPAGE=http://qt.nokia.com/
+IUSE=debug examples opengl phonon webkit xmlpatterns elibc_FreeBSD doc source elibc_FreeBSD
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( LGPL-2.1 GPL-3 )
+RDEPEND==x11-libs/qt-gui-4.5*:4 =x11-libs/qt-sql-4.5*:4 =x11-libs/qt-svg-4.5*:4 opengl? ( =x11-libs/qt-opengl-4.5*:4 ) phonon? ( =x11-libs/qt-phonon-4.5*:4 ) webkit? ( =x11-libs/qt-phonon-4.5*:4 =x11-libs/qt-webkit-4.5*:4 ) xmlpatterns? ( =x11-libs/qt-xmlpatterns-4.5*:4 ) >=virtual/jre-1.6 >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
+SLOT=4
+SRC_URI=http://get.qt.nokia.com/qtjambi/source/qtjambi-src-lgpl-4.5.2_01.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	java-ant-2	8ee2028cc96a10184ba4ed021eef48da	java-pkg-2	39b2c3db200ad244ca675b2a1363aa75	java-utils-2	9c079d63349fb3fcd154c1630807a59a	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4-r2	9324cde5d9328d2445c95232dd8bc158	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=a5a65ce7b9cebdda0d1181ad2f7cb7e7

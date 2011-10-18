@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=sys-libs/ncurses-5.2
+DESCRIPTION=Netkit - talkd
+HOMEPAGE=ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/
+IUSE=ipv6
+KEYWORDS=alpha amd64 hppa ia64 mips ppc ppc64 sparc x86
+LICENSE=BSD
+RDEPEND=virtual/inetd
+SLOT=0
+SRC_URI=ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/netkit-ntalk-0.17.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8738b644ccf2da5a8682fd135bd6829e

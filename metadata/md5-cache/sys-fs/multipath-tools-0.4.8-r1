@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst preinst prepare
+DEPEND=|| ( >=sys-fs/lvm2-2.02.45 >=sys-fs/device-mapper-1.00.19-r1 ) >=sys-fs/udev-124 sys-fs/sysfsutils dev-libs/libaio
+DESCRIPTION=Device mapper target autoconfig
+EAPI=2
+HOMEPAGE=http://christophe.varoqui.free.fr/
+KEYWORDS=amd64 ~arm ppc ppc64 x86
+LICENSE=GPL-2
+RDEPEND=|| ( >=sys-fs/lvm2-2.02.45 >=sys-fs/device-mapper-1.00.19-r1 ) >=sys-fs/udev-124 sys-fs/sysfsutils dev-libs/libaio
+SLOT=0
+SRC_URI=http://christophe.varoqui.free.fr/multipath-tools/multipath-tools-0.4.8.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3ccd2a167afd1777714269a45bf2efbe

@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst unpack
+DEPEND=app-arch/mt-st
+DESCRIPTION=Flexible backup script using perl
+HOMEPAGE=http://flexbackup.sourceforge.net/
+KEYWORDS=amd64 hppa ppc x86
+LICENSE=GPL-2
+RDEPEND=app-arch/mt-st
+SLOT=0
+SRC_URI=mirror://sourceforge/flexbackup/flexbackup-1.2.1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=695d6f6093fe8d079a4df292a8fda803

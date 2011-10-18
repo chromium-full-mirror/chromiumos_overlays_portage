@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=An MP3 technical info viewer and ID3 1.x tag editor
+HOMEPAGE=http://ibiblio.org/mp3info/
+IUSE=gtk
+KEYWORDS=amd64 ~hppa ppc ppc64 sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris
+LICENSE=GPL-2
+RDEPEND=gtk? ( >=x11-libs/gtk+-2.6.10 ) sys-libs/ncurses
+SLOT=0
+SRC_URI=http://ibiblio.org/pub/linux/apps/sound/mp3-utils/mp3info/mp3info-0.8.5a.tgz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a7e8da679eb557cd6726edf232467d92

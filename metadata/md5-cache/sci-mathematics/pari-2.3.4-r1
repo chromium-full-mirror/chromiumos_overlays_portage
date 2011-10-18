@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare test
+DEPEND=sys-libs/readline emacs? ( virtual/emacs ) fltk? ( x11-libs/fltk ) gmp? ( dev-libs/gmp ) X? ( x11-libs/libX11 ) doc? ( X? ( x11-misc/xdg-utils ) ) doc? ( virtual/latex-base )
+DESCRIPTION=A software package for computer-aided number theory
+EAPI=2
+HOMEPAGE=http://pari.math.u-bordeaux.fr/
+IUSE=doc data emacs fltk gmp static X
+KEYWORDS=alpha amd64 hppa ~mips ppc ppc64 ~sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=sys-libs/readline emacs? ( virtual/emacs ) fltk? ( x11-libs/fltk ) gmp? ( dev-libs/gmp ) X? ( x11-libs/libX11 ) doc? ( X? ( x11-misc/xdg-utils ) )
+SLOT=0
+SRC_URI=http://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.3.4.tar.gz data? ( http://pari.math.u-bordeaux.fr/pub/pari/packages/elldata.tgz http://pari.math.u-bordeaux.fr/pub/pari/packages/galdata.tgz http://pari.math.u-bordeaux.fr/pub/pari/packages/seadata.tgz http://pari.math.u-bordeaux.fr/pub/pari/packages/nftables.tgz )
+_eclasses_=elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7527716f488b30567bf877951cf72ad8

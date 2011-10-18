@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DESCRIPTION=Command-line interface to various pastebins
+HOMEPAGE=http://wgetpaste.zlin.dk/
+IUSE=zsh-completion
+KEYWORDS=alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+LICENSE=public-domain
+RDEPEND=net-misc/wget zsh-completion? ( app-shells/zsh )
+SLOT=0
+SRC_URI=http://wgetpaste.zlin.dk/wgetpaste-2.14.tar.bz2
+_md5_=ad36b4ecb1374638126a2496266dc1fc

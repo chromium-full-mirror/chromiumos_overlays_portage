@@ -1,0 +1,8 @@
+DEFINED_PHASES=install
+DESCRIPTION=wrapper for automake to manage multiple automake versions
+HOMEPAGE=http://www.gentoo.org/
+KEYWORDS=alpha amd64 arm hppa ia64 m68k mips ppc ppc64 s390 sh sparc ~sparc-fbsd x86 ~x86-fbsd
+LICENSE=GPL-2
+SLOT=0
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=888301d4d3b4457c995b7baf16cfdb0f

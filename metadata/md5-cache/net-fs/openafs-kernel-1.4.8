@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup unpack
+DEPEND=kernel_linux? ( virtual/modutils ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+DESCRIPTION=The OpenAFS distributed file system kernel module
+HOMEPAGE=http://www.openafs.org/
+IUSE=kernel_linux
+KEYWORDS=amd64 ~ppc ~ppc64 ~sparc x86
+LICENSE=IBM BSD openafs-krb5-a APSL-2 sun-rpc
+RDEPEND=kernel_linux? ( virtual/modutils )
+SLOT=0
+SRC_URI=http://openafs.org/dl/1.4.8/openafs-1.4.8-src.tar.bz2 mirror://gentoo/openafs-gentoo-0.15.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	linux-info	8d722422d00ae99ed52a790b20b9bfc4	linux-mod	07a3d250a1268d811d3e8730e5741394	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=5e59930e7dd978b1c659aaf1633b81bb

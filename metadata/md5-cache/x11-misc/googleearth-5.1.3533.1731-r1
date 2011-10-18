@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst prepare setup unpack
+DESCRIPTION=A 3D interface to the planet
+EAPI=2
+HOMEPAGE=http://earth.google.com/
+IUSE=qt-bundled
+KEYWORDS=~amd64 ~x86
+LICENSE=googleearth MIT SGI-B-1.1 openssl as-is ZLIB
+RDEPEND=>=sys-devel/gcc-4.2[-nocxx] x86? ( media-libs/fontconfig media-libs/freetype virtual/opengl x11-libs/libICE x11-libs/libSM x11-libs/libX11 x11-libs/libXi x11-libs/libXext x11-libs/libXrender x11-libs/libXau x11-libs/libXdmcp sys-libs/zlib dev-libs/glib:2 !qt-bundled? ( >=x11-libs/qt-core-4.5.3 >=x11-libs/qt-gui-4.5.3 >=x11-libs/qt-webkit-4.5.3 ) ) amd64? ( >=app-emulation/emul-linux-x86-xlibs-20081109 >=app-emulation/emul-linux-x86-baselibs-20081109 !qt-bundled? ( >=app-emulation/emul-linux-x86-qtlibs-20091231-r1 ) ) || ( media-fonts/dejavu media-fonts/ttf-bitstream-vera )
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=http://dl.google.com/earth/client/current/GoogleEarthLinux.bin -> GoogleEarthLinux-5.1.3533.1731.bin
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=dbe025f0213151a137351043183fef31

@@ -1,0 +1,11 @@
+DEFINED_PHASES=install prepare
+DEPEND=dev-lang/perl
+DESCRIPTION=Multicast file transfer tool
+EAPI=2
+HOMEPAGE=http://udpcast.linux.lu/
+KEYWORDS=amd64 x86
+LICENSE=GPL-2 BSD
+RDEPEND=dev-lang/perl
+SLOT=0
+SRC_URI=http://udpcast.linux.lu/download/udpcast-20090920.tar.bz2
+_md5_=ea0e3ffd1c003c835008ccb4d53e1c2b

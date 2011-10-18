@@ -1,0 +1,8 @@
+DEFINED_PHASES=-
+DESCRIPTION=Dummy gail to handle migration to gtk+
+HOMEPAGE=http://gnome.gentoo.org
+KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2.13.0
+SLOT=0
+_md5_=f893af9882e5303e600f9629cd8b6d02

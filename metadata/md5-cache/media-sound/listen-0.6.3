@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND=>=dev-lang/python-2.5 >=dev-python/pygtk-2.8:2 dev-python/pyxdg || ( dev-python/python-xlib dev-python/egg-python ) dev-python/gnome-vfs-python || ( x11-misc/notification-daemon x11-misc/xfce4-notifyd ) media-libs/mutagen dev-python/gst-python:0.10 media-plugins/gst-plugins-meta:0.10 webkit? ( dev-python/pywebkitgtk ) !webkit? ( dev-python/gtkmozembed-python ) dev-python/pyinotify libsexy? ( dev-python/sexy-python ) media-libs/libgpod[python] hal? ( sys-apps/hal ) musicbrainz? ( <dev-python/python-musicbrainz-2005 >=media-libs/tunepimp-0.5.3-r2[python] ) app-text/docbook2X dev-util/pkgconfig dev-util/intltool sys-devel/gettext !<media-sound/listen-0.6.2 !media-radio/ax25-apps !dev-tinyos/listen >=app-admin/eselect-python-20091230
+DESCRIPTION=A Music player and management for GNOME
+EAPI=2
+HOMEPAGE=http://www.listen-project.org
+IUSE=hal +libsexy musicbrainz webkit
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/python-2.5 >=dev-python/pygtk-2.8:2 dev-python/pyxdg || ( dev-python/python-xlib dev-python/egg-python ) dev-python/gnome-vfs-python || ( x11-misc/notification-daemon x11-misc/xfce4-notifyd ) media-libs/mutagen dev-python/gst-python:0.10 media-plugins/gst-plugins-meta:0.10 webkit? ( dev-python/pywebkitgtk ) !webkit? ( dev-python/gtkmozembed-python ) dev-python/pyinotify libsexy? ( dev-python/sexy-python ) media-libs/libgpod[python] hal? ( sys-apps/hal ) musicbrainz? ( <dev-python/python-musicbrainz-2005 >=media-libs/tunepimp-0.5.3-r2[python] ) >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://download.listen-project.org/lastest/listen-0.6.3.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=acf8d6ce1c2a6ad2600417fe2e06380b

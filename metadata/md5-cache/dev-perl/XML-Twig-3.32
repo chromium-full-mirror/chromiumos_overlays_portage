@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
+DEPEND=>=dev-perl/XML-Parser-2.31 virtual/perl-Scalar-List-Utils >=dev-libs/expat-1.95.5 dev-perl/Tie-IxHash dev-perl/XML-SAX-Writer dev-perl/XML-Handler-YAWriter dev-perl/XML-XPath dev-perl/libwww-perl nls? ( >=dev-perl/Text-Iconv-1.2-r1 ) dev-lang/perl
+DESCRIPTION=This module provides a way to process XML documents. It is build on top of XML::Parser
+HOMEPAGE=http://www.cpan.org/modules/by-module/XML/XML-Twig-3.22.readme
+IUSE=nls
+KEYWORDS=alpha amd64 ~hppa ia64 ppc ppc64 sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE=|| ( Artistic GPL-2 )
+RDEPEND=>=dev-perl/XML-Parser-2.31 virtual/perl-Scalar-List-Utils >=dev-libs/expat-1.95.5 dev-perl/Tie-IxHash dev-perl/XML-SAX-Writer dev-perl/XML-Handler-YAWriter dev-perl/XML-XPath dev-perl/libwww-perl nls? ( >=dev-perl/Text-Iconv-1.2-r1 ) dev-lang/perl
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/M/MI/MIROD/XML-Twig-3.32.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f42b343a109bb674c98921e68e270297

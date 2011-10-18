@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare setup
+DEPEND=festival? ( app-accessibility/festival ) app-arch/unzip =media-tv/mythtv-0.21* >=sys-apps/sed-4
+DESCRIPTION=Phone and video calls with SIP.
+EAPI=2
+HOMEPAGE=http://www.mythtv.org
+IUSE=festival debug mmx
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=festival? ( app-accessibility/festival ) =media-tv/mythtv-0.21*
+RESTRICT=strip
+SLOT=0
+SRC_URI=http://svn.mythtv.org/trac/changeset/17105/branches/release-0-21-fixes/mythplugins?old_path=%2F&format=zip -> mythplugins-0.21_p17105.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	mythtv	1c6b01e7400a495afaf2d10b95168bb4	mythtv-plugins	c1faa158370386965afb340a4ea4f79c	portability	0be430f759a631e692678ed796e09f5c	qt3	823f11abd98cfc43cf92b8622e420f1f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=6f32002dec8b458dd7497eeb160abb67

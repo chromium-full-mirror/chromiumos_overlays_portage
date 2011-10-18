@@ -1,0 +1,12 @@
+DEFINED_PHASES=install nofetch postinst postrm unpack
+DEPEND=>=app-admin/eselect-python-20091230
+DESCRIPTION=ARP/wARP is a software for improvement and interpretation of crystallographic electron density maps
+HOMEPAGE=http://www.embl-hamburg.de/ARP/
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=ArpWarp
+RDEPEND=app-shells/tcsh >=sci-chemistry/ccp4-6.1.3 sys-apps/gawk >=dev-lang/python-2.4 >=app-admin/eselect-python-20091230
+RESTRICT=fetch
+SLOT=0
+SRC_URI=arp_warp_7.0.1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=22830980835c77af2e4e93c40051473c

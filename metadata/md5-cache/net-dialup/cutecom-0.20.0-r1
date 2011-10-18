@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup test unpack
+DEPEND=x11-libs/qt-core:4 x11-libs/qt-gui:4 x11-libs/qt-qt3support:4 >=dev-util/cmake-2.6.2-r1 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=CuteCom is a serial terminal, like minicom, written in qt
+EAPI=1
+HOMEPAGE=http://cutecom.sourceforge.net
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/qt-core:4 x11-libs/qt-gui:4 x11-libs/qt-qt3support:4 net-dialup/lrzsz
+SLOT=0
+SRC_URI=http://cutecom.sourceforge.net/cutecom-0.20.0.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	cmake-utils	6a1f5bd4039e55b76615db7bd9b70fed	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4	83eabd1192f3f2c5a649ba2422a14d00	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=40e40dc5de185d10052ce74d67447527

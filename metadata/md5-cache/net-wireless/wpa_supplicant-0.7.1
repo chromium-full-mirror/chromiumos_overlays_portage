@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare setup unpack
+DEPEND=dev-libs/libnl dbus? ( sys-apps/dbus ) kernel_linux? ( eap-sim? ( sys-apps/pcsc-lite ) madwifi? ( || ( >net-wireless/madwifi-ng-tools-0.9.3 net-wireless/madwifi-old ) ) ) !kernel_linux? ( net-libs/libpcap ) qt4? ( x11-libs/qt-gui:4 x11-libs/qt-svg:4 ) readline? ( sys-libs/ncurses sys-libs/readline ) ssl? ( dev-libs/openssl ) !ssl? ( gnutls? ( net-libs/gnutls ) ) !ssl? ( !gnutls? ( dev-libs/libtommath ) )
+DESCRIPTION=IEEE 802.1X/WPA supplicant for secure wireless transfers
+EAPI=2
+HOMEPAGE=http://hostap.epitest.fi/wpa_supplicant/
+IUSE=dbus debug gnutls eap-sim fasteap madwifi ps3 qt4 readline ssl wps kernel_linux kernel_FreeBSD
+KEYWORDS=~amd64 ~arm ~ppc ~ppc64 ~x86 ~x86-fbsd
+LICENSE=|| ( GPL-2 BSD )
+RDEPEND=dev-libs/libnl dbus? ( sys-apps/dbus ) kernel_linux? ( eap-sim? ( sys-apps/pcsc-lite ) madwifi? ( || ( >net-wireless/madwifi-ng-tools-0.9.3 net-wireless/madwifi-old ) ) ) !kernel_linux? ( net-libs/libpcap ) qt4? ( x11-libs/qt-gui:4 x11-libs/qt-svg:4 ) readline? ( sys-libs/ncurses sys-libs/readline ) ssl? ( dev-libs/openssl ) !ssl? ( gnutls? ( net-libs/gnutls ) ) !ssl? ( !gnutls? ( dev-libs/libtommath ) )
+SLOT=0
+SRC_URI=http://hostap.epitest.fi/releases/wpa_supplicant-0.7.1.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4-r2	9324cde5d9328d2445c95232dd8bc158	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a5b9d26007ce66a93cf04590c5d965ce

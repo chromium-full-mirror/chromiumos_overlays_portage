@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=>=dev-lang/lua-5.1 media-libs/libsdl[joystick,video] media-libs/libvorbis virtual/opengl dev-libs/expat media-libs/smpeg media-libs/sdl-image[jpeg,png] media-libs/sdl-gfx dev-util/scons dev-util/pkgconfig
+DESCRIPTION=Fast 2D tank arcade game with multiplayer and split-screen modes
+EAPI=2
+HOMEPAGE=http://btanks.sourceforge.net/
+KEYWORDS=~amd64 x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/lua-5.1 media-libs/libsdl[joystick,video] media-libs/libvorbis virtual/opengl dev-libs/expat media-libs/smpeg media-libs/sdl-image[jpeg,png] media-libs/sdl-gfx
+SLOT=0
+SRC_URI=mirror://sourceforge/btanks/btanks-0.9.8083.tar.bz2
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9b5a82d2cfb20f291480a31af06c6723

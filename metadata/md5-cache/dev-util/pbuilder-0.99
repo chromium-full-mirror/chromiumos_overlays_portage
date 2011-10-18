@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DEPEND=>=sys-apps/debianutils-1.13.1 net-misc/wget dev-util/debootstrap app-arch/dpkg uml? ( dev-util/rootstrap sys-apps/usermode-utilities )
+DESCRIPTION=personal package builder for Debian packages
+HOMEPAGE=http://packages.qa.debian.org/p/pbuilder.html
+IUSE=uml
+KEYWORDS=x86 sparc
+LICENSE=GPL-2
+RDEPEND=>=sys-apps/debianutils-1.13.1 net-misc/wget dev-util/debootstrap app-arch/dpkg uml? ( dev-util/rootstrap sys-apps/usermode-utilities )
+SLOT=0
+SRC_URI=mirror://debian/pool/main/p/pbuilder/pbuilder_0.99.tar.gz
+_md5_=73374429691727e209335e433da74b5b

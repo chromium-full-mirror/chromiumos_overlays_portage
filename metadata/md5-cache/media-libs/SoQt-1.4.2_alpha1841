@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install
+DEPEND=>=media-libs/coin-3.1.2[javascript] x11-libs/qt-gui:4 x11-libs/qt-opengl:4 dev-util/pkgconfig doc? ( app-doc/doxygen )
+DESCRIPTION=The glue between Coin3D and Qt
+EAPI=2
+HOMEPAGE=http://www.coin3d.org/
+IUSE=doc
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( GPL-2 PEL )
+RDEPEND=>=media-libs/coin-3.1.2[javascript] x11-libs/qt-gui:4 x11-libs/qt-opengl:4
+SLOT=0
+SRC_URI=mirror://gentoo/SoQt-1.4.2_alpha1841.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6fbfe8e33ecca4541611231f1d846dfd

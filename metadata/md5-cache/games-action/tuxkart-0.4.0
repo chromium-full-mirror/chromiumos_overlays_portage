@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DEPEND=>=media-libs/plib-1.8.0 x11-libs/libX11 x11-libs/libICE x11-libs/libSM x11-libs/libXext x11-libs/libXmu x11-libs/libXi virtual/opengl x11-libs/libXt
+DESCRIPTION=A racing game starring Tux, the linux penguin
+HOMEPAGE=http://tuxkart.sourceforge.net/
+KEYWORDS=alpha amd64 x86
+LICENSE=GPL-2
+RDEPEND=>=media-libs/plib-1.8.0 x11-libs/libX11 x11-libs/libICE x11-libs/libSM x11-libs/libXext x11-libs/libXmu x11-libs/libXi virtual/opengl
+SLOT=0
+SRC_URI=mirror://sourceforge/tuxkart/tuxkart-0.4.0.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ddde109e0eaf6d404b9a918717e2aced

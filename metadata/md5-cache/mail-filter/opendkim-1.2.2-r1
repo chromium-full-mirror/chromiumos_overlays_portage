@@ -1,0 +1,13 @@
+DEFINED_PHASES=config configure install postinst prepare setup
+DEPEND=dev-libs/openssl db? ( >=sys-libs/db-3.2 ) || ( mail-filter/libmilter mail-mta/sendmail ) opendbx? ( >=dev-db/opendbx-1.4.0 ) unbound? ( >=net-dns/unbound-1.4.1 )
+DESCRIPTION=A milter-based application to provide DKIM signing and verification
+EAPI=2
+HOMEPAGE=http://opendkim.org
+IUSE=+db asyncdns opendbx unbound
+KEYWORDS=~amd64 ~x86
+LICENSE=Sendmail-Open-Source BSD
+RDEPEND=dev-libs/openssl db? ( >=sys-libs/db-3.2 ) || ( mail-filter/libmilter mail-mta/sendmail ) opendbx? ( >=dev-db/opendbx-1.4.0 ) unbound? ( >=net-dns/unbound-1.4.1 )
+SLOT=0
+SRC_URI=mirror://sourceforge/opendkim/opendkim-1.2.2.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=5ec86f420fa0e62ef898730e13611256

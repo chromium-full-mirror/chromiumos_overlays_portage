@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile config install postinst setup unpack
+DEPEND=>=sys-apps/sed-4 sys-libs/libcap berkdb? ( >=sys-libs/db-4.2 ) kerberos? ( virtual/krb5 ) ldap? ( net-nds/openldap ) pam? ( virtual/pam ) ssl? ( dev-libs/openssl ) postgres? ( virtual/postgresql-base ) mysql? ( virtual/mysql ) sqlite3? ( =dev-db/sqlite-3* ) vpopmail? ( net-mail/vpopmail ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b ssl? ( dev-libs/openssl )
+DESCRIPTION=An IMAP and POP3 server written with security primarily in mind
+HOMEPAGE=http://www.dovecot.org/
+IUSE=berkdb debug doc ipv6 kerberos ldap managesieve mbox mysql pop3d pam postgres sieve sqlite3 ssl suid vpopmail ssl
+KEYWORDS=alpha amd64 ppc sparc x86 ~x86-fbsd
+LICENSE=LGPL-2.1
+RDEPEND=>=sys-apps/sed-4 sys-libs/libcap berkdb? ( >=sys-libs/db-4.2 ) kerberos? ( virtual/krb5 ) ldap? ( net-nds/openldap ) pam? ( virtual/pam ) ssl? ( dev-libs/openssl ) postgres? ( virtual/postgresql-base ) mysql? ( virtual/mysql ) sqlite3? ( =dev-db/sqlite-3* ) vpopmail? ( net-mail/vpopmail ) >=net-mail/mailbase-0.00-r8
+SLOT=0
+SRC_URI=http://dovecot.org/releases/1.1/dovecot-1.1.19.tar.gz sieve? ( http://dovecot.org/releases/sieve/dovecot-sieve-1.1.6.tar.gz ) managesieve? ( http://www.rename-it.nl/dovecot/1.1/dovecot-1.1.19-managesieve-0.10.7.diff.gz http://www.rename-it.nl/dovecot/1.1/dovecot-1.1-managesieve-0.10.7.tar.gz )
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ssl-cert	031d86ef31449c1482f12ddd8aa0d4eb	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=e299f64342082c6b8f8a933497ef4ab0

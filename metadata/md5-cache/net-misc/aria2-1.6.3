@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=sys-libs/zlib ssl? ( gnutls? ( >=net-libs/gnutls-1.2.9 ) !gnutls? ( dev-libs/openssl ) ) ares? ( >=net-dns/c-ares-1.5.0 ) bittorrent? ( gnutls? ( >=net-libs/gnutls-1.2.9 >=dev-libs/libgcrypt-1.2.2 ) !gnutls? ( dev-libs/openssl ) ) metalink? ( !expat? ( >=dev-libs/libxml2-2.6.26 ) expat? ( dev-libs/expat ) ) sqlite? ( dev-db/sqlite:3 ) nls? ( sys-devel/gettext ) test? ( >=dev-util/cppunit-1.12.0 )
+DESCRIPTION=A download utility with resuming and segmented downloading with HTTP/HTTPS/FTP/BitTorrent support.
+EAPI=2
+HOMEPAGE=http://aria2.sourceforge.net/
+IUSE=ares bittorrent expat gnutls metalink nls sqlite ssl test
+KEYWORDS=amd64 ~ppc ~ppc64 ~sparc x86
+LICENSE=GPL-2
+RDEPEND=sys-libs/zlib ssl? ( gnutls? ( >=net-libs/gnutls-1.2.9 ) !gnutls? ( dev-libs/openssl ) ) ares? ( >=net-dns/c-ares-1.5.0 ) bittorrent? ( gnutls? ( >=net-libs/gnutls-1.2.9 >=dev-libs/libgcrypt-1.2.2 ) !gnutls? ( dev-libs/openssl ) ) metalink? ( !expat? ( >=dev-libs/libxml2-2.6.26 ) expat? ( dev-libs/expat ) ) sqlite? ( dev-db/sqlite:3 ) nls? ( virtual/libiconv virtual/libintl )
+SLOT=0
+SRC_URI=mirror://sourceforge/aria2/aria2-1.6.3.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ff47b9c7df40a752b11495d18a9dd91a

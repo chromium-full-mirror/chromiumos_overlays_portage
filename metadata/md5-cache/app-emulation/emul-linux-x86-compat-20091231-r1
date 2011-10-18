@@ -1,0 +1,13 @@
+DEFINED_PHASES=install unpack
+DEPEND=>=sys-apps/findutils-4.2.26
+DESCRIPTION=32 bit lib-compat, and also libgcc_s and libstdc++ from gcc 3.3 and 3.4 for non-multilib systems
+HOMEPAGE=http://www.gentoo.org/
+IUSE=multilib
+KEYWORDS=-* amd64 ~amd64-linux
+LICENSE=GPL-2
+RDEPEND=multilib? ( sys-libs/libstdc++-v3 )
+RESTRICT=strip
+SLOT=0
+SRC_URI=mirror://gentoo/emul-linux-x86-compat-20091231.tar.bz2
+_eclasses_=emul-linux-x86	214021dd240de4a00ca5f2d2684e3a5a	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e6e588c4f8d34015d2d4224d20152e04

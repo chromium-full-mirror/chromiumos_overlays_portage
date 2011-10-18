@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=music and sound effects library, and a sound processing system
+HOMEPAGE=http://www.fmod.org
+IUSE=examples
+KEYWORDS=amd64 x86
+LICENSE=fmod
+RESTRICT=strip test
+SLOT=1
+SRC_URI=x86? ( http://www.fmod.org/index.php/release/version/fmodapi42600linux.tar.gz ) amd64? ( http://www.fmod.org/index.php/release/version/fmodapi42600linux64.tar.gz )
+_eclasses_=versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=92c5473eb850280bfcd3421f013f9baf

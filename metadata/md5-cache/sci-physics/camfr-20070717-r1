@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=sci-libs/scipy dev-lang/python[tk] dev-python/imaging[tk] dev-python/matplotlib dev-libs/boost[python] dev-libs/blitz virtual/lapack dev-util/pkgconfig >=dev-util/scons-0.98 >=app-admin/eselect-python-20091230 dev-lang/python >=app-admin/eselect-python-20091230
+DESCRIPTION=Full vectorial Maxwell solver based on eigenmode expansion
+EAPI=2
+HOMEPAGE=http://camfr.sourceforge.net/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=sci-libs/scipy dev-lang/python[tk] dev-python/imaging[tk] dev-python/matplotlib dev-libs/boost[python] dev-libs/blitz virtual/lapack >=app-admin/eselect-python-20091230 dev-lang/python >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=mirror://sourceforge/camfr/camfr-20070717.tgz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c9e2ac021a5b9a32c5f317d8c2717702

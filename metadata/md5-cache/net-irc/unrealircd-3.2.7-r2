@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare setup
+DEPEND=ssl? ( dev-libs/openssl ) zlib? ( sys-libs/zlib ) curl? ( net-misc/curl[ares,-ipv6] ) >=sys-apps/sed-4 ssl? ( dev-libs/openssl )
+DESCRIPTION=aimed to be an advanced (not easy) IRCd
+EAPI=2
+HOMEPAGE=http://www.unrealircd.com/
+IUSE=hub ipv6 ssl zlib curl prefixaq showlistmodes ssl
+KEYWORDS=~amd64 ~mips ppc sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=ssl? ( dev-libs/openssl ) zlib? ( sys-libs/zlib ) curl? ( net-misc/curl[ares,-ipv6] )
+SLOT=0
+SRC_URI=http://unreal.brueggisite.de/Unreal3.2.7.tar.gz http://www.blurryfox.com/unreal/Unreal3.2.7.tar.gz mirror://gentoo/Unreal3.2.7.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ssl-cert	031d86ef31449c1482f12ddd8aa0d4eb	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=baa02d074d73aedf239ae06b8ed64d64

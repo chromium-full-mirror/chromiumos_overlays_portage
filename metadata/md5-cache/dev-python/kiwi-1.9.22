@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=dev-python/pygtk >=app-admin/eselect-python-20091230 >=dev-lang/python-2.3 dev-lang/python
+DESCRIPTION=Kiwi is a pure Python framework and set of enhanced PyGTK widgets
+HOMEPAGE=http://www.async.com.br/projects/kiwi/
+IUSE=examples
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND=dev-python/pygtk >=app-admin/eselect-python-20091230 >=dev-lang/python-2.3 dev-lang/python
+SLOT=0
+SRC_URI=http://download.gnome.org/sources/kiwi/1.9/kiwi-1.9.22.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=268d69c70b1caedc073660538e7f911f

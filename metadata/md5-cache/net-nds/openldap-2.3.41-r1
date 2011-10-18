@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst preinst setup test unpack
+DEPEND=sys-libs/ncurses tcpd? ( sys-apps/tcp-wrappers ) ssl? ( dev-libs/openssl ) sasl? ( dev-libs/cyrus-sasl ) !minimal? ( odbc? ( dev-db/unixODBC ) slp? ( net-libs/openslp ) perl? ( dev-lang/perl ) samba? ( dev-libs/openssl ) kerberos? ( virtual/krb5 ) berkdb? ( || ( sys-libs/db:4.5 sys-libs/db:4.4 sys-libs/db:4.3 >=sys-libs/db-4.2.52_p2-r1:4.2 ) ) !berkdb? ( gdbm? ( sys-libs/gdbm ) !gdbm? ( || ( sys-libs/db:4.5 sys-libs/db:4.4 sys-libs/db:4.3 >=sys-libs/db-4.2.52_p2-r1:4.2 ) ) ) smbkrb5passwd? ( dev-libs/openssl app-crypt/heimdal ) ) selinux? ( sec-policy/selinux-openldap ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b ssl? ( dev-libs/openssl )
+DESCRIPTION=LDAP suite of application and development tools
+EAPI=1
+HOMEPAGE=http://www.OpenLDAP.org/
+IUSE=berkdb crypt debug gdbm ipv6 kerberos minimal odbc overlays perl samba sasl slp smbkrb5passwd ssl tcpd selinux ssl
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~sparc-fbsd ~x86 ~x86-fbsd
+LICENSE=OPENLDAP
+RDEPEND=sys-libs/ncurses tcpd? ( sys-apps/tcp-wrappers ) ssl? ( dev-libs/openssl ) sasl? ( dev-libs/cyrus-sasl ) !minimal? ( odbc? ( dev-db/unixODBC ) slp? ( net-libs/openslp ) perl? ( dev-lang/perl ) samba? ( dev-libs/openssl ) kerberos? ( virtual/krb5 ) berkdb? ( || ( sys-libs/db:4.5 sys-libs/db:4.4 sys-libs/db:4.3 >=sys-libs/db-4.2.52_p2-r1:4.2 ) ) !berkdb? ( gdbm? ( sys-libs/gdbm ) !gdbm? ( || ( sys-libs/db:4.5 sys-libs/db:4.4 sys-libs/db:4.3 >=sys-libs/db-4.2.52_p2-r1:4.2 ) ) ) smbkrb5passwd? ( dev-libs/openssl app-crypt/heimdal ) ) selinux? ( sec-policy/selinux-openldap )
+SLOT=0
+SRC_URI=mirror://openldap/openldap-release/openldap-2.3.41.tgz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	db-use	8d7baa3efc7c38c7d5c5e7353c5460dc	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ssl-cert	031d86ef31449c1482f12ddd8aa0d4eb	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=8c3802d4872495a47546233330cf6041

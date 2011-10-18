@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install
+DEPEND=net-libs/libpcap gtk? ( >=x11-libs/gtk+-2.0.0 media-libs/jpeg media-libs/giflib media-libs/libpng ) dev-util/pkgconfig
+DESCRIPTION=A program which listens to network traffic and picks out images from TCP streams it observes
+EAPI=2
+HOMEPAGE=http://www.ex-parrot.com/~chris/driftnet/
+IUSE=gtk mp3 suid
+KEYWORDS=~amd64 ~ppc -sparc ~x86
+LICENSE=GPL-2
+RDEPEND=net-libs/libpcap gtk? ( >=x11-libs/gtk+-2.0.0 media-libs/jpeg media-libs/giflib media-libs/libpng ) mp3? ( media-sound/mpg123 )
+SLOT=0
+SRC_URI=http://cloud.github.com/downloads/rbu/driftnet/driftnet-0.1.6_p20090401.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=054bc431a1765792714e705dd23d8710

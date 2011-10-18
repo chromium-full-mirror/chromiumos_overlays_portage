@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst postrm prepare
+DEPEND=dev-libs/glib:2 >=x11-libs/gtk+-2.12:2 x11-libs/startup-notification >=dev-lang/python-2.5 dev-python/pygobject dev-python/dbus-python dev-python/notify-python dev-python/pygtk net-wireless/bluez nls? ( dev-util/intltool sys-devel/gettext ) dev-util/pkgconfig >=dev-python/pyrex-0.9.8 >=app-admin/eselect-python-20091230
+DESCRIPTION=GTK+ Bluetooth Manager, designed to be simple and intuitive for everyday bluetooth tasks.
+EAPI=2
+HOMEPAGE=http://blueman-project.org/
+IUSE=gnome network nls
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=dev-libs/glib:2 >=x11-libs/gtk+-2.12:2 x11-libs/startup-notification >=dev-lang/python-2.5 dev-python/pygobject dev-python/dbus-python dev-python/notify-python dev-python/pygtk net-wireless/bluez >=app-mobilephone/obex-data-server-0.4.4 gnome-extra/policykit-gnome x11-misc/notification-daemon gnome? ( dev-python/gconf-python ) sys-apps/dbus network? ( || ( net-dns/dnsmasq =net-misc/dhcp-3* ) ) >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://download.tuxfamily.org/blueman/blueman-1.02.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9548d7726000dcd94303d83eacbcb189

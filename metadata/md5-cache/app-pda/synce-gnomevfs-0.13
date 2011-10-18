@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DEPEND=>=gnome-base/gnome-vfs-2.0 =app-pda/synce-libsynce-0.13* =app-pda/synce-librapi2-0.13*
+DESCRIPTION=SynCE - Gnome VFS extensions
+HOMEPAGE=http://sourceforge.net/projects/synce/
+IUSE=debug
+KEYWORDS=~x86 ~amd64
+LICENSE=MIT
+RDEPEND=>=gnome-base/gnome-vfs-2.0 =app-pda/synce-libsynce-0.13* =app-pda/synce-librapi2-0.13*
+SLOT=0
+SRC_URI=mirror://sourceforge/synce/synce-gnomevfs-0.13.tar.gz
+_eclasses_=versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=cca11e175f1375089ebf79e91065ce59

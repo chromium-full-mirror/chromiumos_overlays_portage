@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst setup unpack
+DEPEND=>=dev-util/git-1.6
+DESCRIPTION=release metatool used for creating releases based on Gentoo Linux
+HOMEPAGE=http://wolf31o2.org/projects/catalyst
+IUSE=ccache
+LICENSE=GPL-2
+RDEPEND=dev-lang/python app-crypt/shash virtual/cdrtools ccache? ( dev-util/ccache ) ia64? ( sys-fs/dosfstools ) kernel_linux? ( app-misc/zisofs-tools >=sys-fs/squashfs-tools-2.1 )
+SLOT=0
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	git	551824b681382dda2f4f5040597fdc07	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b08f58b31e6334f9699e340260021e66

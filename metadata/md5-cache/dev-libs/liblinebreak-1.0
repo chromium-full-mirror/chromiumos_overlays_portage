@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=Line breaking library
+EAPI=2
+HOMEPAGE=http://vimgadgets.sourceforge.net/liblinebreak/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=ZLIB
+SLOT=0
+SRC_URI=mirror://sourceforge/vimgadgets/liblinebreak-1.0.tar.gz
+_md5_=dec4132f77f3fca0072eee0044d77da9

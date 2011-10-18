@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm preinst unpack
+DEPEND=dev-lisp/cl-acl-compat dev-lisp/common-lisp-controller
+DESCRIPTION=Portable version of Franz's xmlutils. Includes XML and HTML parsers.
+HOMEPAGE=http://www.common-lisp.net/project/bese/pxmlutils.html
+KEYWORDS=~amd64 ~ppc ~sparc x86
+LICENSE=LLGPL-2.1
+RDEPEND=dev-lisp/cl-acl-compat
+SLOT=0
+SRC_URI=ftp://ftp.common-lisp.net/pub/project/bese/pxmlutils/pxmlutils_0.0.9.tar.gz
+_eclasses_=common-lisp	78bda507fdf240a712b120777127629c	common-lisp-common	a6e38969ed3937827ca1f284d015020a	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=78b8c884e669baa116b2be99b647cb54

@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup test unpack
+DEPEND=>=dev-python/numpy-1.2 virtual/cblas virtual/lapack umfpack? ( sci-libs/umfpack ) dev-util/pkgconfig umfpack? ( dev-lang/swig ) doc? ( app-arch/unzip ) >=app-admin/eselect-python-20091230 >=dev-lang/python-2.4 dev-lang/python
+DESCRIPTION=Scientific algorithms library for Python
+EAPI=2
+HOMEPAGE=http://www.scipy.org/
+IUSE=doc umfpack
+KEYWORDS=amd64 ~ppc ~ppc64 x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE=BSD
+RDEPEND=>=dev-python/numpy-1.2 virtual/cblas virtual/lapack umfpack? ( sci-libs/umfpack ) dev-python/imaging >=app-admin/eselect-python-20091230 >=dev-lang/python-2.4 dev-lang/python
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://sourceforge/scipy/scipy-0.7.1.tar.gz doc? ( http://docs.scipy.org/doc/scipy-0.7.x/scipy-html.zip -> scipy-0.7-html.zip http://docs.scipy.org/doc/scipy-0.7.x/scipy-ref.pdf -> scipy-0.7-ref.pdf )
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=2e28bd0c6276d1028c9a8aae48c18956

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst setup
+DEPEND=dev-lang/perl =www-servers/apache-2.2*
+DESCRIPTION=Apache module for cookie based authentication
+HOMEPAGE=http://www.openfusion.com.au/labs/mod_auth_tkt/
+KEYWORDS=~amd64 ~x86
+LICENSE=as-is
+RDEPEND==www-servers/apache-2.2*
+RESTRICT=test
+SLOT=0
+SRC_URI=http://www.openfusion.com.au/labs/dist/mod_auth_tkt-2.0.0rc2.tar.gz
+_eclasses_=apache-module	075afd5430fb1c448d318e76dbe83dc6	depend.apache	a471783c63e68987a2b20eb46f9edf68	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=199f7adf8fd07a8b69f91d89c1c7c897

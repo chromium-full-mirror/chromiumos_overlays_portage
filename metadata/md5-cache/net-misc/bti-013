@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst
+DEPEND=net-misc/curl sys-libs/readline
+DESCRIPTION=A command line twitter/identi.ca client
+HOMEPAGE=http://www.kernel.org/pub/linux/kernel/people/gregkh/bti/
+IUSE=bash-completion
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+PDEPEND=bash-completion? ( app-shells/bash-completion )
+RDEPEND=net-misc/curl sys-libs/readline bash-completion? ( app-admin/eselect )
+SLOT=0
+SRC_URI=http://www.kernel.org/pub/linux/kernel/people/gregkh/bti/bti-013.tar.bz2
+_eclasses_=bash-completion	f0fab76a98c0e4b3d72b6beb28d3f653
+_md5_=ea17d5deaddabe2228cfa1721c65ec0a

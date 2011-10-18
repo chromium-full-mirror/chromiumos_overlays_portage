@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND=dev-util/pkgconfig >=media-sound/audacious-1.4 >=media-libs/dumb-0.9.3 !>=media-sound/audacious-2.2_alpha1
+DESCRIPTION=Audacious Plug-in for accurate, high-quality IT/XM/S3M/MOD playback
+HOMEPAGE=http://www.netswarm.net/
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=>=media-sound/audacious-1.4 >=media-libs/dumb-0.9.3 !>=media-sound/audacious-2.2_alpha1
+SLOT=0
+SRC_URI=http://www.netswarm.net/misc/audacious-dumb-0.57.tar.gz
+_md5_=63f64ca30d2184a228071577d0dad019

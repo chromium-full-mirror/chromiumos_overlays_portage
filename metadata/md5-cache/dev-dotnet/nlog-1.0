@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=>=dev-lang/mono-2.0.1 >=dev-util/pkgconfig-0.23 app-arch/unzip dev-dotnet/nant
+DESCRIPTION=NLog is a .NET logging library designed with simplicity and flexibility in mind.
+EAPI=2
+HOMEPAGE=http://www.nlog-project.org/
+KEYWORDS=amd64 x86
+LICENSE=BSD
+RDEPEND=>=dev-lang/mono-2.0.1
+SLOT=0
+SRC_URI=mirror://sourceforge/nlog/nlog-1.0-src.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=cc91a94ca1037ba50283ab430f8b9dd6

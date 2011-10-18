@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install nofetch postinst preinst prepare setup unpack
+DESCRIPTION=A classic role-playing game
+EAPI=2
+HOMEPAGE=http://basiliskgames.com/eschalon-book-i
+KEYWORDS=x86
+LICENSE=eschalon-book-1-demo
+RDEPEND=virtual/opengl virtual/glu x11-libs/libX11 x11-libs/libXxf86vm sys-devel/gcc
+RESTRICT=fetch strip
+SLOT=0
+SRC_URI=eschalon_book_1_demo_105.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0c4078b74113c66a5dafa9103a6a85c2

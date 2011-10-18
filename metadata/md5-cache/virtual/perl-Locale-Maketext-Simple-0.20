@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=Locale::Maketext::Simple - Simple interface to Locale::Maketext::Lexicon
+KEYWORDS=~amd64 ~ia64 ~ppc ~sparc ~x86
+RDEPEND=~perl-core/Locale-Maketext-Simple-0.20
+SLOT=0
+_md5_=9100d74f2b5db05ecd6833ab3ceef6db

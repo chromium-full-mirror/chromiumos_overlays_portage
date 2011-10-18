@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst postrm
+DEPEND=>=dev-python/compizconfig-python-0.6.0 virtual/python >=x11-wm/compiz-0.6.0 gtk? ( >=dev-python/pygtk-2.10 ) qt4? ( dev-python/PyQt4[X] ) >=dev-util/pkgconfig-0.19 x11-apps/xvinfo >=sys-apps/sed-4 >=app-admin/eselect-python-20091230
+DESCRIPTION=Compiz Fusion Tray Icon and Manager
+EAPI=2
+HOMEPAGE=http://compiz-fusion.org
+IUSE=gtk qt4
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-python/compizconfig-python-0.6.0 virtual/python >=x11-wm/compiz-0.6.0 gtk? ( >=dev-python/pygtk-2.10 ) qt4? ( dev-python/PyQt4[X] ) >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=mirror://gentoo/fusion-icon-0.1.tar.gz
+_eclasses_=gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8b0a6a2a030fd8558866f1d3d1d6910e

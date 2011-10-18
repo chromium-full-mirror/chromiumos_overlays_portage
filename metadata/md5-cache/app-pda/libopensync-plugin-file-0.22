@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND==app-pda/libopensync-0.22*
+DESCRIPTION=OpenSync File Plugin
+HOMEPAGE=http://www.opensync.org/
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND==app-pda/libopensync-0.22*
+SLOT=0
+SRC_URI=http://dev.gentooexperimental.org/~peper/distfiles/libopensync-plugin-file-0.22.tar.bz2
+_md5_=2cd9b74aef18e914da2fb5aa6bf627a3

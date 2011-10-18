@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=A tool to log and decode Machine Check Exceptions
+HOMEPAGE=ftp://ftp.x86-64.org/pub/linux/tools/mcelog/
+LICENSE=GPL-2
+RDEPEND=virtual/cron
+SLOT=0
+SRC_URI=ftp://ftp.x86-64.org/pub/linux/tools/mcelog/mcelog-0.8pre.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e79bb4b92cb462ee80497cb4f1d5c4ba

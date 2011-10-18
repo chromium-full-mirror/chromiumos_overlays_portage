@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=!dedicated? ( media-libs/libsdl[audio,X,video] icu? ( dev-libs/icu ) truetype? ( media-libs/fontconfig media-libs/freetype:2 sys-libs/zlib ) ) iconv? ( virtual/libiconv ) png? ( media-libs/libpng ) zlib? ( sys-libs/zlib )
+DESCRIPTION=OpenTTD is a clone of Transport Tycoon Deluxe
+EAPI=2
+HOMEPAGE=http://www.openttd.org/
+IUSE=alsa debug dedicated iconv icu +png +truetype zlib
+KEYWORDS=~amd64 ppc ppc64 x86
+LICENSE=GPL-2
+RDEPEND=!dedicated? ( media-libs/libsdl[audio,X,video] icu? ( dev-libs/icu ) truetype? ( media-libs/fontconfig media-libs/freetype:2 sys-libs/zlib ) ) iconv? ( virtual/libiconv ) png? ( media-libs/libpng ) zlib? ( sys-libs/zlib ) !dedicated? ( alsa? ( media-sound/alsa-utils ) )
+RESTRICT=test
+SLOT=0
+SRC_URI=http://binaries.openttd.org/releases/0.7.5/openttd-0.7.5-source.tar.bz2
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1cffc47f07eb133a31c96f29352a8d73

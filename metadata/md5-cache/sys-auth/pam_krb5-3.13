@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=virtual/krb5
+DESCRIPTION=Kerberos 5 PAM Authentication Module
+HOMEPAGE=http://www.eyrie.org/~eagle/software/pam-krb5/
+IUSE=doc
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=|| ( BSD-2 GPL-2 )
+RDEPEND=virtual/krb5
+SLOT=0
+SRC_URI=http://archives.eyrie.org/software/kerberos/pam-krb5-3.13.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pam	f794bf311d46a2b11d3d9362fe656bd0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=fe6b35b87786b78168c0f98e96398d19

@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=sci-libs/cifparse-obj
+DESCRIPTION=Tools for extracting mmCIF data from structure determination applications
+HOMEPAGE=http://sw-tools.pdb.org/apps/PDB_EXTRACT/index.html
+KEYWORDS=~amd64 ppc x86
+LICENSE=PDB
+PDEPEND=sci-libs/rcsb-data
+SLOT=0
+SRC_URI=http://sw-tools.pdb.org/apps/PDB_EXTRACT/pdb-extract-v1.700-prod-src.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=532b67e4dc7f4d15823de1fdcabca0b7

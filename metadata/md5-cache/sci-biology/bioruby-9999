@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install prepare test unpack
+DEPEND=virtual/ruby >=dev-util/git-1.6
+DESCRIPTION=An integrated environment for bioinformatics using the Ruby language
+EAPI=2
+HOMEPAGE=http://www.bioruby.org/
+LICENSE=Ruby
+RDEPEND=virtual/ruby
+SLOT=0
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	git	551824b681382dda2f4f5040597fdc07	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby	dfc4f482954636675998a350b1d078b5	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=496efd04bfa52cb98d83ed7c53ea2ef2

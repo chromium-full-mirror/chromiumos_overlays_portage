@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare
+DEPEND=sys-apps/sed >=sys-power/cpufrequtils-002 lm_sensors? ( >sys-apps/lm_sensors-3 )
+DESCRIPTION=CPU Frequency Daemon
+EAPI=2
+HOMEPAGE=http://www.linux.it/~malattia/wiki/index.php/Cpufreqd
+IUSE=acpi apm lm_sensors nforce2 nvidia pmu
+KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-power/cpufrequtils-002 lm_sensors? ( >sys-apps/lm_sensors-3 )
+SLOT=0
+SRC_URI=mirror://sourceforge/cpufreqd/cpufreqd-2.3.4.tar.bz2 nvidia? ( http://www.linuxhardware.org/nvclock/nvclock0.8b.tar.gz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a8ddc09ef91ee0c9371d20a9119eda87

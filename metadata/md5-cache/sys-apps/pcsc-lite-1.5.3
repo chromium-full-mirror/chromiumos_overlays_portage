@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup unpack
+DEPEND=usb? ( =virtual/libusb-0* ) hal? ( sys-apps/hal ) dev-util/pkgconfig
+DESCRIPTION=PC/SC Architecture smartcard middleware library
+HOMEPAGE=http://www.linuxnet.com/middle.html
+IUSE=hal static usb
+KEYWORDS=amd64 arm hppa ia64 m68k ppc ppc64 s390 sh sparc x86
+LICENSE=as-is
+RDEPEND=usb? ( =virtual/libusb-0* ) hal? ( sys-apps/hal )
+SLOT=0
+SRC_URI=http://alioth.debian.org/download.php/3017/pcsc-lite-1.5.3.tar.bz2
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b931999d021375b32bfc6c8371011eda

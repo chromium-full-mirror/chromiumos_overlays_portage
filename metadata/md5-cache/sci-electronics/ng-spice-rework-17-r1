@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install test unpack
+DEPEND=readline? ( >=sys-libs/readline-5.0 )
+DESCRIPTION=The Next Generation Spice (Electronic Circuit Simulator).
+HOMEPAGE=http://ngspice.sourceforge.net
+IUSE=readline debug
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=BSD GPL-2
+RDEPEND=readline? ( >=sys-libs/readline-5.0 )
+SLOT=0
+SRC_URI=mirror://sourceforge/ngspice/ng-spice-rework-17.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7c1e88f9dc31344648a298b26377a168

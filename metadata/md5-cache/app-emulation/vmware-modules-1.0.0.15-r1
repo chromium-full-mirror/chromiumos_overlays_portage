@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup unpack
+DEPEND=x11-misc/shared-mime-info kernel_linux? ( virtual/modutils ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+DESCRIPTION=Modules for Vmware Programs
+HOMEPAGE=http://www.vmware.com/
+IUSE=kernel_linux
+KEYWORDS=amd64 x86
+LICENSE=vmware
+RDEPEND=kernel_linux? ( virtual/modutils )
+SLOT=0
+SRC_URI=http://platan.vc.cvut.cz/ftp/pub/vmware/vmware-any-any-update115.tar.gz http://platan.vc.cvut.cz/ftp/pub/vmware/obsolete/vmware-any-any-update115.tar.gz http://knihovny.cvut.cz/ftp/pub/vmware/vmware-any-any-update115.tar.gz http://knihovny.cvut.cz/ftp/pub/vmware/obsolete/vmware-any-any-update115.tar.gz http://ftp.cvut.cz/vmware/vmware-any-any-update115.tar.gz http://ftp.cvut.cz/vmware/obsolete/vmware-any-any-update115.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	linux-info	8d722422d00ae99ed52a790b20b9bfc4	linux-mod	07a3d250a1268d811d3e8730e5741394	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pax-utils	0bce06fc565015448fab5af5dbffc5e3	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5	vmware	8792edbeb1cb50c41256961f440e9f96	vmware-mod	f4db6a413eb967476eae254d0ed5b1e6
+_md5_=964d9f1e9e7d1a59b8b3a2819c2da791

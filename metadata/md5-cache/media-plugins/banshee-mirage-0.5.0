@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=>=media-sound/banshee-1.4 sci-libs/fftw:3.0 dev-db/sqlite:3 dev-libs/glib:2 media-libs/libsamplerate >=dev-dotnet/gtk-sharp-2.10 dev-util/pkgconfig !media-gfx/mirage
+DESCRIPTION=Automatic Playlist Generation Extension for Banshee
+EAPI=2
+HOMEPAGE=http://hop.at/mirage/
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=>=media-sound/banshee-1.4 sci-libs/fftw:3.0 dev-db/sqlite:3 dev-libs/glib:2 media-libs/libsamplerate >=dev-dotnet/gtk-sharp-2.10
+SLOT=0
+SRC_URI=http://hop.at/mirage/download/mirage-0.5.0.tar.gz
+_eclasses_=mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=36d7ab6f07344ba43c859b9413f6709d

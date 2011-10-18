@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=net-misc/curl sys-apps/dbus gtk? ( x11-libs/gtk+ x11-libs/libnotify dev-util/desktop-file-utils )
+DESCRIPTION=Tool to automatically collect and submit Linux kernel crash signatures
+HOMEPAGE=http://www.kerneloops.org/
+IUSE=gtk
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=net-misc/curl sys-apps/dbus gtk? ( x11-libs/gtk+ x11-libs/libnotify dev-util/desktop-file-utils )
+SLOT=0
+SRC_URI=http://www.kerneloops.org/download/kerneloops-0.11.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b3dbdf3e5730325d69b8335b3d56ca3b

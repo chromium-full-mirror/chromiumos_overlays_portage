@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=>=dev-python/pychm-0.8.4 dev-python/pygtk:2 >=dev-python/libgnome-python-2.22 >=dev-python/gconf-python-2.22 >=dev-python/gtkhtml-python-2.19.1 app-text/scrollkeeper >=dev-util/intltool-0.21 >=sys-apps/sed-4 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DESCRIPTION=GnoCHM is a CHM file viewer that integrates with the GNOME desktop.
+EAPI=2
+HOMEPAGE=http://gnochm.sourceforge.net/
+IUSE=debug
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=>=dev-python/pychm-0.8.4 dev-python/pygtk:2 >=dev-python/libgnome-python-2.22 >=dev-python/gconf-python-2.22 >=dev-python/gtkhtml-python-2.19.1 >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+SLOT=0
+SRC_URI=mirror://sourceforge/gnochm/gnochm-0.9.11.tar.gz
+_eclasses_=fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=990eba2303b20f6ebbbd41fba2d3d1b6

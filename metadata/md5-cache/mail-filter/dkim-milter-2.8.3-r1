@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile config install postinst prepare setup test
+DEPEND=dev-libs/openssl >=sys-libs/db-3.2 || ( mail-filter/libmilter mail-mta/sendmail ) diffheaders? ( dev-libs/tre )
+DESCRIPTION=A milter-based application to provide DomainKeys Identified Mail (DKIM) service
+EAPI=2
+HOMEPAGE=http://sourceforge.net/projects/dkim-milter/
+IUSE=ipv6 diffheaders
+KEYWORDS=~amd64 ~ia64 x86
+LICENSE=Sendmail-Open-Source
+RDEPEND=dev-libs/openssl >=sys-libs/db-3.2 || ( mail-filter/libmilter mail-mta/sendmail ) diffheaders? ( dev-libs/tre )
+SLOT=0
+SRC_URI=mirror://sourceforge/dkim-milter/dkim-milter-2.8.3.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=696f83f40811de31532d9b8f3c6f3065

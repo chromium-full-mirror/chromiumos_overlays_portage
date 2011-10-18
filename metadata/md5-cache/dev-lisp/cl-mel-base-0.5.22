@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst postrm preinst
+DEPEND=dev-lisp/common-lisp-controller virtual/commonlisp dev-lisp/common-lisp-controller
+DESCRIPTION=A Common Lisp networking library for handling e-mail from Maildir, POP3, IMAP and SMTP
+HOMEPAGE=http://codeartist.org/mel/
+LICENSE=BSD
+RDEPEND=dev-lisp/common-lisp-controller virtual/commonlisp app-misc/mime-types
+SLOT=0
+SRC_URI=http://dataheaven.dnsalias.net/asdf-install/mel-base_0.5-22.tar.gz
+_eclasses_=common-lisp	78bda507fdf240a712b120777127629c	common-lisp-common	a6e38969ed3937827ca1f284d015020a	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=bb1462c71d7c1cf206339c6f453bb888

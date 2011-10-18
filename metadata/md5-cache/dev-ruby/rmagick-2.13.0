@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=>=media-gfx/imagemagick-6.3.5.10[-hdri] doc? ( app-text/ghostscript-gpl media-libs/libwmf ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 )
+DESCRIPTION=An interface between Ruby and the ImageMagick(TM) image processing library
+EAPI=2
+HOMEPAGE=http://rmagick.rubyforge.org/
+IUSE=examples doc ruby_targets_ruby18
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86
+LICENSE=Artistic
+RDEPEND=>=media-gfx/imagemagick-6.3.5.10[-hdri] ruby_targets_ruby18? ( dev-lang/ruby:1.8 )
+SLOT=0
+SRC_URI=mirror://rubyforge/rmagick/RMagick-2.13.0.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby-ng	94f1106cb53283c8f691122e3077c9e1	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=80f06ffcdfac0fe662468b7275b99558

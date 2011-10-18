@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=>=sys-libs/ncurses-5.2 X? ( >=x11-proto/xproto-7.0.4 >=x11-libs/libX11-1.0.0 >=x11-libs/libXt-1.0.0 >=x11-libs/libXpm-3.5.4.2 >=x11-libs/libXft-2.1.8.2 ) app-admin/eselect-vi
+DESCRIPTION=A vi/ex clone
+HOMEPAGE=ftp://ftp.cs.pdx.edu/pub/elvis/
+IUSE=X
+KEYWORDS=alpha amd64 ppc ppc64 sparc x86
+LICENSE=Artistic
+RDEPEND=>=sys-libs/ncurses-5.2 X? ( >=x11-proto/xproto-7.0.4 >=x11-libs/libX11-1.0.0 >=x11-libs/libXt-1.0.0 >=x11-libs/libXpm-3.5.4.2 >=x11-libs/libXft-2.1.8.2 ) app-admin/eselect-vi
+SLOT=0
+SRC_URI=ftp://ftp.cs.pdx.edu/pub/elvis/elvis-2.2_0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=23427f47072a546dbf314668b1b2196b

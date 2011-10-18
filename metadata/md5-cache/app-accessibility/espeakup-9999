@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=app-accessibility/espeak >=dev-util/git-1.6
+DESCRIPTION=espeakup is a small lightweight connector for espeak and speakup
+HOMEPAGE=http://www.github.com/williamh/espeakup
+LICENSE=GPL-3
+RDEPEND=app-accessibility/espeak app-accessibility/speakup
+SLOT=0
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	git	551824b681382dda2f4f5040597fdc07	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=77a819f922898c67950d6bb67ab99959

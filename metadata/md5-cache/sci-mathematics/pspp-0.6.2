@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare
+DEPEND=sci-libs/gsl sys-libs/readline sys-devel/gettext virtual/libiconv sys-libs/zlib dev-libs/libxml2 emacs? ( virtual/emacs ) gtk? ( >=x11-libs/gtk+-2.12 gnome-base/libglade ) ncurses? ( sys-libs/ncurses ) plotutils? ( media-libs/plotutils ) postgres? ( virtual/postgresql-server ) dev-util/pkgconfig doc? ( virtual/latex-base ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Program for statistical analysis of sampled data.
+EAPI=2
+HOMEPAGE=http://www.gnu.org/software/pspp/pspp.html
+IUSE=doc emacs gtk ncurses nls plotutils postgres
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=sci-libs/gsl sys-libs/readline sys-devel/gettext virtual/libiconv sys-libs/zlib dev-libs/libxml2 emacs? ( virtual/emacs ) gtk? ( >=x11-libs/gtk+-2.12 gnome-base/libglade ) ncurses? ( sys-libs/ncurses ) plotutils? ( media-libs/plotutils ) postgres? ( virtual/postgresql-server )
+SLOT=0
+SRC_URI=ftp://ftp.gnu.org/pub/gnu/pspp/pspp-0.6.2.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c117dc7dd88f93e94f8ee76499b253c2

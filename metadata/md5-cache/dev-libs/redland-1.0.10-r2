@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare test
+DEPEND=mysql? ( virtual/mysql ) sqlite? ( =dev-db/sqlite-3* ) berkdb? ( sys-libs/db ) xml? ( dev-libs/libxml2 ) !xml? ( dev-libs/expat ) ssl? ( dev-libs/openssl ) >=media-libs/raptor-1.4.17 >=dev-libs/rasqal-0.9.16 postgres? ( virtual/postgresql-base ) iodbc? ( dev-db/libiodbc ) odbc? ( dev-db/unixODBC ) >=sys-devel/libtool-2 dev-util/gtk-doc-am dev-util/pkgconfig =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=High-level interface for the Resource Description Framework
+EAPI=3
+HOMEPAGE=http://librdf.org/
+IUSE=berkdb iodbc mysql odbc postgres sqlite ssl xml
+KEYWORDS=~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos
+LICENSE=Apache-2.0 GPL-2 LGPL-2.1
+RDEPEND=mysql? ( virtual/mysql ) sqlite? ( =dev-db/sqlite-3* ) berkdb? ( sys-libs/db ) xml? ( dev-libs/libxml2 ) !xml? ( dev-libs/expat ) ssl? ( dev-libs/openssl ) >=media-libs/raptor-1.4.17 >=dev-libs/rasqal-0.9.16 postgres? ( virtual/postgresql-base ) iodbc? ( dev-db/libiodbc ) odbc? ( dev-db/unixODBC )
+SLOT=0
+SRC_URI=http://download.librdf.org/source/redland-1.0.10.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=4d478f430e64d4505eef2385a8d31cbe

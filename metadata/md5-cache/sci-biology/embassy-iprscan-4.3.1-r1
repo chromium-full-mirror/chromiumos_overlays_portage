@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND==sci-biology/emboss-6.1.0* !<sci-biology/emboss-6.1.0 X? ( x11-libs/libX11 ) png? ( sys-libs/zlib media-libs/libpng >=media-libs/gd-1.8 )
+DESCRIPTION=InterProScan motif detection add-on package for EMBOSS
+HOMEPAGE=http://emboss.sourceforge.net/
+IUSE=X png
+KEYWORDS=~amd64 ~ppc ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos
+LICENSE=LGPL-2 GPL-2
+SLOT=0
+SRC_URI=ftp://emboss.open-bio.org/pub/EMBOSS/EMBOSS-6.1.0.tar.gz mirror://gentoo/embassy-6.1.0-iprscan-4.3.1.tar.gz
+_eclasses_=embassy	dbdeff104726b50b04a92d0d63a30c01	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=02b9c9af8752763a03d46ea81cd60497

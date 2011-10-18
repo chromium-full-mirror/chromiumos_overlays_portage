@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=>=dev-libs/glib-2.16 >=x11-libs/gtk+-2.14 >=gnome-base/libglade-2 >=gnome-base/gconf-2 media-libs/libcanberra[gtk] dev-libs/dbus-glib >=media-libs/musicbrainz-3.0.2:3 >=dev-libs/libcdio-0.70[-minimal] >=gnome-extra/gnome-media-2.11.91 >=app-cdr/brasero-0.9.1 >=media-libs/gstreamer-0.10.15:0.10 >=media-libs/gst-plugins-base-0.10:0.10 >=dev-util/pkgconfig-0.9 >=dev-util/intltool-0.40 >=app-text/scrollkeeper-0.3.5 app-text/gnome-doc-utils test? ( ~app-text/docbook-xml-dtd-4.3 ) >=sys-apps/sed-4
+DESCRIPTION=CD ripper for GNOME 2
+EAPI=2
+HOMEPAGE=http://www.burtonini.com/blog/computers/sound-juicer/
+IUSE=test debug
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/glib-2.16 >=x11-libs/gtk+-2.14 >=gnome-base/libglade-2 >=gnome-base/gconf-2 media-libs/libcanberra[gtk] dev-libs/dbus-glib >=media-libs/musicbrainz-3.0.2:3 >=dev-libs/libcdio-0.70[-minimal] >=gnome-extra/gnome-media-2.11.91 >=app-cdr/brasero-0.9.1 >=media-libs/gstreamer-0.10.15:0.10 >=media-libs/gst-plugins-base-0.10:0.10 >=media-plugins/gst-plugins-gconf-0.10:0.10 >=media-plugins/gst-plugins-gio-0.10:0.10 || ( >=media-plugins/gst-plugins-cdparanoia-0.10:0.10 >=media-plugins/gst-plugins-cdio-0.10:0.10 ) >=media-plugins/gst-plugins-meta-0.10-r2:0.10
+SLOT=0
+SRC_URI=mirror://gnome/sources/sound-juicer/2.26/sound-juicer-2.26.1.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=38a8ec3a46b653f839c4de1828b469fb

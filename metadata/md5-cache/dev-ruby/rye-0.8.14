@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=test? ( >=dev-ruby/net-scp-1.0.2[ruby_targets_ruby18?,ruby_targets_ruby19?] ) test? ( >=dev-ruby/net-ssh-2.0.13[ruby_targets_ruby18?,ruby_targets_ruby19?] ) test? ( >=dev-ruby/highline-1.5.1[ruby_targets_ruby18?,ruby_targets_ruby19?] ) test? ( >=dev-ruby/sysinfo-0.7.0[ruby_targets_ruby18?,ruby_targets_ruby19?] ) test? ( dev-ruby/storable[ruby_targets_ruby18?,ruby_targets_ruby19?] ) test? ( dev-ruby/sysinfo[ruby_targets_ruby18?,ruby_targets_ruby19?] ) test? ( dev-ruby/drydock[ruby_targets_ruby18?,ruby_targets_ruby19?] ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 ) doc? ( dev-ruby/rake[ruby_targets_ruby18?,ruby_targets_ruby19?] ) test? ( virtual/rubygems[ruby_targets_ruby18?,ruby_targets_ruby19?] )
+DESCRIPTION=Safely run SSH commands on a bunch of machines at the same time
+EAPI=2
+HOMEPAGE=http://solutious.com/
+IUSE=test test test test test test test ruby_targets_ruby18 ruby_targets_ruby19 doc doc test
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=>=dev-ruby/net-scp-1.0.2[ruby_targets_ruby18?,ruby_targets_ruby19?] >=dev-ruby/net-ssh-2.0.13[ruby_targets_ruby18?,ruby_targets_ruby19?] >=dev-ruby/highline-1.5.1[ruby_targets_ruby18?,ruby_targets_ruby19?] >=dev-ruby/sysinfo-0.7.0[ruby_targets_ruby18?,ruby_targets_ruby19?] dev-ruby/storable[ruby_targets_ruby18?,ruby_targets_ruby19?] dev-ruby/sysinfo[ruby_targets_ruby18?,ruby_targets_ruby19?] dev-ruby/drydock[ruby_targets_ruby18?,ruby_targets_ruby19?] ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 ) virtual/rubygems[ruby_targets_ruby18?,ruby_targets_ruby19?]
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://rubygems/rye-0.8.14.gem
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby-fakegem	2768bd9a49d90592f8e7b88ab4077f20	ruby-ng	94f1106cb53283c8f691122e3077c9e1	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6b4f1ce8ef09c2f8a47ea7c8da8c193d

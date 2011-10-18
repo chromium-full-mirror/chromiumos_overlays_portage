@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm setup
+DEPEND=>=app-admin/eselect-python-20091230
+DESCRIPTION=Quod Libet plugin that opens a confed program on the songs folders
+HOMEPAGE=http://svn.sacredchao.net/svn/quodlibet/trunk/plugins/songsmenu/browsefolders.py
+KEYWORDS=~alpha ~amd64 ~ppc64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=media-sound/quodlibet-2 >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=mirror://gentoo/quodlibet-browsefolders-4353.tar.bz2 http://dev.gentoo.org/~ssuominen/quodlibet-browsefolders-4353.tar.bz2
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ef2cd8c992203f7b14dc23c68d93127b

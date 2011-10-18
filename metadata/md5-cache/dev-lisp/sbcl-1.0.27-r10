@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install postinst postrm setup test unpack
+DEPEND=doc? ( sys-apps/texinfo || ( >=media-gfx/graphviz-2.20[png] >=media-gfx/graphviz-2.24.0 ) )
+DESCRIPTION=Steel Bank Common Lisp (SBCL) is an implementation of ANSI Common Lisp.
+EAPI=2
+HOMEPAGE=http://sbcl.sourceforge.net/
+IUSE=ldb source +threads +unicode doc cobalt
+KEYWORDS=-* ~amd64 ~ppc ~sparc ~x86
+LICENSE=MIT
+PDEPEND=dev-lisp/gentoo-init
+PROVIDE=virtual/commonlisp
+RDEPEND=elibc_glibc? ( >=sys-libs/glibc-2.3 || ( <sys-libs/glibc-2.6[nptl] >=sys-libs/glibc-2.6 ) )
+SLOT=0
+SRC_URI=mirror://sourceforge/sbcl/sbcl-1.0.27-source.tar.bz2 x86? ( mirror://sourceforge/sbcl/sbcl-1.0.23-x86-linux-binary.tar.bz2 ) amd64? ( mirror://sourceforge/sbcl/sbcl-1.0.25-x86-64-linux-binary.tar.bz2 ) ppc? ( mirror://sourceforge/sbcl/sbcl-1.0.23-powerpc-linux-binary.tar.bz2 ) sparc? ( mirror://sourceforge/sbcl/sbcl-1.0.22-sparc-linux-binary.tar.bz2 ) alpha? ( mirror://sourceforge/sbcl/sbcl-0.9.12-alpha-linux-binary.tar.bz2 ) mips? ( !cobalt? ( mirror://sourceforge/sbcl/sbcl-1.0.23-mips-linux-binary.tar.bz2 ) ) mips? ( cobalt? ( mirror://sourceforge/sbcl/sbcl-1.0.23-mipsel-linux-binary.tar.bz2 ) )
+_eclasses_=common-lisp-common-3	a532ed59ec656ff59b05240f6dc38bad	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=35fdbc071b45528a196e1da355d58c6a

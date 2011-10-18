@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=dev-libs/ucl-1.02 >=dev-lang/perl-5.6 !app-arch/upx
+DESCRIPTION=upx is the Ultimate Packer for eXecutables.
+HOMEPAGE=http://upx.sourceforge.net
+KEYWORDS=~x86 ~ppc ~sparc ~amd64
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/ucl-1.02 !app-arch/upx
+SLOT=0
+SRC_URI=http://upx.sourceforge.net/download/upx-1.25-src.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=972e2ac2ed589fdb55a3b33aabd60b33

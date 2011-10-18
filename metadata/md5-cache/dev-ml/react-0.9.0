@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install test
+DEPEND=>=dev-lang/ocaml-3.11[ocamlopt?]
+DESCRIPTION=OCaml module for functional reactive programming
+EAPI=2
+HOMEPAGE=http://erratique.ch/software/react
+IUSE=+ocamlopt doc
+KEYWORDS=~amd64 ~x86 ~x86-fbsd
+LICENSE=BSD
+RDEPEND=>=dev-lang/ocaml-3.11[ocamlopt?]
+SLOT=0
+SRC_URI=http://erratique.ch/software/react/releases/react-0.9.0.tbz
+_md5_=bb05db264080447257dc6933883672a4

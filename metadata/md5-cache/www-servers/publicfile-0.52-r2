@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare test
+DESCRIPTION=publish files through FTP and HTTP
+EAPI=2
+HOMEPAGE=http://cr.yp.to/publicfile.html
+IUSE=selinux vanilla
+KEYWORDS=~amd64 ~hppa ~ppc ~sparc ~x86
+LICENSE=as-is
+RDEPEND=>=sys-process/daemontools-0.70 >=sys-apps/ucspi-tcp-0.83 selinux? ( sec-policy/selinux-publicfile ) !net-ftp/netkit-ftpd
+SLOT=0
+SRC_URI=http://cr.yp.to/publicfile/publicfile-0.52.tar.gz http://www.ohse.de/uwe/patches/publicfile-0.52-filetype-diff http://www.publicfile.org/ftp-ls-patch
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=69f3a5a74d5771a25807e03ae28633d4

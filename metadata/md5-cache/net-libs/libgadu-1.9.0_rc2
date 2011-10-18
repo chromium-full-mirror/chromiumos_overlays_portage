@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=ssl? ( >=dev-libs/openssl-0.9.6m ) doc? ( app-doc/doxygen )
+DESCRIPTION=This library implements the client side of the Gadu-Gadu protocol
+EAPI=2
+HOMEPAGE=http://toxygen.net/libgadu/
+IUSE=doc ssl static-libs threads
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos
+LICENSE=LGPL-2.1
+RDEPEND=ssl? ( >=dev-libs/openssl-0.9.6m ) !=net-im/kadu-0.6.0.2 !=net-im/kadu-0.6.0.1
+SLOT=0
+SRC_URI=http://toxygen.net/libgadu/files/libgadu-1.9.0-rc2.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=728f4c5a75f431a2ac5132b220bd8ee3

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm
+DEPEND=>=x11-misc/icon-naming-utils-0.8.2 dev-util/pkgconfig >=sys-apps/sed-4
+DESCRIPTION=SVG icon theme from the Echo Icon project
+HOMEPAGE=https://fedorahosted.org/echo-icon-theme
+KEYWORDS=~amd64 ~x86
+LICENSE=CCPL-Attribution-ShareAlike-3.0
+RDEPEND=>=x11-misc/icon-naming-utils-0.8.2
+RESTRICT=binchecks strip
+SLOT=0
+SRC_URI=mirror://gentoo/echo-icon-theme-0.3.89.0_pre20081031.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a9d21235fff8dacf3699e2bf39f5439d

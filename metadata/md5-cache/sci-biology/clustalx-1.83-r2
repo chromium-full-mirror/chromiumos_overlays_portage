@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup unpack
+DEPEND=sci-biology/clustalw:1 sci-biology/ncbi-tools x11-libs/openmotif x11-libs/libXpm
+DESCRIPTION=Graphical interface for the ClustalW multiple alignment program
+EAPI=1
+HOMEPAGE=http://www-igbmc.u-strasbg.fr/BioInfo/ClustalX/
+KEYWORDS=amd64 x86 ~sparc
+LICENSE=public-domain
+RDEPEND=sci-biology/clustalw:1 sci-biology/ncbi-tools x11-libs/openmotif x11-libs/libXpm
+SLOT=0
+SRC_URI=ftp://ftp-igbmc.u-strasbg.fr/pub/ClustalX/clustalx1.83.sun.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c9280e86845081ab44b54e3aa7fc6138

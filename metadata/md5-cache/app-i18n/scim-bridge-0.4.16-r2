@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install postinst postrm prepare
+DEPEND=>=app-i18n/scim-1.4.6 gtk? ( >=x11-libs/gtk+-2.2 >=x11-libs/pango-1.1 ) qt4? ( x11-libs/qt-gui:4 x11-libs/qt-core:4 >=x11-libs/pango-1.1 ) dev-util/pkgconfig dev-util/intltool doc? ( app-doc/doxygen ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Yet another IM-client of SCIM
+EAPI=2
+HOMEPAGE=http://www.scim-im.org/projects/scim_bridge
+IUSE=doc gtk qt4
+KEYWORDS=~amd64 ~hppa ~ppc64 ~sparc ~x86
+LICENSE=GPL-2 LGPL-2.1
+RDEPEND=>=app-i18n/scim-1.4.6 gtk? ( >=x11-libs/gtk+-2.2 >=x11-libs/pango-1.1 ) qt4? ( x11-libs/qt-gui:4 x11-libs/qt-core:4 >=x11-libs/pango-1.1 )
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://sourceforge/scim/scim-bridge-0.4.16.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0cf36b2d6292ccab9d38fe6ee653f5c4

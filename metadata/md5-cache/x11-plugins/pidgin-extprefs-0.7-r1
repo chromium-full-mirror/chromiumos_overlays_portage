@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DEPEND=dev-util/pkgconfig net-im/pidgin[gtk]
+DESCRIPTION=Pidgin Extended Preferences is a plugin that takes advantage of existing pidgin functionality to provide preferences that are often desired but not are not considered worthy of inclusion in Pidgin itself.
+EAPI=2
+HOMEPAGE=http://gaim-extprefs.sourceforge.net
+KEYWORDS=~amd64 ~hppa ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=net-im/pidgin[gtk]
+SLOT=0
+SRC_URI=mirror://sourceforge/gaim-extprefs/pidgin-extprefs-0.7.tar.gz
+_md5_=9a4a8806dc4222e143e6787aaecd59ed

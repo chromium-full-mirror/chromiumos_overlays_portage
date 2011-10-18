@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst postrm preinst
+DEPEND=>=x11-libs/gtk+-2.10 virtual/libintl sys-devel/gettext dev-util/intltool dev-util/pkgconfig >=sys-apps/sed-4
+DESCRIPTION=Simple GTK+ Text Editor
+EAPI=2
+HOMEPAGE=http://tarot.freeshell.org/leafpad/
+IUSE=emacs
+KEYWORDS=~amd64 ~arm ~ppc x86 ~x86-interix ~amd64-linux ~x86-linux
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2.10 virtual/libintl
+SLOT=0
+SRC_URI=http://savannah.nongnu.org/download/leafpad/leafpad-0.8.17.tar.gz
+_eclasses_=fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407
+_md5_=f760d84e11d4c25dd507eb697401dd22

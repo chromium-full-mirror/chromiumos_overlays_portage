@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst setup unpack
+DESCRIPTION=quilt patch manager
+HOMEPAGE=http://savannah.nongnu.org/projects/quilt
+IUSE=graphviz bash-completion
+KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+PDEPEND=bash-completion? ( app-shells/bash-completion )
+RDEPEND=sys-apps/ed dev-util/diffstat graphviz? ( media-gfx/graphviz ) || ( >=sys-apps/coreutils-6.10-r1 sys-apps/mktemp ) bash-completion? ( app-admin/eselect )
+SLOT=0
+SRC_URI=http://savannah.nongnu.org/download/quilt/quilt-0.47.tar.gz
+_eclasses_=bash-completion	f0fab76a98c0e4b3d72b6beb28d3f653	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e1e6bf3d84049d00804c82373a29fe02

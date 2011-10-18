@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile config install postinst postrm setup unpack
+DEPEND=>=media-video/vdr-1.2.0 >=media-tv/gentoo-vdr-scripts-0.4.2 media-tv/linuxtv-dvb-headers
+DESCRIPTION=VDR plugin: convert video-recordings to mpeg4 for burning on CDs
+HOMEPAGE=http://www.a-land.de/
+KEYWORDS=~x86
+LICENSE=GPL-2
+RDEPEND=>=media-video/vdr-1.2.0 >=media-video/mplayer-1.0_pre8 sys-process/procps sys-apps/util-linux >=media-tv/gentoo-vdr-scripts-0.4.2 >=app-admin/eselect-vdr-0.0.2
+SLOT=0
+SRC_URI=http://www.a-land.de/vdr-vdrrip-0.3.0.tgz http://www.a-land.de/queuehandler-fixed-0.3.0.sh
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	vdr-plugin	197973b71da01f1b44f98f14572e49c1
+_md5_=f8722f7954cc85c20d48e34343b82a72

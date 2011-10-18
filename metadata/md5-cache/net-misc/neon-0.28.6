@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install postinst prepare
+DEPEND=expat? ( dev-libs/expat ) !expat? ( dev-libs/libxml2 ) gnutls? ( >=net-libs/gnutls-2.0 pkcs11? ( dev-libs/pakchois ) ) !gnutls? ( ssl? ( >=dev-libs/openssl-0.9.6f pkcs11? ( dev-libs/pakchois ) ) ) kerberos? ( virtual/krb5 ) nls? ( virtual/libintl ) socks5? ( net-proxy/dante ) zlib? ( sys-libs/zlib ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=HTTP and WebDAV client library
+EAPI=2
+HOMEPAGE=http://www.webdav.org/neon/
+IUSE=doc expat gnutls kerberos nls pkcs11 socks5 ssl zlib linguas_cs linguas_de linguas_fr linguas_ja linguas_nn linguas_pl linguas_ru linguas_tr linguas_zh_CN
+KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~sparc-fbsd ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=expat? ( dev-libs/expat ) !expat? ( dev-libs/libxml2 ) gnutls? ( >=net-libs/gnutls-2.0 pkcs11? ( dev-libs/pakchois ) ) !gnutls? ( ssl? ( >=dev-libs/openssl-0.9.6f pkcs11? ( dev-libs/pakchois ) ) ) kerberos? ( virtual/krb5 ) nls? ( virtual/libintl ) socks5? ( net-proxy/dante ) zlib? ( sys-libs/zlib )
+RESTRICT=test
+SLOT=0
+SRC_URI=http://www.webdav.org/neon/neon-0.28.6.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=9c8b7732f7e30dddc2a61e6788888d65

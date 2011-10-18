@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=sys-libs/ncurses X? ( x11-libs/libX11 ) >=dev-libs/lzo-2 sys-devel/bison sys-devel/flex
+DESCRIPTION=editor for executable files
+HOMEPAGE=http://hte.sourceforge.net/
+IUSE=X
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+LICENSE=GPL-2
+RDEPEND=sys-libs/ncurses X? ( x11-libs/libX11 ) >=dev-libs/lzo-2
+SLOT=0
+SRC_URI=mirror://sourceforge/hte/ht-2.0.14.tar.bz2
+_md5_=3409ba1221e328f84f277aa433b5260f

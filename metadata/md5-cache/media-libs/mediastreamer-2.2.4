@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install prepare setup
+DEPEND=>=net-libs/ortp-0.15.0_p1 alsa? ( media-libs/alsa-lib ) gsm? ( media-sound/gsm ) jack? ( media-libs/libsamplerate media-sound/jack-audio-connection-kit ) portaudio? ( media-libs/portaudio ) speex? ( >=media-libs/speex-1.2_beta3 ) video? ( media-libs/libsdl[video,X] media-video/ffmpeg theora? ( media-libs/libtheora ) X? ( x11-libs/libX11 ) ) dev-util/pkgconfig doc? ( app-doc/doxygen ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Mediastreaming library for telephony application
+EAPI=2
+HOMEPAGE=http://www.linphone.org/index.php/eng/code_review/mediastreamer2
+IUSE=+alsa debug doc examples gsm ilbc ipv6 jack oss portaudio +speex theora video x264 X
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+PDEPEND=ilbc? ( media-plugins/mediastreamer-ilbc ) video? ( x264? ( media-plugins/mediastreamer-x264 ) )
+RDEPEND=>=net-libs/ortp-0.15.0_p1 alsa? ( media-libs/alsa-lib ) gsm? ( media-sound/gsm ) jack? ( media-libs/libsamplerate media-sound/jack-audio-connection-kit ) portaudio? ( media-libs/portaudio ) speex? ( >=media-libs/speex-1.2_beta3 ) video? ( media-libs/libsdl[video,X] media-video/ffmpeg theora? ( media-libs/libtheora ) X? ( x11-libs/libX11 ) )
+SLOT=0
+SRC_URI=http://download.savannah.nongnu.org/releases/linphone/mediastreamer/mediastreamer-2.2.4.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8357c3a9175bed36ef294f8bc36abdb7

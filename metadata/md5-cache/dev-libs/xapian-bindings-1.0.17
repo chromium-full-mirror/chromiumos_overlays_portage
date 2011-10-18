@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test
+DEPEND==dev-libs/xapian-1.0.17 mono? ( >=dev-lang/mono-1.0.8 ) php? ( >=dev-lang/php-4 ) python? ( >=dev-lang/python-2.2[threads] ) ruby? ( dev-lang/ruby ) tcl? ( >=dev-lang/tcl-8.1 ) python? ( >=dev-lang/swig-1.3.29-r1 ) java? ( >=virtual/jdk-1.3 ) java? ( >=dev-java/java-config-2.1.9-r1 ) >=app-admin/eselect-python-20091230
+DESCRIPTION=SWIG and JNI bindings for Xapian
+EAPI=2
+HOMEPAGE=http://www.xapian.org/
+IUSE=java mono php python ruby tcl elibc_FreeBSD java
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND==dev-libs/xapian-1.0.17 mono? ( >=dev-lang/mono-1.0.8 ) php? ( >=dev-lang/php-4 ) python? ( >=dev-lang/python-2.2[threads] ) ruby? ( dev-lang/ruby ) tcl? ( >=dev-lang/tcl-8.1 ) java? ( >=virtual/jre-1.3 ) java? ( >=dev-java/java-config-2.1.9-r1 ) >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://oligarchy.co.uk/xapian/1.0.17/xapian-bindings-1.0.17.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	java-pkg-opt-2	31a1663247652448431dcc8c194e2752	java-utils-2	9c079d63349fb3fcd154c1630807a59a	mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=f2d05df835abe991d2949ca4239c51c5

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup unpack
+DEPEND=media-libs/libpng >=media-libs/libdv-1.0.0 media-libs/faad2 media-libs/faac media-libs/a52dec media-libs/libsndfile media-libs/tiff media-video/ffmpeg media-sound/lame >=sci-libs/fftw-3.0.1 media-libs/x264 ieee1394? ( media-libs/libiec61883 >=sys-libs/libraw1394-1.2.0 >=sys-libs/libavc1394-0.5.0 ) media-video/mjpegtools alsa? ( media-libs/alsa-lib ) esd? ( >=media-sound/esound-0.2.34 ) >=media-libs/freetype-2.1.10 opengl? ( virtual/opengl ) >=media-libs/openexr-1.2.2 >=media-libs/libvorbis-1.1.0 >=media-libs/libogg-1.1 >=media-libs/libtheora-1.0_alpha4-r1 x11-libs/libX11 x11-libs/libXv x11-libs/libXxf86vm x11-libs/libXext x11-libs/libXvMC x11-libs/libXft dev-util/pkgconfig mmx? ( dev-lang/nasm ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Cinelerra - Professional Video Editor - Unofficial CVS-version
+HOMEPAGE=http://www.cinelerra.org/
+IUSE=3dnow alsa esd mmx oss static ieee1394 css altivec opengl
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=media-libs/libpng >=media-libs/libdv-1.0.0 media-libs/faad2 media-libs/faac media-libs/a52dec media-libs/libsndfile media-libs/tiff media-video/ffmpeg media-sound/lame >=sci-libs/fftw-3.0.1 media-libs/x264 ieee1394? ( media-libs/libiec61883 >=sys-libs/libraw1394-1.2.0 >=sys-libs/libavc1394-0.5.0 ) media-video/mjpegtools alsa? ( media-libs/alsa-lib ) esd? ( >=media-sound/esound-0.2.34 ) >=media-libs/freetype-2.1.10 opengl? ( virtual/opengl ) >=media-libs/openexr-1.2.2 >=media-libs/libvorbis-1.1.0 >=media-libs/libogg-1.1 >=media-libs/libtheora-1.0_alpha4-r1 x11-libs/libX11 x11-libs/libXv x11-libs/libXxf86vm x11-libs/libXext x11-libs/libXvMC x11-libs/libXft
+SLOT=0
+SRC_URI=mirror://gentoo/cinelerra-20090210.tar.lzma
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3d2f720bfb438b9c0c807b18352fc108

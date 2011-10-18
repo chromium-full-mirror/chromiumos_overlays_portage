@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare unpack
+DEPEND=>=dev-libs/glib-2.16 >=x11-libs/gtk+-2.15 >=x11-libs/libnotify-0.4.3 >=gnome-base/gconf-2.6 >=dev-libs/dbus-glib-0.74 dev-libs/libunique !!net-wireless/bluez-gnome app-text/gnome-doc-utils app-text/scrollkeeper dev-libs/libxml2 dev-util/intltool dev-util/pkgconfig sys-devel/gettext x11-proto/xproto gnome-base/gnome-common dev-util/gtk-doc-am doc? ( >=dev-util/gtk-doc-1.9 ) >=sys-apps/sed-4
+DESCRIPTION=Fork of bluez-gnome focused on integration with GNOME
+EAPI=2
+HOMEPAGE=http://live.gnome.org/GnomeBluetooth
+IUSE=doc debug
+KEYWORDS=~amd64 ~hppa ~ppc ~x86
+LICENSE=GPL-2 LGPL-2.1
+RDEPEND=>=dev-libs/glib-2.16 >=x11-libs/gtk+-2.15 >=x11-libs/libnotify-0.4.3 >=gnome-base/gconf-2.6 >=dev-libs/dbus-glib-0.74 dev-libs/libunique >=net-wireless/bluez-4.34 || ( app-mobilephone/obexd >=app-mobilephone/obex-data-server-0.4 )
+SLOT=2
+SRC_URI=mirror://gnome/sources/gnome-bluetooth/2.28/gnome-bluetooth-2.28.3.tar.bz2
+_eclasses_=fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=cb0b032efde0d9aac46301af72ed57f0

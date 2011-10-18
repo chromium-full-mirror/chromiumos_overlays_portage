@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND=>=net-wireless/bluez-libs-3.14
+DESCRIPTION=Bluetooth HCI packet analyzer
+HOMEPAGE=http://bluez.sourceforge.net/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=>=net-wireless/bluez-libs-3.14
+SLOT=0
+SRC_URI=http://bluez.sourceforge.net/download/bluez-hcidump-1.40.tar.gz
+_md5_=a67a37fa7ce30dbca88cd1479ec296fd

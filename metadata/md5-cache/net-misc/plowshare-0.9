@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst prepare test
+DESCRIPTION=Command-line downloader and uploader for file-sharing websites
+EAPI=2
+HOMEPAGE=http://code.google.com/p/plowshare/
+IUSE=+javascript +perl view-captcha
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-3
+RDEPEND=javascript? ( dev-lang/spidermonkey ) perl? ( dev-lang/perl media-gfx/imagemagick[perl] ) view-captcha? ( || ( media-gfx/aview media-libs/libcaca ) ) app-shells/bash app-text/recode app-text/tesseract[tiff] || ( app-text/tesseract[linguas_en] >=app-text/tesseract-2.04-r1 ) media-gfx/imagemagick[tiff] net-misc/curl sys-apps/util-linux
+SLOT=0
+SRC_URI=http://plowshare.googlecode.com/files/plowshare-0.9.tgz
+_md5_=e74adfba0cd85f1b28c4ee16f065a781

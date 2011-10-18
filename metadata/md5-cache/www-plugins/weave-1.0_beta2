@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst prepare
+DEPEND=|| ( >=www-client/mozilla-firefox-3.5 >=www-client/firefox-bin-3.5 >=www-client/seamonkey-2.0_alpha3 >=www-client/seamonkey-bin-2.0_alpha3 >=mail-client/mozilla-thunderbird-3.0_beta2 >=mail-client/mozilla-thunderbird-bin-3.0_beta2 ) >=net-libs/xulrunner-1.9.1 >=dev-libs/nss-3.12 >=dev-libs/nspr-4.7.1 app-arch/unzip
+DESCRIPTION=Mozilla Labs prototype for online services
+EAPI=2
+HOMEPAGE=http://labs.mozilla.com/projects/weave/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=|| ( MPL-1.1 GPL-2 LGPL-2.1 )
+RDEPEND=|| ( >=www-client/mozilla-firefox-3.5 >=www-client/firefox-bin-3.5 >=www-client/seamonkey-2.0_alpha3 >=www-client/seamonkey-bin-2.0_alpha3 >=mail-client/mozilla-thunderbird-3.0_beta2 >=mail-client/mozilla-thunderbird-bin-3.0_beta2 ) >=net-libs/xulrunner-1.9.1 >=dev-libs/nss-3.12 >=dev-libs/nspr-4.7.1
+RESTRICT=test
+SLOT=0
+SRC_URI=http://hg.mozilla.org/labs/weave/archive/1.0b2.tar.bz2 -> weave-1.0_beta2.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	mozextension	99b0ae4819a15e7d06175c930299b1d2	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=75256e55b92301e273f3eb420efe14cf

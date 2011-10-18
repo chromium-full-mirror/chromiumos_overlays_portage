@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=>=media-libs/raptor-1.4.18 pcre? ( dev-libs/libpcre ) xml? ( dev-libs/libxml2 ) !gmp? ( dev-libs/mpfr ) gmp? ( dev-libs/gmp ) dev-util/pkgconfig sys-devel/flex test? ( dev-perl/XML-DOM )
+DESCRIPTION=library that handles Resource Description Framework (RDF)
+EAPI=2
+HOMEPAGE=http://librdf.org/rasqal/
+IUSE=gmp pcre test xml
+KEYWORDS=~amd64 arm hppa ia64 ~ppc ~ppc64 sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos
+LICENSE=Apache-2.0 GPL-2 LGPL-2.1
+RDEPEND=>=media-libs/raptor-1.4.18 pcre? ( dev-libs/libpcre ) xml? ( dev-libs/libxml2 ) !gmp? ( dev-libs/mpfr ) gmp? ( dev-libs/gmp )
+SLOT=0
+SRC_URI=http://download.librdf.org/source/rasqal-0.9.17.tar.gz
+_eclasses_=libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=03c235a4510b88f1b96dadfc45580861

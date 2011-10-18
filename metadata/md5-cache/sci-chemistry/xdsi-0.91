@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst prepare
+DESCRIPTION=A crude interface for running the XDS
+EAPI=3
+HOMEPAGE=http://strucbio.biologie.uni-konstanz.de/xdswiki/index.php/Xdsi
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=as-is
+RDEPEND=sci-chemistry/mosflm sci-chemistry/xds-bin[smp] sci-chemistry/pointless sci-visualization/xds-viewer sci-visualization/gnuplot media-gfx/imagemagick app-text/xpdf dev-lang/tk
+SLOT=0
+SRC_URI=ftp://turn14.biologie.uni-konstanz.de/pub/xdsi/xdsi_0.91.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=805602a3aa2d99c6376bb6081139f579

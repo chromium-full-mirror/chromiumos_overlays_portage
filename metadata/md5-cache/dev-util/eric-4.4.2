@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst postrm prepare
+DEPEND=dev-python/PyQt4[assistant,svg,webkit,X] dev-python/qscintilla-python kde? ( kde-base/pykde4 ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+DESCRIPTION=A full featured Python IDE using PyQt4 and QScintilla
+EAPI=2
+HOMEPAGE=http://eric-ide.python-projects.org/
+IUSE=kde spell linguas_cs linguas_de linguas_es linguas_fr linguas_it linguas_ru linguas_tr linguas_zh_CN
+KEYWORDS=~amd64 ~hppa ~ppc ~x86
+LICENSE=GPL-3
+PDEPEND=spell? ( dev-python/pyenchant )
+RDEPEND=dev-python/PyQt4[assistant,svg,webkit,X] dev-python/qscintilla-python kde? ( kde-base/pykde4 ) >=dev-python/chardet-2.0 >=dev-python/pygments-1.1 dev-python/coverage >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+SLOT=4
+SRC_URI=mirror://sourceforge/eric-ide/eric4-4.4.2.tar.gz linguas_cs? ( mirror://sourceforge/eric-ide/eric4-i18n-cs-4.4.2.tar.gz ) linguas_de? ( mirror://sourceforge/eric-ide/eric4-i18n-de-4.4.2.tar.gz ) linguas_es? ( mirror://sourceforge/eric-ide/eric4-i18n-es-4.4.2.tar.gz ) linguas_fr? ( mirror://sourceforge/eric-ide/eric4-i18n-fr-4.4.2.tar.gz ) linguas_it? ( mirror://sourceforge/eric-ide/eric4-i18n-it-4.4.2.tar.gz ) linguas_ru? ( mirror://sourceforge/eric-ide/eric4-i18n-ru-4.4.2.tar.gz ) linguas_tr? ( mirror://sourceforge/eric-ide/eric4-i18n-tr-4.4.2.tar.gz ) linguas_zh_CN? ( mirror://sourceforge/eric-ide/eric4-i18n-zh_CN.GB2312-4.4.2.tar.gz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3385be003e67fa69d5a6b44a3f3e5bd0

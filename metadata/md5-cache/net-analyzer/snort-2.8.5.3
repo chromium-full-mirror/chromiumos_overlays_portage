@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst setup unpack
+DEPEND=virtual/libpcap >=dev-libs/libpcre-6.0 flexresp2? ( dev-libs/libdnet ) flexresp? ( ~net-libs/libnet-1.0.2a ) react? ( ~net-libs/libnet-1.0.2a ) postgres? ( virtual/postgresql-base ) mysql? ( virtual/mysql ) odbc? ( dev-db/unixODBC ) prelude? ( >=dev-libs/libprelude-0.9.0 ) inline? ( ~net-libs/libnet-1.0.2a net-firewall/iptables ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=The de facto standard for intrusion detection/prevention
+HOMEPAGE=http://www.snort.org/
+IUSE=static dynamicplugin ipv6 gre mpls targetbased decoder-preprocessor-rules ppm timestats perfprofiling linux-smp-stats inline inline-init-failopen prelude threads debug reload reload-error-restart flexresp flexresp2 react aruba mysql odbc postgres selinux
+KEYWORDS=~alpha ~amd64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=virtual/libpcap >=dev-libs/libpcre-6.0 flexresp2? ( dev-libs/libdnet ) flexresp? ( ~net-libs/libnet-1.0.2a ) react? ( ~net-libs/libnet-1.0.2a ) postgres? ( virtual/postgresql-base ) mysql? ( virtual/mysql ) odbc? ( dev-db/unixODBC ) prelude? ( >=dev-libs/libprelude-0.9.0 ) inline? ( ~net-libs/libnet-1.0.2a net-firewall/iptables ) dev-lang/perl selinux? ( sec-policy/selinux-snort )
+SLOT=0
+SRC_URI=http://dl.snort.org/snort-current/snort-2.8.5.3.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=592e4d02b02a1847da57ef540a832803

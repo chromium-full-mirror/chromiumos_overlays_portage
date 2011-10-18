@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst prerm setup
+DEPEND==dev-lang/ghc-6.4*
+DESCRIPTION=Haskell network library
+HOMEPAGE=http://haskell.org/ghc/
+KEYWORDS=~alpha amd64 hppa ~ia64 ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE=BSD
+RDEPEND==dev-lang/ghc-6.4*
+SLOT=0
+_eclasses_=ghc-package	a0576f38fd872706ee22bf4f6c0c6152	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=469888a070ebfd022d941305c8d4b105

@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=>=sys-libs/ncurses-5.1 socks5? ( net-proxy/dante )
+DESCRIPTION=NetBSD FTP client with several advanced features
+EAPI=2
+HOMEPAGE=ftp://ftp.netbsd.org/pub/NetBSD/misc/tnftp/
+IUSE=ipv6 socks5
+KEYWORDS=~alpha ~amd64 ~ppc ~sparc ~x86 ~x86-fbsd
+LICENSE=as-is
+RDEPEND=>=sys-libs/ncurses-5.1 socks5? ( net-proxy/dante )
+SLOT=0
+SRC_URI=ftp://ftp.netbsd.org/pub/NetBSD/misc/tnftp/tnftp-20090606.tar.gz ftp://ftp.netbsd.org/pub/NetBSD/misc/tnftp/old/tnftp-20090606.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=0e63fe93f2b7815b47030e47986f97e6

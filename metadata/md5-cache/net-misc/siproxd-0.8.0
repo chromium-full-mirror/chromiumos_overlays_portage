@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst prepare setup
+DEPEND=>=net-libs/libosip-3.0.0 doc? ( app-text/docbook-sgml-utils app-text/docbook-sgml-dtd:4.2 )
+DESCRIPTION=A proxy/masquerading daemon for the SIP protocol
+EAPI=2
+HOMEPAGE=http://siproxd.sourceforge.net/
+IUSE=examples doc static
+KEYWORDS=~amd64 x86
+LICENSE=GPL-2
+RDEPEND=>=net-libs/libosip-3.0.0
+SLOT=0
+SRC_URI=mirror://sourceforge/siproxd/siproxd-0.8.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d962704a69ffa6740e64a5d9dae92b08

@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst prepare setup unpack
+DEPEND=>=app-arch/rpm2targz-9.0.0.3g
+DESCRIPTION=Intel FORTRAN compiler suite for Linux
+EAPI=2
+HOMEPAGE=http://www.intel.com/software/products/compilers/clin/
+IUSE=idb +mkl
+KEYWORDS=~amd64 ~ia64 ~x86
+LICENSE=Intel-SDP
+RDEPEND=~virtual/libstdc++-3.3 amd64? ( app-emulation/emul-linux-x86-compat )
+RESTRICT=mirror
+SLOT=0
+SRC_URI=amd64? ( http://registrationcenter-download.intel.com/irc_nas/1582/l_cprof_p_11.1.056_intel64.tgz ) ia64? ( http://registrationcenter-download.intel.com/irc_nas/1582/l_cprof_p_11.1.056_ia64.tgz ) x86? ( http://registrationcenter-download.intel.com/irc_nas/1582/l_cprof_p_11.1.056_ia32.tgz )
+_eclasses_=check-reqs	10d634df7440d633474090700e0d3320	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	rpm	e703d62d2e2b396a7fb0262b79fdba53	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=0a59e619308c1050929377654a883748

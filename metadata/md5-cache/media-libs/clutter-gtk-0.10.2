@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=>=x11-libs/gtk+-2.12 media-libs/clutter:1.0[opengl] doc? ( >=dev-util/gtk-doc-1.11 ) introspection? ( media-libs/clutter[introspection] >=dev-libs/gobject-introspection-0.6.3 >=dev-libs/gir-repository-0.6.3[gtk] ) >=sys-apps/sed-4 dev-util/pkgconfig
+DESCRIPTION=Clutter-GTK - GTK+ Integration library for Clutter
+EAPI=2
+HOMEPAGE=http://www.clutter-project.org/
+IUSE=doc debug examples introspection debug
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2
+RDEPEND=>=x11-libs/gtk+-2.12 media-libs/clutter:1.0[opengl]
+SLOT=1.0
+SRC_URI=http://www.clutter-project.org/sources/clutter-gtk/0.10/clutter-gtk-0.10.2.tar.bz2
+_eclasses_=clutter	2397f911137a31dce4a8156e62f35102	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=3ea325b4f5714b200742bd4f4220836e

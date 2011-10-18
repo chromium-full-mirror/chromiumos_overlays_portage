@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup test unpack
+DEPEND=!games-misc/wtf !app-misc/banner !games-board/ace sys-libs/ncurses sys-apps/miscfiles sys-devel/flex sys-devel/bison
+DESCRIPTION=collection of games from NetBSD
+EAPI=2
+HOMEPAGE=http://www.advogato.org/proj/bsd-games/
+KEYWORDS=alpha amd64 ppc sparc x86
+LICENSE=BSD
+RDEPEND=!games-misc/wtf !app-misc/banner !games-board/ace sys-libs/ncurses sys-apps/miscfiles
+SLOT=0
+SRC_URI=ftp://metalab.unc.edu/pub/Linux/games/bsd-games-2.17.tar.gz mirror://debian/pool/main/b/bsdgames/bsdgames_2.17-16.diff.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=91186092f2e1eff3647e1625cd69f715

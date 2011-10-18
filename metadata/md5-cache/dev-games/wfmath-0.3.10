@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=doc? ( app-doc/doxygen ) media-libs/atlas-c++
+DESCRIPTION=Worldforge math library
+EAPI=2
+HOMEPAGE=http://www.worldforge.org/dev/eng/libraries/wfmath
+IUSE=doc
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=mirror://sourceforge/worldforge/wfmath-0.3.10.tar.bz2
+_md5_=4b1510ba8f51e416a21882f495d199f4

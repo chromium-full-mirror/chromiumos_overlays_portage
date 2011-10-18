@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND==x11-libs/fox-1.4* =x11-libs/fox-1.6* =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=A free source code editing component for the FOX-Toolkit
+HOMEPAGE=http://www.nongnu.org/fxscintilla/
+IUSE=doc
+KEYWORDS=alpha amd64 hppa ppc ppc64 sparc x86
+LICENSE=LGPL-2.1
+RDEPEND==x11-libs/fox-1.4* =x11-libs/fox-1.6*
+SLOT=0
+SRC_URI=http://savannah.nongnu.org/download/fxscintilla/fxscintilla-1.71.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1949bfe06823fdb8f6b5e517bd2c96dd

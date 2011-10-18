@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup unpack
+DEPEND=>=sys-apps/sed-4 =dev-libs/pwlib-1.10* >=media-video/ffmpeg-0.4.7 ssl? ( dev-libs/openssl )
+DESCRIPTION=Open Source implementation of the ITU H.323 teleconferencing protocol
+HOMEPAGE=http://www.openh323.org/
+IUSE=debug ssl novideo noaudio
+KEYWORDS=alpha amd64 ~hppa ppc sparc x86
+LICENSE=MPL-1.1
+RDEPEND=>=sys-apps/sed-4 =dev-libs/pwlib-1.10* >=media-video/ffmpeg-0.4.7 ssl? ( dev-libs/openssl )
+SLOT=0
+SRC_URI=http://www.voxgratia.org/releases/openh323-v1_18_0-src-tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=01791edf8387bf95837e6b0e48a8a89b

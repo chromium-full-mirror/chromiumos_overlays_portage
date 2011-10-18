@@ -1,0 +1,13 @@
+DEFINED_PHASES=install prepare
+DEPEND=>=dev-libs/libxml2-2.7.3-r1 dev-libs/libxslt dev-libs/xerces-c dev-libs/boost dev-libs/libpcre app-text/aspell x11-libs/wxGTK:2.8[X]
+DESCRIPTION=XML Copy Editor is a fast, free, validating XML editor
+EAPI=2
+HOMEPAGE=http://xml-copy-editor.sourceforge.net/
+IUSE=guidexml
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/libxml2-2.7.3-r1 dev-libs/libxslt dev-libs/xerces-c dev-libs/boost dev-libs/libpcre app-text/aspell x11-libs/wxGTK:2.8[X]
+SLOT=0
+SRC_URI=mirror://sourceforge/xml-copy-editor/xmlcopyeditor-1.2.0.2.tar.gz guidexml? ( mirror://gentoo/GuideXML-templates.tar.gz )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	wxwidgets	a63777cd98e5f0d521e43c451fe4cf43
+_md5_=a4ae04c9bf3ceebdaf7ca255208bf0f4

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install test
+DEPEND=>=dev-lang/ocaml-3.11[ocamlopt] dev-ml/type-conv test? ( dev-ml/ounit ) doc? ( virtual/latex-base ) >=dev-ml/findlib-1.0.4-r1
+DESCRIPTION=Automated code generation for converting OCaml values to/from a type-safe binary protocol
+EAPI=2
+HOMEPAGE=http://www.ocaml.info/home/ocaml_sources.html
+IUSE=doc test
+KEYWORDS=~amd64
+LICENSE=LGPL-2
+RDEPEND=>=dev-lang/ocaml-3.11[ocamlopt] dev-ml/type-conv
+SLOT=0
+SRC_URI=http://ocaml.info/ocaml_sources/bin-prot-1.2.20.tar.gz
+_eclasses_=findlib	d2cdd99abbdd240f5ccef654e38a4ea9
+_md5_=6f8942fdb065497cdb57d0684fadbb81

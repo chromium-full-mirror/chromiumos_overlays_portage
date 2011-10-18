@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=sys-devel/automake sys-devel/libtool
+DESCRIPTION=XBase is an xbase (i.e. dBase, FoxPro, etc.) compatible C++ class library
+HOMEPAGE=http://www.rekallrevealed.org/
+IUSE=doc
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=!media-tv/linuxtv-dvb-apps
+SLOT=0
+SRC_URI=http://www.rekallrevealed.org/packages/xbase-2.0.0.tgz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6f7ab4d31eff87d809d579d9921c5dc8

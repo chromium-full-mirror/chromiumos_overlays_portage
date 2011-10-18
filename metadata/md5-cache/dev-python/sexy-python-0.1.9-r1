@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=>=x11-libs/libsexy-0.1.9 >=dev-python/pygtk-2.6.2 dev-util/pkgconfig >=app-admin/eselect-python-20091230
+DESCRIPTION=Python bindings for libsexy.
+EAPI=2
+HOMEPAGE=http://www.chipx86.com/wiki/Libsexy
+KEYWORDS=alpha amd64 ~hppa ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE=LGPL-2.1
+RDEPEND=>=x11-libs/libsexy-0.1.9 >=dev-python/pygtk-2.6.2 >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=http://releases.chipx86.com/libsexy/sexy-python/sexy-python-0.1.9.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f3d0532a6360c2be34a3f1093f900c95

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=X? ( x11-libs/openmotif >=x11-libs/libX11-1.0.0 >=x11-libs/libXt-1.0.0 >=x11-libs/libXext-1.0.0 >=x11-libs/libXp-1.0.0 ) =sys-devel/automake-1.4* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=build a self-extracting and self-installing binary package
+HOMEPAGE=http://sourceforge.net/projects/pdv
+IUSE=X
+KEYWORDS=~hppa ppc x86
+LICENSE=MIT
+RDEPEND=X? ( x11-libs/openmotif >=x11-libs/libX11-1.0.0 >=x11-libs/libXt-1.0.0 >=x11-libs/libXext-1.0.0 >=x11-libs/libXp-1.0.0 )
+SLOT=0
+SRC_URI=mirror://sourceforge/pdv/pdv-1.5.1.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c2ce7e692996daed5c9fb703c9cb973c

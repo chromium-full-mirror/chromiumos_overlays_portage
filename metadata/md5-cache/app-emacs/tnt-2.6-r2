@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=>=virtual/emacs-21
+DESCRIPTION=Client for the AOL Instant Messenging service using Emacs as its UI
+HOMEPAGE=http://tnt.sourceforge.net/
+KEYWORDS=amd64 x86
+LICENSE=AOL Artistic
+RDEPEND=>=virtual/emacs-21
+SLOT=0
+SRC_URI=mirror://sourceforge/tnt/tnt-2.6.tar.gz
+_eclasses_=elisp	4fb60944284f0928ba836a482f598807	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=501546234e153715c93eb3794cf8543c

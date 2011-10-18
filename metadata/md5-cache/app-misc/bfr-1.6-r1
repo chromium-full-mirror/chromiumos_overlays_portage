@@ -1,0 +1,9 @@
+DEFINED_PHASES=install setup
+DESCRIPTION=Buffer (bfr) is a general-purpose command-line pipe buffer
+HOMEPAGE=http://www.glines.org/software/buffer.html
+KEYWORDS=amd64 ~ppc ppc64 sparc x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=http://www.glines.org/bin/pk/bfr-1.6.tar.bz2
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=74b99f403ab7f71f248478efc1740786

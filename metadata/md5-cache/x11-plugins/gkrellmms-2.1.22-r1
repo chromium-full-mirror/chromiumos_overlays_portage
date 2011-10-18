@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=>=app-admin/gkrellm-2 >=media-sound/audacious-1.5.0 sys-apps/dbus
+DESCRIPTION=A sweet plugin to control Audacious from GKrellM2
+HOMEPAGE=http://gkrellm.luon.net/gkrellmms.phtml
+KEYWORDS=alpha amd64 ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=>=app-admin/gkrellm-2 >=media-sound/audacious-1.5.0 sys-apps/dbus
+SLOT=0
+SRC_URI=http://gkrellm.luon.net/files/gkrellmms-2.1.22.tar.gz mirror://gentoo/gkrellmms-2.1.22-audacious.patch.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=53b032dd5af53c4ac2509e58c52b0df3

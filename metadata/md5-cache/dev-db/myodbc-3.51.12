@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile config install postinst
+DEPEND=>=virtual/mysql-4.0 dev-db/unixODBC sys-devel/m4 doc? ( dev-lang/perl )
+DESCRIPTION=ODBC driver for MySQL
+HOMEPAGE=http://www.mysql.com/products/myodbc/
+IUSE=debug doc static
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=>=virtual/mysql-4.0 dev-db/unixODBC sys-devel/m4
+RESTRICT=primaryuri
+SLOT=0
+SRC_URI=mirror://mysql/Downloads/MyODBC3/mysql-connector-odbc-3.51.12.tar.gz
+_md5_=9be801ba66a68862c4e2d283248a37fc

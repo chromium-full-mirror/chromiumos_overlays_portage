@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=>=x11-libs/gtk+-2.4.0 xmp? ( >=media-gfx/exiv2-0.17[xmp] ) !xmp? ( exif? ( >=media-gfx/exiv2-0.17 ) ) lcms? ( media-libs/lcms ) lirc? ( app-misc/lirc ) virtual/libintl dev-util/pkgconfig dev-util/intltool sys-devel/gettext
+DESCRIPTION=A lightweight GTK image viewer forked from GQview
+EAPI=2
+HOMEPAGE=http://geeqie.sourceforge.net/
+IUSE=exif lcms lirc xmp
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2.4.0 xmp? ( >=media-gfx/exiv2-0.17[xmp] ) !xmp? ( exif? ( >=media-gfx/exiv2-0.17 ) ) lcms? ( media-libs/lcms ) lirc? ( app-misc/lirc ) virtual/libintl
+SLOT=0
+SRC_URI=mirror://sourceforge/geeqie/geeqie-1.0beta2.tar.gz
+_md5_=617a4bffae06e8e216c5445c31c5bb35

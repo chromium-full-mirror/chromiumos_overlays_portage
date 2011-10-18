@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=>=media-libs/tiff-3.7.0 sci-libs/proj
+DESCRIPTION=Library for reading TIFF files with embedded tags for geographic (cartographic) information
+HOMEPAGE=http://remotesensing.org/geotiff/geotiff.html
+KEYWORDS=alpha amd64 ~mips ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=>=media-libs/tiff-3.7.0 sci-libs/proj
+SLOT=0
+SRC_URI=ftp://ftp.remotesensing.org/pub/geotiff/libgeotiff/libgeotiff-1.2.1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=35a876b2eb0ed86589d8db882408f14a

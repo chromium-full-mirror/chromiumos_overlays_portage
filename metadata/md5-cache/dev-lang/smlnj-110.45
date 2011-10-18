@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install postinst unpack
+DESCRIPTION=Standard ML of New Jersey compiler and libraries
+HOMEPAGE=http://www.smlnj.org
+KEYWORDS=-* ~ppc ~x86
+LICENSE=BSD
+SLOT=0
+SRC_URI=x86? ( mirror://gentoo/smlnj-110.45-boot.x86-unix.tgz ) ppc? ( mirror://gentoo/smlnj-110.45-boot.ppc-unix.tgz ) mirror://gentoo/smlnj-110.45-config.tgz mirror://gentoo/smlnj-110.45-MLRISC.tgz mirror://gentoo/smlnj-110.45-runtime.tgz mirror://gentoo/smlnj-110.45-ml-lex.tgz mirror://gentoo/smlnj-110.45-ml-yacc.tgz mirror://gentoo/smlnj-110.45-ml-burg.tgz mirror://gentoo/smlnj-110.45-smlnj-lib.tgz mirror://gentoo/smlnj-110.45-cml.tgz mirror://gentoo/smlnj-110.45-eXene.tgz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ecaf645003f16c866dcf153f5c082280

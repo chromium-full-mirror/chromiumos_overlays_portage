@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=app-accessibility/espeak
+DESCRIPTION=espeakup is a small lightweight connector for espeak and speakup
+HOMEPAGE=http://www.linux-speakup.org
+KEYWORDS=amd64 x86
+LICENSE=GPL-3
+RDEPEND=app-accessibility/espeak app-accessibility/speakup
+SLOT=0
+SRC_URI=mirror://gentoo/espeakup-0.71.tar.bz2
+_md5_=9cea946ca671315f4b8cc374194c9982

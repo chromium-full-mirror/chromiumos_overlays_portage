@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=~sci-mathematics/pari-2.3.4 dev-lang/perl[-build]
+DESCRIPTION=Perl interface to PARI
+EAPI=2
+HOMEPAGE=http://search.cpan.org/dist/Math-Pari/
+KEYWORDS=~alpha ~amd64 ~hppa ~mips ~ppc ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE=|| ( Artistic GPL-2 )
+RDEPEND=~sci-mathematics/pari-2.3.4 dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/I/IL/ILYAZ/modules/Math-Pari-2.01080604.tar.gz http://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.3.4.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c26995cd26dfb2d00b2aa6cc51581b37

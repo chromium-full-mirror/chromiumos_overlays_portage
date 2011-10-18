@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install postinst prepare
+DEPEND=>=dev-libs/expat-1.95.4 bzip2? ( >=app-arch/bzip2-1.0.2 ) ssl? ( >=dev-libs/openssl-0.9.6g ) X? ( x11-libs/libX11 x11-libs/libXt ) zlib? ( >=sys-libs/zlib-1.1.4 ) lua? ( >=dev-lang/lua-5 ) gpm? ( >=sys-libs/ncurses-5.2 >=sys-libs/gpm-1.20.0-r5 ) guile? ( >=dev-scheme/guile-1.6.4-r1[deprecated,discouraged] ) idn? ( net-dns/libidn ) perl? ( sys-devel/libperl ) ruby? ( dev-lang/ruby ) !hppa? ( !mips? ( !alpha? ( javascript? ( dev-lang/spidermonkey ) ) ) ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Advanced and well-established text-mode web browser
+EAPI=2
+HOMEPAGE=http://elinks.or.cz/
+IUSE=bittorrent bzip2 debug finger ftp gopher gpm guile idn ipv6 javascript lua nls nntp perl ruby ssl unicode X zlib
+KEYWORDS=~alpha ~amd64 ~hppa ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/expat-1.95.4 bzip2? ( >=app-arch/bzip2-1.0.2 ) ssl? ( >=dev-libs/openssl-0.9.6g ) X? ( x11-libs/libX11 x11-libs/libXt ) zlib? ( >=sys-libs/zlib-1.1.4 ) lua? ( >=dev-lang/lua-5 ) gpm? ( >=sys-libs/ncurses-5.2 >=sys-libs/gpm-1.20.0-r5 ) guile? ( >=dev-scheme/guile-1.6.4-r1[deprecated,discouraged] ) idn? ( net-dns/libidn ) perl? ( sys-devel/libperl ) ruby? ( dev-lang/ruby ) !hppa? ( !mips? ( !alpha? ( javascript? ( dev-lang/spidermonkey ) ) ) )
+RESTRICT=test
+SLOT=0
+SRC_URI=http://elinks.or.cz/download/elinks-0.11.7.tar.bz2 http://dev.gentoo.org/~spock/portage/distfiles/elinks-0.10.4.conf.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7450992dec311538b7a3e2553b42beb3

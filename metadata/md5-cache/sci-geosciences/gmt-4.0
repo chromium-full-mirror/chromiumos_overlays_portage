@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=>=sci-libs/netcdf-3.5.0 gmtsuppl? ( >=sys-devel/autoconf-2.58 )
+DESCRIPTION=Powerful map generator
+HOMEPAGE=http://gmt.soest.hawaii.edu/
+IUSE=gmtsuppl gmtfull gmthigh gmttria doc
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=>=sci-libs/netcdf-3.5.0
+SLOT=0
+SRC_URI=ftp://falcon.grdl.noaa.gov/pub/gmt/4/GMT4.0_progs.tar.bz2 ftp://falcon.grdl.noaa.gov/pub/gmt/4/GMT_share.tar.bz2 ftp://falcon.grdl.noaa.gov/pub/gmt/4/GMT4.0_tut.tar.bz2 ftp://falcon.grdl.noaa.gov/pub/gmt/4/GMT4.0_scripts.tar.bz2 ftp://falcon.grdl.noaa.gov/pub/gmt/4/GMT4.0_man.tar.bz2 doc? ( ftp://falcon.grdl.noaa.gov/pub/gmt/4/GMT4.0_pdf.tar.bz2 ) gmtsuppl? ( ftp://falcon.grdl.noaa.gov/pub/gmt/4/GMT4.0_suppl.tar.bz2 ) gmtfull? ( ftp://falcon.grdl.noaa.gov/pub/gmt/4/GMT_full.tar.bz2 ) gmthigh? ( ftp://falcon.grdl.noaa.gov/pub/gmt/4/GMT_high.tar.bz2 ) gmttria? ( ftp://falcon.grdl.noaa.gov/pub/gmt/4/triangle.tar.bz2 )
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=89dfe0dfcaf39547705ce65b9202749e

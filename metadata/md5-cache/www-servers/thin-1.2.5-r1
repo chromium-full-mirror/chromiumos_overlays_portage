@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=dev-util/ragel test? ( >=dev-ruby/daemons-1.0.9[ruby_targets_ruby18?] ) test? ( >=dev-ruby/rack-1.0.0[ruby_targets_ruby18?] ) test? ( >=dev-ruby/eventmachine-0.12.6[ruby_targets_ruby18?] ) dev-ruby/rake-compiler[ruby_targets_ruby18?] test? ( dev-ruby/rspec[ruby_targets_ruby18?] ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) doc? ( dev-ruby/rake[ruby_targets_ruby18?] ) test? ( dev-ruby/rake[ruby_targets_ruby18?] ) test? ( virtual/rubygems[ruby_targets_ruby18?] )
+DESCRIPTION=A fast and very simple Ruby web server
+EAPI=2
+HOMEPAGE=http://code.macournoyer.com/thin/
+IUSE=test test test test ruby_targets_ruby18 doc doc test test test
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+LICENSE=Ruby
+RDEPEND=>=dev-ruby/daemons-1.0.9[ruby_targets_ruby18?] >=dev-ruby/rack-1.0.0[ruby_targets_ruby18?] >=dev-ruby/eventmachine-0.12.6[ruby_targets_ruby18?] ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) virtual/rubygems[ruby_targets_ruby18?]
+SLOT=0
+SRC_URI=mirror://rubygems/thin-1.2.5.gem
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby-fakegem	2768bd9a49d90592f8e7b88ab4077f20	ruby-ng	94f1106cb53283c8f691122e3077c9e1	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=53d9dfd4b4a256184ad2baa639a06b1a

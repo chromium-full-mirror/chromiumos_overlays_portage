@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst unpack
+DESCRIPTION=Portland utils for cross-platform/cross-toolkit/cross-desktop interoperability
+HOMEPAGE=http://portland.freedesktop.org/wiki
+IUSE=doc
+KEYWORDS=alpha amd64 arm hppa ia64 mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+LICENSE=MIT
+PDEPEND=dev-util/desktop-file-utils
+RDEPEND=x11-apps/xprop x11-misc/shared-mime-info
+RESTRICT=test
+SLOT=0
+SRC_URI=http://portland.freedesktop.org/download/xdg-utils-1.0.2.tgz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=fb165264d52e07733e987446b462d4ab

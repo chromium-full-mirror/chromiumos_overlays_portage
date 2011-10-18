@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install test
+DEPEND=>=dev-lang/ocaml-3.11[ocamlopt] dev-ml/res dev-ml/sexplib dev-ml/bin-prot dev-ml/fieldslib dev-ml/pcre-ocaml test? ( dev-ml/ounit dev-ml/type-conv ) >=dev-ml/findlib-1.0.4-r1
+DESCRIPTION=Jane Street's alternative to the standard library
+EAPI=2
+HOMEPAGE=http://www.janestreet.com/ocaml
+IUSE=test
+KEYWORDS=~amd64
+LICENSE=LGPL-2.1-linking-exception
+RDEPEND=>=dev-lang/ocaml-3.11[ocamlopt] dev-ml/res dev-ml/sexplib dev-ml/bin-prot dev-ml/fieldslib dev-ml/pcre-ocaml
+SLOT=0
+SRC_URI=http://www.janestreet.com/ocaml/core-0.6.0.tgz
+_eclasses_=findlib	d2cdd99abbdd240f5ccef654e38a4ea9
+_md5_=50b305789195b7917c05b9a04d511cbd

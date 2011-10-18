@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install nofetch postinst setup unpack
+DESCRIPTION=GEMPAK Meteorological Plotting and Analysis Package
+HOMEPAGE=http://www.unidata.ucar.edu/packages/gempak
+KEYWORDS=x86 ~ppc
+LICENSE=as-is
+RDEPEND=x11-libs/openmotif
+RESTRICT=fetch
+SLOT=0
+SRC_URI=gempak_upc5.7.2p2.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=4c797178f2f3ceaf85126d4d3a1ad273

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile config configure install postinst postrm prepare setup unpack
+DEPEND=vdr? ( >=media-video/vdr-1.4.0 ) xine? ( >=media-libs/xine-lib-1.1.1 ) media-libs/jpeg libextractor? ( >=media-libs/libextractor-0.5.20 ) sys-kernel/linux-headers X? ( x11-libs/libX11 x11-libs/libXv x11-libs/libXext x11-libs/libXrender ) vdr? ( >=media-tv/gentoo-vdr-scripts-0.4.2 media-tv/linuxtv-dvb-headers )
+DESCRIPTION=Video Disk Recorder Xinelib PlugIn
+EAPI=2
+HOMEPAGE=http://sourceforge.net/projects/xineliboutput/
+IUSE=+vdr +xine fbcon X libextractor vdr
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=vdr? ( >=media-video/vdr-1.4.0 ) xine? ( >=media-libs/xine-lib-1.1.1 ) media-libs/jpeg libextractor? ( >=media-libs/libextractor-0.5.20 ) X? ( x11-proto/xextproto x11-proto/xf86vidmodeproto x11-proto/xproto x11-proto/renderproto ) vdr? ( >=media-tv/gentoo-vdr-scripts-0.4.2 >=app-admin/eselect-vdr-0.0.2 )
+SLOT=0
+SRC_URI=mirror://sourceforge/xineliboutput/vdr-xineliboutput-1.0.4.tgz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	vdr-plugin	197973b71da01f1b44f98f14572e49c1	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=da996e287ea80e3869dfd6808d8c0fe3

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare setup test
+DEPEND=dev-libs/libxml2 perl? ( dev-perl/libwww-perl ) lua? ( >=dev-lang/lua-5.1 ) www-servers/apache[apache2_modules_unique_id] =www-servers/apache-2* =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Web application firewall and Intrusion Detection System for Apache.
+EAPI=2
+HOMEPAGE=http://www.modsecurity.org/
+IUSE=lua perl vanilla
+KEYWORDS=~amd64 ~mips ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/libxml2 perl? ( dev-perl/libwww-perl ) lua? ( >=dev-lang/lua-5.1 ) www-servers/apache[apache2_modules_unique_id] =www-servers/apache-2*
+SLOT=0
+SRC_URI=http://www.modsecurity.org/download/modsecurity-apache_2.5.11.tar.gz
+_eclasses_=apache-module	075afd5430fb1c448d318e76dbe83dc6	autotools	d8e256644b1dfe136572da201165ac1b	depend.apache	a471783c63e68987a2b20eb46f9edf68	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c06be8513c7112e0cea014c3bfa87235

@@ -1,0 +1,8 @@
+DEFINED_PHASES=install
+DESCRIPTION=Live Syncing (Mirror) Daemon
+HOMEPAGE=http://code.google.com/p/lsyncd/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=http://lsyncd.googlecode.com/files/lsyncd-1.26.tar.gz
+_md5_=160df4b18130ea5b138df4b38cd2957c

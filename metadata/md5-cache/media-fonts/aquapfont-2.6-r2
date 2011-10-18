@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm setup
+DEPEND=app-arch/unzip X? ( x11-apps/mkfontdir media-fonts/encodings ) >=media-libs/fontconfig-2.4.0
+DESCRIPTION=Very pretty Japanese proportional truetype font
+HOMEPAGE=http://aquablue.milkcafe.to/
+IUSE=X
+KEYWORDS=alpha amd64 arm ia64 ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE=aquafont
+RESTRICT=strip binchecks
+SLOT=0
+SRC_URI=http://aquablue.milkcafe.to/tears/font/aquap2_6.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	font	bc3df4ed373e09f86a90e8fad39034d6	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3fce0a40dba8d59447396007f0aef8f9

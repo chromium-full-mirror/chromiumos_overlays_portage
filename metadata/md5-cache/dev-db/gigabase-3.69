@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install postinst
+DESCRIPTION=OO-DBMS with interfaces for C/C++/Java/PHP/Perl
+HOMEPAGE=http://www.garret.ru/~knizhnik/gigabase.html
+IUSE=doc
+KEYWORDS=amd64 s390 x86
+LICENSE=MIT
+SLOT=0
+SRC_URI=mirror://sourceforge/gigabase/gigabase-3.69.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=305af72d51d29e9efea4b08cef5e3956

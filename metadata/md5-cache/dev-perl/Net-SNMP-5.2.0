@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
+DEPEND=>=virtual/perl-libnet-1.0703 >=virtual/perl-Digest-MD5-2.11 >=dev-perl/Digest-SHA1-1.02 >=dev-perl/Digest-HMAC-1.0 >=dev-perl/Crypt-DES-2.03 dev-lang/perl
+DESCRIPTION=A SNMP Perl Module
+HOMEPAGE=http://www.cpan.org/modules/by-module/Net/Net-SNMP-5.2.0.readme
+KEYWORDS=alpha amd64 hppa ia64 ~mips ppc ppc64 sparc x86
+LICENSE=Artistic
+RDEPEND=>=virtual/perl-libnet-1.0703 >=virtual/perl-Digest-MD5-2.11 >=dev-perl/Digest-SHA1-1.02 >=dev-perl/Digest-HMAC-1.0 >=dev-perl/Crypt-DES-2.03 dev-lang/perl
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/D/DT/DTOWN/Net-SNMP-5.2.0.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=abf2d9dc909b043cc00b6e08cda11ce5

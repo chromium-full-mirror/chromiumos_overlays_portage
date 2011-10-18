@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Generate spring graphs from graphviz input files
+HOMEPAGE=http://www.chaosreigns.com/code/springgraph
+KEYWORDS=alpha amd64 hppa ia64 mips ppc ~ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=dev-perl/GD
+SLOT=0
+SRC_URI=http://www.chaosreigns.com/code/springgraph/dl/springgraph.pl.88 mirror://debian/pool/main/s/springgraph/springgraph_0.82-5.diff.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=65b4292a4bfc27610f4d913624e69d07

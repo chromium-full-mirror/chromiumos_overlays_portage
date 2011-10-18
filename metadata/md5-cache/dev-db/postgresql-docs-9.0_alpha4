@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=app-text/openjade app-text/docbook2X app-text/docbook-sgml app-text/docbook-sgml-dtd:4.2 app-text/docbook-xml-dtd:4.2 app-text/docbook-dsssl-stylesheets app-text/sgmltools-lite =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=PostgreSQL documentation
+EAPI=2
+HOMEPAGE=http://www.postgresql.org/
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd
+LICENSE=POSTGRESQL
+RDEPEND=app-text/openjade app-text/docbook2X app-text/docbook-sgml app-text/docbook-sgml-dtd:4.2 app-text/docbook-xml-dtd:4.2 app-text/docbook-dsssl-stylesheets app-text/sgmltools-lite
+RESTRICT=test
+SLOT=9.0
+SRC_URI=mirror://postgresql/source/9.0alpha4/postgresql-9.0alpha4.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=d04f706788846a7e6b8dba76574d58f8

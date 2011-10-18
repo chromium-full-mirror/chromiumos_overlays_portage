@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install preinst prepare setup test
+DEPEND=>=virtual/jdk-1.6 log4j? ( dev-java/log4j ) c3p0? ( dev-java/c3p0 ) dev-java/commons-logging >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip ) >=dev-java/gnu-classpath-0.98-r1:0.98 >=dev-java/ant-core-1.7.0 dev-java/ant-contrib >=dev-java/javatoolkit-0.3.0-r2
+DESCRIPTION=MySQL JDBC driver
+EAPI=2
+HOMEPAGE=http://www.mysql.com/products/connector/j/
+IUSE=c3p0 log4j elibc_FreeBSD source elibc_FreeBSD
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+LICENSE=GPL-2-with-MySQL-FLOSS-exception
+RDEPEND=>=virtual/jre-1.6 log4j? ( dev-java/log4j ) c3p0? ( dev-java/c3p0 ) dev-java/commons-logging >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip ) >=dev-java/gnu-classpath-0.98-r1:0.98
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://mysql/Downloads/Connector-J/mysql-connector-java-5.1.11.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	java-ant-2	8ee2028cc96a10184ba4ed021eef48da	java-pkg-2	39b2c3db200ad244ca675b2a1363aa75	java-utils-2	9c079d63349fb3fcd154c1630807a59a	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=8ce321062e01ea57a6b3dc8ade3e4e98

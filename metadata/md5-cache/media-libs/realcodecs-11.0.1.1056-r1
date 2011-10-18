@@ -1,0 +1,14 @@
+DEFINED_PHASES=install setup unpack
+DEPEND=>=app-arch/rpm2targz-9.0.0.3g
+DESCRIPTION=Real Player audio and video binary codecs
+EAPI=2
+HOMEPAGE=http://www.real.com/ http://player.helixcommunity.org/
+IUSE=win32codecs
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=HBRL
+RDEPEND=win32codecs? ( >=media-libs/win32codecs-20071007-r4[real] ) x86? ( =virtual/libstdc++-3.3* ) amd64? ( app-emulation/emul-linux-x86-compat ) !<media-video/realplayer-11.0.1.1056-r2
+RESTRICT=mirror strip test binchecks
+SLOT=0
+SRC_URI=http://forms.real.com/real/player/download.html?f=unix/RealPlayer11GOLD.rpm
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	rpm	e703d62d2e2b396a7fb0262b79fdba53	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6a55c8661a3820dab5d54c397cc87b2f

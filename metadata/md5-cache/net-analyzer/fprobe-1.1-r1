@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=net-libs/libpcap
+DESCRIPTION=A libpcap-based tool to collect network traffic data and emit it as NetFlow flows
+HOMEPAGE=http://fprobe.sourceforge.net
+IUSE=debug messages
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=net-libs/libpcap
+SLOT=0
+SRC_URI=mirror://sourceforge/fprobe/fprobe-1.1.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3aff898e19a715522f7b83c52b3e219a

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install setup unpack
+DEPEND=>=dev-lang/php-5.1.2 >=x11-libs/gtk+-2.6.0 >=dev-libs/glib-2.6.0 >=x11-libs/pango-1.8.0 >=dev-libs/atk-1.9.0 glade? ( >=gnome-base/libglade-2.5.0 ) libsexy? ( >=x11-libs/libsexy-0.1.10 ) gtkhtml? ( gnome-extra/gtkhtml:3.14 ) mozembed? ( >=www-client/mozilla-firefox-1.5.0 ) spell? ( >=app-text/gtkspell-2.0.0 ) >=dev-util/pkgconfig-0.9 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b >=sys-devel/m4-1.4.3 >=sys-devel/libtool-1.5.18 test? ( !prefix? ( x11-base/xorg-server ) x11-apps/xhost )
+DESCRIPTION=PHP 5 bindings for the Gtk+ 2 library.
+EAPI=1
+HOMEPAGE=http://gtk.php.net/
+IUSE=debug doc examples +glade gtkhtml libsexy mozembed scintilla spell linguas_bg linguas_en linguas_ja linguas_pt_BR linguas_zh_CN test
+KEYWORDS=~amd64 ~x86
+LICENSE=PHP-2.02 PHP-3 PHP-3.01 LGPL-2.1 public-domain Scintilla
+RDEPEND=>=dev-lang/php-5.1.2 >=x11-libs/gtk+-2.6.0 >=dev-libs/glib-2.6.0 >=x11-libs/pango-1.8.0 >=dev-libs/atk-1.9.0 glade? ( >=gnome-base/libglade-2.5.0 ) libsexy? ( >=x11-libs/libsexy-0.1.10 ) gtkhtml? ( gnome-extra/gtkhtml:3.14 ) mozembed? ( >=www-client/mozilla-firefox-1.5.0 ) spell? ( >=app-text/gtkspell-2.0.0 )
+SLOT=0
+SRC_URI=http://gtk.php.net/distributions/php-gtk-2.0.1.tar.gz doc? ( linguas_bg? ( http://dev.gentooexperimental.org/~jakub/distfiles/php_gtk_manual-20071130_bg.tar.bz2 mirror://gentoo/php_gtk_manual-20071130_bg.tar.bz2 ) ) doc? ( linguas_en? ( http://dev.gentooexperimental.org/~jakub/distfiles/php_gtk_manual-20071130_en.tar.bz2 mirror://gentoo/php_gtk_manual-20071130_en.tar.bz2 ) ) doc? ( linguas_ja? ( http://dev.gentooexperimental.org/~jakub/distfiles/php_gtk_manual-20071130_ja.tar.bz2 mirror://gentoo/php_gtk_manual-20071130_ja.tar.bz2 ) ) doc? ( linguas_pt_BR? ( http://dev.gentooexperimental.org/~jakub/distfiles/php_gtk_manual-20071130_pt_BR.tar.bz2 mirror://gentoo/php_gtk_manual-20071130_pt_BR.tar.bz2 ) ) doc? ( linguas_zh_CN? ( http://dev.gentooexperimental.org/~jakub/distfiles/php_gtk_manual-20071130_zh_CN.tar.bz2 mirror://gentoo/php_gtk_manual-20071130_zh_CN.tar.bz2 ) )
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	depend.php	b574aac6c7b0a3d079a293788cd20aaf	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	php-ext-base-r1	84c6f2c70aa8151a2187944b26ca008a	php-ext-source-r1	710c7da265015de7a5fd8a8f2a3c4f30	phpconfutils	f0ebaebc168cafb7b6e951280ab2dce5	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	virtualx	e9162f65645513120b4e12863a5fa972
+_md5_=aab383b48f44cd400c7d440c42797154

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-util/diffstat dev-util/patchutils sys-apps/diffutils sys-apps/findutils sys-apps/gawk sys-apps/grep sys-apps/less sys-apps/sed sys-apps/coreutils sys-devel/patch sys-apps/groff test? ( sys-process/time ) >=sys-apps/sed-4
+DESCRIPTION=program for applying patches that patch cannot apply because of conflicting changes
+HOMEPAGE=http://cgi.cse.unsw.edu.au/~neilb/source/wiggle/
+IUSE=test
+KEYWORDS=amd64 ppc x86 ~amd64-linux ~x86-linux
+LICENSE=GPL-2
+RDEPEND=dev-util/diffstat dev-util/patchutils sys-apps/diffutils sys-apps/findutils sys-apps/gawk sys-apps/grep sys-apps/less sys-apps/sed sys-apps/coreutils sys-devel/patch
+SLOT=0
+SRC_URI=http://cgi.cse.unsw.edu.au/~neilb/source/wiggle/wiggle-0.6.tar.gz mirror://gentoo/wiggle-0.6-patches-20060513.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fixheadtails	059c47dd86229aa6382393274677acfe	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1f135e819a37a6c3328f6ee3cd28d24c

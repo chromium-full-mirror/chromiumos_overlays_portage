@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst postrm
+DEPEND=>=media-libs/libmpd-0.15 >=x11-libs/gtk+-2.12:2 x11-themes/hicolor-icon-theme >=xfce-base/libxfcegui4-4.4 >=xfce-base/libxfce4util-4.4 dev-util/intltool dev-util/pkgconfig
+DESCRIPTION=a GTK+ based MPD client focusing on low footprint.
+EAPI=2
+HOMEPAGE=http://goodies.xfce.org/projects/applications/xfmpc
+IUSE=debug
+KEYWORDS=amd64 sparc x86
+LICENSE=GPL-2
+RDEPEND=>=media-libs/libmpd-0.15 >=x11-libs/gtk+-2.12:2 x11-themes/hicolor-icon-theme >=xfce-base/libxfcegui4-4.4 >=xfce-base/libxfce4util-4.4
+SLOT=0
+SRC_URI=mirror://xfce/src/apps/xfmpc/0.2/xfmpc-0.2.0.tar.bz2
+_eclasses_=fdo-mime	9c46e30acd923ff12e325dbe96bb98b9
+_md5_=9c90d582ef300f2718dd21c4c6d00c13

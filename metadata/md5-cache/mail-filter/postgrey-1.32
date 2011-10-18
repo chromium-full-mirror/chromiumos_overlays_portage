@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst setup
+DESCRIPTION=Postgrey is a Postfix policy server implementing greylisting
+HOMEPAGE=http://postgrey.schweikert.ch/
+IUSE=targrey
+KEYWORDS=alpha amd64 hppa ~ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/perl-5.6.0 dev-perl/net-server dev-perl/IO-Multiplex dev-perl/BerkeleyDB dev-perl/Net-DNS dev-perl/Parse-Syslog dev-perl/Net-RBLClient >=sys-libs/db-4.1
+SLOT=0
+SRC_URI=http://postgrey.schweikert.ch/pub/postgrey-1.32.tar.gz http://postgrey.schweikert.ch/pub/old/postgrey-1.32.tar.gz targrey? ( http://k2net.hakuba.jp/pub/targrey-0.31-postgrey-1.32.patch )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=35bdeaaa3e35409bbd006331c61ce7d2

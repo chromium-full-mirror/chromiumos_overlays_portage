@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=>=app-crypt/qca-2.0[debug?] >=dev-libs/pkcs11-helper-1.02
+DESCRIPTION=PKCS#11 (smartcard) plugin for QCA
+EAPI=2
+HOMEPAGE=http://delta.affinix.com/qca/
+IUSE=debug
+KEYWORDS=~amd64 ~ppc64 ~x86 ~x86-fbsd
+LICENSE=LGPL-2
+RDEPEND=>=app-crypt/qca-2.0[debug?] >=dev-libs/pkcs11-helper-1.02
+SLOT=2
+SRC_URI=http://delta.affinix.com/download/qca/2.0/plugins/qca-pkcs11-2.0.0-beta2.tar.bz2
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4-r2	9324cde5d9328d2445c95232dd8bc158	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d2fcd3882253250a5ecb168cb7296bd9

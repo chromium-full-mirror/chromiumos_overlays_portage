@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=media-libs/libsndfile dev-util/pkgconfig
+DESCRIPTION=Bauer stereophonic-to-binaural DSP library
+HOMEPAGE=http://bs2b.sourceforge.net/
+KEYWORDS=~alpha ~amd64 ~hppa ~ppc ~ppc64 ~x86 ~x86-fbsd
+LICENSE=MIT
+RDEPEND=media-libs/libsndfile
+SLOT=0
+SRC_URI=mirror://sourceforge/bs2b/libbs2b-3.0.0.tar.bz2
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=18d05d4a9357ab6a8c5d36996be3b409

@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=>=dev-libs/libevent-0.6 net-libs/libpcap >=dev-libs/libdnet-1.4
+DESCRIPTION=Testing of network intrusion detection systems, firewalls and TCP/IP stacks
+EAPI=3
+HOMEPAGE=http://www.monkey.org/~dugsong/fragroute/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=BSD
+RDEPEND=>=dev-libs/libevent-0.6 net-libs/libpcap >=dev-libs/libdnet-1.4
+SLOT=0
+SRC_URI=http://www.monkey.org/~dugsong/fragroute/fragroute-1.2.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a26d7d2bc5265e3865955ad01d0cbdaf

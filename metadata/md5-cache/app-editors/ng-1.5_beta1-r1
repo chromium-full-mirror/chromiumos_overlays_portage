@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=>=sys-libs/ncurses-5.0 canna? ( app-i18n/canna ) >=sys-apps/sed-4.0
+DESCRIPTION=Emacs like micro editor Ng -- based on mg2a
+HOMEPAGE=http://tt.sakura.ne.jp/~amura/ng/
+IUSE=canna
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=Emacs
+RDEPEND=>=sys-libs/ncurses-5.0 canna? ( app-i18n/canna )
+SLOT=0
+SRC_URI=http://tt.sakura.ne.jp/~amura/archives/ng/ng-1.5beta1.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=06aa1f1807b4ab51af6c86cfd1d5821c

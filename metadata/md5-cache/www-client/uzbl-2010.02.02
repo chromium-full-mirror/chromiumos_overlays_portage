@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup unpack
+DEPEND=>=dev-util/pkgconfig-0.19 >=dev-libs/icu-4.0.1 >=net-libs/libsoup-2.24 >=net-libs/webkit-gtk-1.1.15 >=x11-libs/gtk+-2.14
+DESCRIPTION=A keyboard controlled (modal vim-like bindings, or with modifierkeys) browser based on Webkit.
+EAPI=2
+HOMEPAGE=http://www.uzbl.org
+IUSE=+browser helpers +tabbed
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1 MPL-1.1
+RDEPEND=>=dev-libs/icu-4.0.1 >=net-libs/libsoup-2.24 >=net-libs/webkit-gtk-1.1.15 >=x11-libs/gtk+-2.14 x11-misc/xdg-utils browser? ( x11-misc/xclip ) helpers? ( dev-lang/perl dev-perl/gtk2-perl dev-python/pygtk dev-python/pygobject gnome-extra/zenity net-misc/socat x11-libs/pango x11-misc/dmenu x11-misc/xclip )
+SLOT=0
+SRC_URI=http://github.com/Dieterbe/uzbl/tarball/2010.02.02 -> uzbl-2010.02.02.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b1d2a994bc201d6379da7e47dde9e994

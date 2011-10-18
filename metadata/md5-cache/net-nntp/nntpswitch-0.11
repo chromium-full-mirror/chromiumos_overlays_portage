@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=mysql? ( virtual/mysql ) postgres? ( virtual/postgresql-server ) ldap? ( net-nds/openldap ) >=sys-apps/sed-4
+DESCRIPTION=Load Balancing NNTP Router
+HOMEPAGE=http://www.nntpswitch.org/
+IUSE=ldap mysql postgres
+KEYWORDS=~x86
+LICENSE=as-is
+RDEPEND=mysql? ( virtual/mysql ) postgres? ( virtual/postgresql-server ) ldap? ( net-nds/openldap )
+SLOT=0
+SRC_URI=http://www.nntpswitch.org/download/nntpswitch-0.11.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c2706c9cc4ed965eb00a1fa3117517fb

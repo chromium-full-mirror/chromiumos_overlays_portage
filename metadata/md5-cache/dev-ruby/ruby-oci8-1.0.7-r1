@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-db/oracle-instantclient-basic dev-db/oracle-instantclient-sqlplus virtual/ruby
+DESCRIPTION=A Ruby library for Oracle
+HOMEPAGE=http://rubyforge.org/projects/ruby-oci8/
+KEYWORDS=~amd64 ~x86
+LICENSE=Ruby
+RDEPEND=dev-db/oracle-instantclient-basic dev-db/oracle-instantclient-sqlplus virtual/ruby
+SLOT=0
+SRC_URI=mirror://rubyforge/ruby-oci8/ruby-oci8-1.0.7.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	ruby	dfc4f482954636675998a350b1d078b5	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d3f0d4ea1b86cfd065c8468134cab819

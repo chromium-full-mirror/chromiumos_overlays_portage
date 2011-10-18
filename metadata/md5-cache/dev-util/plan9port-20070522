@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=x11-base/xorg-server
+DESCRIPTION=Plan 9 From User Space
+HOMEPAGE=http://swtch.com/plan9port/
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+SLOT=0
+SRC_URI=http://www.kix.in/plan9/plan9port-repack-20070522.tar.bz2
+_md5_=99b992aecdfb435706e6575a72440ce0

@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst prepare
+DEPEND=>=sys-apps/dbus-1.2 >=dev-libs/dbus-glib-0.75 >=net-wireless/wireless-tools-28_pre9 >=sys-fs/udev-145[extras] >=dev-libs/glib-2.18 >=sys-auth/polkit-0.92 >=dev-libs/libnl-1.1 >=net-misc/modemmanager-0.2 >=net-wireless/wpa_supplicant-0.5.10[dbus] bluetooth? ( net-wireless/bluez ) || ( sys-libs/e2fsprogs-libs <sys-fs/e2fsprogs-1.41.0 ) avahi? ( net-dns/avahi[autoipd] ) gnutls? ( nss? ( >=dev-libs/nss-3.11 ) !nss? ( dev-libs/libgcrypt net-libs/gnutls ) ) !gnutls? ( >=dev-libs/nss-3.11 ) dhclient? ( dhcpcd? ( >=net-misc/dhcpcd-4.0.0_rc3 ) !dhcpcd? ( >=net-misc/dhcp-3.0.0 ) ) !dhclient? ( >=net-misc/dhcpcd-4.0.0_rc3 ) resolvconf? ( net-dns/openresolv ) connection-sharing? ( net-dns/dnsmasq net-firewall/iptables ) dev-util/pkgconfig dev-util/intltool net-dialup/ppp doc? ( >=dev-util/gtk-doc-1.8 )
+DESCRIPTION=Network configuration and management in an easy way. Desktop environment independent.
+EAPI=2
+HOMEPAGE=http://www.gnome.org/projects/NetworkManager/
+IUSE=avahi bluetooth doc nss gnutls dhclient dhcpcd resolvconf connection-sharing
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-apps/dbus-1.2 >=dev-libs/dbus-glib-0.75 >=net-wireless/wireless-tools-28_pre9 >=sys-fs/udev-145[extras] >=dev-libs/glib-2.18 >=sys-auth/polkit-0.92 >=dev-libs/libnl-1.1 >=net-misc/modemmanager-0.2 >=net-wireless/wpa_supplicant-0.5.10[dbus] bluetooth? ( net-wireless/bluez ) || ( sys-libs/e2fsprogs-libs <sys-fs/e2fsprogs-1.41.0 ) avahi? ( net-dns/avahi[autoipd] ) gnutls? ( nss? ( >=dev-libs/nss-3.11 ) !nss? ( dev-libs/libgcrypt net-libs/gnutls ) ) !gnutls? ( >=dev-libs/nss-3.11 ) dhclient? ( dhcpcd? ( >=net-misc/dhcpcd-4.0.0_rc3 ) !dhcpcd? ( >=net-misc/dhcp-3.0.0 ) ) !dhclient? ( >=net-misc/dhcpcd-4.0.0_rc3 ) resolvconf? ( net-dns/openresolv ) connection-sharing? ( net-dns/dnsmasq net-firewall/iptables )
+SLOT=0
+SRC_URI=mirror://gnome/sources/NetworkManager/0.8/NetworkManager-0.8.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	gnome.org	6d236bfa516020939a4adbc435063f79	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=fea702941ef098d60bb26dd67e9b37e6

@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=A Perl module for creation and manipulation of tar files
+KEYWORDS=~mips
+RDEPEND=|| ( ~dev-lang/perl-5.10.0 ~perl-core/Archive-Tar-1.38 )
+SLOT=0
+_md5_=5e96b1835ceec9f4ba962db3a616a7b6

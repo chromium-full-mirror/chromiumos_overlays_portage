@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=>=dev-python/setuptools-0.6_rc7-r1 >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=dateutil datetime math and logic library for python
+EAPI=2
+HOMEPAGE=http://labix.org/python-dateutil http://pypi.python.org/pypi/python-dateutil
+KEYWORDS=amd64 ia64 ppc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
+LICENSE=PSF-2.3
+RDEPEND=sys-libs/timezone-data >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=http://labix.org/download/python-dateutil/python-dateutil-1.4.1.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=cbb0de605a7f868c398b826ef71a7564

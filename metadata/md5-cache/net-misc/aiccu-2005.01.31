@@ -1,0 +1,8 @@
+DEFINED_PHASES=compile install postinst
+DESCRIPTION=AICCU Client to configure an IPv6 tunnel to SixXS.
+HOMEPAGE=http://www.sixxs.net/
+KEYWORDS=~x86 ~amd64 ~arm
+LICENSE=AICCU
+SLOT=0
+SRC_URI=http://www.sixxs.net/archive/sixxs/aiccu/unix/aiccu_2005.01.31.tar.gz
+_md5_=f035f15ce9f55a6847c91d1b903ab0d1

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=!faxonly? ( net-dialup/mgetty ) >=sys-libs/zlib-1.1.4 app-text/ghostscript-gpl >=media-libs/tiff-3.7.0 jpeg? ( media-libs/jpeg ) media-libs/jbigkit sys-apps/gawk pam? ( virtual/pam ) mgetty? ( net-dialup/mgetty )
+DESCRIPTION=Client-server fax package for class 1 and 2 fax modems.
+HOMEPAGE=http://www.hylafax.org
+IUSE=faxonly jpeg pam mgetty
+KEYWORDS=amd64 hppa ppc sparc x86
+LICENSE=hylafax
+RDEPEND=!faxonly? ( net-dialup/mgetty ) >=sys-libs/zlib-1.1.4 app-text/ghostscript-gpl >=media-libs/tiff-3.7.0 jpeg? ( media-libs/jpeg ) media-libs/jbigkit sys-apps/gawk pam? ( virtual/pam ) mgetty? ( net-dialup/mgetty ) media-libs/netpbm net-mail/metamail !net-dialup/sendpage
+SLOT=0
+SRC_URI=ftp://ftp.hylafax.org/source/hylafax-4.2.5.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	pam	f794bf311d46a2b11d3d9362fe656bd0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2123c66b90a339784fa8dacd73977a02

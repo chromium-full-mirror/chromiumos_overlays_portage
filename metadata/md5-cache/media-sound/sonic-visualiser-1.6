@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install setup unpack
+DEPEND=x11-libs/qt-core:4 x11-libs/qt-gui:4 media-libs/libsndfile media-libs/libsamplerate fftw? ( =sci-libs/fftw-3* ) app-arch/bzip2 >=media-libs/dssi-0.9.1 media-libs/raptor media-libs/liblrdf dev-libs/redland media-libs/ladspa-sdk osc? ( media-libs/liblo ) media-libs/speex >=media-libs/vamp-plugin-sdk-2.0 media-libs/rubberband jack? ( media-sound/jack-audio-connection-kit ) !pulseaudio? ( !portaudio? ( media-sound/jack-audio-connection-kit ) ) mad? ( media-libs/libmad ) id3tag? ( media-libs/libid3tag ) ogg? ( media-libs/libfishsound media-libs/liboggz ) portaudio? ( >=media-libs/portaudio-19_pre20071207 ) pulseaudio? ( media-sound/pulseaudio ) >=dev-util/pkgconfig-0.9
+DESCRIPTION=Music audio files viewer and analiser
+EAPI=1
+HOMEPAGE=http://www.sonicvisualiser.org/
+IUSE=fftw id3tag jack mad ogg osc portaudio pulseaudio
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/qt-core:4 x11-libs/qt-gui:4 media-libs/libsndfile media-libs/libsamplerate fftw? ( =sci-libs/fftw-3* ) app-arch/bzip2 >=media-libs/dssi-0.9.1 media-libs/raptor media-libs/liblrdf dev-libs/redland media-libs/ladspa-sdk osc? ( media-libs/liblo ) media-libs/speex >=media-libs/vamp-plugin-sdk-2.0 media-libs/rubberband jack? ( media-sound/jack-audio-connection-kit ) !pulseaudio? ( !portaudio? ( media-sound/jack-audio-connection-kit ) ) mad? ( media-libs/libmad ) id3tag? ( media-libs/libid3tag ) ogg? ( media-libs/libfishsound media-libs/liboggz ) portaudio? ( >=media-libs/portaudio-19_pre20071207 ) pulseaudio? ( media-sound/pulseaudio )
+SLOT=0
+SRC_URI=mirror://sourceforge/sv1/sonic-visualiser-1.6.tar.bz2
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4	83eabd1192f3f2c5a649ba2422a14d00	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=606675fa378b3171b8ee8910d33b60a8

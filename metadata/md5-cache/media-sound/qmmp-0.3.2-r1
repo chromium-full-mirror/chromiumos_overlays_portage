@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=x11-libs/qt-gui:4[qt3support] media-libs/taglib alsa? ( media-libs/alsa-lib ) bs2b? ( media-libs/libbs2b ) dbus? ( sys-apps/dbus ) aac? ( media-libs/faad2 ) flac? ( media-libs/flac ) libsamplerate? ( media-libs/libsamplerate ) mad? ( media-libs/libmad ) musepack? ( >=media-sound/musepack-tools-444 ) modplug? ( >=media-libs/libmodplug-0.8.4 ) vorbis? ( media-libs/libvorbis media-libs/libogg ) jack? ( media-sound/jack-audio-connection-kit media-libs/libsamplerate ) ffmpeg? ( media-video/ffmpeg ) projectm? ( media-libs/libprojectm ) pulseaudio? ( >=media-sound/pulseaudio-0.9.9 ) wavpack? ( media-sound/wavpack ) scrobbler? ( net-misc/curl ) sndfile? ( media-libs/libsndfile ) >=dev-util/cmake-2.6.2-r1 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=Qt4-based audio player with winamp/xmms skins support
+EAPI=2
+HOMEPAGE=http://qmmp.ylsoftware.com/index_en.php
+IUSE=aac +alsa +dbus bs2b ffmpeg flac jack libsamplerate +mad modplug musepack oss projectm pulseaudio scrobbler sndfile +vorbis wavpack
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/qt-gui:4[qt3support] media-libs/taglib alsa? ( media-libs/alsa-lib ) bs2b? ( media-libs/libbs2b ) dbus? ( sys-apps/dbus ) aac? ( media-libs/faad2 ) flac? ( media-libs/flac ) libsamplerate? ( media-libs/libsamplerate ) mad? ( media-libs/libmad ) musepack? ( >=media-sound/musepack-tools-444 ) modplug? ( >=media-libs/libmodplug-0.8.4 ) vorbis? ( media-libs/libvorbis media-libs/libogg ) jack? ( media-sound/jack-audio-connection-kit media-libs/libsamplerate ) ffmpeg? ( media-video/ffmpeg ) projectm? ( media-libs/libprojectm ) pulseaudio? ( >=media-sound/pulseaudio-0.9.9 ) wavpack? ( media-sound/wavpack ) scrobbler? ( net-misc/curl ) sndfile? ( media-libs/libsndfile )
+SLOT=0
+SRC_URI=http://qmmp.ylsoftware.com/files/qmmp-0.3.2.tar.bz2
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	cmake-utils	6a1f5bd4039e55b76615db7bd9b70fed	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=35deddfc2b77ccc1c01aa30c41174fa1

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=x11-libs/gtk+:2 dev-util/pkgconfig doc? ( >=app-doc/halibut-1.0 )
+DESCRIPTION=Simon Tatham's Portable Puzzle Collection
+EAPI=2
+HOMEPAGE=http://www.chiark.greenend.org.uk/~sgtatham/puzzles/
+IUSE=doc
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=x11-libs/gtk+:2
+SLOT=0
+SRC_URI=http://www.chiark.greenend.org.uk/~sgtatham/puzzles/puzzles-r8605.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=332e042480f343dc656e4927db98e1d8

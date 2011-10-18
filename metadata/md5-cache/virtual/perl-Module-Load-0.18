@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=runtime require of both modules and files
+KEYWORDS=~amd64 ~ppc ~x86
+RDEPEND=~perl-core/Module-Load-0.18
+SLOT=0
+_md5_=d674880cf3201217476039d4d21c4dd8

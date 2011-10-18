@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=>=dev-libs/libxml2-2.6.20 >=app-text/scrollkeeper-0.3.14 >=x11-libs/gtk+-2.8 >=gnome-base/libglade-2.5 >=gnome-base/libgnome-2.12 >=gnome-base/libgnomeui-2.12 >=gnome-base/libgnomecanvas-2.12 >=gnome-base/libgnomeprint-2.12 >=gnome-base/libgnomeprintui-2.12 >=x11-libs/cairo-1.0.0 =x11-libs/gtksourceview-1* >=dev-util/scons-0.96.1 dev-util/pkgconfig
+DESCRIPTION=Oregano is an application for schematic capture and simulation of electrical circuits.
+HOMEPAGE=http://oregano.gforge.lug.fi.uba.ar/
+KEYWORDS=~amd64 ~hppa ~ppc sparc ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/libxml2-2.6.20 >=app-text/scrollkeeper-0.3.14 >=x11-libs/gtk+-2.8 >=gnome-base/libglade-2.5 >=gnome-base/libgnome-2.12 >=gnome-base/libgnomeui-2.12 >=gnome-base/libgnomecanvas-2.12 >=gnome-base/libgnomeprint-2.12 >=gnome-base/libgnomeprintui-2.12 >=x11-libs/cairo-1.0.0 =x11-libs/gtksourceview-1*
+SLOT=0
+SRC_URI=http://gforge.lug.fi.uba.ar/frs/download.php/84/oregano-0.60.0.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9569cc94f805451b013c741eebb637d8

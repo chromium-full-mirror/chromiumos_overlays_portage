@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-perl/Class-Accessor >=dev-perl/Class-MOP-0.88 >=dev-perl/Data-Stream-Bulk-0.06 dev-perl/Digest-HMAC dev-perl/libwww-perl virtual/perl-IO dev-perl/LWP-UserAgent-Determined virtual/perl-MIME-Base64 >=dev-perl/Moose-0.85 >=dev-perl/MooseX-StrictConstructor-0.08 dev-perl/MooseX-Types-DateTimeX dev-perl/regexp-common dev-perl/XML-LibXML dev-perl/URI dev-lang/perl[-build]
+DESCRIPTION=Framework for accessing the Amazon S3 Simple Storage Service
+EAPI=2
+HOMEPAGE=http://search.cpan.org/dist/Net-Amazon-S3/
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
+RDEPEND=dev-perl/Class-Accessor >=dev-perl/Class-MOP-0.88 >=dev-perl/Data-Stream-Bulk-0.06 dev-perl/Digest-HMAC dev-perl/libwww-perl virtual/perl-IO dev-perl/LWP-UserAgent-Determined virtual/perl-MIME-Base64 >=dev-perl/Moose-0.85 >=dev-perl/MooseX-StrictConstructor-0.08 dev-perl/MooseX-Types-DateTimeX dev-perl/regexp-common dev-perl/XML-LibXML dev-perl/URI dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/L/LB/LBROCARD//Net-Amazon-S3-0.52.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9d0632dc67f3923b45ed0d112335c406

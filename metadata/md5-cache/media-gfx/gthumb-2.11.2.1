@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=>=dev-libs/glib-2.16:2 >=x11-libs/gtk+-2.16:2 >=gnome-base/gconf-2.6 >=dev-libs/libunique-1 media-libs/jpeg exif? ( >=media-gfx/exiv2-0.18 ) gnome-keyring? ( >=gnome-base/gnome-keyring-2.28 ) gstreamer? ( >=media-libs/gstreamer-0.10 >=media-libs/gst-plugins-base-0.10 ) http? ( >=net-libs/libsoup-2.26:2.4 >=net-libs/libsoup-gnome-2.26:2.4 ) tiff? ( media-libs/tiff ) raw? ( >=media-libs/libopenraw-0.0.8 ) !raw? ( media-gfx/dcraw ) dev-util/pkgconfig app-text/scrollkeeper >=dev-util/intltool-0.35 app-text/gnome-doc-utils test? ( ~app-text/docbook-xml-dtd-4.1.2 ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b >=sys-apps/sed-4
+DESCRIPTION=Image viewer and browser for Gnome
+EAPI=2
+HOMEPAGE=http://gthumb.sourceforge.net
+IUSE=exif gnome-keyring http raw tiff test debug
+KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/glib-2.16:2 >=x11-libs/gtk+-2.16:2 >=gnome-base/gconf-2.6 >=dev-libs/libunique-1 media-libs/jpeg exif? ( >=media-gfx/exiv2-0.18 ) gnome-keyring? ( >=gnome-base/gnome-keyring-2.28 ) gstreamer? ( >=media-libs/gstreamer-0.10 >=media-libs/gst-plugins-base-0.10 ) http? ( >=net-libs/libsoup-2.26:2.4 >=net-libs/libsoup-gnome-2.26:2.4 ) tiff? ( media-libs/tiff ) raw? ( >=media-libs/libopenraw-0.0.8 ) !raw? ( media-gfx/dcraw )
+SLOT=0
+SRC_URI=mirror://gnome/sources/gthumb/2.11/gthumb-2.11.2.1.tar.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a7a4ca82947ac6923623379963a7e9f6

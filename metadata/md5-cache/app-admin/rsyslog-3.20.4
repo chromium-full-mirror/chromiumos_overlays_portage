@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install
+DEPEND=kerberos? ( virtual/krb5 ) dbi? ( dev-db/libdbi ) gnutls? ( net-libs/gnutls ) mysql? ( virtual/mysql ) postgres? ( virtual/postgresql-base ) relp? ( >=dev-libs/librelp-0.1.1 ) snmp? ( net-analyzer/net-snmp ) zlib? ( sys-libs/zlib )
+DESCRIPTION=An enhanced multi-threaded syslogd with database support and more.
+HOMEPAGE=http://www.rsyslog.com/
+IUSE=debug kerberos dbi gnutls mysql postgres relp snmp zlib
+KEYWORDS=amd64 x86
+LICENSE=GPL-3 LGPL-3
+PROVIDE=virtual/logger
+RDEPEND=kerberos? ( virtual/krb5 ) dbi? ( dev-db/libdbi ) gnutls? ( net-libs/gnutls ) mysql? ( virtual/mysql ) postgres? ( virtual/postgresql-base ) relp? ( >=dev-libs/librelp-0.1.1 ) snmp? ( net-analyzer/net-snmp ) zlib? ( sys-libs/zlib )
+SLOT=0
+SRC_URI=http://download.rsyslog.com/rsyslog/rsyslog-3.20.4.tar.gz
+_eclasses_=versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=300d7d6724dc3c759fcbb3e5e383822f

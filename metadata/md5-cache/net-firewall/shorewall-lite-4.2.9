@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=net-firewall/iptables sys-apps/iproute2
+DESCRIPTION=An iptables-based firewall whose config is handled by a normal Shorewall.
+HOMEPAGE=http://www.shorewall.net/
+IUSE=doc
+KEYWORDS=~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=net-firewall/iptables sys-apps/iproute2
+SLOT=0
+SRC_URI=http://www1.shorewall.net/pub/shorewall/4.2/shorewall-4.2.9/shorewall-lite-4.2.9.tar.bz2 doc? ( http://www1.shorewall.net/pub/shorewall/4.2/shorewall-4.2.9/shorewall-docs-html-4.2.9.tar.bz2 )
+_eclasses_=versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=ecf5479653c565d019c4b5dc757089c8

@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare
+DEPEND=dev-tcltk/blt >=dev-tcltk/tcllib-1.10 >=dev-tcltk/tclxml-3.1 dev-tcltk/tkcon dev-tcltk/tkimg dev-tcltk/tktable x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp x11-libs/xpa sci-astronomy/ast sci-astronomy/funtools dev-util/pkgconfig
+DESCRIPTION=Data visualization application for astronomical FITS images
+EAPI=2
+HOMEPAGE=http://hea-www.harvard.edu/RD/ds9
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=dev-tcltk/blt >=dev-tcltk/tcllib-1.10 >=dev-tcltk/tclxml-3.1 dev-tcltk/tkcon dev-tcltk/tkimg dev-tcltk/tktable x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp x11-libs/xpa sci-astronomy/ast sci-astronomy/funtools
+SLOT=0
+SRC_URI=http://hea-www.harvard.edu/saord/download/ds9/source/ds9.6.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=54a20623f478cfbe855e09f6f75eb8a0

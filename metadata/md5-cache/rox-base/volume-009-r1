@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=>=app-admin/eselect-python-20091230 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Volume is a ROX Panel Applet that puts a popup volume control in your panel.
+HOMEPAGE=http://rox-volume.googlecode.com
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=>=dev-python/pyalsaaudio-0.2 >=app-admin/eselect-python-20091230 >=rox-base/rox-2.1.0 >=rox-base/rox-lib-2.0.0
+SLOT=0
+SRC_URI=http://rox-volume.googlecode.com/files/Volume-009.tgz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	rox	2347969a0a946e05edf870dc5e0d1d3b	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=aa289c963a5e786e9387fbb6948b7174

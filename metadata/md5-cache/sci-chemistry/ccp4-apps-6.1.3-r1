@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install postinst prepare setup unpack
+DEPEND=X? ( x11-libs/libX11 x11-libs/libXaw x11-libs/libXt x11-libs/libjwc_c x11-libs/libjwc_f x11-libs/libxdl_view ) >=dev-lang/tk-8.3 >=dev-tcltk/blt-2.4 dev-tcltk/iwidgets dev-tcltk/itcl dev-tcltk/itk >=dev-tcltk/tdom-0.8 dev-tcltk/tkimg dev-tcltk/tktreectrl ~sci-libs/ccp4-libs-6.1.3 sci-libs/clipper =sci-libs/fftw-2* sci-libs/mmdb virtual/blas virtual/lapack app-shells/tcsh dev-python/pyxml dev-libs/libxml2 dev-libs/boehm-gc !app-office/sc !<sci-chemistry/ccp4-6.1.2 =sys-devel/automake-1.6* X? ( x11-misc/imake x11-proto/inputproto x11-proto/xextproto ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b sys-devel/gnuconfig =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Protein X-ray crystallography toolkit
+EAPI=2
+HOMEPAGE=http://www.ccp4.ac.uk/
+IUSE=examples X debug
+KEYWORDS=~amd64 ~x86
+LICENSE=ccp4
+PDEPEND=sci-chemistry/pdb-extract sci-chemistry/pymol sci-chemistry/rasmol sci-chemistry/oasis
+RDEPEND=X? ( x11-libs/libX11 x11-libs/libXaw x11-libs/libXt x11-libs/libjwc_c x11-libs/libjwc_f x11-libs/libxdl_view ) >=dev-lang/tk-8.3 >=dev-tcltk/blt-2.4 dev-tcltk/iwidgets dev-tcltk/itcl dev-tcltk/itk >=dev-tcltk/tdom-0.8 dev-tcltk/tkimg dev-tcltk/tktreectrl ~sci-libs/ccp4-libs-6.1.3 sci-libs/clipper =sci-libs/fftw-2* sci-libs/mmdb virtual/blas virtual/lapack app-shells/tcsh dev-python/pyxml dev-libs/libxml2 dev-libs/boehm-gc !app-office/sc !<sci-chemistry/ccp4-6.1.2
+RESTRICT=mirror
+SLOT=0
+SRC_URI=ftp://ftp.ccp4.ac.uk/ccp4/6.1.3/ccp4-6.1.3-core-src.tar.gz http://dev.gentooexperimental.org/~jlec/distfiles/6.1.3-oasis4.0.patch.bz2
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	fortran	bd0fac3e085b8c7c86b09139dbedac42	gnuconfig	9200bfc8e0184357abfb86a08edd4fc3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=20075198cacbc7d4649c28d7b5841b6d

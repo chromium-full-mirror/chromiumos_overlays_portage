@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DEPEND=>=dev-libs/glib-2.16:2 dev-util/pkgconfig
+DESCRIPTION=A library handling connections to a MPD server
+EAPI=1
+HOMEPAGE=http://gmpcwiki.sarine.nl/index.php/Libmpd
+KEYWORDS=amd64 ppc ~ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/glib-2.16:2
+SLOT=0
+SRC_URI=mirror://sourceforge/musicpd/libmpd-0.18.0.tar.gz
+_md5_=2fc969882af4d3e45a08b8a3731ccb77

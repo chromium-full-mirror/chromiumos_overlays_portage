@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=sys-libs/ncurses alsa? ( oss? ( media-libs/alsa-oss ) )
+DESCRIPTION=Curses based interpreter for Z-code based text games
+EAPI=2
+HOMEPAGE=http://www.cs.csubak.edu/~dgriffi/proj/frotz/
+IUSE=alsa oss
+KEYWORDS=amd64 ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=sys-libs/ncurses alsa? ( oss? ( media-libs/alsa-oss ) )
+SLOT=0
+SRC_URI=http://www.ifarchive.org/if-archive/infocom/interpreters/frotz/frotz-2.43.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2e4a9182f9f17f7c1f1bd0551899be8a

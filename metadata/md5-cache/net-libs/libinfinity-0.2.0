@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install setup
+DEPEND=>=sys-libs/e2fsprogs-libs-1.41.4 dev-libs/glib:2 dev-libs/libxml2 net-libs/gnutls >=net-misc/gsasl-0.2.21 avahi? ( net-dns/avahi ) gtk? ( >=x11-libs/gtk+-2.12:2 ) >=dev-util/pkgconfig-0.23 doc? ( dev-util/gtk-doc )
+DESCRIPTION=An implementation of the Infinote protocol written in GObject-based C.
+EAPI=2
+HOMEPAGE=http://gobby.0x539.de/
+IUSE=avahi doc gtk server
+KEYWORDS=~amd64
+LICENSE=LGPL-2.1
+RDEPEND=>=sys-libs/e2fsprogs-libs-1.41.4 dev-libs/glib:2 dev-libs/libxml2 net-libs/gnutls >=net-misc/gsasl-0.2.21 avahi? ( net-dns/avahi ) gtk? ( >=x11-libs/gtk+-2.12:2 )
+SLOT=0
+SRC_URI=http://releases.0x539.de/libinfinity/libinfinity-0.2.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b90e4e5b25b76de5c46c2bc0bc855d4c

@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install
+DEPEND=>=sys-libs/gwenhywfar-3.11.3 >=app-misc/ktoblzcheck-1.24 ofx? ( >=dev-libs/libofx-0.9.1 ) chipcard? ( >=sys-libs/libchipcard-4.2.8 ) qt4? ( x11-libs/qt-gui:4[qt3support] ) dev-util/pkgconfig
+DESCRIPTION=Generic Online Banking Interface
+EAPI=2
+HOMEPAGE=http://www.aquamaniac.de/aqbanking/
+IUSE=chipcard debug ofx qt4
+KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-libs/gwenhywfar-3.11.3 >=app-misc/ktoblzcheck-1.24 ofx? ( >=dev-libs/libofx-0.9.1 ) chipcard? ( >=sys-libs/libchipcard-4.2.8 ) qt4? ( x11-libs/qt-gui:4[qt3support] )
+RESTRICT=test
+SLOT=0
+SRC_URI=http://www.aquamaniac.de/sites/download/download.php?package=03&release=49&file=01&dummy=aqbanking-4.2.3.tar.gz -> aqbanking-4.2.3.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8e4cad8ae924c615d0ee7d93886bcbe8

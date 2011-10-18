@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst setup test unpack
+DEPEND=!sys-fs/device-mapper clvm? ( =sys-cluster/dlm-2* cman? ( =sys-cluster/cman-2* ) )
+DESCRIPTION=User-land utilities for LVM2 (device-mapper) software.
+EAPI=1
+HOMEPAGE=http://sources.redhat.com/lvm2/
+IUSE=readline +static clvm cman +lvm1 selinux
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=!sys-fs/device-mapper clvm? ( =sys-cluster/dlm-2* cman? ( =sys-cluster/cman-2* ) ) !<sys-apps/openrc-0.4 !sys-fs/lvm-user !sys-fs/clvm
+SLOT=0
+SRC_URI=ftp://sources.redhat.com/pub/lvm2/LVM2.2.02.48.tgz ftp://sources.redhat.com/pub/lvm2/old/LVM2.2.02.48.tgz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=90f88f2288afec2aaf72255c244306c1

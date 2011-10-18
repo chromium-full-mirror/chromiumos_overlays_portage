@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install postinst postrm preinst
+DEPEND=dev-lisp/common-lisp-controller
+DESCRIPTION=cl-launch is a utility to make Common Lisp software easily invokable from the command-line.
+HOMEPAGE=http://www.cliki.net/cl-launch
+KEYWORDS=~sparc ~ppc ~amd64 ~x86
+LICENSE=No-Problem-Bugroff LLGPL-2.1
+SLOT=0
+SRC_URI=http://fare.tunes.org/files/cl-launch/cl-launch_2.02.orig.tar.gz
+_eclasses_=common-lisp	78bda507fdf240a712b120777127629c	common-lisp-common	a6e38969ed3937827ca1f284d015020a	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8d30d67f51f9b462fad26df0b8b680f7

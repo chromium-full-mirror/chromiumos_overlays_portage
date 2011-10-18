@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install prepare
+DESCRIPTION=Phoronix's comprehensive, cross-platform testing and benchmark suite
+EAPI=2
+HOMEPAGE=http://www.phoronix-test-suite.com
+IUSE=gd gtk
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=dev-lang/php:5[cli,gd?] gtk? ( dev-php5/php-gtk )
+SLOT=0
+SRC_URI=http://www.phoronix-test-suite.com/download.php?file=phoronix-test-suite-2.2.0 -> phoronix-test-suite-2.2.0.tar.gz
+_md5_=5e57ed595f4c5aff26f401a99818f614

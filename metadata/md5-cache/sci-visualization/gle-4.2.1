@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup unpack
+DEPEND=sys-libs/ncurses X? ( x11-libs/libX11 ) qt4? ( x11-libs/qt-gui:4 ) jpeg? ( media-libs/jpeg ) png? ( media-libs/libpng ) tiff? ( media-libs/tiff ) emacs? ( virtual/emacs )
+DESCRIPTION=Graphics Layout Engine
+EAPI=2
+HOMEPAGE=http://glx.sourceforge.net/
+IUSE=X qt4 jpeg png tiff doc emacs vim-syntax
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD-2 emacs? ( GPL-2 ) qt4? ( GPL-2 )
+RDEPEND=sys-libs/ncurses X? ( x11-libs/libX11 ) qt4? ( x11-libs/qt-gui:4 ) jpeg? ( media-libs/jpeg ) png? ( media-libs/libpng ) tiff? ( media-libs/tiff ) emacs? ( virtual/emacs ) app-text/ghostscript-gpl virtual/latex-base vim-syntax? ( || ( app-editors/vim app-editors/gvim ) )
+SLOT=0
+SRC_URI=mirror://sourceforge/glx/gle-graphics-4.2.1f-src.tar.gz doc? ( mirror://sourceforge/glx/gle-manual-4.2.0.pdf mirror://sourceforge/glx/GLEusersguide.pdf )
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4	83eabd1192f3f2c5a649ba2422a14d00	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=06a8530069592bd7edc50c0fb9a6bf3c

@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=x11-libs/libX11 x11-libs/libXext x11-libs/libXv x11-libs/libXxf86misc media-libs/alsa-lib sys-libs/zlib >=media-libs/libsdl-1.2 x11-proto/xproto x11-proto/kbproto x11-proto/xf86miscproto
+DESCRIPTION=a free reimplementation of Impulse Tracker, a program used to create high quality music
+EAPI=2
+HOMEPAGE=http://eval.sovietrussia.org//wiki/Schism_Tracker
+KEYWORDS=~amd64
+LICENSE=GPL-2 LGPL-2 public-domain
+RDEPEND=x11-libs/libX11 x11-libs/libXext x11-libs/libXv x11-libs/libXxf86misc media-libs/alsa-lib sys-libs/zlib >=media-libs/libsdl-1.2
+SLOT=0
+SRC_URI=http://schismtracker.org/dl/schismtracker-20090817.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ab718244b68bf0d8e3472811193c96f6

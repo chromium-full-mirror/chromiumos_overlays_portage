@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=x11-libs/libX11 x11-libs/libXt x11-libs/libXpm svg? ( >=dev-libs/glib-2 >=x11-libs/gtk+-2 gnome-base/librsvg ) app-text/rman x11-misc/imake svg? ( dev-util/pkgconfig )
+DESCRIPTION=eXtended XKB - assign different keymaps to different windows
+HOMEPAGE=http://sourceforge.net/projects/xxkb/
+IUSE=svg
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=Artistic
+RDEPEND=x11-libs/libX11 x11-libs/libXt x11-libs/libXpm svg? ( >=dev-libs/glib-2 >=x11-libs/gtk+-2 gnome-base/librsvg )
+SLOT=0
+SRC_URI=mirror://sourceforge/xxkb/xxkb-1.11-src.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=81c1d8c845031678c01af5448de3a049

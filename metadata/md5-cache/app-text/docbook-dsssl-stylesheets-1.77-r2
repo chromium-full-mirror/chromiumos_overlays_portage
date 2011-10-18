@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm prerm unpack
+DEPEND=>=app-text/sgml-common-0.6.3-r2
+DESCRIPTION=DSSSL Stylesheets for DocBook.
+HOMEPAGE=http://wiki.docbook.org/topic/DocBookDssslStylesheets
+KEYWORDS=alpha amd64 arm hppa ia64 m68k mips ppc ppc64 s390 sh sparc x86
+LICENSE=as-is
+RDEPEND=app-text/sgml-common
+SLOT=0
+SRC_URI=mirror://sourceforge/docbook/docbook-dsssl-1.77.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	sgml-catalog	a4d9b97f60f3331317a2d4279eecbe7d	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2190fe7308139ba0504c81bcf6b54412

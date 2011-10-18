@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst postrm prepare
+DEPEND=>=app-admin/eselect-python-20091230
+DESCRIPTION=Official set of extra plugins for Supybot
+EAPI=2
+HOMEPAGE=http://supybot.com
+KEYWORDS=~x86
+LICENSE=BSD
+RDEPEND=>=net-irc/supybot-0.83.4 >=dev-python/twisted-conch-8.1.0 >=dev-python/twisted-web-1.0 >=app-admin/eselect-python-20091230
+SLOT=0
+SRC_URI=mirror://sourceforge/supybot/Supybot-plugins-20060723.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ce46ba791cbee9411066c6d3fcd46e3d

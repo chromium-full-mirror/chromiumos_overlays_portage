@@ -1,0 +1,8 @@
+DEFINED_PHASES=install postinst
+DESCRIPTION=Launcher script for capistrano
+HOMEPAGE=http://capify.org/
+KEYWORDS=amd64 ia64 ppc ppc64 x86
+LICENSE=MIT
+RDEPEND=!~dev-ruby/capistrano-1.99.1 !~dev-ruby/capistrano-1.99.3 !<dev-ruby/capistrano-1.4.1-r1
+SLOT=0
+_md5_=178067fb6db7eb854cf8c2c139b95dea

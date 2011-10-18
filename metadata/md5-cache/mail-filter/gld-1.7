@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=sys-libs/zlib >=dev-libs/openssl-0.9.6 postgres? ( virtual/postgresql-server ) !postgres? ( virtual/mysql )
+DESCRIPTION=A standalone anti-spam greylisting algorithm on top of Postfix
+HOMEPAGE=http://www.gasmi.net/gld.html
+IUSE=postgres
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=sys-libs/zlib >=dev-libs/openssl-0.9.6 postgres? ( virtual/postgresql-server ) !postgres? ( virtual/mysql )
+SLOT=0
+SRC_URI=http://www.gasmi.net/down/gld-1.7.tgz
+_md5_=154828a4e82f7d5890dd731f60450256

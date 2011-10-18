@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare setup test
+DEPEND=dev-python/sip >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DESCRIPTION=Python bindings for the Qwt library
+EAPI=2
+HOMEPAGE=http://pyqwt.sourceforge.net/
+IUSE=doc examples svg
+KEYWORDS=~amd64 ~ia64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/qwt-5.1[svg?] >=dev-python/PyQt4-4.6.1 dev-python/numpy >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+SLOT=5
+SRC_URI=mirror://sourceforge/pyqwt/PyQwt-5.2.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=7fdfdca9eecb22247ebf036e8db80be3

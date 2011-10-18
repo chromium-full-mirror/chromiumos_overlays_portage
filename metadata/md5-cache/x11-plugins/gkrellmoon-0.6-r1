@@ -1,0 +1,11 @@
+DEFINED_PHASES=install setup unpack
+DEPEND=media-libs/imlib2 =app-admin/gkrellm-2* dev-util/pkgconfig
+DESCRIPTION=A GKrellM2 plugin of the famous wmMoonClock dockapp
+HOMEPAGE=http://gkrellmoon.sourceforge.net/
+KEYWORDS=alpha amd64 ppc sparc x86
+LICENSE=GPL-2
+RDEPEND=media-libs/imlib2 =app-admin/gkrellm-2*
+SLOT=2
+SRC_URI=mirror://sourceforge/gkrellmoon/gkrellmoon-0.6.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	gkrellm-plugin	ed070af3b0d893d87445360bb28c119c	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=ac799110568379a471360bcaac1045bb

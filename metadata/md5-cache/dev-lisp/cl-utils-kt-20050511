@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm preinst
+DEPEND=virtual/commonlisp dev-lisp/common-lisp-controller dev-lisp/common-lisp-controller
+DESCRIPTION=A library of Kenny Tilton's favourite Common Lisp utilities.
+HOMEPAGE=http://common-lisp.net/project/cells/ http://www.tilton-technology.com/cells_top.html
+KEYWORDS=~amd64 ~ppc ~sparc x86
+LICENSE=BSD
+RDEPEND=virtual/commonlisp dev-lisp/common-lisp-controller
+SLOT=0
+SRC_URI=mirror://gentoo/utils-kt-20050511.tar.gz
+_eclasses_=common-lisp	78bda507fdf240a712b120777127629c	common-lisp-common	a6e38969ed3937827ca1f284d015020a	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9dbe4d5b06de0ac9ae73edd1fafbe8ec

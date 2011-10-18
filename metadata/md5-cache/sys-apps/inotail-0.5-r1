@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install setup unpack
+DESCRIPTION=tail replacement using inotify
+HOMEPAGE=http://distanz.ch/inotail/
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=http://distanz.ch/inotail/inotail-0.5.tar.bz2
+_eclasses_=linux-info	8d722422d00ae99ed52a790b20b9bfc4	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=98d0bbd25c0b9bfd294e744e85c064d3

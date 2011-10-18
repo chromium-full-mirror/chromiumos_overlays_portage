@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup unpack
+DEPEND=x11-libs/libX11 x11-libs/libXrandr x11-libs/libXext x11-libs/libXpm x11-libs/libXrender x11-libs/libXft xinerama? ( x11-libs/libXinerama ) esd? ( media-sound/esound ) imlib? ( >=media-libs/imlib-1.9.10-r1 ) nls? ( sys-devel/gettext ) truetype? ( >=media-libs/freetype-2.0.9 ) media-libs/giflib x11-proto/xproto x11-proto/xextproto xinerama? ( x11-proto/xineramaproto ) >=sys-apps/sed-4
+DESCRIPTION=Ice Window Manager with Themes
+HOMEPAGE=http://www.icewm.org/
+IUSE=esd imlib nls spell truetype xinerama minimal debug uclibc
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/libX11 x11-libs/libXrandr x11-libs/libXext x11-libs/libXpm x11-libs/libXrender x11-libs/libXft xinerama? ( x11-libs/libXinerama ) esd? ( media-sound/esound ) imlib? ( >=media-libs/imlib-1.9.10-r1 ) nls? ( sys-devel/gettext ) truetype? ( >=media-libs/freetype-2.0.9 ) media-libs/giflib
+SLOT=0
+SRC_URI=mirror://sourceforge/icewm/icewm-1.2.33.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6a268e9062b6bc549284995e93468dc4

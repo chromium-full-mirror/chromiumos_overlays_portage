@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm
+DEPEND=usb? ( app-crypt/ccid ) >=sys-apps/pcsc-lite-1.4.14 dev-perl/pcsc-perl dev-perl/gtk2-perl dev-util/pkgconfig
+DESCRIPTION=PC/SC Architecture smartcard tools
+HOMEPAGE=http://ludovic.rousseau.free.fr/softwares/pcsc-tools/
+IUSE=debug usb
+KEYWORDS=~amd64 ~hppa ~ppc ~ppc64 ~x86
+LICENSE=GPL-2
+RDEPEND=usb? ( app-crypt/ccid ) >=sys-apps/pcsc-lite-1.4.14 dev-perl/pcsc-perl dev-perl/gtk2-perl
+SLOT=0
+SRC_URI=http://ludovic.rousseau.free.fr/softwares/pcsc-tools/pcsc-tools-1.4.15.tar.gz mirror://gentoo/smartcard_list.txt
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=792e422ea49a0f9e42af5a2a7b6e58cd

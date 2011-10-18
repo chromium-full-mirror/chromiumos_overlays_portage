@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm unpack
+DEPEND=|| ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 )
+DESCRIPTION=vim plugin: automatically align bib, c, c++, tex and vim code
+HOMEPAGE=http://www.vim.org/scripts/script.php?script_id=884
+KEYWORDS=~alpha ~amd64 ~ia64 ~mips ~ppc ~sparc ~x86
+LICENSE=vim
+RDEPEND=>=app-vim/align-30 >=app-vim/cecutil-4 || ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 )
+SLOT=0
+SRC_URI=mirror://gentoo/autoalign-13.tar.bz2
+_eclasses_=vim-doc	6bd5bb2529af326fe3359e975a3439d0	vim-plugin	ad1471f55b183500f4224c8992df8205
+_md5_=f478550a9dc3be3b3e44e3253d793b5e

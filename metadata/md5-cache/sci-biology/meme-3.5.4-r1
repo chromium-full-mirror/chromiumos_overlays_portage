@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst test unpack
+DEPEND=>=dev-lang/perl-5.6.1 mpi? ( sys-cluster/lam-mpi ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=The MEME/MAST system - Motif discovery and search
+HOMEPAGE=http://meme.sdsc.edu/meme
+IUSE=mpi
+KEYWORDS=~x86 ~amd64
+LICENSE=meme
+RDEPEND=>=dev-lang/perl-5.6.1 mpi? ( sys-cluster/lam-mpi )
+SLOT=0
+SRC_URI=http://meme.nbcr.net/downloads/meme_3.5.4.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e43b8f20678b096d56577bed0a0358c7

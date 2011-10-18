@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=dev-python/setuptools test? ( || ( >=dev-lang/python-2.5[sqlite] dev-python/pysqlite ) ) >=app-admin/eselect-python-20091230 dev-lang/python
+DESCRIPTION=An object-relational mapper for Python developed at Canonical.
+EAPI=2
+HOMEPAGE=https://storm.canonical.com/FrontPage http://pypi.python.org/pypi/storm
+IUSE=mysql postgres sqlite test
+KEYWORDS=~x86 ~amd64
+LICENSE=LGPL-2.1
+RDEPEND=mysql? ( dev-python/mysql-python ) postgres? ( =dev-python/psycopg-2* ) sqlite? ( || ( >=dev-lang/python-2.5[sqlite] dev-python/pysqlite ) ) >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=http://pypi.python.org/packages/source/s/storm/storm-0.16.0.tar.bz2
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8ee06170e57b2bcc450973797fdc14f3

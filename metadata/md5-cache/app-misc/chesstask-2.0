@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install
+DEPEND==x11-libs/qt-3* app-arch/unzip
+DESCRIPTION=An editor for chess problems. It will generate PostScript and HTML files.
+HOMEPAGE=http://chesstask.sourceforge.net/
+KEYWORDS=~amd64 ppc ~x86
+LICENSE=GPL-2
+RDEPEND==x11-libs/qt-3* || ( ( dev-texlive/texlive-games dev-texlive/texlive-pstricks ) app-text/ptex )
+SLOT=0
+SRC_URI=mirror://sourceforge/chesstask/ChessTask2_0src.zip
+_md5_=2028ef42f68b8cec4ea2b83985d6a56c

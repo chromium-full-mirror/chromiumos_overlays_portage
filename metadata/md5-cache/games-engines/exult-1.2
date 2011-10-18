@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=media-libs/libsdl[audio,video,X] media-libs/sdl-mixer[vorbis,timidity?] timidity? ( >=media-sound/timidity++-2 ) zlib? ( sys-libs/zlib ) app-arch/unzip =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=an Ultima 7 game engine that runs on modern operating systems
+EAPI=2
+HOMEPAGE=http://exult.sourceforge.net/
+IUSE=timidity zlib
+KEYWORDS=~amd64 ppc ~sparc x86
+LICENSE=GPL-2
+RDEPEND=media-libs/libsdl[audio,video,X] media-libs/sdl-mixer[vorbis,timidity?] timidity? ( >=media-sound/timidity++-2 ) zlib? ( sys-libs/zlib )
+SLOT=0
+SRC_URI=mirror://sourceforge/exult/exult-1.2.tar.gz mirror://sourceforge/exult/U7MusicOGG_1of2.zip mirror://sourceforge/exult/U7MusicOGG_2of2.zip mirror://sourceforge/exult/jmsfx.zip mirror://sourceforge/exult/jmsfxsi.zip
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	games	dd242b42e6cf30a93dce9ab15dfea1ca	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b2c3d4f6793b77016f3a596a0762d2be

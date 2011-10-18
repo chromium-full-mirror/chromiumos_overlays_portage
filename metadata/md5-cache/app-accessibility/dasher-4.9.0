@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup unpack
+DEPEND=>=dev-libs/glib-2.6 dev-libs/expat >=x11-libs/gtk+-2.6 >=gnome-base/gconf-2 >=gnome-base/libglade-2 gnome? ( >=gnome-base/libgnome-2 >=gnome-base/libgnomeui-2 >=gnome-base/gnome-vfs-2 ) accessibility? ( app-accessibility/gnome-speech >=gnome-base/libbonobo-2 >=gnome-base/orbit-2 >=gnome-base/libgnomeui-2 >=gnome-extra/at-spi-1 dev-libs/atk ) cairo? ( >=x11-libs/gtk+-2.8 ) x11-libs/libX11 x11-libs/libXtst >=dev-util/intltool-0.35 >=dev-util/pkgconfig-0.9 gnome? ( >=app-text/gnome-doc-utils-0.3.2 app-text/scrollkeeper ) x11-proto/xextproto x11-proto/xproto >=sys-apps/sed-4
+DESCRIPTION=A text entry interface, driven by continuous pointing gestures
+HOMEPAGE=http://www.inference.phy.cam.ac.uk/dasher/
+IUSE=accessibility cairo gnome debug
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/glib-2.6 dev-libs/expat >=x11-libs/gtk+-2.6 >=gnome-base/gconf-2 >=gnome-base/libglade-2 gnome? ( >=gnome-base/libgnome-2 >=gnome-base/libgnomeui-2 >=gnome-base/gnome-vfs-2 ) accessibility? ( app-accessibility/gnome-speech >=gnome-base/libbonobo-2 >=gnome-base/orbit-2 >=gnome-base/libgnomeui-2 >=gnome-extra/at-spi-1 dev-libs/atk ) cairo? ( >=x11-libs/gtk+-2.8 ) x11-libs/libX11 x11-libs/libXtst
+SLOT=0
+SRC_URI=mirror://gnome/sources/dasher/4.9/dasher-4.9.0.tar.bz2
+_eclasses_=fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=73a33efde9b2284029491bbbc159db49

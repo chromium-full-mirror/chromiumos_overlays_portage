@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=net-im/jabberd
+DESCRIPTION=Open Source Jabber Server Yahoo transport
+HOMEPAGE=http://yahoo-transport-2.jabberstudio.org/
+KEYWORDS=~x86 ~ppc
+LICENSE=GPL-2
+RDEPEND=net-im/jabberd
+SLOT=0
+SRC_URI=http://www.jabberstudio.org/files/yahoo-transport-2/yahoo-transport-2.3.0.tar.gz http://dev.gentoo.org/~humpback/yahoo-transport+newauth.diff http://www.lucas-nussbaum.net/yahoo-transport+authfix.diff
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=477d4ae67936ba1f2b927d2dc00be753

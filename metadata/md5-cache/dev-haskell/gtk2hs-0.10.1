@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare prerm setup unpack
+DEPEND=>=dev-lang/ghc-6.6 dev-haskell/mtl x11-libs/gtk+:2 glade? ( gnome-base/libglade ) gnome? ( gnome-base/libglade >=x11-libs/gtksourceview-2.2 gnome-base/gconf ) svg? ( gnome-base/librsvg ) opengl? ( x11-libs/gtkglext ) xulrunner? ( =net-libs/xulrunner-1.8* ) seamonkey? ( =www-client/seamonkey-1* ) doc? ( >=dev-haskell/haddock-2.4.1 ) dev-util/pkgconfig
+DESCRIPTION=A GUI Library for Haskell based on Gtk+
+EAPI=2
+HOMEPAGE=http://haskell.org/gtk2hs/
+IUSE=doc profile glade gnome opengl svg seamonkey xulrunner
+KEYWORDS=~amd64 ~sparc ~ppc ~x86
+LICENSE=LGPL-2.1
+RDEPEND=>=dev-lang/ghc-6.6 dev-haskell/mtl x11-libs/gtk+:2 glade? ( gnome-base/libglade ) gnome? ( gnome-base/libglade >=x11-libs/gtksourceview-2.2 gnome-base/gconf ) svg? ( gnome-base/librsvg ) opengl? ( x11-libs/gtkglext ) xulrunner? ( =net-libs/xulrunner-1.8* ) seamonkey? ( =www-client/seamonkey-1* )
+SLOT=0
+SRC_URI=mirror://sourceforge/gtk2hs/gtk2hs-0.10.1.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	ghc-package	a0576f38fd872706ee22bf4f6c0c6152	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=0c284e9aced676822da4b83bc249f314

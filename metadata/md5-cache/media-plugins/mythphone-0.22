@@ -1,0 +1,7 @@
+DEFINED_PHASES=postinst
+DESCRIPTION=stub build
+HOMEPAGE=http://www.gentoo.org
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=BSD-2
+SLOT=0
+_md5_=068133b917eee06e0668840403d34384

@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=>=x11-libs/gtk+-2.8:2 dev-util/pkgconfig
+DESCRIPTION=a derivative of the standard Clearlooks engine, using a more orange approach
+EAPI=2
+HOMEPAGE=http://packages.ubuntu.com/search?keywords=gtk2-engines-ubuntulooks
+KEYWORDS=amd64 ~ppc x86
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2.8:2
+SLOT=0
+SRC_URI=mirror://ubuntu/pool/main/u/ubuntulooks/ubuntulooks_0.9.12.orig.tar.gz mirror://ubuntu/pool/main/u/ubuntulooks/ubuntulooks_0.9.12-12.diff.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=61a0ffc9e05eb9e4b95eeab7c086b953

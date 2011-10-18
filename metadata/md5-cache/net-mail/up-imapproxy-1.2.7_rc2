@@ -1,0 +1,11 @@
+DEFINED_PHASES=configure install postinst prepare
+DEPEND=sys-libs/ncurses kerberos? ( virtual/krb5 ) ssl? ( dev-libs/openssl ) tcpd? ( >=sys-apps/tcp-wrappers-7.6 ) sys-apps/sed
+DESCRIPTION=Proxy IMAP transactions between an IMAP client and an IMAP server.
+EAPI=2
+HOMEPAGE=http://www.imapproxy.org/
+IUSE=kerberos ssl +tcpd
+LICENSE=GPL-2
+RDEPEND=sys-libs/ncurses kerberos? ( virtual/krb5 ) ssl? ( dev-libs/openssl ) tcpd? ( >=sys-apps/tcp-wrappers-7.6 )
+SLOT=0
+SRC_URI=http://www.imapproxy.org/downloads/up-imapproxy-1.2.7rc2.tar.gz
+_md5_=0e10b1a99fe85645a4b060bf58e20c2b

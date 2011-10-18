@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=sys-libs/zlib alsa? ( >=media-libs/alsa-lib-1.0.13 ) esd? ( media-sound/esound ) pulseaudio? ( media-sound/pulseaudio ) gnutls? ( net-libs/gnutls ) ncurses? ( sys-libs/ncurses ) sdl? ( >=media-libs/libsdl-1.2.11 ) vde? ( net-misc/vde ) kqemu? ( >=app-emulation/kqemu-1.4.0_pre1 ) gnutls? ( dev-util/pkgconfig ) app-text/texi2html
+DESCRIPTION=Open source processor emulator
+EAPI=1
+HOMEPAGE=http://bellard.org/qemu/index.html
+IUSE=alsa esd gnutls ncurses pulseaudio +sdl vde kqemu
+KEYWORDS=~amd64 ~x86 ~ppc ~ppc64
+LICENSE=GPL-2
+RDEPEND=sys-libs/zlib alsa? ( >=media-libs/alsa-lib-1.0.13 ) esd? ( media-sound/esound ) pulseaudio? ( media-sound/pulseaudio ) gnutls? ( net-libs/gnutls ) ncurses? ( sys-libs/ncurses ) sdl? ( >=media-libs/libsdl-1.2.11 ) vde? ( net-misc/vde ) kqemu? ( >=app-emulation/kqemu-1.4.0_pre1 )
+RESTRICT=test
+SLOT=0
+SRC_URI=http://savannah.nongnu.org/download/qemu/qemu-0.10.0.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=24c7ce8a8c0d465ce018ba8c0eb25cc5

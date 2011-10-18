@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=X? ( x11-libs/libX11 )
+DESCRIPTION=XLISP-STAT is a statistical environment based on a dialect of the Lisp language called XLISP.
+HOMEPAGE=http://www.stat.uiowa.edu/~luke/xls/xlsinfo/xlsinfo.html
+IUSE=X
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=X? ( x11-libs/libX11 )
+SLOT=0
+SRC_URI=ftp://ftp.stat.umn.edu/pub/xlispstat/current/xlispstat-3-52-20.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=93e1ed2e8a24c209834fcc6fb3a22313

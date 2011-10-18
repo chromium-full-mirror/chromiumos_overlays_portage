@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm preinst unpack
+DEPEND=dev-lisp/cl-html-encode dev-lisp/cl-split-sequence =dev-lisp/hyperspec-7.0 dev-lisp/common-lisp-controller
+DESCRIPTION=Colorize is a Common Lisp application for colorizing Common Lisp, Scheme, Elisp, C, C++ or Java code.
+HOMEPAGE=http://www.cliki.net/colorize
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=MIT
+RDEPEND=dev-lisp/cl-html-encode dev-lisp/cl-split-sequence =dev-lisp/hyperspec-7.0
+SLOT=0
+SRC_URI=http://www.unmutual.info/software/colorize-1.0.tar.gz
+_eclasses_=common-lisp	78bda507fdf240a712b120777127629c	common-lisp-common	a6e38969ed3937827ca1f284d015020a	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b465055ad4596a842ef6ba5b11d8e1f5

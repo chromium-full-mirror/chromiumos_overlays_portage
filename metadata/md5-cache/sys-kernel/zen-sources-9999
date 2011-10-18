@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst preinst prepare setup unpack
+DEPEND=!build? ( sys-apps/sed >=sys-devel/binutils-2.11.90.0.31 ) >=dev-util/git-1.6
+DESCRIPTION=The Zen Kernel Live Sources
+EAPI=2
+HOMEPAGE=http://zen-kernel.org
+IUSE=+stable symlink build
+LICENSE=GPL-2
+PDEPEND=!build? ( virtual/dev-manager )
+PROVIDE=virtual/linux-sources virtual/alsa
+RDEPEND=!build? ( >=sys-libs/ncurses-5.2 sys-devel/make )
+RESTRICT=binchecks strip
+SLOT=9999
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	git	551824b681382dda2f4f5040597fdc07	kernel-2	fac988fb09b9b9b87d85d60efe37d03f	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=cb4199840cd0f08788cbb58ae242e88c

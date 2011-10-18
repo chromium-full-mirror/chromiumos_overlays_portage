@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=x11-libs/qt-gui:4 media-sound/jack-audio-connection-kit media-libs/alsa-lib dev-util/pkgconfig
+DESCRIPTION=A simple harddisk recorder writing from an input audio stream to a .wav file
+EAPI=2
+HOMEPAGE=http://alsamodular.sourceforge.net/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/qt-gui:4 media-sound/jack-audio-connection-kit media-libs/alsa-lib
+SLOT=0
+SRC_URI=mirror://sourceforge/alsamodular/qarecord-0.5.0.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=4ace302086204f61b1d4700f217fb6bf

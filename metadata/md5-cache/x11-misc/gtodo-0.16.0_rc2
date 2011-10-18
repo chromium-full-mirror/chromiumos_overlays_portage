@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst unpack
+DEPEND=>=x11-libs/gtk+-2.4 >=dev-libs/libxml2-2.5.8 >=gnome-base/gconf-2 >=dev-libs/glib-2 >=gnome-base/gnome-vfs-2 gnome? ( gnome-base/gnome-panel ) dev-util/pkgconfig dev-util/intltool dev-perl/XML-Parser sys-devel/gettext dev-libs/libxslt >=sys-apps/sed-4
+DESCRIPTION=Gnome Task List Manager is a GTK+ based TODO application with applet.
+HOMEPAGE=http://sarine.nl/gnome-task-list-manager
+IUSE=gnome debug
+KEYWORDS=amd64 ~ppc x86
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2.4 >=dev-libs/libxml2-2.5.8 >=gnome-base/gconf-2 >=dev-libs/glib-2 >=gnome-base/gnome-vfs-2 gnome? ( gnome-base/gnome-panel )
+SLOT=0
+SRC_URI=http://download.qballcow.nl/programs/gtodo/gtodo-0.16.0-rc2.tar.gz gnome? ( http://download.qballcow.nl/programs/gtodo/gtodo-applet-0.16-2.tar.gz )
+_eclasses_=fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=7bf782877915a751bc05db3bf53d5078

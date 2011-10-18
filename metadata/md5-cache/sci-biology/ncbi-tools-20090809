@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install prepare setup
+DEPEND=app-shells/tcsh dev-lang/perl media-libs/libpng X? ( x11-libs/openmotif )
+DESCRIPTION=Development toolkit and applications for computational biology, including NCBI BLAST
+EAPI=2
+HOMEPAGE=http://www.ncbi.nlm.nih.gov/
+IUSE=doc X
+KEYWORDS=~alpha ~amd64 ~ppc64 x86
+LICENSE=public-domain
+RDEPEND=app-shells/tcsh dev-lang/perl media-libs/libpng X? ( x11-libs/openmotif )
+SLOT=0
+SRC_URI=ftp://ftp.ncbi.nlm.nih.gov/toolbox/ncbi_tools/old/20090809/ncbi.tar.gz -> ncbi-tools-20090809.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=483d785162b53447fee9d7380aefc12b

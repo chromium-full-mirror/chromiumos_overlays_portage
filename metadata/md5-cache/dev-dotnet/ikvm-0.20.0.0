@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=>=dev-lang/mono-1.1 !dev-dotnet/ikvm-bin >=dev-java/jikes-1.21 >=dev-dotnet/nant-0.85_rc2 app-arch/unzip dev-util/pkgconfig
+DESCRIPTION=Java VM for .NET
+HOMEPAGE=http://www.ikvm.net/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=as-is
+RDEPEND=>=dev-lang/mono-1.1
+SLOT=0
+SRC_URI=mirror://sourceforge/ikvm/ikvm-0.20.0.0.zip mirror://gnu/classpath/classpath-0.18.tar.gz
+_eclasses_=mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=b34269de67ce5651325a5880a8b752c8

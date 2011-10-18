@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm prerm setup unpack
+DEPEND=>=sys-apps/sed-4 x11-misc/gccmakedep x11-misc/imake doc? ( app-text/ptex )
+DESCRIPTION=A client-server based Kana-Kanji conversion system
+HOMEPAGE=http://canna.sourceforge.jp/
+IUSE=doc
+KEYWORDS=~alpha ~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86
+LICENSE=MIT
+SLOT=0
+SRC_URI=mirror://sourceforge.jp/canna/9565/Canna37p3.tar.bz2
+_eclasses_=cannadic	504aca4212c767265c609799deb00f75	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=639098ae3e312858174d1360cbc50071

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare
+DEPEND=dev-lang/ruby dev-ruby/ruby-romkan dev-ruby/ruby-bsearch app-dicts/migemo-dict[-unicode] emacs? ( virtual/emacs app-emacs/apel )
+DESCRIPTION=Migemo is Japanese Incremental Search Tool
+EAPI=2
+HOMEPAGE=http://0xcc.net/migemo/
+IUSE=emacs
+KEYWORDS=alpha ~amd64 hppa ia64 ~ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/ruby dev-ruby/ruby-romkan dev-ruby/ruby-bsearch app-dicts/migemo-dict[-unicode] emacs? ( virtual/emacs app-emacs/apel )
+SLOT=0
+SRC_URI=http://0xcc.net/migemo/stable/migemo-0.40.tar.gz
+_eclasses_=elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=f74eac4f58c1d9917e0b441a116c2da9

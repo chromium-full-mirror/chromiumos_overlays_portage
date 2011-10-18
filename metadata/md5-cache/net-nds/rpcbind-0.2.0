@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=net-libs/libtirpc
+DESCRIPTION=portmap replacement which supports RPC over various protocols
+HOMEPAGE=http://sourceforge.net/projects/rpcbind/
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
+LICENSE=BSD
+RDEPEND=net-libs/libtirpc
+SLOT=0
+SRC_URI=mirror://sourceforge/rpcbind/rpcbind-0.2.0.tar.bz2
+_md5_=0906f9b894b63acee8efdb55fd0e1328

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst prepare setup
+DEPEND=!net-misc/strongswan dev-libs/gmp dev-lang/perl smartcard? ( dev-libs/opensc ) curl? ( net-misc/curl ) ldap? ( net-nds/openldap ) virtual/linux-sources
+DESCRIPTION=Open Source implementation of IPsec for the Linux operating system (was SuperFreeS/WAN).
+EAPI=2
+HOMEPAGE=http://www.openswan.org/
+IUSE=curl ldap smartcard extra-algorithms weak-algorithms ms-bad-proposal
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=!net-misc/strongswan dev-libs/gmp dev-lang/perl smartcard? ( dev-libs/opensc ) curl? ( net-misc/curl ) ldap? ( net-nds/openldap ) virtual/logger sys-apps/iproute2
+SLOT=0
+SRC_URI=http://www.openswan.org/download/openswan-2.4.15.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	linux-info	8d722422d00ae99ed52a790b20b9bfc4	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=41aacc4eb0894afaab0413fb959fe1b9

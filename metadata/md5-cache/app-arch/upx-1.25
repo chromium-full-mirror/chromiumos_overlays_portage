@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DEPEND=!app-arch/upx-ucl
+DESCRIPTION=Ultimate Packer for eXecutables
+HOMEPAGE=http://upx.sourceforge.net/
+KEYWORDS=s390 x86
+LICENSE=GPL-2
+RDEPEND=!app-arch/upx-ucl
+RESTRICT=strip
+SLOT=0
+SRC_URI=http://upx.sourceforge.net/download/upx-1.25-linux.tar.gz
+_md5_=32c8c8a6e793f716606717cffa89159c

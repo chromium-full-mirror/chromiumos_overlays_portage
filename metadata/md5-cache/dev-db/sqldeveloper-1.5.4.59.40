@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install nofetch postinst prepare
+DEPEND=mssql? ( dev-java/jtds ) mysql? ( dev-java/jdbc-mysql ) sybase? ( dev-java/jtds )
+DESCRIPTION=Oracle SQL Developer is a graphical tool for database development
+EAPI=2
+HOMEPAGE=http://www.oracle.com/technology/products/database/sql_developer/
+IUSE=mssql mysql sybase
+KEYWORDS=~amd64 x86
+LICENSE=OTN
+RDEPEND=>=virtual/jdk-1.5.0 mssql? ( dev-java/jtds ) mysql? ( dev-java/jdbc-mysql ) sybase? ( dev-java/jtds )
+RESTRICT=fetch
+SLOT=0
+SRC_URI=sqldeveloper-1.5.4.59.40-no-jre.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=9338cc84022ad92740e7e9952af9566f

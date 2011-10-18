@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=Command-line ape 2.0 tagger
+EAPI=2
+HOMEPAGE=http://muth.org/Robert/Apetag/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=dev-lang/python
+SLOT=0
+SRC_URI=http://muth.org/Robert/Apetag/apetag.1.12.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=3022856c4fccecf8aad6cb991d26e2f8

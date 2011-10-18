@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install nofetch preinst setup
+DEPEND=app-arch/unzip >=dev-java/java-config-2.1.9-r1
+DESCRIPTION=A set of monitoring APIs and tools for monitoring the performance of the JVM in production environments.
+HOMEPAGE=http://java.sun.com/performance/jvmstat/
+IUSE=doc elibc_FreeBSD
+KEYWORDS=~amd64 ~x86
+LICENSE=sun-bcla-jvmstat
+RDEPEND=>=virtual/jre-1.5 >=dev-java/java-config-2.1.9-r1
+RESTRICT=fetch strip
+SLOT=0
+SRC_URI=jvmstat-3_0.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	java-pkg-2	39b2c3db200ad244ca675b2a1363aa75	java-utils-2	9c079d63349fb3fcd154c1630807a59a	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=592a013777d84f970298701276308db6

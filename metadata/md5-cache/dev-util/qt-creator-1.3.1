@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=>=x11-libs/qt-assistant-4.6.0:4 >=x11-libs/qt-gui-4.6.0:4[dbus,qt3support]
+DESCRIPTION=Lightweight IDE for C++ development centering around Qt
+EAPI=2
+HOMEPAGE=http://labs.qtsoftware.com/page/Projects/Tools/QtCreator
+IUSE=bineditor bookmarks +cmake cvs debug +designer doc examples fakevim git kde mercurial perforce qml qtscript rss subversion linguas_de linguas_es linguas_fr linguas_it linguas_ja linguas_pl linguas_ru linguas_sl
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86 ~amd64-linux
+LICENSE=LGPL-2.1
+RDEPEND=>=x11-libs/qt-assistant-4.6.0:4 >=x11-libs/qt-gui-4.6.0:4[dbus,qt3support] >=x11-libs/qt-sql-4.6.1:4 >=x11-libs/qt-svg-4.6.1:4 >=x11-libs/qt-test-4.6.1:4 >=x11-libs/qt-webkit-4.6.1:4 !kde? ( || ( >=x11-libs/qt-phonon-4.6.1:4 media-sound/phonon ) ) kde? ( media-sound/phonon ) cmake? ( dev-util/cmake ) cvs? ( dev-util/cvs ) sys-devel/gdb examples? ( >=x11-libs/qt-demo-4.6.1:4 ) git? ( dev-util/git ) mercurial? ( dev-vcs/mercurial ) qml? ( >=x11-libs/qt-declarative-4.6.0:4 ) qtscript? ( >=x11-libs/qt-script-4.6.1:4 ) subversion? ( dev-util/subversion )
+SLOT=0
+SRC_URI=http://get.qt.nokia.com/qtcreator/qt-creator-1.3.1-src.tar.gz
+_eclasses_=base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	qt4-r2	9324cde5d9328d2445c95232dd8bc158	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=dd0d0f0a37ae4adaa4feb27afca4224b

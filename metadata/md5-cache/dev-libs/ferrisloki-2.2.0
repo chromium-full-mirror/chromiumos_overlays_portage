@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=stlport? ( >=dev-libs/STLport-4.5.3-r3 ) =dev-libs/libsigc++-1.2* dev-util/pkgconfig
+DESCRIPTION=Loki C++ library from Modern C++ Design
+HOMEPAGE=http://witme.sourceforge.net/libferris.web/
+IUSE=stlport
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=stlport? ( >=dev-libs/STLport-4.5.3-r3 ) =dev-libs/libsigc++-1.2*
+SLOT=0
+SRC_URI=mirror://sourceforge/witme/ferrisloki-2.2.0.tar.bz2
+_md5_=934eb6e11578a68d74ffb3f3a845c4f8

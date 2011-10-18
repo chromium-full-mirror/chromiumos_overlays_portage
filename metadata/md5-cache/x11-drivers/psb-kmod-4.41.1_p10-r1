@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm preinst prepare setup unpack
+DEPEND=x11-drivers/psb-firmware >=app-arch/rpm2targz-9.0.0.3g kernel_linux? ( virtual/modutils ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+DESCRIPTION=kernel module for the intel gma500 (poulsbo)
+EAPI=2
+HOMEPAGE=http://www.happyassassin.net/2009/09/26/gma-500-poulsbo-driver-for-fedora-11-soon-to-be-in-rpm-fusion/
+IUSE=kernel_linux
+KEYWORDS=~x86
+LICENSE=GPL-2
+RDEPEND=kernel_linux? ( virtual/modutils )
+SLOT=0
+SRC_URI=http://download1.rpmfusion.org/nonfree/fedora/updates/11/SRPMS/psb-kmod-4.41.1-10.fc11.src.rpm
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	linux-info	8d722422d00ae99ed52a790b20b9bfc4	linux-mod	07a3d250a1268d811d3e8730e5741394	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	rpm	e703d62d2e2b396a7fb0262b79fdba53	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=a6ba5e681d569dbf12a9db6e7f18cdc5

@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install
+DEPEND=virtual/latex-base
+DESCRIPTION=Program for performing molecular dynamics simulations.
+HOMEPAGE=http://www.earth.ox.ac.uk/~keithr/moldy.html
+KEYWORDS=x86 ~amd64
+LICENSE=GPL-2
+RDEPEND=virtual/latex-base
+SLOT=0
+SRC_URI=ftp://ftp.earth.ox.ac.uk/pub/keith/moldy-2.16e.tar.gz
+_md5_=654b48a9986a61764c46081f0d58a3c2

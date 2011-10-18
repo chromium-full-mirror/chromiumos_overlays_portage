@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install
+DEPEND=>=dev-lang/ocaml-3.10.2[ocamlopt?]
+DESCRIPTION=HeVeA is a quite complete and fast LaTeX to HTML translator
+EAPI=2
+HOMEPAGE=http://pauillac.inria.fr/~maranget/hevea/
+IUSE=+ocamlopt
+KEYWORDS=amd64 ppc ~ppc64 sparc x86
+LICENSE=QPL
+RDEPEND=>=dev-lang/ocaml-3.10.2[ocamlopt?]
+SLOT=0
+SRC_URI=ftp://ftp.inria.fr/INRIA/moscova/hevea/hevea-1.10.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=2e11416351f426a83024fce473ff6d4e

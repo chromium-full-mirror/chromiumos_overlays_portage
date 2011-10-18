@@ -1,0 +1,8 @@
+DEFINED_PHASES=install
+DESCRIPTION=small command line tool for testing SIP applications and devices
+HOMEPAGE=http://sipsak.org/
+KEYWORDS=~x86 ~sparc
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=http://download.berlios.de/sipsak/sipsak-0.8.12.tar.gz
+_md5_=b79cc5401810f8f1eec150315cbb5c7b

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND=dev-lang/python[threads] >=dev-libs/glib-2.4.0 >=dev-libs/libxml2-2.6.0[python] sqlite? ( dev-python/dbus-python >=dev-python/pysqlite-2.3.0 ) avahi? ( net-dns/avahi[python] ) >=app-admin/eselect-python-20091230 >=dev-lang/python-2.5 dev-lang/python
+DESCRIPTION=Basic Framework for all Kaa Python Modules.
+EAPI=2
+HOMEPAGE=http://freevo.sourceforge.net/kaa/
+IUSE=avahi ssl sqlite tls lirc
+KEYWORDS=amd64 ppc x86
+LICENSE=LGPL-2.1
+RDEPEND=dev-lang/python[threads] >=dev-libs/glib-2.4.0 >=dev-libs/libxml2-2.6.0[python] sqlite? ( dev-python/dbus-python >=dev-python/pysqlite-2.3.0 ) avahi? ( net-dns/avahi[python] ) dev-python/pynotifier lirc? ( dev-python/pylirc ) tls? ( dev-python/tlslite ) >=app-admin/eselect-python-20091230 >=dev-lang/python-2.5 dev-lang/python
+SLOT=0
+SRC_URI=mirror://sourceforge/freevo/kaa-base-0.6.0.tar.gz
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=d31c77eb4c594ea8910c885ac64e9da7

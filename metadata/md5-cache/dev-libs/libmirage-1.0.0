@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=>=dev-libs/glib-2.6 >=media-libs/libsndfile-1.0 >=sys-devel/flex-2.5.33 sys-devel/bison doc? ( dev-util/gtk-doc )
+DESCRIPTION=libMirage is a CD-ROM image access library
+HOMEPAGE=http://cdemu.org
+IUSE=doc
+KEYWORDS=amd64 x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/glib-2.6 >=media-libs/libsndfile-1.0 >=sys-devel/flex-2.5.33 sys-devel/bison doc? ( dev-util/gtk-doc )
+SLOT=0
+SRC_URI=mirror://sourceforge/cdemu/libmirage-1.0.0.tar.bz2
+_md5_=ee9aaaa0c77dc62a7fb80ad5bc3a3dd1

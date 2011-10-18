@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=x11-libs/libX11 xinerama? ( x11-proto/xineramaproto x11-libs/libXinerama )
+DESCRIPTION=a dynamic window manager for X11
+HOMEPAGE=http://www.suckless.org/dwm/
+IUSE=xinerama savedconfig
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86 ~x86-fbsd
+LICENSE=MIT
+RDEPEND=x11-libs/libX11 xinerama? ( x11-proto/xineramaproto x11-libs/libXinerama ) x11-apps/xsetroot
+SLOT=0
+SRC_URI=http://code.suckless.org/dl/dwm/dwm-5.7.2.tar.gz
+_eclasses_=multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	savedconfig	57e3db69f6728c3ef495ca243a4c9e47	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=4b5aa7c5a462baa6910810a0a47c0188

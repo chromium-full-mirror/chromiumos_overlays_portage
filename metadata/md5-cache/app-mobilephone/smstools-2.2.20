@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst setup unpack
+DESCRIPTION=Send and receive short messages through GSM modems
+HOMEPAGE=http://smstools.meinemullemaus.de/
+IUSE=stats
+KEYWORDS=~x86 ~amd64 ~ppc
+LICENSE=GPL-2
+RDEPEND=sys-process/procps stats? ( >=dev-libs/mm-1.4.0 )
+SLOT=0
+SRC_URI=http://www.meinemullemaus.de/smstools/packages/smstools-2.2.20.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=a7551efb4d3fb2b0213cde49c105a086

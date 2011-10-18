@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst setup unpack
+DEPEND=pdf? ( gnustep-libs/popplerkit ) >=gnustep-apps/systempreferences-1.0.1_p24791 >=dev-db/sqlite-3.2.8 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b >=gnustep-base/gnustep-make-2.0 virtual/gnustep-back
+DESCRIPTION=A workspace manager for GNUstep
+HOMEPAGE=http://www.gnustep.it/enrico/gworkspace/
+IUSE=pdf debug doc
+KEYWORDS=amd64 ppc x86
+LICENSE=GPL-2
+RDEPEND=!gnustep-apps/desktop !gnustep-apps/recycler >=gnustep-base/gnustep-make-2.0 virtual/gnustep-back debug? ( >=sys-devel/gdb-6.0 )
+SLOT=0
+SRC_URI=http://www.gnustep.it/enrico/gworkspace/gworkspace-0.8.6.tar.gz
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	gnustep-2	4e1a0c5668a90e5eff7283ac54600603	gnustep-base	5f71ad5ba4635aa963575322595f2789	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=8a2ee86c8e54008a3f5857288adf6565

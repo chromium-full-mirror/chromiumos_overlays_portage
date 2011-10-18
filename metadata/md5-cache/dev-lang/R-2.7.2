@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile config configure install postinst prepare setup test unpack
+DEPEND=dev-lang/perl >=dev-libs/libpcre-7.3 app-arch/bzip2 virtual/blas app-text/ghostscript-gpl cairo? ( x11-libs/cairo[X] || ( >=x11-libs/pango-1.20[X] <x11-libs/pango-1.20 ) ) readline? ( sys-libs/readline ) jpeg? ( media-libs/jpeg ) png? ( media-libs/libpng ) lapack? ( virtual/lapack ) tk? ( dev-lang/tk ) X? ( x11-libs/libXmu x11-misc/xdg-utils ) dev-util/pkgconfig doc? ( virtual/latex-base || ( dev-texlive/texlive-fontsrecommended app-text/ptex ) ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Language and environment for statistical computing and graphics
+EAPI=2
+HOMEPAGE=http://www.r-project.org/
+IUSE=doc java jpeg lapack minimal nls png readline tk X cairo debug bash-completion
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE=GPL-2 LGPL-2.1
+PDEPEND=bash-completion? ( app-shells/bash-completion )
+RDEPEND=dev-lang/perl >=dev-libs/libpcre-7.3 app-arch/bzip2 virtual/blas app-text/ghostscript-gpl cairo? ( x11-libs/cairo[X] || ( >=x11-libs/pango-1.20[X] <x11-libs/pango-1.20 ) ) readline? ( sys-libs/readline ) jpeg? ( media-libs/jpeg ) png? ( media-libs/libpng ) lapack? ( virtual/lapack ) tk? ( dev-lang/tk ) X? ( x11-libs/libXmu x11-misc/xdg-utils ) app-arch/unzip app-arch/zip java? ( >=virtual/jre-1.5 ) bash-completion? ( app-admin/eselect )
+SLOT=0
+SRC_URI=mirror://cran/src/base/R-2/R-2.7.2.tar.gz bash-completion? ( mirror://gentoo/R.bash_completion.bz2 )
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	bash-completion	f0fab76a98c0e4b3d72b6beb28d3f653	eutils	c89e7605f1414fa0f33eae391db1b5d3	flag-o-matic	01a8b1eb019305bc4b4a8bd0b04e4cd8	fortran	bd0fac3e085b8c7c86b09139dbedac42	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=fed58818d74e68e9967ac6ddc6be2727

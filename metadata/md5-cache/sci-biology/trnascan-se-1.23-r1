@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install test unpack
+DEPEND=dev-lang/perl
+DESCRIPTION=tRNA detection in large-scale genome sequences
+HOMEPAGE=http://selab.wustl.edu/cgi-bin/selab.pl?mode=software#trnascan
+KEYWORDS=~amd64 x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/perl
+SLOT=0
+SRC_URI=mirror://gentoo/trnascan-se-1.23.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=516b347fef8632fa9701c4713df000fe

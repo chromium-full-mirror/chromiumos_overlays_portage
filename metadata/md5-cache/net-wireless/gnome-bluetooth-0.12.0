@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst unpack
+DEPEND=>=gnome-base/libgnomeui-2 >=x11-libs/gtk+-2.10 >=gnome-base/librsvg-2 >=gnome-base/libglade-2 >=gnome-base/libgnome-2 >=gnome-base/libbonobo-2 >=gnome-base/libbonoboui-2 >=gnome-base/gconf-2.3.3 >=gnome-base/orbit-2 >=net-wireless/libbtctl-0.9 >=dev-python/pygtk-2.6 >=dev-util/gob-2 >=dev-util/intltool-0.35 dev-util/pkgconfig >=app-admin/eselect-python-20091230 dev-lang/python >=sys-apps/sed-4
+DESCRIPTION=Gnome2 Bluetooth integration suite
+HOMEPAGE=http://live.gnome.org/GnomeBluetooth
+IUSE=debug
+KEYWORDS=~amd64 ~hppa ppc ~x86
+LICENSE=GPL-2
+RDEPEND=>=gnome-base/libgnomeui-2 >=x11-libs/gtk+-2.10 >=gnome-base/librsvg-2 >=gnome-base/libglade-2 >=gnome-base/libgnome-2 >=gnome-base/libbonobo-2 >=gnome-base/libbonoboui-2 >=gnome-base/gconf-2.3.3 >=gnome-base/orbit-2 >=net-wireless/libbtctl-0.9 >=dev-python/pygtk-2.6 >=app-admin/eselect-python-20091230 dev-lang/python
+SLOT=0
+SRC_URI=mirror://gnome/sources/gnome-bluetooth/0.12/gnome-bluetooth-0.12.0.tar.bz2
+_eclasses_=distutils	6913a81639c955969c9686be71b03a30	fdo-mime	9c46e30acd923ff12e325dbe96bb98b9	gnome.org	6d236bfa516020939a4adbc435063f79	gnome2	a6e6d84c3fe3f0cec09451d083331d60	gnome2-utils	0067e2e4dc66e2ff223a9c527e329407	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	python	b3471f94188b4b0f3a0681898251591f	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=1d963dbe9d99ed0dc401ade0a4e1472c

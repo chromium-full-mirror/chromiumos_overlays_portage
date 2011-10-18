@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-libs/popt virtual/os-headers
+DESCRIPTION=Tools for creating initrd images
+HOMEPAGE=http://www.redhat.com
+IUSE=selinux
+KEYWORDS=alpha ~amd64 ia64 ppc ~sparc x86
+LICENSE=GPL-2
+PDEPEND=selinux? ( sys-apps/policycoreutils )
+RDEPEND=app-shells/bash
+SLOT=0
+SRC_URI=mirror://gentoo/mkinitrd-3.5.7.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e18f3157626e071008d7ba8c03e056a3

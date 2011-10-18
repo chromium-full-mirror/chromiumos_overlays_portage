@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND=>=app-i18n/ibus-table-1.2.0.20090912 >=dev-lang/python-2.6 !app-i18n/ibus-table-additional dev-util/pkgconfig
+DESCRIPTION=The code tables for IBus-Table
+HOMEPAGE=http://code.google.com/p/ibus/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=>=app-i18n/ibus-table-1.2.0.20090912 >=dev-lang/python-2.6 !app-i18n/ibus-table-additional
+SLOT=0
+SRC_URI=http://ibus.googlecode.com/files/ibus-table-code-1.2.0.20100120.tar.gz
+_md5_=e13f81b5c8097ec6fd88020c372149aa

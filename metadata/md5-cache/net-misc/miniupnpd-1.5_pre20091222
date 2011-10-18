@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst prepare setup
+DEPEND=>=net-firewall/iptables-1.4.6 sys-apps/lsb-release >=sys-kernel/linux-headers-2.6.31
+DESCRIPTION=MiniUPnP IGD Daemon
+EAPI=2
+HOMEPAGE=http://miniupnp.free.fr/
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=>=net-firewall/iptables-1.4.6 sys-apps/lsb-release >=sys-kernel/linux-headers-2.6.31
+SLOT=0
+SRC_URI=http://miniupnp.free.fr/files/miniupnpd-1.4.20091222.tar.gz
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	linux-info	8d722422d00ae99ed52a790b20b9bfc4	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b	versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=f3d6fe92cf56e39ccbd724bb4b7fac4b

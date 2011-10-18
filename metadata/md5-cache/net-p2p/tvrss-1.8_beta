@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DEPEND=x11-libs/gtk+ >=dev-lang/perl-5.8.6 dev-perl/XML-RAI dev-perl/glib-perl dev-perl/gtk2-perl
+DESCRIPTION=TV RSS is a tool for automating torrent downloads
+HOMEPAGE=http://tvtrss.sourceforge.net/
+KEYWORDS=~x86 ~amd64
+LICENSE=GPL-2
+RDEPEND=x11-libs/gtk+ >=dev-lang/perl-5.8.6 dev-perl/XML-RAI dev-perl/glib-perl dev-perl/gtk2-perl
+SLOT=0
+SRC_URI=mirror://sourceforge/tvtrss/tvrss-1.8beta.tar.gz
+_eclasses_=versionator	b4e7d622ba2551eb4b5051879f5f4ad5
+_md5_=e7edcb64cbf97a14bead5cdb63ff0886

@@ -1,0 +1,14 @@
+DEFINED_PHASES=install unpack
+DEPEND=>=dev-lang/mono-2.0 www-client/lynx !>=dev-lang/mono-2.2 app-arch/unzip =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+DESCRIPTION=Documentation for mono's .Net class library
+HOMEPAGE=http://www.go-mono.com
+IUSE=X
+KEYWORDS=amd64 ppc ~sparc x86 ~x86-fbsd
+LICENSE=GPL-2
+PDEPEND=X? ( >=dev-util/mono-tools-2 )
+RDEPEND=>=dev-lang/mono-2.0 www-client/lynx !>=dev-lang/mono-2.2
+RESTRICT=test
+SLOT=0
+SRC_URI=http://ftp.novell.com/pub/mono/sources/monodoc/monodoc-2.0.zip
+_eclasses_=autotools	d8e256644b1dfe136572da201165ac1b	eutils	c89e7605f1414fa0f33eae391db1b5d3	libtool	4dd71cbef362174302a0d79d1360336e	mono	1b3a5799422dfe677c9d09f162d99cc0	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=6810b9dcb1f84e3ab8d8486ef12324d5

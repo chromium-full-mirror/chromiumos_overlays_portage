@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst prepare
+DEPEND=x11-libs/libX11 x11-libs/libXext x11-libs/libXpm x11-libs/libXrender x11-libs/libXcursor imlib? ( media-libs/imlib2[X] ) pam? ( virtual/pam )
+DESCRIPTION=locks the local X display until a password is entered
+EAPI=2
+HOMEPAGE=http://code.google.com/p/alock/ http://darkshed.net/projects/alock
+IUSE=imlib pam
+KEYWORDS=amd64 ~ppc x86
+LICENSE=GPL-2
+RDEPEND=x11-libs/libX11 x11-libs/libXext x11-libs/libXpm x11-libs/libXrender x11-libs/libXcursor imlib? ( media-libs/imlib2[X] ) pam? ( virtual/pam )
+SLOT=0
+SRC_URI=http://alock.googlecode.com/files/alock-svn-60.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=77238ce0b0573a45c88ab23de2649bef

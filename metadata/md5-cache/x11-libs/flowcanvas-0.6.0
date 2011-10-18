@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=dev-libs/boost >=dev-cpp/gtkmm-2.4 >=dev-cpp/libgnomecanvasmm-2.6 media-gfx/graphviz dev-util/pkgconfig doc? ( app-doc/doxygen )
+DESCRIPTION=Gtkmm/Gnomecanvasmm widget for boxes and lines environments
+EAPI=2
+HOMEPAGE=http://wiki.drobilla.net/FlowCanvas
+IUSE=debug doc
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/boost >=dev-cpp/gtkmm-2.4 >=dev-cpp/libgnomecanvasmm-2.6 media-gfx/graphviz
+SLOT=0
+SRC_URI=http://download.drobilla.net/flowcanvas-0.6.0.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=c4257ffc36c688e61747524a73422399

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=>=x11-libs/gtk+-2.6.3 media-libs/libpng cairo? ( x11-libs/cairo[X] x11-libs/pango[X] ) >=gpe-base/gpe-icons-0.25 sys-devel/gettext x11-proto/kbproto x11-proto/renderproto x11-proto/xproto >=dev-util/intltool-0.29 >=dev-util/pkgconfig-0.12.0
+DESCRIPTION=A collection of widgets and other common code shared by many GPE applications.
+EAPI=2
+HOMEPAGE=http://gpe.linuxtogo.org
+IUSE=+cairo nls
+KEYWORDS=amd64 arm x86
+LICENSE=LGPL-2
+RDEPEND=>=x11-libs/gtk+-2.6.3 media-libs/libpng cairo? ( x11-libs/cairo[X] x11-libs/pango[X] )
+SLOT=0
+SRC_URI=http://gpe.linuxtogo.org/download/source/libgpewidget-0.117.tar.bz2
+_eclasses_=gpe	7892305937cd38b71822f2a6c5751c61	libtool	4dd71cbef362174302a0d79d1360336e	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=86df4663f2374655fdc2af4d584a670f

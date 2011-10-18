@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install test
+DEPEND=dev-scheme/bigloo net-misc/curl mysql? ( dev-db/mysql ) sqlite? ( dev-db/sqlite:3 ) pcre? ( dev-libs/libpcre ) xml? ( dev-libs/libxml2 ) odbc? ( dev-db/unixODBC ) fastcgi? ( dev-libs/fcgi )
+DESCRIPTION=PHP compiler
+EAPI=2
+HOMEPAGE=http://code.roadsend.com/pcc
+IUSE=debug fastcgi mysql odbc pcre sqlite xml
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2 LGPL-2.1
+RDEPEND=dev-scheme/bigloo net-misc/curl mysql? ( dev-db/mysql ) sqlite? ( dev-db/sqlite:3 ) pcre? ( dev-libs/libpcre ) xml? ( dev-libs/libxml2 ) odbc? ( dev-db/unixODBC ) fastcgi? ( dev-libs/fcgi )
+SLOT=0
+SRC_URI=http://code.roadsend.com/snaps/roadsend-php-2.9.9-p1.tar.bz2
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=66dc432b376c822518ce8bd01f196832

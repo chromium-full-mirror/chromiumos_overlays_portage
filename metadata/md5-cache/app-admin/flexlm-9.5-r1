@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst unpack
+DESCRIPTION=Macrovision FLEXlm license manager and utils
+HOMEPAGE=http://www.macrovision.com/services/support/flexlm/lmgrd.shtml
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=as-is
+RESTRICT=strip
+SLOT=0
+SRC_URI=http://www.macrovision.com/services/support/flexlm/enduser.pdf x86? ( mirror://gentoo/lmgrd-x86.Z mirror://gentoo/lmutil-x86.Z ) amd64? ( mirror://gentoo/lmgrd-amd64.Z mirror://gentoo/lmutil-amd64.Z )
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=daecf054c2b8e747e88ad69d282aeab5

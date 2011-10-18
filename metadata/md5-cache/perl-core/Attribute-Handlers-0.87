@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
+DEPEND=dev-lang/perl[-build]
+DESCRIPTION=Simpler definition of attribute handlers
+EAPI=2
+HOMEPAGE=http://search.cpan.org/dist/Attribute-Handlers/
+KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
+RDEPEND=dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/S/SM/SMUELLER//Attribute-Handlers-0.87.tar.gz
+_eclasses_=alternatives	eb864f6e50a20036e4cd47c8fd8f64d1	base	cb7706cadb02c9e611a70f2c38bdb394	eutils	c89e7605f1414fa0f33eae391db1b5d3	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	perl-module	70f701cf0c3b39824e9e6a0e93513141	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=e8665da728db379c6d60b7323ded00bf

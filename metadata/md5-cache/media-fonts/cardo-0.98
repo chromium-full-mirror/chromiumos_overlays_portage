@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst postrm setup
+DEPEND=app-arch/unzip X? ( x11-apps/mkfontdir media-fonts/encodings ) >=media-libs/fontconfig-2.4.0
+DESCRIPTION=Unicode font for classicists, medievalists and linguists
+HOMEPAGE=http://scholarsfonts.net/cardofnt.html
+IUSE=X
+KEYWORDS=amd64 x86
+LICENSE=free-noncomm
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://scholarsfonts.net/cardo98.zip
+_eclasses_=eutils	c89e7605f1414fa0f33eae391db1b5d3	font	bc3df4ed373e09f86a90e8fad39034d6	multilib	d9b509f8ec69d5fd4789bd320d50e6d0	portability	0be430f759a631e692678ed796e09f5c	toolchain-funcs	39ac4a2f99e342286758b5e753f4fb8b
+_md5_=153e78d42c4f2c76bb8845e1d8735b03

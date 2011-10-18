@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DEPEND=>=dev-libs/glib-2 dev-util/pkgconfig
+DESCRIPTION=Sary: suffix array library and tools
+HOMEPAGE=http://sary.sourceforge.net/
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86
+LICENSE=LGPL-2.1
+RDEPEND=>=dev-libs/glib-2
+RESTRICT=test
+SLOT=0
+SRC_URI=http://sary.sourceforge.net/sary-1.2.0.tar.gz
+_md5_=c78ea92b648be9f5caea64bc346244f3
