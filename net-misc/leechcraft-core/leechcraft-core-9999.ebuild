@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/leechcraft-core/leechcraft-core-9999.ebuild,v 1.8 2012/08/14 21:19:05 maksbotan Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/leechcraft-core/leechcraft-core-9999.ebuild,v 1.10 2012/10/13 14:12:16 pinkbyte Exp $
 
 EAPI="4"
 
@@ -25,12 +25,21 @@ RDEPEND="${DEPEND}
 
 REQUIRED_USE="|| ( postgres sqlite )"
 
+# TODO: Maybe simplify this or add apropriate function to leechcraft eclass?
+pkg_pretend() {
+	if [[ ${MERGE_TYPE} != binary ]]; then
+		[[ $(gcc-major-version) -lt 4 ]] || \
+				( [[ $(gcc-major-version) -eq 4 && $(gcc-minor-version) -lt 6 ]] ) \
+			&& die "Sorry, but gcc 4.6 or higher is required."
+	fi
+}
+
 src_configure() {
 	local mycmakeargs=(
 		-DWITH_PLUGINS=False
 	)
 	if [[ ${PV} != 9999 ]]; then
-		mycmakeargs+= "-DLEECHCRAFT_VERSION=${PV}"
+		mycmakeargs+=( -DLEECHCRAFT_VERSION=${PV} )
 	fi
 	cmake-utils_src_configure
 }

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-apache/mod_caucho/mod_caucho-4.0.26.ebuild,v 1.3 2012/08/21 15:12:37 johu Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-apache/mod_caucho/mod_caucho-4.0.26.ebuild,v 1.5 2012/10/16 08:13:28 patrick Exp $
 
 EAPI="2"
 
@@ -16,9 +16,9 @@ SLOT="0"
 KEYWORDS="amd64 ~ppc ~ppc64 x86"
 IUSE=""
 
-DEPEND="${DEPEND}
-	app-arch/unzip"
-RDEPEND=""
+DEPEND="app-arch/unzip
+	=virtual/jre-1.6.0"
+RDEPEND="=virtual/jre-1.6.0"
 
 S="${WORKDIR}/resin-${PV}"
 
@@ -27,7 +27,7 @@ APACHE2_MOD_CONF="88_${PN}"
 APACHE2_MOD_DEFINE="CAUCHO"
 APACHE2_MOD_FILE="${S}/modules/c/src/apache2/.libs/${PN}.so"
 
-need_apache2
+need_apache2_2
 
 src_prepare() {
 	for i in "${WORKDIR}"/${PV}/mod_caucho-*; do

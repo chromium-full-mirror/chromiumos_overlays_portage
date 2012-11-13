@@ -1,6 +1,14 @@
 # ChangeLog for dev-ruby/sexp_processor
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/sexp_processor/ChangeLog,v 1.2 2012/08/16 14:25:23 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/sexp_processor/ChangeLog,v 1.4 2012/10/28 17:21:56 armin76 Exp $
+
+  28 Oct 2012; Raúl Porcel <armin76@gentoo.org> sexp_processor-3.0.5.ebuild:
+  alpha stable
+
+*sexp_processor-4.0.1 (23 Sep 2012)
+
+  23 Sep 2012; Hans de Graaff <graaff@gentoo.org> +sexp_processor-4.0.1.ebuild:
+  Version bump.
 
   16 Aug 2012; Diego E. Pettenò <flameeyes@gentoo.org>
   -sexp_processor-3.0.10.ebuild, -sexp_processor-3.0.9.ebuild,

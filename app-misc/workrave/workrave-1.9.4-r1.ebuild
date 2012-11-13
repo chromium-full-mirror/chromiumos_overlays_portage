@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-misc/workrave/workrave-1.9.4-r1.ebuild,v 1.1 2012/05/13 12:00:17 pacho Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-misc/workrave/workrave-1.9.4-r1.ebuild,v 1.5 2012/10/25 18:42:54 eva Exp $
 
 EAPI="4"
 GCONF_DEBUG="yes"
@@ -14,7 +14,7 @@ SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~x86"
+KEYWORDS="amd64 ppc x86"
 IUSE="dbus doc distribution gnome gstreamer nls pulseaudio test"
 
 RDEPEND=">=dev-libs/glib-2.10:2
@@ -32,8 +32,8 @@ RDEPEND=">=dev-libs/glib-2.10:2
 		>=gnome-base/libbonobo-2
 		>=gnome-base/orbit-2.8.3 )
 	gstreamer? (
-		>=media-libs/gstreamer-0.10
-		>=media-libs/gst-plugins-base-0.10 )
+		>=media-libs/gstreamer-0.10:0.10
+		>=media-libs/gst-plugins-base-0.10:0.10 )
 	pulseaudio? ( >=media-sound/pulseaudio-0.9.15 )
 	x11-libs/libSM
 	x11-libs/libX11

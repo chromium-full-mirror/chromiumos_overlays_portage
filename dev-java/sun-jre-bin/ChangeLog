@@ -1,6 +1,40 @@
 # ChangeLog for dev-java/sun-jre-bin
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-java/sun-jre-bin/ChangeLog,v 1.219 2012/08/23 20:15:34 caster Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-java/sun-jre-bin/ChangeLog,v 1.227 2012/10/23 05:04:57 nativemad Exp $
+
+  23 Oct 2012; Andreas Schuerch <nativemad@gentoo.org>
+  sun-jre-bin-1.6.0.37.ebuild:
+  x86 stable, see bug 438706
+
+  21 Oct 2012; Agostino Sarubbo <ago@gentoo.org> sun-jre-bin-1.6.0.37.ebuild:
+  Stable for amd64, wrt bug #438706
+
+*sun-jre-bin-1.6.0.37 (17 Oct 2012)
+
+  17 Oct 2012; Ralph Sennhauser <sera@gentoo.org> +sun-jre-bin-1.6.0.37.ebuild:
+  Security bump. #438706
+  ia64 is back.
+  Use QA_PREBUILT instead of individual variables.
+  Fix desktop files for newer standard.
+  Add elog about the name change to oracle-jre-bin for JRE 7.
+
+  13 Sep 2012; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  sun-jre-bin-1.6.0.35.ebuild:
+  x86 stable wrt bug #433094
+
+  02 Sep 2012; Agostino Sarubbo <ago@gentoo.org> sun-jre-bin-1.6.0.35.ebuild:
+  Stable for amd64, wrt bug #433094
+
+  31 Aug 2012; Agostino Sarubbo <ago@gentoo.org> sun-jre-bin-1.6.0.34.ebuild:
+  Stable for amd64, wrt bug #431492
+
+  31 Aug 2012; Vlastimil Babka <caster@gentoo.org> sun-jre-bin-1.6.0.35.ebuild:
+  Fix download URL, bug #433553.
+
+*sun-jre-bin-1.6.0.35 (31 Aug 2012)
+
+  31 Aug 2012; Vlastimil Babka <caster@gentoo.org> +sun-jre-bin-1.6.0.35.ebuild:
+  Version bump, security bug #433094.
 
 *sun-jre-bin-1.6.0.34 (23 Aug 2012)
 
@@ -1115,4 +1149,3 @@
   sun-jre-1.4.2.03.ebuild, files/sun-jre-1.4.2.03:
   First version of the Sun JRE, I primarily based this on the sun-jdk-1.4.2.03
   ebuild, I hope I ported it over correctly
-

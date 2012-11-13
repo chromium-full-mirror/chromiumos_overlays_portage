@@ -43,6 +43,13 @@
       HTTP-based services such as Apache and nginx. Disabling the flag
       does not remove any plugin file.
     </flag>
+    <flag name="dhcpd">
+      Install <pkg>dev-perl/Net-IP</pkg>,
+      <pkg>dev-perl/HTTP-Date</pkg> and <pkg>net-misc/dhcp</pkg> to
+      monitor DHCP lease usage. This only works if the server is on
+      the same system as the node, so the server is also brought
+      in. Disabling the flag does not remove any plugin file.
+    </flag>
     <flag name="java">
       Build the Java-based plugins to monitor JMX-compatible
       applications. Disabling the flag removes the jmx monitoring
@@ -57,6 +64,11 @@
       web pages and graphs. This is only meaningful if the minimal USE
       flag is disabled.
     </flag>
+    <flag name="apache">
+      Set up the configuration of the CGI generation of HTML and
+      graphs to work with Apache. This also install an include-able
+      configuration file.
+    </flag>
     <flag name="ipv6">
       Add support for IPv6 in munin-node. IPv6 support for the master
       is always enabled, but the node requires a newer version of
@@ -68,6 +80,11 @@
       the presence of <pkg>virtual/perl-Sys-Syslog</pkg>. As of
       version 2.0.2, the master scripts only log to file, and not to
       syslog.
+    </flag>
+    <flag name="doc">
+      Build and install a local copy of the HTML documentation for the
+      whole software. This requires <pkg>dev-python/sphinx</pkg> to
+      process the documentation sources.
     </flag>
   </use>
 </pkgmetadata>

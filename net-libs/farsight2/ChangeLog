@@ -1,6 +1,28 @@
 # ChangeLog for net-libs/farsight2
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/farsight2/ChangeLog,v 1.64 2012/06/30 12:46:46 pacho Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/farsight2/ChangeLog,v 1.71 2012/10/28 16:18:07 armin76 Exp $
+
+  28 Oct 2012; Raúl Porcel <armin76@gentoo.org> farsight2-0.0.31.ebuild:
+  ia64/sparc stable wrt #427544
+
+  25 Oct 2012; Gilles Dartiguelongue <eva@gentoo.org> farsight2-0.0.29.ebuild,
+  farsight2-0.0.31.ebuild:
+  Pin gstreamer dependencies to slot 0.10.
+
+  16 Oct 2012; Matt Turner <mattst88@gentoo.org> farsight2-0.0.31.ebuild:
+  Stable on alpha, bug 427544.
+
+  16 Oct 2012; Anthony G. Basile <blueness@gentoo.org> farsight2-0.0.31.ebuild:
+  stable ppc, bug #427544
+
+  07 Oct 2012; Anthony G. Basile <blueness@gentoo.org> farsight2-0.0.31.ebuild:
+  stable ppc64, bug #427544
+
+  04 Oct 2012; Agostino Sarubbo <ago@gentoo.org> farsight2-0.0.31.ebuild:
+  Stable for amd64, wrt bug #427544
+
+  03 Oct 2012; Pawel Hajdan jr <phajdan.jr@gentoo.org> farsight2-0.0.31.ebuild:
+  x86 stable wrt bug #427544
 
 *farsight2-0.0.31 (30 Jun 2012)
 

@@ -1,6 +1,37 @@
 # ChangeLog for app-portage/portpeek
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-portage/portpeek/ChangeLog,v 1.150 2012/08/19 17:02:30 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-portage/portpeek/ChangeLog,v 1.158 2012/11/01 13:50:57 mpagano Exp $
+
+*portpeek-2.1.1 (01 Nov 2012)
+
+  01 Nov 2012; Michael Pagano <mpagano@gentoo.org> -portpeek-2.1.0.ebuild,
+  +portpeek-2.1.1.ebuild:
+  Remove some bad debug lines which caused exceptions. Remove old version
+
+*portpeek-2.1.0 (31 Oct 2012)
+
+  31 Oct 2012; Michael Pagano <mpagano@gentoo.org> +portpeek-2.1.0.ebuild:
+  Updated package.use and package.unmask handling.
+
+  17 Oct 2012; Pawel Hajdan jr <phajdan.jr@gentoo.org> portpeek-2.0.25.ebuild:
+  x86 stable wrt bug #437832
+
+  13 Oct 2012; Markus Meier <maekke@gentoo.org> portpeek-2.0.25.ebuild:
+  arm stable, bug #437832
+
+  12 Oct 2012; Anthony G. Basile <blueness@gentoo.org> portpeek-2.0.25.ebuild:
+  stable ppc, bug #437832
+
+  12 Oct 2012; Agostino Sarubbo <ago@gentoo.org> portpeek-2.0.25.ebuild:
+  Stable for amd64, wrt bug #437832
+
+  08 Sep 2012; Michael Pagano <mpagano@gentoo.org> -portpeek-1.9.70.ebuild:
+  Remove old version
+
+*portpeek-2.0.25 (01 Sep 2012)
+
+  01 Sep 2012; Michael Pagano <mpagano@gentoo.org> +portpeek-2.0.25.ebuild:
+  Use get_iuse instead of get_flags for package.use processing
 
   19 Aug 2012; Raúl Porcel <armin76@gentoo.org> portpeek-2.0.24.ebuild:
   sparc stable wrt #421997
@@ -713,4 +744,3 @@
   10 Oct 2007; Mike Pagano <mpagano@gentoo.org> +metadata.xml,
   +portpeek-1.5.7.ebuild:
   Initial ebuild for new package.
-

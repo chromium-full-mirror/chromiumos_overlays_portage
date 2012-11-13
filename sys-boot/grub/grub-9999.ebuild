@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-boot/grub/grub-9999.ebuild,v 1.81 2012/07/22 18:29:50 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-boot/grub/grub-9999.ebuild,v 1.85 2012/10/20 21:46:34 floppym Exp $
 
 EAPI=4
 
@@ -176,6 +176,7 @@ grub_src_configure() {
 
 	ECONF_SOURCE="${S}" \
 	econf \
+		--libdir=/usr/lib \
 		--htmldir="${EPREFIX}/usr/share/doc/${PF}/html" \
 		--disable-werror \
 		--program-prefix= \
@@ -215,11 +216,24 @@ grub_install_docs() {
 	emake -C docs DESTDIR="${D}" install-html
 }
 
+pkg_pretend() {
+	if [[ ${MERGE_TYPE} != binary ]]; then
+		# Bug 439082
+		if $(tc-getLD) --version | grep -q "GNU gold"; then
+			eerror "GRUB does not function correctly when built with the gold linker."
+			eerror "Please select the bfd linker with binutils-config."
+			die "GNU gold detected"
+		fi
+	fi
+}
+
 src_prepare() {
 	if [[ ${PV} != 9999 ]]; then
 		epatch "${FILESDIR}/${P}-parallel-make.patch" #424231
 		epatch "${FILESDIR}/${P}-no-gets.patch" #424703
 		epatch "${FILESDIR}/${P}-config-quoting.patch" #426364
+		epatch "${FILESDIR}/${P}-tftp-endian.patch" # 438612
+		epatch "${FILESDIR}/${P}-hardcoded-awk.patch" #424137
 	fi
 
 	# fix texinfo file name, bug 416035

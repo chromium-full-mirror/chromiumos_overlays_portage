@@ -1,10 +1,12 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/hypre/hypre-2.8.0b-r1.ebuild,v 1.4 2012/08/02 21:03:57 bicatali Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/hypre/hypre-2.8.0b-r1.ebuild,v 1.8 2012/10/18 21:06:49 jlec Exp $
 
 EAPI=4
 
-inherit eutils fortran-2
+FORTRAN_NEEDED=fortran
+
+inherit eutils fortran-2 toolchain-funcs
 
 DESCRIPTION="Parallel matrix preconditioners library"
 HOMEPAGE="http://acts.nersc.gov/hypre/"
@@ -21,8 +23,7 @@ RDEPEND="
 	lapack? ( virtual/lapack )
 	mpi? ( virtual/mpi )"
 DEPEND="${RDEPEND}
-	virtual/pkgconfig
-	fortran? ( virtual/fortran )"
+	virtual/pkgconfig"
 
 DOCS=( "${WORKDIR}"/${P}/{CHANGELOG,COPYRIGHT,README} )
 
@@ -34,12 +35,17 @@ src_prepare() {
 		-e 's:@LIBS@:@LIBS@ -lsuperlu:' \
 		-e 's:_SHARED@:_SHARED@ $(LDFLAGS):g' \
 		config/Makefile.config.in || die
+	sed \
+		-e '/HYPRE_ARCH/s: = :=:g' \
+		-i configure || die
+	tc-export CC
 }
 
 src_configure() {
-	myeconfargs+=(
+	local myeconfargs+=(
 		--enable-shared
 		--without-superlu
+		--without-strict-checking
 		$(use_enable fortran)
 		$(use_with mpi MPI)
 	)

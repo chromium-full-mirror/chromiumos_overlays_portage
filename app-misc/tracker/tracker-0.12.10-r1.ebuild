@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-misc/tracker/tracker-0.12.10-r1.ebuild,v 1.1 2012/07/20 15:47:53 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-misc/tracker/tracker-0.12.10-r1.ebuild,v 1.3 2012/10/25 18:40:42 eva Exp $
 
 EAPI="4"
 GCONF_DEBUG="no"
@@ -12,7 +12,7 @@ inherit eutils gnome2 linux-info multilib python versionator
 DESCRIPTION="A tagging metadata database, search tool and indexer"
 HOMEPAGE="http://projects.gnome.org/tracker/"
 
-LICENSE="GPL-2"
+LICENSE="GPL-2+ LGPL-2.1+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 # USE="doc" is managed by eclass.
@@ -44,7 +44,9 @@ RDEPEND="
 		>=x11-libs/gtk+-3.0:3 )
 	eds? (
 		>=mail-client/evolution-2.91.90
-		>=gnome-extra/evolution-data-server-2.91.90 )
+		>=gnome-extra/evolution-data-server-2.91.90
+		<mail-client/evolution-3.5.3
+		<gnome-extra/evolution-data-server-3.5.3 )
 	elibc_glibc? ( >=sys-libs/glibc-2.12 )
 	exif? ( >=media-libs/libexif-0.6 )
 	firefox-bookmarks? ( || (
@@ -58,7 +60,7 @@ RDEPEND="
 	gstreamer? (
 		>=media-libs/gstreamer-0.10.31:0.10
 		upnp? ( >=media-libs/gupnp-dlna-0.5 )
-		!upnp? ( >=media-libs/gst-plugins-base-0.10.31 ) )
+		!upnp? ( >=media-libs/gst-plugins-base-0.10.31:0.10 ) )
 	!gstreamer? ( !xine? ( || ( media-video/totem media-video/mplayer ) ) )
 	gtk? (
 		>=dev-libs/libgee-0.3:0

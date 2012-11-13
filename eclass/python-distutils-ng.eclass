@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/python-distutils-ng.eclass,v 1.26 2012/06/10 14:23:43 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/python-distutils-ng.eclass,v 1.29 2012/10/30 17:22:33 mgorny Exp $
 
 # @ECLASS: python-distutils-ng
 # @MAINTAINER:
@@ -59,12 +59,24 @@ fi
 # Set to any value to disable automatic reinstallation of scripts in bin
 # directories. See python-distutils-ng_src_install function.
 
+# @ECLASS-VARIABLE: PYTHON_USE
+# @DEFAULT_UNSET
+# @DESCRIPTION:
+# Comma-separated list of useflags needed for all(!) allowed
+# implementations. This is directly substituted into one or more of
+# dev-lang/python[${PYTHON_USE}], dev-python/pypy[${PYTHON_USE}] and
+# dev-java/jython[${PYTHON_USE}].
+# @CODE
+# example 1: PYTHON_USE="xml,sqlite"
+# example 2: PYTHON_USE="xml?,threads?,-foo"
+# @CODE
+
 EXPORT_FUNCTIONS src_prepare src_configure src_compile src_test src_install
 
 case "${EAPI}" in
 	0|1|2|3)
 		die "Unsupported EAPI=${EAPI} (too old) for python-distutils-ng.eclass" ;;
-	4)
+	4|5)
 		# EAPI=4 needed for REQUIRED_USE
 		S="${S:-${WORKDIR}/${P}}"
 		;;
@@ -86,9 +98,9 @@ _python-distutils-ng_get_binary_for_implementation() {
 	local impl="${1/_/.}"
 	case "${impl}" in
 		python?.?|jython?.?)
-			echo "/usr/bin/${impl}" ;;
+			echo "${EPREFIX}/usr/bin/${impl}" ;;
 		pypy?.?)
-			echo "/usr/bin/pypy-c${impl: -3}" ;;
+			echo "${EPREFIX}/usr/bin/pypy-c${impl: -3}" ;;
 		*)
 			die "Unsupported implementation: ${1}" ;;
 	esac
@@ -107,16 +119,20 @@ else
 fi
 unset required_use_str
 
+# avoid empty use deps
+_PYTHON_USE="${PYTHON_USE:+[${PYTHON_USE}]}"
+
+# set python DEPEND and RDEPEND
 for impl in ${PYTHON_COMPAT}; do
 	IUSE+=" python_targets_${impl}"
 	dep_str="${impl/_/.}"
 	case "${dep_str}" in
 		python?.?)
-			dep_str="dev-lang/python:${dep_str: -3}" ;;
+			dep_str="dev-lang/python:${dep_str: -3}${_PYTHON_USE}" ;;
 		jython?.?)
-			dep_str="dev-java/jython:${dep_str: -3}" ;;
+			dep_str="dev-java/jython:${dep_str: -3}${_PYTHON_USE}" ;;
 		pypy?.?)
-			dep_str="dev-python/pypy:${dep_str: -3}" ;;
+			dep_str="dev-python/pypy:${dep_str: -3}${_PYTHON_USE}" ;;
 		*)
 			die "Unsupported implementation: ${impl}" ;;
 	esac
@@ -384,7 +400,7 @@ python-distutils-ng_src_install() {
 	fi
 
 	if [[ -z "${PYTHON_DISABLE_SCRIPT_REDOS}" ]]; then
-		for script_file in $(find "${D}"{,usr/}{,s}bin/ -type f -executable 2> /dev/null); do
+		for script_file in $(find "${ED}"{,usr/}{,s}bin/ -type f -executable 2> /dev/null); do
 			python-distutils-ng_redoscript "/${script_file#${D}}"
 		done
 	fi

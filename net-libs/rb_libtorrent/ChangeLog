@@ -1,6 +1,46 @@
 # ChangeLog for net-libs/rb_libtorrent
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/rb_libtorrent/ChangeLog,v 1.132 2012/08/24 23:59:30 hwoarang Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/rb_libtorrent/ChangeLog,v 1.140 2012/11/08 06:24:13 flameeyes Exp $
+
+  08 Nov 2012; Diego E. Pettenò <flameeyes@gentoo.org>
+  rb_libtorrent-0.15.10.ebuild, rb_libtorrent-0.15.5.ebuild,
+  rb_libtorrent-0.15.9.ebuild, rb_libtorrent-0.16.3.ebuild,
+  rb_libtorrent-0.16.5.ebuild:
+  Handle USE=threads for boost 1.52.0-r1 and later. Remove keywords from ebuilds
+  that depends on older boost versions.
+
+  03 Nov 2012; Markos Chandras <hwoarang@gentoo.org>
+  rb_libtorrent-0.15.10.ebuild, rb_libtorrent-0.15.5.ebuild,
+  rb_libtorrent-0.15.9.ebuild, rb_libtorrent-0.16.3.ebuild:
+  Backport boost fix to 0.15.X releases. Bug #441582
+
+  02 Nov 2012; Markos Chandras <hwoarang@gentoo.org>
+  -rb_libtorrent-0.16.4.ebuild, rb_libtorrent-0.16.3.ebuild:
+  Backport fix from 0.16.5. Bug #440976
+
+  31 Oct 2012; Diego E. Pettenò <flameeyes@gentoo.org>
+  rb_libtorrent-0.16.5.ebuild:
+  Simplify finding boost library so that it works with all versions, now that
+  it's unslotted.
+
+*rb_libtorrent-0.16.5 (23 Oct 2012)
+
+  23 Oct 2012; Markos Chandras <hwoarang@gentoo.org>
+  +rb_libtorrent-0.16.5.ebuild:
+  Version bump
+
+*rb_libtorrent-0.16.4 (02 Oct 2012)
+
+  02 Oct 2012; Markos Chandras <hwoarang@gentoo.org>
+  +rb_libtorrent-0.16.4.ebuild:
+  Version bump
+
+  23 Sep 2012; Markos Chandras <hwoarang@gentoo.org> metadata.xml:
+  Remove qt herd from metadata
+
+  31 Aug 2012; Markos Chandras <hwoarang@gentoo.org>
+  -rb_libtorrent-0.16.1.ebuild, -rb_libtorrent-0.16.2.ebuild:
+  Remove old
 
 *rb_libtorrent-0.16.3 (24 Aug 2012)
 

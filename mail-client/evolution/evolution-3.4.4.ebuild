@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/mail-client/evolution/evolution-3.4.4.ebuild,v 1.1 2012/08/13 04:59:26 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/mail-client/evolution/evolution-3.4.4.ebuild,v 1.4 2012/10/27 07:24:21 tetromino Exp $
 
 EAPI="4"
 GCONF_DEBUG="no"
@@ -10,12 +10,13 @@ PYTHON_DEPEND="python? 2:2.5"
 inherit eutils flag-o-matic gnome2 python
 
 DESCRIPTION="Integrated mail, addressbook and calendaring functionality"
-HOMEPAGE="http://www.gnome.org/projects/evolution/"
+HOMEPAGE="http://projects.gnome.org/evolution/"
 
-LICENSE="GPL-2 LGPL-2 OPENLDAP"
+# Note: explicitly "|| ( LGPL-2 LGPL-3 )", not "LGPL-2+".
+LICENSE="|| ( LGPL-2 LGPL-3 ) CCPL-Attribution-ShareAlike-3.0 FDL-1.3+ OPENLDAP"
 SLOT="2.0"
-KEYWORDS="~amd64 ~x86 ~x86-fbsd"
-IUSE="clutter connman crypt doc +gnome-online-accounts gstreamer kerberos ldap map networkmanager python ssl"
+KEYWORDS="~amd64 ~ppc ~x86 ~x86-fbsd"
+IUSE="clutter connman crypt +gnome-online-accounts gstreamer kerberos ldap map networkmanager python ssl"
 
 # We need a graphical pinentry frontend to be able to ask for the GPG
 # password from inside evolution, bug 160302
@@ -26,7 +27,7 @@ PINENTRY_DEPEND="|| ( app-crypt/pinentry[gtk] app-crypt/pinentry-qt app-crypt/pi
 # pst is not mature enough and changes API/ABI frequently
 COMMON_DEPEND=">=dev-libs/glib-2.30:2
 	>=x11-libs/cairo-1.9.15[glib]
-	>=x11-libs/gtk+-3.2.0:3
+	>=x11-libs/gtk+-3.4:3
 	>=gnome-base/gnome-desktop-2.91.3:3
 	>=gnome-base/gsettings-desktop-schemas-2.91.92
 	>=dev-libs/libgweather-2.90.0:2
@@ -71,14 +72,13 @@ DEPEND="${COMMON_DEPEND}
 	app-text/docbook-xml-dtd:4.1.2
 	>=app-text/gnome-doc-utils-0.20.10
 	app-text/scrollkeeper
+	dev-util/gtk-doc-am
 	>=dev-util/intltool-0.40.0
 	sys-devel/bison
 	>=sys-devel/gettext-0.17
-	virtual/pkgconfig
-	doc? ( >=dev-util/gtk-doc-1.14 )"
+	virtual/pkgconfig"
 # eautoreconf needs:
 #	>=gnome-base/gnome-common-2.12
-#	>=dev-util/gtk-doc-am-1.9
 RDEPEND="${COMMON_DEPEND}
 	!<gnome-extra/evolution-exchange-2.32"
 

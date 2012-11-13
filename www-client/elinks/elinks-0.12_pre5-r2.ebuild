@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/elinks/elinks-0.12_pre5-r2.ebuild,v 1.3 2012/07/04 18:45:08 axs Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/elinks/elinks-0.12_pre5-r2.ebuild,v 1.10 2012/10/18 14:10:36 nativemad Exp $
 
 EAPI=4
 inherit eutils autotools flag-o-matic
@@ -14,7 +14,7 @@ SRC_URI="http://elinks.or.cz/download/${MY_P}.tar.bz2
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris"
+KEYWORDS="~alpha amd64 hppa ~ia64 ~mips ppc ppc64 ~sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris"
 IUSE="bittorrent bzip2 debug finger ftp gopher gpm guile idn ipv6 \
 	  javascript lua +mouse nls nntp perl ruby samba ssl unicode X zlib"
 RESTRICT="test"
@@ -54,23 +54,43 @@ src_prepare() {
 	epatch "${FILESDIR}"/${PN}-0.11.5-makefile.patch
 	epatch "${FILESDIR}"/${P}-compilation-fix.patch
 
-	if use javascript && has_version ">=dev-lang/spidermonkey-1.8"; then
-		if has_version ">=dev-lang/spidermonkey-1.8.5"; then
-			epatch "${WORKDIR}"/patches/${P}-js185-1-heartbeat.patch
-			epatch "${WORKDIR}"/patches/${P}-js185-2-up.patch
-			epatch "${WORKDIR}"/patches/${P}-js185-3-histback.patch
-			epatch "${FILESDIR}"/${P}-sm185-jsval-fixes.patch
-			# expand lib check to also match mozjs187
-			if has_version ">=dev-lang/spidermonkey-1.8.7"; then
-				sed -i 's:mozjs185:mozjs187 mozjs185:' configure.in
+	if use javascript ; then
+		if has_version ">=dev-lang/spidermonkey-1.8"; then
+			if has_version ">=dev-lang/spidermonkey-1.8.5"; then
+				epatch "${WORKDIR}"/patches/${P}-js185-1-heartbeat.patch
+				epatch "${WORKDIR}"/patches/${P}-js185-2-up.patch
+				epatch "${WORKDIR}"/patches/${P}-js185-3-histback.patch
+				epatch "${FILESDIR}"/${P}-sm185-jsval-fixes.patch
+				if has_version ">=dev-lang/spidermonkey-1.8.7"; then
+					# fix lib order in configure check and add mozjs187
+					# (these seds are necessary so that @preserved-libs copies are not used)
+					sed -i -e 's:for spidermonkeylib in js .*$:for spidermonkeylib in mozjs187 mozjs185 mozjs js smjs; do:' \
+						configure.in || die
+				else
+					# fix lib order in configure check
+					# (these seds are necessary so that @preserved-libs copies are not used)
+					sed -i -e 's:for spidermonkeylib in js .*$:for spidermonkeylib in mozjs185 mozjs js smjs; do:' \
+						configure.in || die
+				fi
+			else
+				# fix lib order in configure check
+				# (these seds are necessary so that @preserved-libs copies are not used)
+				epatch "${FILESDIR}"/${MY_P}-spidermonkey-callback.patch
+				sed -i -e 's:for spidermonkeylib in js .*$:for spidermonkeylib in mozjs js smjs; do:' \
+					configure.in || die
 			fi
-		else
-			epatch "${FILESDIR}"/${MY_P}-spidermonkey-callback.patch
 		fi
 	fi
-	epatch "${FILESDIR}"/${P}-ruby-config.patch
+	epatch "${FILESDIR}"/${P}-ruby-1.9.patch
+	# Regenerate acinclude.m4 - based on autogen.sh.
+	cat > acinclude.m4 <<- _EOF
+		dnl Automatically generated from config/m4/ files.
+		dnl Do not modify!
+	_EOF
+	cat config/m4/*.m4 >> acinclude.m4
 
 	sed -i -e 's/-Werror//' configure*
+
 	eautoreconf
 }
 

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/systemd.eclass,v 1.11 2012/01/07 17:53:47 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/systemd.eclass,v 1.18 2012/10/30 21:56:31 mgorny Exp $
 
 # @ECLASS: systemd.eclass
 # @MAINTAINER:
@@ -26,20 +26,16 @@
 # @CODE
 
 case ${EAPI:-0} in
-	0|1|2|3|4) ;;
+	0|1|2|3|4|5) ;;
 	*) die "${ECLASS}.eclass API in EAPI ${EAPI} not yet established."
 esac
-
-# Block systemd version without the migration helper.
-DEPEND="!<sys-apps/systemd-29-r4
-	!=sys-apps/systemd-37-r1"
 
 # @FUNCTION: _systemd_get_unitdir
 # @INTERNAL
 # @DESCRIPTION:
 # Get unprefixed unitdir.
 _systemd_get_unitdir() {
-	echo -n /usr/lib/systemd/system
+	echo /usr/lib/systemd/system
 }
 
 # @FUNCTION: systemd_get_unitdir
@@ -50,7 +46,19 @@ systemd_get_unitdir() {
 	has "${EAPI:-0}" 0 1 2 && ! use prefix && EPREFIX=
 	debug-print-function ${FUNCNAME} "${@}"
 
-	echo -n "${EPREFIX}$(_systemd_get_unitdir)"
+	echo "${EPREFIX}$(_systemd_get_unitdir)"
+}
+
+# @FUNCTION: systemd_get_utildir
+# @DESCRIPTION:
+# Output the path for the systemd utility directory (not including
+# ${D}). This function always succeeds, even if systemd is not
+# installed.
+systemd_get_utildir() {
+	has "${EAPI:-0}" 0 1 2 && ! use prefix && EPREFIX=
+	debug-print-function ${FUNCNAME} "${@}"
+
+	echo "${EPREFIX}/usr/lib/systemd"
 }
 
 # @FUNCTION: systemd_dounit
@@ -89,9 +97,31 @@ systemd_newunit() {
 systemd_dotmpfilesd() {
 	debug-print-function ${FUNCNAME} "${@}"
 
+	for f; do
+		[[ ${f} == *.conf ]] \
+			|| die 'tmpfiles.d files need to have .conf suffix.'
+	done
+
 	(
 		insinto /usr/lib/tmpfiles.d/
 		doins "${@}"
+	)
+}
+
+# @FUNCTION: systemd_newtmpfilesd
+# @USAGE: oldname newname.conf
+# @DESCRIPTION:
+# Install systemd tmpfiles.d file under a new name. Uses newins, thus it
+# is fatal in EAPI 4 and non-fatal in earlier EAPIs.
+systemd_newtmpfilesd() {
+	debug-print-function ${FUNCNAME} "${@}"
+
+	[[ ${2} == *.conf ]] \
+		|| die 'tmpfiles.d files need to have .conf suffix.'
+
+	(
+		insinto /usr/lib/tmpfiles.d/
+		newins "${@}"
 	)
 }
 
@@ -131,7 +161,18 @@ systemd_with_unitdir() {
 	debug-print-function ${FUNCNAME} "${@}"
 	local optname=${1:-systemdsystemunitdir}
 
-	echo -n --with-${optname}="$(systemd_get_unitdir)"
+	echo --with-${optname}="$(systemd_get_unitdir)"
+}
+
+# @FUNCTION: systemd_with_utildir
+# @DESCRIPTION:
+# Output '--with-systemdsystemutildir' as used by some packages to install
+# systemd helpers. This function always succeeds. Its output may be quoted
+# in order to preserve whitespace in paths.
+systemd_with_utildir() {
+	debug-print-function ${FUNCNAME} "${@}"
+
+	echo --with-systemdutildir="$(systemd_get_utildir)"
 }
 
 # @FUNCTION: systemd_to_myeconfargs

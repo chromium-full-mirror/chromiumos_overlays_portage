@@ -65,8 +65,6 @@ arm             default/linux/arm/10.0/armv7a/server            dev
 # HPPA Profiles
 hppa            default/linux/hppa/10.0                         stable
 hppa            default/linux/hppa/10.0/desktop                 dev
-hppa            default/linux/hppa/10.0/desktop/gnome           dev
-hppa            default/linux/hppa/10.0/desktop/kde             dev
 hppa            default/linux/hppa/10.0/developer               dev
 hppa            default/linux/hppa/10.0/server                  dev
 
@@ -125,6 +123,7 @@ ppc64           default/linux/powerpc/ppc64/10.0/64bit-userland/server          
 # S390 Profiles
 s390            default/linux/s390/10.0                         dev
 s390            default/linux/s390/10.0/server                  dev
+s390            default/linux/s390/10.0/server/s390x            dev
 
 # SH Profiles
 sh              default/linux/sh/10.0                           dev
@@ -153,21 +152,25 @@ x86             default/linux/x86/10.0/server                   stable
 
 # Gentoo/FreeBSD Profiles
 amd64-fbsd	default/bsd/fbsd/amd64/9.0			stable
-sparc-fbsd	default/bsd/fbsd/sparc/8.2			exp
-x86-fbsd	default/bsd/fbsd/x86/8.2			dev
+amd64-fbsd	default/bsd/fbsd/amd64/9.1			stable
+amd64-fbsd	default/bsd/fbsd/amd64/9.1/clang		exp
+sparc-fbsd      default/bsd/fbsd/sparc/8.2                      exp
 x86-fbsd	default/bsd/fbsd/x86/9.0			dev
+x86-fbsd	default/bsd/fbsd/x86/9.1			dev
 
 # Hardened Profiles
 amd64		hardened/linux/amd64					stable
 amd64		hardened/linux/amd64/selinux				stable
 amd64		hardened/linux/amd64/no-multilib			stable
 amd64		hardened/linux/amd64/no-multilib/selinux		stable
+amd64		hardened/linux/uclibc/amd64				dev
 ia64		hardened/linux/ia64					dev
 ppc		hardened/linux/powerpc/ppc32				dev
 ppc		hardened/linux/powerpc/ppc64/32bit-userland		dev
 ppc64		hardened/linux/powerpc/ppc64/64bit-userland		dev
 x86		hardened/linux/x86					stable
 x86		hardened/linux/x86/selinux				stable
+x86		hardened/linux/uclibc/x86				dev
 
 # uclibc/embedded multiarch profiles
 #amd64		uclibc/amd64					dev

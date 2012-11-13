@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/cctbx/cctbx-2010.03.29.2334-r6.ebuild,v 1.5 2012/06/19 14:59:00 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/cctbx/cctbx-2010.03.29.2334-r6.ebuild,v 1.8 2012/10/19 10:36:38 jlec Exp $
 
 EAPI="3"
 
@@ -20,7 +20,6 @@ KEYWORDS="amd64 ~ppc x86 ~amd64-linux ~x86-linux"
 IUSE="+minimal openmp threads"
 
 RDEPEND="
-	virtual/fortran
 	>=dev-libs/boost-1.48[python]
 	sci-libs/clipper
 	sci-libs/fftw
@@ -28,7 +27,7 @@ RDEPEND="
 		sci-chemistry/cns
 		sci-chemistry/shelx )"
 DEPEND="${RDEPEND}
-	>=dev-util/scons-1.2"
+	!prefix? ( >=dev-util/scons-1.2 )"
 
 S="${WORKDIR}"
 MY_S="${WORKDIR}"/cctbx_sources
@@ -36,13 +35,15 @@ MY_B="${WORKDIR}"/cctbx_build
 
 pkg_setup() {
 	use openmp && FORTRAN_NEED_OPENMP="1"
-	fortran-2_pkg_setup
 	if use openmp && ! tc-has-openmp; then
 		ewarn "You are using gcc and OpenMP is only available with gcc >= 4.2 and icc"
 		ewarn "If you want to build ${PN} with OpenMP, abort now,"
 		ewarn "and switch CC to an OpenMP capable compiler"
+		FORTRAN_NEED_OPENMP=1
 	fi
+	fortran-2_pkg_setup
 	python_set_active_version 2
+	python_pkg_setup
 }
 
 src_prepare() {
@@ -60,14 +61,17 @@ src_prepare() {
 
 	eprefixify "${MY_S}"/scitbx/libtbx_refresh.py
 
-	rm -rf "${MY_S}/scons" "${MY_S}/boost" "${MY_S}/PyCifRW" || die
+	rm -rf "${MY_S}/boost" "${MY_S}/PyCifRW" || die
+	if ! use prefix; then
+		rm -rvf "${MY_S}/scons"
+		echo "import os, sys; os.execvp('scons', sys.argv)" > "${MY_S}"/libtbx/command_line/scons.py
+	fi
+
 	find "${MY_S}/clipper" -name "*.h" -delete || die
 
 	sed \
 		-e "/LIBS/s:boost_python:boost_python-${PYTHON_ABI}:g" \
 		-i "${MY_S}"/boost_adaptbx/SConscript "${MY_S}"/scitbx/boost_python/SConscript || die
-
-	echo "import os, sys; os.execvp('scons', sys.argv)" > "${MY_S}"/libtbx/command_line/scons.py
 }
 
 src_configure() {

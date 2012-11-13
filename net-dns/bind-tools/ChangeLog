@@ -1,6 +1,51 @@
 # ChangeLog for net-dns/bind-tools
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-dns/bind-tools/ChangeLog,v 1.221 2012/08/04 13:43:02 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-dns/bind-tools/ChangeLog,v 1.232 2012/11/04 20:45:11 ulm Exp $
+
+  04 Nov 2012; Ulrich Müller <ulm@gentoo.org> bind-tools-9.9.1_p2.ebuild,
+  bind-tools-9.9.1_p4.ebuild, bind-tools-9.9.2.ebuild:
+  Update LICENSE, RSA-PKCS11 is replaced by RSA, bug 440752.
+
+  03 Nov 2012; Agostino Sarubbo <ago@gentoo.org> bind-tools-9.9.2.ebuild:
+  Stable for amd64, wrt bug #440318
+
+  01 Nov 2012; Christian Ruppert <idl0r@gentoo.org> bind-tools-9.9.2.ebuild,
+  metadata.xml:
+  Fix AR calls, bug 440338. Fix LICENSE, bug 440752.
+
+  01 Nov 2012; Jeroen Roovers <jer@gentoo.org> bind-tools-9.9.2.ebuild:
+  Stable for HPPA (bug #440318).
+
+  31 Oct 2012; Anthony G. Basile <blueness@gentoo.org> bind-tools-9.9.2.ebuild:
+  stable arm, bug #440318
+
+  31 Oct 2012; Anthony G. Basile <blueness@gentoo.org> bind-tools-9.9.2.ebuild:
+  stable ppc ppc64, bug #440318
+
+*bind-tools-9.9.2 (10 Oct 2012)
+*bind-tools-9.9.1_p4 (10 Oct 2012)
+
+  10 Oct 2012; Christian Ruppert <idl0r@gentoo.org>
+  -bind-tools-9.9.1_p3.ebuild, +bind-tools-9.9.1_p4.ebuild,
+  +bind-tools-9.9.2.ebuild:
+  Version bumps.
+
+*bind-tools-9.9.1_p3 (12 Sep 2012)
+
+  12 Sep 2012; Christian Ruppert <idl0r@gentoo.org> +bind-tools-9.9.1_p3.ebuild,
+  -bind-tools-9.9.1_p2-r1.ebuild:
+  Version bump.
+
+  11 Sep 2012; Christian Ruppert <idl0r@gentoo.org> -bind-tools-9.8.1.ebuild,
+  -bind-tools-9.8.3_p2.ebuild:
+  Remove old versions.
+
+  11 Sep 2012; Christoph Junghans <ottxor@gentoo.org>
+  bind-tools-9.9.1_p2-r1.ebuild:
+  added prefix keywords
+
+  27 Aug 2012; Raúl Porcel <armin76@gentoo.org> bind-tools-9.9.1_p2.ebuild:
+  alpha/ia64/s390/sh/sparc stable wrt #428086
 
   04 Aug 2012; Agostino Sarubbo <ago@gentoo.org> bind-tools-9.9.1_p2.ebuild:
   Stable for amd64, wrt bug #428086

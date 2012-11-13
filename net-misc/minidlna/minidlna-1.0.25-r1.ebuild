@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/minidlna/minidlna-1.0.25-r1.ebuild,v 1.3 2012/07/20 08:17:24 xmw Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/minidlna/minidlna-1.0.25-r1.ebuild,v 1.5 2012/11/08 11:43:45 aballier Exp $
 
 EAPI=4
 
@@ -31,14 +31,18 @@ pkg_setup() {
 	[ -d "${EPREFIX}"/var/lib/${PN} ] && my_is_new="no"
 	enewgroup ${PN}
 	enewuser ${PN} -1 -1 /var/lib/${PN} ${PN}
-	if [ "${my_is_new}" == "yes" ] ; then
-		chown ${PN}:${PN} /var/lib/${PN} || die
-		chmod 0750 /var/lib/${PN} || die
+	if [ -d "${EPREFIX}"/var/lib/${PN} ] && [ "${my_is_new}" == "yes" ] ; then
+		# created by above enewuser command w/ wrong group and permissions
+		chown ${PN}:${PN} "${EPREFIX}"/var/lib/${PN} || die
+		chmod 0750 "${EPREFIX}"/var/lib/${PN} || die
+		# if user already exists, but /var/lib/minidlna is missing
+		# rely on ${D}/var/lib/minidlna created in src_install
 	fi
 }
 
 src_prepare() {
 	epatch "${FILESDIR}"/${PN}-1.0.18-Makefile.patch
+	epatch "${FILESDIR}"/${PN}-1.0.25-ffmpeg.patch
 
 	sed -e "/^DB_PATH=/s:\".*\":\"${EPREFIX}/var/lib/${PN}\":" \
 		-e "/^LOG_PATH=/s:\".*\":\"${EPREFIX}/var/log\":" \

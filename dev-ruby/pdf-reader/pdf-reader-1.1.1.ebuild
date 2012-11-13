@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/pdf-reader/pdf-reader-1.1.1.ebuild,v 1.1 2012/05/19 06:02:22 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/pdf-reader/pdf-reader-1.1.1.ebuild,v 1.3 2012/10/28 17:47:45 armin76 Exp $
 
 EAPI=4
 
@@ -26,7 +26,7 @@ RUBY_S="${GITHUB_USER}-${PN}-*"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~hppa ~x86 ~x86-fbsd"
+KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
 IUSE=""
 
 ruby_add_rdepend "dev-ruby/ascii85 dev-ruby/ruby-rc4"

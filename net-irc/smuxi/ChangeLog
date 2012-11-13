@@ -1,6 +1,18 @@
 # ChangeLog for net-irc/smuxi
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-irc/smuxi/ChangeLog,v 1.21 2012/06/30 11:43:58 pacho Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-irc/smuxi/ChangeLog,v 1.24 2012/10/27 10:09:25 pacho Exp $
+
+  27 Oct 2012; Pacho Ramos <pacho@gentoo.org> smuxi-0.8.10.1.ebuild:
+  Drop buggy gconf dependency, bug #437724 by René 'Necoro' Neumann.
+
+  16 Sep 2012; Agostino Sarubbo <ago@gentoo.org> smuxi-0.8.10.1.ebuild:
+  Stable for amd64, wrt bug #435202
+
+*smuxi-0.8.10.1 (14 Sep 2012)
+
+  14 Sep 2012; Pacho Ramos <pacho@gentoo.org> +smuxi-0.8.10.1.ebuild,
+  -smuxi-0.8.9.2.ebuild:
+  Version bump, drop old.
 
 *smuxi-0.8.9.2 (30 Jun 2012)
 

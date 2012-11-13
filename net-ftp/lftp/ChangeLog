@@ -1,6 +1,23 @@
 # ChangeLog for net-ftp/lftp
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-ftp/lftp/ChangeLog,v 1.379 2012/08/21 18:59:31 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-ftp/lftp/ChangeLog,v 1.384 2012/10/31 16:50:05 jer Exp $
+
+  31 Oct 2012; Jeroen Roovers <jer@gentoo.org> lftp-4.4.0.ebuild:
+  Stable for HPPA (bug #440160).
+
+  30 Oct 2012; Anthony G. Basile <blueness@gentoo.org> lftp-4.4.0.ebuild:
+  stable arm ppc ppc64, bug #440160
+
+*lftp-4.4.0 (29 Sep 2012)
+
+  29 Sep 2012; Jeroen Roovers <jer@gentoo.org> +lftp-4.4.0.ebuild:
+  Version bump.
+
+  11 Sep 2012; Raúl Porcel <armin76@gentoo.org> lftp-4.3.8.ebuild:
+  alpha/ia64/s390/sparc stable wrt #432018
+
+  29 Aug 2012; Sergey Popov <pinkbyte@gentoo.org> lftp-4.3.8.ebuild:
+  Stable for amd64 (bug #432018)
 
   21 Aug 2012; Jeroen Roovers <jer@gentoo.org> lftp-4.3.8.ebuild:
   Stable for HPPA (bug #432018).

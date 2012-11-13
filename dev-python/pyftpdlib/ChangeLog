@@ -1,6 +1,18 @@
 # ChangeLog for dev-python/pyftpdlib
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pyftpdlib/ChangeLog,v 1.14 2012/08/01 19:39:07 ulm Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pyftpdlib/ChangeLog,v 1.18 2012/10/20 16:29:35 jer Exp $
+
+  20 Oct 2012; Jeroen Roovers <jer@gentoo.org> pyftpdlib-0.7.0.ebuild:
+  Stable for HPPA (bug #438190).
+
+  14 Oct 2012; Anthony G. Basile <blueness@gentoo.org> pyftpdlib-0.7.0.ebuild:
+  stable ppc ppc64, bug #418969
+
+  13 Oct 2012; Markos Chandras <hwoarang@gentoo.org> pyftpdlib-0.7.0.ebuild:
+  Stable on amd64 wrt bug #418969
+
+  11 Oct 2012; Markus Meier <maekke@gentoo.org> pyftpdlib-0.7.0.ebuild:
+  arm stable, bug #418969
 
   01 Aug 2012; Ulrich Müller <ulm@gentoo.org> pyftpdlib-0.7.0.ebuild:
   Add ~amd64-fbsd keyword, with permission from ryao.
@@ -49,4 +61,3 @@
   +metadata.xml:
   Initial import, bug #354177. Ebuild uses parts submitted by Axel ETCHEVERRY
   <axel@etcheverry.biz>.
-

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r2.ebuild,v 1.106 2012/08/25 08:43:24 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r2.ebuild,v 1.126 2012/11/12 19:40:31 scarabeus Exp $
 
 EAPI=4
 
@@ -38,16 +38,12 @@ SRC_URI="branding? ( http://dev.gentoo.org/~dilfridge/distfiles/${BRANDING} )"
 # Split modules following git/tarballs
 # Core MUST be first!
 # Help is used for the image generator
-MODULES="core binfilter help"
+MODULES="core help"
 # Only release has the tarballs
 if [[ ${PV} != *9999* ]]; then
 	for i in ${DEV_URI}; do
 		for mod in ${MODULES}; do
-			if [[ ${mod} == binfilter ]]; then
-				SRC_URI+=" binfilter? ( ${i}/${PN}-${mod}-${PV}.tar.xz )"
-			else
-				SRC_URI+=" ${i}/${PN}-${mod}-${PV}.tar.xz"
-			fi
+			SRC_URI+=" ${i}/${PN}-${mod}-${PV}.tar.xz"
 		done
 		unset mod
 	done
@@ -61,7 +57,6 @@ unset DEV_URI
 ADDONS_SRC+=" ${ADDONS_URI}/ea91f2fb4212a21d708aced277e6e85a-vigra1.4.0.tar.gz"
 ADDONS_SRC+=" ${ADDONS_URI}/1f24ab1d39f4a51faf22244c94a6203f-xmlsec1-1.2.14.tar.gz" # modifies source code
 ADDONS_SRC+=" java? ( ${ADDONS_URI}/17410483b5b5f267aa18b7e00b65e6e0-hsqldb_1_8_0.zip )"
-ADDONS_SRC+=" java? ( ${ADDONS_URI}/ada24d37d8d638b3d8a9985e80bc2978-source-9.0.0.7-bj.zip )"
 ADDONS_SRC+=" libreoffice_extensions_wiki-publisher? ( ${ADDONS_URI}/a7983f859eafb2677d7ff386a023bc40-xsltml_2.1.2.zip )" # no release for 8 years, should we package it?
 ADDONS_SRC+=" libreoffice_extensions_scripting-javascript? ( ${ADDONS_URI}/798b2ffdc8bcfe7bca2cf92b62caf685-rhino1_5R5.zip )" # Does not build with 1.6 rhino at all
 ADDONS_SRC+=" libreoffice_extensions_scripting-javascript? ( ${ADDONS_URI}/35c94d2df8893241173de1d16b6034c0-swingExSrc.zip )" # requirement of rhino
@@ -72,8 +67,8 @@ unset ADDONS_URI
 unset EXT_URI
 unset ADDONS_SRC
 
-IUSE="binfilter binfilterdebug +branding +cups dbus eds gnome gstreamer +gtk
-gtk3 jemalloc kde mysql odk opengl postgres svg test +vba +webdav"
+IUSE="bluetooth +branding +cups dbus eds gnome gstreamer +gtk gtk3
+jemalloc kde mysql nsplugin odk opengl postgres telepathy test +vba +webdav"
 
 LO_EXTS="nlpsolver pdfimport presenter-console presenter-minimizer scripting-beanshell scripting-javascript wiki-publisher"
 # Unpackaged separate extensions:
@@ -104,12 +99,12 @@ COMMON_DEPEND="
 	app-text/libwpg:0.2
 	>=app-text/libwps-0.2.2
 	>=dev-cpp/clucene-2.3.3.4-r2
-	>=dev-cpp/libcmis-0.2
+	dev-cpp/libcmis:0.3
 	dev-db/unixODBC
 	dev-libs/expat
-	>=dev-libs/glib-2.28
 	>=dev-libs/hyphen-2.7.1
 	>=dev-libs/icu-4.8.1.1
+	dev-libs/liborcus
 	>=dev-libs/nspr-4.8.8
 	>=dev-libs/nss-3.12.9
 	>=dev-lang/perl-5.0
@@ -131,6 +126,7 @@ COMMON_DEPEND="
 	x11-libs/libXinerama
 	x11-libs/libXrandr
 	x11-libs/libXrender
+	bluetooth? ( net-wireless/bluez )
 	cups? ( net-print/cups )
 	dbus? ( >=dev-libs/dbus-glib-0.92 )
 	eds? ( gnome-extra/evolution-data-server )
@@ -156,9 +152,16 @@ COMMON_DEPEND="
 		dev-java/tomcat-servlet-api:3.0
 	)
 	mysql? ( >=dev-db/mysql-connector-c++-1.1.0 )
-	opengl? ( virtual/opengl )
+	nsplugin? ( net-misc/npapi-sdk )
+	opengl? (
+		virtual/glu
+		virtual/opengl
+	)
 	postgres? ( >=dev-db/postgresql-base-9.0[kerberos] )
-	svg? ( gnome-base/librsvg )
+	telepathy? (
+		dev-libs/glib:2
+		>=net-libs/telepathy-glib-0.18.0
+	)
 	webdav? ( net-libs/neon )
 "
 
@@ -197,6 +200,7 @@ DEPEND="${COMMON_DEPEND}
 	sys-devel/flex
 	sys-devel/gettext
 	>=sys-devel/make-3.82
+	sys-devel/ucpp
 	sys-libs/zlib
 	x11-libs/libXt
 	x11-libs/libXtst
@@ -215,16 +219,19 @@ DEPEND="${COMMON_DEPEND}
 
 PATCHES=(
 	# not upstreamable stuff
-	"${FILESDIR}/${PN}-3.6-system-pyuno.patch"
+	"${FILESDIR}/${PN}-3.7-system-pyuno.patch"
+	"${FILESDIR}/${PN}-3.7-separate-checks.patch"
 )
 
 REQUIRED_USE="
+	bluetooth? ( dbus )
 	gnome? ( gtk )
 	eds? ( gnome )
 	libreoffice_extensions_nlpsolver? ( java )
 	libreoffice_extensions_scripting-beanshell? ( java )
 	libreoffice_extensions_scripting-javascript? ( java )
 	libreoffice_extensions_wiki-publisher? ( java )
+	nsplugin? ( gtk )
 "
 
 S="${WORKDIR}/${PN}-core-${PV}"
@@ -239,9 +246,9 @@ pkg_pretend() {
 		check-reqs_pkg_pretend
 
 		if [[ $(gcc-major-version) -lt 4 ]] || \
-				 ( [[ $(gcc-major-version) -eq 4 && $(gcc-minor-version) -lt 5 ]] ) \
+				 ( [[ $(gcc-major-version) -eq 4 && $(gcc-minor-version) -lt 6 ]] ) \
 				; then
-			eerror "Compilation with gcc older than 4.5 is not supported"
+			eerror "Compilation with gcc older than 4.6 is not supported"
 			die "Too old gcc found."
 		fi
 	fi
@@ -268,7 +275,7 @@ pkg_setup() {
 }
 
 src_unpack() {
-	local mod dest tmplfile tmplname mypv
+	local mod mod2 dest tmplfile tmplname mypv
 
 	[[ -n ${PATCHSET} ]] && unpack ${PATCHSET}
 	if use branding; then
@@ -277,20 +284,18 @@ src_unpack() {
 
 	if [[ ${PV} != *9999* ]]; then
 		for mod in ${MODULES}; do
-			if [[ ${mod} == binfilter ]] && ! use binfilter; then
-				continue
-			fi
 			unpack "${PN}-${mod}-${PV}.tar.xz"
 			if [[ ${mod} != core ]]; then
-				mv -n "${WORKDIR}/${PN}-${mod}-${PV}"/* "${S}"
+				mod2=${mod}
+				# mapping does not match on help
+				[[ ${mod} == help ]] && mod2="helpcontent2"
+				mkdir -p "${S}/${mod2}/" || die
+				mv -n "${WORKDIR}/${PN}-${mod}-${PV}"/* "${S}/${mod2}" || die
 				rm -rf "${WORKDIR}/${PN}-${mod}-${PV}"
 			fi
 		done
 	else
 		for mod in ${MODULES}; do
-			if [[ ${mod} == binfilter ]] && ! use binfilter; then
-				continue
-			fi
 			mypv=${PV/.9999}
 			[[ ${mypv} != ${PV} ]] && EGIT_BRANCH="${PN}-${mypv/./-}"
 			EGIT_PROJECT="${PN}/${mod}"
@@ -299,7 +304,11 @@ src_unpack() {
 			EGIT_NOUNPACK="true"
 			git-2_src_unpack
 			if [[ ${mod} != core ]]; then
-				mv -n "${WORKDIR}/${PN}-${mod}-${PV}"/* "${S}"
+				mod2=${mod}
+				# mapping does not match on help
+				[[ ${mod} == help ]] && mod2="helpcontent2"
+				mkdir -p "${S}/${mod2}/" || die
+				mv -n "${WORKDIR}/${PN}-${mod}-${PV}"/* "${S}/${mod2}" || die
 				rm -rf "${WORKDIR}/${PN}-${mod}-${PV}"
 			fi
 		done
@@ -322,13 +331,6 @@ src_prepare() {
 	fi
 
 	base_src_prepare
-
-	# please no debug in binfilter, it blows up things insanely
-	if use binfilter && ! use binfilterdebug ; then
-		for name in $(find "${S}/binfilter" -name makefile.mk) ; do
-			sed -i -e '1i\CFLAGS+= -g0' $name || die
-		done
-	fi
 
 	AT_M4DIR="m4"
 	eautoreconf
@@ -365,15 +367,17 @@ src_configure() {
 
 	# libreoffice extensions handling
 	for lo_xt in ${LO_EXTS}; do
-		ext_opts+=" $(use_enable libreoffice_extensions_${lo_xt} ext-${lo_xt})"
+		if [[ "${lo_xt}" == "scripting-beanshell" || "${lo_xt}" == "scripting-javascript" ]]; then
+			ext_opts+=" $(use_enable libreoffice_extensions_${lo_xt} ${lo_xt})"
+		else
+			ext_opts+=" $(use_enable libreoffice_extensions_${lo_xt} ext-${lo_xt})"
+		fi
 	done
 
 	if use java; then
 		# hsqldb: system one is too new
-		# saxon: system one does not work properly
 		java_opts="
 			--without-system-hsqldb
-			--without-system-saxon
 			--with-ant-home="${ANT_HOME}"
 			--with-jdk-home=$(java-config --jdk-home 2>/dev/null)
 			--with-java-target-version=$(java-pkg_get-target)
@@ -408,9 +412,6 @@ src_configure() {
 		mv -v "${WORKDIR}/branding-intro.png" "${S}/icon-themes/galaxy/brand/intro.png" || die
 	fi
 
-	# it's not entirely clear to me where the failure is, boost libreoffice gcc come to my mind
-	append-cppflags -DBOOST_NO_0X_HDR_TYPEINDEX
-
 	# system headers/libs/...: enforce using system packages
 	# --enable-unix-qstart-libpng: use libpng splashscreen that is faster
 	# --enable-cairo: ensure that cairo is always required
@@ -432,7 +433,6 @@ src_configure() {
 	#   promote it
 	# --disable-zenity: disable build icon
 	# --enable-extension-integration: enable any extension integration support
-	# --with-{max-jobs,num-cpus}: ensuring parallel building
 	# --without-{afms,fonts,myspell-dicts,ppsd}: prevent install of sys pkgs
 	# --without-stlport: disable deprecated extensions framework
 	# --disable-ext-report-builder: too much java packages pulled in
@@ -476,8 +476,8 @@ src_configure() {
 		--with-external-thes-dir="${EPREFIX}/usr/share/myspell" \
 		--with-external-tar="${DISTDIR}" \
 		--with-lang="" \
-		--with-max-jobs=${jbs} \
-		--with-num-cpus=${jbs} \
+		--with-parallelism=${jbs} \
+		--with-system-ucpp \
 		--with-unix-wrapper=libreoffice \
 		--with-vendor="Gentoo Foundation" \
 		--with-x \
@@ -489,7 +489,7 @@ src_configure() {
 		--without-help \
 		--with-helppack-integration \
 		--without-sun-templates \
-		$(use_enable binfilter) \
+		$(use_enable bluetooth sdremote) \
 		$(use_enable cups) \
 		$(use_enable dbus) \
 		$(use_enable eds evolution2) \
@@ -501,10 +501,11 @@ src_configure() {
 		$(use_enable gtk3) \
 		$(use_enable kde kde4) \
 		$(use_enable mysql ext-mysql-connector) \
+		$(use_enable nsplugin) \
 		$(use_enable odk) \
 		$(use_enable opengl) \
 		$(use_enable postgres postgresql-sdbc) \
-		$(use_enable svg librsvg system) \
+		$(use_enable telepathy) \
 		$(use_enable test linkoo) \
 		$(use_enable vba) \
 		$(use_enable webdav neon) \
@@ -521,7 +522,8 @@ src_compile() {
 	# it is broken because we send --without-help
 	# https://bugs.freedesktop.org/show_bug.cgi?id=46506
 	(
-		source "${S}/config_host.mk" 2&> /dev/null
+		grep "^export" "${S}/config_host.mk" > "${T}/config_host.mk"
+		source "${T}/config_host.mk" 2&> /dev/null
 
 		local path="${SOLARVER}/${INPATH}/res/img"
 		mkdir -p "${path}" || die

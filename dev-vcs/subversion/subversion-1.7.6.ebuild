@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-vcs/subversion/subversion-1.7.6.ebuild,v 1.3 2012/08/22 20:33:10 tommy Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-vcs/subversion/subversion-1.7.6.ebuild,v 1.5 2012/10/25 17:04:23 tommy Exp $
 
 EAPI="3"
 SUPPORT_PYTHON_ABIS="1"
@@ -157,6 +157,10 @@ src_configure() {
 		*-interix*)
 			# loader crashes on the LD_PRELOADs...
 			myconf+=" --disable-local-library-preloading"
+		;;
+		*-solaris*)
+			# need -lintl to link
+			use nls && append-libs intl
 		;;
 	esac
 
@@ -358,8 +362,6 @@ EOF
 
 	if use doc; then
 		dohtml -r doc/doxygen/html/* || die "Installation of Subversion HTML documentation failed"
-
-		dodoc notes/*
 
 		if use java; then
 			java-pkg_dojavadoc doc/javadoc

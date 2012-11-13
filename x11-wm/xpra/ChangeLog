@@ -1,6 +1,72 @@
 # ChangeLog for x11-wm/xpra
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/x11-wm/xpra/ChangeLog,v 1.24 2012/08/20 21:18:40 xmw Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-wm/xpra/ChangeLog,v 1.36 2012/11/07 23:06:36 xmw Exp $
+
+*xpra-0.7.2 (07 Nov 2012)
+
+  07 Nov 2012; Michael Weber <xmw@gentoo.org> -xpra-0.4.2.ebuild,
+  -xpra-0.5.6.ebuild, +xpra-0.7.2.ebuild:
+  Version bump, drop old.
+
+*xpra-0.7.1-r1 (29 Oct 2012)
+
+  29 Oct 2012; Michael Weber <xmw@gentoo.org> -xpra-0.7.1.ebuild,
+  +xpra-0.7.1-r1.ebuild, +files/xpra-0.7.1-ignore-gentoo-no-compile.patch:
+  Revbump to address .so situation.
+
+*xpra-0.7.1 (22 Oct 2012)
+
+  22 Oct 2012; Michael Weber <xmw@gentoo.org> -xpra-0.7.0.ebuild,
+  -files/xpra-0.7.0-ignore-gentoo-no-compile.patch, +xpra-0.7.1.ebuild:
+  Version bump
+
+  16 Oct 2012; Michael Weber <xmw@gentoo.org> xpra-0.6.4.ebuild,
+  xpra-0.7.0.ebuild:
+  Python3 preparations
+
+  16 Oct 2012; Michael Weber <xmw@gentoo.org> xpra-0.6.4.ebuild,
+  xpra-0.7.0.ebuild:
+  Fix patch location (thanks redneb, bug 438472), reestablish USE server
+
+  16 Oct 2012; Michael Weber <xmw@gentoo.org> xpra-0.7.0.ebuild:
+  Fix src_install (thanks Gary E. Miller, bug 438526)
+
+  14 Oct 2012; Michael Weber <xmw@gentoo.org> xpra-0.7.0.ebuild:
+  Fix README files and warn about Xorg permissions.
+
+*xpra-0.7.0 (14 Oct 2012)
+
+  14 Oct 2012; Michael Weber <xmw@gentoo.org> -xpra-0.5.3.ebuild,
+  -xpra-0.6.0.ebuild, xpra-0.6.4.ebuild, +xpra-0.7.0.ebuild,
+  +files/xpra-0.7.0-ignore-gentoo-no-compile.patch, metadata.xml:
+  Version bump, add setxkbmap dep (thanks redneb, bug 437614), add keywords to
+  0.6 series, drop old.
+
+*xpra-0.6.4 (06 Oct 2012)
+*xpra-0.5.6 (06 Oct 2012)
+
+  06 Oct 2012; Michael Weber <xmw@gentoo.org> -xpra-0.5.2.ebuild,
+  +xpra-0.5.6.ebuild, +xpra-0.6.4.ebuild:
+  Version bump
+
+*xpra-0.5.3 (05 Sep 2012)
+
+  05 Sep 2012; Michael Weber <xmw@gentoo.org> +xpra-0.5.3.ebuild,
+  xpra-0.6.0.ebuild:
+  Upstream dropped 0.6.0 release. Version bump to 0.5.3.
+
+*xpra-0.5.2 (29 Aug 2012)
+
+  29 Aug 2012; Michael Weber <xmw@gentoo.org> +xpra-0.5.2.ebuild,
+  -xpra-0.5.0.ebuild, -xpra-0.5.1.ebuild:
+  Version bump, drop old
+
+*xpra-0.6.0 (27 Aug 2012)
+*xpra-0.5.1 (27 Aug 2012)
+
+  27 Aug 2012; Michael Weber <xmw@gentoo.org> +xpra-0.5.1.ebuild,
+  +xpra-0.6.0.ebuild, -xpra-0.4.1.ebuild, metadata.xml:
+  Version bump
 
 *xpra-0.5.0 (20 Aug 2012)
 

@@ -1,11 +1,11 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/tagpy/tagpy-0.94.8-r1.ebuild,v 1.7 2012/06/14 18:42:53 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/tagpy/tagpy-0.94.8-r1.ebuild,v 1.9 2012/11/09 21:03:35 blueness Exp $
 
 EAPI="4"
 PYTHON_DEPEND="2"
 SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython 2.7-pypy-*"
+RESTRICT_PYTHON_ABIS="2.5 3.* *-jython 2.7-pypy-*"
 
 inherit distutils
 
@@ -15,7 +15,7 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="amd64 ppc ~ppc64 ~sparc x86"
+KEYWORDS="amd64 ppc ppc64 ~sparc x86"
 IUSE="examples"
 
 RDEPEND=">=dev-libs/boost-1.48[python]

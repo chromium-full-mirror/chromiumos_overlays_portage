@@ -1,6 +1,21 @@
 # ChangeLog for media-libs/gegl
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/gegl/ChangeLog,v 1.72 2012/07/13 11:25:35 hanno Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/gegl/ChangeLog,v 1.75 2012/11/06 19:39:50 sping Exp $
+
+*gegl-0.2.0-r1 (06 Nov 2012)
+
+  06 Nov 2012; Sebastian Pipping <sping@gentoo.org> +gegl-0.2.0-r1.ebuild,
+  +files/gegl-0.2.0-cve-2012-4433-1e92e523.patch,
+  +files/gegl-0.2.0-cve-2012-4433-4757cdf7.patch:
+  Integrate Redhat patches for CVE-2012-4433 (bug #442016)
+
+  05 Nov 2012; Hanno Boeck <hanno@gentoo.org> metadata.xml:
+  Maintained now by sping.
+
+*gegl-9999 (06 Sep 2012)
+
+  06 Sep 2012; Sebastian Pipping <sping@gentoo.org> +gegl-9999.ebuild:
+  Added live ebuild from co-op with Sam Tygier
 
   13 Jul 2012; Hanno Boeck <hanno@gentoo.org> gegl-0.2.0.ebuild,
   +files/gegl-0.2.0-ffmpeg-0.11.diff:

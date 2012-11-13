@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-portage/gentoolkit/gentoolkit-0.3.0.6-r3.ebuild,v 1.10 2012/08/22 19:15:40 darkside Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-portage/gentoolkit/gentoolkit-0.3.0.6-r3.ebuild,v 1.12 2012/10/29 16:31:11 mgorny Exp $
 
 EAPI="3"
 SUPPORT_PYTHON_ABIS="1"
@@ -18,7 +18,7 @@ LICENSE="GPL-2"
 SLOT="0"
 IUSE=""
 
-KEYWORDS="~alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 ~s390 ~sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
+KEYWORDS="alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
 
 # Note: argparse is provided in python 2.7 and 3.2 (Bug 346005)
 # Note: dev-lang/python dependencies are so emerge will print a blocker if any
@@ -29,10 +29,10 @@ RDEPEND="${DEPEND}
 	>=dev-lang/python-2.6[xml]
 	!>=dev-lang/python-2.6[-xml]
 	!<=app-portage/gentoolkit-dev-0.2.7
-	dev-python/argparse
 	|| ( >=sys-apps/coreutils-8.15 app-misc/realpath sys-freebsd/freebsd-bin )
 	sys-apps/gawk
-	sys-apps/grep"
+	sys-apps/grep
+	virtual/python-argparse"
 
 distutils_src_compile_pre_hook() {
 	echo VERSION="${PVR}" "$(PYTHON)" setup.py set_version

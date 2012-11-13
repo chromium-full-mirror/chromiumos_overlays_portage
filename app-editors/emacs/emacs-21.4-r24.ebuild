@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-editors/emacs/emacs-21.4-r24.ebuild,v 1.5 2012/06/11 22:01:52 ulm Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-editors/emacs/emacs-21.4-r24.ebuild,v 1.8 2012/10/24 18:52:44 ulm Exp $
 
 EAPI=4
 WANT_AUTOMAKE="none"
@@ -13,7 +13,7 @@ SRC_URI="mirror://gnu/emacs/${P}a.tar.gz
 	mirror://gentoo/${P}-patches-13.tar.bz2
 	leim? ( mirror://gnu/emacs/leim-${PV}.tar.gz )"
 
-LICENSE="GPL-2 FDL-1.1 BSD as-is MIT"
+LICENSE="GPL-2+ FDL-1.1+ BSD HPND MIT"
 SLOT="21"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd"
 IUSE="X Xaw3d leim motif sendmail"
@@ -32,7 +32,7 @@ DEPEND="sys-libs/ncurses
 		>=media-libs/tiff-3.5.5-r3
 		>=media-libs/libpng-1.4:0
 		Xaw3d? ( x11-libs/libXaw3d )
-		!Xaw3d? ( motif? ( >=x11-libs/openmotif-2.3:0 ) )
+		!Xaw3d? ( motif? ( >=x11-libs/motif-2.3:0 ) )
 	)"
 
 RDEPEND="${DEPEND}

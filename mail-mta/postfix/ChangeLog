@@ -1,6 +1,92 @@
 # ChangeLog for mail-mta/postfix
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/mail-mta/postfix/ChangeLog,v 1.378 2012/08/05 00:10:49 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/mail-mta/postfix/ChangeLog,v 1.399 2012/11/06 11:19:44 eras Exp $
+
+  06 Nov 2012; Eray Aslan <eras@gentoo.org> postfix-2.10_pre20121031.ebuild,
+  postfix-2.8.12.ebuild, postfix-2.8.9.ebuild, postfix-2.9.4.ebuild:
+  mail-mta/nbsmtp is no longer in the tree - remove from DEPEND
+
+*postfix-2.10_pre20121031 (06 Nov 2012)
+
+  06 Nov 2012; Eray Aslan <eras@gentoo.org> +postfix-2.10_pre20121031.ebuild,
+  -postfix-2.10_pre20121022.ebuild:
+  Version bump
+
+  02 Nov 2012; Eray Aslan <eras@gentoo.org> postfix-2.10_pre20121022.ebuild:
+  Add smtpd_relay_restrictions compatibility shim
+
+  30 Oct 2012; Eray Aslan <eras@gentoo.org> -files/postfix-2.9.3-freebsd9.patch,
+  -files/postfix.rc6.2.6, -postfix-2.8.10.ebuild, -postfix-2.8.11.ebuild,
+  -postfix-2.8.7.ebuild, -postfix-2.8.8.ebuild, -postfix-2.9.1-r1.ebuild,
+  -postfix-2.9.1-r2.ebuild, -postfix-2.9.1.ebuild, -postfix-2.9.2.ebuild,
+  -postfix-2.9.3.ebuild:
+  Remove old
+
+  30 Oct 2012; Jeroen Roovers <jer@gentoo.org> postfix-2.9.4.ebuild:
+  Stable for HPPA (bug #437602).
+
+*postfix-2.10_pre20121022 (23 Oct 2012)
+
+  23 Oct 2012; Eray Aslan <eras@gentoo.org> +postfix-2.10_pre20121022.ebuild,
+  -postfix-2.10_pre20121007.ebuild:
+  Version bump
+
+  23 Oct 2012; Eray Aslan <eras@gentoo.org> postfix-2.9.4.ebuild:
+  Revert accidental unstable for amd64 ppc ppc64 - bug #437602
+
+  20 Oct 2012; Raúl Porcel <armin76@gentoo.org> postfix-2.9.4.ebuild:
+  alpha/ia64/s390/sh/sparc stable wrt #437602
+
+  17 Oct 2012; Pawel Hajdan jr <phajdan.jr@gentoo.org> postfix-2.9.4.ebuild:
+  x86 stable wrt bug #437602
+
+  13 Oct 2012; Markus Meier <maekke@gentoo.org> postfix-2.9.4.ebuild:
+  arm stable, bug #437602
+
+  12 Oct 2012; Eray Aslan <eraya@gentoo.org> postfix-2.10_pre20121007.ebuild,
+  postfix-2.9.4.ebuild:
+  Use system ar and ranlib - bug #438156
+
+  12 Oct 2012; Agostino Sarubbo <ago@gentoo.org> postfix-2.9.4.ebuild:
+  Stable for amd64, wrt bug #437602
+
+  11 Oct 2012; Anthony G. Basile <blueness@gentoo.org> postfix-2.9.4.ebuild:
+  stable ppc64, bug #437602
+
+  10 Oct 2012; Brent Baude <ranger@gentoo.org> postfix-2.9.4.ebuild:
+  Marking postfix-2.9.4 ppc for bug 437602
+
+*postfix-2.10_pre20121007 (08 Oct 2012)
+
+  08 Oct 2012; Eray Aslan <eras@gentoo.org> +postfix-2.10_pre20121007.ebuild,
+  -postfix-2.10_pre20120924.ebuild:
+  Version bump
+
+*postfix-2.10_pre20120924 (01 Oct 2012)
+
+  01 Oct 2012; Eray Aslan <eras@gentoo.org> +postfix-2.10_pre20120924.ebuild,
+  -postfix-2.10_pre20120908.ebuild:
+  Version bump
+
+*postfix-2.10_pre20120908 (11 Sep 2012)
+
+  11 Sep 2012; Eray Aslan <eras@gentoo.org> +postfix-2.10_pre20120908.ebuild,
+  -postfix-2.10_pre20120902.ebuild:
+  Version bump
+
+*postfix-2.10_pre20120902 (03 Sep 2012)
+
+  03 Sep 2012; Eray Aslan <eras@gentoo.org> +postfix-2.10_pre20120902.ebuild,
+  -postfix-2.10_pre20120801.ebuild:
+  Version bump
+
+  26 Aug 2012; Raúl Porcel <armin76@gentoo.org> postfix-2.9.1.ebuild,
+  postfix-2.9.1-r1.ebuild, postfix-2.9.1-r2.ebuild, postfix-2.9.2.ebuild,
+  postfix-2.9.3.ebuild, postfix-2.9.4.ebuild:
+  Add ~s390 wrt #399329
+
+  26 Aug 2012; Raúl Porcel <armin76@gentoo.org> postfix-2.9.3.ebuild:
+  alpha/ia64/sh/sparc stable wrt #426760
 
   05 Aug 2012; Jeroen Roovers <jer@gentoo.org> postfix-2.9.3.ebuild:
   Stable for HPPA (bug #426760).

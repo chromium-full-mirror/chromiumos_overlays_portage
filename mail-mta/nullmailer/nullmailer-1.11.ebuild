@@ -1,8 +1,9 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/mail-mta/nullmailer/nullmailer-1.11.ebuild,v 1.1 2012/07/28 09:00:34 eras Exp $
+# $Header: /var/cvsroot/gentoo-x86/mail-mta/nullmailer/nullmailer-1.11.ebuild,v 1.6 2012/11/06 11:18:38 eras Exp $
 
 EAPI=4
+WANT_AUTOMAKE="1.10.3"
 inherit eutils flag-o-matic autotools user multilib
 
 MY_P="${P/_rc/RC}"
@@ -19,7 +20,7 @@ HOMEPAGE="http://untroubled.org/nullmailer/"
 
 SLOT="0"
 LICENSE="GPL-2"
-KEYWORDS="~amd64 ~ppc ~x86"
+KEYWORDS="amd64 ppc x86"
 
 IUSE="ssl"
 
@@ -33,7 +34,6 @@ RDEPEND="virtual/shadow
 	!mail-mta/exim
 	!mail-mta/mini-qmail
 	!mail-mta/msmtp
-	!mail-mta/nbsmtp
 	!mail-mta/netqmail
 	!mail-mta/postfix
 	!mail-mta/qmail-ldap

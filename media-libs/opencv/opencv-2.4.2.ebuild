@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/opencv/opencv-2.4.2.ebuild,v 1.3 2012/08/23 11:06:59 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/opencv/opencv-2.4.2.ebuild,v 1.5 2012/11/07 20:55:03 tetromino Exp $
 
 EAPI=4
 PYTHON_DEPEND="2:2.6"
@@ -26,8 +26,8 @@ RDEPEND="
 	eigen? ( dev-cpp/eigen:2 )
 	ffmpeg? ( virtual/ffmpeg )
 	gstreamer? (
-		media-libs/gstreamer
-		media-libs/gst-plugins-base
+		media-libs/gstreamer:0.10
+		media-libs/gst-plugins-base:0.10
 	)
 	gtk? (
 		dev-libs/glib:2
@@ -38,6 +38,7 @@ RDEPEND="
 	ieee1394? ( media-libs/libdc1394 sys-libs/libraw1394 )
 	ipp? ( sci-libs/ipp )
 	openexr? ( media-libs/openexr )
+	opengl? ( virtual/glu )
 	png? ( media-libs/libpng )
 	qt4? (
 		x11-libs/qt-gui:4

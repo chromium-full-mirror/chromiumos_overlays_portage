@@ -1,6 +1,15 @@
 # ChangeLog for net-irc/eggdrop
-# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-irc/eggdrop/ChangeLog,v 1.87 2011/12/31 13:41:41 binki Exp $
+# Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-irc/eggdrop/ChangeLog,v 1.90 2012/10/08 16:59:53 blueness Exp $
+
+  08 Oct 2012; Anthony G. Basile <blueness@gentoo.org> eggdrop-1.6.21.ebuild:
+  stable ppc, bug #437400
+
+  07 Oct 2012; Raúl Porcel <armin76@gentoo.org> eggdrop-1.6.21.ebuild:
+  alpha/ia64/sparc/x86 stable wrt #437400
+
+  06 Oct 2012; Agostino Sarubbo <ago@gentoo.org> eggdrop-1.6.21.ebuild:
+  Stable for amd64, wrt bug #437400
 
 *eggdrop-1.6.21 (31 Dec 2011)
 
@@ -357,4 +366,3 @@
   files/eggdrop-installer:
   Initial Release. This closes bug #18461 Credit to both Curtis Hogg
   <buckminst@inconnu.isu.edu> and Chuck Short <chuck_short@rogers.com>
-

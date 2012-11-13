@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-mathematics/pari/pari-2.5.2.ebuild,v 1.1 2012/08/09 20:25:18 bicatali Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-mathematics/pari/pari-2.5.2.ebuild,v 1.3 2012/10/22 22:01:21 fauli Exp $
 
 EAPI=4
 
@@ -24,8 +24,6 @@ RDEPEND="sys-libs/readline
 	X? ( x11-libs/libX11 )"
 DEPEND="${RDEPEND}
 	doc? ( virtual/latex-base )"
-
-SITEFILE=50${PN}-gentoo.el
 
 get_compile_dir() {
 	pushd "${S}/config" > /dev/null
@@ -62,7 +60,8 @@ src_prepare() {
 		-e 's:"acroread":"xdg-open":' \
 		doc/gphelp.in || die "Failed to fix doc dir"
 
-	sed -i "s:/usr:${EPREFIX}/usr:g" config/get_X11 \
+	sed -i "s:/\(usr\|lib64\):${EPREFIX}/\1:g" \
+		config/get_{Qt,X11,include_path,libpth} \
 		|| die "Failed to fix get_X11"
 
 	# usersch3.tex is generated

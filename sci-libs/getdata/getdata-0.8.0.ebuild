@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/getdata/getdata-0.8.0.ebuild,v 1.2 2012/08/03 18:51:55 bicatali Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/getdata/getdata-0.8.0.ebuild,v 1.5 2012/10/18 21:43:25 jlec Exp $
 
 EAPI=3
 
@@ -9,6 +9,7 @@ SUPPORT_PYTHON_ABIS="1"
 RESTRICT_PYTHON_ABIS="3.* *-jython *-pypy-*"
 
 FORTRAN_STANDARD="95"
+FORTRAN_NEEDED=fortran
 
 inherit autotools fortran-2 python
 
@@ -16,8 +17,8 @@ DESCRIPTION="Reference implementation of the Dirfile, format for time-ordered bi
 HOMEPAGE="http://getdata.sourceforge.net/"
 SRC_URI="mirror://sourceforge/project/${PN}/${PN}/${PV}/${P}.tar.bz2"
 
-LICENSE="LGPL-2.1"
 SLOT="0"
+LICENSE="LGPL-2.1"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="bzip2 fortran lzma python perl static-libs"
 
@@ -28,7 +29,7 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 pkg_setup() {
-	use fortran && fortran-2_pkg_setup
+	fortran-2_pkg_setup
 	use python && python_pkg_setup
 }
 

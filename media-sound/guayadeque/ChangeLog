@@ -1,6 +1,19 @@
 # ChangeLog for media-sound/guayadeque
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/guayadeque/ChangeLog,v 1.15 2012/05/05 08:31:23 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/guayadeque/ChangeLog,v 1.19 2012/10/18 17:34:05 jlec Exp $
+
+  18 Oct 2012; Justin Lecher <jlec@gentoo.org> -guayadeque-0.2.7.ebuild,
+  -guayadeque-0.2.9.ebuild, -guayadeque-0.3.1.ebuild:
+  Drop old
+
+  17 Oct 2012; Pawel Hajdan jr <phajdan.jr@gentoo.org> guayadeque-0.3.5.ebuild:
+  x86 stable wrt bug #433541
+
+  14 Sep 2012; Agostino Sarubbo <ago@gentoo.org> guayadeque-0.3.5.ebuild:
+  Stable for amd64, wrt bug #433541
+
+  31 Aug 2012; Justin Lecher <jlec@gentoo.org> guayadeque-0.3.5.ebuild:
+  Drop Enconding from desktop file, #433034
 
   05 May 2012; Michał Górny <mgorny@gentoo.org> guayadeque-0.2.7.ebuild,
   guayadeque-0.2.9.ebuild, guayadeque-0.3.1.ebuild, guayadeque-0.3.5.ebuild:

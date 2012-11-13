@@ -1,6 +1,22 @@
 # ChangeLog for dev-ruby/mocha
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/mocha/ChangeLog,v 1.69 2012/08/12 23:51:39 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/mocha/ChangeLog,v 1.73 2012/11/07 03:36:11 jer Exp $
+
+  07 Nov 2012; Jeroen Roovers <jer@gentoo.org> mocha-0.10.5.ebuild:
+  Stable for HPPA (bug #427606).
+
+  28 Oct 2012; Raúl Porcel <armin76@gentoo.org> mocha-0.9.12.ebuild,
+  mocha-0.10.5.ebuild, mocha-0.11.4.ebuild, mocha-0.12.3.ebuild,
+  mocha-0.12.7.ebuild:
+  alpha/ia64/sparc stable wrt #427606, add ~alpha
+
+*mocha-0.12.7 (15 Oct 2012)
+
+  15 Oct 2012; Hans de Graaff <graaff@gentoo.org> +mocha-0.12.7.ebuild:
+  Version bump.
+
+  28 Aug 2012; Hans de Graaff <graaff@gentoo.org> -mocha-0.12.1.ebuild:
+  Cleanup.
 
 *mocha-0.12.3 (12 Aug 2012)
 

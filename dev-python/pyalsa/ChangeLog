@@ -1,6 +1,17 @@
 # ChangeLog for dev-python/pyalsa
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pyalsa/ChangeLog,v 1.29 2012/04/01 14:58:50 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pyalsa/ChangeLog,v 1.32 2012/11/06 10:55:53 ago Exp $
+
+  06 Nov 2012; Agostino Sarubbo <ago@gentoo.org> pyalsa-1.0.26.ebuild:
+  Stable for amd64, wrt bug #441288
+
+  05 Nov 2012; Anthony G. Basile <blueness@gentoo.org> pyalsa-1.0.26.ebuild:
+  stable ppc ppc64, bug #441288
+
+*pyalsa-1.0.26 (07 Sep 2012)
+
+  07 Sep 2012; Tony Vroon <chainsaw@gentoo.org> +pyalsa-1.0.26.ebuild:
+  Version bump, as announced by Jaroslav Kysela on alsa-devel.
 
   01 Apr 2012; Raúl Porcel <armin76@gentoo.org> pyalsa-1.0.25.ebuild:
   sparc stable wrt #406101
@@ -109,4 +120,3 @@
   12 Dec 2008; Steve Dibb <beandog@gentoo.org> +metadata.xml,
   +pyalsa-1.0.17.ebuild:
   Initial commit, bug 210254
-

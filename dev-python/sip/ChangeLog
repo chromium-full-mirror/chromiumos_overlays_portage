@@ -1,6 +1,26 @@
 # ChangeLog for dev-python/sip
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/sip/ChangeLog,v 1.223 2012/08/20 18:53:38 johu Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/sip/ChangeLog,v 1.228 2012/10/28 15:57:49 hwoarang Exp $
+
+*sip-4.14.1 (28 Oct 2012)
+
+  28 Oct 2012; Markos Chandras <hwoarang@gentoo.org> +sip-4.14.1.ebuild,
+  -sip-4.12.3-r2.ebuild, -sip-4.13.2-r1.ebuild:
+  Version bump. Remove old
+
+  14 Oct 2012; Davide Pesavento <pesa@gentoo.org> sip-4.14.ebuild:
+  Update from qt overlay.
+
+  12 Oct 2012; Mike Gilbert <floppym@gentoo.org> sip-4.14.ebuild:
+  Set subslot. Backported from Progress Overlay. Patch by Arfrever.
+
+*sip-4.14 (05 Oct 2012)
+
+  05 Oct 2012; Markos Chandras <hwoarang@gentoo.org> +sip-4.14.ebuild:
+  Version bump. Bug #437218
+
+  09 Sep 2012; Raúl Porcel <armin76@gentoo.org> sip-4.13.3.ebuild:
+  alpha/ia64/sparc stable wrt #429042
 
   20 Aug 2012; Johannes Huber <johu@gentoo.org> sip-4.13.3.ebuild:
   Stable for x86, wrt bug #429042

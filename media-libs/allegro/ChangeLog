@@ -1,6 +1,19 @@
 # ChangeLog for media-libs/allegro
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/allegro/ChangeLog,v 1.131 2012/08/21 12:47:09 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/allegro/ChangeLog,v 1.135 2012/10/11 15:51:56 mr_bones_ Exp $
+
+  11 Oct 2012; Michael Sterrett <mr_bones_@gentoo.org> -allegro-5.0.5.ebuild,
+  allegro-5.0.7.ebuild:
+  add missing virtual/glu dep (bug #437990)
+
+  11 Oct 2012; Anthony G. Basile <blueness@gentoo.org> allegro-5.0.7.ebuild:
+  stable ppc, bug #432082
+
+  05 Oct 2012; Brent Baude <ranger@gentoo.org> allegro-5.0.7.ebuild:
+  Marking allegro-5.0.7 ppc64 for bug 432082
+
+  23 Sep 2012; Pawel Hajdan jr <phajdan.jr@gentoo.org> allegro-5.0.7.ebuild:
+  x86 stable wrt bug #432082
 
   21 Aug 2012; Agostino Sarubbo <ago@gentoo.org> allegro-5.0.7.ebuild:
   Stable for amd64, wrt bug #432082

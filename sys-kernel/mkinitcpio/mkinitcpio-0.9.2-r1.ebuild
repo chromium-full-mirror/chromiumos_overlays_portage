@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/mkinitcpio/mkinitcpio-0.9.2-r1.ebuild,v 1.2 2012/07/04 18:17:37 xmw Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/mkinitcpio/mkinitcpio-0.9.2-r1.ebuild,v 1.5 2012/11/03 19:00:39 ssuominen Exp $
 
 EAPI=4
 
@@ -29,12 +29,12 @@ RDEPEND="app-arch/cpio
 	sys-apps/grep
 	>=sys-apps/kmod-7
 	>=sys-apps/util-linux-2.21
-	udev? ( >sys-fs/udev-171-r6 )
+	udev? ( >sys-fs/udev-171-r8 )
 	device-mapper? ( sys-fs/lvm2[static] )
 	cryptsetup? ( sys-fs/cryptsetup[static] )
 	mdadm? ( sys-fs/mdadm[static] )
 	dmraid? ( sys-fs/dmraid[static] )
-	pcmcia? ( sys-apps/pcmciautils[static] )"
+	pcmcia? ( || ( >sys-apps/pcmciautils-018[staticsocket] <sys-apps/pcmciautils-018[static] ) )"
 
 pkg_setup() {
 	if kernel_is -lt 2 6 32 ; then

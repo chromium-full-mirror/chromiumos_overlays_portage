@@ -1,6 +1,117 @@
 # ChangeLog for app-emulation/libvirt
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/libvirt/ChangeLog,v 1.208 2012/08/22 13:11:25 nativemad Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/libvirt/ChangeLog,v 1.232 2012/11/04 21:57:34 cardoe Exp $
+
+  04 Nov 2012; Doug Goldstein <cardoe@gentoo.org> libvirt-1.0.0.ebuild:
+  Fix need firealld in init script when USE=-firewalld
+
+*libvirt-1.0.0 (04 Nov 2012)
+
+  04 Nov 2012; Doug Goldstein <cardoe@gentoo.org> +libvirt-1.0.0.ebuild,
+  +files/libvirtd.init-r11, metadata.xml:
+  Version bump. Add support for firewalld as well.
+
+  30 Oct 2012; <ago@gentoo.org> libvirt-0.10.2-r3.ebuild:
+  Stable for amd64, wrt bug #439298
+
+  30 Oct 2012; Doug Goldstein <cardoe@gentoo.org> libvirt-9999.ebuild:
+  Update the live ebuild.
+
+  30 Oct 2012; Doug Goldstein <cardoe@gentoo.org> libvirt-0.10.2.1.ebuild,
+  files/libvirtd.init-r10:
+  Add a temporary use on dbus until we can come up with a better no-op use to
+  depend on.
+
+  30 Oct 2012; Doug Goldstein <cardoe@gentoo.org> libvirt-0.10.2-r3.ebuild,
+  libvirt-0.10.2.1.ebuild:
+  Explicitly disable firewalld support, which was getting enabled just from
+  having DBus support, which could come from Avahi support. bug #439764
+
+*libvirt-0.10.2.1 (30 Oct 2012)
+
+  30 Oct 2012; Doug Goldstein <cardoe@gentoo.org> +libvirt-0.10.2.1.ebuild,
+  +files/libvirtd.confd-r4, +files/libvirtd.init-r10:
+  Version bump. Tweak to the init script to better support need net in newer
+  OpenRC and to start up init scripts we are dependant on based on USE flags.
+
+  29 Oct 2012; Doug Goldstein <cardoe@gentoo.org> libvirt-0.10.2-r3.ebuild:
+  Handle kernel CONFIG option rename for 3.6 and newer. Clean up kernel CONFIG
+  option checking as well. bug #437370
+
+  24 Oct 2012; Doug Goldstein <cardoe@gentoo.org> -libvirt-0.10.2-r2.ebuild:
+  Remove version that no one wants to use.
+
+*libvirt-0.10.2-r3 (23 Oct 2012)
+
+  23 Oct 2012; Doug Goldstein <cardoe@gentoo.org> +libvirt-0.10.2-r3.ebuild:
+  Revert out CPU pinning patch as it caused more problems then it fixed for
+  some.
+
+  22 Oct 2012; Doug Goldstein <cardoe@gentoo.org> -libvirt-0.10.2.ebuild,
+  -libvirt-0.10.2-r1.ebuild:
+  Remove older ebuilds
+
+*libvirt-0.10.2-r2 (21 Oct 2012)
+
+  21 Oct 2012; Doug Goldstein <cardoe@gentoo.org> +libvirt-0.10.2-r2.ebuild:
+  Backport a number of stability and API bug fixes.
+
+  12 Oct 2012; Doug Goldstein <cardoe@gentoo.org> libvirt-0.10.2.ebuild,
+  libvirt-0.10.2-r1.ebuild, libvirt-9999.ebuild:
+  libssh2 is always required now for newer versions because of the
+  qemu+libssh:// transport mechanism which is aiming to replace qemu+ssh://.
+  Fix depends so that it does not appear to be automagical. bug #438174
+
+  09 Oct 2012; Doug Goldstein <cardoe@gentoo.org> libvirt-0.9.13-r1.ebuild,
+  libvirt-0.10.2.ebuild, libvirt-0.10.2-r1.ebuild:
+  Reflect the app-emulation/qemu-kvm -> app-emulation/qemu move
+
+  09 Oct 2012; Doug Goldstein <cardoe@gentoo.org> -libvirt-0.10.1.ebuild:
+  One more version to remove.
+
+  09 Oct 2012; Doug Goldstein <cardoe@gentoo.org> -libvirt-0.9.11.4.ebuild,
+  -libvirt-0.9.11.5.ebuild, -libvirt-0.9.12.ebuild, -libvirt-0.9.12-r1.ebuild:
+  Remove older versions
+
+*libvirt-0.10.2-r1 (05 Oct 2012)
+
+  05 Oct 2012; Doug Goldstein <cardoe@gentoo.org> +libvirt-0.10.2-r1.ebuild:
+  Bump for newer v5 of the udev based virInterface patch.
+
+  30 Sep 2012; Doug Goldstein <cardoe@gentoo.org> -files/libvirtd.confd-r2,
+  -files/libvirtd.init-r5, metadata.xml:
+  Drop old initscript and config file. Remove description for a USE flag that
+  is gone.
+
+  30 Sep 2012; Doug Goldstein <cardoe@gentoo.org> libvirt-0.10.2.ebuild,
+  libvirt-9999.ebuild, +files/libvirtd.init-r9:
+  Bump the init script to fix an issue where the halt command could not be used
+  during the correct phase with OpenRC.
+
+  30 Sep 2012; Doug Goldstein <cardoe@gentoo.org> libvirt-9999.ebuild:
+  Update the live ebuild to the latest tweak in 0.10.2.
+
+*libvirt-0.10.2 (30 Sep 2012)
+
+  30 Sep 2012; Doug Goldstein <cardoe@gentoo.org> +libvirt-0.10.2.ebuild:
+  Bump to the 0.10.2 release plus a few patches and virInterface support for
+  Gentoo so that we don't need netcf support for virt-manager.
+
+*libvirt-0.10.1 (31 Aug 2012)
+
+  31 Aug 2012; Doug Goldstein <cardoe@gentoo.org> -libvirt-0.10.0_rc1.ebuild,
+  -libvirt-0.10.0_rc2.ebuild, +libvirt-0.10.1.ebuild:
+  Bump to latest release.
+
+*libvirt-0.10.0_rc2 (27 Aug 2012)
+
+  27 Aug 2012; Doug Goldstein <cardoe@gentoo.org> +libvirt-0.10.0_rc2.ebuild:
+  Bump 0.10.0 RC.
+
+*libvirt-0.10.0_rc1 (25 Aug 2012)
+
+  25 Aug 2012; Doug Goldstein <cardoe@gentoo.org> +libvirt-0.10.0_rc1.ebuild:
+  Add 0.10.0 release candidate 1.
 
   22 Aug 2012; Andreas Schuerch <nativemad@gentoo.org>
   libvirt-0.9.13-r1.ebuild:

@@ -1,6 +1,26 @@
 # ChangeLog for Gentoo/AMD64 profile directory
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64/ChangeLog,v 1.185 2012/08/22 15:57:46 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64/ChangeLog,v 1.191 2012/11/12 15:36:54 floppym Exp $
+
+  12 Nov 2012; Mike Gilbert <floppym@gentoo.org> make.defaults:
+  Move PYTHON_TARGETS=python3_2 from arch profiles to base.
+
+  05 Nov 2012; Sergei Trofimovich <slyfox@gentoo.org> package.use:
+  Fixed typo qemu_softmmu_target{,s}_.
+
+  04 Nov 2012; Diego E. Pettenò <flameeyes@gentoo.org> package.use.mask:
+  Unmask dane USE flag for net-libs/gnutls.
+
+  29 Oct 2012; Doug Goldstein <cardoe@gentoo.org> +package.use:
+  Add package.use so we can enable the native arch as the default qemu target
+  for bug #437788
+
+  07 Oct 2012; Samuli Suominen <ssuominen@gentoo.org> package.use.mask:
+  Restore USE="systemd" mask to sys-auth/polkit for stabilization.
+
+  15 Sep 2012; Johannes Huber <johu@gentoo.org> package.use.mask:
+  Masked media-libs/phonon[zeitgeist] for stabilization as the use flag pulls a
+  dep tree of hell.
 
   22 Aug 2012; Mike Frysinger <vapier@gentoo.org> make.defaults:
   Update default CHOST for x32 targets.

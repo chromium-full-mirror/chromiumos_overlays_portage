@@ -1,6 +1,23 @@
 # ChangeLog for dev-python/coverage
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/coverage/ChangeLog,v 1.71 2012/08/19 15:58:35 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/coverage/ChangeLog,v 1.76 2012/11/07 03:57:56 jer Exp $
+
+  07 Nov 2012; Jeroen Roovers <jer@gentoo.org> coverage-3.5.3.ebuild:
+  Stable for HPPA (bug #441274).
+
+  06 Nov 2012; Agostino Sarubbo <ago@gentoo.org> coverage-3.5.3.ebuild:
+  Stable for amd64, wrt bug #441274
+
+  05 Nov 2012; Anthony G. Basile <blueness@gentoo.org> coverage-3.5.3.ebuild:
+  stable arm, bug #441274
+
+  05 Nov 2012; Anthony G. Basile <blueness@gentoo.org> coverage-3.5.3.ebuild:
+  stable ppc ppc64, bug #441274
+
+*coverage-3.5.3 (30 Sep 2012)
+
+  30 Sep 2012; Dirkjan Ochtman <djc@gentoo.org> +coverage-3.5.3.ebuild:
+  Version bump to 3.5.3.
 
   19 Aug 2012; Raúl Porcel <armin76@gentoo.org> coverage-3.5.2.ebuild:
   alpha/ia64/s390/sh/sparc stable wrt #422059
@@ -257,4 +274,3 @@
   +coverage-2.77.ebuild:
   Initial commit. This is the coverage checker that is supported by
   dev-python/nose.
-

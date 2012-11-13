@@ -1,27 +1,29 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/gst-plugins-good/gst-plugins-good-0.10.23.ebuild,v 1.9 2012/05/05 08:02:27 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/gst-plugins-good/gst-plugins-good-0.10.23.ebuild,v 1.11 2012/11/07 22:04:43 tetromino Exp $
+
+EAPI=1
 
 # order is important, gnome2 after gst-plugins
 inherit gst-plugins-good gst-plugins10 gnome2 eutils flag-o-matic libtool
 
 DESCRIPTION="Basepack of plugins for gstreamer"
-HOMEPAGE="http://gstreamer.net/"
+HOMEPAGE="http://gstreamer.freedesktop.org/"
 SRC_URI="http://gstreamer.freedesktop.org/src/${PN}/${P}.tar.bz2"
 
-LICENSE="LGPL-2.1"
+LICENSE="LGPL-2.1+"
 KEYWORDS="alpha amd64 arm hppa ia64 ppc ppc64 sh sparc x86 ~x86-fbsd"
 IUSE=""
 
-RDEPEND=">=media-libs/gst-plugins-base-0.10.29
-	>=media-libs/gstreamer-0.10.29
+RDEPEND=">=media-libs/gst-plugins-base-0.10.29:0.10
+	>=media-libs/gstreamer-0.10.29:0.10
 	>=dev-libs/liboil-0.3.14
 	sys-libs/zlib
 	app-arch/bzip2"
 DEPEND="${RDEPEND}
 	>=sys-devel/gettext-0.11.5
 	virtual/pkgconfig
-	!<media-libs/gst-plugins-bad-0.10.19"
+	!<media-libs/gst-plugins-bad-0.10.19:0.10"
 
 # Always enable optional bz2 support for matroska
 # Always enable optional zlib support for qtdemux, id3demux and matroska

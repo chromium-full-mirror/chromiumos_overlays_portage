@@ -1,6 +1,39 @@
 # ChangeLog for media-tv/xbmc
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-tv/xbmc/ChangeLog,v 1.143 2012/08/04 16:25:42 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-tv/xbmc/ChangeLog,v 1.151 2012/10/24 22:36:12 aballier Exp $
+
+  24 Oct 2012; Alexis Ballier <aballier@gentoo.org> xbmc-11.0.ebuild,
+  -files/xbmc-11.0-ffmpeg.patch, files/xbmc-11.0-libav.patch:
+  Backport a huge patchset from upstream master to be compatible with ffmpeg
+  0.10 up to current git master. Bug #438842. Rebase the libav patches on top
+  of these changes, it seems they were sent upstream but not applied. Drop a
+  now useless patch with this refactoring. Please CC me on bugs if these
+  patches cause problems.
+
+  09 Oct 2012; Mike Frysinger <vapier@gentoo.org> xbmc-9999.ebuild:
+  Skip running eautoreconf in libapetag & libid3tag #437368 by BT.
+
+  09 Oct 2012; Mike Frysinger <vapier@gentoo.org> metadata.xml,
+  xbmc-9999.ebuild:
+  Add USE=sftp to control libssh dependency #437566 by candrews.
+
+  24 Sep 2012; Mike Frysinger <vapier@gentoo.org> metadata.xml,
+  xbmc-9999.ebuild:
+  Control NFS support via USE=nfs #436034 by oceand.dev.
+
+  16 Sep 2012; Mike Frysinger <vapier@gentoo.org> xbmc-9999.ebuild:
+  Depend on taglib-1.8 to match upstream #434658 by BT.
+
+  08 Sep 2012; Mike Frysinger <vapier@gentoo.org> xbmc-9999.ebuild:
+  Add USE=upnp support #434270 by BT.
+
+  08 Sep 2012; Mike Frysinger <vapier@gentoo.org>
+  files/xbmc-9999-no-arm-flags.patch:
+  Update arm flags patch to latest git #434182 by BT.
+
+  05 Sep 2012; Justin Lecher <jlec@gentoo.org> xbmc-11.0.ebuild,
+  xbmc-9999.ebuild:
+  Use domenu instead insinto + doins to install .desktop files
 
   04 Aug 2012; Mike Frysinger <vapier@gentoo.org>
   files/xbmc-9999-nomythtv.patch:

@@ -1,6 +1,15 @@
 # ChangeLog for sys-apps/pcsc-lite
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/pcsc-lite/ChangeLog,v 1.139 2012/08/22 12:05:45 xmw Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/pcsc-lite/ChangeLog,v 1.141 2012/11/09 17:12:18 flameeyes Exp $
+
+  09 Nov 2012; Diego E. Pettenò <flameeyes@gentoo.org>
+  -pcsc-lite-1.8.5-r1.ebuild, -pcsc-lite-1.8.5.ebuild:
+  Remove old, non-stable candidates.
+
+*pcsc-lite-1.8.6 (01 Sep 2012)
+
+  01 Sep 2012; Diego E. Pettenò <flameeyes@gentoo.org> +pcsc-lite-1.8.6.ebuild:
+  Version bump.
 
   22 Aug 2012; Michael Weber <xmw@gentoo.org> pcsc-lite-1.8.2.ebuild:
   ppc stable (bug 411059).

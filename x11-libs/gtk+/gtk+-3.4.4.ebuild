@@ -1,27 +1,27 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/gtk+/gtk+-3.4.4.ebuild,v 1.1 2012/07/16 06:38:57 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/gtk+/gtk+-3.4.4.ebuild,v 1.12 2012/11/06 02:09:05 tetromino Exp $
 
 EAPI="4"
 
-inherit eutils flag-o-matic gnome.org gnome2-utils multilib virtualx
+inherit autotools eutils flag-o-matic gnome.org gnome2-utils multilib virtualx
 
 DESCRIPTION="Gimp ToolKit +"
 HOMEPAGE="http://www.gtk.org/"
 
-LICENSE="LGPL-2"
+LICENSE="LGPL-2+"
 SLOT="3"
 # NOTE: This gtk+ has multi-gdk-backend support, see:
 #  * http://blogs.gnome.org/kris/2010/12/29/gdk-3-0-on-mac-os-x/
 #  * http://mail.gnome.org/archives/gtk-devel-list/2010-November/msg00099.html
 # I tried this and got it all compiling, but the end result is unusable as it
 # horribly mixes up the backends -- grobian
-IUSE="aqua colord cups debug doc examples +introspection packagekit test vim-syntax wayland X xinerama"
+IUSE="aqua colord cups debug examples +introspection packagekit test vim-syntax wayland X xinerama"
 REQUIRED_USE="
 	|| ( aqua wayland X )
 	xinerama? ( X )"
 
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
+KEYWORDS="alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
 
 # FIXME: introspection data is built against system installation of gtk+:3
 # NOTE: cairo[svg] dep is due to bug 291283 (not patched to avoid eautoreconf)
@@ -65,10 +65,8 @@ DEPEND="${COMMON_DEPEND}
 		x11-proto/damageproto
 		xinerama? ( x11-proto/xineramaproto )
 	)
+	>=dev-libs/gobject-introspection-common-1.32
 	>=dev-util/gtk-doc-am-1.11
-	doc? (
-		>=dev-util/gtk-doc-1.11
-		~app-text/docbook-xml-dtd-4.1.2 )
 	test? (
 		media-fonts/font-misc-misc
 		media-fonts/font-cursor-misc )"
@@ -76,6 +74,7 @@ DEPEND="${COMMON_DEPEND}
 # gtk+-3.3.18 breaks scrolling in <=x11-libs/vte-0.31.0:2.90
 # >=xorg-server-1.11.4 needed for
 #  http://mail.gnome.org/archives/desktop-devel-list/2012-March/msg00024.html
+# eautoreconf requires dev-libs/gobject-introspection-common
 RDEPEND="${COMMON_DEPEND}
 	!<gnome-base/gail-1000
 	!<x11-libs/vte-0.31.0:2.90
@@ -103,6 +102,9 @@ src_prepare() {
 	# Apparently needed for new libxkbcommon headers; bug #408131
 	epatch "${FILESDIR}/${PN}-3.3.20-wayland-xkbcommon-headers.patch"
 
+	# Build fix for uclibc from gtk+-3.5.x; bug #441634; needs eautoreconf
+	epatch "${FILESDIR}/${PN}-3.4.4-isnan.patch"
+
 	# Non-working test in gentoo's env
 	sed 's:\(g_test_add_func ("/ui-tests/keys-events.*\):/*\1*/:g' \
 		-i gtk/tests/testing.c || die "sed 1 failed"
@@ -129,14 +131,13 @@ src_prepare() {
 		[[ ${PV} != 9999 ]] && strip_builddir SRC_SUBDIRS demos Makefile.in
 	fi
 
-	[[ ${PV} = 9999 ]] && gnome2_src_prepare
+	eautoreconf # for 3.4.4-isnan.patch
 }
 
 src_configure() {
 	local myconf="$(use_enable aqua quartz-backend)
 		$(use_enable colord)
 		$(use_enable cups cups auto)
-		$(use_enable doc gtk-doc)
 		$(use_enable introspection)
 		$(use_enable packagekit)
 		$(use_enable wayland wayland-backend)
@@ -163,7 +164,7 @@ src_test() {
 	# would result in circular dependencies.
 	# https://bugzilla.gnome.org/show_bug.cgi?id=669562
 	if ! has_version '>=x11-themes/gnome-themes-standard-3.3.91'; then
-		ewarn "Tests will be skipped beecause >=gnome-themes-standard-3.3.90"
+		ewarn "Tests will be skipped because >=gnome-themes-standard-3.3.91"
 		ewarn "is not installed. Please re-run tests after installing the"
 		ewarn "required version of gnome-themes-standard."
 		return 0

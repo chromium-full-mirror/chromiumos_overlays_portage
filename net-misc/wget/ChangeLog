@@ -1,6 +1,15 @@
 # ChangeLog for net-misc/wget
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/wget/ChangeLog,v 1.165 2012/08/23 18:14:40 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/wget/ChangeLog,v 1.168 2012/10/22 18:26:06 xmw Exp $
+
+  22 Oct 2012; Michael Weber <xmw@gentoo.org> wget-1.14.ebuild:
+  ppc stable (bug 438858)
+
+  22 Oct 2012; Agostino Sarubbo <ago@gentoo.org> wget-1.14.ebuild:
+  Stable for AMD64, wrt bug #438858
+
+  20 Oct 2012; Jeroen Roovers <jer@gentoo.org> wget-1.14.ebuild:
+  Stable for HPPA (bug #438858).
 
   23 Aug 2012; Mike Frysinger <vapier@gentoo.org> metadata.xml,
   wget-1.14.ebuild:

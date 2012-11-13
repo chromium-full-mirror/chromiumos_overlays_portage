@@ -1,6 +1,52 @@
 # ChangeLog for Gentoo/PPC profile directory
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/powerpc/ChangeLog,v 1.186 2012/08/22 12:16:48 xmw Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/powerpc/ChangeLog,v 1.197 2012/11/12 17:22:50 tetromino Exp $
+
+  12 Nov 2012; Alexandre Rostovtsev <tetromino@gentoo.org>
+  ppc32/package.use.mask:
+  Unmask webkit-gtk[webkit2] on ppc since at-spi2-core has been keyworded.
+
+  12 Nov 2012; Mike Gilbert <floppym@gentoo.org> ppc32/make.defaults,
+  ppc64/make.defaults:
+  Move PYTHON_TARGETS=python3_2 from arch profiles to base.
+
+  05 Nov 2012; Sergei Trofimovich <slyfox@gentoo.org> package.use,
+  ppc64/package.use:
+  Fixed typo qemu_softmmu_target{,s}_.
+
+  04 Nov 2012; Alexandre Rostovtsev <tetromino@gentoo.org>
+  ppc32/package.use.mask:
+  Mask webkit-gtk[webkit2] on ppc due to missing ~ppc keyword on at-spi2-core
+  (bug #441692).
+
+  31 Oct 2012; Michał Górny <mgorny@gentoo.org> use.mask:
+  Add a PYTHON_TARGETS mask based on keywords.
+
+  30 Oct 2012; Samuli Suominen <ssuominen@gentoo.org> ppc64/package.use.force,
+  ppc64/package.use.mask:
+  Instead of masking USE="new-login" completely, force USE="gdm" enabled since
+  it's the only DM with new-login functionality with stable ppc64 keywording.
+
+  29 Oct 2012; Doug Goldstein <cardoe@gentoo.org> +ppc64/package.use.force:
+  Add package.use.force for ppc64 as it requires binary only SeaBIOS (x86 BIOS)
+  since it can't natively compile it.
+
+  29 Oct 2012; Doug Goldstein <cardoe@gentoo.org> +package.use,
+  +ppc64/package.use:
+  Add package.use so we can enable the native arch as the default qemu target
+  for bug #437788
+
+  07 Oct 2012; Anthony G. Basile <blueness@gentoo.org> package.use.mask:
+  remove net-libs/webkit-gtk[geoloc,webkit2] masking since app-misc/geoclue and
+  app-accessibility/at-spi2-core are keyworded
+
+  27 Sep 2012; Samuli Suominen <ssuominen@gentoo.org> package.use.mask:
+  Mask USE="test" for dev-ruby/rack-test because dev-ruby/sinatra it relies has
+  expensive dependencies.
+
+  26 Aug 2012; Justin Lecher <jlec@gentoo.org> package.use.force:
+  Foce USE=minimal for sci-libs/cctbx because sci-chemistry/cns is missing for
+  ppc
 
   22 Aug 2012; Michael Weber <xmw@gentoo.org> package.use.mask:
   x11-themes/gtk-engines-qtcurve[mozilla]: Masked for missing stable on

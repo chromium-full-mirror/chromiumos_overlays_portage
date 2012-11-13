@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/rasmol/rasmol-2.7.5.2.ebuild,v 1.3 2012/04/25 15:52:59 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/rasmol/rasmol-2.7.5.2.ebuild,v 1.6 2012/11/11 15:23:57 blueness Exp $
 
 EAPI=4
 
-inherit eutils fortran-2 prefix toolchain-funcs
+inherit eutils fortran-2 multilib prefix toolchain-funcs
 
 MY_P="RasMol_${PV}"
 VERS="13May11"
@@ -17,7 +17,7 @@ SRC_URI="mirror://sourceforge/open${PN}/RasMol/RasMol_2.7.5/${P}-${VERS}.tar.gz"
 
 LICENSE="|| ( GPL-2 RASLIC )"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 ppc ~x86 ~amd64-linux ~x86-linux"
 IUSE=""
 
 RDEPEND="
@@ -25,7 +25,6 @@ RDEPEND="
 	>=sci-libs/cbflib-0.9.2
 	>=sci-libs/cqrlib-1.1.2
 	>=sci-libs/neartree-3.1.1
-	virtual/fortran
 	x11-libs/cairo
 	x11-libs/gtk+:2
 	x11-libs/libXext

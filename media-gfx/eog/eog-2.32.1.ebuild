@@ -1,20 +1,20 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/eog/eog-2.32.1.ebuild,v 1.11 2012/05/05 07:00:23 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/eog/eog-2.32.1.ebuild,v 1.14 2012/10/27 08:33:28 tetromino Exp $
 
 EAPI="3"
 GCONF_DEBUG="yes"
 PYTHON_DEPEND="2:2.5"
 
-inherit gnome2 python
+inherit autotools eutils gnome2 python
 
 DESCRIPTION="The Eye of GNOME image viewer"
 HOMEPAGE="http://www.gnome.org/projects/eog/"
 
-LICENSE="GPL-2"
+LICENSE="GPL-2+"
 SLOT="1"
 KEYWORDS="alpha amd64 arm ia64 ppc ppc64 sparc x86 ~x86-fbsd"
-IUSE="dbus doc exif jpeg lcms python svg tiff xmp"
+IUSE="dbus exif jpeg lcms python svg tiff xmp"
 
 RDEPEND=">=x11-libs/gtk+-2.18:2
 	x11-libs/gdk-pixbuf:2[jpeg?,tiff?]
@@ -39,13 +39,18 @@ RDEPEND=">=x11-libs/gtk+-2.18:2
 	xmp? ( >=media-libs/exempi-2 )"
 
 DEPEND="${RDEPEND}
+	dev-util/gtk-doc-am
 	app-text/gnome-doc-utils
 	sys-devel/gettext
 	>=dev-util/intltool-0.40
-	virtual/pkgconfig
-	doc? ( >=dev-util/gtk-doc-1.10 )"
+	virtual/pkgconfig"
 
 pkg_setup() {
+	python_set_active_version 2
+	python_pkg_setup
+}
+
+src_prepare() {
 	G2CONF="${G2CONF}
 		$(use_with jpeg libjpeg)
 		$(use_with exif libexif)
@@ -57,7 +62,11 @@ pkg_setup() {
 		--disable-scrollkeeper
 		--disable-schemas-install"
 	DOCS="AUTHORS ChangeLog HACKING MAINTAINERS NEWS README THANKS TODO"
-	python_set_active_version 2
+
+	# Fix build failure with ld.gold and glib-2.32
+	epatch "${FILESDIR}/${P}-gmodule.patch"
+	eautoreconf
+	gnome2_src_prepare
 }
 
 src_install() {

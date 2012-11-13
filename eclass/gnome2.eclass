@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/gnome2.eclass,v 1.106 2012/05/09 08:23:14 pacho Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/gnome2.eclass,v 1.110 2012/11/07 19:25:35 pacho Exp $
 
 # @ECLASS: gnome2.eclass
 # @MAINTAINER:
@@ -16,7 +16,7 @@ case "${EAPI:-0}" in
 	0|1)
 		EXPORT_FUNCTIONS src_unpack src_compile src_install pkg_preinst pkg_postinst pkg_postrm
 		;;
-	2|3|4)
+	2|3|4|5)
 		EXPORT_FUNCTIONS src_unpack src_prepare src_configure src_compile src_install pkg_preinst pkg_postinst pkg_postrm
 		;;
 	*) die "EAPI=${EAPI} is not supported" ;;
@@ -94,6 +94,9 @@ gnome2_src_prepare() {
 	# Prevent scrollkeeper access violations
 	gnome2_omf_fix
 
+	# Disable all deprecation warnings
+	gnome2_disable_deprecation_warning
+
 	# Run libtoolize
 	if has ${EAPI:-0} 0 1 2 3; then
 		elibtoolize ${ELTCONF}
@@ -128,6 +131,18 @@ gnome2_src_configure() {
 	# Pass --disable-scrollkeeper when possible
 	if grep -q "disable-scrollkeeper" configure; then
 		G2CONF="${G2CONF} --disable-scrollkeeper"
+	fi
+
+	# Pass --disable-silent-rules when possible (not needed for eapi5), bug #429308
+	if has ${EAPI:-0} 0 1 2 3 4; then
+		if grep -q "disable-silent-rules" configure; then
+			G2CONF="${G2CONF} --disable-silent-rules"
+		fi
+	fi
+
+	# Pass --disable-schemas-install when possible
+	if grep -q "disable-schemas-install" configure; then
+		G2CONF="${G2CONF} --disable-schemas-install"
 	fi
 
 	# Avoid sandbox violations caused by gnome-vfs (bug #128289 and #345659)

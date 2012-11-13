@@ -1,10 +1,12 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-perl/PDL/PDL-2.4.11.ebuild,v 1.2 2012/07/06 03:53:51 bicatali Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/PDL/PDL-2.4.11.ebuild,v 1.5 2012/10/19 10:42:30 jlec Exp $
 
 EAPI=4
 
 MODULE_AUTHOR=CHM
+FORTRAN_NEEDED=fortran
+
 inherit perl-module eutils fortran-2
 
 HOMEPAGE="http://pdl.perl.org/"
@@ -41,7 +43,7 @@ RDEPEND="sys-libs/ncurses
 	plplot? ( sci-libs/plplot )"
 
 DEPEND="${RDEPEND}
-	fortran? ( virtual/fortran >=dev-perl/ExtUtils-F77-1.13 )"
+	fortran? ( >=dev-perl/ExtUtils-F77-1.13 )"
 
 REQUIRED_USE="plplot? ( badval )"
 
@@ -58,6 +60,8 @@ src_prepare() {
 	epatch "${FILESDIR}"/${PN}-2.4.2-makemakerfix.patch
 	# respect user choice for fortran compiler+flags, add pic
 	epatch "${FILESDIR}"/${PN}-2.4.11-fortran.patch
+	# search for shared fftw instead of static
+	epatch "${FILESDIR}"/${PN}-2.4.11-shared-fftw.patch
 	# search for shared hdf instead of static
 	epatch "${FILESDIR}"/${PN}-2.4.11-shared-hdf.patch
 	find . -name Makefile.PL -exec \

@@ -1,6 +1,22 @@
 # ChangeLog for www-client/rekonq
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/rekonq/ChangeLog,v 1.47 2012/07/24 13:09:34 johu Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/rekonq/ChangeLog,v 1.50 2012/10/31 15:29:57 kensington Exp $
+
+*rekonq-1.3 (31 Oct 2012)
+
+  31 Oct 2012; Michael Palimaka <kensington@gentoo.org> +rekonq-1.3.ebuild,
+  -rekonq-1.1.ebuild:
+  Version bump, remove old.
+
+*rekonq-1.2 (13 Oct 2012)
+
+  13 Oct 2012; Johannes Huber <johu@gentoo.org> +rekonq-1.2.ebuild:
+  Version bump wrt bug #437886.
+
+*rekonq-1.1 (29 Aug 2012)
+
+  29 Aug 2012; Johannes Huber <johu@gentoo.org> +rekonq-1.1.ebuild:
+  Version bump.
 
   24 Jul 2012; Johannes Huber <johu@gentoo.org> metadata.xml, rekonq-1.0.ebuild:
   Introduce semantic-desktop use flag to fix bug #427784 requested by Nikoli

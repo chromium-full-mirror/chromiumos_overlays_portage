@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/gnome-base/gnome-shell/gnome-shell-3.2.2.1.ebuild,v 1.6 2012/05/22 03:21:17 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/gnome-base/gnome-shell/gnome-shell-3.2.2.1.ebuild,v 1.8 2012/11/07 21:48:09 tetromino Exp $
 
 EAPI="4"
 GCONF_DEBUG="no"
@@ -15,7 +15,7 @@ HOMEPAGE="http://live.gnome.org/GnomeShell"
 SRC_URI="${SRC_URI}
 	http://dev.gentoo.org/~tetromino/distfiles/${PN}/${P}-patches-1.tar.xz"
 
-LICENSE="GPL-2"
+LICENSE="GPL-2+ LGPL-2+"
 SLOT="0"
 IUSE="+bluetooth +networkmanager"
 KEYWORDS="~amd64 ~x86"
@@ -74,7 +74,7 @@ COMMON_DEPEND=">=dev-libs/glib-2.25.9:2
 #    user switching with gdm-3.1.x)
 # 6. caribou needed for on-screen keyboard
 # 7. xdg-utils needed for xdg-open, used by extension tool
-# 8. gnome-icon-theme-symbolic neeed for various icons
+# 8. gnome-icon-theme-symbolic and dejavu font neeed for various icons & arrows
 # 9. mobile-broadband-provider-info, timezone-data for shell-mobile-providers.c
 RDEPEND="${COMMON_DEPEND}
 	>=sys-auth/polkit-0.101[introspection]
@@ -94,6 +94,7 @@ RDEPEND="${COMMON_DEPEND}
 
 	x11-misc/xdg-utils
 
+	media-fonts/dejavu
 	x11-themes/gnome-icon-theme-symbolic
 
 	networkmanager? (
@@ -153,11 +154,11 @@ src_install() {
 pkg_postinst() {
 	gnome2_pkg_postinst
 
-	if ! has_version '>=media-libs/gst-plugins-good-0.10.23' || \
-	   ! has_version 'media-plugins/gst-plugins-vp8'; then
+	if ! has_version '>=media-libs/gst-plugins-good-0.10.23:0.10' || \
+	   ! has_version 'media-plugins/gst-plugins-vp8:0.10'; then
 		ewarn "To make use of GNOME Shell's built-in screen recording utility,"
-		ewarn "you need to either install >=media-libs/gst-plugins-good-0.10.23"
-		ewarn "and media-plugins/gst-plugins-vp8, or use dconf-editor to change"
+		ewarn "you need to either install >=media-libs/gst-plugins-good-0.10.23:0.10"
+		ewarn "and media-plugins/gst-plugins-vp8:0.10, or use dconf-editor to change"
 		ewarn "apps.gnome-shell.recorder/pipeline to what you want to use."
 	fi
 

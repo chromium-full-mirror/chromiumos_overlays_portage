@@ -1,5 +1,47 @@
 # ChangeLog for sys-apps/kmod
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/kmod/ChangeLog,v 1.48 2012/07/23 14:20:12 williamh Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/kmod/ChangeLog,v 1.56 2012/11/10 22:45:45 williamh Exp $
+
+  10 Nov 2012; William Hubbs <williamh@gentoo.org> ChangeLog:
+  add libxslt dependency for bug #442402 to kmod-11-r1 and kmod-9999.
+
+*kmod-11-r1 (08 Nov 2012)
+
+  08 Nov 2012; William Hubbs <williamh@gentoo.org> +kmod-11-r1.ebuild,
+  kmod-9999.ebuild:
+  kmod reads from /lib/modprobe.d not /usr/lib/modprobe.d
+
+*kmod-11 (08 Nov 2012)
+
+  08 Nov 2012; William Hubbs <williamh@gentoo.org> +kmod-11.ebuild,
+  kmod-9999.ebuild:
+  version bump and sync live ebuild
+
+*kmod-10-r2 (20 Oct 2012)
+
+  20 Oct 2012; Samuli Suominen <ssuominen@gentoo.org> +kmod-10-r2.ebuild,
+  kmod-9999.ebuild:
+  Convert from modprobe install to softdep wrt #396147 by Gustavo Sverzut
+  Barbieri
+
+*kmod-10-r1 (20 Oct 2012)
+
+  20 Oct 2012; Samuli Suominen <ssuominen@gentoo.org> +kmod-10-r1.ebuild,
+  kmod-9999.ebuild:
+  Forward /etc/modprobe.d/usb-load-ehci-first.conf from module-init-tools to
+  kmod wrt #260139
+
+  20 Sep 2012; Tim Harder <radhermit@gentoo.org> metadata.xml:
+  Remove extraneous character from email address.
+
+  09 Sep 2012; William Hubbs <williamh@gentoo.org> kmod-10.ebuild,
+  kmod-9999.ebuild:
+  clean up the live portion of the ebuild using multiple inherits
+
+*kmod-10 (08 Sep 2012)
+
+  08 Sep 2012; Samuli Suominen <ssuominen@gentoo.org> +kmod-10.ebuild,
+  kmod-9999.ebuild:
+  Version bump. Use prune_libtool_files from eutils.eclass.
 
   23 Jul 2012; William Hubbs <williamh@gentoo.org> -kmod-7.ebuild,
   -kmod-8.ebuild, -kmod-9.ebuild:

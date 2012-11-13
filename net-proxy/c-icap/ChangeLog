@@ -1,6 +1,23 @@
 # ChangeLog for net-proxy/c-icap
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-proxy/c-icap/ChangeLog,v 1.15 2012/06/29 14:09:12 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-proxy/c-icap/ChangeLog,v 1.19 2012/11/06 17:06:49 ago Exp $
+
+  06 Nov 2012; <ago@gentoo.org> c-icap-0.2.2.ebuild:
+  Stable for amd64, wrt bug #441494
+
+  04 Nov 2012; Diego E. Pettenò <flameeyes@gentoo.org> c-icap-0.2.2.ebuild:
+  Remove /var/run so that it does not trigger portage's symlink protection on
+  clean.
+
+  22 Oct 2012; Diego E. Pettenò <flameeyes@gentoo.org> -c-icap-0.2.1.ebuild,
+  -files/c-icap-0.2.1-asneeded.patch, files/c-icap.init.2:
+  Remove old; remove 'need net' from init script.
+
+*c-icap-0.2.2 (24 Sep 2012)
+
+  24 Sep 2012; Diego E. Pettenò <flameeyes@gentoo.org> +c-icap-0.2.2.ebuild,
+  +files/c-icap-0.2.2-asneeded.patch:
+  Version bump.
 
 *c-icap-0.2.1 (29 Jun 2012)
 

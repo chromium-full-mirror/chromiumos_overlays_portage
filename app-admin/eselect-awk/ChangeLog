@@ -1,6 +1,15 @@
 # ChangeLog for app-admin/eselect-awk
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-admin/eselect-awk/ChangeLog,v 1.8 2012/07/13 02:47:38 ottxor Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-admin/eselect-awk/ChangeLog,v 1.11 2012/10/09 01:30:30 blueness Exp $
+
+  09 Oct 2012; Anthony G. Basile <blueness@gentoo.org> eselect-awk-0.2.ebuild:
+  keyword ~ppc ~ppc64, bug #419559
+
+  23 Sep 2012; Matt Turner <mattst88@gentoo.org> eselect-awk-0.2.ebuild:
+  Added ~mips, bug 419559.
+
+  26 Aug 2012; Raúl Porcel <armin76@gentoo.org> eselect-awk-0.2.ebuild:
+  Add ~alpha/~ia64/~m68k/~s390/~sh/~sparc wrt #419559
 
   13 Jul 2012; Christoph Junghans <ottxor@gentoo.org> eselect-awk-0.2.ebuild:
   added ~amd64-linux

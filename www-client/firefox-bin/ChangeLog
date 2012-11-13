@@ -1,6 +1,61 @@
 # ChangeLog for www-client/firefox-bin
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/firefox-bin/ChangeLog,v 1.114 2012/07/28 17:00:03 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/firefox-bin/ChangeLog,v 1.125 2012/11/03 12:31:25 ago Exp $
+
+  03 Nov 2012; <ago@gentoo.org> firefox-bin-10.0.10.ebuild:
+  Stable for amd64, wrt bug #439960
+
+*firefox-bin-10.0.10 (31 Oct 2012)
+
+  31 Oct 2012; Ian Stakenvicius <axs@gentoo.org> +firefox-bin-10.0.10.ebuild:
+  ESR bump for security bug 439960
+
+  31 Oct 2012; Ian Stakenvicius <axs@gentoo.org> firefox-bin-15.0.1.ebuild,
+  firefox-bin-16.0.2.ebuild:
+  Interim solution to block net-libs/libproxy[spidermonkey] due to mozjs symbol
+  collisions that cause crashes, bug 439148
+
+*firefox-bin-16.0.2 (29 Oct 2012)
+
+  29 Oct 2012; Jeff Horelick <jdhore@gentoo.org> +firefox-bin-16.0.2.ebuild,
+  -firefox-bin-16.0.1.ebuild:
+  non-ESR version bump
+
+  23 Oct 2012; <ago@gentoo.org> firefox-bin-10.0.9.ebuild:
+  Stable for amd64, wrt bug #437780
+
+*firefox-bin-10.0.9 (20 Oct 2012)
+*firefox-bin-16.0.1 (20 Oct 2012)
+
+  20 Oct 2012; Jeff Horelick <jdhore@gentoo.org> +firefox-bin-10.0.9.ebuild,
+  +firefox-bin-16.0.1.ebuild:
+  Version bump on ESR and main branch
+
+  15 Sep 2012; Andreas Schuerch <nativemad@gentoo.org>
+  firefox-bin-10.0.7.ebuild:
+  x86 stable, see bug 433383
+
+*firefox-bin-15.0.1 (11 Sep 2012)
+
+  11 Sep 2012; Lars Wendler <polynomial-c@gentoo.org>
+  -firefox-bin-14.0.1.ebuild, -firefox-bin-15.0.ebuild,
+  +firefox-bin-15.0.1.ebuild:
+  Version bump. Removed old.
+
+  08 Sep 2012; Agostino Sarubbo <ago@gentoo.org> firefox-bin-10.0.7.ebuild:
+  Stable for amd64, wrt bug #433383
+
+*firefox-bin-10.0.7 (02 Sep 2012)
+
+  02 Sep 2012;  <jd@gentoo.org> +firefox-bin-10.0.7.ebuild,
+  -firefox-bin-10.0.5.ebuild:
+  Version bump on ESR branch
+
+*firefox-bin-15.0 (02 Sep 2012)
+
+  02 Sep 2012;  <jd@gentoo.org> +firefox-bin-15.0.ebuild,
+  -firefox-bin-13.0.1.ebuild:
+  Version bump
 
   28 Jul 2012; Agostino Sarubbo <ago@gentoo.org> firefox-bin-10.0.6.ebuild:
   Stable for amd64, wrt bug #427224

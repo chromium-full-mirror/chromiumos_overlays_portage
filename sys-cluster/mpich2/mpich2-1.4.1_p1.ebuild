@@ -1,8 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-cluster/mpich2/mpich2-1.4.1_p1.ebuild,v 1.4 2012/06/25 18:33:23 jsbronder Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-cluster/mpich2/mpich2-1.4.1_p1.ebuild,v 1.7 2012/11/02 04:39:33 jsbronder Exp $
 
 EAPI=4
+
+FORTRAN_NEEDED=fortran
 
 inherit autotools eutils fortran-2 toolchain-funcs
 
@@ -17,7 +19,7 @@ KEYWORDS="~amd64 ~hppa ~ppc ~ppc64 ~x86"
 IUSE="+cxx debug doc fortran mpi-threads romio threads"
 
 COMMON_DEPEND="dev-libs/libaio
-	sys-apps/hwloc
+	<sys-apps/hwloc-1.5
 	romio? ( net-fs/nfs-utils )"
 
 DEPEND="${COMMON_DEPEND}
@@ -25,7 +27,6 @@ DEPEND="${COMMON_DEPEND}
 	sys-devel/libtool"
 
 RDEPEND="${COMMON_DEPEND}
-	fortran? ( virtual/fortran )
 	!sys-cluster/openmpi"
 
 S="${WORKDIR}"/${PN}-${MY_PV}

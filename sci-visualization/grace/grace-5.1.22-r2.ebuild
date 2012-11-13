@@ -1,10 +1,12 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-visualization/grace/grace-5.1.22-r2.ebuild,v 1.16 2012/02/09 09:44:13 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-visualization/grace/grace-5.1.22-r2.ebuild,v 1.22 2012/10/24 19:45:13 ulm Exp $
 
 EAPI=4
 
-inherit eutils fortran-2 toolchain-funcs
+FORTRAN_NEEDED=fortran
+
+inherit eutils fortran-2 multilib toolchain-funcs
 
 DESCRIPTION="Motif based XY-plotting tool"
 HOMEPAGE="http://plasma-gate.weizmann.ac.il/Grace/"
@@ -14,22 +16,20 @@ SRC_URI="
 
 SLOT="0"
 LICENSE="GPL-2 LGPL-2"
-KEYWORDS="alpha amd64 ia64 ppc ppc64 sparc x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 ppc ppc64 x86 ~amd64-linux ~x86-linux"
 IUSE="fortran fftw jpeg netcdf png"
 
 DEPEND="
 	media-libs/t1lib
 	media-libs/tiff
 	sys-libs/zlib
-	>=x11-libs/openmotif-2.3:0
+	>=x11-libs/motif-2.3:0
 	x11-libs/xbae
 	fftw? ( sci-libs/fftw:2.1 )
 	jpeg? ( virtual/jpeg )
 	netcdf? ( sci-libs/netcdf )
 	png? ( media-libs/libpng )"
-RDEPEND="
-	fortran? ( virtual/fortran )
-${DEPEND}
+RDEPEND="${DEPEND}
 	x11-misc/xdg-utils"
 
 pkg_setup() {

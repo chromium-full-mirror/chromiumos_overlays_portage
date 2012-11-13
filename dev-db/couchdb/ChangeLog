@@ -1,6 +1,14 @@
 # ChangeLog for dev-db/couchdb
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-db/couchdb/ChangeLog,v 1.59 2012/08/11 18:38:43 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-db/couchdb/ChangeLog,v 1.61 2012/10/19 09:15:55 ssuominen Exp $
+
+  19 Oct 2012; Samuli Suominen <ssuominen@gentoo.org> couchdb-1.1.1.ebuild,
+  couchdb-1.2.0.ebuild:
+  Raise spidermonkey dependency to 1.8.5 wrt #431336. Set missing SLOT
+  dependency for openssl to ensure headers are installed.
+
+  23 Sep 2012; Pawel Hajdan jr <phajdan.jr@gentoo.org> couchdb-1.2.0.ebuild:
+  x86 stable wrt bug #428920
 
   11 Aug 2012; Agostino Sarubbo <ago@gentoo.org> couchdb-1.2.0.ebuild:
   Stable for amd64, wrt bug #428920

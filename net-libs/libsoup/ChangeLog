@@ -1,6 +1,44 @@
 # ChangeLog for net-libs/libsoup
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/libsoup/ChangeLog,v 1.284 2012/07/15 18:18:02 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/libsoup/ChangeLog,v 1.295 2012/10/28 16:28:10 armin76 Exp $
+
+  28 Oct 2012; Raúl Porcel <armin76@gentoo.org> libsoup-2.38.1.ebuild:
+  ia64/sh/sparc stable wrt #427544
+
+  20 Oct 2012; Alexandre Rostovtsev <tetromino@gentoo.org>
+  libsoup-2.36.1.ebuild, libsoup-2.36.1-r1.ebuild, libsoup-2.38.1.ebuild:
+  trivial: reorder src_prepare and src_configure.
+
+  20 Oct 2012; Alexandre Rostovtsev <tetromino@gentoo.org>
+  libsoup-2.36.1.ebuild, libsoup-2.36.1-r1.ebuild, libsoup-2.38.1.ebuild:
+  Disable apache-using tests in a cleaner way.
+
+  16 Oct 2012; Anthony G. Basile <blueness@gentoo.org> libsoup-2.38.1.ebuild:
+  stable ppc, bug #427544
+
+  14 Oct 2012; Matt Turner <mattst88@gentoo.org> libsoup-2.38.1.ebuild:
+  Stable on alpha, bug 427544.
+
+  10 Oct 2012; Alexandre Rostovtsev <tetromino@gentoo.org>
+  -files/libsoup-2.30.1-fix-build-without-gnome-with-doc.patch,
+  -libsoup-2.34.3.ebuild, libsoup-2.36.1.ebuild, libsoup-2.36.1-r1.ebuild,
+  -libsoup-2.38.0.ebuild, libsoup-2.38.1.ebuild:
+  Drop useless USE=doc flag. Update license. Drop old.
+
+  07 Oct 2012; Anthony G. Basile <blueness@gentoo.org> libsoup-2.38.1.ebuild:
+  stable ppc64, bug #427544
+
+  06 Oct 2012; Markus Meier <maekke@gentoo.org> libsoup-2.38.1.ebuild:
+  arm stable, bug #427544
+
+  04 Oct 2012; Agostino Sarubbo <ago@gentoo.org> libsoup-2.38.1.ebuild:
+  Stable for amd64, wrt bug #427544
+
+  03 Oct 2012; Pawel Hajdan jr <phajdan.jr@gentoo.org> libsoup-2.38.1.ebuild:
+  x86 stable wrt bug #427544
+
+  02 Oct 2012; Jeroen Roovers <jer@gentoo.org> libsoup-2.38.1.ebuild:
+  Stable for HPPA (bug #427544).
 
   15 Jul 2012; Raúl Porcel <armin76@gentoo.org> libsoup-2.36.1-r1.ebuild:
   alpha/ia64/sh/sparc stable wrt #410611
@@ -1106,4 +1144,3 @@
 
   14 Mar 2003; Alastair Tse <liquidx@gentoo.org> libsoup-1.99.12.ebuild:
   inital ebuild. new version of soup that uses glib2 rather than glib1.
-

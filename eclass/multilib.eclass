@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/multilib.eclass,v 1.99 2012/08/22 16:03:08 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/multilib.eclass,v 1.101 2012/10/17 19:13:18 vapier Exp $
 
 # @ECLASS: multilib.eclass
 # @MAINTAINER:
@@ -121,7 +121,7 @@ get_abi_LIBDIR() { get_abi_var LIBDIR "$@"; }
 # Return a list of the ABIs we want to install for with
 # the last one in the list being the default.
 get_install_abis() {
-	local order=""
+	local x order=""
 
 	if [[ -z ${MULTILIB_ABIS} ]] ; then
 		echo "default"
@@ -162,7 +162,7 @@ get_install_abis() {
 # Return a list of the ABIs supported by this profile.
 # the last one in the list being the default.
 get_all_abis() {
-	local order="" mvar dvar
+	local x order="" mvar dvar
 
 	mvar="MULTILIB_ABIS"
 	dvar="DEFAULT_ABI"
@@ -193,9 +193,7 @@ get_all_abis() {
 # those that might not be touched by the current ebuild and always includes
 # "lib".
 get_all_libdirs() {
-	local libdirs
-	local abi
-	local dir
+	local libdirs abi
 
 	for abi in ${MULTILIB_ABIS}; do
 		libdirs+=" $(get_abi_LIBDIR ${abi})"
@@ -363,7 +361,7 @@ multilib_env() {
 			: ${MULTILIB_ABIS=s390x s390}
 			: ${DEFAULT_ABI=s390x}
 		;;
-		sparc*)
+		sparc64*)
 			export CFLAGS_sparc32=${CFLAGS_sparc32--m32}
 			export CHOST_sparc32=${CTARGET/sparc64/sparc}
 			export CTARGET_sparc32=${CHOST_sparc32}

@@ -1,6 +1,8 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emacs/yatex/yatex-1.76.ebuild,v 1.1 2012/07/08 21:13:01 naota Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emacs/yatex/yatex-1.76.ebuild,v 1.14 2012/10/17 11:26:05 blueness Exp $
+
+EAPI=4
 
 inherit elisp eutils
 
@@ -8,30 +10,27 @@ DESCRIPTION="Yet Another TeX mode for Emacs"
 HOMEPAGE="http://www.yatex.org/"
 SRC_URI="http://www.yatex.org/${P/-/}.tar.gz"
 
-KEYWORDS="~alpha ~amd64 ~ppc ~ppc64 ~sparc ~x86"
+KEYWORDS="amd64 ppc ~ppc64 x86"
 SLOT="0"
-LICENSE="as-is"
+LICENSE="YaTeX"
 IUSE="linguas_ja"
 
-S=${WORKDIR}/${P/-/}
+S="${WORKDIR}/${P/-/}"
+ELISP_PATCHES="${PN}-1.76-gentoo.patch
+	${PN}-1.76-direntry.patch"
 SITEFILE="50${PN}-gentoo.el"
-
-src_unpack() {
-	unpack ${A}
-	cd "${S}"
-	epatch "${FILESDIR}/${PN}-1.76-gentoo.patch"
-}
 
 src_compile() {
 	# byte-compilation fails (as of 1.74): yatexlib.el requires fonts
 	# that are only available under X
 
 	cd docs
-	mv yatexe yatex.info
-	mv yahtmle yahtml.info
+	makeinfo yatexe.tex yahtmle.tex || die
+
 	if use linguas_ja; then
-		iconv -f ISO-2022-JP -t EUC-JP yatexj > yatex-ja.info
-		iconv -f ISO-2022-JP -t EUC-JP yahtmlj > yahtml-ja.info
+		iconv -f WINDOWS-31J -t UTF-8 yatexj.tex >yatex-ja.texi || die
+		iconv -f WINDOWS-31J -t UTF-8 yahtmlj.tex >yahtml-ja.texi || die
+		makeinfo yatex-ja.texi yahtml-ja.texi || die
 	fi
 }
 
@@ -40,14 +39,13 @@ src_install() {
 	elisp-site-file-install "${FILESDIR}/${SITEFILE}" || die
 
 	insinto ${SITEETC}/${PN}
-	doins help/YATEXHLP.eng || die "doins failed"
-
-	doinfo docs/*.info || die "doinfo failed"
-	dodoc docs/*.eng || die "dodoc failed"
+	doins help/YATEXHLP.eng
+	doinfo docs/yatex.info* docs/yahtml.info*
+	dodoc docs/*.eng
 
 	if use linguas_ja; then
-		doins help/YATEXHLP.jp || die "doins failed"
-		dodoc 00readme install docs/{htmlqa,qanda} docs/*.doc \
-			|| die "dodoc failed"
+		doins help/YATEXHLP.jp
+		doinfo docs/yatex-ja.info* docs/yahtml-ja.info*
+		dodoc 00readme install docs/{htmlqa,qanda} docs/*.doc
 	fi
 }

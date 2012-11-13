@@ -1,6 +1,28 @@
 # ChangeLog for sys-freebsd/freebsd-usbin
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-freebsd/freebsd-usbin/ChangeLog,v 1.78 2012/08/09 15:02:29 naota Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-freebsd/freebsd-usbin/ChangeLog,v 1.82 2012/11/06 12:58:41 aballier Exp $
+
+*freebsd-usbin-9.1_rc3 (06 Nov 2012)
+
+  06 Nov 2012; Alexis Ballier <aballier@gentoo.org>
+  +freebsd-usbin-9.1_rc3.ebuild:
+  bump to rc3
+
+*freebsd-usbin-9.1_rc2 (14 Oct 2012)
+
+  14 Oct 2012; Alexis Ballier <aballier@gentoo.org>
+  +freebsd-usbin-9.1_rc2.ebuild:
+  bump to 9.1_rc2
+
+  13 Oct 2012; Alexis Ballier <aballier@gentoo.org>
+  freebsd-usbin-9.1_rc1.ebuild:
+  Remove the pkg command: we do not need it. Bug #437388 by Yuta SATOH.
+
+*freebsd-usbin-9.1_rc1 (11 Sep 2012)
+
+  11 Sep 2012; Alexis Ballier <aballier@gentoo.org>
+  +freebsd-usbin-9.1_rc1.ebuild, +files/freebsd-usbin-9.1-bsdxml2expat.patch:
+  bump to 9.1_rc1 from bsd overlay by Yuta SATOH, bug #426838
 
   09 Aug 2012; Naohiro Aota <naota@gentoo.org> files/nfs.initd:
   Fix nfs.initd typo. #428484

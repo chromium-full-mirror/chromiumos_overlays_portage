@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/gthumb/gthumb-2.14.4.ebuild,v 1.1 2012/05/25 08:48:03 pacho Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/gthumb/gthumb-2.14.4.ebuild,v 1.6 2012/10/25 20:24:33 eva Exp $
 
 EAPI="4"
 GCONF_DEBUG="yes"
@@ -13,7 +13,7 @@ HOMEPAGE="https://live.gnome.org/gthumb"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~ppc64 ~x86"
+KEYWORDS="amd64 ppc ppc64 x86"
 IUSE="cdr exif gnome-keyring gstreamer http jpeg raw slideshow tiff test"
 
 # We can't link against libbrasero-burn3
@@ -31,8 +31,8 @@ RDEPEND=">=dev-libs/glib-2.28.0:2
 	exif? ( >=media-gfx/exiv2-0.18 )
 	gnome-keyring? ( >=gnome-base/gnome-keyring-2.28 )
 	gstreamer? (
-		>=media-libs/gstreamer-0.10
-		>=media-libs/gst-plugins-base-0.10 )
+		media-libs/gstreamer:0.10
+		media-libs/gst-plugins-base:0.10 )
 	http? (
 		>=net-libs/libsoup-2.26:2.4
 		>=net-libs/libsoup-gnome-2.26:2.4 )

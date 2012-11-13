@@ -1,6 +1,33 @@
 # ChangeLog for dev-util/pkgconf
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/pkgconf/ChangeLog,v 1.46 2012/08/20 13:46:40 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/pkgconf/ChangeLog,v 1.53 2012/11/10 15:38:16 ryao Exp $
+
+  10 Nov 2012; Richard Yao <ryao@gentoo.org> pkgconf-0.8.9.ebuild:
+  Keyword ~sparc64-solaris; grobian approved in IRC
+
+  17 Oct 2012; Richard Yao <ryao@gentoo.org> -pkgconf-0.8.7.ebuild,
+  pkgconf-0.8.5.ebuild:
+  Removing 0.8.7 due to bug #431170
+
+*pkgconf-0.8.9 (17 Oct 2012)
+
+  17 Oct 2012; Richard Yao <ryao@gentoo.org> +pkgconf-0.8.9.ebuild,
+  pkgconf-0.8.5.ebuild, pkgconf-0.8.7.ebuild, pkgconf-9999.ebuild:
+  Bump pkgconf to 0.8.9
+
+  17 Oct 2012; Richard Yao <ryao@gentoo.org> pkgconf-0.8.5.ebuild,
+  pkgconf-0.8.7.ebuild, pkgconf-9999.ebuild:
+  Fix Homepage and GIT url
+
+  26 Aug 2012; Jeff Horelick <jdhore@gentoo.org> pkgconf-9999.ebuild:
+  Fix compile of -9999 ebuild
+
+  26 Aug 2012; Jeff Horelick <jdhore@gentoo.org> -pkgconf-0.8.2.ebuild,
+  -pkgconf-0.8.4.ebuild, -pkgconf-0.8.ebuild:
+  Remove old.
+
+  26 Aug 2012; Raúl Porcel <armin76@gentoo.org> pkgconf-0.8.5.ebuild:
+  alpha/ia64/m68k/s390/sh/sparc stable wrt #427680
 
 *pkgconf-0.8.7 (20 Aug 2012)
 

@@ -1,6 +1,30 @@
 # ChangeLog for mail-filter/amavisd-new
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/mail-filter/amavisd-new/ChangeLog,v 1.190 2012/08/24 18:25:20 idl0r Exp $
+# $Header: /var/cvsroot/gentoo-x86/mail-filter/amavisd-new/ChangeLog,v 1.196 2012/11/12 22:18:57 blueness Exp $
+
+  12 Nov 2012; Anthony G. Basile <blueness@gentoo.org> amavisd-new-2.8.0.ebuild:
+  keyword ~ppc, bug #442188
+
+*amavisd-new-2.8.0 (07 Nov 2012)
+
+  07 Nov 2012; Eray Aslan <eras@gentoo.org> +amavisd-new-2.8.0.ebuild,
+  +files/amavis-mc.initd, +files/amavisd.initd-r1, metadata.xml:
+  Version bump - bug #441988
+
+  01 Oct 2012; Eray Aslan <eras@gentoo.org> -amavisd-new-2.6.3-r2.ebuild,
+  -amavisd-new-2.7.0.ebuild, -amavisd-new-2.7.1.ebuild,
+  -files/amavisd-new-2.6.3-amavisd.conf-gentoo.patch,
+  -files/amavisd-new-2.6.3-dkimconf.patch,
+  -files/amavisd-new-2.6.3-startup.patch, -files/amavisd-new-dkimconf.patch,
+  -files/amavisd.rc6:
+  Remove old
+
+  30 Sep 2012; Raúl Porcel <armin76@gentoo.org> amavisd-new-2.7.2.ebuild:
+  alpha/sparc stable wrt #429106
+
+  23 Sep 2012; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  amavisd-new-2.7.2.ebuild:
+  x86 stable wrt bug #429106
 
   24 Aug 2012; Christian Ruppert <idl0r@gentoo.org> files/amavisd.initd,
   metadata.xml:
@@ -957,4 +981,3 @@
 
   12 Jun 2003; Max Kalika <max@gentoo.org> amavisd-new-20030314_p2.ebuild:
   Initial version.
-

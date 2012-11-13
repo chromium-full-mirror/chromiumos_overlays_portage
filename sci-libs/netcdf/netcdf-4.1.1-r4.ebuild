@@ -1,10 +1,11 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/netcdf/netcdf-4.1.1-r4.ebuild,v 1.14 2012/06/27 10:05:28 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/netcdf/netcdf-4.1.1-r4.ebuild,v 1.19 2012/10/16 20:31:51 jlec Exp $
 
 EAPI=3
 
 AUTOTOOLS_AUTORECONF=true
+FORTRAN_NEEDED=fortran
 
 inherit autotools-utils fortran-2
 
@@ -14,11 +15,10 @@ SRC_URI="ftp://ftp.unidata.ucar.edu/pub/netcdf/${P}.tar.gz"
 
 LICENSE="UCAR-Unidata"
 SLOT="0"
-KEYWORDS="alpha amd64 ia64 ~mips ppc ppc64 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris"
+KEYWORDS="amd64 ppc ppc64 x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris"
 IUSE="cxx dap doc fortran hdf5 static-libs szip"
 
 RDEPEND="
-	fortran? ( virtual/fortran )
 	dap? ( net-misc/curl )
 	hdf5? ( >=sci-libs/hdf5-1.8[zlib,szip?,fortran?] )"
 
@@ -37,7 +37,7 @@ PATCHES=(
 )
 
 pkg_setup() {
-	use fortran && fortran-2_pkg_setup
+	fortran-2_pkg_setup
 	if use hdf5 && has_version sci-libs/hdf5[mpi]; then
 		export CC=mpicc
 		if use cxx; then

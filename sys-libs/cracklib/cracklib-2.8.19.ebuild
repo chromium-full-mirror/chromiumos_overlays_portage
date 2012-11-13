@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-libs/cracklib/cracklib-2.8.19.ebuild,v 1.9 2012/08/19 21:03:34 ottxor Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-libs/cracklib/cracklib-2.8.19.ebuild,v 1.12 2012/10/31 20:49:42 zerochaos Exp $
 
 EAPI="3"
 PYTHON_DEPEND="python? 2"
@@ -16,8 +16,8 @@ SRC_URI="mirror://sourceforge/cracklib/${MY_P}.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm hppa ~ia64 ~m68k ~mips ppc ppc64 ~s390 ~sh ~sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x86-macos ~m68k-mint"
-IUSE="nls python static-libs zlib"
+KEYWORDS="alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x86-macos ~m68k-mint"
+IUSE="build nls python static-libs zlib"
 
 RDEPEND="zlib? ( sys-libs/zlib )"
 DEPEND="${RDEPEND}
@@ -27,6 +27,7 @@ S=${WORKDIR}/${MY_P}
 
 PYTHON_MODNAME="cracklib.py"
 do_python() {
+	use build && return 0
 	use python || return 0
 	case ${EBUILD_PHASE} in
 	prepare|configure|compile|install)
@@ -48,7 +49,9 @@ pkg_setup() {
 		die "Please run: FEATURES=-unmerge-orphans emerge cracklib"
 	fi
 
-	use python && python_pkg_setup
+	if use !build; then
+		use python && python_pkg_setup
+	fi
 }
 
 src_prepare() {

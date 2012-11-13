@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/games-strategy/wesnoth/wesnoth-1.10.4.ebuild,v 1.1 2012/08/25 08:21:08 mr_bones_ Exp $
+# $Header: /var/cvsroot/gentoo-x86/games-strategy/wesnoth/wesnoth-1.10.4.ebuild,v 1.6 2012/11/04 05:12:42 mr_bones_ Exp $
 
 EAPI=2
 inherit cmake-utils eutils multilib toolchain-funcs flag-o-matic games
@@ -11,10 +11,10 @@ SRC_URI="mirror://sourceforge/wesnoth/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~ppc64 ~x86 ~x86-fbsd"
+KEYWORDS="amd64 ppc ppc64 x86 ~x86-fbsd"
 IUSE="dbus dedicated doc nls server"
 
-RDEPEND=">=media-libs/libsdl-1.2.7[video,X]
+RDEPEND=">=media-libs/libsdl-1.2.7[joystick,video,X]
 	media-libs/sdl-net
 	>=media-libs/sdl-ttf-2.0.8
 	>=media-libs/sdl-mixer-1.2[vorbis]
@@ -33,6 +33,7 @@ DEPEND="${RDEPEND}
 	sys-devel/gettext"
 
 src_prepare() {
+	epatch "${FILESDIR}"/${P}-boost.patch
 	if use dedicated || use server ; then
 		sed \
 			-e "s:GAMES_BINDIR:${GAMES_BINDIR}:" \

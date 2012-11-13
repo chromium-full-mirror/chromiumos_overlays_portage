@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-misc/lirc/lirc-0.9.0-r2.ebuild,v 1.1 2012/07/19 19:52:18 axs Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-misc/lirc/lirc-0.9.0-r2.ebuild,v 1.4 2012/10/24 18:39:12 axs Exp $
 
 EAPI=4
 
-inherit eutils linux-mod linux-info flag-o-matic autotools
+inherit eutils linux-mod linux-info toolchain-funcs flag-o-matic autotools
 
 DESCRIPTION="decode and send infra-red signals of many commonly used remote controls"
 HOMEPAGE="http://www.lirc.org/"
@@ -19,8 +19,8 @@ fi
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~x86"
-IUSE="debug doc X hardware-carrier transmitter"
+KEYWORDS="amd64 ~ppc ~x86"
+IUSE="debug doc hardware-carrier transmitter static-libs X"
 
 S="${WORKDIR}/${MY_P}"
 
@@ -279,7 +279,7 @@ pkg_setup() {
 
 	filter-flags -Wl,-O1
 
-	# force non-parallel make, Bug 196134
+	# force non-parallel make, Bug 196134 (confirmed valid for 0.9.0-r2)
 	MAKEOPTS="${MAKEOPTS} -j1"
 }
 
@@ -296,6 +296,8 @@ src_prepare() {
 	# Slightly massaged upstream patch to fix kfifo issues >=2.6.38
 	# for bug 377033
 	epatch "${FILESDIR}"/${P}-atiusb_kfifo.patch
+	# Apply fixes for kernel-3.3 and above (bug 439538)
+	epatch "${FILESDIR}"/${P}-kernel-3.3.0-fixes.patch
 
 	# Do not build drivers from the top-level Makefile
 	sed -i -e 's:\(SUBDIRS =\) drivers\(.*\):\1\2:' Makefile.am
@@ -332,6 +334,7 @@ src_configure() {
 		--with-kerneldir="${KV_DIR}" \
 		--with-moduledir="/lib/modules/${KV_FULL}/misc" \
 		$(use_enable debug) \
+		$(use_enable static-libs static) \
 		$(use_with X x) \
 		${MY_OPTS} \
 		ABI="${KERNEL_ABI}" \
@@ -373,6 +376,8 @@ src_install() {
 	if [[ -e "${D}"/etc/lirc/lircd.conf ]]; then
 		newdoc "${D}"/etc/lirc/lircd.conf lircd.conf.example
 	fi
+
+	use static-libs || rm "${D}/usr/$(get_libdir)/liblirc_client.la"
 }
 
 pkg_preinst() {

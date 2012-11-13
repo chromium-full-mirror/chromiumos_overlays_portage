@@ -1,6 +1,25 @@
 # ChangeLog for app-laptop/prey
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-laptop/prey/ChangeLog,v 1.5 2012/07/19 21:42:45 hwoarang Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-laptop/prey/ChangeLog,v 1.10 2012/11/11 14:03:22 ago Exp $
+
+  11 Nov 2012; <ago@gentoo.org> prey-0.5.4-r1.ebuild:
+  Stable for amd64, wrt bug #432776
+
+*prey-0.5.4-r1 (10 Nov 2012)
+
+  10 Nov 2012; Markos Chandras <hwoarang@gentoo.org> +prey-0.5.4-r1.ebuild,
+  -prey-0.5.4.ebuild:
+  Fix base directory. Bug #438728. Remove old
+
+  05 Oct 2012; Agostino Sarubbo <ago@gentoo.org> prey-0.5.4.ebuild:
+  Move rm to src_prepare(), wrt to bug #437294
+
+  23 Sep 2012; Pawel Hajdan jr <phajdan.jr@gentoo.org> prey-0.5.4.ebuild:
+  x86 stable wrt bug #432776
+
+  26 Aug 2012; Markos Chandras <hwoarang@gentoo.org>
+  -files/prey-0.5.3-gtk-ui.patch, -prey-0.5.3.ebuild:
+  Remove old
 
 *prey-0.5.4 (19 Jul 2012)
 

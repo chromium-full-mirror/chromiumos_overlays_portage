@@ -1,6 +1,45 @@
 # ChangeLog for net-p2p/freenet
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-p2p/freenet/ChangeLog,v 1.153 2012/08/25 13:51:17 tommy Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-p2p/freenet/ChangeLog,v 1.159 2012/10/30 18:31:09 tommy Exp $
+
+*freenet-0.7.5_p1422 (30 Oct 2012)
+
+  30 Oct 2012; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  +freenet-0.7.5_p1422.ebuild, +files/freenet-0.7.5_p1422-wrapper.conf:
+  Version bump, update and cleanup the wrapper config
+
+*freenet-0.7.5_p1421 (25 Oct 2012)
+
+  25 Oct 2012; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  +files/0.7.5_p1321-ext.patch, +freenet-0.7.5_p1421.ebuild:
+  Version bump
+
+*freenet-0.7.5_p1419 (14 Oct 2012)
+
+  14 Oct 2012; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  -freenet-0.7.5_p1417.ebuild, +freenet-0.7.5_p1419.ebuild:
+  Version bump, drop old, finally fix bug 429716
+
+*freenet-0.7.5_p1417 (28 Sep 2012)
+
+  28 Sep 2012; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  -freenet-0.7.5_p1411.ebuild, -freenet-0.7.5_p1413.ebuild,
+  +freenet-0.7.5_p1417.ebuild:
+  Version bump, drop old
+
+*freenet-0.7.5_p1413 (13 Sep 2012)
+
+  13 Sep 2012; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  +freenet-0.7.5_p1413.ebuild:
+  Version bump
+
+*freenet-0.7.5_p1411 (11 Sep 2012)
+
+  11 Sep 2012; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  -freenet-0.7.5_p1406.ebuild, -freenet-0.7.5_p1407.ebuild,
+  -freenet-0.7.5_p1409.ebuild, -freenet-0.7.5_p1410.ebuild,
+  +freenet-0.7.5_p1411.ebuild:
+  Version bump, drop old
 
 *freenet-0.7.5_p1410 (25 Aug 2012)
 

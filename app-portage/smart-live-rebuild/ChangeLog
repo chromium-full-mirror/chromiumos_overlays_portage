@@ -1,6 +1,30 @@
 # ChangeLog for app-portage/smart-live-rebuild
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-portage/smart-live-rebuild/ChangeLog,v 1.38 2012/05/26 10:15:09 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-portage/smart-live-rebuild/ChangeLog,v 1.42 2012/11/02 10:22:37 mgorny Exp $
+
+*smart-live-rebuild-1.2.5 (02 Nov 2012)
+
+  02 Nov 2012; Michał Górny <mgorny@gentoo.org>
+  +smart-live-rebuild-1.2.5.ebuild:
+  Version bump. The new version fixes SIGCHLD restore issue when used as a
+  portage set, bug #440904.
+
+*smart-live-rebuild-1.2.4 (31 Oct 2012)
+
+  31 Oct 2012; Michał Górny <mgorny@gentoo.org>
+  +smart-live-rebuild-1.2.4.ebuild:
+  Version bump. The new version adds a --quiet option, disables creating binary
+  packages with --pretend and fixes an attempt to kill dead child process.
+
+*smart-live-rebuild-1.2.3-r2 (15 Oct 2012)
+
+  15 Oct 2012; Michał Górny <mgorny@gentoo.org>
+  +smart-live-rebuild-1.2.3-r2.ebuild:
+  Revision bump to distutils-r1.
+
+  31 Aug 2012; Michał Górny <mgorny@gentoo.org>
+  -smart-live-rebuild-1.2.1.ebuild, -smart-live-rebuild-1.2.3.ebuild:
+  Drop old.
 
 *smart-live-rebuild-1.2.3-r1 (26 May 2012)
 
@@ -216,4 +240,3 @@
   04 Oct 2010; Michał Górny <mgorny@gentoo.org>
   +smart-live-rebuild-0.6.1.1.ebuild, +metadata.xml:
   Import from the Sunrise overlay, per bug #310975.
-

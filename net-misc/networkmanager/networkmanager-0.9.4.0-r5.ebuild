@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/networkmanager/networkmanager-0.9.4.0-r5.ebuild,v 1.1 2012/07/17 05:43:11 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/networkmanager/networkmanager-0.9.4.0-r5.ebuild,v 1.4 2012/11/05 03:59:34 tetromino Exp $
 
 EAPI="4"
 GNOME_ORG_MODULE="NetworkManager"
@@ -10,7 +10,7 @@ inherit autotools eutils gnome.org linux-info systemd user
 DESCRIPTION="Network configuration and management in an easy way. Desktop environment independent."
 HOMEPAGE="http://www.gnome.org/projects/NetworkManager/"
 
-LICENSE="GPL-2"
+LICENSE="GPL-2+"
 SLOT="0"
 IUSE="avahi bluetooth connection-sharing dhclient +dhcpcd doc gnutls +introspection kernel_linux +nss modemmanager +ppp resolvconf systemd +wext wimax"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
@@ -38,7 +38,7 @@ COMMON_DEPEND=">=sys-apps/dbus-1.2
 		dev-libs/libgcrypt
 		net-libs/gnutls )
 	nss? ( >=dev-libs/nss-3.11 )
-	dhclient? ( net-misc/dhcp )
+	dhclient? ( net-misc/dhcp[client] )
 	dhcpcd? ( >=net-misc/dhcpcd-4.0.0_rc3 )
 	introspection? ( >=dev-libs/gobject-introspection-0.10.3 )
 	ppp? ( >=net-dialup/ppp-2.4.5 )
@@ -94,8 +94,6 @@ pkg_setup() {
 }
 
 src_prepare() {
-	# Don't build tests
-	epatch "${FILESDIR}/${PN}-0.9_rc3-fix-tests.patch"
 	# Build against libnl:1.1 for net-wireless/wimax-1.5.2 compatibility
 	epatch "${FILESDIR}/${PN}-0.9.4.0-force-libnl1.1-r1.patch"
 	# Update init.d script to provide net and use inactive status if not connected
@@ -157,6 +155,11 @@ src_configure() {
 		fi
 
 	econf ${ECONF}
+}
+
+src_test() {
+	cp libnm-util/tests/certs/test_ca_cert.pem src/settings/plugins/ifnet/tests/ || die
+	default
 }
 
 src_install() {

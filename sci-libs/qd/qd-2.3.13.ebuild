@@ -1,10 +1,12 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/qd/qd-2.3.13.ebuild,v 1.3 2012/08/03 16:43:50 bicatali Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/qd/qd-2.3.13.ebuild,v 1.5 2012/10/16 20:05:11 jlec Exp $
 
 EAPI=4
 
 AUTOTOOLS_AUTORECONF=yes
+
+FORTRAN_NEEDED=fortran
 
 inherit autotools-utils fortran-2
 
@@ -16,13 +18,6 @@ SLOT="0"
 LICENSE="BSD"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="doc fortran static-libs"
-
-DEPEND="fortran? ( virtual/fortran )"
-RDEPEND="${DEPEND}"
-
-pkg_setup() {
-	use fortran && fortran-2_pkg_setup
-}
 
 PATCHES=( "${FILESDIR}"/${P}-autotools.patch )
 

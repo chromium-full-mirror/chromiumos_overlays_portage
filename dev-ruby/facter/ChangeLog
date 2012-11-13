@@ -1,6 +1,19 @@
 # ChangeLog for dev-ruby/facter
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/facter/ChangeLog,v 1.54 2012/08/14 03:29:59 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/facter/ChangeLog,v 1.57 2012/11/06 16:28:54 tampakrap Exp $
+
+  06 Nov 2012; Theo Chatzimichos <tampakrap@gentoo.org> metadata.xml:
+  add sysadmin and ruby herds in metadata.xml
+
+*facter-1.6.14 (02 Nov 2012)
+
+  02 Nov 2012; Hans de Graaff <graaff@gentoo.org> +facter-1.6.14.ebuild:
+  Version bump. Closes bug 437308.
+
+*facter-1.6.12 (26 Sep 2012)
+
+  26 Sep 2012; Hans de Graaff <graaff@gentoo.org> +facter-1.6.12.ebuild:
+  Version bump.
 
   14 Aug 2012; Diego E. Pettenò <flameeyes@gentoo.org> facter-1.6.10.ebuild:
   Fix up dependencies, especially for tests.

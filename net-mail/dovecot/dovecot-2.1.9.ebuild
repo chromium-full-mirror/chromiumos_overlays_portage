@@ -1,9 +1,9 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-mail/dovecot/dovecot-2.1.9.ebuild,v 1.2 2012/08/03 06:33:48 eras Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-mail/dovecot/dovecot-2.1.9.ebuild,v 1.10 2012/10/28 14:25:14 swift Exp $
 
 EAPI=4
-inherit eutils versionator ssl-cert systemd autotools
+inherit eutils versionator ssl-cert systemd autotools user multilib
 
 MY_P="${P/_/.}"
 major_minor="$( get_version_component_range 1-2 )"
@@ -20,10 +20,10 @@ HOMEPAGE="http://www.dovecot.org/"
 
 SLOT="0"
 LICENSE="LGPL-2.1 MIT"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
+KEYWORDS="~alpha amd64 arm hppa ~ia64 ~mips ppc ppc64 ~s390 ~sh ~sparc x86 ~x86-fbsd"
 
 IUSE="bzip2 caps cydir sdbox doc ipv6 imapc kerberos ldap lucene +maildir managesieve mbox
-mdbox mysql pam postgres sieve sqlite +ssl static-libs suid vpopmail zlib"
+mdbox mysql pam postgres selinux sieve sqlite +ssl static-libs suid vpopmail zlib"
 
 DEPEND="caps? ( sys-libs/libcap )
 	kerberos? ( virtual/krb5 )
@@ -32,6 +32,7 @@ DEPEND="caps? ( sys-libs/libcap )
 	mysql? ( virtual/mysql )
 	pam? ( virtual/pam )
 	postgres? ( dev-db/postgresql-base !dev-db/postgresql-base[ldap,threads] )
+	selinux? ( sec-policy/selinux-dovecot )
 	sqlite? ( dev-db/sqlite )
 	ssl? ( dev-libs/openssl )
 	vpopmail? ( net-mail/vpopmail )

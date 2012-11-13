@@ -1,6 +1,85 @@
 # ChangeLog for net-dns/bind
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-dns/bind/ChangeLog,v 1.406 2012/08/24 19:01:09 idl0r Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-dns/bind/ChangeLog,v 1.428 2012/11/04 20:20:20 ulm Exp $
+
+  04 Nov 2012; Ulrich Müller <ulm@gentoo.org> bind-9.9.1_p4.ebuild,
+  bind-9.9.2.ebuild:
+  Update LICENSE, RSA-PKCS11 is replaced by RSA, bug 440752.
+
+  01 Nov 2012; Christian Ruppert <idl0r@gentoo.org> bind-9.9.2.ebuild:
+  Fix LICENSE, bug 440752.
+
+  31 Oct 2012; Michał Górny <mgorny@gentoo.org> bind-9.9.2.ebuild:
+  Use virtual for argparse.
+
+  30 Oct 2012; Christian Ruppert <idl0r@gentoo.org> -bind-9.9.1_p3.ebuild:
+  Cleanup
+
+  17 Oct 2012; Christian Ruppert <idl0r@gentoo.org> bind-9.9.1_p4.ebuild,
+  bind-9.9.2.ebuild:
+  Go back into the build root, bug 438018.
+
+  13 Oct 2012; Christian Ruppert <idl0r@gentoo.org> bind-9.9.2.ebuild:
+  Fix python dependencies, bug 438252
+
+  13 Oct 2012; Raúl Porcel <armin76@gentoo.org> bind-9.9.1_p4.ebuild:
+  alpha/arm/ia64/s390/sh/sparc stable wrt #437828
+
+  12 Oct 2012; Christian Ruppert <idl0r@gentoo.org> bind-9.9.2.ebuild:
+  Fix python_convert_shebangs, bug 438018.
+
+  11 Oct 2012; Anthony G. Basile <blueness@gentoo.org> bind-9.9.1_p4.ebuild:
+  stable ppc ppc64, bug #437828
+
+  11 Oct 2012; Agostino Sarubbo <ago@gentoo.org> bind-9.9.1_p4.ebuild:
+  Stable for amd64, wrt bug #437828
+
+  11 Oct 2012; Andreas Schuerch <nativemad@gentoo.org> bind-9.9.1_p4.ebuild:
+  x86 stable, see bug 437828
+
+  11 Oct 2012; Jeroen Roovers <jer@gentoo.org> bind-9.9.1_p4.ebuild:
+  Stable for HPPA (bug #437828).
+
+*bind-9.9.2 (10 Oct 2012)
+*bind-9.9.1_p4 (10 Oct 2012)
+
+  10 Oct 2012; Christian Ruppert <idl0r@gentoo.org> -bind-9.9.1_p2.ebuild,
+  +bind-9.9.1_p4.ebuild, +bind-9.9.2.ebuild, -files/named.init-r11:
+  Version bump, bug 437828 - CVE CVE-2012-5166
+
+  16 Sep 2012; Jeroen Roovers <jer@gentoo.org> bind-9.9.1_p3.ebuild:
+  Stable for HPPA (bug #434876).
+
+  15 Sep 2012; Raúl Porcel <armin76@gentoo.org> bind-9.9.1_p3.ebuild:
+  alpha/ia64/s390/sh/sparc/x86 stable wrt #434876
+
+  13 Sep 2012; Anthony G. Basile <blueness@gentoo.org> bind-9.9.1_p3.ebuild:
+  Stable arm, bug #434876
+
+  13 Sep 2012; Anthony G. Basile <blueness@gentoo.org> bind-9.9.1_p3.ebuild:
+  Stable ppc, bug #434876
+
+  13 Sep 2012; Anthony G. Basile <blueness@gentoo.org> bind-9.9.1_p3.ebuild:
+  Stable ppc64, bug #434876
+
+  13 Sep 2012; Agostino Sarubbo <ago@gentoo.org> bind-9.9.1_p3.ebuild:
+  Stable for amd64, wrt bug #434876
+
+*bind-9.9.1_p3 (12 Sep 2012)
+
+  12 Sep 2012; Christian Ruppert <idl0r@gentoo.org> +bind-9.9.1_p3.ebuild,
+  -bind-9.9.1_p2-r3.ebuild:
+  Version bump.
+
+*bind-9.9.1_p2-r3 (11 Sep 2012)
+
+  11 Sep 2012; Christian Ruppert <idl0r@gentoo.org> +bind-9.9.1_p2-r3.ebuild,
+  -bind-9.8.3_p1.ebuild, -bind-9.8.3_p2.ebuild, -bind-9.9.1_p2-r2.ebuild,
+  -files/bind-9.8.1-sdlz_helper.patch, metadata.xml:
+  Remove old versions. Add DNS Response Rate Limit (RRL) patch, bug 434650.
+
+  10 Sep 2012; Christoph Junghans <ottxor@gentoo.org> bind-9.9.1_p2-r2.ebuild:
+  added prefix keywords
 
 *bind-9.9.1_p2-r2 (24 Aug 2012)
 
@@ -1835,4 +1914,3 @@
   comments should well explained and written in clean English. The details about
   writing correct changelogs are explained in the skel.ChangeLog file which you
   can find in the root directory of the portage repository.
-

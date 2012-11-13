@@ -94,6 +94,9 @@ systemd
 soundcloud
 gts
 devil
+rtmp
+metalink
+lucene
 
 # 2006/02/05 - Donnie Berkholz <dberkholz@gentoo.org>
 # Modular X: mask for architectures on which they aren't available
@@ -164,3 +167,9 @@ d3d
 # Matt Turner <mattst88@gentoo.org) (10 Feb 2012)
 # mask wayland since dev-libs/wayland isn't keyworded
 wayland
+
+# Michał Górny <mgorny@gentoo.org> (31 Oct 2012)
+# Mask PYTHON_TARGETS for implementations not keyworded on this arch.
+python_targets_pypy1_8
+python_targets_pypy1_9
+python_targets_jython2_5

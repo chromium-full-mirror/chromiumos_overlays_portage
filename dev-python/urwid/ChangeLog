@@ -1,6 +1,29 @@
 # ChangeLog for dev-python/urwid
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/urwid/ChangeLog,v 1.52 2012/08/05 21:47:58 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/urwid/ChangeLog,v 1.58 2012/11/05 22:10:00 radhermit Exp $
+
+  05 Nov 2012; Tim Harder <radhermit@gentoo.org> urwid-0.9.9.1.ebuild,
+  urwid-1.0.2.ebuild, urwid-1.1.0.ebuild:
+  Add testing dep on twisted (bug #441942).
+
+*urwid-1.1.0 (24 Oct 2012)
+
+  24 Oct 2012; Tim Harder <radhermit@gentoo.org> +urwid-1.1.0.ebuild,
+  +files/urwid-1.1.0-sphinx.patch:
+  Version bump. Add doc use flag to build sphinx docs.
+
+  22 Oct 2012; Tim Harder <radhermit@gentoo.org> -urwid-1.0.0.ebuild,
+  -urwid-1.0.1.ebuild:
+  Remove old.
+
+  23 Sep 2012; Pawel Hajdan jr <phajdan.jr@gentoo.org> urwid-1.0.2.ebuild:
+  x86 stable wrt bug #433275
+
+  12 Sep 2012; Anthony G. Basile <blueness@gentoo.org> urwid-1.0.2.ebuild:
+  Stable ppc ppc64, bug #433275
+
+  08 Sep 2012; Agostino Sarubbo <ago@gentoo.org> urwid-1.0.2.ebuild:
+  Stable for amd64, wrt bug #433275
 
   05 Aug 2012; Anthony G. Basile <blueness@gentoo.org> urwid-1.0.2.ebuild:
   Keyword ~arm

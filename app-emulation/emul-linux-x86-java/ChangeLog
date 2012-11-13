@@ -1,6 +1,38 @@
 # ChangeLog for app-emulation/emul-linux-x86-java
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/emul-linux-x86-java/ChangeLog,v 1.114 2012/08/03 13:53:09 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/emul-linux-x86-java/ChangeLog,v 1.120 2012/10/21 10:59:26 ago Exp $
+
+  21 Oct 2012; Agostino Sarubbo <ago@gentoo.org>
+  emul-linux-x86-java-1.6.0.37.ebuild:
+  Stable for amd64, wrt bug #438706
+
+*emul-linux-x86-java-1.6.0.37 (17 Oct 2012)
+
+  17 Oct 2012; Ralph Sennhauser <sera@gentoo.org>
+  +emul-linux-x86-java-1.6.0.37.ebuild:
+  Security bump. #438706
+  Use QA_PREBUILT instead of individual variables.
+  Fix desktop files for newer standard.
+
+  28 Sep 2012; Ralph Sennhauser <sera@gentoo.org>
+  -emul-linux-x86-java-1.6.0.33.ebuild,
+  -emul-linux-x86-java-1.6.0.33-r1.ebuild,
+  -emul-linux-x86-java-1.6.0.33-r2.ebuild:
+  Remove vulnerable. #433094
+
+  02 Sep 2012; Agostino Sarubbo <ago@gentoo.org>
+  emul-linux-x86-java-1.6.0.35.ebuild:
+  Stable for amd64, wrt bug #433094
+
+  31 Aug 2012; Vlastimil Babka <caster@gentoo.org>
+  emul-linux-x86-java-1.6.0.35.ebuild:
+  Fix download URL, bug #433553.
+
+*emul-linux-x86-java-1.6.0.35 (31 Aug 2012)
+
+  31 Aug 2012; Vlastimil Babka <caster@gentoo.org>
+  +emul-linux-x86-java-1.6.0.35.ebuild:
+  Version bump, security bug #433094.
 
   03 Aug 2012; Agostino Sarubbo <ago@gentoo.org>
   emul-linux-x86-java-1.6.0.33-r1.ebuild:

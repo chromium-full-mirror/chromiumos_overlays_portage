@@ -1,10 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/ddd/ddd-3.3.12-r2.ebuild,v 1.7 2011/12/18 20:14:43 phajdan.jr Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/ddd/ddd-3.3.12-r2.ebuild,v 1.9 2012/10/24 19:09:45 ulm Exp $
 
 EAPI="4"
 
-inherit autotools-utils
+inherit autotools-utils eutils
 
 DESCRIPTION="Graphical front-end for command-line debuggers"
 HOMEPAGE="http://www.gnu.org/software/ddd"
@@ -23,7 +23,7 @@ COMMON_DEPEND="
 	x11-libs/libXmu
 	x11-libs/libXpm
 	x11-libs/libXt
-	>=x11-libs/openmotif-2.3:0
+	>=x11-libs/motif-2.3:0
 	ppc? ( dev-libs/elfutils )
 	ppc64? ( dev-libs/elfutils )
 "
@@ -54,7 +54,7 @@ src_install() {
 	autotools-utils_src_install
 
 	# Install application icon
-	doicon "${S}"/icons/ddd.xpm || die "doicon failed"
+	doicon "${S}"/icons/ddd.xpm
 }
 
 pkg_postinst() {

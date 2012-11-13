@@ -1,6 +1,20 @@
 # ChangeLog for media-libs/clutter-gst
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/clutter-gst/ChangeLog,v 1.29 2012/07/09 14:29:41 ranger Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/clutter-gst/ChangeLog,v 1.32 2012/10/25 20:26:29 eva Exp $
+
+  25 Oct 2012; Gilles Dartiguelongue <eva@gentoo.org>
+  -clutter-gst-1.0.0.ebuild, -clutter-gst-1.4.4.ebuild,
+  -clutter-gst-1.5.6.ebuild, clutter-gst-1.6.0.ebuild:
+  Pin gstreamer dependencies to slot 0.10. Drop old revision.
+
+  23 Sep 2012; Anthony G. Basile <blueness@gentoo.org> clutter-gst-1.6.0.ebuild:
+  keyword ~ppc64, bug #379649
+
+  15 Sep 2012; Alexandre Rostovtsev <tetromino@gentoo.org>
+  clutter-gst-1.6.0.ebuild, +files/clutter-gst-1.6.0-doc-fixes.patch,
+  +files/clutter-gst-1.6.0-glint.patch:
+  Fix build problems with clutter-1.11 and gobject-introspection-1.33. Improve
+  DISPLAY hack.
 
   09 Jul 2012; Brent Baude <ranger@gentoo.org> clutter-gst-1.4.6.ebuild:
   Marking clutter-gst-1.4.6 ~ppc for bug 379649
@@ -144,4 +158,3 @@
   +clutter-gst-1.0.0.ebuild, +metadata.xml:
   Add an initial ebuild for clutter-gst, gstreamer integration library for
   clutter
-

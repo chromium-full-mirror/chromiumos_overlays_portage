@@ -1,6 +1,99 @@
 # ChangeLog for app-text/calibre
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/calibre/ChangeLog,v 1.223 2012/08/24 20:28:26 zmedico Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/calibre/ChangeLog,v 1.241 2012/11/12 08:14:27 zmedico Exp $
+
+*calibre-0.9.6 (12 Nov 2012)
+
+  12 Nov 2012; Zac Medico <zmedico@gentoo.org> +calibre-0.9.6.ebuild,
+  -calibre-0.9.4.ebuild:
+  0.9.6 version bump.
+
+*calibre-0.9.5 (02 Nov 2012)
+
+  02 Nov 2012; Zac Medico <zmedico@gentoo.org> +calibre-0.9.5.ebuild,
+  -calibre-0.9.3.ebuild:
+  0.9.5 version bump.
+
+*calibre-0.9.4 (26 Oct 2012)
+
+  26 Oct 2012; Zac Medico <zmedico@gentoo.org> +calibre-0.9.4.ebuild,
+  -calibre-0.9.2.ebuild:
+  0.9.4 version bump.
+
+  26 Oct 2012; Zac Medico <zmedico@gentoo.org> calibre-0.9.1.ebuild,
+  calibre-0.9.2.ebuild, calibre-0.9.3.ebuild:
+  Use preferred || ( udisks:2 udisks:0 ) dependency format for bug #439630.
+
+  25 Oct 2012; Zac Medico <zmedico@gentoo.org> calibre-0.9.1.ebuild,
+  calibre-0.9.2.ebuild, calibre-0.9.3.ebuild:
+  Adjust deps to allow udisks:2 for bug #439630.
+
+  20 Oct 2012; Zac Medico <zmedico@gentoo.org> calibre-0.9.1.ebuild,
+  calibre-0.9.2.ebuild, calibre-0.9.3.ebuild:
+  Add cssselect dependency for bug #439058 (use --force since we need to do a
+  stable request for cssselect-0.7.1).
+
+*calibre-0.9.3 (19 Oct 2012)
+
+  19 Oct 2012; Zac Medico <zmedico@gentoo.org> +calibre-0.9.3.ebuild:
+  0.9.3 version bump.
+
+  19 Oct 2012; Zac Medico <zmedico@gentoo.org> calibre-0.9.1.ebuild,
+  calibre-0.9.2.ebuild:
+  Require at least libmtp-1.1.4 for bug #438810.
+
+  12 Oct 2012; Tomáš Chvátal <scarabeus@gentoo.org> -calibre-0.8.62.ebuild,
+  calibre-0.9.1.ebuild:
+  Stable amd64 and x86 to get fresher again on stable.
+
+*calibre-0.9.2 (11 Oct 2012)
+
+  11 Oct 2012; Zac Medico <zmedico@gentoo.org> +calibre-0.9.2.ebuild,
+  -calibre-0.9.0.ebuild:
+  0.9.2 version bump.
+
+*calibre-0.9.1 (05 Oct 2012)
+
+  05 Oct 2012; Zac Medico <zmedico@gentoo.org> +calibre-0.9.1.ebuild,
+  -calibre-0.8.70.ebuild:
+  0.9.1 version bump.
+
+*calibre-0.9.0 (28 Sep 2012)
+
+  28 Sep 2012; Zac Medico <zmedico@gentoo.org> +calibre-0.9.0.ebuild,
+  -calibre-0.8.69.ebuild:
+  0.9.0 version bump.
+
+*calibre-0.8.70 (22 Sep 2012)
+
+  22 Sep 2012; Zac Medico <zmedico@gentoo.org> +calibre-0.8.70.ebuild,
+  -calibre-0.8.68.ebuild:
+  0.8.70 version bump.
+
+*calibre-0.8.69 (14 Sep 2012)
+
+  14 Sep 2012; Zac Medico <zmedico@gentoo.org> +calibre-0.8.69.ebuild,
+  -calibre-0.8.67.ebuild:
+  0.8.69 version bump.
+
+  09 Sep 2012; Zac Medico <zmedico@gentoo.org> calibre-0.8.62.ebuild,
+  calibre-0.8.67.ebuild, calibre-0.8.68.ebuild:
+  Require libusb:1 instead of libusb:0 for bug #434448.
+
+*calibre-0.8.68 (07 Sep 2012)
+
+  07 Sep 2012; Zac Medico <zmedico@gentoo.org> +calibre-0.8.68.ebuild,
+  -calibre-0.8.66.ebuild:
+  0.8.68 version bump.
+
+  04 Sep 2012; Zac Medico <zmedico@gentoo.org> calibre-0.8.67.ebuild:
+  Use system liberation-fonts for bug #433932.
+
+*calibre-0.8.67 (31 Aug 2012)
+
+  31 Aug 2012; Zac Medico <zmedico@gentoo.org> +calibre-0.8.67.ebuild,
+  -calibre-0.8.65.ebuild:
+  0.8.67 version bump.
 
 *calibre-0.8.66 (24 Aug 2012)
 

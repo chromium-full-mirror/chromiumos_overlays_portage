@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/beaker/beaker-1.6.4.ebuild,v 1.3 2012/08/18 22:30:53 johu Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/beaker/beaker-1.6.4.ebuild,v 1.8 2012/10/17 04:18:08 mattst88 Exp $
 
 EAPI="3"
 SUPPORT_PYTHON_ABIS="1"
@@ -20,11 +20,12 @@ SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~hppa ~ppc ~sparc x86 ~amd64-linux ~x86-linux ~x64-macos ~x86-macos"
+KEYWORDS="~alpha amd64 arm ~hppa ia64 ppc s390 sh sparc x86 ~amd64-linux ~x86-linux ~x64-macos ~x86-macos"
 IUSE="test"
 
 DEPEND="dev-python/setuptools
-	test? ( dev-python/webtest )"
+	test? ( dev-python/mock
+		dev-python/webtest )"
 RDEPEND=""
 
 S="${WORKDIR}/${MY_P}"

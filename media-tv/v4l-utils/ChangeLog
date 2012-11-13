@@ -1,6 +1,27 @@
 # ChangeLog for media-tv/v4l-utils
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-tv/v4l-utils/ChangeLog,v 1.21 2012/08/08 08:03:22 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-tv/v4l-utils/ChangeLog,v 1.25 2012/11/09 01:32:44 blueness Exp $
+
+  09 Nov 2012; Anthony G. Basile <blueness@gentoo.org>
+  v4l-utils-0.8.8-r1.ebuild:
+  stable ppc, bug #439036
+
+  28 Oct 2012; Markos Chandras <hwoarang@gentoo.org> v4l-utils-0.8.8-r1.ebuild:
+  Stable on amd64 wrt bug #439036
+
+  26 Oct 2012; Alexandre Rostovtsev <tetromino@gentoo.org>
+  v4l-utils-0.8.5.ebuild, v4l-utils-0.8.8.ebuild, v4l-utils-0.8.8-r1.ebuild,
+  v4l-utils-0.8.9.ebuild:
+  Obtain ar command from toolchain-funcs to prevent possible cross-compilation
+  problems; bug #439506, thanks to Denis M. (Phr33d0m).
+
+*v4l-utils-0.8.9 (20 Oct 2012)
+
+  20 Oct 2012; Alexandre Rostovtsev <tetromino@gentoo.org>
+  v4l-utils-0.8.5.ebuild, -v4l-utils-0.8.6.ebuild, v4l-utils-0.8.8.ebuild,
+  v4l-utils-0.8.8-r1.ebuild, +v4l-utils-0.8.9.ebuild:
+  Version bump; qv4l2 and v4l-ctl have been updated (bug #438244, thanks to
+  Wojciech Myrda). Update license. Drop old.
 
 *v4l-utils-0.8.8-r1 (08 Aug 2012)
 

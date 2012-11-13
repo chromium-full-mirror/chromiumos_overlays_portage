@@ -1,6 +1,24 @@
 # ChangeLog for dev-util/xdelta
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/xdelta/ChangeLog,v 1.71 2012/08/19 15:47:54 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/xdelta/ChangeLog,v 1.76 2012/11/07 03:09:17 jer Exp $
+
+  07 Nov 2012; Jeroen Roovers <jer@gentoo.org> xdelta-3.0.4.ebuild:
+  Stable for HPPA (bug #441318).
+
+  04 Nov 2012; Agostino Sarubbo <ago@gentoo.org> xdelta-3.0.4.ebuild:
+  Stable for amd64, wrt bug #441318
+
+  05 Sep 2012; Samuli Suominen <ssuominen@gentoo.org> -xdelta-3.0.0.ebuild:
+  old
+
+  05 Sep 2012; Samuli Suominen <ssuominen@gentoo.org> xdelta-3.0.4.ebuild:
+  Change noinst_PROGRAMS to check_PROGRAMS in top Makefile.am to build tests
+  only when required.
+
+*xdelta-3.0.4 (05 Sep 2012)
+
+  05 Sep 2012; Samuli Suominen <ssuominen@gentoo.org> +xdelta-3.0.4.ebuild:
+  Version bump.
 
   19 Aug 2012; Raúl Porcel <armin76@gentoo.org> xdelta-3.0.0-r1.ebuild:
   alpha/sparc stable wrt #418967

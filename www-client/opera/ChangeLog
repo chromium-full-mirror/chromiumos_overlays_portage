@@ -1,6 +1,98 @@
 # ChangeLog for www-client/opera
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/opera/ChangeLog,v 1.741 2012/08/23 13:48:31 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/opera/ChangeLog,v 1.764 2012/11/12 21:03:22 jer Exp $
+
+  12 Nov 2012; Jeroen Roovers <jer@gentoo.org> -opera-12.02.1578.ebuild:
+  Old.
+
+  13 Nov 2012; Andreas Schuerch <nativemad@gentoo.org> opera-12.10.1652.ebuild:
+  x86 stable, see bug 442044
+
+  09 Nov 2012; Jeroen Roovers <jer@gentoo.org> opera-12.10.1652.ebuild,
+  opera-12.11.1653.ebuild, opera-12.11.1655.ebuild:
+  Readd QA_PRESTRIPPED.
+
+*opera-12.11.1655 (09 Nov 2012)
+
+  09 Nov 2012; Jeroen Roovers <jer@gentoo.org> +opera-12.11.1655.ebuild:
+  http://my.opera.com/desktopteam/blog/2012/11/09/important-crashfixes
+
+  08 Nov 2012; Jeroen Roovers <jer@gentoo.org> opera-12.10.1652.ebuild,
+  opera-12.11.1653.ebuild:
+  Out with QA_PRESTRIPPED, in with QA_PREBUILT (bug #442090).
+
+*opera-12.11.1653 (07 Nov 2012)
+
+  07 Nov 2012; Jeroen Roovers <jer@gentoo.org> +opera-12.11.1653.ebuild:
+  http://my.opera.com/desktopteam/blog/2012/11/07/higher-is-better
+
+  06 Nov 2012; Agostino Sarubbo <ago@gentoo.org> opera-12.10.1652.ebuild:
+  Stable for amd64, wrt bug #442044
+
+  06 Nov 2012; Jeroen Roovers <jer@gentoo.org> -opera-12.02.1629.ebuild,
+  -opera-12.10.1615.ebuild, -opera-12.10.1647.ebuild, -opera-12.10.1649.ebuild,
+  -opera-12.10.1650.ebuild, opera-12.10.1652.ebuild:
+  Switch to mirror://opera/.
+
+*opera-12.10.1652 (05 Nov 2012)
+
+  05 Nov 2012; Jeroen Roovers <jer@gentoo.org> +opera-12.10.1652.ebuild:
+  http://my.opera.com/desktopteam/blog/2012/11/05/opera-12-10-rc4
+
+*opera-12.10.1650 (03 Nov 2012)
+
+  03 Nov 2012; Jeroen Roovers <jer@gentoo.org> +opera-12.10.1650.ebuild:
+  http://my.opera.com/desktopteam/blog/2012/11/02/opera-12-10-rc3
+
+*opera-12.10.1649 (02 Nov 2012)
+
+  02 Nov 2012; Jeroen Roovers <jer@gentoo.org> +opera-12.10.1649.ebuild:
+  http://my.opera.com/desktopteam/blog/2012/11/02/opera-12-10-rc2
+
+*opera-12.10.1647 (01 Nov 2012)
+
+  01 Nov 2012; Jeroen Roovers <jer@gentoo.org> +opera-12.10.1647.ebuild:
+  http://my.opera.com/desktopteam/blog/2012/11/01/opera-12-10-rc1
+
+*opera-12.02.1629 (20 Oct 2012)
+
+  20 Oct 2012; Jeroen Roovers <jer@gentoo.org> +opera-12.02.1629.ebuild:
+  http://my.opera.com/ruario/blog/2012/10/19/minor-update-for-opera-12-02-for-l
+  inux-because-of-the-ubuntu-12-10-release
+
+*opera-12.10.1615 (02 Oct 2012)
+
+  02 Oct 2012; Jeroen Roovers <jer@gentoo.org> +opera-12.10.1615.ebuild:
+  http://my.opera.com/desktopteam/blog/2012/10/02/opera-12-10-beta
+
+  24 Sep 2012; Mike Frysinger <vapier@gentoo.org> opera-12.02.1578.ebuild:
+  QA_DT_HASH (old/deprecated) -> QA_FLAGS_IGNORED (new hotness).
+
+  12 Sep 2012; Jeroen Roovers <jer@gentoo.org> -opera-12.01.1532.ebuild:
+  Old.
+
+  12 Sep 2012; Johannes Huber <johu@gentoo.org> opera-12.02.1578.ebuild:
+  Stable for x86, wrt bug #433449
+
+  02 Sep 2012; Agostino Sarubbo <ago@gentoo.org> opera-12.02.1578.ebuild:
+  Stable for amd64, wrt bug #433449
+
+  02 Sep 2012; Jeroen Roovers <jer@gentoo.org> opera-12.01.1532.ebuild,
+  opera-12.02.1578.ebuild:
+  Add new Opera license, remove old.
+
+  02 Sep 2012; Jeroen Roovers <jer@gentoo.org> opera-12.02.1578.ebuild:
+  Fix SRC_URI by Nikos Chantziaras.
+
+  30 Aug 2012; Jeroen Roovers <jer@gentoo.org> -opera-12.02.1552.ebuild,
+  -opera-12.02.1555.ebuild, -opera-12.02.1558.ebuild, -opera-12.02.1565.ebuild:
+  Old.
+
+*opera-12.02.1578 (30 Aug 2012)
+
+  30 Aug 2012; Jeroen Roovers <jer@gentoo.org> +opera-12.02.1578.ebuild:
+  http://my.opera.com/desktopteam/blog/2012/08/30/opera-12-02-security-and-stab
+  ility-release
 
 *opera-12.02.1565 (23 Aug 2012)
 

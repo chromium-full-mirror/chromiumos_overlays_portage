@@ -1,6 +1,19 @@
 # ChangeLog for app-benchmarks/i7z
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-benchmarks/i7z/ChangeLog,v 1.13 2012/06/08 12:53:04 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-benchmarks/i7z/ChangeLog,v 1.16 2012/11/04 14:09:56 ago Exp $
+
+  04 Nov 2012; Agostino Sarubbo <ago@gentoo.org> i7z-0.27.2.ebuild:
+  Stable for amd64, wrt bug #440366
+
+  31 Oct 2012; Justin Lecher <jlec@gentoo.org> i7z-0.27.2.ebuild:
+  Don't install docs twice, #440326; thanks Chris Mayo for an initial patch
+
+*i7z-0.27.2 (12 Sep 2012)
+
+  12 Sep 2012; Justin Lecher <jlec@gentoo.org> -files/0.26-gcc46.patch,
+  -files/i7z-0.27-cpuid.patch, -files/0.26-gentoo.patch, +i7z-0.27.2.ebuild,
+  -files/0.27-gentoo.patch:
+  Version Bump, drop old patches
 
   08 Jun 2012; Justin Lecher <jlec@gentoo.org> -i7z-0.27-r1.ebuild:
   Cleaned old

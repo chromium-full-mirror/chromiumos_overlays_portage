@@ -1,6 +1,29 @@
 # ChangeLog for sys-freebsd/freebsd-sources
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-freebsd/freebsd-sources/ChangeLog,v 1.73 2012/06/27 10:29:23 naota Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-freebsd/freebsd-sources/ChangeLog,v 1.77 2012/11/06 12:57:50 aballier Exp $
+
+*freebsd-sources-9.1_rc3 (06 Nov 2012)
+
+  06 Nov 2012; Alexis Ballier <aballier@gentoo.org>
+  +freebsd-sources-9.1_rc3.ebuild:
+  bump to rc3
+
+*freebsd-sources-9.1_rc2 (14 Oct 2012)
+
+  14 Oct 2012; Alexis Ballier <aballier@gentoo.org>
+  +freebsd-sources-9.1_rc2.ebuild:
+  bump to 9.1_rc2
+
+  11 Sep 2012; Alexis Ballier <aballier@gentoo.org>
+  -freebsd-sources-9.0.ebuild, -freebsd-sources-9.0-r1.ebuild,
+  -files/freebsd-sources-9.0-disable-optimizations.patch:
+  remove old
+
+*freebsd-sources-9.1_rc1 (11 Sep 2012)
+
+  11 Sep 2012; Alexis Ballier <aballier@gentoo.org>
+  +freebsd-sources-9.1_rc1.ebuild, +files/freebsd-sources-9.1-gentoo.patch:
+  bump to 9.1_rc1 from bsd overlay by Yuta SATOH, bug #426838
 
 *freebsd-sources-8.2-r2 (27 Jun 2012)
 *freebsd-sources-9.0-r4 (27 Jun 2012)

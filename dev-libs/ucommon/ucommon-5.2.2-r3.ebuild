@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/ucommon/ucommon-5.2.2-r3.ebuild,v 1.1 2012/08/20 06:32:06 qnikst Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/ucommon/ucommon-5.2.2-r3.ebuild,v 1.7 2012/11/02 17:04:04 pinkbyte Exp $
 
 EAPI="4"
 
-inherit autotools-utils
+inherit autotools-utils eutils
 
 DESCRIPTION="Portable C++ runtime for threads and sockets"
 HOMEPAGE="http://www.gnu.org/software/commoncpp"
@@ -12,10 +12,16 @@ SRC_URI="mirror://gnu/commoncpp/${P}.tar.gz"
 
 LICENSE="LGPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~amd64-linux"
+KEYWORDS="amd64 ppc ppc64 ~x86 ~amd64-linux"
 IUSE="doc static-libs socks +cxx debug ssl gnutls"
 
-RDEPEND="ssl? ( dev-libs/openssl )"
+RDEPEND="ssl? (
+		!gnutls? ( dev-libs/openssl )
+		gnutls? (
+			net-libs/gnutls[-nettle]
+			dev-libs/libgcrypt
+		)
+	)"
 
 DEPEND="virtual/pkgconfig
 	doc? ( app-doc/doxygen )
@@ -28,12 +34,10 @@ AUTOTOOLS_IN_SOURCE_BUILD=1
 
 src_configure() {
 	local myconf=""
-	if ! use ssl && ! use gnutls; then
-		myconf=" --with-sslstack=nossl "
-	fi
-
 	if use ssl; then
-		myconf=" --with-sslstack=ssl "
+		myconf+=" --with-sslstack=$(usex gnutls gnu ssl) "
+	else
+		myconf+=" --with-sslstack=nossl ";
 	fi
 
 	local myeconfargs=(

@@ -1,6 +1,23 @@
 # ChangeLog for www-servers/tomcat
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/www-servers/tomcat/ChangeLog,v 1.297 2012/08/24 13:37:03 xmw Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-servers/tomcat/ChangeLog,v 1.300 2012/10/31 02:45:37 ottxor Exp $
+
+  31 Oct 2012; Christoph Junghans <ottxor@gentoo.org> tomcat-7.0.32.ebuild:
+  added prefix keywords
+
+*tomcat-7.0.32 (29 Oct 2012)
+*tomcat-6.0.36 (29 Oct 2012)
+
+  29 Oct 2012; Miroslav Šulc <fordfrog@gentoo.org> +tomcat-6.0.36.ebuild,
+  +files/tomcat-6.0.36-build.xml.patch, +tomcat-7.0.32.ebuild,
+  +files/tomcat-7.0.32-build.xml.patch:
+  version bump
+
+*tomcat-7.0.30 (06 Sep 2012)
+
+  06 Sep 2012; Miroslav Šulc <fordfrog@gentoo.org> +tomcat-7.0.30.ebuild,
+  +files/tomcat-7.0.30-build.xml.patch:
+  version bump
 
   24 Aug 2012; Michael Weber <xmw@gentoo.org> tomcat-7.0.27.ebuild:
   ppc stable (bug 414375).

@@ -1,6 +1,42 @@
 # ChangeLog for dev-libs/gmime
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/gmime/ChangeLog,v 1.202 2012/07/15 16:18:40 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/gmime/ChangeLog,v 1.212 2012/10/28 15:40:48 armin76 Exp $
+
+  28 Oct 2012; Raúl Porcel <armin76@gentoo.org> gmime-2.6.10.ebuild:
+  ia64/sparc stable wrt #427544
+
+  19 Oct 2012; Pacho Ramos <pacho@gentoo.org> gmime-2.6.11.ebuild:
+  dodoc now skips html files by default with eapi4 and, then, doins workaround
+  is no longer needed. Thanks a lot to Zac Medico in bug #438978 for the
+  explanation.
+
+*gmime-2.6.11 (19 Oct 2012)
+
+  19 Oct 2012; Pacho Ramos <pacho@gentoo.org> +gmime-2.6.11.ebuild,
+  -gmime-2.2.27.ebuild, -gmime-2.4.28.ebuild, -gmime-2.6.1.ebuild,
+  -gmime-2.6.9.ebuild:
+  Version bump, drop old.
+
+  16 Oct 2012; Anthony G. Basile <blueness@gentoo.org> gmime-2.6.10.ebuild:
+  stable ppc, bug #427544
+
+  14 Oct 2012; Matt Turner <mattst88@gentoo.org> gmime-2.6.10.ebuild:
+  Stable on alpha, bug 427544.
+
+  07 Oct 2012; Anthony G. Basile <blueness@gentoo.org> gmime-2.6.10.ebuild:
+  stable ppc64, bug #427544
+
+  06 Oct 2012; Markus Meier <maekke@gentoo.org> gmime-2.6.10.ebuild:
+  arm stable, bug #427544
+
+  04 Oct 2012; Agostino Sarubbo <ago@gentoo.org> gmime-2.6.10.ebuild:
+  Stable for amd64, wrt bug #427544
+
+  03 Oct 2012; Pawel Hajdan jr <phajdan.jr@gentoo.org> gmime-2.6.10.ebuild:
+  x86 stable wrt bug #427544
+
+  02 Oct 2012; Jeroen Roovers <jer@gentoo.org> gmime-2.6.10.ebuild:
+  Stable for HPPA (bug #427544).
 
   15 Jul 2012; Raúl Porcel <armin76@gentoo.org> gmime-2.4.32.ebuild,
   gmime-2.6.7.ebuild:
@@ -843,4 +879,3 @@
   Initial version. Ebuild submitted by Torsten Stets
   <mai98bmg@studserv.uni-leipzig.de> and tove <bugs@veller.net>. Closes
   #57197.
-

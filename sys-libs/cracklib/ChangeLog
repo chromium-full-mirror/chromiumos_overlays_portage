@@ -1,6 +1,16 @@
 # ChangeLog for sys-libs/cracklib
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-libs/cracklib/ChangeLog,v 1.171 2012/08/19 21:03:34 ottxor Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-libs/cracklib/ChangeLog,v 1.174 2012/10/31 20:49:42 zerochaos Exp $
+
+  31 Oct 2012; Rick Farina <zerochaos@gentoo.org> cracklib-2.8.19.ebuild:
+  last fix for USE=build bootstrapping, missed a line on the previous commit
+
+  22 Oct 2012; Rick Farina <zerochaos@gentoo.org> cracklib-2.8.19.ebuild:
+  catalyst stage1 build with python enabled breaks so we add a build use flag to
+  prevent adding python support too early
+
+  26 Aug 2012; Raúl Porcel <armin76@gentoo.org> cracklib-2.8.19.ebuild:
+  alpha/ia64/m68k/s390/sh/sparc stable wrt #427132
 
   19 Aug 2012; Christoph Junghans <ottxor@gentoo.org> cracklib-2.8.19.ebuild:
   added prefix keywords

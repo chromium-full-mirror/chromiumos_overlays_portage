@@ -1,6 +1,26 @@
 # ChangeLog for dev-ruby/tzinfo
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/tzinfo/ChangeLog,v 1.103 2012/05/01 18:24:07 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/tzinfo/ChangeLog,v 1.109 2012/11/08 06:50:39 graaff Exp $
+
+*tzinfo-0.3.35 (08 Nov 2012)
+
+  08 Nov 2012; Hans de Graaff <graaff@gentoo.org> +tzinfo-0.3.35.ebuild:
+  Version bump.
+
+  08 Nov 2012; Hans de Graaff <graaff@gentoo.org> -tzinfo-0.3.31.ebuild:
+  Cleanup.
+
+  17 Oct 2012; Pawel Hajdan jr <phajdan.jr@gentoo.org> tzinfo-0.3.33.ebuild:
+  x86 stable wrt bug #437360
+
+  12 Oct 2012; Agostino Sarubbo <ago@gentoo.org> tzinfo-0.3.33.ebuild:
+  Stable for amd64, wrt bug #437360
+
+  10 Oct 2012; Anthony G. Basile <blueness@gentoo.org> tzinfo-0.3.33.ebuild:
+  stable ppc ppc64, bug #437360
+
+  24 Sep 2012; Hans de Graaff <graaff@gentoo.org> -tzinfo-0.3.32.ebuild:
+  Cleanup.
 
   01 May 2012; Raúl Porcel <armin76@gentoo.org> tzinfo-0.3.31.ebuild,
   tzinfo-0.3.32.ebuild, tzinfo-0.3.33.ebuild:
@@ -415,4 +435,3 @@
   +tzinfo-0.3.2.ebuild:
   Initial import of tzinfo gem package (future dependency of rbot, and thus in
   portage).
-

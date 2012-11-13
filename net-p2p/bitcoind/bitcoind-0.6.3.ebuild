@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-p2p/bitcoind/bitcoind-0.6.3.ebuild,v 1.2 2012/07/11 23:46:37 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-p2p/bitcoind/bitcoind-0.6.3.ebuild,v 1.6 2012/10/29 01:46:15 blueness Exp $
 
 EAPI="4"
 
@@ -17,7 +17,7 @@ SRC_URI="https://nodeload.github.com/bitcoin/bitcoin/tarball/v${PV/_/} -> bitcoi
 
 LICENSE="MIT ISC GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~x86"
+KEYWORDS="amd64 arm x86"
 IUSE="+eligius examples logrotate upnp"
 
 RDEPEND="
@@ -72,6 +72,9 @@ src_compile() {
 	else
 		OPTS+=(USE_UPNP=)
 	fi
+
+	# Workaround for bug #440034
+	share/genbuild.sh src/obj/build.h
 
 	cd src || die
 	emake CC="$(tc-getCC)" CXX="$(tc-getCXX)" -f makefile.unix "${OPTS[@]}" ${PN}

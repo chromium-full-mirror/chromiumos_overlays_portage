@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/glib/glib-2.32.4.ebuild,v 1.1 2012/07/16 04:27:23 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/glib/glib-2.32.4.ebuild,v 1.7 2012/10/10 07:35:08 tetromino Exp $
 
 EAPI="4"
 PYTHON_DEPEND="utils? 2"
@@ -11,12 +11,13 @@ inherit autotools gnome.org libtool eutils flag-o-matic gnome2-utils multilib pa
 DESCRIPTION="The GLib library of C routines"
 HOMEPAGE="http://www.gtk.org/"
 SRC_URI="${SRC_URI}
+	http://dev.gentoo.org/~tetromino/distfiles/glib/${P}-AS_IF-patches.tar.xz
 	http://pkgconfig.freedesktop.org/releases/pkg-config-0.26.tar.gz" # pkg.m4 for eautoreconf
 
-LICENSE="LGPL-2"
+LICENSE="LGPL-2+"
 SLOT="2"
-IUSE="debug doc fam kernel_linux selinux static-libs systemtap test utils xattr"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~amd64-linux ~x86-linux"
+IUSE="debug fam kernel_linux selinux static-libs systemtap test utils xattr"
+KEYWORDS="alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~amd64-linux ~x86-linux"
 
 RDEPEND="virtual/libiconv
 	virtual/libffi
@@ -30,11 +31,6 @@ RDEPEND="virtual/libiconv
 DEPEND="${RDEPEND}
 	>=sys-devel/gettext-0.11
 	>=dev-util/gtk-doc-am-1.15
-	doc? (
-		>=dev-libs/libxslt-1.0
-		>=dev-util/gdbus-codegen-${PV}
-		>=dev-util/gtk-doc-1.15
-		~app-text/docbook-xml-dtd-4.1.2 )
 	systemtap? ( >=dev-util/systemtap-1.3 )
 	test? (
 		sys-devel/gdb
@@ -61,22 +57,12 @@ pkg_setup() {
 }
 
 src_prepare() {
-	mv -vf "${WORKDIR}"/pkg-config-*/pkg.m4 "${WORKDIR}"/ || die
-
-	if use ia64 ; then
-		# Only apply for < 4.1
-		local major=$(gcc-major-version)
-		local minor=$(gcc-minor-version)
-		if (( major < 4 || ( major == 4 && minor == 0 ) )); then
-			epatch "${FILESDIR}/glib-2.10.3-ia64-atomic-ops.patch"
-		fi
-	fi
+	mv -f "${WORKDIR}"/pkg-config-*/pkg.m4 "${WORKDIR}"/ || die
 
 	# Fix gmodule issues on fbsd; bug #184301
 	epatch "${FILESDIR}"/${PN}-2.12.12-fbsd.patch
 
-	# need to build tests if USE=doc for bug #387385
-	if ! use test && ! use doc; then
+	if ! use test; then
 		# don't waste time building tests
 		sed 's/^\(.*\SUBDIRS .*\=.*\)tests\(.*\)$/\1\2/' -i $(find . -name Makefile.am -o -name Makefile.in) || die
 	else
@@ -116,6 +102,9 @@ src_prepare() {
 	# bashcomp goes in /usr/share/bash-completion
 	epatch "${FILESDIR}/${PN}-2.32.4-bashcomp.patch"
 
+	# AS_IF fixes from 2.33.x, needed for cross-compiling, bug #434770
+	epatch ../AS_IF-patches/*.patch
+
 	# disable pyc compiling
 	use test && python_clean_py-compile_files
 
@@ -153,8 +142,6 @@ src_configure() {
 	# Always use internal libpcre, bug #254659
 	econf ${myconf} \
 		$(use_enable xattr) \
-		$(use_enable doc man) \
-		$(use_enable doc gtk-doc) \
 		$(use_enable fam) \
 		$(use_enable selinux) \
 		$(use_enable static-libs static) \

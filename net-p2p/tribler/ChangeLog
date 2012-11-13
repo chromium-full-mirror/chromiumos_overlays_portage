@@ -1,6 +1,34 @@
 # ChangeLog for net-p2p/tribler
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-p2p/tribler/ChangeLog,v 1.32 2012/08/24 14:22:33 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-p2p/tribler/ChangeLog,v 1.38 2012/10/30 23:48:55 blueness Exp $
+
+*tribler-6.0.2 (30 Oct 2012)
+
+  30 Oct 2012; Anthony G. Basile <blueness@gentoo.org> +tribler-6.0.2.ebuild:
+  Version bump
+
+*tribler-6.0.1 (18 Oct 2012)
+
+  18 Oct 2012; Anthony G. Basile <blueness@gentoo.org> +tribler-6.0.1.ebuild:
+  Version bump
+
+*tribler-6.0.0 (13 Oct 2012)
+
+  13 Oct 2012; Anthony G. Basile <blueness@gentoo.org> +tribler-6.0.0.ebuild:
+  Version bump
+
+*tribler-5.9.30 (13 Sep 2012)
+
+  13 Sep 2012; Anthony G. Basile <blueness@gentoo.org> +tribler-5.9.30.ebuild:
+  Version bump
+
+  07 Sep 2012; Johannes Huber <johu@gentoo.org> tribler-5.9.22.ebuild:
+  Stable for x86, wrt bug #432432
+
+*tribler-5.9.29 (29 Aug 2012)
+
+  29 Aug 2012; Anthony G. Basile <blueness@gentoo.org> +tribler-5.9.29.ebuild:
+  Version bump
 
   24 Aug 2012; Agostino Sarubbo <ago@gentoo.org> tribler-5.9.22.ebuild:
   Stable for amd64, wrt bug #432432
@@ -158,4 +186,3 @@
   10 Feb 2012; Anthony G. Basile <blueness@gentoo.org> +tribler-5.5.10.ebuild,
   +metadata.xml:
   Initial commit
-

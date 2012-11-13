@@ -1,6 +1,49 @@
 # ChangeLog for dev-java/sun-jdk
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-java/sun-jdk/ChangeLog,v 1.331 2012/08/23 19:41:13 caster Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-java/sun-jdk/ChangeLog,v 1.341 2012/10/23 05:03:16 nativemad Exp $
+
+  23 Oct 2012; Andreas Schuerch <nativemad@gentoo.org> sun-jdk-1.6.0.37.ebuild:
+  x86 stable, see bug 438706
+
+  21 Oct 2012; Agostino Sarubbo <ago@gentoo.org> sun-jdk-1.6.0.37.ebuild:
+  Stable for amd64, wrt bug #438706
+
+*sun-jdk-1.6.0.37 (17 Oct 2012)
+
+  17 Oct 2012; Ralph Sennhauser <sera@gentoo.org> +sun-jdk-1.6.0.37.ebuild:
+  Security bump. #438706
+
+*sun-jdk-1.6.0.35-r1 (15 Oct 2012)
+
+  15 Oct 2012; Ralph Sennhauser <sera@gentoo.org> +sun-jdk-1.6.0.35-r1.ebuild:
+  Demos now available for 6u35. #431492 #434990
+  Add back ia64 and examples for amd64.
+  Add BSD to licenses for examples.
+  Use QA_PREBUILT instead of individual variables.
+  Fix desktop files for newer standard.
+  Add elog about the name change to oracle-jdk-bin for JDK7.
+
+  15 Oct 2012; Ralph Sennhauser <sera@gentoo.org> -sun-jdk-1.6.0.33.ebuild,
+  -sun-jdk-1.6.0.33-r1.ebuild, -sun-jdk-1.6.0.33-r2.ebuild,
+  -sun-jdk-1.6.0.34.ebuild:
+  Remove vulnarable.
+
+  13 Sep 2012; Pawel Hajdan jr <phajdan.jr@gentoo.org> sun-jdk-1.6.0.35.ebuild:
+  x86 stable wrt bug #433094
+
+  02 Sep 2012; Agostino Sarubbo <ago@gentoo.org> sun-jdk-1.6.0.35.ebuild:
+  Stable for amd64, wrt bug #433094
+
+  31 Aug 2012; Agostino Sarubbo <ago@gentoo.org> sun-jdk-1.6.0.34.ebuild:
+  Stable for amd64, wrt bug #431492
+
+  31 Aug 2012; Vlastimil Babka <caster@gentoo.org> sun-jdk-1.6.0.35.ebuild:
+  Fix download URL, bug #433553.
+
+*sun-jdk-1.6.0.35 (31 Aug 2012)
+
+  31 Aug 2012; Vlastimil Babka <caster@gentoo.org> +sun-jdk-1.6.0.35.ebuild:
+  Version bump, security bug #433094.
 
 *sun-jdk-1.6.0.34 (23 Aug 2012)
 

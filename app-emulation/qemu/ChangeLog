@@ -1,6 +1,132 @@
 # ChangeLog for app-emulation/qemu
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/qemu/ChangeLog,v 1.115 2012/08/18 18:51:35 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/qemu/ChangeLog,v 1.143 2012/11/05 06:42:53 slyfox Exp $
+
+  05 Nov 2012; Sergei Trofimovich <slyfox@gentoo.org> qemu-9999.ebuild:
+  Once againt readd or32 target (OpenRISC). Added nore binaries to RWX exempt
+  list: qemu-{microblazeel,or32,s390x,unicore32}. unicore32 got system target
+  implementation.
+
+  05 Nov 2012; Doug Goldstein <cardoe@gentoo.org> qemu-1.2.0.ebuild,
+  qemu-9999.ebuild:
+  Fix typo noticed by Alphat-PC <AlphatPC@gmail.com>
+
+  04 Nov 2012; Doug Goldstein <cardoe@gentoo.org> qemu-9999.ebuild:
+  Fix patch name.
+
+  03 Nov 2012; <ago@gentoo.org> qemu-1.1.2-r2.ebuild:
+  Stable for amd64, wrt bug #440092
+
+  30 Oct 2012; Doug Goldstein <cardoe@gentoo.org> qemu-1.1.1-r1.ebuild,
+  qemu-1.1.2-r1.ebuild, qemu-1.1.2-r2.ebuild, qemu-1.2.0.ebuild,
+  qemu-9999.ebuild:
+  Ensure no one uses USE=bluetooth with USE=static since it doesn't work.
+
+  30 Oct 2012; Doug Goldstein <cardoe@gentoo.org> qemu-1.1.1-r1.ebuild,
+  qemu-1.1.2-r1.ebuild, qemu-1.1.2-r2.ebuild:
+  Fix old blocker that's not necessary now that we have the qemu-kvm move.
+
+  29 Oct 2012; Doug Goldstein <cardoe@gentoo.org> qemu-1.2.0.ebuild,
+  qemu-9999.ebuild:
+  Updates from the 1.1.x to ready for the 1.2.x series unmask.
+
+  29 Oct 2012; Tiziano Müller <dev-zero@gentoo.org> qemu-9999.ebuild:
+  Fix collision with vscclient in the live ebuild like in the 1.2.0 ebuild.
+
+  28 Oct 2012; Tiziano Müller <dev-zero@gentoo.org> qemu-1.2.0.ebuild:
+  Fix some build issues (missing patch and wrong S), avoid collision with
+  libcacard (bug #439990).
+
+  28 Oct 2012; Zac Medico <zmedico@gentoo.org> qemu-1.1.1-r1.ebuild,
+  qemu-1.1.2-r1.ebuild, qemu-1.1.2-r2.ebuild, qemu-1.2.0.ebuild,
+  qemu-9999.ebuild:
+  Fix spelling of CONFIG_CHECK for vhost-net.
+
+*qemu-1.1.2-r2 (24 Oct 2012)
+
+  24 Oct 2012; Doug Goldstein <cardoe@gentoo.org> +qemu-1.1.2-r2.ebuild:
+  Further stability fixes either applied by upstream or recommended to be
+  applied.
+
+  20 Oct 2012; Doug Goldstein <cardoe@gentoo.org>
+  -files/qemu-0.11.0-mips64-user-fix.patch,
+  -files/qemu-0.11.1-CVE-2012-0029-backport.patch,
+  -files/qemu-0.11.1-cfg-pulse.patch, -files/qemu-1.0.1-siginfo.patch,
+  -files/qemu-kvm-1.0-e1000-bounds-packet-size-against-buffer-size.patch,
+  -files/qemu-1.0-unmagic-debug.patch, -files/qemu-1.0-unmagic-xfsctl.patch,
+  -qemu-1.1.2.ebuild, -files/qemu-ifdown, -files/qemu-ifup:
+  Remove ebuild that doesn't have the Gentoo patchset. Remove old files that
+  are not used.
+
+  20 Oct 2012; Doug Goldstein <cardoe@gentoo.org> -qemu-0.11.1.ebuild,
+  -qemu-0.11.1-r1.ebuild:
+  Remove older version from the tree.
+
+  20 Oct 2012; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
+  Remove unused USE flag descriptions.
+
+  20 Oct 2012; Doug Goldstein <cardoe@gentoo.org> qemu-1.2.0.ebuild:
+  Add initial qemu-kvm 1.2.0 that is unkeyworded. It is missing the Gentoo
+  patchset and we really are waiting for 1.2.1 but its slowly dragging its feet
+  out the door and once it does that will be keyworded.
+
+*qemu-1.1.2-r1 (20 Oct 2012)
+
+  20 Oct 2012; Doug Goldstein <cardoe@gentoo.org> +qemu-1.1.2-r1.ebuild:
+  Restore the Gentoo patchset for qemu-kvm.
+
+  11 Oct 2012; Justin Lecher <jlec@gentoo.org> metadata.xml:
+  Add  better USE description for jpeg and png
+
+  11 Oct 2012; Sergei Trofimovich <slyfox@gentoo.org>
+  +files/qemu-9999-fix-mipsen.patch:
+  Addmissing patch for mips (lost after qemu-kvm -> qemu migration).
+
+  10 Oct 2012; Mike Frysinger <vapier@gentoo.org> qemu-1.1.2.ebuild,
+  qemu-9999.ebuild:
+  Make vnc support optional.  We can use qemu just fine w/out it, so add
+  USE="jpeg png vnc" to control the various pieces.
+
+  10 Oct 2012; Mike Frysinger <vapier@gentoo.org> metadata.xml,
+  qemu-1.1.2.ebuild, qemu-9999.ebuild:
+  Convert to USE=uuid since the -luuid interface is portable beyond linux.
+
+  10 Oct 2012; Mike Frysinger <vapier@gentoo.org> qemu-1.1.2.ebuild,
+  qemu-9999.ebuild:
+  Handle more USE=static/static-libs cases.
+
+  09 Oct 2012; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
+  Update maintainer
+
+  09 Oct 2012; Doug Goldstein <cardoe@gentoo.org> qemu-9999.ebuild:
+  Update the live ebuild to qemu-kvm.
+
+  09 Oct 2012; Doug Goldstein <cardoe@gentoo.org> qemu-1.1.1-r1.ebuild:
+  This was stable but repoman didn't want to let me keep it stable after the
+  move so remarking stable.
+
+  09 Oct 2012; Doug Goldstein <cardoe@gentoo.org> -qemu-1.1.1.ebuild:
+  Remove ebuild that was never keyworded
+
+*qemu-1.1.1-r1 (09 Oct 2012)
+
+  09 Oct 2012; Doug Goldstein <cardoe@gentoo.org> +files/65-kvm.rules,
+  -qemu-1.0-r2.ebuild, -qemu-1.0-r3.ebuild, -qemu-1.0.1.ebuild,
+  +qemu-1.1.1-r1.ebuild, qemu-1.1.2.ebuild, +files/qemu-kvm:
+  Bring over the qemu-kvm ebuilds since we're merging the two packages together
+  to better follow how other distros ship qemu/qemu-kvm. Eventually we'll just
+  use qemu instead of qemu-kvm but not yet.
+
+*qemu-1.2.0 (22 Sep 2012)
+*qemu-1.1.2 (22 Sep 2012)
+
+  22 Sep 2012; Mike Frysinger <vapier@gentoo.org>
+  +files/qemu-1.2.0-cflags.patch, +qemu-1.1.2.ebuild, +qemu-1.2.0.ebuild:
+  Version bumps.
+
+  07 Sep 2012; Sergei Trofimovich <slyfox@gentoo.org> qemu-9999.ebuild:
+  Fixed configure failure (upstream got rid of '--enabke-vnc-thread' option).
+  Added new or32 target (OpenRISC).
 
 *qemu-1.1.1 (18 Aug 2012)
 

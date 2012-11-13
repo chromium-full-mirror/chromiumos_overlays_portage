@@ -1,6 +1,42 @@
 # ChangeLog for www-client/seamonkey
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/seamonkey/ChangeLog,v 1.402 2012/07/29 17:39:01 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/seamonkey/ChangeLog,v 1.410 2012/11/03 12:31:05 ago Exp $
+
+  03 Nov 2012; <ago@gentoo.org> seamonkey-2.13.2.ebuild:
+  Stable for amd64, wrt bug #439960
+
+*seamonkey-2.13.2 (01 Nov 2012)
+
+  01 Nov 2012; <anarchy@gentoo.org> +seamonkey-2.13.2.ebuild:
+  Security bump, bug #439960
+
+  23 Oct 2012; <ago@gentoo.org> seamonkey-2.13.1.ebuild:
+  Stable for amd64, wrt bug #437780
+
+*seamonkey-2.13.1 (19 Oct 2012)
+
+  19 Oct 2012; Lars Wendler <polynomial-c@gentoo.org> -seamonkey-2.11.ebuild,
+  +seamonkey-2.13.1.ebuild:
+  Security bump. Removed old.
+
+  15 Sep 2012; Andreas Schuerch <nativemad@gentoo.org> seamonkey-2.12.1.ebuild:
+  x86 stable, see bug 433383
+
+*seamonkey-2.12.1 (10 Sep 2012)
+
+  10 Sep 2012; Lars Wendler <polynomial-c@gentoo.org> -seamonkey-2.12.ebuild,
+  +seamonkey-2.12.1.ebuild:
+  Bumped seamonkey-2.12 to 2.12.1. As it's a privacy relevant bugfix release I
+  bumped it straight to stable for amd64 (which had 2.12 stable already).
+
+  08 Sep 2012; Agostino Sarubbo <ago@gentoo.org> seamonkey-2.12.ebuild:
+  Stable for amd64, wrt bug #433383
+
+*seamonkey-2.12 (30 Aug 2012)
+
+  30 Aug 2012; Lars Wendler <polynomial-c@gentoo.org> -seamonkey-2.10.1.ebuild,
+  +seamonkey-2.12.ebuild, +files/firefox-15.0-fix-gstreamer-html5-crash.patch:
+  Version bump. Removed old.
 
   29 Jul 2012; Raúl Porcel <armin76@gentoo.org> seamonkey-2.10.1.ebuild,
   seamonkey-2.11.ebuild:

@@ -1,6 +1,14 @@
 # ChangeLog for sci-libs/xgks-pmel
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/xgks-pmel/ChangeLog,v 1.8 2012/05/25 07:51:35 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/xgks-pmel/ChangeLog,v 1.10 2012/10/16 19:16:53 jlec Exp $
+
+  16 Oct 2012; Justin Lecher <jlec@gentoo.org> xgks-pmel-2.5.5.ebuild,
+  metadata.xml:
+  Remove virtual/fortran and always call fortran-2_pkg_setup as intend by the
+  updated fortran-2.eclass
+
+  07 Oct 2012; Pacho Ramos <pacho@gentoo.org> metadata.xml:
+  Drop maintainer due retirement, #24135.
 
   25 May 2012; Tomáš Chvátal <scarabeus@gentoo.org> xgks-pmel-2.5.5.ebuild:
   Update to eapi4 -> bit cleanup.
@@ -31,4 +39,3 @@
   +metadata.xml, +xgks-pmel-2.5.5.ebuild:
   New ebuild for PMEL's xgks library, another required dependency for Ferret.
   Still needs merging with the newer (but unloved) code on sourceforge.
-

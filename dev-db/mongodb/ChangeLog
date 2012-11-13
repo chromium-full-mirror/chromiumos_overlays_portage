@@ -1,6 +1,57 @@
 # ChangeLog for dev-db/mongodb
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-db/mongodb/ChangeLog,v 1.41 2012/08/20 08:46:47 ultrabug Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-db/mongodb/ChangeLog,v 1.51 2012/11/09 16:08:37 flameeyes Exp $
+
+  09 Nov 2012; Diego E. Pettenò <flameeyes@gentoo.org> mongodb-2.2.1.ebuild:
+  No need to specify a boost version anymore, as boost is unslotted; also add a
+  dependency on the multithread USE flag for 1.52.0-r1 and later.
+
+  04 Nov 2012; Ultrabug <ultrabug@gentoo.org> files/mongodb-2.2-r2-boost-1.50.patch:
+  Correct 2.2.x boost-1.50 patch thanks to Hank Leininger for spotting.
+
+*mongodb-2.2.1 (04 Nov 2012)
+*mongodb-2.2.0-r2 (04 Nov 2012)
+*mongodb-2.0.7-r2 (04 Nov 2012)
+*mongodb-2.0.7-r1 (04 Nov 2012)
+
+  04 Nov 2012; Ultrabug <ultrabug@gentoo.org> +files/mongodb-2.0-r1-boost-1.50.patch,
+  -mongodb-2.0.7.ebuild, +mongodb-2.0.7-r1.ebuild, +mongodb-2.0.7-r2.ebuild,
+  -mongodb-2.2.0.ebuild, +mongodb-2.2.0-r2.ebuild,
+  +files/mongodb-2.2-r2-boost-1.50.patch, +mongodb-2.2.1.ebuild:
+  Fix boost-1.50 build for 2.x series, fix #425190, use -r1 versions for older
+  boost, use -r2 for >=1.50 boost. No longer depend on spidermonkey-1.7 for all
+  the 2.x series wrt #390631. Note that v1.8.5 will be dropped later wrt
+  #376983. Version bump fix #441586. Drop old stuff.
+
+*mongodb-2.2.0-r1 (09 Oct 2012)
+
+  09 Oct 2012; Ian Stakenvicius <axs@gentoo.org>
+  +files/mongodb-2.2-r1-fix-boost.patch, +files/mongodb-2.2-r1-fix-scons.patch,
+  +mongodb-2.2.0-r1.ebuild:
+  Use upstream embedded spidermonkey (bug 390631); build against boost
+  indeoendent of eselect
+
+  07 Oct 2012; Fabian Groffen <grobian@gentoo.org> mongodb-2.2.0.ebuild:
+  Fix for Prefix
+
+  11 Sep 2012; Ultrabug <ultrabug@gentoo.org> mongodb-2.2.0.ebuild,
+  files/mongodb-2.2-fix-sconscript.patch,
+  +files/mongodb-2.2-fix-x86client.patch:
+  Do not apply client patch on amd64 machines, fix #434664.
+
+  10 Sep 2012; Ultrabug <ultrabug@gentoo.org> mongodb-2.2.0.ebuild,
+  files/mongodb-2.2-fix-sconscript.patch:
+  Fix #433533 RDEPEND thx to Albert W. Hopkins. Fix x86 compilation #433507.
+
+  30 Aug 2012; Ultrabug <ultrabug@gentoo.org> mongodb-2.2.0.ebuild:
+  Fix v8 compilation when spidermonkey is not installed, by Jouni Kosonen.
+
+*mongodb-2.2.0 (30 Aug 2012)
+
+  30 Aug 2012; Ultrabug <ultrabug@gentoo.org> -mongodb-1.8.4-r1.ebuild,
+  -mongodb-2.0.6.ebuild, +mongodb-2.2.0.ebuild,
+  +files/mongodb-2.2-fix-scons.patch, +files/mongodb-2.2-fix-sconscript.patch:
+  Version bump, drop old.
 
 *mongodb-2.0.7 (20 Aug 2012)
 *mongodb-1.8.5 (20 Aug 2012)
@@ -258,4 +309,3 @@
   +files/mongodb.initd, +metadata.xml:
   Import ebuild from the sunrise overlay and apply various fixes. Resolves
   #273259
-

@@ -1,9 +1,11 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-cluster/mpich2/mpich2-1.2.1_p1-r1.ebuild,v 1.14 2012/06/25 18:33:23 jsbronder Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-cluster/mpich2/mpich2-1.2.1_p1-r1.ebuild,v 1.16 2012/10/16 18:43:14 jlec Exp $
 
 EAPI=2
+
 PYTHON_DEPEND="2"
+FORTRAN_NEEDED=fortran
 
 inherit eutils fortran-2 python toolchain-funcs
 
@@ -25,7 +27,6 @@ DEPEND="${COMMON_DEPEND}
 	sys-devel/libtool"
 
 RDEPEND="
-	fortran? ( virtual/fortran )
 	${COMMON_DEPEND}
 	!media-sound/mpd
 	!sys-cluster/openmpi"

@@ -1,6 +1,27 @@
 # ChangeLog for dev-libs/nettle
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/nettle/ChangeLog,v 1.63 2012/07/24 18:42:35 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/nettle/ChangeLog,v 1.70 2012/10/20 16:40:22 armin76 Exp $
+
+  20 Oct 2012; Raúl Porcel <armin76@gentoo.org> nettle-2.5.ebuild:
+  alpha/ia64/s390/sh/sparc stable wrt #433235
+
+  17 Oct 2012; Pawel Hajdan jr <phajdan.jr@gentoo.org> nettle-2.5.ebuild:
+  x86 stable wrt bug #433235
+
+  12 Oct 2012; Agostino Sarubbo <ago@gentoo.org> nettle-2.5.ebuild:
+  Stable for amd64, wrt bug #433235
+
+  11 Oct 2012; Jeroen Roovers <jer@gentoo.org> nettle-2.5.ebuild:
+  Stable for HPPA (bug #433235).
+
+  11 Oct 2012; Markus Meier <maekke@gentoo.org> nettle-2.5.ebuild:
+  arm stable, bug #433235
+
+  11 Oct 2012; Anthony G. Basile <blueness@gentoo.org> nettle-2.5.ebuild:
+  stable ppc64, bug #433235
+
+  10 Oct 2012; Brent Baude <ranger@gentoo.org> nettle-2.5.ebuild:
+  Marking nettle-2.5 ppc for bug 433235
 
 *nettle-1.15 (24 Jul 2012)
 

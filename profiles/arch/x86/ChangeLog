@@ -1,6 +1,26 @@
 # ChangeLog for Gentoo/x86 profile directory
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/x86/ChangeLog,v 1.109 2012/07/31 14:37:45 sera Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/x86/ChangeLog,v 1.115 2012/11/12 15:36:54 floppym Exp $
+
+  12 Nov 2012; Mike Gilbert <floppym@gentoo.org> make.defaults:
+  Move PYTHON_TARGETS=python3_2 from arch profiles to base.
+
+  05 Nov 2012; Sergei Trofimovich <slyfox@gentoo.org> package.use:
+  Fixed typo qemu_softmmu_target{,s}_.
+
+  04 Nov 2012; Diego E. Pettenò <flameeyes@gentoo.org> package.use.mask:
+  Unmask dane USE flag for net-libs/gnutls.
+
+  29 Oct 2012; Doug Goldstein <cardoe@gentoo.org> +package.use:
+  Add package.use so we can enable the native arch as the default qemu target
+  for bug #437788
+
+  07 Oct 2012; Samuli Suominen <ssuominen@gentoo.org> package.use.mask:
+  Restore USE="systemd" mask to sys-auth/polkit for stabilization.
+
+  15 Sep 2012; Johannes Huber <johu@gentoo.org> package.use.mask:
+  Masked media-libs/phonon[zeitgeist] for stabilization as the use flag pulls a
+  dep tree of hell.
 
   31 Jul 2012; Ralph Sennhauser <sera@gentoo.org> use.mask:
   Unmask python_targets_jython2_5 as it's available on x86.

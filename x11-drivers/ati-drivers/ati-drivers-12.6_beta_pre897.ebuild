@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-drivers/ati-drivers/ati-drivers-12.6_beta_pre897.ebuild,v 1.2 2012/07/26 15:08:38 johu Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-drivers/ati-drivers/ati-drivers-12.6_beta_pre897.ebuild,v 1.7 2012/10/26 17:37:55 chithanh Exp $
 
 EAPI=4
 
@@ -21,7 +21,7 @@ fi
 IUSE="debug +modules multilib qt4 static-libs"
 
 LICENSE="AMD GPL-2 QPL-1.0 as-is"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 SLOT="1"
 
 RDEPEND="
@@ -103,7 +103,7 @@ QA_SONAME="
 	usr/lib\(32\|64\)\?/libamdocl\(32\|64\)\?.so
 "
 
-QA_DT_HASH="
+QA_FLAGS_IGNORED="
 	opt/bin/amdcccle
 	opt/bin/aticonfig
 	opt/bin/atiodcli
@@ -229,8 +229,9 @@ pkg_pretend() {
 	# workaround until bug 365543 is solved
 	if use modules; then
 		linux-info_pkg_setup
-		require_configured_kernel
-		_check_kernel_config
+		if linux_config_exists; then
+			_check_kernel_config
+		fi
 	fi
 }
 
@@ -323,6 +324,10 @@ src_prepare() {
 
 	#fixes bug #420751
 	epatch "${FILESDIR}"/ati-drivers-do_mmap.patch
+
+	# compile fix for linux-3.7
+	# https://bugs.gentoo.org/show_bug.cgi?id=438516
+	epatch "${FILESDIR}/ati-drivers-vm-reserverd.patch"
 
 	cd "${MODULE_DIR}"
 
@@ -579,6 +584,11 @@ src_install-libs() {
 }
 
 pkg_postinst() {
+	if has_version ">=x11-base/xorg-server-1.11.99"; then
+		ewarn "Problems have been reported with this driver and xorg-server-1.12."
+		ewarn "Stay with xorg-server-1.11 if you experience hangs (bug #436252)."
+	fi
+
 	elog "To switch to AMD OpenGL, run \"eselect opengl set ati\""
 	elog "To change your xorg.conf you can use the bundled \"aticonfig\""
 	elog

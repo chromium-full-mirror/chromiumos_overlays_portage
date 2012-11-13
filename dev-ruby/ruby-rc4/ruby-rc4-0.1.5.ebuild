@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-rc4/ruby-rc4-0.1.5.ebuild,v 1.4 2012/08/14 14:23:05 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-rc4/ruby-rc4-0.1.5.ebuild,v 1.6 2012/10/28 17:47:05 armin76 Exp $
 
 EAPI=4
 USE_RUBY="ruby18 ree18 ruby19 jruby"
@@ -17,7 +17,7 @@ HOMEPAGE="https://github.com/caiges/Ruby-RC4"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~hppa ~x86 ~x86-fbsd"
+KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
 IUSE=""
 
 all_ruby_prepare() {
