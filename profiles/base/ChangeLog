@@ -1,6 +1,24 @@
 # ChangeLog for Gentoo base-profile
 # Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/base/ChangeLog,v 1.483 2012/12/29 20:26:28 pesa Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/base/ChangeLog,v 1.489 2012/12/31 18:05:32 tove Exp $
+
+  30 Dec 2012; Alexandre Rostovtsev <tetromino@gentoo.org> package.use.mask:
+  Mask sys-kernel/dracut[dracut_modules_systemd]; unmasked in arches where
+  appropriate.
+
+  30 Dec 2012; Alexandre Rostovtsev <tetromino@gentoo.org> package.use.mask:
+  Mask sys-kernel/dracut[dracut_modules_biosdevname]; unmasked in arches where
+  appropriate.
+
+  30 Dec 2012; Alexandre Rostovtsev <tetromino@gentoo.org> package.use.mask:
+  Mask zeitgeist-datasources[chromium,tomboy]; unmasked in arches where
+  appropriate.
+
+  30 Dec 2012; Sven Vermeulen <swift@gentoo.org> package.mask:
+  Adding entry for selinux-googletalk
+
+  30 Dec 2012; Sven Vermeulen <swift@gentoo.org> package.mask:
+  Adding mask for selinux-openrc
 
   29 Dec 2012; Davide Pesavento <pesa@gentoo.org> package.use.mask:
   Remove obsolete x11-libs/qt-* use.mask entries.

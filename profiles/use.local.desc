@@ -864,6 +864,7 @@ app-text/crm114:mimencode - Add support for using the mimencode mime (net-mail/m
 app-text/crm114:normalizemime - Add support for using the normalizemime (mail-filter/normalizemime)
 app-text/cuneiform:graphicsmagick - Enables support of various input formats using media-gfx/graphicsmagick. Otherwise only uncompressed BMP files are supported.
 app-text/cuneiform:imagemagick - Enables support of various input formats using media-gfx/imagemagick. Otherwise only uncompressed BMP files are supported.
+app-text/dbacl:interactive - Enable the interactive mailinspect ability
 app-text/dictd:judy - Build Judy-based (dev-libs/judy) plugin implementing fast "exact" and especially "lev" strategies
 app-text/dictd:minimal - Don't build server but dict client, dictzip and dictfmt only.
 app-text/docbook-sgml-utils:jadetex - Add support for app-text/jadetex (for processing tex files produced by the TeX backend of Jade)
@@ -2132,7 +2133,7 @@ gnome-extra/gnome-screensaver:systemd - Support sys-apps/systemd's logind
 gnome-extra/gnome-system-monitor:systemd - Display sys-apps/systemd metadata, e.g. unit names, for running processes
 gnome-extra/gnome-utils:bonobo - Enable applets (gdict one) still not ported to DBUS, requiring deprecated bonobo support in gnome-panel.
 gnome-extra/gucharmap:vala - Enable bindings for dev-lang/vala
-gnome-extra/libgda:bindist - Enable support for dev-db/firebird database which is not GPL compatible.
+gnome-extra/libgda:bindist - Disable support for dev-db/firebird database which is not GPL compatible.
 gnome-extra/libgda:canvas - Enable support for x11-libs/goocanvas
 gnome-extra/libgda:http - Enable embedded net-libs/libsoup based server
 gnome-extra/libgda:json - Enable support for JSON format
@@ -3397,6 +3398,7 @@ media-video/mplayer2:xanim - Enables support for xanim based codecs
 media-video/mplayer2:yuv4mpeg - Enables yuv4mpeg video output
 media-video/ogmrip:ogm - Support for OGM container format
 media-video/ogmrip:srt - Support for SRT subtitle format
+media-video/pgcedit:video - Add support for video preview
 media-video/rtmpdump:gnutls - Use GnuTLS library instead of the default OpenSSL
 media-video/rtmpdump:polarssl - Use PolarSSL library instead of the default OpenSSL
 media-video/smplayer2:download-subs - Enable subtitle downloader (requires QuaZip)
@@ -3689,6 +3691,7 @@ net-analyzer/zabbix:static - Build statically linked binaries
 net-dialup/capi4k-utils:fax - Install capi-fax demo programs
 net-dialup/capi4k-utils:pppd - Installs pppdcapiplugin modules
 net-dialup/capi4k-utils:rcapid - Installs rcapid daemon
+net-dialup/freeradius:bindist - Disallow building the dev-db/firebird module, which is not compatible with GPL-2.
 net-dialup/freeradius:pcap - Build the RADIUS sniffer which requires net-libs/libpcap.
 net-dialup/freeradius-client:scp - Add service type hints derived from username prefix
 net-dialup/freeradius-client:shadow - Enable shadow password support
@@ -4150,6 +4153,7 @@ net-libs/farstream:introspection - Use dev-libs/gobject-introspection for intros
 net-libs/glib-networking:gnome - Extract HTTP/HTTPS/SOCKS proxy configuration stored using GSettings
 net-libs/glib-networking:libproxy - Use net-libs/libproxy for getting the HTTP/HTTPS/SOCKS proxy configuration
 net-libs/gnome-online-accounts:gnome - Use gnome-base/gnome-control-center to set GNOME online accounts preferences
+net-libs/gnutls:bindist - Disallow building LZO support, because of a license incompatibility with dev-libs/lzo.
 net-libs/gnutls:dane - Build libgnutls-dane, implementing DNS-based Authentication of Named Entities. Requires net-dns/unbound.
 net-libs/gnutls:nettle - Use dev-libs/nettle as crypto backend
 net-libs/gnutls:pkcs11 - Add support for PKCS#11 through app-crypt/p11-kit
@@ -5327,6 +5331,7 @@ sys-auth/sssd:manpages - Build man pages with dev-libs/libxslt
 sys-auth/sssd:netlink - Add support for netlink protocol via dev-libs/libnl
 sys-auth/sssd:ssh - Build helper to let net-misc/openssh use sssd provided information
 sys-auth/sssd:sudo - Build helper to let app-admin/sudo use sssd provided information
+sys-auth/ykpers:consolekit - Use sys-auth/consolekit and virtual/udev to allow access to the YubiKey HID device to the console user.
 sys-block/gparted:btrfs - Include Btrfs support (sys-fs/btrfs-progs)
 sys-block/gparted:dmraid - Support for dmraid devices, also known as ATA-RAID, or Fake RAID.
 sys-block/gparted:fat - Include FAT16/FAT32 support (sys-fs/dosfstools)
@@ -5936,28 +5941,20 @@ x11-libs/qt-assistant:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-assistant:compat - Build the extra compatibility layer required by a few packages, see http://labs.qt.nokia.com/2010/06/22/qt-assistant-compat-version-available-as-extra-source-package/
 x11-libs/qt-assistant:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
 x11-libs/qt-assistant:glib - Enable dev-libs/glib eventloop support
-x11-libs/qt-assistant:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-assistant:qt3support - Enable the Qt3Support libraries for Qt4. Note that this does not mean you can compile pure Qt3 programs with Qt4.
 x11-libs/qt-assistant:trace - Build the 'qttracereplay' utility which is required to play drawings recorded with the trace graphicssystem
 x11-libs/qt-bearer:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-bearer:connman - Enable ConnMan-based bearer plugin
 x11-libs/qt-bearer:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
 x11-libs/qt-bearer:networkmanager - Enable NetworkManager-based bearer plugin
-x11-libs/qt-bearer:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-core:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-core:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
 x11-libs/qt-core:glib - Enable dev-libs/glib eventloop support
-x11-libs/qt-core:optimized-qmake - Enable qmake optimization
-x11-libs/qt-core:private-headers - Install the private header files required by some QtCreator plugins
-x11-libs/qt-core:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-core:qt3support - Enable the Qt3Support libraries for Qt4. Note that this does not mean you can compile pure Qt3 programs with Qt4.
 x11-libs/qt-dbus:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-dbus:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
-x11-libs/qt-dbus:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-declarative:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-declarative:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
-x11-libs/qt-declarative:private-headers - Install the private header files required by some QtCreator plugins
-x11-libs/qt-declarative:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-declarative:qt3support - Enable the Qt3Support libraries for Qt4. Note that this does not mean you can compile pure Qt3 programs with Qt4.
 x11-libs/qt-declarative:webkit - Build the WebView QML component
 x11-libs/qt-demo:c++0x - Build Qt using the C++11 standard
@@ -5967,7 +5964,6 @@ x11-libs/qt-demo:exceptions - Add support for exceptions - like catching them in
 x11-libs/qt-demo:multimedia - Build QtMultimedia examples and demos
 x11-libs/qt-demo:opengl - Build QtOpenGL examples and demos
 x11-libs/qt-demo:openvg - Build QtOpenVG examples and demos
-x11-libs/qt-demo:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-demo:qt3support - Build Qt3Support examples and demos
 x11-libs/qt-demo:webkit - Build QtWebKit examples and demos
 x11-libs/qt-demo:xmlpatterns - Build QtXmlPatterns examples and demos
@@ -5976,10 +5972,7 @@ x11-libs/qt-gui:egl - Use EGL instead of default GLX to manage OpenGL contexts o
 x11-libs/qt-gui:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
 x11-libs/qt-gui:glib - Enable dev-libs/glib eventloop support
 x11-libs/qt-gui:gtkstyle - Build a Qt style called GTK+ that mimics the active GTK+ theme
-x11-libs/qt-gui:private-headers - Install the private header files required by some QtCreator plugins
-x11-libs/qt-gui:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-gui:qt3support - Enable the Qt3Support libraries for Qt4. Note that this does not mean you can compile pure Qt3 programs with Qt4.
-x11-libs/qt-gui:raster - Use the alternative 'raster' graphicssystem as default rendering engine
 x11-libs/qt-gui:trace - Build the 'trace' graphicssystem engine which allows to record all drawing operations into a trace buffer. Later it can be replayed with the qttracereplay utility
 x11-libs/qt-meta:kde - Select media-libs/phonon as Phonon variant (needed for KDE)
 x11-libs/qt-meta:opengl - Enable the QtOpenGL module
@@ -6006,44 +5999,30 @@ x11-libs/qt-mobility:tools - Build various useful tools (e.g.: qcrmlgen, service
 x11-libs/qt-mobility:versit - Build the QtVersit module
 x11-libs/qt-multimedia:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-multimedia:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
-x11-libs/qt-multimedia:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-opengl:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-opengl:egl - Use EGL instead of default GLX to manage OpenGL contexts on the desktop
 x11-libs/qt-opengl:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
-x11-libs/qt-opengl:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-opengl:qt3support - Enable the Qt3Support libraries for Qt4
 x11-libs/qt-openvg:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-openvg:exceptions - Build with support for exceptions
-x11-libs/qt-openvg:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-openvg:qt3support - Enable the Qt3Support libraries for Qt4
 x11-libs/qt-phonon:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-phonon:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
-x11-libs/qt-phonon:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-phonon:qt3support - Enable the Qt3Support libraries for Qt4. Note that this does not mean you can compile pure Qt3 programs with Qt4.
 x11-libs/qt-qt3support:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-qt3support:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
-x11-libs/qt-qt3support:phonon - Enable phonon configuration dialog in qtconfig
-x11-libs/qt-qt3support:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-script:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-script:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
-x11-libs/qt-script:private-headers - Install the private header files required by some QtCreator plugins
-x11-libs/qt-script:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-sql:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-sql:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
-x11-libs/qt-sql:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-sql:qt3support - Enable the Qt3Support libraries for Qt4
 x11-libs/qt-svg:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-svg:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
-x11-libs/qt-svg:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-test:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-test:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
-x11-libs/qt-test:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-webkit:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
 x11-libs/qt-webkit:gstreamer - Enable HTML5 audio/video support via media-libs/gstreamer
-x11-libs/qt-webkit:kde - Select media-libs/phonon as Phonon variant (needed for KDE)
-x11-libs/qt-webkit:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-xmlpatterns:c++0x - Build Qt using the C++11 standard
-x11-libs/qt-xmlpatterns:qpa - Build a window system agnostic implementation of Qt
 x11-libs/vte:glade - Provide integration with dev-util/glade.
 x11-libs/vte:introspection - Use dev-libs/gobject-introspection for introspection
 x11-libs/wxGTK:gnome - Use gnome-base/libgnomeprintui for printing tasks.
