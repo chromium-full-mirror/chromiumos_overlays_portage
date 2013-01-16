@@ -1,12 +1,12 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-fs/udev/udev-197-r2.ebuild,v 1.3 2013/01/13 20:56:57 williamh Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/udev/udev-197-r2.ebuild,v 1.7 2013/01/15 15:30:55 williamh Exp $
 
 EAPI=4
 
 KV_min=2.6.39
 
-inherit autotools eutils linux-info multilib systemd
+inherit autotools eutils linux-info multilib systemd toolchain-funcs versionator
 
 if [[ ${PV} = 9999* ]]
 then
@@ -131,6 +131,10 @@ src_prepare()
 
 	# apply user patches
 	epatch_user
+
+	# compile with older versions of gcc #451110
+	version_is_at_least 4.6 $(gcc-version) || \
+		sed -i 's:static_assert:alsdjflkasjdfa:' src/shared/macro.h
 
 	# change rules back to group uucp instead of dialout for now
 	sed -e 's/GROUP="dialout"/GROUP="uucp"/' \
@@ -390,20 +394,24 @@ pkg_postinst()
 			ewarn "they are disabled by default on live systems."
 			ewarn "Please see the contents of ${net_rules} for more"
 			ewarn "information on this feature."
-			ewarn
 	fi
 	if [[ -d ${ROOT}usr/lib/udev ]]
 	then
+			ewarn
 		ewarn "Please re-emerge all packages on your system which install"
 		ewarn "rules and helpers in /usr/lib/udev. They should now be in"
 		ewarn "/lib/udev."
 		ewarn
+		ewarn "One way to do this is to run the following command:"
+		ewarn "emerge -av1 \$(qfile -q -S -C /usr/lib/udev)"
+		ewarn "Note that qfile can be found in app-portage/portage-utils"
 	fi
 
 	ewarn
 	ewarn "You need to restart udev as soon as possible to make the upgrade go"
 	ewarn "into effect."
 	ewarn "The method you use to do this depends on your init system."
+	ewarn
 
 	preserve_old_lib_notify /$(get_libdir)/libudev.so.0
 
