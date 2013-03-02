@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/qemu/qemu-1.4.0.ebuild,v 1.7 2013/02/26 16:16:18 cardoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/qemu/qemu-1.4.0.ebuild,v 1.9 2013/03/01 07:37:46 dev-zero Exp $
 
 EAPI=5
 
@@ -100,10 +100,10 @@ RDEPEND="!static-softmmu? ( ${LIB_DEPEND//\[static-libs(+)]} )
 	python? ( =dev-lang/python-2*[ncurses] )
 	sdl? ( media-libs/libsdl[X] )
 	selinux? ( sec-policy/selinux-qemu )
-	smartcard? ( dev-libs/nss )
+	smartcard? ( dev-libs/nss !app-emulation/libcacard )
 	spice? ( >=app-emulation/spice-protocol-0.12.3 )
 	systemtap? ( dev-util/systemtap )
-	usbredir? ( >=sys-apps/usbredir-0.5.3 )
+	usbredir? ( >=sys-apps/usbredir-0.6 )
 	virtfs? ( sys-libs/libcap )
 	xen? ( app-emulation/xen-tools )"
 
@@ -408,9 +408,6 @@ src_install() {
 	cd "${S}"
 	dodoc Changelog MAINTAINERS TODO docs/specs/pci-ids.txt
 	newdoc pc-bios/README README.pc-bios
-
-	# Avoid collision with app-emulation/libcacard
-	use smartcard && mv "${ED}/usr/bin/vscclient" "${ED}/usr/bin/qemu-vscclient"
 
 	# Remove SeaBIOS since we're using the SeaBIOS packaged one
 	rm "${ED}/usr/share/qemu/bios.bin"
