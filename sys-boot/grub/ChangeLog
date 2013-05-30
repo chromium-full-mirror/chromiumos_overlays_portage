@@ -1,6 +1,36 @@
 # ChangeLog for sys-boot/grub
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-boot/grub/ChangeLog,v 1.255 2013/04/24 22:38:21 ryao Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-boot/grub/ChangeLog,v 1.263 2013/05/13 16:54:13 floppym Exp $
+
+  13 May 2013; Mike Gilbert <floppym@gentoo.org> files/grub.default-2:
+  Describe the GRUB_CMDLINE_LINUX variables.
+
+  01 May 2013; Mike Gilbert <floppym@gentoo.org> grub-9999.ebuild:
+  Enable mulitslot by default.
+
+  29 Apr 2013; Mike Gilbert <floppym@gentoo.org> grub-9999.ebuild:
+  Add test dependencies.
+
+  29 Apr 2013; Mike Gilbert <floppym@gentoo.org> grub-9999.ebuild:
+  Override src_test.
+
+  28 Apr 2013; Mike Gilbert <floppym@gentoo.org> grub-2.00-r3.ebuild,
+  grub-9999.ebuild:
+  Minor tweaks.
+
+  28 Apr 2013; Mike Gilbert <floppym@gentoo.org> grub-9999.ebuild, metadata.xml:
+  Rewrite ebuild around autotools-utils and multibuild eclasses. Add
+  USE=multislot to toggle renaming of binaries and grubdir.
+
+  27 Apr 2013; Mike Gilbert <floppym@gentoo.org> grub-9999.ebuild:
+  Refresh live ebuild.
+
+*grub-2.00-r3 (27 Apr 2013)
+
+  27 Apr 2013; Mike Gilbert <floppym@gentoo.org> +files/grub-2.00-dmraid.patch,
+  +files/grub-2.00-texinfo.patch, +grub-2.00-r3.ebuild:
+  Resolve infinte-loop in grub-probe #462740 and fix dmraid support #430748.
+  Also fix issue with texinfo-5.1.
 
   24 Apr 2013; Richard Yao <ryao@gentoo.org>
   +files/grub-2.00-zfs-feature-flag-support-r1.patch:

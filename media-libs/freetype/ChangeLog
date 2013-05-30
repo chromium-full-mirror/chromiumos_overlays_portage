@@ -1,6 +1,19 @@
 # ChangeLog for media-libs/freetype
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/freetype/ChangeLog,v 1.368 2013/04/26 14:57:26 yngwin Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/freetype/ChangeLog,v 1.372 2013/05/27 02:49:29 patrick Exp $
+
+  27 May 2013; Patrick Lauer <patrick@gentoo.org> metadata.xml:
+  Remove unneeded useflag from metadata
+
+  25 May 2013; Ben de Groot <yngwin@gentoo.org>
+  -freetype-1.4_pre20080316-r2.ebuild:
+  Remove old unsupported vulnerable slot 1 version, see bug #466308
+
+  04 May 2013; Michał Górny <mgorny@gentoo.org> freetype-2.4.11-r2.ebuild:
+  Forward-port the locale patch.
+
+  29 Apr 2013; Michal Gorny <mgorny@gentoo.org> metadata.xml:
+  Add multilib@ as the co-maintainer for multilib conversion.
 
   26 Apr 2013; Ben de Groot <yngwin@gentoo.org>
   freetype-1.4_pre20080316-r2.ebuild, freetype-2.4.11-r2.ebuild,

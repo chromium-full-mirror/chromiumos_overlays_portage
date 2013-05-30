@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/base/use.mask,v 1.166 2013/04/19 15:25:19 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/base/use.mask,v 1.169 2013/05/21 21:24:14 chutzpah Exp $
 
 # masking here and unmasking in default/linux/
 kmod
@@ -309,11 +309,6 @@ ipmi
 # netlink is a Linux-specific interface
 netlink
 
-# Mike Gilbert <floppym@gentoo.org> (08 Oct 2012)
-# Python 3.3 is masked for testing.
-python_targets_python3_3
-python_single_target_python3_3
-
 # Luca barbato <lu_zero@gentoo.org> (14 Oct 2012)
 # Pending keywording on arches
 fdk
@@ -339,3 +334,14 @@ abi_x86_x32
 # Zac Medico <zmedico@gentoo.org> (21 Mar 2013)
 # Python 3.4 pre-releases not available in main tree yet.
 python_targets_python3_4
+
+# Andrey Grozin <grozin@gentoo.org> (1 May 2013)
+# gcl is masked, cmucl only available on x86, clozurecl on x86 and amd64
+gcl
+cmucl
+clozurecl
+
+# Michał Górny <mgorny@gentoo.org> (4 May 2013)
+# Mask systemd flag globally, unmasked on arches on which systemd
+# is keyworded.
+systemd

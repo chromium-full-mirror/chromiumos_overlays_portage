@@ -1,6 +1,16 @@
 # ChangeLog for app-leechcraft/lc-monocle
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-leechcraft/lc-monocle/ChangeLog,v 1.2 2013/04/14 16:18:51 pinkbyte Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-leechcraft/lc-monocle/ChangeLog,v 1.4 2013/05/26 19:52:16 maksbotan Exp $
+
+*lc-monocle-0.5.96 (26 May 2013)
+
+  26 May 2013; Maxim Koltsov <maksbotan@gentoo.org> +lc-monocle-0.5.96.ebuild:
+  Bump LeechCraft suite to 0.5.96, thanks to 0xd34df00d
+
+*lc-monocle-0.5.95 (02 May 2013)
+
+  02 May 2013; Sergey Popov <pinkbyte@gentoo.org> +lc-monocle-0.5.95.ebuild:
+  Bump app-leechcraft/lc-monocle to 0.5.95, thanks to 0xd34df00d
 
   14 Apr 2013; Sergey Popov <pinkbyte@gentoo.org> lc-monocle-9999.ebuild:
   Bump EAPI to 5, add documentation building and installing, thanks to

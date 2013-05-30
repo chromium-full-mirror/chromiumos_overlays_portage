@@ -1,6 +1,23 @@
 # ChangeLog for dev-python/requests
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/requests/ChangeLog,v 1.36 2013/03/31 07:45:50 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/requests/ChangeLog,v 1.40 2013/05/22 07:14:25 patrick Exp $
+
+*requests-1.2.2 (22 May 2013)
+
+  22 May 2013; Patrick Lauer <patrick@gentoo.org> +requests-1.2.2.ebuild:
+  Bump
+
+*requests-1.2.1 (21 May 2013)
+
+  21 May 2013; Tim Harder <radhermit@gentoo.org> +requests-1.2.1.ebuild,
+  +files/requests-1.2.1-urllib3-py3.patch:
+  Version bump.
+
+  16 May 2013; Markus Meier <maekke@gentoo.org> requests-1.2.0.ebuild:
+  add ~arm, bug #447650
+
+  29 Apr 2013; Ian Delaney <idella4@gentoo.org> requests-1.2.0.ebuild:
+  pypy support added
 
 *requests-1.2.0 (31 Mar 2013)
 

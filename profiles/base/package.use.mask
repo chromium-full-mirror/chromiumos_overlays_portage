@@ -1,10 +1,23 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/base/package.use.mask,v 1.458 2013/04/26 13:42:05 xmw Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/base/package.use.mask,v 1.470 2013/05/24 06:43:13 patrick Exp $
 
 # This file requires >=portage-2.1.1
 # New entries go on top.
 #
+
+# Kacper Kowalik <xarthisius@gentoo.org> (19 May 2013)
+# Fails to build, haven't had time to debug
+app-doc/doxygen sqlite
+
+# Alexis Ballier <aballier@gentoo.org> (08 May 2013)
+# On behalf of Pavel Sanda <ps@twin.jikos.cz>
+# Lyx is currently not working with subversion 1.7 and needs 1.6.
+app-office/lyx subversion
+
+# Christian Faulhammer <fauli@gentoo.org> (0 May 2013)
+# Will not build successfully yet
+mail-client/claws-mail gtk3
 
 # Bernard Cafarelli <voyageur@gentoo.org> (04 Apr 2013)
 # Broken for now (segmentation fault on play)
@@ -81,10 +94,6 @@ app-misc/tracker eds
 # cuda/openmm/mkl only works on x86/amd64
 sci-chemistry/gromacs cuda mkl openmm
 
-# Julian Ospald <hasufell@gentoo.org> (25 Dec 2012)
-# mask systemd to allow stabilization wrt #448034
-=sys-apps/udevil-0.3.6 systemd
-
 # Zac Medico <zmedico@gentoo.org> (13 Jun 2012)
 # Mask USE=pypy2_0 for sys-apps/portage, since pypy has limited KEYWORDS.
 sys-apps/portage pypy2_0
@@ -96,12 +105,6 @@ www-client/firefox pgo
 # Sergey Popov <pinkbyte@gentoo.org> (26 Nov 2012)
 # PDF docs building failed with sandbox violation
 media-libs/opencolorio pdf
-
-# Chris Reffett <creffett@gentoo.org> (23 Nov 2012)
-# CMake's PHP module can't find our install location, so
-# libkolab(xml) fails with the php flag enabled.
-net-libs/libkolab php
-net-libs/libkolabxml php
 
 # Diego Elio Pettenò <flameeyes@gentoo.org> (3 Nov 2012)
 # Requires net-dns/unbound which is not keyworded by most arches
@@ -187,24 +190,10 @@ media-libs/opencv ipp
 # Causes crashes and build failures, not needed by any package, bug #412177
 x11-libs/cairo qt4
 
-# Alexandre Rostovtsev <tetromino@gentoo.org> (13 Apr 2012)
-# Packages with optional systemd support. Masked in base and unmasked on arches
-# where sys-apps/systemd is available.
-gnome-extra/gnome-screensaver systemd
-gnome-extra/gnome-system-monitor systemd
-net-misc/networkmanager systemd
-
 # Alexandre Rostovtsev <tetromino@gentoo.org> (12 Apr 2012)
 # Temporary mask-in-base, unmask-in-arch for dev-python/mako keywording for
 # gobject-introspection[doctool], bug #411761
 dev-libs/gobject-introspection doctool
-
-# Sebastian Pipping <sping@gentoo.org> (12 Apr 2012)
-# Compilation fails due to a bug in dev-libs/gobject-introspection
-# that has yet to be resolved upstream.
-# See <https://bugzilla.gnome.org/show_bug.cgi?id=673580#c5> for details
->=media-libs/babl-0.1.8 introspection
->=media-libs/gegl-0.2 introspection
 
 # Michał Górny <mgorny@gentoo.org> (11 Apr 2012)
 # JIT compilation in libzpaq generates code for x86/amd64.
@@ -267,12 +256,6 @@ app-arch/libarchive e2fsprogs
 # it's masked here and unmasked in individual profiles (bug #396313).
 net-libs/webkit-gtk jit
 www-client/epiphany jit
-
-# Samuli Suominen <ssuominen@gentoo.org> (05 Jan 2012)
-# Waiting for >=sys-apps/systemd-197 to stabilize. Then this can be removed.
-sys-auth/polkit systemd
-sys-power/upower systemd
-sys-fs/udisks systemd
 
 # Mike Frysinger <vapier@gentoo.org> (06 Dec 2011)
 # No one should be mucking with libssp unless they really know what they're
@@ -411,11 +394,6 @@ media-sound/pulseaudio system-wide
 # 299674
 >net-misc/wicd-1.6.2.2 ioctl
 
-# Andrey Grozin <grozin@gentoo.org> (7 Jan 2010)
-# gcl is, unfortunately, masked
-# I have problems with cmucl, masked for investigation
-sci-mathematics/fricas gcl cmucl
-
 # Tomáš Chvátal <scarabeus@gentoo.org> (6 Jan 2010)
 # Still not really functional, upstream requires not building it.
 x11-libs/cairo gallium
@@ -451,12 +429,6 @@ media-gfx/iscan X
 # Tomáš Chvátal <scarabeus@gentoo.org> (10 Sep 2009)
 # quakeforge has video_cards_tdfx enabled only for x86
 games-fps/quakeforge video_cards_tdfx
-
-# Marijn Schouten <hkBst@gentoo.org> (03 Aug 2009)
-# gcl is an old piece of crap that has a lot of problems
-# Andrey Grozin <grozin@gentoo.org> (24 Dec 2009)
-# openmcl (aka clozurecl) is only available on x86 and amd64
-sci-mathematics/maxima gcl clozurecl
 
 # Tomas Chvatal <scarabeus@gentoo.org> (31 Jan 2009)
 # mask cuda for boinc. Works only on amd64 and x86

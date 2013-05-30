@@ -1,6 +1,36 @@
 # ChangeLog for dev-libs/libtommath
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/libtommath/ChangeLog,v 1.51 2013/04/24 01:10:55 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/libtommath/ChangeLog,v 1.61 2013/05/26 15:57:30 ago Exp $
+
+  26 May 2013; Agostino Sarubbo <ago@gentoo.org> libtommath-0.42.0-r1.ebuild:
+  Stable for x86, wrt bug #470264
+
+  25 May 2013; Agostino Sarubbo <ago@gentoo.org> libtommath-0.42.0-r1.ebuild:
+  Stable for alpha, wrt bug #470264
+
+  25 May 2013; Agostino Sarubbo <ago@gentoo.org> libtommath-0.42.0-r1.ebuild:
+  Stable for sparc, wrt bug #470264
+
+  24 May 2013; Agostino Sarubbo <ago@gentoo.org> libtommath-0.42.0-r1.ebuild:
+  Stable for ppc64, wrt bug #470264
+
+  23 May 2013; Agostino Sarubbo <ago@gentoo.org> libtommath-0.42.0-r1.ebuild:
+  Stable for amd64, wrt bug #470264
+
+  22 May 2013; Agostino Sarubbo <ago@gentoo.org> libtommath-0.42.0-r1.ebuild:
+  Stable for ia64, wrt bug #470264
+
+  21 May 2013; Jeroen Roovers <jer@gentoo.org> libtommath-0.42.0-r1.ebuild:
+  Stable for HPPA (bug #470264).
+
+  20 May 2013; Agostino Sarubbo <ago@gentoo.org> libtommath-0.42.0-r1.ebuild:
+  Stable for s390, wrt bug #470264
+
+  20 May 2013; Agostino Sarubbo <ago@gentoo.org> libtommath-0.42.0-r1.ebuild:
+  Stable for arm, wrt bug #470264
+
+  20 May 2013; Agostino Sarubbo <ago@gentoo.org> libtommath-0.42.0-r1.ebuild:
+  Stable for ppc, wrt bug #470264
 
   24 Apr 2013; Mike Frysinger <vapier@gentoo.org>
   files/libtommath-0.42.0-makefile.patch, libtommath-0.42.0-r1.ebuild:

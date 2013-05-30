@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-geosciences/osm-gps-map/osm-gps-map-0.7.3.ebuild,v 1.4 2013/04/21 14:14:32 tomwij Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-geosciences/osm-gps-map/osm-gps-map-0.7.3.ebuild,v 1.6 2013/05/29 16:29:05 jlec Exp $
 
 EAPI=5
 
@@ -18,6 +18,8 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="+introspection python"
+
+REQUIRED_USE="python? ( ${PYTHON_REQUIRED_USE} )"
 
 RDEPEND="
 	>=dev-libs/glib-2.16.0:2
@@ -39,7 +41,7 @@ DEPEND="${RDEPEND}
 PYTHON_S="${WORKDIR}/python-osmgpsmap-${PV}"
 
 src_configure() {
-	#configure script does not accept quoted EPREFIX...
+	# Configure script does not accept quoted EPREFIX...
 	gnome2_src_configure \
 		$(use_enable introspection) \
 		--docdir=/usr/share/doc/${PF} \
@@ -54,14 +56,16 @@ src_prepare() {
 
 	gnome2_src_prepare
 
-	cd "${PYTHON_S}" || die
-	epatch "${FILESDIR}/${P}-fix-python-setup.py.patch"
+	if use python ; then
+		cd "${PYTHON_S}" || die
+		epatch "${FILESDIR}/${P}-fix-python-setup.py.patch"
+	fi
 }
 
 src_compile() {
 	gnome2_src_compile
 
-	if use python; then
+	if use python ; then
 		cd "${PYTHON_S}" || die
 		CFLAGS="${CFLAGS} -I\"${S}\"/src" LDFLAGS="${LDFLAGS} -L\"${S}\"/src/.libs" distutils-r1_src_compile
 	fi
@@ -70,7 +74,7 @@ src_compile() {
 src_install() {
 	gnome2_src_install
 
-	if use python; then
+	if use python ; then
 		cd "${PYTHON_S}" || die
 		distutils-r1_src_install
 	fi

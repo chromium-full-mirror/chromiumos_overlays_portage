@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/python/python-2.6.8-r1.ebuild,v 1.19 2013/04/13 20:54:00 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/python/python-2.6.8-r1.ebuild,v 1.21 2013/05/25 22:32:46 floppym Exp $
 
 EAPI="2"
 WANT_AUTOMAKE="none"
@@ -101,6 +101,8 @@ src_prepare() {
 		Modules/Setup.dist \
 		Modules/getpath.c \
 		setup.py || die "sed failed to replace @@GENTOO_LIBDIR@@"
+
+	epatch_user
 
 	eautoconf
 	eautoheader
@@ -249,7 +251,7 @@ src_test() {
 	done
 
 	# Rerun failed tests in verbose mode (regrtest -w).
-	emake test EXTRATESTOPTS="-w" < /dev/tty
+	PYTHONDONTWRITEBYTECODE="" emake test EXTRATESTOPTS="-w" < /dev/tty
 	local result="$?"
 
 	for test in ${skipped_tests}; do
@@ -264,8 +266,6 @@ src_test() {
 	elog "If you would like to run them, you may:"
 	elog "cd '${EPREFIX}/usr/$(get_libdir)/python${SLOT}/test'"
 	elog "and run the tests separately."
-
-	python_disable_pyc
 
 	if [[ "${result}" -ne 0 ]]; then
 		die "emake test failed"

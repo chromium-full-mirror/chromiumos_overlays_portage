@@ -1,6 +1,16 @@
 # ChangeLog for app-leechcraft/lc-knowhow
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-leechcraft/lc-knowhow/ChangeLog,v 1.1 2013/03/08 21:59:20 maksbotan Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-leechcraft/lc-knowhow/ChangeLog,v 1.3 2013/05/26 19:45:31 maksbotan Exp $
+
+*lc-knowhow-0.5.96 (26 May 2013)
+
+  26 May 2013; Maxim Koltsov <maksbotan@gentoo.org> +lc-knowhow-0.5.96.ebuild:
+  Bump LeechCraft suite to 0.5.96, thanks to 0xd34df00d
+
+*lc-knowhow-0.5.95 (02 May 2013)
+
+  02 May 2013; Sergey Popov <pinkbyte@gentoo.org> +lc-knowhow-0.5.95.ebuild:
+  Bump app-leechcraft/lc-knowhow to 0.5.95, thanks to 0xd34df00d
 
 *lc-knowhow-9999 (08 Mar 2013)
 *lc-knowhow-0.5.90 (08 Mar 2013)

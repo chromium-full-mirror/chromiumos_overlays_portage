@@ -1,6 +1,25 @@
 # ChangeLog for sys-apps/iproute2
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/iproute2/ChangeLog,v 1.219 2013/04/26 09:22:36 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/iproute2/ChangeLog,v 1.224 2013/05/04 05:09:02 vapier Exp $
+
+  04 May 2013; Mike Frysinger <vapier@gentoo.org>
+  +files/iproute2-3.8.0-old-mount-libc.patch, iproute2-3.8.0.ebuild:
+  Fix build with older C libs and missing defines in mount.h #468120 by Agostino
+  Sarubbo.
+
+*iproute2-3.9.0 (01 May 2013)
+
+  01 May 2013; Tim Harder <radhermit@gentoo.org> +iproute2-3.9.0.ebuild:
+  Version bump.
+
+  29 Apr 2013; Mike Frysinger <vapier@gentoo.org> iproute2-3.8.0.ebuild:
+  Mark s390/sh stable #458004.
+
+  28 Apr 2013; Mike Frysinger <vapier@gentoo.org> iproute2-3.8.0.ebuild:
+  Fix building w/older linux-headers #467716 by Didier Barvaux.
+
+  27 Apr 2013; Mike Frysinger <vapier@gentoo.org> iproute2-3.8.0.ebuild:
+  Do not bother installing sgml/tex source files as docs #455988 by C W Rose.
 
   26 Apr 2013; Agostino Sarubbo <ago@gentoo.org> iproute2-3.8.0.ebuild:
   Stable for sparc, wrt bug #458004

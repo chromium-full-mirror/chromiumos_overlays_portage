@@ -1,6 +1,77 @@
 # ChangeLog for www-servers/nginx
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/www-servers/nginx/ChangeLog,v 1.348 2013/04/25 06:45:08 hollow Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-servers/nginx/ChangeLog,v 1.361 2013/05/23 20:32:59 dev-zero Exp $
+
+*nginx-1.4.1-r5 (23 May 2013)
+
+  23 May 2013; Tiziano Müller <dev-zero@gentoo.org> +nginx-1.4.1-r5.ebuild,
+  metadata.xml:
+  Set permissions for /var/lib/nginx/tmp to 0750 instead of 0700 to avoid a
+  problem with SELinux. Add 3rd-party modules rtmp (bug #427194), dav-ext (bug
+  #442610). Bump fancyindex (bug #470824, usptream moved to Github).
+
+  14 May 2013; Tiziano Müller <dev-zero@gentoo.org> nginx-1.4.1-r4.ebuild:
+  Fix pcre dependency for naxsi by using a REQUIRED_USE.
+
+*nginx-1.4.1-r4 (14 May 2013)
+
+  14 May 2013; Tiziano Müller <dev-zero@gentoo.org> +nginx-1.4.1-r4.ebuild:
+  Add support for naxsi (bug #397587).
+
+*nginx-1.4.1-r3 (14 May 2013)
+
+  14 May 2013; Tiziano Müller <dev-zero@gentoo.org> +files/nginx.service-r1,
+  +nginx-1.4.1-r3.ebuild, -files/nginx.initd, -files/nginx.initd-r1,
+  -files/nginx.tmpfiles, -files/nginx.tmpfiles-r1:
+  Fix systemd unit due to removed tmpfiles (bug #469784). Remove left-overs from
+  old-version-cleanup.
+
+  13 May 2013; Agostino Sarubbo <ago@gentoo.org> -nginx-1.2.6-r1.ebuild,
+  -nginx-1.2.8.ebuild, -nginx-1.4.1-r1.ebuild, -nginx-1.4.1.ebuild:
+  Remove old
+
+  13 May 2013; Agostino Sarubbo <ago@gentoo.org> nginx-1.4.1-r2.ebuild:
+  Stable for x86, wrt bug #468870
+
+  13 May 2013; Agostino Sarubbo <ago@gentoo.org> nginx-1.4.1-r2.ebuild:
+  Stable for amd64, wrt bug #468870
+
+  13 May 2013; Jason A. Donenfeld <zx2c4@gentoo.org> nginx-1.4.1-r2.ebuild:
+  Use epatch_user to allow custom patches from users.
+
+*nginx-1.4.1-r2 (13 May 2013)
+
+  13 May 2013; Tiziano Müller <dev-zero@gentoo.org>
+  +files/nginx-1.4.1-fix-perl-install-path.patch, +files/nginx.initd-r2,
+  +nginx-1.4.1-r2.ebuild:
+  Set permissions for log- and tmp-dir in ebuild only, including a one-time
+  postinst-fix for bug #469094, resp. bug #458726. Moved the tmp-dirs to
+  /var/lib/nginx/tmp and set the nginx-homedir to /var/lib/nginx (following the
+  other distros here). Fix perl-module installation to use /usr instead of
+  /usr/local for PREFIX.
+
+  11 May 2013; Markus Meier <maekke@gentoo.org> nginx-1.4.1-r1.ebuild:
+  add ~arm, bug #456752
+
+*nginx-1.4.1-r1 (08 May 2013)
+
+  08 May 2013; Tiziano Müller <dev-zero@gentoo.org> +files/nginx.initd-r1,
+  +files/nginx.tmpfiles-r1, +nginx-1.4.1-r1.ebuild, -nginx-1.4.0-r1.ebuild,
+  -nginx-1.4.0.ebuild:
+  Drop vulnerable versions, fix bug #458726 again for /var/tmp/nginx and
+  stricter default permissions for /var/log/nginx.
+
+*nginx-1.4.1 (08 May 2013)
+
+  08 May 2013; Tiziano Müller <dev-zero@gentoo.org> +nginx-1.4.1.ebuild:
+  Version bump for bug #468870, added gunzip flag (bug #468770), bumped
+  devel_kit to 0.2.18, headers_more to 0.20, slowfs_cache to 1.10.
+
+*nginx-1.4.0-r1 (02 May 2013)
+
+  02 May 2013; Benedikt Böhm <hollow@gentoo.org> +nginx-1.4.0-r1.ebuild,
+  files/nginx.logrotate:
+  fix lua module compatibility; add check_upstream and metrics module
 
 *nginx-1.4.0 (25 Apr 2013)
 

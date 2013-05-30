@@ -1,6 +1,31 @@
 # ChangeLog for kde-base/nepomuk-widgets
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/kde-base/nepomuk-widgets/ChangeLog,v 1.11 2013/04/06 00:04:40 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/kde-base/nepomuk-widgets/ChangeLog,v 1.18 2013/05/08 10:35:01 aballier Exp $
+
+  08 May 2013; Alexis Ballier <aballier@gentoo.org>
+  nepomuk-widgets-4.10.3.ebuild:
+  Keyword ~amd64-fbsd, untested but split out of nepomuk so to be considered as
+  a version bump
+
+*nepomuk-widgets-4.10.3 (06 May 2013)
+
+  06 May 2013; Johannes Huber <johu@gentoo.org> +nepomuk-widgets-4.10.3.ebuild:
+  Version bump KDE SC 4.10.3
+
+  05 May 2013; Agostino Sarubbo <ago@gentoo.org> -nepomuk-widgets-4.10.1.ebuild:
+  Remove old
+
+  05 May 2013; Agostino Sarubbo <ago@gentoo.org> nepomuk-widgets-4.10.2.ebuild:
+  Stable for ppc64, wrt to bug #466074
+
+  01 May 2013; Agostino Sarubbo <ago@gentoo.org> nepomuk-widgets-4.10.2.ebuild:
+  Stable for ppc, wrt to bug #466074
+
+  30 Apr 2013; Agostino Sarubbo <ago@gentoo.org> nepomuk-widgets-4.10.2.ebuild:
+  Stable for x86, wrt to bug #466074
+
+  29 Apr 2013; Agostino Sarubbo <ago@gentoo.org> nepomuk-widgets-4.10.2.ebuild:
+  Stable for amd64, wrt to bug #466074
 
 *nepomuk-widgets-4.10.2 (05 Apr 2013)
 

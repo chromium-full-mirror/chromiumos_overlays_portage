@@ -1,6 +1,6 @@
-# Copyright 1999-2012 Gentoo Foundation.
+# Copyright 1999-2013 Gentoo Foundation.
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/desc/linguas.desc,v 1.66 2012/09/19 07:32:08 yngwin Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/desc/linguas.desc,v 1.69 2013/05/29 08:43:28 xmw Exp $
 
 # This file contains descriptions of LINGUAS USE_EXPAND flags.
 
@@ -130,6 +130,7 @@ mni - Manipuri locale
 mr - Marathi locale
 mr_IN - Marathi locale for India
 ms - Malay locale
+ms_MY - Malay locale for Malaysia
 mt - Maltese locale
 my - Burmese locale
 nan - Min Nan locale
@@ -174,6 +175,7 @@ sh - Serbo-Croatian locale
 sh_YU - Serbo-Croatian locale
 son - Songhai locale
 si - Sinhala locale
+si_LK - Sinhala locale
 sk - Slovak locale
 sk_SK - Slovak locale
 sl - Slovenian locale
@@ -187,6 +189,8 @@ sr@Latn - Serbian (latin) locale
 sr_BA - Serbian locale for Bosnia and Herzegovina
 sr_CS - Serbian locale
 sr_RS - Serbian locale for Serbia
+sr_RS@cyrillic Serbian (cyrillic) locale for Serbia
+sr_RS@latin - Serbian (latin) locale for Serbia
 ss - Swati locale
 st - Southern Sotho locale
 sv - Swedish locale

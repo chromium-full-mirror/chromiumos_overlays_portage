@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/games-puzzle/splice/splice-20121120.ebuild,v 1.1 2013/03/21 22:05:56 hasufell Exp $
+# $Header: /var/cvsroot/gentoo-x86/games-puzzle/splice/splice-20121120.ebuild,v 1.3 2013/05/13 03:45:30 patrick Exp $
 
 # TODO: unbundle mono? (seems hardcoded)
 #       icon

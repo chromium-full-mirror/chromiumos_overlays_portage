@@ -1,6 +1,45 @@
 # ChangeLog for app-text/calibre
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/calibre/ChangeLog,v 1.273 2013/04/23 19:51:32 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/calibre/ChangeLog,v 1.281 2013/05/24 19:15:20 zmedico Exp $
+
+*calibre-0.9.32 (24 May 2013)
+
+  24 May 2013; Zac Medico <zmedico@gentoo.org> +calibre-0.9.32.ebuild,
+  -calibre-0.9.30.ebuild:
+  0.9.32 version bump.
+
+  18 May 2013; Zac Medico <zmedico@gentoo.org> calibre-0.9.27.ebuild,
+  calibre-0.9.30.ebuild, calibre-0.9.31.ebuild:
+  Restrict mirror due non-free prs500 fonts (bug #470212).
+
+  18 May 2013; Zac Medico <zmedico@gentoo.org> calibre-0.9.27.ebuild,
+  calibre-0.9.30.ebuild, calibre-0.9.31.ebuild:
+  Update LICENSE and remove non-free prs500 fonts for bug #470212.
+
+*calibre-0.9.31 (17 May 2013)
+
+  17 May 2013; Zac Medico <zmedico@gentoo.org> +calibre-0.9.31.ebuild,
+  -calibre-0.9.29.ebuild:
+  0.9.31 version bump.
+
+*calibre-0.9.30 (12 May 2013)
+
+  12 May 2013; Zac Medico <zmedico@gentoo.org> +calibre-0.9.30.ebuild,
+  -calibre-0.9.28.ebuild:
+  0.9.30 version bump.
+
+  05 May 2013; Zac Medico <zmedico@gentoo.org> calibre-0.9.27.ebuild:
+  Migrate off of python.eclass.
+
+*calibre-0.9.29 (05 May 2013)
+
+  05 May 2013; Zac Medico <zmedico@gentoo.org> +calibre-0.9.29.ebuild:
+  0.9.29 version bump.
+
+*calibre-0.9.28 (27 Apr 2013)
+
+  27 Apr 2013; Zac Medico <zmedico@gentoo.org> +calibre-0.9.28.ebuild:
+  0.9.28 version bump and migrate off of python.eclass.
 
   23 Apr 2013; Tomáš Chvátal <scarabeus@gentoo.org> -calibre-0.9.20.ebuild,
   -calibre-0.9.26.ebuild, calibre-0.9.27.ebuild:

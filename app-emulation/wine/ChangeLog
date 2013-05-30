@@ -1,6 +1,33 @@
 # ChangeLog for app-emulation/wine
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/wine/ChangeLog,v 1.460 2013/04/14 00:32:20 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/wine/ChangeLog,v 1.464 2013/05/26 04:27:24 tetromino Exp $
+
+*wine-1.5.31 (26 May 2013)
+
+  26 May 2013; Alexandre Rostovtsev <tetromino@gentoo.org> wine-1.5.30.ebuild,
+  +wine-1.5.31.ebuild, wine-9999.ebuild, +files/wine-1.5.31-gnutls-3.2.0.patch:
+  Version bump, see http://www.winehq.org/announce/1.5.31 for the announcement.
+  Fix build failure with gnutls-3.2.0 (bug #471077, thanks to Ben Kohler).
+
+  16 May 2013; Alexandre Rostovtsev <tetromino@gentoo.org> wine-1.5.25.ebuild,
+  wine-1.5.26.ebuild, wine-1.5.27.ebuild, wine-1.5.28.ebuild,
+  wine-1.5.29.ebuild, wine-1.5.30.ebuild, wine-9999.ebuild:
+  Require emul-linux-x86-medialibs[development] for gstreamer (bug #462772,
+  thanks to Jan Vesely). Libwine patch is no longer needed for live ebuild (bug
+  #469834, thanks to Murray Colpman).
+
+*wine-1.5.30 (13 May 2013)
+
+  13 May 2013; Alexandre Rostovtsev <tetromino@gentoo.org> +wine-1.5.30.ebuild,
+  wine-9999.ebuild, +files/wine-1.5.30-libwine.patch:
+  Version bump, see http://www.winehq.org/announce/1.5.30 for the announcement
+  (bug #469568). Respect LINGUAS when installing translation resources and man
+  pages (bug #469418, thanks to Roman Žilka).
+
+*wine-1.5.29 (28 Apr 2013)
+
+  28 Apr 2013; Alexandre Rostovtsev <tetromino@gentoo.org> +wine-1.5.29.ebuild:
+  Version bump, see http://www.winehq.org/announce/1.5.29 for the announcement.
 
 *wine-1.5.28 (14 Apr 2013)
 

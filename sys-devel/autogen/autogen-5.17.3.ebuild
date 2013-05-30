@@ -1,8 +1,10 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-devel/autogen/autogen-5.17.3.ebuild,v 1.1 2013/04/14 01:47:04 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-devel/autogen/autogen-5.17.3.ebuild,v 1.4 2013/05/04 05:26:51 vapier Exp $
 
 EAPI="4"
+
+inherit eutils autotools
 
 DESCRIPTION="Program and text file generation"
 HOMEPAGE="http://www.gnu.org/software/autogen/"
@@ -16,6 +18,17 @@ IUSE="libopts"
 RDEPEND=">=dev-scheme/guile-1.8
 	dev-libs/libxml2"
 DEPEND="${RDEPEND}"
+
+src_prepare() {
+	epatch "${FILESDIR}"/${P}-libintl.patch #466462
+	eautoreconf
+}
+
+src_configure() {
+	# suppress possibly incorrect -R flag
+	export ag_cv_test_ldflags=
+	default
+}
 
 src_install() {
 	default

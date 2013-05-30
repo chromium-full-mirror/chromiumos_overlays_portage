@@ -1,10 +1,420 @@
 # ChangeLog for profile directory
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.7766 2013/04/26 14:21:42 yngwin Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.7889 2013/05/29 19:16:02 graaff Exp $
 #
 # This ChangeLog should include records for all changes in profiles directory.
 # Only typo fixes which don't affect portage/repoman behaviour could be avoided
 # here. If in doubt put a record here!
+
+  29 May 2013; Hans de Graaff <graaff@gentoo.org> base/make.defaults:
+  Change default order of RUBY_TARGETS so that ruby19 will be the default on
+  new installs, bug 425138.
+
+  29 May 2013; Jeroen Roovers <jer@gentoo.org> package.mask:
+  Mask =net-analyzer/tcpreplay-3.5*.
+
+  29 May 2013; Michael Weber <xmw@gentoo.org> desc/linguas.desc:
+  Add linguas_si_LK as Sinhala locale
+
+  29 May 2013; Patrick Lauer <patrick@gentoo.org>
+  arch/amd64/no-multilib/package.mask, package.mask:
+  Add coot to clipper mask as it is a dependency
+
+  28 May 2013; Justin Lecher <jlec@gentoo.org> package.mask:
+  Mask >=sci-libs/clipper-2.2 for new for new version schema
+
+  28 May 2013; Anthony G. Basile <blueness@gentoo.org>
+  hardened/linux/uclibc/x86/use.mask:
+  Unmask video_cards_geode on hardened/linux/uclibc/x86, bug #458354
+
+  28 May 2013; Anthony G. Basile <blueness@gentoo.org>
+  hardened/linux/uclibc/make.defaults, hardened/linux/uclibc/use.mask:
+  Unmask jit and orc, but turn them off by default on hardened/linux/uclibc,
+  bug #469776
+
+  28 May 2013; Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org>
+  desc/video_cards.desc:
+  Restore mistakenly dropped i965 in VIDEO_CARDS.
+
+  28 May 2013; Anthony G. Basile <blueness@gentoo.org> base/make.defaults,
+  desc/monkeyd_plugins.desc:
+  Add MONKEYD_PLUGINS USE_EXPAND; ack by Chainsaw
+
+  28 May 2013; Rafael G. Martins <rafaelmartins@gentoo.org> package.mask:
+  Update luajit mask
+
+  27 May 2013; Alexandre Rostovtsev <tetromino@gentoo.org>
+  targets/desktop/gnome/package.use:
+  Enable ibus[dconf] in gnome profile for gnome-shell.
+
+  27 May 2013; Mike Gilbert <floppym@gentoo.org> package.mask:
+  Mask dev-python/imaging-2.0.0 for testing.
+
+  27 May 2013; Maxim Koltsov <maksbotan@gentoo.org> package.mask:
+  Mask new media-libs/ffmpegsource snapshot due to ffmpeg-9
+
+  27 May 2013; Ulrich Müller <ulm@gentoo.org> package.mask:
+  Remove mask for sys-apps/kuroevtd, app-admin/addpatches, app-text/duconv, and
+  media-sound/timidity-shompatches. Packages have been removed.
+
+  26 May 2013; Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org>
+  desc/video_cards.desc:
+  Add ilo to VIDEO_CARDS
+
+  26 May 2013; Joerg Bornkessel <hd_brummy@gentoo.org> package.mask:
+  media-plugins/vdr-vdrcd pmasked for removal ~ 26 Jun 2013
+
+  26 May 2013; Pacho Ramos <pacho@gentoo.org> package.mask:
+  Update gnome 3.8 mask
+
+  25 May 2013; Tom Wijsman <TomWij@gentoo.org> package.mask:
+  Remove very old media-sound/teamspeak-server-bin mask I didn't notice
+  when taking maintainership of this package, there is no reason for
+  TeamSpeak 3 to still be masked; the only relevant masking reason I could
+  find was a security bug for TeamSpeak 2 which does not affect TeamSpeak 3.
+
+  25 May 2013; Justin Lecher <jlec@gentoo.org> package.mask:
+  Masked sys-fs/aufs2
+
+  25 May 2013; Markos Chandras <hwoarang@gentoo.org> package.mask:
+  Mask dev-embedded/openocd-{0.7.0,9999}
+
+  25 May 2013; Ben de Groot <yngwin@gentoo.org> package.mask:
+  Remove freetype:1 mask, as relevant ebuilds have been tree-cleaned
+
+  24 May 2013; Pacho Ramos <pacho@gentoo.org> package.mask:
+  Drop the hardmask as mono-3 is not yet considered as 'stable' by upstream
+  simply because of its MacOSX support (it's considered stable for Linux and
+  the rest)
+
+  24 May 2013; Markos Chandras <hwoarang@gentoo.org> package.mask:
+  Unmask openocd-0.6.1
+
+  24 May 2013; Alexis Ballier <aballier@gentoo.org> desc/fftools.desc:
+  describe ffhash in fftools use exapnd
+
+  24 May 2013; Alexis Ballier <aballier@gentoo.org> package.mask:
+  update ffmpeg 1.1 mask reason with more details
+
+  23 May 2013; Pawel Hajdan jr <phajdan.jr@gentoo.org> package.mask:
+  Roll chromium dev channel masks for chromium-29.x.
+
+  23 May 2013; Julian Ospald <hasufell@gentoo.org> package.mask:
+  unmask media-gfx/blender-2.66 now that dev-lang/python:3.3 is unmasked
+
+  23 May 2013; Tiziano Müller <dev-zero@gentoo.org> base/make.defaults,
+  desc/nginx_modules_http.desc:
+  Fix description for nginx_modules_http_degradation and add description for
+  nginx_modules_http_dav_ext.
+
+  22 May 2013; Hans de Graaff <graaff@gentoo.org> updates/2Q-2013:
+  Slotmove versions of dev-ruby/mocha into their new slots.
+
+  22 May 2013; Tim Harder <radhermit@gentoo.org> package.mask:
+  Mask testing releases of quvi, libquvi, and libquvi-scripts.
+
+  21 May 2013; Johannes Huber <johu@gentoo.org> package.mask:
+  Drop mask for net-im/net-im/ktp-contact-applet, net-im/ktp-presence-applet.
+  Packages removed from tree.
+
+  21 May 2013; Patrick Lauer <patrick@gentoo.org> package.mask:
+  Removing useless mongodb mask
+
+  21 May 2013; Patrick Lauer <patrick@gentoo.org> package.mask:
+  Masking g-ctan for broken dependencies #470712
+
+  20 May 2013; Joerg Bornkessel <hd_brummy@gentoo.org> package.mask:
+  media-plugins/vdr-director masked for removal, bug 424277
+
+  20 May 2013; Tomáš Chvátal <scarabeus@gentoo.org> package.mask:
+  Update p.mask entry for libav.
+
+  20 May 2013; Ole Markus With <olemarkus@gentoo.org> package.mask:
+  Masking the rest of the ezc packages for removal
+
+  19 May 2013; Markos Chandras <hwoarang@gentoo.org> package.mask:
+  Masking x11-themes/pekwm-themes-hewphoria due to licensing issues. Bug
+  #452418
+
+  18 May 2013; Andreas K. Huettel <dilfridge@gentoo.org> package.mask:
+  Remove mask of akonadi-google, since it is still needed for kdepim-4.4
+
+  16 May 2013; Magnus Granberg <zorry@gentoo.org> hardened/ChangLog:
+  Add new ChangLog for hardened profile
+
+  16 May 2013; Maxim Koltsov <maksbotan@gentoo.org> package.mask:
+  Mask =media-video/mplayer2-2.0_p20130428.ebuild as it needs ffmpeg-9
+
+  16 May 2013; Patrick Lauer <patrick@gentoo.org> package.mask:
+  Mask broken dev-db/desktopcouch
+
+  15 May 2013; Michael Weber <xmw@gentoo.org> package.mask:
+  remove sci-electronics/xcircuit-3.8 package mask
+
+  14 May 2013; Tiziano Müller <dev-zero@gentoo.org>
+  desc/nginx_modules_http.desc:
+  Add USE expand description for naxsi in nginx.
+
+  14 May 2013; Ian Delaney <idella4@gentoo.org> package.mask:
+  Replaced dev-python/ets packages with revised list for masking
+
+  14 May 2013; Ryan Hill <dirtyepic@gentoo.org> package.mask:
+  Removed dev-util/dialogblocks dev-util/helpblocks.
+
+  13 May 2013; Johannes Huber <johu@gentoo.org> package.mask:
+  Mask kde-misc/ktouchpadenabler for removal.
+
+  13 May 2013; Ulrich Müller <ulm@gentoo.org> arch/amd64-fbsd/use.mask,
+  arch/x86-fbsd/use.mask, arch/x86/package.use.mask, arch/x86/use.mask,
+  package.mask, prefix/darwin/macos/10.4/x86/use.mask,
+  prefix/darwin/macos/10.5/x64/use.mask, prefix/darwin/macos/10.5/x86/use.mask,
+  prefix/darwin/macos/10.6/x64/use.mask, prefix/darwin/macos/10.6/x86/use.mask,
+  prefix/darwin/macos/10.7/x64/use.mask, prefix/darwin/macos/10.7/x86/use.mask,
+  prefix/darwin/macos/10.8/x64/use.mask, prefix/darwin/macos/10.8/x86/use.mask,
+  uclibc/x86/use.mask:
+  Mask media-libs/{amd64,real,win32}codecs for removal, bugs 468406 and 468370.
+
+  13 May 2013; Tomáš Chvátal <scarabeus@gentoo.org> updates/2Q-2013:
+  Move wpd2odt to writerperfect
+
+  13 May 2013; Tiziano Müller <dev-zero@gentoo.org>
+  desc/nginx_modules_http.desc:
+  Add use flag descriptions for
+  nginx_modules_http_{gunzip,metrics,upstream_check} (bug #469534).
+
+  13 May 2013; Alexandre Rostovtsev <tetromino@gentoo.org> desc/linguas.desc:
+  Add sr_RS@cyrillic and sr_RS@latin locales; used by app-emulation/wine.
+
+  13 May 2013; Ian Delaney <idella4@gentoo.org> package.mask:
+  unfix envisagecore mask
+
+  13 May 2013; Patrick Lauer <patrick@gentoo.org> package.mask:
+  Fix envisagecore mask
+
+  13 May 2013; Patrick Lauer <patrick@gentoo.org> package.mask:
+  Adding app-text/tex-guy to freetype-1 mask
+
+  12 May 2013; Johannes Huber <johu@gentoo.org> updates/2Q-2013:
+  Move libkfbapi from cat kde-misc to net-libs.
+
+  12 May 2013; Ian Delaney <idella4@gentoo.org> package.mask:
+  Mask dev-python/blockcanvas, dev-python/etsdevtools,
+  dev-python/envisagecore for removal
+
+  12 May 2013; Pacho Ramos <pacho@gentoo.org> package.mask:
+  Update Gnome 3.8 entry
+
+  12 May 2013; Samuli Suominen <ssuominen@gentoo.org> license_groups:
+  Remove clp from MISC-FREE group since the license was in fact MIT.
+
+  12 May 2013; Markos Chandras <hwoarang@gentoo.org> package.mask:
+  Mask dev-python/gdl-python for removal
+
+  12 May 2013; Samuli Suominen <ssuominen@gentoo.org> license_groups:
+  Include clp license for media-gfx/gifsicle in MISC-FREE group.
+
+  12 May 2013; Patrick Lauer <patrick@gentoo.org> package.mask:
+  Add vflib to freetype-1 mask
+
+  12 May 2013; Patrick Lauer <patrick@gentoo.org> package.mask:
+  Add yablex to blender mask, fix typo
+
+  12 May 2013; Patrick Lauer <patrick@gentoo.org> package.mask:
+  Add reverse deps of xchat to the mask
+
+  09 May 2013; Johannes Huber <johu@gentoo.org> package.mask:
+  Mask kde-misc/akonadi-google for removal.
+
+  09 May 2013; Eray Aslan <eras@gentoo.org> package.mask:
+  Remove mask for dovecot-2.2_rc - no longer in the tree
+
+  09 May 2013; Tiziano Müller <dev-zero@gentoo.org> package.mask:
+  Remove p.mask for dev-libs/dv* since removed.
+
+  09 May 2013; Alexis Ballier <aballier@gentoo.org> package.mask:
+  mask multilib gsm, bug #469108
+
+  08 May 2013; Johannes Huber <johu@gentoo.org> package.mask:
+  Remove mask on kde-base/printer-applet, kde-base/system-config-printer-kde.
+  Packages have been removed.
+
+  08 May 2013; Alexis Ballier <aballier@gentoo.org> package.mask:
+  mask libdvbpsi 1.1
+
+  07 May 2013; Sven Vermeulen <swift@gentoo.org> package.mask:
+  Remove mask for python-selinux, is now removed from the tree
+
+  07 May 2013; Michał Górny <mgorny@gentoo.org> package.mask:
+  Mask the next batch of multilib conversions.
+
+  06 May 2013; Mike Gilbert <floppym@gentoo.org> package.mask:
+  Unmask dev-python/pypy-2.0_beta2.
+
+  06 May 2013; Samuli Suominen <ssuominen@gentoo.org> package.mask:
+  Mask media-sound/line6usb wrt #468712#c4
+
+  06 May 2013; Ulrich Müller <ulm@gentoo.org> package.mask:
+  Mask dev-lisp/emacs-cl for removal, bug 466444.
+
+  06 May 2013; Ulrich Müller <ulm@gentoo.org> package.mask:
+  Mask media-fonts/adi-dsp-fonts for removal, bug 452372.
+
+  05 May 2013; Tom Wijsman <TomWij@gentoo.org> package.mask:
+  Masking media-video/handbrake until =media-video/ffmpeg-1.2 is unmasked.
+
+  05 May 2013; Mike Gilbert <floppym@gentoo.org> package.mask:
+  Mask pypy-2.0_beta2.
+
+  05 May 2013; Tom Wijsman <TomWij@gentoo.org> package.mask:
+  Dropped www-servers/meteor mask, package has been removed.
+
+  05 May 2013; Justin Lecher <jlec@gentoo.org> package.mask:
+  Drop obsolete mask entries
+
+  05 May 2013; Pacho Ramos <pacho@gentoo.org> package.mask:
+  Update Gnome 3.8 mask
+
+  05 May 2013; Michał Górny <mgorny@gentoo.org> package.mask:
+  Mask multilib libsndfile before committing.
+
+  04 May 2013; Jeroen Roovers <jer@gentoo.org> hardened/linux/package.use.mask:
+  Mask USE=profile for net-analyzer/wireshark (bug #468404).
+
+  04 May 2013; Samuli Suominen <ssuominen@gentoo.org> package.mask:
+  Update libv4l mask from 0.8.9-r1 to 0.9.5-r1.
+
+  04 May 2013; Michał Górny <mgorny@gentoo.org>
+  default/linux/package.use.mask:
+  Remove USE=systemd from package.use.mask since the flag is (un)masked
+  globally now.
+
+  04 May 2013; Pacho Ramos <pacho@gentoo.org> package.mask:
+  Update Gnome 3.8 mask
+
+  04 May 2013; Patrick Lauer <patrick@gentoo.org> package.mask:
+  Mask gnome-extra/evolution-groupwise as it has unsatisfiable dependencies
+
+  03 May 2013; Michał Górny <mgorny@gentoo.org> package.mask:
+  Mask multilib alsa-lib.
+
+  03 May 2013; Michał Górny <mgorny@gentoo.org> package.mask:
+  Mask multilib webrtc-audio-processing.
+
+  03 May 2013; Jeroen Roovers <jer@gentoo.org> package.mask:
+  Remove x11-drivers/nvidia-drivers-319 mask.
+
+  03 May 2013; Tim Harder <radhermit@gentoo.org> updates/2Q-2013:
+  Upstream renamed sys-process/crtools to sys-process/criu.
+
+  02 May 2013; Tom Wijsman <TomWij@gentoo.org> package.mask:
+  Removed package mask on net-proxy/swiftiply, see bug #198500.
+
+  02 May 2013; Sergey Popov <pinkbyte@gentoo.org> package.mask:
+  Correct leechcraft masks
+
+  02 May 2013; Jeroen Roovers <jer@gentoo.org> package.mask:
+  Mask www-plugins/diamondx for removal.
+
+  02 May 2013; Jeroen Roovers <jer@gentoo.org> package.mask:
+  Remove development mask on net-analyzer/wireshark.
+
+  02 May 2013; Michał Górny <mgorny@gentoo.org> package.mask:
+  Mask multilib audiofile before committing.
+
+  02 May 2013; Pacho Ramos <pacho@gentoo.org> package.mask:
+  Update Gnome 3.8 mask
+
+  02 May 2013; Ian Delaney <idella4@gentoo.org> package.mask:
+  unmask celery-3.0.19
+
+  01 May 2013; Michał Górny <mgorny@gentoo.org> package.mask:
+  Mask new multilib libvorbis & flac.
+
+  01 May 2013; Samuli Suominen <ssuominen@gentoo.org> package.mask:
+  Mask (temporarily) new libogg with autotools-multilib.eclass inherit.
+
+  01 May 2013; Ulrich Müller <ulm@gentoo.org> package.mask:
+  Mask www-apache/mod_watch and www-apache/mod_loopback for removal, bugs
+  464934 and 464938.
+
+  01 May 2013; Kacper Kowalik <xarthisius@gentoo.org> package.mask:
+  x11-themes/pidgin-smileys removal due to licensing issue wrt #452420
+
+  01 May 2013; Andrey Grozin <grozin@gentoo.org> package.mask:
+  Unmasking new ebuilds for maxima, fricas, and related common-lisp stuff
+
+  01 May 2013; Andrey Grozin <grozin@gentoo.org> arch/amd64/package.use.mask,
+  arch/amd64/use.mask, arch/powerpc/use.mask, arch/sparc/use.mask,
+  arch/x86/package.use.mask, arch/x86/use.mask, base/package.use.mask,
+  base/use.mask:
+  Manage use masks gcl, cmucl, clozurecl (for maxima and fricas) centrally and
+  consistently
+
+  01 May 2013; Sebastian Pipping <sping@gentoo.org> base/package.use.mask:
+  Unmask ~media-libs/gegl-0.2.0[introspection] (bug #416587)
+
+  30 Apr 2013; Sebastian Pipping <sping@gentoo.org> base/package.use.mask:
+  Unmask ~media-libs/babl-0.1.8[introspection] (bug #413663)
+
+  29 Apr 2013; Sebastian Pipping <sping@gentoo.org> base/package.use.mask:
+  Unmask ~media-libs/babl-0.1.10[introspection] (bug #413663)
+
+  29 Apr 2013; Ulrich Müller <ulm@gentoo.org> license_groups:
+  Add Mail-Sendmail license to MISC-FREE group, bug 446164. Add GameFront
+  license to EULA group, bug 467512.
+
+  29 Apr 2013; Michał Górny <mgorny@gentoo.org> package.mask:
+  Unmask freetype, fontconfig & revdeps as a result of co-maintenance agreement
+  between the fonts team and multilib team.
+
+  29 Apr 2013; Ian Delaney <idella4@gentoo.org> package.mask:
+  Mask of =dev-python/celery-3.0.19.
+
+  29 Apr 2013; Sergey Popov <pinkbyte@gentoo.org> package.mask:
+  Remove unneeded mask on mplayer2 live ebuild
+
+  28 Apr 2013; Mike Gilbert <floppym@gentoo.org> package.mask:
+  Unmask python bumps.
+
+  28 Apr 2013; Markos Chandras <hwoarang@gentoo.org> package.mask:
+  Masking pcmanfm-qt releases for testing
+
+  28 Apr 2013; Ulrich Müller <ulm@gentoo.org> package.mask:
+  Mask media-sound/timidity-shompatches for removal, bug 441640.
+
+  28 Apr 2013; Ulrich Müller <ulm@gentoo.org> package.mask:
+  Mask media-sound/timidity-shompatches for removal, bug 441640.
+
+  28 Apr 2013; Mike Gilbert <floppym@gentoo.org> desc/grub_platforms.desc:
+  Add 'efi'.
+
+  27 Apr 2013; Ulrich Müller <ulm@gentoo.org> package.mask:
+  Mask app-text/duconv for removal, bug 444576.
+
+  27 Apr 2013; Ulrich Müller <ulm@gentoo.org> license_groups:
+  Add Rain-Slick license to EULA group, bug 465958.
+
+  27 Apr 2013; Jeroen Roovers <jer@gentoo.org> package.mask:
+  Update wireshark mask to cover 1.10.
+
+  27 Apr 2013; Jeroen Roovers <jer@gentoo.org> license_groups:
+  Add NVIDIA-r1 to BINARY-REDISTRIBUTABLE.
+
+  27 Apr 2013; Ulrich Müller <ulm@gentoo.org> license_groups:
+  Add CYANA license to EULA group, bug 465692.
+
+  27 Apr 2013; Pacho Ramos <pacho@gentoo.org> package.mask:
+  Update Gnome 3.8 mask
+
+  27 Apr 2013; Tomáš Chvátal <scarabeus@gentoo.org> base/make.defaults,
+  desc/calligra_features.desc:
+  Add author to calligra descs.
+
+  27 Apr 2013; Pacho Ramos <pacho@gentoo.org> package.mask:
+  Update Gnome 3.8 mask
+
+  27 Apr 2013; Samuli Suominen <ssuominen@gentoo.org> package.mask:
+  Remove some now unrequired entries for libpng and udev.
 
   26 Apr 2013; Ben de Groot <yngwin@gentoo.org> package.mask:
   Mask media-libs/freetype:1 (bug 412499)

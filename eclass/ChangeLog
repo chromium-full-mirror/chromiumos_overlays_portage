@@ -1,6 +1,151 @@
 # ChangeLog for eclass directory
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/ChangeLog,v 1.801 2013/04/24 01:49:40 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/ChangeLog,v 1.841 2013/05/28 03:29:50 anarchy Exp $
+
+  28 May 2013; <anarchy@gentoo.org> mozextension.eclass, nsplugins.eclass:
+  Ensure plugins/extensions are in correct place for >=firefox{-bin}-21.0
+
+  26 May 2013; Pacho Ramos <pacho@gentoo.org> gnome2.eclass:
+  Pass --enable-compile-warnings=minimum as we don't want -Werror* flags, bug
+  #471336
+
+  24 May 2013; Pacho Ramos <pacho@gentoo.org> +mono-env.eclass:
+  Add mono-env.eclass to start a migration to simpler dotnet related eclasses,
+  http://www.gossamer-threads.com/lists/gentoo/dev/270881
+
+  24 May 2013; Pacho Ramos <pacho@gentoo.org> readme.gentoo.eclass:
+  Reword sentences a bit
+
+  24 May 2013; Michał Górny <mgorny@gentoo.org> multibuild.eclass:
+  Fix the race condition in locking code by using $BASHPID instead of $$.
+
+  23 May 2013; Michał Górny <mgorny@gentoo.org> multibuild.eclass:
+  Use portable locking code from Fabian Groffen. Bug #466554.
+
+  22 May 2013; Michał Górny <mgorny@gentoo.org> eutils.eclass:
+  Fix the libtool check, bug #470938.
+
+  21 May 2013; Michał Górny <mgorny@gentoo.org> eutils.eclass:
+  Replace the .la sanity check by one used in libtool itself. Fixes removing
+  qmake-generated .la files, bug #470206.
+
+  21 May 2013; Mike Gilbert <floppym@gentoo.org> distutils-r1.eclass,
+  python-r1.eclass, python-single-r1.eclass:
+  Set PYTHON_REQUIRED_USE, and add it to REQUIRED_USE in distutils-r1.
+
+  18 May 2013; Pacho Ramos <pacho@gentoo.org> readme.gentoo.eclass:
+  Add a note informing people a file is being installed for future reference,
+  http://www.mail-archive.com/gentoo-dev@lists.gentoo.org/msg58207.html
+
+  17 May 2013; Tomáš Chvátal <scarabeus@gentoo.org> -php-ext-pecl-r1.eclass,
+  -php-ext-source-r1.eclass, -tla.eclass:
+  Remove eclasses marked as dead for quite some time.
+
+  17 May 2013; Tomáš Chvátal <scarabeus@gentoo.org> office-ext.eclass:
+  Mark eclass as dead to be removed in 30 days.
+
+  17 May 2013; Jeff Horelick <jdhore@gentoo.org> nsplugins.eclass:
+  Support new plugins directory on Firefox >= 21.0 (bug #469932)
+
+  17 May 2013; Tim Harder <radhermit@gentoo.org> vim.eclass:
+  Remove unused src_unpack function.
+
+  17 May 2013; Tim Harder <radhermit@gentoo.org> vim.eclass:
+  Migrate from supporting cvs to mercurial for live builds.
+
+  16 May 2013; Jeroen Roovers <jer@gentoo.org> nvidia-driver.eclass:
+  Check for lspci before use.
+
+  15 May 2013; Michał Górny <mgorny@gentoo.org> eutils.eclass:
+  prune_libtool_files: do not remove .la files which are not libtool files.
+  Fixes bug #468380.
+
+  15 May 2013; Ryan Hill <dirtyepic@gentoo.org> toolchain.eclass:
+  Explicitly disable lto in 4.5 to stop configure from helpfully re-enabling it
+  when libelf is present.
+
+  15 May 2013; Ryan Hill <dirtyepic@gentoo.org> toolchain.eclass:
+  Rename test USE flag to regression-test.
+
+  15 May 2013; Ryan Hill <dirtyepic@gentoo.org> toolchain.eclass:
+  Add lto USE flag for all versions that support it. Drop LTO support for 4.5.
+
+  14 May 2013; Michał Górny <mgorny@gentoo.org> autotools-multilib.eclass,
+  multilib-build.eclass:
+  Enable EAPI=4 on multilib eclasses.
+
+  11 May 2013; Sergei Trofimovich <slyfox@gentoo.org> ghc-package.eclass,
+  haskell-cabal.eclass:
+  Added 'ghc-supports-smp' and 'ghc-supports-dynamic-by-default' helpers. Added
+  hint for users to run 'haskell-updater' if configure phase failed.
+
+  11 May 2013; Alexis Ballier <aballier@gentoo.org> libtool.eclass:
+  use find to get file permissions instead of chmod --reference which is not
+  portable, bug #468952
+
+  10 May 2013; Michał Górny <mgorny@gentoo.org> python-any-r1.eclass,
+  python-r1.eclass, python-single-r1.eclass, python-utils-r1.eclass:
+  Consistently create ${EPYTHON} subdir for Python wrappers. Fixes conflict
+  between Python & vala wrappers, bug #469312.
+
+  09 May 2013; Ryan Hill <dirtyepic@gentoo.org> toolchain.eclass:
+  Drop support for graphite in 4.4/4.5 due to incompatibilities with newer ppl
+  versions. Update graphite dependencies for 4.8 based on upstream
+  recommendations. Also fixes some (harmless) configure flags getting applied
+  to incorrect versions.
+
+  08 May 2013; Sergey Popov <pinkbyte@gentoo.org> leechcraft.eclass:
+  Restict supported EAPIs(due to pkg_pretend), some logic cleanup
+
+  08 May 2013; Tim Harder <radhermit@gentoo.org> vim.eclass:
+  Fix dangling gvim manpage symlinks (bug #455480, patch by Arfrever).
+
+  08 May 2013; Tim Harder <radhermit@gentoo.org> vim.eclass:
+  Fix build with sys-libs/ncurses[tinfo] (bug #457564, patch by Ben Longbons).
+
+  05 May 2013; Michał Górny <mgorny@gentoo.org> autotools-utils.eclass:
+  Support complete EAPI src_test().
+
+  04 May 2013; Julian Ospald <hasufell@gentoo.org> multilib-minimal.eclass:
+  improve handling of DOCS variable wrt #468092
+
+  03 May 2013; Michał Górny <mgorny@gentoo.org> autotools-utils.eclass:
+  Support disabling .la pruning completely.
+
+  01 May 2013; Michał Górny <mgorny@gentoo.org> autotools-utils.eclass:
+  Inline src_test and allow passing arguments.
+
+  30 Apr 2013; Sergey Popov <pinkbyte@gentoo.org> leechcraft.eclass:
+  Leechcraft changed license since 0.5.95
+
+  30 Apr 2013; Michal Gorny <mgorny@gentoo.org> distutils-r1.eclass,
+  python-utils-r1.eclass:
+  Use bash built-ins rather than external tools.
+
+  30 Apr 2013; Michal Gorny <mgorny@gentoo.org> python-any-r1.eclass:
+  Support declaring python_check_deps() in ebuilds, to check Python impl for
+  proper deps.
+
+  30 Apr 2013; Michal Gorny <mgorny@gentoo.org> python-any-r1.eclass:
+  Report no matching impl properly.
+
+  30 Apr 2013; Michal Gorny <mgorny@gentoo.org> python-any-r1.eclass:
+  Improve consistency in Python version checks and wrapper setup.
+
+  29 Apr 2013; Tom Wijsman <TomWij@gentoo.org> kernel-2.eclass:
+  Corrected UNIPATCH_DOCS functionality, this went unnoticed since
+  dodoc can be called without arguments in Portage. Thanks to the
+  Paludis user Alexandros Diamantidis in bug #467916 for reporting.
+
+  28 Apr 2013; Alexandre Rostovtsev <tetromino@gentoo.org> autotools.eclass:
+  Reverting autotools.eclass commit that broke eautoreconf (bug #467772), acked
+  by multiple people in #gentoo-dev.
+
+  28 Apr 2013; Zac Medico <zmedico@gentoo.org> apache-2.eclass,
+  haskell-cabal.eclass, mercurial.eclass, perl-module.eclass,
+  php-common-r1.eclass, qt4-build.eclass, selinux-policy-2.eclass,
+  subversion.eclass:
+  Bug #467646 - Refer to /etc/portage/make.conf, not /etc/make.conf.
 
   24 Apr 2013; Tim Harder <radhermit@gentoo.org> vim.eclass:
   Remove old, conditional src_configure call in src_compile.

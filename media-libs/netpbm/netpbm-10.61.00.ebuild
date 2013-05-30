@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/netpbm/netpbm-10.61.00.ebuild,v 1.2 2013/01/06 19:16:58 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/netpbm/netpbm-10.61.00.ebuild,v 1.4 2013/05/29 15:15:05 vapier Exp $
 
 EAPI="4"
 
@@ -55,6 +55,7 @@ netpbm_config() {
 
 src_prepare() {
 	epatch "${FILESDIR}"/netpbm-10.31-build.patch
+	epatch "${FILESDIR}"/netpbm-10.61-test.patch
 
 	# make sure we use system urt
 	sed -i '/SUPPORT_SUBDIRS/s:urt::' GNUmakefile || die
@@ -62,17 +63,20 @@ src_prepare() {
 
 	# disable certain tests based on active USE flags
 	local del=(
-		$(usex rle '' utahrle-roundtrip)
+		$(usex jbig '' 'jbigtopnm pnmtojbig')
+		$(usex rle '' 'utahrle-roundtrip')
 	)
 	if [[ ${#del[@]} -gt 0 ]] ; then
 		sed -i -r $(printf -- ' -e /%s.test/d' "${del[@]}") test/Test-Order || die
 	fi
 	del=(
-		pnmtofiasco # We always disable fiasco
+		pnmtofiasco fiascotopnm # We always disable fiasco
+		$(usex jbig '' 'jbigtopnm pnmtojbig')
 		$(usex rle '' 'pnmtorle rletopnm')
 	)
 	if [[ ${#del[@]} -gt 0 ]] ; then
 		sed -i -r $(printf -- ' -e s/\<%s\>(:.ok)?//' "${del[@]}") test/all-in-place.{ok,test} || die
+		sed -i '/^$/d' test/all-in-place.ok || die
 	fi
 
 	# take care of the importinc stuff ourselves by only doing it once
@@ -148,7 +152,7 @@ src_compile() {
 
 src_test() {
 	# The code wants to install everything first and then test the result.
-	emake install.bin
+	emake install.{bin,lib}
 	emake check
 }
 

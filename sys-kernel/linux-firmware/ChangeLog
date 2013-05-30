@@ -1,6 +1,14 @@
 # ChangeLog for sys-kernel/linux-firmware
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/linux-firmware/ChangeLog,v 1.64 2013/04/21 23:40:27 chithanh Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/linux-firmware/ChangeLog,v 1.66 2013/05/14 21:06:31 blueness Exp $
+
+  14 May 2013; Anthony G. Basile <blueness@gentoo.org>
+  linux-firmware-20130421.ebuild, linux-firmware-99999999.ebuild:
+  Keywork ~ppc ~ppc64, bug #457082
+
+  11 May 2013; Matt Turner <mattst88@gentoo.org> linux-firmware-20130421.ebuild,
+  linux-firmware-99999999.ebuild:
+  Added ~alpha and ~mips, bug 457082.
 
 *linux-firmware-20130421 (21 Apr 2013)
 

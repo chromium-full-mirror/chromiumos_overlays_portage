@@ -1,6 +1,20 @@
 # ChangeLog for dev-util/premake
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/premake/ChangeLog,v 1.11 2013/04/09 10:30:34 titanofold Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/premake/ChangeLog,v 1.15 2013/05/26 07:25:11 ago Exp $
+
+  26 May 2013; Agostino Sarubbo <ago@gentoo.org> premake-4.3-r1.ebuild:
+  Stable for ppc, wrt bug #468862
+
+  10 May 2013; Patrick Lauer <patrick@gentoo.org> premake-4.3-r1.ebuild:
+  Fix inherit
+
+  07 May 2013; Agostino Sarubbo <ago@gentoo.org> premake-3.7.ebuild,
+  premake-4.3-r1.ebuild:
+  Stable for x86, wrt bug #468862
+
+  07 May 2013; Agostino Sarubbo <ago@gentoo.org> premake-3.7.ebuild,
+  premake-4.3-r1.ebuild:
+  Stable for amd64, wrt bug #468862
 
 *premake-4.3-r1 (09 Apr 2013)
 *premake-3.7 (09 Apr 2013)

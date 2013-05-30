@@ -1,6 +1,21 @@
 # ChangeLog for x11-wm/ratpoison
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/x11-wm/ratpoison/ChangeLog,v 1.85 2013/04/24 15:26:13 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-wm/ratpoison/ChangeLog,v 1.90 2013/05/25 07:49:52 ago Exp $
+
+  25 May 2013; Agostino Sarubbo <ago@gentoo.org> ratpoison-1.4.6.ebuild:
+  Stable for sparc, wrt bug #469680
+
+  16 May 2013; Agostino Sarubbo <ago@gentoo.org> ratpoison-1.4.6.ebuild:
+  Stable for ppc, wrt bug #469680
+
+  14 May 2013; Jeroen Roovers <jer@gentoo.org> ratpoison-1.4.6.ebuild:
+  Stable for HPPA (bug #469680).
+
+  14 May 2013; Agostino Sarubbo <ago@gentoo.org> ratpoison-1.4.6.ebuild:
+  Stable for x86, wrt bug #469680
+
+  14 May 2013; Agostino Sarubbo <ago@gentoo.org> ratpoison-1.4.6.ebuild:
+  Stable for amd64, wrt bug #469680
 
   24 Apr 2013; Jeroen Roovers <jer@gentoo.org> ratpoison-1.4.5.ebuild:
   Fix building with automake-1.13.

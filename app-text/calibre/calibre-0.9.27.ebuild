@@ -1,18 +1,38 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/calibre/calibre-0.9.27.ebuild,v 1.3 2013/04/23 19:51:32 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/calibre/calibre-0.9.27.ebuild,v 1.6 2013/05/18 23:07:28 zmedico Exp $
 
 EAPI=5
-PYTHON_DEPEND=2:2.7
-PYTHON_USE_WITH="ssl sqlite"
 
-inherit python eutils fdo-mime bash-completion-r1 multilib toolchain-funcs
+inherit eutils fdo-mime bash-completion-r1 multilib toolchain-funcs
 
 DESCRIPTION="Ebook management application."
 HOMEPAGE="http://calibre-ebook.com/"
 SRC_URI="http://sourceforge.net/projects/calibre/files/${PV}/${P}.tar.xz"
 
-LICENSE="GPL-2"
+# Restrict mirror due non-free prs500 fonts (bug #470212).
+RESTRICT="mirror"
+
+LICENSE="
+	GPL-3+
+	GPL-3
+	GPL-2+
+	GPL-2
+	GPL-1+
+	LGPL-3+
+	LGPL-2.1+
+	LGPL-2.1
+	BSD
+	MIT
+	Old-MIT
+	Apache-2.0
+	public-domain
+	|| ( Artistic GPL-1+ )
+	CC-BY-3.0
+	OFL-1.1
+	PSF-2
+	unRAR
+"
 
 KEYWORDS="amd64 x86"
 
@@ -23,6 +43,7 @@ IUSE="+udisks"
 COMMON_DEPEND="
 	>=app-text/podofo-0.8.2:=
 	>=app-text/poppler-0.12.3-r3:=[qt4,xpdf-headers(+)]
+	>=dev-lang/python-2.7.1:2.7[sqlite,ssl]
 	>=dev-libs/chmlib-0.40:=
 	>=dev-libs/icu-4.4:=
 	>=dev-python/beautifulsoup-3.0.5:python-2
@@ -54,11 +75,6 @@ DEPEND="${COMMON_DEPEND}
 	>=dev-python/setuptools-0.6_rc5"
 
 S=${WORKDIR}/${PN}
-
-pkg_setup() {
-	python_set_active_version 2.7
-	python_pkg_setup
-}
 
 src_prepare() {
 	# Fix outdated version constant.
@@ -94,6 +110,9 @@ src_prepare() {
 	epatch \
 		"${FILESDIR}/${PN}-no_updates_dialog.patch" \
 		"${FILESDIR}/${PN}-disable_plugins.patch"
+
+	# Remove non-free fonts (bug #470212).
+	rm -r resources/fonts/prs500 || die
 }
 
 src_install() {
@@ -133,9 +152,9 @@ src_install() {
 	local libdir=$(get_libdir)
 	[[ -n $libdir ]] || die "get_libdir returned an empty string"
 
-	dodir "$(python_get_sitedir)" # for init_calibre.py
+	dodir "/usr/$(get_libdir)/python2.7/site-packages" # for init_calibre.py
 	PATH=${T}:${PATH} PYTHONPATH=${S}/src${PYTHONPATH:+:}${PYTHONPATH} \
-	python setup.py install \
+	"${EPREFIX}"/usr/bin/python2.7 setup.py install \
 		--root="${D}" \
 		--prefix="${EPREFIX}/usr" \
 		--libdir="${EPREFIX}/usr/${libdir}" \
@@ -173,7 +192,18 @@ src_install() {
 		ln -sf "../../../fonts/liberation-fonts/${x}" "${x}" || die
 	done
 
-	python_convert_shebangs -r $(python_get_version) "${ED}"
+	einfo "Converting python shebangs"
+	while read -r -d $'\0' ; do
+		local shebang=$(head -n1 "$REPLY")
+		if [[ ${shebang} == "#!"*python* ]] ; then
+			sed -i -e "1s:.*:#!${EPREFIX}/usr/bin/python2.7:" "$REPLY" || \
+				die "sed failed"
+		fi
+	done < <(find "${ED}" -type f -print0)
+
+	einfo "Compiling python modules"
+	"${EPREFIX}"/usr/bin/python2.7 -m compileall -q -f \
+		-d "${EPREFIX}"/usr/lib/calibre "${ED}"usr/lib/calibre || die
 
 	newinitd "${FILESDIR}"/calibre-server.init calibre-server
 	newconfd "${FILESDIR}"/calibre-server.conf calibre-server
@@ -182,9 +212,4 @@ src_install() {
 pkg_postinst() {
 	fdo-mime_desktop_database_update
 	fdo-mime_mime_database_update
-	python_mod_optimize /usr/$(get_libdir)/${PN}
-}
-
-pkg_postrm() {
-	python_mod_cleanup /usr/$(get_libdir)/${PN}
 }

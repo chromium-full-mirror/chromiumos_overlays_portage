@@ -1,6 +1,6 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-electronics/oregano/oregano-0.82.ebuild,v 1.2 2012/12/06 18:40:58 tomjbe Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-electronics/oregano/oregano-0.82.ebuild,v 1.4 2013/05/26 10:50:37 tomjbe Exp $
 
 EAPI="4"
 
@@ -18,7 +18,8 @@ IUSE=""
 CDEPEND="dev-libs/libxml2:2
 	x11-libs/goocanvas:2.0
 	x11-libs/gtk+:3
-	x11-libs/gtksourceview:3.0"
+	x11-libs/gtksourceview:3.0
+	app-text/rarian"
 DEPEND="${CDEPEND}
 	virtual/pkgconfig"
 RDEPEND="${CDEPEND}
@@ -28,6 +29,12 @@ src_prepare() {
 	epatch "${FILESDIR}"/${P}-format-security.patch
 	epatch "${FILESDIR}"/${P}-remove.unneeded.docs.patch
 	epatch "${FILESDIR}"/${P}-asneeded.patch
+	# Do not use GTK_DISABLE_DEPRECATED (needed by >=gtk+-3.8.1
+	sed -i -e "s/-DGTK_DISABLE_DEPRECATED//g" src/sheet/Makefile.am || die
+	sed -i -e "s/-DGTK_DISABLE_DEPRECATED//g" src/Makefile.am || die
+	sed -i -e "s/(OREGANO_LIBS)/(OREGANO_LIBS) -lm/" src/Makefile.am || die
+	# Aclocal 1.13 deprecated error #467708
+	epatch "${FILESDIR}"/${P}-automake.patch
 	eautoreconf
 }
 

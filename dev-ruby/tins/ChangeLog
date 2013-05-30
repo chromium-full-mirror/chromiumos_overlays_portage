@@ -1,6 +1,17 @@
 # ChangeLog for dev-ruby/tins
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/tins/ChangeLog,v 1.16 2013/04/22 10:13:42 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/tins/ChangeLog,v 1.19 2013/05/13 04:57:55 graaff Exp $
+
+*tins-0.7.4 (13 May 2013)
+
+  13 May 2013; Hans de Graaff <graaff@gentoo.org> +tins-0.7.4.ebuild:
+  Version bump.
+
+  13 May 2013; Hans de Graaff <graaff@gentoo.org> -tins-0.3.14.ebuild:
+  Cleanup.
+
+  01 May 2013; Agostino Sarubbo <ago@gentoo.org> tins-0.6.0.ebuild:
+  Stable for x86, wrt bug #466618
 
   22 Apr 2013; Agostino Sarubbo <ago@gentoo.org> tins-0.6.0.ebuild:
   Stable for ppc64, wrt bug #466618

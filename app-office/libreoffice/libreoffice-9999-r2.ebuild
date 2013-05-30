@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r2.ebuild,v 1.170 2013/04/24 12:40:32 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r2.ebuild,v 1.176 2013/05/27 13:21:27 scarabeus Exp $
 
 EAPI=5
 
@@ -88,7 +88,8 @@ unset lo_xt
 
 LICENSE="|| ( LGPL-3 MPL-1.1 )"
 SLOT="0"
-[[ ${PV} == *9999* ]] || KEYWORDS="~amd64 ~arm ~ppc ~x86 ~amd64-linux ~x86-linux"
+[[ ${PV} == *9999* ]] || \
+KEYWORDS="~amd64 ~arm ~ppc ~x86 ~amd64-linux ~x86-linux"
 
 COMMON_DEPEND="
 	${PYTHON_DEPS}
@@ -100,6 +101,7 @@ COMMON_DEPEND="
 	app-text/liblangtag
 	app-text/libmspub
 	>=app-text/libmwaw-0.1.7
+	app-text/libodfgen
 	app-text/libwpd:0.9[tools]
 	app-text/libwpg:0.2
 	>=app-text/libwps-0.2.2
@@ -200,7 +202,7 @@ DEPEND="${COMMON_DEPEND}
 	dev-util/cppunit
 	>=dev-util/gperf-3
 	dev-util/intltool
-	>=dev-util/mdds-0.7.0
+	>=dev-util/mdds-0.8.1:=
 	virtual/pkgconfig
 	net-misc/npapi-sdk
 	>=sys-apps/findutils-4.4.2
@@ -410,10 +412,8 @@ src_configure() {
 	fi
 
 	# system headers/libs/...: enforce using system packages
-	# --enable-unix-qstart-libpng: use libpng splashscreen that is faster
 	# --enable-cairo: ensure that cairo is always required
 	# --enable-graphite: disabling causes build breakages
-	# --enable-harfbuzz: disabling uses ICU LE which is unmaintained and broken
 	# --enable-*-link: link to the library rather than just dlopen on runtime
 	# --enable-release-build: build the libreoffice as release
 	# --disable-fetch-external: prevent dowloading during compile phase
@@ -434,14 +434,12 @@ src_configure() {
 		--with-system-dicts \
 		--enable-cairo-canvas \
 		--enable-graphite \
-		--enable-harfbuzz \
 		--enable-largefile \
 		--enable-mergelibs \
 		--enable-python=system \
 		--enable-randr \
 		--enable-randr-link \
 		--enable-release-build \
-		--enable-unix-qstart-libpng \
 		--enable-hardlink-deliver \
 		--disable-ccache \
 		--disable-crashdump \
@@ -466,7 +464,6 @@ src_configure() {
 		--with-lang="" \
 		--with-parallelism=${jbs} \
 		--with-system-ucpp \
-		--with-unix-wrapper=libreoffice \
 		--with-vendor="Gentoo Foundation" \
 		--with-x \
 		--without-afms \

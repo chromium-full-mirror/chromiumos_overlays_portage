@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/dwb/dwb-9999.ebuild,v 1.6 2013/04/08 15:17:04 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/dwb/dwb-9999.ebuild,v 1.8 2013/05/10 04:32:58 radhermit Exp $
 
 EAPI=5
 
@@ -10,7 +10,6 @@ EGIT_REPO_URI="https://bitbucket.org/portix/dwb.git"
 
 DESCRIPTION="Dynamic web browser based on WebKit and GTK+"
 HOMEPAGE="http://portix.bitbucket.org/dwb/"
-SRC_URI=""
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -19,6 +18,7 @@ IUSE="examples gtk3"
 
 RDEPEND=">=net-libs/libsoup-2.32:2.4
 	dev-libs/json-c
+	net-libs/gnutls
 	!gtk3? (
 		>=net-libs/webkit-gtk-1.8.0:2
 		x11-libs/gtk+:2
