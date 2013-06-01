@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-mail/qmailadmin/qmailadmin-1.2.15-r1.ebuild,v 1.1 2013/05/30 23:59:11 robbat2 Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-mail/qmailadmin/qmailadmin-1.2.15-r1.ebuild,v 1.2 2013/05/31 00:47:07 robbat2 Exp $
 
 inherit qmail eutils webapp autotools
 
@@ -44,9 +44,6 @@ src_compile() {
 	else
 		set --
 	fi
-	# If vpopmail is built with mysql, we need to pick that up.
-	CFLAGS="${CFLAGS} $(</var/vpopmail/etc/inc_deps)"
-	LDFLAGS="${LDFLAGS} $(</var/vpopmail/etc/lib_deps)"
 
 	econf \
 		--enable-valias \
@@ -70,8 +67,6 @@ src_compile() {
 		--enable-maxaliasesperpage=50 \
 		--enable-vpopuser=vpopmail \
 		--enable-vpopgroup=vpopmail \
-		LDFLAGS="${LDFLAGS}" \
-		CFLAGS="${CFLAGS}" \
 		"$@" \
 		|| die "econf failed"
 
