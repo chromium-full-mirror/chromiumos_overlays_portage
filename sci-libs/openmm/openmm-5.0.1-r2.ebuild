@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/openmm/openmm-5.0.1-r2.ebuild,v 1.2 2013/06/28 00:29:18 ottxor Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/openmm/openmm-5.0.1-r2.ebuild,v 1.4 2013/06/28 20:58:33 ago Exp $
 
 EAPI="5"
 
@@ -15,7 +15,7 @@ SRC_URI="mirror://gentoo/${MY_P}.zip"
 
 LICENSE="MIT LGPL-2.1+ BSD RU-BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE="cuda doc examples opencl wrappers"
 
 RDEPEND="
@@ -35,8 +35,10 @@ src_prepare() {
 	use cuda && cuda_src_prepare
 
 	#475002
-	find . -name CMakeLists.txt -exec sed -i -e \
-		"/INSTALL/s@\(DESTINATION\|RUNTIME\)\(.*\)lib@\1\2$(get_libdir)@" {} + || die
+	find . -name CMakeLists.txt -exec sed -i \
+		-e "/INSTALL/s@\(DESTINATION\|RUNTIME\)\(.*\)lib@\1\2$(get_libdir)@" \
+		-e "/INSTALL_TARGETS/s@lib\(.*RUNTIME\)@$(get_libdir)\1@" \
+		{} + || die
 
 	default
 }
