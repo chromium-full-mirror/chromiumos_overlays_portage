@@ -1,6 +1,26 @@
 # ChangeLog for dev-lang/python
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/python/ChangeLog,v 1.662 2013/06/30 16:08:08 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/python/ChangeLog,v 1.667 2013/07/03 00:22:27 floppym Exp $
+
+*python-3.2.5-r1 (03 Jul 2013)
+*python-3.3.2-r1 (03 Jul 2013)
+
+  03 Jul 2013; Mike Gilbert <floppym@gentoo.org>
+  +files/python-3.2-CVE-2013-2099.patch, +files/python-3.3-CVE-2013-2099.patch,
+  +python-3.2.5-r1.ebuild, +python-3.3.2-r1.ebuild:
+  Add patch to fix CVE-2013-2099, bug 469988.
+
+  02 Jul 2013; Jeroen Roovers <jer@gentoo.org> python-2.7.5.ebuild:
+  Stable for HPPA (bug #475424).
+
+  02 Jul 2013; Tobias Klausmann <klausman@gentoo.org> python-2.7.5.ebuild:
+  Stable on alpha, bug #475424
+
+  02 Jul 2013; Agostino Sarubbo <ago@gentoo.org> python-2.7.5.ebuild:
+  Stable for x86, wrt bug #475424
+
+  02 Jul 2013; Agostino Sarubbo <ago@gentoo.org> python-2.7.5.ebuild:
+  Stable for amd64, wrt bug #475424
 
 *python-2.6.8-r2 (30 Jun 2013)
 *python-2.5.4-r6 (30 Jun 2013)
