@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-shells/bash-completion/bash-completion-2.1-r1.ebuild,v 1.1 2013/07/16 00:13:33 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-shells/bash-completion/bash-completion-2.1-r1.ebuild,v 1.5 2013/07/16 14:44:56 ssuominen Exp $
 
 EAPI=5
 
@@ -14,8 +14,7 @@ KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
 IUSE=""
 
 RDEPEND="|| ( >=app-shells/bash-4.1 app-shells/zsh )
-	sys-apps/miscfiles
-	!<app-shells/gentoo-bashcomp-20130101" #472938#c1
+	sys-apps/miscfiles"
 
 src_install() {
 	default
@@ -37,7 +36,21 @@ src_install() {
 }
 
 pkg_postinst() {
+	if [[ -z ${REPLACING_VERSIONS} ]]; then
+		elog "If you use non-login shells you still need to source"
+		elog "/usr/share/bash-completion/bash_completion in your ~/.bashrc."
+	else
+		ewarn "Please re-emerge all packages on your system which install"
+		ewarn "completions in /usr/share/bash-completion."
+		ewarn "They should now be in their own completions/ sub directory."
+		ewarn
+		ewarn "One way to do this is to run the following command:"
+		ewarn "emerge -av1 \$(qfile -q -S -C /usr/share/bash-completion)"
+		ewarn "Note that qfile can be found in app-portage/portage-utils"
+	fi
+
 	if has_version 'app-shells/zsh'; then
+		elog
 		elog "If you are interested in using the provided bash completion functions with"
 		elog "zsh, valuable tips on the effective use of bashcompinit are available:"
 		elog "  http://www.zsh.org/mla/workers/2003/msg00046.html"
