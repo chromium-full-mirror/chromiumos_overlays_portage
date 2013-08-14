@@ -1,15 +1,20 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/base/package.use.mask,v 1.499 2013/08/11 23:25:34 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/base/package.use.mask,v 1.501 2013/08/13 22:03:48 radhermit Exp $
 
 # This file requires >=portage-2.1.1
 # New entries go on top.
 #
 
+# Tim Harder <radhermit@gentoo.org> (13 Aug 2013)
+# Requires dev-lang/luajit which is not keyworded by most arches.
+app-editors/vim luajit
+app-editors/gvim luajit
+
 # Alexis Ballier <aballier@gentoo.org> (11 Aug 2013)
 # Multilib migrated version for binary compatibility.
 # Those useflags have deps that are not migrated yet.
-=media-video/ffmpeg-0.10* libass pulseaudio frei0r openal dirac gnutls rtmp vaapi sdl openssl
+=media-video/ffmpeg-0.10* libass pulseaudio frei0r openal gnutls rtmp vaapi sdl openssl
 
 # Kacper Kowalik <xarthisius@gentoo.org> (09 Aug 2013)
 # Doesn't work on most profiles. Easier to mask here and 
