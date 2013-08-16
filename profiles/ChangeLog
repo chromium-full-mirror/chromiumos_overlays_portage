@@ -1,10 +1,35 @@
 # ChangeLog for profile directory
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.8153 2013/08/13 06:18:28 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.8161 2013/08/16 00:16:42 aballier Exp $
 #
 # This ChangeLog should include records for all changes in profiles directory.
 # Only typo fixes which don't affect portage/repoman behaviour could be avoided
 # here. If in doubt put a record here!
+
+  16 Aug 2013; Alexis Ballier <aballier@gentoo.org> package.mask:
+  mask ocaml 4.01.0_beta1
+
+  15 Aug 2013; Tom Wijsman <TomWij@gentoo.org> package.mask:
+  Masked dev-java/itext:5: Dependencies are unable to satisfy current version,
+  broken; needs a version bump from bug #475552.
+
+  14 Aug 2013; Hans de Graaff <graaff@gentoo.org> package.mask:
+  Also mask rox-extra/rox-rename for using obsolete ruby-gnome2 packages.
+
+  14 Aug 2013; Hans de Graaff <graaff@gentoo.org> package.mask:
+  Mask app-dicts/fantasdic and associated deprecated ruby-gnome2 components.
+
+  14 Aug 2013; Patrick Lauer <patrick@gentoo.org> package.mask:
+  Add more perl virtuals to mask
+
+  14 Aug 2013; Patrick Lauer <patrick@gentoo.org> package.mask:
+  Add more perl virtuals to mask
+
+  14 Aug 2013; Patrick Lauer <patrick@gentoo.org> package.mask:
+  Adding new virtuals for perl-5.18
+
+  14 Aug 2013; Patrick Lauer <patrick@gentoo.org> package.mask:
+  Adding initial mask for perl-5.18
 
   13 Aug 2013; Tim Harder <radhermit@gentoo.org> package.mask:
   Unmask libcaca/toilet again since the bugs should be fixed now.
