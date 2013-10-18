@@ -1,6 +1,68 @@
 # ChangeLog for net-analyzer/zabbix
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/zabbix/ChangeLog,v 1.127 2013/07/19 04:27:56 mattm Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/zabbix/ChangeLog,v 1.140 2013/10/14 15:50:09 mattm Exp $
+
+  14 Oct 2013; Matthew Marlowe <mattm@gentoo.org> -zabbix-2.0.8.ebuild:
+  Removing older ebuilds affected by 486696.
+
+  13 Oct 2013; Agostino Sarubbo <ago@gentoo.org> zabbix-2.0.9_rc1-r2.ebuild:
+  Stable for x86, wrt bug #486696
+
+  05 Oct 2013; Agostino Sarubbo <ago@gentoo.org> zabbix-2.0.9_rc1-r2.ebuild:
+  Stable for amd64, wrt bug #486696
+
+  05 Oct 2013; Rick Farina <zerochaos@gentoo.org> zabbix-2.0.8.ebuild,
+  zabbix-2.0.9_rc1-r2.ebuild, zabbix-2.0.9_rc1-r3.ebuild:
+  silence QA warning by removing epause and ebeep (not defined in EAPI5)
+
+  05 Oct 2013; Rick Farina <zerochaos@gentoo.org> zabbix-2.0.8.ebuild,
+  zabbix-2.0.9_rc1-r2.ebuild, zabbix-2.0.9_rc1-r3.ebuild:
+  trivial fix for bug #433708 to remove unneeded Makefiles
+
+*zabbix-2.0.9_rc1-r3 (04 Oct 2013)
+
+  04 Oct 2013; Matthew Marlowe <mattm@gentoo.org> +zabbix-2.0.9_rc1-r3.ebuild:
+  Fix for bug 486950
+
+*zabbix-2.0.9_rc1-r2 (03 Oct 2013)
+
+  03 Oct 2013; Matthew Marlowe <mattm@gentoo.org> +zabbix-2.0.9_rc1-r2.ebuild,
+  -zabbix-2.0.9_rc1-r1.ebuild:
+  Initial developer revisions for 2.0.9rc1-r2 bump complete, releasing to user
+  testing arch, with expected fast stabilization due to bug 486696
+
+*zabbix-2.0.9_rc1-r1 (02 Oct 2013)
+
+  02 Oct 2013; Matthew Marlowe <mattm@gentoo.org> +zabbix-2.0.9_rc1-r1.ebuild,
+  -zabbix-2.0.9_rc1.ebuild:
+  Added MY_PV bash variable to deal with _rc1 version numbers impacting naming
+  of java jar files.
+
+*zabbix-2.0.9_rc1 (02 Oct 2013)
+
+  02 Oct 2013; Matthew Marlowe <mattm@gentoo.org> +zabbix-2.0.9_rc1.ebuild:
+  Bump for security vulnerability, Bug 486696 and ZBX-7091,
+  https://bugs.gentoo.org/show_bug.cgi?id=486696 Temporarily no keywords on
+  package while testing.
+
+  22 Sep 2013; Matthew Marlowe <mattm@gentoo.org> -zabbix-2.0.4-r1.ebuild,
+  -zabbix-2.0.5.ebuild, -zabbix-2.0.6-r5.ebuild:
+  No longer supporting zabbix releases prior to 2.0.8 due to php and curl
+  compatibility bugs plus other important fixes, 2.0.4 (the old stable) in
+  particular is far out of date with recent ebuild changes, zabbix 2.0.8 is new
+  stable and recommended zabbix version for deployment.
+
+  22 Sep 2013; Agostino Sarubbo <ago@gentoo.org> zabbix-2.0.8.ebuild:
+  Stable for x86, wrt bug #484822
+
+  15 Sep 2013; Agostino Sarubbo <ago@gentoo.org> zabbix-2.0.8.ebuild:
+  Stable for amd64, wrt bug #484822
+
+*zabbix-2.0.8 (05 Sep 2013)
+
+  05 Sep 2013; Matthew Marlowe <mattm@gentoo.org> +zabbix-2.0.8.ebuild:
+  Bump for Zabbix-2.0.8, Thanks to Alice Ferrazzi alice.ferrazzi@gmail.com and
+  Rodrigo Severo rodrigo@fabricadeideias.com - Closes bug 482810.
 
   19 Jul 2013; Matthew Marlowe <mattm@gentoo.org> files/2.0/init.d/zabbix-proxy:
   Minor tweak for bug 460562 - zabbix_proxy init file.

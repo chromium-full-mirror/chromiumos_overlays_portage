@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-boot/grub/grub-9999.ebuild,v 1.100 2013/08/14 09:16:56 patrick Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-boot/grub/grub-9999.ebuild,v 1.108 2013/10/17 04:11:03 floppym Exp $
 
 EAPI=5
 
@@ -8,7 +8,7 @@ if [[ ${PV} == 9999 ]]; then
 	AUTOTOOLS_AUTORECONF=1
 fi
 
-inherit autotools-utils bash-completion-r1 eutils flag-o-matic multibuild pax-utils toolchain-funcs versionator
+inherit autotools-utils bash-completion-r1 eutils flag-o-matic mount-boot multibuild pax-utils toolchain-funcs versionator
 
 if [[ ${PV} != 9999 ]]; then
 	if [[ ${PV} == *_alpha* || ${PV} == *_beta* || ${PV} == *_rc* ]]; then
@@ -79,6 +79,7 @@ DEPEND="${RDEPEND}
 	sys-apps/help2man
 	sys-apps/texinfo
 	static? (
+		app-arch/xz-utils[static-libs(+)]
 		truetype? (
 			app-arch/bzip2[static-libs(+)]
 			media-libs/freetype[static-libs(+)]
@@ -179,6 +180,7 @@ grub_configure() {
 		--htmldir="${EPREFIX}"/usr/share/doc/${PF}/html
 		$(use_enable debug mm-debug)
 		$(use_enable debug grub-emu-usb)
+		$(use_enable device-mapper)
 		$(use_enable mount grub-mount)
 		$(use_enable nls)
 		$(use_enable truetype grub-mkfont)
@@ -191,10 +193,7 @@ grub_configure() {
 	)
 
 	if use multislot; then
-		myeconfargs+=(
-			--program-transform-name="s,grub,grub2,"
-			--with-grubdir=grub2
-		)
+		myeconfargs+=( --program-transform-name="s,grub,grub2," )
 	fi
 
 	autotools-utils_src_configure
@@ -202,7 +201,7 @@ grub_configure() {
 
 src_configure() {
 	use custom-cflags || unset CCASFLAGS CFLAGS CPPFLAGS LDFLAGS
-	use static && append-ldflags -static
+	use static && export HOST_LDFLAGS="${HOST_LDFLAGS} -static"
 
 	if version_is_at_least 4.8 "$(gcc-version)"; then
 		export TARGET_LDFLAGS+=" -fuse-ld=bfd"
@@ -210,6 +209,7 @@ src_configure() {
 
 	tc-export CC NM OBJCOPY STRIP
 	export TARGET_CC=${TARGET_CC:-${CC}}
+	tc-export BUILD_CC # Bug 485592
 
 	# Portage will take care of cleaning up GRUB_PLATFORMS
 	MULTIBUILD_VARIANTS=( ${GRUB_PLATFORMS:-guessed} )
@@ -251,8 +251,23 @@ src_install() {
 }
 
 pkg_postinst() {
-	elog "For information on how to configure grub-2 please refer to the guide:"
+	mount-boot_mount_boot_partition
+
+	if [[ -e "${ROOT%/}/boot/grub2/grub.cfg" && ! -e "${ROOT%/}/boot/grub/grub.cfg" ]]; then
+		mkdir -p "${ROOT%/}/boot/grub"
+		ln -s ../grub2/grub.cfg "${ROOT%/}/boot/grub/grub.cfg"
+	fi
+
+	mount-boot_pkg_postinst
+
+	elog "For information on how to configure GRUB2 please refer to the guide:"
 	elog "    http://wiki.gentoo.org/wiki/GRUB2_Quick_Start"
+
+	if has_version 'sys-boot/grub:0'; then
+		elog "A migration guide for GRUB Legacy users is available:"
+		elog "    http://www.gentoo.org/doc/en/grub2-migration.xml"
+	fi
+
 	if [[ -z ${REPLACING_VERSIONS} ]]; then
 		if ! has_version sys-boot/os-prober; then
 			elog "Install sys-boot/os-prober to enable detection of other operating systems using grub2-mkconfig."
@@ -260,5 +275,14 @@ pkg_postinst() {
 		if ! has_version dev-libs/libisoburn; then
 			elog "Install dev-libs/libisoburn to enable creation of rescue media using grub2-mkrescue."
 		fi
+	else
+		local v
+		for v in ${REPLACING_VERSIONS}; do
+			if use multislot && ! version_is_at_least 2.00_p5107-r1 ${v}; then
+				ewarn "The grub directory has changed from /boot/grub2 to /boot/grub."
+				ewarn "Please run grub2-install and grub2-mkconfig -o /boot/grub/grub.cfg."
+				break
+			fi
+		done
 	fi
 }

@@ -1,10 +1,10 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/ipython/ipython-0.13.2.ebuild,v 1.6 2013/08/05 17:34:14 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/ipython/ipython-0.13.2.ebuild,v 1.10 2013/09/26 17:59:01 floppym Exp $
 
 EAPI=5
 
-PYTHON_COMPAT=( python{2_6,2_7,3_1,3_2,3_3} )
+PYTHON_COMPAT=( python{2_6,2_7,3_2,3_3} )
 PYTHON_REQ_USE='readline,sqlite'
 
 inherit distutils-r1 elisp-common eutils virtualx
@@ -25,7 +25,7 @@ CDEPEND="dev-python/decorator[${PYTHON_USEDEP}]
 	dev-python/pexpect[${PY2_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/simplegeneric[${PYTHON_USEDEP}]
-	virtual/pyparsing[${PYTHON_USEDEP}]
+	dev-python/pyparsing[${PYTHON_USEDEP}]
 	virtual/python-argparse[${PYTHON_USEDEP}]
 	emacs? ( app-emacs/python-mode virtual/emacs )
 	matplotlib? ( dev-python/matplotlib[${PYTHON_USEDEP}] )
@@ -50,9 +50,12 @@ REQUIRED_USE="mongodb? ( ${PY2_REQUSE} )
 	wxwidgets? ( ${PY2_REQUSE} )"
 DISTUTILS_IN_SOURCE_BUILD=1
 
-python_prepare_all() {
-	epatch "${FILESDIR}"/${PN}-0.12-globalpath.patch
+PATCHES=(
+	"${FILESDIR}/${PN}-0.12-globalpath.patch"
+	"${FILESDIR}/ipython-1.0.0-setuptools.patch"
+)
 
+python_prepare_all() {
 	# fix for gentoo python scripts
 	sed -i \
 		-e "/ipython_cmd/s/ipython3/ipython/g" \
@@ -162,8 +165,6 @@ python_test() {
 		"${BUILD_DIR}"/lib/IPython/parallel/tests/test_mongodb.py \
 		|| die "Unable to sed mongod port into tests"
 
-
-
 	local fail
 	run_tests() {
 		# Initialize ~/.ipython directory.
@@ -184,6 +185,7 @@ python_install_all() {
 		elisp-install ${PN} ${PN}.el*
 		elisp-site-file-install "${FILESDIR}"/62ipython-gentoo.el
 	fi
+	distutils-r1_python_install_all
 }
 
 pkg_postinst() {

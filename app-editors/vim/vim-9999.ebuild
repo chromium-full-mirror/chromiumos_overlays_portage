@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-editors/vim/vim-9999.ebuild,v 1.4 2013/08/18 18:21:34 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-editors/vim/vim-9999.ebuild,v 1.7 2013/10/15 23:15:36 radhermit Exp $
 
 EAPI=5
 VIM_VERSION="7.4"
@@ -20,12 +20,12 @@ else
 	KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
 fi
 
-DESCRIPTION="vim and gvim shared files"
+DESCRIPTION="Vim, an improved vi-style text editor"
 HOMEPAGE="http://www.vim.org/"
 
 SLOT="0"
 LICENSE="vim"
-IUSE="X acl cscope debug gpm lua luajit minimal nls perl python ruby vim-pager"
+IUSE="X acl cscope debug gpm lua luajit minimal nls perl python ruby tcl vim-pager"
 REQUIRED_USE="python? ( ${PYTHON_REQUIRED_USE} )"
 
 RDEPEND=">=app-admin/eselect-vi-1.1
@@ -45,6 +45,7 @@ RDEPEND=">=app-admin/eselect-vi-1.1
 	perl? ( dev-lang/perl )
 	python? ( ${PYTHON_DEPS} )
 	ruby? ( || ( dev-lang/ruby:2.0 dev-lang/ruby:1.9 dev-lang/ruby:1.8 ) )
+	tcl? ( dev-lang/tcl )
 	X? ( x11-libs/libXt )"
 DEPEND="${RDEPEND}
 	>=app-admin/eselect-vi-1.1
@@ -176,6 +177,7 @@ src_configure() {
 			--disable-perlinterp \
 			--disable-pythoninterp \
 			--disable-rubyinterp \
+			--disable-tclinterp \
 			--disable-gpm"
 	else
 		use debug && append-flags "-DDEBUG"
@@ -202,6 +204,7 @@ src_configure() {
 		myconf+=" $(use_enable lua luainterp)"
 		myconf+=" $(use_with luajit)"
 		myconf+=" $(use_enable ruby rubyinterp)"
+		myconf+=" $(use_enable tcl tclinterp)"
 
 		# tclinterp is broken; when you --enable-tclinterp flag, then
 		# the following command never returns:
@@ -329,7 +332,7 @@ src_install() {
 	rm -f "${ED}"/usr/share/man/man1/{ex,view}.1
 }
 
-vim_pkg_postinst() {
+pkg_postinst() {
 	# Update documentation tags (from vim-doc.eclass)
 	update_vim_helptags
 
@@ -359,7 +362,7 @@ vim_pkg_postinst() {
 	update_vim_symlinks
 }
 
-vim_pkg_postrm() {
+pkg_postrm() {
 	# Update documentation tags (from vim-doc.eclass)
 	update_vim_helptags
 

@@ -1,6 +1,59 @@
 # ChangeLog for net-irc/hexchat
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-irc/hexchat/ChangeLog,v 1.68 2013/08/26 12:31:34 hasufell Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-irc/hexchat/ChangeLog,v 1.82 2013/10/05 02:22:40 hasufell Exp $
+
+  05 Oct 2013; Julian Ospald <hasufell@gentoo.org> hexchat-9999.ebuild:
+  update live ebuild
+
+  29 Sep 2013; Julian Ospald <hasufell@gentoo.org> hexchat-9999.ebuild:
+  update live ebuild
+
+*hexchat-2.9.6.1 (15 Sep 2013)
+
+  15 Sep 2013; Julian Ospald <hasufell@gentoo.org> +hexchat-2.9.6.1.ebuild,
+  -hexchat-2.9.6.ebuild:
+  version bump
+
+  15 Sep 2013; Julian Ospald <hasufell@gentoo.org> hexchat-2.9.6.ebuild:
+  use ${P} in SRC_URI
+
+  14 Sep 2013; Julian Ospald <hasufell@gentoo.org> hexchat-2.9.5-r1.ebuild,
+  hexchat-2.9.6.ebuild, hexchat-9999.ebuild:
+  add optional dependencies
+
+  12 Sep 2013; Julian Ospald <hasufell@gentoo.org> hexchat-2.9.6.ebuild,
+  hexchat-9999.ebuild:
+  add reference to x11-plugins/hexchat-javascript in pkg_postinst
+
+*hexchat-2.9.6 (11 Sep 2013)
+
+  11 Sep 2013; Julian Ospald <hasufell@gentoo.org>
+  -hexchat-2.9.5_p20130525.ebuild, +hexchat-2.9.6.ebuild:
+  version bump, remove old
+
+  11 Sep 2013; Julian Ospald <hasufell@gentoo.org> -hexchat-2.9.5.ebuild,
+  hexchat-2.9.5-r1.ebuild, hexchat-2.9.5_p20130525.ebuild, hexchat-9999.ebuild:
+  fix openssl dep, remove old
+
+  11 Sep 2013; Julian Ospald <hasufell@gentoo.org> hexchat-9999.ebuild:
+  use minimal flags
+
+  05 Sep 2013; Michał Górny <mgorny@gentoo.org> hexchat-2.9.5-r1.ebuild,
+  hexchat-2.9.5.ebuild:
+  Clean up PYTHON_COMPAT from old implementations.
+
+  01 Sep 2013; Julian Ospald <hasufell@gentoo.org> hexchat-9999.ebuild:
+  update live ebuild
+
+  01 Sep 2013; Julian Ospald <hasufell@gentoo.org> hexchat-9999.ebuild:
+  update live ebuild
+
+  28 Aug 2013; Julian Ospald <hasufell@gentoo.org> hexchat-9999.ebuild:
+  update live ebuild
+
+  27 Aug 2013; Julian Ospald <hasufell@gentoo.org> hexchat-9999.ebuild,
+  metadata.xml:
+  update live-ebuild
 
 *hexchat-9999 (26 Aug 2013)
 

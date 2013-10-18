@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/banshee/banshee-2.6.1.ebuild,v 1.4 2013/08/12 22:20:56 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/banshee/banshee-2.6.1.ebuild,v 1.6 2013/10/12 12:12:44 pacho Exp $
 
 EAPI=5
 inherit eutils autotools mono gnome2-utils fdo-mime versionator gnome.org
@@ -45,7 +45,6 @@ RDEPEND="
 	bpm? ( media-plugins/gst-plugins-soundtouch:0.10 )
 	daap? (	>=dev-dotnet/mono-zeroconf-0.8.0-r1 )
 	doc? (
-		virtual/monodoc
 		>=app-text/gnome-doc-utils-0.17.3
 	)
 	encode? (
@@ -58,7 +57,7 @@ RDEPEND="
 	)
 	web? (
 		>=net-libs/webkit-gtk-1.2.2:2
-		|| ( >=net-libs/libsoup-2.42:2.4 >=net-libs/libsoup-gnome-2.26:2.4 )
+		>=net-libs/libsoup-gnome-2.26:2.4
 	)
 	youtube? (
 		>=dev-dotnet/google-gdata-sharp-1.4

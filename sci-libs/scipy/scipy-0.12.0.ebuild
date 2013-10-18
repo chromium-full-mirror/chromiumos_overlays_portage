@@ -1,10 +1,10 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/scipy/scipy-0.12.0.ebuild,v 1.3 2013/06/09 17:58:01 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/scipy/scipy-0.12.0.ebuild,v 1.6 2013/09/10 02:43:58 patrick Exp $
 
 EAPI=5
 
-PYTHON_COMPAT=( python{2_5,2_6,2_7,3_2,3_3} )
+PYTHON_COMPAT=( python{2_6,2_7,3_2,3_3} )
 
 inherit eutils fortran-2 distutils-r1 flag-o-matic multilib toolchain-funcs
 
@@ -50,18 +50,18 @@ src_unpack() {
 
 pc_incdir() {
 	$(tc-getPKG_CONFIG) --cflags-only-I $@ | \
-		sed -e 's/^-I//' -e 's/[ ]*-I/:/g'
+		sed -e 's/^-I//' -e 's/[ ]*-I/:/g' -e 's/[ ]*$//'
 }
 
 pc_libdir() {
 	$(tc-getPKG_CONFIG) --libs-only-L $@ | \
-		sed -e 's/^-L//' -e 's/[ ]*-L/:/g'
+		sed -e 's/^-L//' -e 's/[ ]*-L/:/g' -e 's/[ ]*$//'
 }
 
 pc_libs() {
 	$(tc-getPKG_CONFIG) --libs-only-l $@ | \
 		sed -e 's/[ ]-l*\(pthread\|m\)[ ]*//g' \
-		-e 's/^-l//' -e 's/[ ]*-l/,/g'
+		-e 's/^-l//' -e 's/[ ]*-l/,/g' -e 's/[ ]*$//'
 }
 
 python_prepare_all() {
@@ -115,7 +115,6 @@ import scipy, sys
 r = scipy.test('fast',verbose=2)
 sys.exit(0 if r.wasSuccessful() else 1)" || die "Tests fail with ${EPYTHON}"
 }
-
 
 python_install_all() {
 	if use doc; then

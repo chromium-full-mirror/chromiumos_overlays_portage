@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/python-any-r1.eclass,v 1.13 2013/08/01 12:49:42 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/python-any-r1.eclass,v 1.15 2013/10/12 11:08:12 mgorny Exp $
 
 # @ECLASS: python-any-r1
 # @MAINTAINER:
@@ -156,6 +156,67 @@ _python_build_set_globals
 # python_targets_python2_7(-)?,python_single_target_python2_7(+)?
 # @CODE
 
+# @FUNCTION: python_gen_any_dep
+# @USAGE: <dependency-block>
+# @DESCRIPTION:
+# Generate an any-of dependency that enforces a version match between
+# the Python interpreter and Python packages. <dependency-block> needs
+# to list one or more dependencies with verbatim '${PYTHON_USEDEP}'
+# references (quoted!) that will get expanded inside the function.
+#
+# This should be used along with an appropriate python_check_deps()
+# that checks which of the any-of blocks were matched.
+#
+# Example use:
+# @CODE
+# DEPEND="$(python_gen_any_dep '
+#	dev-python/foo[${PYTHON_USEDEP}]
+#	|| ( dev-python/bar[${PYTHON_USEDEP}]
+#		dev-python/baz[${PYTHON_USEDEP}] )')"
+#
+# python_check_deps() {
+#	has_version "dev-python/foo[${PYTHON_USEDEP}]" \
+#		&& { has_version "dev-python/bar[${PYTHON_USEDEP}]" \
+#			|| has_version "dev-python/baz[${PYTHON_USEDEP}]"; }
+# }
+# @CODE
+#
+# Example value:
+# @CODE
+# || (
+#	(
+#		dev-lang/python:2.7
+#		dev-python/foo[python_targets_python2_7(-)?,python_single_target_python2_7(+)?]
+#		|| ( dev-python/bar[python_targets_python2_7(-)?,python_single_target_python2_7(+)?]
+#			dev-python/baz[python_targets_python2_7(-)?,python_single_target_python2_7(+)?] )
+#	)
+#	(
+#		dev-lang/python:2.6
+#		dev-python/foo[python_targets_python2_6(-)?,python_single_target_python2_6(+)?]
+#		|| ( dev-python/bar[python_targets_python2_6(-)?,python_single_target_python2_6(+)?]
+#			dev-python/baz[python_targets_python2_6(-)?,python_single_target_python2_6(+)?] )
+#	)
+# )
+# @CODE
+python_gen_any_dep() {
+	debug-print-function ${FUNCNAME} "${@}"
+
+	local depstr=${1}
+	[[ ${depstr} ]] || die "No dependency string provided"
+
+	local PYTHON_PKG_DEP out=
+	for i in "${_PYTHON_ALL_IMPLS[@]}"; do
+		has "${i}" "${PYTHON_COMPAT[@]}" || continue
+
+		local PYTHON_USEDEP="python_targets_${i}(-),python_single_target_${i}(+)"
+		python_export "${i}" PYTHON_PKG_DEP
+
+		local i_depstr=${depstr//\$\{PYTHON_USEDEP\}/${PYTHON_USEDEP}}
+		out="( ${PYTHON_PKG_DEP} ${i_depstr} ) ${out}"
+	done
+	echo "|| ( ${out})"
+}
+
 # @FUNCTION: _python_EPYTHON_supported
 # @USAGE: <epython>
 # @INTERNAL
@@ -204,6 +265,10 @@ _python_EPYTHON_supported() {
 # implementation is and set EPYTHON and PYTHON accordingly.
 python-any-r1_pkg_setup() {
 	debug-print-function ${FUNCNAME} "${@}"
+
+	# avoid looking up Python for binary package install.
+	# if you need Python during pkg_preinst/_postinst, please let us know.
+	[[ ${MERGE_TYPE} == binary ]] && return 0
 
 	# first, try ${EPYTHON}... maybe it's good enough for us.
 	if [[ ${EPYTHON} ]]; then

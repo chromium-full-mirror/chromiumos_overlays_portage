@@ -1,6 +1,41 @@
 # ChangeLog for sys-fs/aufs3
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-fs/aufs3/ChangeLog,v 1.66 2013/08/21 07:54:14 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/aufs3/ChangeLog,v 1.72 2013/10/14 06:29:16 jlec Exp $
+
+*aufs3-3_p20131014 (14 Oct 2013)
+
+  14 Oct 2013; Justin Lecher <jlec@gentoo.org> +aufs3-3_p20131014.ebuild:
+  Version BUmp
+
+  13 Oct 2013; Justin Lecher <jlec@gentoo.org> -aufs3-3_p20130506.ebuild,
+  -aufs3-3_p20130519.ebuild, -aufs3-3_p20130708.ebuild,
+  -aufs3-3_p20130722.ebuild, -aufs3-3_p20130811.ebuild,
+  -aufs3-3_p20130812.ebuild, -aufs3-3_p20130821.ebuild,
+  -aufs3-3_p20130915.ebuild, -aufs3-3_p20130928.ebuild,
+  aufs3-3_p20131007.ebuild:
+  Drop old versions and add notification to aufs-sources
+
+  08 Oct 2013; Justin Lecher <jlec@gentoo.org> aufs3-3_p20130506.ebuild,
+  aufs3-3_p20130519.ebuild, aufs3-3_p20130708.ebuild, aufs3-3_p20130722.ebuild,
+  aufs3-3_p20130811.ebuild, aufs3-3_p20130812.ebuild, aufs3-3_p20130821.ebuild,
+  aufs3-3_p20130915.ebuild, aufs3-3_p20130928.ebuild, aufs3-3_p20131007.ebuild:
+  Fix error message to work around the chicken and egg problem, thanks Thomas
+  D. bringing this to my attention.
+
+*aufs3-3_p20131007 (08 Oct 2013)
+
+  08 Oct 2013; Justin Lecher <jlec@gentoo.org> +aufs3-3_p20131007.ebuild:
+  Bump to latest aufs3
+
+*aufs3-3_p20130928 (28 Sep 2013)
+
+  28 Sep 2013; Justin Lecher <jlec@gentoo.org> +aufs3-3_p20130928.ebuild:
+  Bump to latest aufs3 release
+
+*aufs3-3_p20130915 (16 Sep 2013)
+
+  16 Sep 2013; Justin Lecher <jlec@gentoo.org> +aufs3-3_p20130915.ebuild:
+  Bump to latest aufs3 release
 
 *aufs3-3_p20130821 (21 Aug 2013)
 

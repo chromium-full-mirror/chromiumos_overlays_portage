@@ -1,6 +1,20 @@
 # ChangeLog for dev-ruby/highline
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/highline/ChangeLog,v 1.76 2013/07/10 12:28:19 mrueg Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/highline/ChangeLog,v 1.80 2013/10/05 10:12:02 mrueg Exp $
+
+*highline-1.6.19-r1 (05 Oct 2013)
+
+  05 Oct 2013; Manuel Rüger <mrueg@gentoo.org> +highline-1.6.19-r1.ebuild:
+  Add ruby20 target.
+
+  30 Sep 2013; Agostino Sarubbo <ago@gentoo.org> highline-1.6.19.ebuild:
+  Stable for x86, wrt bug #485788
+
+  28 Sep 2013; Agostino Sarubbo <ago@gentoo.org> highline-1.6.19.ebuild:
+  Stable for amd64, wrt bug #485788
+
+  26 Sep 2013; Jeroen Roovers <jer@gentoo.org> highline-1.6.19.ebuild:
+  Stable for HPPA (bug #485788).
 
 *highline-1.6.19 (10 Jul 2013)
 

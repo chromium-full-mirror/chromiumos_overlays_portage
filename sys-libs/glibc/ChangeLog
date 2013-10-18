@@ -1,6 +1,25 @@
 # ChangeLog for sys-libs/glibc
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-libs/glibc/ChangeLog,v 1.948 2013/08/17 17:37:57 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-libs/glibc/ChangeLog,v 1.952 2013/10/06 08:51:11 pacho Exp $
+
+  06 Oct 2013; Pacho Ramos <pacho@gentoo.org> +files/nscd.service,
+  +files/nscd.tmpfilesd, files/eblits/src_install.eblit, glibc-2.16.0.ebuild,
+  glibc-2.17.ebuild, glibc-2.18.ebuild:
+  Add unit file (#479496 by Alexander Tsoy, redneb, Charles Nérot and SpanKY)
+
+  30 Sep 2013; Mike Frysinger <vapier@gentoo.org>
+  files/eblits/src_compile.eblit:
+  Disable info page generation for glibc-2.16 and older #465816 by Nikos
+  Chantziaras.
+
+  28 Sep 2013; Mike Frysinger <vapier@gentoo.org> files/eblits/src_unpack.eblit:
+  Tweak how we check the kernel header version to work w/clang #485146 by eroen.
+
+  11 Sep 2013; Magnus Granberg <zorry@gentoo.org> glibc-2.18.ebuild,
+  +files/2.18/glibc-2.18-gentoo-chk_fail.c,
+  +files/2.18/glibc-2.18-gentoo-stack_chk_fail.c,
+  +files/2.18/glibc-2.18-hardened-inittls-nosysenter.patch:
+  Fix hardened patches for glibc 2.18 bug 483804
 
   17 Aug 2013; Mike Frysinger <vapier@gentoo.org> glibc-2.18.ebuild:
   Re-add mips librt patch to exclude list #481438 by Manuel Lauss.

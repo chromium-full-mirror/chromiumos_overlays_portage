@@ -1,6 +1,33 @@
 # ChangeLog for kde-base/libkdcraw
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/kde-base/libkdcraw/ChangeLog,v 1.181 2013/08/14 20:24:25 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/kde-base/libkdcraw/ChangeLog,v 1.187 2013/10/10 03:56:22 creffett Exp $
+
+  10 Oct 2013; Chris Reffett <creffett@gentoo.org>
+  files/libkdcraw-4.10.90-extlibraw.patch:
+  Restore kdepim 4.4.11.1, accidentally removed when removing kde 4.11.1
+
+  10 Oct 2013; Chris Reffett <creffett@gentoo.org> -libkdcraw-4.11.1.ebuild,
+  files/libkdcraw-4.10.90-extlibraw.patch:
+  Drop KDE SC 4.11.1
+
+  09 Oct 2013; Chris Reffett <creffett@gentoo.org>
+  files/libkdcraw-4.10.90-extlibraw.patch:
+  Version bump KDE SC 4.11.2
+
+*libkdcraw-4.11.2 (08 Oct 2013)
+
+  08 Oct 2013; Chris Reffett <creffett@gentoo.org> +libkdcraw-4.11.2.ebuild:
+  Version bump KDE SC 4.11.2
+
+  03 Sep 2013; Chris Reffett <creffett@gentoo.org> -libkdcraw-4.11.0.ebuild,
+  files/libkdcraw-4.10.90-extlibraw.patch:
+  Drop KDE 4.11.0
+
+*libkdcraw-4.11.1 (03 Sep 2013)
+
+  03 Sep 2013; Chris Reffett <creffett@gentoo.org> +libkdcraw-4.11.1.ebuild,
+  files/libkdcraw-4.10.90-extlibraw.patch:
+  Bump KDE to 4.1.1
 
 *libkdcraw-4.11.0 (14 Aug 2013)
 

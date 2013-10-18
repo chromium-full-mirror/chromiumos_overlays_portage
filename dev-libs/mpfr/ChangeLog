@@ -1,6 +1,16 @@
 # ChangeLog for dev-libs/mpfr
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/mpfr/ChangeLog,v 1.168 2013/08/25 02:37:43 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/mpfr/ChangeLog,v 1.170 2013/10/16 13:15:20 jer Exp $
+
+  16 Oct 2013; Jeroen Roovers <jer@gentoo.org> mpfr-3.1.2-r1.ebuild:
+  Stable for HPPA (bug #487798).
+
+*mpfr-3.1.2-r1 (13 Sep 2013)
+
+  13 Sep 2013; Fabian Groffen <grobian@gentoo.org> +mpfr-3.1.2-r1.ebuild,
+  -mpfr-3.1.2.ebuild:
+  Fix src_prepare to always apply elibtoolize, necessary to install shared libs
+  on Solaris
 
   25 Aug 2013; Mike Frysinger <vapier@gentoo.org> mpfr-2.4.2_p3-r1.ebuild,
   mpfr-3.1.2.ebuild:

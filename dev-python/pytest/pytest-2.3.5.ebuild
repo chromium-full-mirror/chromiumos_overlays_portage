@@ -1,10 +1,10 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pytest/pytest-2.3.5.ebuild,v 1.13 2013/08/18 13:24:41 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pytest/pytest-2.3.5.ebuild,v 1.15 2013/09/14 23:44:43 floppym Exp $
 
 EAPI="5"
 
-PYTHON_COMPAT=( python{2_5,2_6,2_7,3_1,3_2,3_3} pypy{1_9,2_0} )
+PYTHON_COMPAT=( python{2_6,2_7,3_2,3_3} pypy2_0 )
 inherit distutils-r1 eutils
 
 DESCRIPTION="py.test: simple powerful testing with Python"
@@ -21,8 +21,6 @@ PY_VER="1.4.13"
 RDEPEND=">=dev-python/py-${PY_VER}[${PYTHON_USEDEP}]"
 DEPEND="${RDEPEND}
 	dev-python/setuptools[${PYTHON_USEDEP}]"
-
-DOCS=( CHANGELOG README.txt )
 
 python_prepare_all() {
 	# Disable versioning of py.test script to avoid collision with
@@ -45,4 +43,5 @@ python_test() {
 
 python_install_all() {
 	use doc && dohtml -r doc/en/_build/html/
+	distutils-r1_python_install_all
 }

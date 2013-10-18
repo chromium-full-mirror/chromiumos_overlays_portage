@@ -1,6 +1,12 @@
 # ChangeLog for media-gfx/graphite2
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/graphite2/ChangeLog,v 1.60 2013/07/06 17:08:43 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/graphite2/ChangeLog,v 1.62 2013/10/12 21:53:33 hwoarang Exp $
+
+  12 Oct 2013; Markos Chandras <hwoarang@gentoo.org> graphite2-1.2.1.ebuild:
+  Add ~mips
+
+  05 Sep 2013; Michał Górny <mgorny@gentoo.org> graphite2-1.2.1.ebuild:
+  Clean up PYTHON_COMPAT from old implementations.
 
   06 Jul 2013; Agostino Sarubbo <ago@gentoo.org> graphite2-1.2.1.ebuild:
   Stable for alpha, wrt bug #470762

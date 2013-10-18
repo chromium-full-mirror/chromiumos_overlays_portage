@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-proxy/squid/squid-3.3.8.ebuild,v 1.1 2013/07/14 04:56:22 eras Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-proxy/squid/squid-3.3.8.ebuild,v 1.4 2013/10/04 15:34:26 jer Exp $
 
 EAPI=5
 
@@ -15,7 +15,7 @@ SRC_URI="http://www.squid-cache.org/Versions/v3/3.3/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
+KEYWORDS="~alpha ~amd64 ~arm hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
 IUSE="caps ipv6 pam ldap samba sasl kerberos nis radius ssl snmp selinux logrotate test \
 	ecap icap-client ssl-crtd \
 	mysql postgres sqlite \
@@ -30,7 +30,7 @@ COMMON_DEPEND="caps? ( >=sys-libs/libcap-2.16 )
 	qos? ( net-libs/libnetfilter_conntrack )
 	ssl? ( dev-libs/openssl )
 	sasl? ( dev-libs/cyrus-sasl )
-	ecap? ( net-libs/libecap:2 )
+	ecap? ( net-libs/libecap:0.2 )
 	selinux? ( sec-policy/selinux-squid )
 	!x86-fbsd? ( logrotate? ( app-admin/logrotate ) )
 	>=sys-libs/db-4
@@ -102,7 +102,10 @@ src_prepare() {
 	# /var/run/squid to /run/squid
 	sed -i -e 's:$(localstatedir)::' \
 		src/ipc/Makefile.am
-	eautoreconf
+
+	# Bug #419685 - eautoreconf in src_prepare() fails in libltdl/
+	#               aclocal-1.11: `configure.ac' or `configure.in' is required
+	MAKEOPTS="${MAKEOPTS} -j1" eautoreconf
 }
 
 src_configure() {

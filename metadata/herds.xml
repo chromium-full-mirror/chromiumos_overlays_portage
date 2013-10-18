@@ -20,7 +20,7 @@
    always a description without a lang attribute. Also there are no overlapping
    descriptions allowed (multiple description tags with the same language)
 
-   $Header: /var/cvsroot/gentoo/xml/htdocs/proj/en/metastructure/herds/herds.xml,v 1.1055 2013/08/23 22:04:40 zlogene Exp $
+   $Header: /var/cvsroot/gentoo/xml/htdocs/proj/en/metastructure/herds/herds.xml,v 1.1069 2013/10/17 09:29:06 nullishzero Exp $
 
 -->
 <herds>
@@ -28,10 +28,6 @@
     <name>afterstep</name>
     <email>afterstep@gentoo.org</email>
     <description>Afterstep and related packages</description>
-  <maintainer>
-    <email>voyageur@gentoo.org</email>
-    <name>Bernard Cafarelli</name>
-  </maintainer>
   </herd>
   <herd>
     <name>app-doc</name>
@@ -201,6 +197,14 @@
     <email>angelos@gentoo.org</email>
     <name>Christoph Mende</name>
   </maintainer>
+  <maintainer>
+    <email>TomWij@gentoo.org</email>
+    <name>Tom Wijsman</name>
+  </maintainer>
+  <maintainer>
+    <email>cynede@gentoo.org</email>
+    <name>Heather Cynede</name>
+  </maintainer>
 </herd>
 <herd>
   <name>freedesktop</name>
@@ -211,9 +215,6 @@
   </maintainer>
   <maintainer>
     <email>kde@gentoo.org</email>
-  </maintainer>
-  <maintainer>
-    <email>rox@gentoo.org</email>
   </maintainer>
   <maintainer>
     <email>xfce@gentoo.org</email>
@@ -359,6 +360,12 @@
   <maintainingproject>/proj/en/desktop/kde/index.xml</maintainingproject>
 </herd>
 <herd>
+  <name>openstack</name>
+  <email>openstack@gentoo.org</email>
+  <description>Openstack-related packages</description>
+  <maintainingproject>/proj/en/virtualization/openstack/index.xml</maintainingproject>
+</herd>
+<herd>
   <name>qt</name>
   <email>qt@gentoo.org</email>
   <description>Qt and related packages</description>
@@ -375,6 +382,10 @@
   <maintainer>
      <email>hwoarang@gentoo.org</email>
 	 <name>Markos Chandras</name>
+  </maintainer>
+  <maintainer>
+    <email>nullishzero@gentoo</email>
+    <name>Pavel Kazakov</name>
   </maintainer>
 </herd>
 <herd>
@@ -509,6 +520,11 @@
     <email>hwoarang@gentoo.org</email>
     <name>Markos Chandras</name>
   </maintainer>
+  <maintainer>
+    <email>polynomial-c@gentoo.org</email>
+    <name>Lars Wendler</name>
+    <role>Version bumps and security stabilisations</role>
+  </maintainer>
 </herd>
 <herd>
   <name>hardened</name>
@@ -588,6 +604,14 @@
   <maintainer>
     <email>ago@gentoo.org</email>
     <name>Agostino Sarubbo</name>
+  </maintainer>
+  <maintainer>
+    <email>jmorgan@gentoo.org</email>
+    <name>Jack Morgan</name>
+  </maintainer>
+  <maintainer>
+    <email>zlogene@gentoo.org</email>
+    <name>Mikle Kolyada</name>
   </maintainer>
 </herd>
 <herd>
@@ -845,6 +869,10 @@
     <name>Alexander Vershilov</name>
   </maintainer>
   <maintainer>
+    <email>cynede@gentoo.org</email>
+    <name>Heather Cynede</name>
+  </maintainer>
+  <maintainer>
     <email>slyfox@gentoo.org</email>
     <name>Sergei Trofimovich</name>
     <role>Team Lead</role>
@@ -893,6 +921,10 @@
   <maintainer>
     <email>ulm@gentoo.org</email>
     <name>Ulrich Müller</name>
+  </maintainer>
+  <maintainer>
+    <email>gienah@gentoo.org</email>
+    <name>Mark Wright</name>
   </maintainer>
 </herd>
 <herd>
@@ -1110,6 +1142,10 @@
     <email>zlogene@gentoo.org</email>
     <name>Mikle Kolyada</name>
   </maintainer>
+  <maintainer>
+    <email>jmorgan@gentoo.org</email>
+    <name>Jack Morgan</name>
+  </maintainer>
 </herd>
 <herd>
   <name>mips</name>
@@ -1155,6 +1191,10 @@
   <maintainer>
     <email>twitch153@gentoo.org</email>
     <name>Devan Franchini</name>
+  </maintainer>
+  <maintainer>
+    <email>jmbsvicetto@gentoo.org</email>
+    <name>Jorge Manuel B. S. Vicetto</name>
   </maintainer>
 </herd>
 <herd>
@@ -1325,11 +1365,6 @@
   <email>voip@gentoo.org</email>
   <description>Voice-over-IP related packages</description>
   <maintainer>
-    <email>rajiv@gentoo.org</email>
-    <name>Rajiv Aaron Manglani</name>
-		<role>Asterisk related stuff</role>
-  </maintainer>
-  <maintainer>
     <email>chainsaw@gentoo.org</email>
 		<name>Tony Vroon</name>
 		<role>Asterisk related stuff</role>
@@ -1421,10 +1456,6 @@
   <name>desktop-wm</name>
   <email>desktop-wm@gentoo.org</email>
   <description>Various window managers for X11.</description>
-  <maintainer>
-    <email>xarthisius@gentoo.org</email>
-    <name>Kacper Kowalik</name>
-  </maintainer>
 </herd>
 <herd>
   <name>xfce</name>
@@ -1666,6 +1697,10 @@
   <maintainer>
     <email>zlogene@gentoo.org</email>
     <name>Mikle Kolyada</name>
+  </maintainer>
+  <maintainer>
+    <email>jmorgan@gentoo.org</email>
+    <name>Jack Morgan</name>
   </maintainer>
 </herd>
 <herd>

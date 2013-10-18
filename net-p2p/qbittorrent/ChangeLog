@@ -1,6 +1,29 @@
 # ChangeLog for net-p2p/qbittorrent
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-p2p/qbittorrent/ChangeLog,v 1.212 2013/07/31 15:33:00 yngwin Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-p2p/qbittorrent/ChangeLog,v 1.217 2013/10/16 20:07:02 hwoarang Exp $
+
+*qbittorrent-3.1.0 (16 Oct 2013)
+
+  16 Oct 2013; Markos Chandras <hwoarang@gentoo.org> +qbittorrent-3.1.0.ebuild,
+  metadata.xml:
+  Version bump
+
+*qbittorrent-3.0.11-r1 (13 Oct 2013)
+
+  13 Oct 2013; Markos Chandras <hwoarang@gentoo.org>
+  +qbittorrent-3.0.11-r1.ebuild, qbittorrent-9999.ebuild:
+  Use system qtsingleapplication per #487560 thanks to Nikoli
+
+  27 Sep 2013; Markos Chandras <hwoarang@gentoo.org> -qbittorrent-3.0.8.ebuild,
+  -qbittorrent-3.0.9.ebuild:
+  remove old
+
+  06 Sep 2013; Markos Chandras <hwoarang@gentoo.org> qbittorrent-3.0.11.ebuild:
+  amd64/x86 stable
+
+  05 Sep 2013; Michał Górny <mgorny@gentoo.org> qbittorrent-3.0.11.ebuild,
+  qbittorrent-9999.ebuild:
+  Clean up PYTHON_COMPAT from old implementations.
 
 *qbittorrent-3.0.11 (31 Jul 2013)
 

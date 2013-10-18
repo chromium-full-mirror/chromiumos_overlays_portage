@@ -1,6 +1,23 @@
 # ChangeLog for dev-libs/nspr
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/nspr/ChangeLog,v 1.238 2013/08/26 16:58:51 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/nspr/ChangeLog,v 1.243 2013/10/09 17:10:14 ago Exp $
+
+  09 Oct 2013; Agostino Sarubbo <ago@gentoo.org> nspr-4.10.ebuild:
+  Stable for sparc, wrt bug #486114
+
+  06 Oct 2013; Agostino Sarubbo <ago@gentoo.org> nspr-4.10.ebuild:
+  Stable for alpha, wrt bug #486114
+
+  06 Oct 2013; Agostino Sarubbo <ago@gentoo.org> nspr-4.10.ebuild:
+  Stable for ia64, wrt bug #486114
+
+  01 Oct 2013; Jeroen Roovers <jer@gentoo.org> nspr-4.10.ebuild:
+  Stable for HPPA (bug #486114).
+
+*nspr-4.10.1 (27 Sep 2013)
+
+  27 Sep 2013; Jory A. Pratt <anarchy@gentoo.org> +nspr-4.10.1.ebuild:
+  NVB to 4.10.1
 
   26 Aug 2013; Agostino Sarubbo <ago@gentoo.org> nspr-4.10.ebuild:
   Stable for ppc, wrt bug #479968

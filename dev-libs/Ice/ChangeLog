@@ -1,6 +1,14 @@
 # ChangeLog for dev-libs/Ice
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/Ice/ChangeLog,v 1.24 2013/07/30 21:15:33 polynomial-c Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/Ice/ChangeLog,v 1.26 2013/10/11 08:01:53 polynomial-c Exp $
+
+*Ice-3.5.1 (11 Oct 2013)
+
+  11 Oct 2013; Lars Wendler <polynomial-c@gentoo.org> +Ice-3.5.1.ebuild:
+  Version bump.
+
+  05 Sep 2013; Michał Górny <mgorny@gentoo.org> Ice-3.5.0-r1.ebuild:
+  Clean up PYTHON_COMPAT from old implementations.
 
   30 Jul 2013; Lars Wendler <polynomial-c@gentoo.org> Ice-3.5.0-r1.ebuild:
   Non-maintainer commit: Don't use pkg_setup() from ruby-ng eclass.

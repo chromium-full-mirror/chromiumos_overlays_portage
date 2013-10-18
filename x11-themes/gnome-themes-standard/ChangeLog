@@ -1,6 +1,16 @@
 # ChangeLog for x11-themes/gnome-themes-standard
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/x11-themes/gnome-themes-standard/ChangeLog,v 1.44 2013/07/28 19:43:50 pacho Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-themes/gnome-themes-standard/ChangeLog,v 1.46 2013/10/17 20:45:01 maekke Exp $
+
+  17 Oct 2013; Markus Meier <maekke@gentoo.org>
+  gnome-themes-standard-3.6.5.ebuild:
+  arm stable, bug #476364
+
+*gnome-themes-standard-3.8.4 (08 Sep 2013)
+
+  08 Sep 2013; Gilles Dartiguelongue <eva@gentoo.org>
+  +gnome-themes-standard-3.8.4.ebuild:
+  Version bump.
 
 *gnome-themes-standard-3.8.3 (28 Jul 2013)
 

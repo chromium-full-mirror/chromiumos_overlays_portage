@@ -1,6 +1,38 @@
 # ChangeLog for sci-chemistry/ccpn
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/ccpn/ChangeLog,v 1.118 2013/08/22 07:39:32 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/ccpn/ChangeLog,v 1.124 2013/10/15 10:35:48 jlec Exp $
+
+*ccpn-2.3.1_p131015 (15 Oct 2013)
+
+  15 Oct 2013; Justin Lecher <jlec@gentoo.org> +ccpn-2.3.1_p131015.ebuild:
+  Todays python patches
+
+*ccpn-2.3.1_p131010 (10 Oct 2013)
+
+  10 Oct 2013; Justin Lecher <jlec@gentoo.org> +ccpn-2.3.1_p131010.ebuild:
+  Todays python patches
+
+*ccpn-2.3.1_p131008 (08 Oct 2013)
+
+  08 Oct 2013; Justin Lecher <jlec@gentoo.org> +ccpn-2.3.1_p131008.ebuild:
+  Add latest python patches
+
+*ccpn-2.3.1_p130930 (30 Sep 2013)
+
+  30 Sep 2013; Justin Lecher <jlec@gentoo.org> +ccpn-2.3.1_p130930.ebuild:
+  Todays python patches
+
+*ccpn-2.3.1_p130918 (18 Sep 2013)
+
+  18 Sep 2013; Justin Lecher <jlec@gentoo.org> +ccpn-2.3.1_p130918.ebuild:
+  Add todays python updates
+
+  05 Sep 2013; Michał Górny <mgorny@gentoo.org> ccpn-2.2.2_p130318-r1.ebuild,
+  ccpn-2.2.2_p130318.ebuild, ccpn-2.2.2_p130530.ebuild,
+  ccpn-2.2.2_p130618.ebuild, ccpn-2.2.2_p130705.ebuild, ccpn-2.3.1.ebuild,
+  ccpn-2.3.1_p130813.ebuild, ccpn-2.3.1_p130814.ebuild,
+  ccpn-2.3.1_p130822.ebuild:
+  Clean up PYTHON_COMPAT from old implementations.
 
 *ccpn-2.3.1_p130822 (22 Aug 2013)
 
@@ -705,4 +737,3 @@
   +files/dangle, +files/dataShifter, +files/eci, +files/formatConverter,
   +files/pipe2azara, +ccpn-2.1.2.1_p100204.ebuild, +metadata.xml:
   Initial commit
-

@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/gnome2.eclass,v 1.122 2013/05/26 14:08:21 pacho Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/gnome2.eclass,v 1.124 2013/09/29 08:49:53 pacho Exp $
 
 # @ECLASS: gnome2.eclass
 # @MAINTAINER:
@@ -208,17 +208,7 @@ gnome2_src_install() {
 			dodoc ${DOCS} || die "dodoc failed"
 		fi
 	else
-		if ! declare -p DOCS >/dev/null 2>&1 ; then
-			local d
-			for d in README* ChangeLog AUTHORS NEWS TODO CHANGES THANKS BUGS \
-					FAQ CREDITS CHANGELOG ; do
-				[[ -s "${d}" ]] && dodoc "${d}"
-			done
-		elif declare -p DOCS | grep -q '^declare -a' ; then
-			dodoc "${DOCS[@]}"
-		else
-			dodoc ${DOCS}
-		fi
+		einstalldocs
 	fi
 
 	# Do not keep /var/lib/scrollkeeper because:
@@ -258,6 +248,7 @@ gnome2_pkg_preinst() {
 	gnome2_icon_savelist
 	gnome2_schemas_savelist
 	gnome2_scrollkeeper_savelist
+	gnome2_gdk_pixbuf_savelist
 }
 
 # @FUNCTION: gnome2_pkg_postinst
@@ -271,6 +262,7 @@ gnome2_pkg_postinst() {
 	gnome2_icon_cache_update
 	gnome2_schemas_update
 	gnome2_scrollkeeper_update
+	gnome2_gdk_pixbuf_update
 }
 
 # # FIXME Handle GConf schemas removal

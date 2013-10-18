@@ -1,6 +1,32 @@
 # ChangeLog for net-firewall/shorewall-lite
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-firewall/shorewall-lite/ChangeLog,v 1.134 2013/08/17 16:18:42 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-firewall/shorewall-lite/ChangeLog,v 1.139 2013/10/16 14:07:47 jer Exp $
+
+  16 Oct 2013; Jeroen Roovers <jer@gentoo.org> shorewall-lite-4.5.18-r1.ebuild:
+  Stable for HPPA (bug #487690).
+
+*shorewall-lite-4.5.18-r1 (22 Sep 2013)
+
+  22 Sep 2013; Constanze Hausner <constanze@gentoo.org>
+  +files/4.5.18-r1/shorewall-lite.initd,
+  +files/4.5.18-r1/shorewall-lite.systemd, +files/4.5.18-r1/shorewallrc_new,
+  +shorewall-lite-4.5.18-r1.ebuild:
+  Bugfix 459316 for 4.5.18; Thanks to Thomas D.
+
+  29 Aug 2013; Constanze Hausner <constanze@gentoo.org> metadata.xml:
+  Added Thomas D. as new maintainer
+
+*shorewall-lite-4.5.19 (28 Aug 2013)
+
+  28 Aug 2013; Constanze Hausner <constanze@gentoo.org>
+  +files/4.5.19/shorewall-lite.confd, +files/4.5.19/shorewall-lite.initd,
+  +files/4.5.19/shorewallrc, +shorewall-lite-4.5.19.ebuild,
+  +files/4.5.19/shorewall-lite.systemd:
+  Version bump; Add new files/ structure
+
+  28 Aug 2013; Constanze Hausner <constanze@gentoo.org>
+  -shorewall-lite-4.5.15.ebuild, -shorewall-lite-4.5.17.ebuild:
+  Preparation for files/ restructuring: Cleanup old versions
 
   17 Aug 2013; Jeroen Roovers <jer@gentoo.org> shorewall-lite-4.5.18.ebuild:
   Stable for HPPA (bug #480072).

@@ -1,11 +1,11 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-irc/hexchat/hexchat-9999.ebuild,v 1.1 2013/08/26 12:31:34 hasufell Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-irc/hexchat/hexchat-9999.ebuild,v 1.11 2013/10/05 02:22:40 hasufell Exp $
 
 EAPI=5
 
-PYTHON_COMPAT=( python2_6 python2_7 )
-inherit autotools eutils gnome2-utils mono-env multilib python-single-r1 git-2
+PYTHON_COMPAT=( python2_7 python3_3 )
+inherit autotools eutils fdo-mime gnome2-utils mono-env multilib python-single-r1 git-2
 
 DESCRIPTION="Graphical IRC client based on XChat"
 HOMEPAGE="http://hexchat.github.io/"
@@ -15,16 +15,15 @@ EGIT_REPO_URI="git://github.com/hexchat/hexchat.git"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
-IUSE="dbus fastscroll +gtk ipv6 libcanberra libnotify libproxy nls ntlm perl +plugins plugin-checksum plugin-doat plugin-fishlim plugin-sysinfo python spell ssl theme-manager"
+IUSE="dbus +gtk ipv6 libcanberra libnotify libproxy nls ntlm perl +plugins plugin-checksum plugin-doat plugin-fishlim plugin-sysinfo python spell ssl theme-manager"
 REQUIRED_USE="plugin-checksum? ( plugins )
 	plugin-doat? ( plugins )
 	plugin-fishlim? ( plugins )
 	plugin-sysinfo? ( plugins )
 	python? ( ${PYTHON_REQUIRED_USE} )"
 
-RDEPEND="dev-libs/glib:2
+DEPEND="dev-libs/glib:2
 	dbus? ( >=dev-libs/dbus-glib-0.98 )
-	fastscroll? ( x11-libs/libXft )
 	gtk? ( x11-libs/gtk+:2 )
 	libcanberra? ( media-libs/libcanberra )
 	libproxy? ( net-libs/libproxy )
@@ -34,22 +33,22 @@ RDEPEND="dev-libs/glib:2
 	perl? ( >=dev-lang/perl-5.8.0 )
 	plugin-sysinfo? ( sys-apps/pciutils )
 	python? ( ${PYTHON_DEPS} )
-	spell? (
-		app-text/enchant
-		dev-libs/libxml2
-	)
-	ssl? ( >=dev-libs/openssl-0.9.8u )
+	spell? ( app-text/iso-codes )
+	ssl? ( dev-libs/openssl:0 )
 	theme-manager? ( dev-lang/mono )"
-DEPEND="${RDEPEND}
+RDEPEND="${DEPEND}
+	spell? ( app-text/enchant )"
+DEPEND="${DEPEND}
 	virtual/pkgconfig
 	nls? ( sys-devel/gettext )
 	theme-manager? ( dev-util/monodevelop )"
 
-DOCS=""
-
 pkg_setup() {
 	use python && python-single-r1_pkg_setup
-	use theme-manager && mono-env_pkg_setup
+	if use theme-manager ; then
+		mono-env_pkg_setup
+		export XDG_CACHE_HOME="${T}/.cache"
+	fi
 }
 
 src_prepare() {
@@ -74,7 +73,6 @@ src_configure() {
 		$(use_enable nls) \
 		$(use_enable libproxy socks) \
 		$(use_enable ipv6) \
-		$(use_enable fastscroll xft) \
 		$(use_enable ssl openssl) \
 		$(use_enable gtk gtkfe) \
 		$(use_enable !gtk textfe) \
@@ -88,29 +86,21 @@ src_configure() {
 		$(use_enable dbus) \
 		$(use_enable libnotify) \
 		$(use_enable libcanberra) \
-		--enable-shm \
-		$(use_enable spell spell static) \
+		${myspellconf} \
 		$(use_enable ntlm) \
-		$(use_enable libproxy)
-}
-
-src_compile() {
-	default
-	if use theme-manager ; then
-		export XDG_CACHE_HOME="${T}/.cache"
-		cd src/htm || die
-		mdtool --verbose build htm-mono.csproj || die
-	fi
+		$(use_enable libproxy) \
+		$(use_enable spell isocodes) \
+		--enable-minimal-flags \
+		$(use_with theme-manager)
 }
 
 src_install() {
-	emake DESTDIR="${D}" UPDATE_ICON_CACHE=true install
-	dodoc share/doc/{readme,hacking}.md
-	use plugin-fishlim && dodoc share/doc/fishlim.md
-	if use theme-manager ; then
-		dobin src/htm/thememan.exe
-		make_wrapper thememan "mono /usr/bin/thememan.exe"
-	fi
+	emake DESTDIR="${D}" \
+		UPDATE_ICON_CACHE=true \
+		UPDATE_MIME_DATABASE=true \
+		UPDATE_DESKTOP_DATABASE=true \
+		install
+	dodoc readme.md
 	prune_libtool_files --all
 }
 
@@ -132,6 +122,8 @@ pkg_postinst() {
 	fi
 
 	if use theme-manager ; then
+		fdo-mime_desktop_database_update
+		fdo-mime_mime_database_update
 		elog "Themes are available at:"
 		elog "  http://hexchat.org/themes.html"
 		elog
@@ -147,10 +139,22 @@ pkg_postinst() {
 	elog "have been removed, but you can add them yourself via:"
 	elog "  Settings -> Keyboard Shortcuts"
 	einfo
+	elog "optional dependencies:"
+	elog "  media-sound/sox (sound playback if you don't have libcanberra"
+	elog "    enabled)"
+	elog "  x11-plugins/hexchat-javascript (javascript support)"
+	elog "  x11-themes/sound-theme-freedesktop (default BEEP sound,"
+	elog "    needs libcanberra enabled)"
+	einfo
 }
 
 pkg_postrm() {
 	if use gtk ; then
 		gnome2_icon_cache_update
+	fi
+
+	if use theme-manager ; then
+		fdo-mime_desktop_database_update
+		fdo-mime_mime_database_update
 	fi
 }

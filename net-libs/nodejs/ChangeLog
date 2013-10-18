@@ -1,6 +1,40 @@
 # ChangeLog for net-libs/nodejs
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/nodejs/ChangeLog,v 1.100 2013/08/26 01:55:46 patrick Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/nodejs/ChangeLog,v 1.107 2013/10/01 01:31:11 patrick Exp $
+
+*nodejs-0.10.20 (01 Oct 2013)
+
+  01 Oct 2013; Patrick Lauer <patrick@gentoo.org> +nodejs-0.10.20.ebuild:
+  Bump
+
+*nodejs-0.10.19 (25 Sep 2013)
+
+  25 Sep 2013; Patrick Lauer <patrick@gentoo.org> +nodejs-0.10.19.ebuild:
+  Bump
+
+  22 Sep 2013; Agostino Sarubbo <ago@gentoo.org> nodejs-0.10.17.ebuild:
+  Stable for x86, wrt bug #484994
+
+  21 Sep 2013; Agostino Sarubbo <ago@gentoo.org> nodejs-0.10.17.ebuild:
+  Stable for amd64, wrt bug #484994
+
+  12 Sep 2013; Michał Górny <mgorny@gentoo.org> nodejs-0.10.17.ebuild,
+  nodejs-0.10.18.ebuild:
+  Remove dep on virtual/python-json. JSON is now built-in in all supported
+  implementations.
+
+  05 Sep 2013; Michał Górny <mgorny@gentoo.org> nodejs-0.10.17.ebuild,
+  nodejs-0.10.18.ebuild:
+  Clean up PYTHON_COMPAT from old implementations.
+
+*nodejs-0.11.7 (05 Sep 2013)
+*nodejs-0.10.18 (05 Sep 2013)
+
+  05 Sep 2013; Patrick Lauer <patrick@gentoo.org> +nodejs-0.10.18.ebuild,
+  +nodejs-0.11.7.ebuild, -nodejs-0.10.10.ebuild, -nodejs-0.10.13.ebuild,
+  -nodejs-0.10.15.ebuild, -nodejs-0.10.16-r1.ebuild, -nodejs-0.11.2.ebuild,
+  -nodejs-0.11.4.ebuild, -nodejs-0.11.5.ebuild:
+  Bump
 
 *nodejs-0.11.6 (26 Aug 2013)
 

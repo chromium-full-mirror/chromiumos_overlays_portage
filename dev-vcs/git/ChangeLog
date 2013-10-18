@@ -1,6 +1,51 @@
 # ChangeLog for dev-vcs/git
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-vcs/git/ChangeLog,v 1.206 2013/07/31 05:04:51 mattst88 Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-vcs/git/ChangeLog,v 1.217 2013/10/17 15:16:02 jer Exp $
+
+  17 Oct 2013; Jeroen Roovers <jer@gentoo.org> git-1.8.3.2-r1.ebuild:
+  Stable for HPPA (bug #480306).
+
+*git-1.8.3.2-r1 (15 Oct 2013)
+
+  15 Oct 2013; Robin H. Johnson <robbat2@gentoo.org> +git-1.8.3.2-r1.ebuild:
+  Backport fixes for bug #477096: Fix git-remote-bzr file collision & bug
+  #479628: Fix pthread usage to 1.8.3.
+
+*git-1.8.4 (15 Oct 2013)
+
+  15 Oct 2013; Robin H. Johnson <robbat2@gentoo.org>
+  +files/git-1.8.4-optional-cvs.patch, +git-1.8.4.ebuild, git-9999.ebuild:
+  Bug #485844: Bump. Bug #477096: Fix git-remote-bzr file collision. Bug
+  #479628: Fix pthread usage.
+
+  15 Oct 2013; Mikle Kolyada <zlogene@gentoo.org> git-1.8.1.5-r1.ebuild:
+  x86 stable wrt bug #480054
+
+  14 Oct 2013; Tony Vroon <chainsaw@gentoo.org> git-1.8.1.5-r1.ebuild:
+  Marked stable on AMD64 based on arch tester report by Elijah "Armageddon" El
+  Lazkani in bug #480054.
+
+  07 Oct 2013; William Hubbs <williamh@gentoo.org> git-9999.ebuild:
+  sync live ebuild
+
+  07 Oct 2013; Rick Farina <zerochaos@gentoo.org> git-1.8.3.2.ebuild:
+  changing dep to make error message more useful because earlier version of dev-
+  python/pygtksourceview:2 have no []
+
+  06 Oct 2013; Jeroen Roovers <jer@gentoo.org> git-1.8.1.5-r1.ebuild:
+  Stable for HPPA (bug #480054).
+
+  06 Oct 2013; Markus Meier <maekke@gentoo.org> git-1.8.1.5-r1.ebuild:
+  arm stable, bug #480054
+
+*git-1.8.1.5-r1 (28 Sep 2013)
+
+  28 Sep 2013; Pacho Ramos <pacho@gentoo.org> +git-1.8.1.5-r1.ebuild:
+  Backport unit files to allow faster stabilization
+
+  16 Sep 2013; Michał Górny <mgorny@gentoo.org> git-1.8.3.2.ebuild,
+  git-9999.ebuild:
+  Use ${PYTHON} rather than $(python_get_PYTHON). It is exported anyway.
 
   31 Jul 2013; Matt Turner <mattst88@gentoo.org> git-1.8.3.2.ebuild,
   git-9999.ebuild:

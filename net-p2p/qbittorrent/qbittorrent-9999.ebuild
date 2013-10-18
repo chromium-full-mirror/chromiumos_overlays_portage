@@ -1,9 +1,9 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-p2p/qbittorrent/qbittorrent-9999.ebuild,v 1.9 2013/07/31 15:33:00 yngwin Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-p2p/qbittorrent/qbittorrent-9999.ebuild,v 1.11 2013/10/13 10:35:28 hwoarang Exp $
 
 EAPI=5
-PYTHON_COMPAT=( python{2_5,2_6,2_7} )
+PYTHON_COMPAT=( python{2_6,2_7} )
 
 EGIT_REPO_URI="git://github.com/${PN}/qBittorrent.git
 https://github.com/${PN}/qBittorrent.git"
@@ -22,6 +22,7 @@ IUSE="dbus +X geoip"
 # python-2 is a runtime dep only, for the search engine (see INSTALL file)
 CDEPEND="dev-libs/boost
 	dev-qt/qtcore:4
+	dev-qt/qtsingleapplication
 	net-libs/rb_libtorrent
 	X? ( dev-qt/qtgui:4 )
 	dbus? ( dev-qt/qtdbus:4 )"

@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-drivers/nvidia-drivers/nvidia-drivers-319.49.ebuild,v 1.2 2013/08/23 15:34:42 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-drivers/nvidia-drivers/nvidia-drivers-319.49.ebuild,v 1.5 2013/10/12 15:14:41 jer Exp $
 
 EAPI=5
 
@@ -24,7 +24,7 @@ SRC_URI="
 
 LICENSE="GPL-2 NVIDIA-r1"
 SLOT="0"
-KEYWORDS="-* ~amd64 ~x86 ~amd64-fbsd ~x86-fbsd"
+KEYWORDS="-* amd64 x86 ~amd64-fbsd ~x86-fbsd"
 IUSE="acpi multilib kernel_FreeBSD kernel_linux pax_kernel +tools +X"
 RESTRICT="bindist mirror strip"
 EMULTILIB_PKG="true"
@@ -173,8 +173,8 @@ src_prepare() {
 		ewarn "Using PAX patches is not supported. You will be asked to"
 		ewarn "use a standard kernel should you have issues. Should you"
 		ewarn "need support with these patches, contact the PaX team."
-		epatch "${FILESDIR}"/nvidia-drivers-pax-const.patch
-		epatch "${FILESDIR}"/nvidia-drivers-pax-usercopy.patch
+		epatch "${FILESDIR}"/${PN}-pax-const.patch
+		epatch "${FILESDIR}"/${PN}-pax-usercopy.patch
 	fi
 
 	# Allow user patches so they can support RC kernels and whatever else
@@ -341,8 +341,8 @@ src_install() {
 	# Desktop entries for nvidia-settings
 	if use tools ; then
 		# There is no icon in the FreeBSD tarball.
-		use kernel_FreeBSD || newicon ${NV_OBJ}/nvidia-settings.png nvidia-drivers-settings.png
-		domenu "${FILESDIR}"/nvidia-drivers-settings.desktop
+		use kernel_FreeBSD || newicon ${NV_OBJ}/nvidia-settings.png ${PN}-settings.png
+		domenu "${FILESDIR}"/${PN}-settings.desktop
 		exeinto /etc/X11/xinit/xinitrc.d
 		doexe "${FILESDIR}"/95-nvidia-settings
 	fi
@@ -361,6 +361,8 @@ src_install() {
 	fi
 
 	is_final_abi || die "failed to iterate through all ABIs"
+
+	readme.gentoo_create_doc
 }
 
 src_install-libs() {
@@ -423,21 +425,8 @@ pkg_postinst() {
 	use X && "${ROOT}"/usr/bin/eselect opengl set --use-old nvidia
 	"${ROOT}"/usr/bin/eselect opencl set --use-old nvidia
 
-	elog "You must be in the video group to use the NVIDIA device"
-	elog "For more info, read the docs at"
-	elog "http://www.gentoo.org/doc/en/nvidia-guide.xml#doc_chap3_sect6"
-	elog
-	elog "This ebuild installs a kernel module and X driver. Both must"
-	elog "match explicitly in their version. This means, if you restart"
-	elog "X, you must modprobe -r nvidia before starting it back up"
-	elog
-	elog "To use the NVIDIA GLX, run \"eselect opengl set nvidia\""
-	elog
-	elog "To use the NVIDIA CUDA/OpenCL, run \"eselect opencl set nvidia\""
-	elog
-	elog "NVIDIA has requested that any bug reports submitted have the"
-	elog "output of nvidia-bug-report.sh included."
-	elog
+	readme.gentoo_print_elog
+
 	if ! use X; then
 		elog "You have elected to not install the X.org driver. Along with"
 		elog "this the OpenGL libraries and VDPAU libraries were not"

@@ -1,6 +1,22 @@
 # ChangeLog for net-libs/gupnp
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/gupnp/ChangeLog,v 1.68 2013/08/25 21:53:31 eva Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/gupnp/ChangeLog,v 1.71 2013/10/17 20:45:12 pacho Exp $
+
+*gupnp-0.20.7 (17 Oct 2013)
+
+  17 Oct 2013; Pacho Ramos <pacho@gentoo.org> +gupnp-0.20.7.ebuild,
+  -gupnp-0.20.3.ebuild, -gupnp-0.20.4.ebuild, -gupnp-0.20.5.ebuild:
+  Version bump, drop old
+
+  15 Oct 2013; Justin Lecher <jlec@gentoo.org> gupnp-0.20.6.ebuild,
+  metadata.xml:
+  Allow parallel py ABI installations; add missing PYTHON_REQUIRED_USE; move
+  PYTHON_DEPS to RDEPEND
+
+*gupnp-0.20.6 (08 Sep 2013)
+
+  08 Sep 2013; Gilles Dartiguelongue <eva@gentoo.org> +gupnp-0.20.6.ebuild:
+  Version bump.
 
 *gupnp-0.20.5 (25 Aug 2013)
 

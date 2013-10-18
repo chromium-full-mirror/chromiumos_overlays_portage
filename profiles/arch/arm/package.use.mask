@@ -1,6 +1,26 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/arm/package.use.mask,v 1.167 2013/08/24 13:14:36 maekke Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/arm/package.use.mask,v 1.174 2013/10/16 17:00:29 tomwij Exp $
+
+# Tom Wijsman <TomWij@gentoo.org> (16 Oct 2013)
+# Mask luajit on ~media-video/mpv-0.2.0 because it only has amd64 x86 keywords.
+~media-video/mpv-0.2.0 luajit
+
+# Pacho Ramos <pacho@gentoo.org> (22 Sep 2013)
+# Missing keywords, bug #484734
+media-sound/rhythmbox visualizer
+
+# Markus Meier <maekke@gentoo.org> (15 Sep 2013)
+# Unkeyworded deps, bug #481462
+dev-python/ipython nbconvert
+
+# Johannes Huber <johu@gentoo.org> (15 Sep 2013)
+# Depends on kde-misc/networkmanagement, not keyworded yet.
+kde-base/solid-runtime networkmanager
+
+# Sergey Popov <pinkbyte@gentoo.org> (06 Sep 2013)
+# sci-libs/hdf does not build properly on arm
+dev-perl/PDL	hdf
 
 # Michael Weber <xmw@gentoo.org> (23 Aug 2013)
 # Unkeyworded deps
@@ -17,10 +37,6 @@ media-libs/devil allegro nvtt
 # Agostino Sarubbo <ago@gentoo.org> (23 Jul 2013)
 # java is not stable on arm
 dev-libs/protobuf java
-
-# Pacho Ramos <pacho@gentoo.org> (20 Jul 2013)
-# Keywords pending, bug #476710
->=gnome-base/gnome-extra-apps-3.8 games
 
 # Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (13 Jul 2013)
 # requires net-misc/freerdp which is not keyworded on arm
@@ -105,8 +121,7 @@ dev-vcs/subversion java
 =media-libs/libcaca-0.99_beta17 java
 media-libs/libjpeg-turbo java
 net-dns/libidn java
-=net-misc/tigervnc-1.1.0-r7 java
-=net-misc/tigervnc-1.2.0 java
+net-misc/tigervnc java
 net-print/cups java
 =sys-devel/gettext-0.18.1.1-r1 java
 =sys-devel/gettext-0.18.1.1-r3 java

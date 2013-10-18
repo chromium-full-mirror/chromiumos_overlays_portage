@@ -1,6 +1,31 @@
 # ChangeLog for Gentoo base-profile
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/base/ChangeLog,v 1.595 2013/08/23 18:13:25 swift Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/base/ChangeLog,v 1.602 2013/09/15 18:45:00 tomwij Exp $
+
+  15 Sep 2013; Tom Wijsman <TomWij@gentoo.org> package.use.mask:
+  Masked JCE functionality of dev-java/diablo-jdk.
+
+  12 Sep 2013; Diego E. Pettenò <flameeyes@gentoo.org> package.use,
+  package.use.force:
+  Enable ruby20 by default, do not force it.
+
+  07 Sep 2013; Tom Wijsman <TomWij@gentoo.org> package.use.mask:
+  net-proxy/swiftiply: Dependency (www-servers/mongrel) currently only works
+  with Ruby 1.8; so, masking Ruby 1.9 USE flag until Ruby 1.9 support is added
+  to mongrel.
+
+  05 Sep 2013; Michał Górny <mgorny@gentoo.org> package.use.force, use.mask:
+  Python 2.5, 3.1, and PyPy 1.9 were removed from the tree.
+
+  01 Sep 2013; Jeff Horelick <jdhore@gentoo.org> package.use.mask:
+  mask sid for >=media-plugins/audacious-plugins-3.4
+
+  31 Aug 2013; Julian Ospald <hasufell@gentoo.org> package.use.mask:
+  mask custom-cflags for media-libs/libsdl2 since it's unsupported
+
+  27 Aug 2013; Ulrich Müller <ulm@gentoo.org> packages:
+  Temporarily add sys-apps/openrc to the system set, until bug 373219 is
+  resolved.
 
   23 Aug 2013; Sven Vermeulen <swift@gentoo.org> package.mask:
   Removed selinux-tvtime, see bug #479642 (tvtime package was removed earlier

@@ -1,10 +1,10 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/zeromq/zeromq-3.2.3.ebuild,v 1.3 2013/08/20 19:04:39 grobian Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/zeromq/zeromq-3.2.3.ebuild,v 1.9 2013/09/30 17:12:37 ago Exp $
 
 EAPI=5
 
-inherit autotools
+inherit autotools eutils
 
 DESCRIPTION="ZeroMQ is a brokerless kernel"
 HOMEPAGE="http://www.zeromq.org/"
@@ -12,7 +12,7 @@ SRC_URI="http://download.zeromq.org/${P}.tar.gz"
 
 LICENSE="LGPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~hppa ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos"
+KEYWORDS="amd64 ~arm hppa ~ppc ~ppc64 x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos"
 IUSE="pgm test static-libs elibc_glibc"
 
 DEPEND="|| ( sys-devel/gcc sys-devel/gcc-apple )
@@ -24,9 +24,13 @@ DEPEND="|| ( sys-devel/gcc sys-devel/gcc-apple )
 RDEPEND=""
 
 src_prepare() {
+	epatch "${FILESDIR}"/${P}-unused-variable.patch || die
 	einfo "Removing bundled OpenPGM library"
 	sed -i 's/AM_CONFIG_HEADER/AC_CONFIG_HEADERS/g' configure.in || die
 	rm -r "${S}"/foreign/openpgm/libpgm* || die
+	# apply effective bit of below commit to fix compilation on Darwin
+	# https://github.com/zeromq/zeromq3-x/commit/400cbc208a768c4df5039f401dd2688eede6e1ca
+	sed -i -e '/strndup/d' tests/test_disconnect_inproc.cpp || die
 	eautoreconf
 }
 

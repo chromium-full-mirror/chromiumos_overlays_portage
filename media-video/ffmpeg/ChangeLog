@@ -1,6 +1,44 @@
 # ChangeLog for media-video/ffmpeg
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/ffmpeg/ChangeLog,v 1.676 2013/08/13 12:32:04 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/ffmpeg/ChangeLog,v 1.685 2013/10/11 05:59:09 aballier Exp $
+
+*ffmpeg-0.10.9 (11 Oct 2013)
+
+  11 Oct 2013; Alexis Ballier <aballier@gentoo.org> +ffmpeg-0.10.9.ebuild:
+  bump for the 0.10 slot
+
+  11 Oct 2013; Alexis Ballier <aballier@gentoo.org> ffmpeg-9999.ebuild,
+  metadata.xml:
+  add zvbi useflag
+
+  11 Oct 2013; Alexis Ballier <aballier@gentoo.org> ffmpeg-9999.ebuild:
+  Add ladspa useflag
+
+  11 Oct 2013; Alexis Ballier <aballier@gentoo.org> ffmpeg-9999.ebuild:
+  there is now a libfdk-aac decoder, move it to the decoder section
+
+  11 Oct 2013; Alexis Ballier <aballier@gentoo.org> ffmpeg-9999.ebuild:
+  bump yasm dep
+
+*ffmpeg-1.2.4 (11 Oct 2013)
+
+  11 Oct 2013; Alexis Ballier <aballier@gentoo.org> +ffmpeg-1.2.4.ebuild:
+  version bump
+
+*ffmpeg-2.0.2 (11 Oct 2013)
+
+  11 Oct 2013; Alexis Ballier <aballier@gentoo.org> +ffmpeg-2.0.2.ebuild:
+  version bump
+
+*ffmpeg-1.0.8 (14 Sep 2013)
+
+  14 Sep 2013; Alexis Ballier <aballier@gentoo.org> +ffmpeg-1.0.8.ebuild:
+  version bump for the 1.0 branch
+
+*ffmpeg-1.2.3 (27 Aug 2013)
+
+  27 Aug 2013; Alexis Ballier <aballier@gentoo.org> +ffmpeg-1.2.3.ebuild:
+  version bump
 
   13 Aug 2013; Alexis Ballier <aballier@gentoo.org> ffmpeg-0.10.8.ebuild:
   Set empty docs, no need to install those that are outdated and

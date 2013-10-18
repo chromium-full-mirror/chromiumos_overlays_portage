@@ -1,17 +1,17 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-power/powertop/powertop-2.4.ebuild,v 1.2 2013/08/08 03:04:35 zerochaos Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-power/powertop/powertop-2.4.ebuild,v 1.9 2013/10/03 19:51:51 zerochaos Exp $
 
 EAPI="5"
 
-inherit eutils linux-info
+inherit eutils linux-info autotools
 if [[ ${PV} == "9999" ]] ; then
 	EGIT_REPO_URI="git://github.com/fenrus75/powertop.git"
 	inherit git-2 autotools
 	SRC_URI=""
 else
 	SRC_URI="https://01.org/powertop/sites/default/files/downloads/${P}.tar.gz"
-	KEYWORDS="~amd64 ~arm ~ppc ~sparc ~x86 ~amd64-linux ~x86-linux"
+	KEYWORDS="amd64 arm ppc sparc x86 ~amd64-linux ~x86-linux"
 fi
 
 DESCRIPTION="tool that helps you find what software is using the most power"
@@ -88,9 +88,8 @@ pkg_setup() {
 }
 
 src_prepare() {
-	if [[ ${PV} == "9999" ]] ; then
-		eautoreconf
-	fi
+	epatch "${FILESDIR}"/powertop-2.4-tinfo.patch
+	eautoreconf
 }
 
 src_configure() {

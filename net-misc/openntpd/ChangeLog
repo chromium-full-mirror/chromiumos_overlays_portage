@@ -1,6 +1,23 @@
 # ChangeLog for net-misc/openntpd
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/openntpd/ChangeLog,v 1.82 2013/08/25 22:43:52 zlogene Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/openntpd/ChangeLog,v 1.87 2013/10/02 02:30:09 jer Exp $
+
+  02 Oct 2013; Jeroen Roovers <jer@gentoo.org> openntpd-20080406-r3.ebuild:
+  Stable for HPPA (bug #477714).
+
+  28 Sep 2013; Christoph Junghans <ottxor@gentoo.org>
+  openntpd-20080406-r3.ebuild:
+  fix 1st time install (bug #477714#c7, thx to calchan)
+
+  27 Sep 2013; Agostino Sarubbo <ago@gentoo.org> openntpd-20080406-r3.ebuild:
+  Stable for arm, wrt bug #477714
+
+  07 Sep 2013; Christoph Junghans <ottxor@gentoo.org>
+  -openntpd-3.9_p1-r4.ebuild:
+  remove old
+
+  05 Sep 2013; Mike Frysinger <vapier@gentoo.org> openntpd-20080406.ebuild:
+  Mark s390 stable #457454.
 
   25 Aug 2013; Mikle Kolyada <zlogene@gentoo.org> openntpd-20080406.ebuild:
   sparc stable wrt bug #457454

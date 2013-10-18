@@ -1,6 +1,24 @@
 # ChangeLog for media-libs/evas
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/evas/ChangeLog,v 1.26 2013/08/04 10:08:10 tommy Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/evas/ChangeLog,v 1.29 2013/10/04 10:15:06 tommy Exp $
+
+*evas-1.7.9_pre2 (04 Oct 2013)
+
+  04 Oct 2013; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  +evas-1.7.9_pre2.ebuild, -evas-1.7.9_pre1.ebuild:
+  New pre-release, drop old
+
+*evas-9999 (28 Sep 2013)
+
+  28 Sep 2013; Mike Frysinger <vapier@gentoo.org> +evas-9999.ebuild,
+  -evas-1.7.7.ebuild, evas-1.7.8.ebuild, evas-1.7.9_pre1.ebuild:
+  Clean up ebuild and merge live git version from E overlay.
+
+*evas-1.7.9_pre1 (17 Sep 2013)
+
+  17 Sep 2013; Thomas Sachau (Tommy[D]) <tommy@gentoo.org>
+  +evas-1.7.9_pre1.ebuild:
+  Add testing version for bug 462732 to test
 
 *evas-1.7.8 (04 Aug 2013)
 

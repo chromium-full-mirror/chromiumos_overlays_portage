@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/gnome-base/gnome-shell/gnome-shell-3.8.4-r1.ebuild,v 1.2 2013/08/26 08:54:49 pacho Exp $
+# $Header: /var/cvsroot/gentoo-x86/gnome-base/gnome-shell/gnome-shell-3.8.4-r1.ebuild,v 1.4 2013/09/28 09:27:38 pacho Exp $
 
 EAPI="5"
 GCONF_DEBUG="no"
@@ -14,7 +14,7 @@ HOMEPAGE="http://live.gnome.org/GnomeShell"
 
 LICENSE="GPL-2+ LGPL-2+"
 SLOT="0"
-IUSE="+bluetooth +i18n +networkmanager"
+IUSE="+bluetooth +i18n +networkmanager -openrc-force"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
 
 # libXfixes-5.0 needed for pointer barriers
@@ -94,7 +94,7 @@ RDEPEND="${COMMON_DEPEND}
 	>=gnome-base/gnome-settings-daemon-3.8.3
 	>=gnome-base/gnome-control-center-3.8.3[bluetooth(+)?]
 
-	>=sys-apps/systemd-31
+	!openrc-force? ( >=sys-apps/systemd-31 )
 
 	x11-misc/xdg-utils
 
@@ -217,20 +217,17 @@ pkg_postinst() {
 		fi
 	fi
 
-	if has_version "media-libs/mesa[video_cards_intel]" ||
-	   has_version "media-libs/mesa[video_cards_i915]" ||
-	   has_version "media-libs/mesa[video_cards_i965]"; then
-		elog "GNOME Shell is unstable under gallium-mode i915/i965 mesa drivers."
-		elog "Make sure that classic architecture for i915 and i965 drivers is"
-		elog "selected using 'eselect mesa'."
-		if ! has_version "media-libs/mesa[classic]"; then
-			ewarn "You will need to emerge media-libs/mesa with USE=classic."
-		fi
-	fi
-
 	if ! systemd_is_booted; then
 		ewarn "${PN} needs Systemd to be *running* for working"
 		ewarn "properly. Please follow this guide to migrate:"
 		ewarn "http://wiki.gentoo.org/wiki/Systemd"
+	fi
+
+	if use openrc-force; then
+		ewarn "You are enabling 'openrc-force' USE flag to skip systemd requirement,"
+		ewarn "this can lead to unexpected problems and is not supported neither by"
+		ewarn "upstream neither by Gnome Gentoo maintainers. If you suffer any problem,"
+		ewarn "you will need to disable this USE flag system wide and retest before"
+		ewarn "opening any bug report."
 	fi
 }

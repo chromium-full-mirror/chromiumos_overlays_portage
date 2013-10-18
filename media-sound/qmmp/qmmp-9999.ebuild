@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/qmmp/qmmp-9999.ebuild,v 1.25 2013/07/18 21:11:20 creffett Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/qmmp/qmmp-9999.ebuild,v 1.27 2013/10/14 19:10:13 hwoarang Exp $
 
 EAPI="5"
 
@@ -8,7 +8,7 @@ inherit cmake-utils
 [ "$PV" == "9999" ] && inherit subversion
 
 DESCRIPTION="Qt4-based audio player with winamp/xmms skins support"
-HOMEPAGE="http://qmmp.ylsoftware.com/index_en.php"
+HOMEPAGE="http://qmmp.ylsoftware.com"
 if [ "$PV" != "9999" ]; then
 	SRC_URI="http://qmmp.ylsoftware.com/files/${P}.tar.bz2"
 	KEYWORDS="~amd64 ~ppc ~x86"
@@ -43,6 +43,7 @@ RDEPEND="dev-qt/qt3support:4
 	mplayer? ( || ( media-video/mplayer
 		media-video/mplayer2 )
 	)
+	mpris? ( dev-qt/qtdbus:4 )
 	musepack? ( >=media-sound/musepack-tools-444 )
 	modplug? ( >=media-libs/libmodplug-0.8.4 )
 	vorbis? ( media-libs/libvorbis

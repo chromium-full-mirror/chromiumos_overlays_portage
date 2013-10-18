@@ -1,10 +1,10 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-portage/gentoolkit/gentoolkit-9999.ebuild,v 1.27 2013/07/26 02:44:07 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-portage/gentoolkit/gentoolkit-9999.ebuild,v 1.31 2013/09/11 17:22:19 fuzzyray Exp $
 
 EAPI="5"
 
-PYTHON_COMPAT=(python{2_6,2_7,3_1,3_2,3_3} pypy{1_9,2_0})
+PYTHON_COMPAT=(python{2_6,2_7,3_2,3_3} pypy2_0)
 PYTHON_REQ_USE="xml(+)"
 
 EGIT_MASTER="gentoolkit"
@@ -36,6 +36,7 @@ python_prepare_all() {
 	python_export_best
 	echo VERSION="9999-${EGIT_VERSION}" "${PYTHON}" setup.py set_version
 	VERSION="9999-${EGIT_VERSION}" "${PYTHON}" setup.py set_version
+	distutils-r1_python_prepare_all
 }
 
 python_install_all() {
@@ -43,7 +44,7 @@ python_install_all() {
 
 	# Create cache directory for revdep-rebuild
 	keepdir /var/cache/revdep-rebuild
-	use prefix || fowners root:root /var/cache/revdep-rebuild
+	use prefix || fowners root:0 /var/cache/revdep-rebuild
 	fperms 0700 /var/cache/revdep-rebuild
 
 	# remove on Gentoo Prefix platforms where it's broken anyway
@@ -55,9 +56,6 @@ python_install_all() {
 		rm -rf "${ED}"/etc/revdep-rebuild
 		rm -rf "${ED}"/var
 	fi
-	# Can distutils handle this?
-	dosym eclean /usr/bin/eclean-dist
-	dosym eclean /usr/bin/eclean-pkg
 }
 
 pkg_postinst() {

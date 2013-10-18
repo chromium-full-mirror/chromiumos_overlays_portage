@@ -1,6 +1,25 @@
 # ChangeLog for Gentoo/ARM profile directory
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/arm/ChangeLog,v 1.267 2013/08/24 13:14:36 maekke Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/arm/ChangeLog,v 1.273 2013/10/16 17:00:29 tomwij Exp $
+
+  16 Oct 2013; Tom Wijsman <TomWij@gentoo.org> package.use.mask:
+  Mask luajit on ~media-video/mpv-0.2.0 because it only has amd64 x86 keywords.
+
+  05 Oct 2013; Markus Meier <maekke@gentoo.org> package.use.mask:
+  package.use.mask net-misc/tigervnc[java] for all versions, bug #485436
+
+  15 Sep 2013; Markus Meier <maekke@gentoo.org> package.use.mask:
+  package.use.mask dev-python/ipython[nbconvert], bug #481462
+
+  15 Sep 2013; Johannes Huber <johu@gentoo.org> package.use.mask:
+  Mask use kde-base/solid-runtime[networkmanager], unkeyworded dep
+  kde-misc/networkmanagement.
+
+  06 Sep 2013; Sergey Popov <pinkbyte@gentoo.org> package.use.mask:
+  Mask USE-flag hdf on dev-perl/PDL
+
+  31 Aug 2013; Sergey Popov <pinkbyte@gentoo.org> package.use.mask:
+  Remove games USE-flag mask for gnome-base/gnome-extra-apps, bug #476710
 
   24 Aug 2013; Markus Meier <maekke@gentoo.org> package.use.mask:
   remove kde-base/kdepim-runtime[facebook] package.use.mask, bug #481088

@@ -1,10 +1,10 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/ipython/ipython-1.0.0.ebuild,v 1.3 2013/08/20 19:31:53 grobian Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/ipython/ipython-1.0.0.ebuild,v 1.12 2013/09/26 17:59:01 floppym Exp $
 
 EAPI=5
 
-PYTHON_COMPAT=( python{2_6,2_7,3_1,3_2,3_3} )
+PYTHON_COMPAT=( python{2_6,2_7,3_2,3_3} )
 PYTHON_REQ_USE='readline,sqlite'
 
 inherit distutils-r1 elisp-common eutils virtualx
@@ -17,7 +17,7 @@ SRC_URI="https://github.com/${PN}/${PN}/releases/download/rel-${PV}/${P}.tar.gz"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos"
-IUSE="doc emacs examples matplotlib mongodb notebook octave
+IUSE="doc emacs examples matplotlib mongodb notebook nbconvert octave
 	qt4 +smp test wxwidgets"
 
 PY2_USEDEP=$(python_gen_usedep 'python2*')
@@ -27,7 +27,7 @@ CDEPEND="
 	dev-python/pexpect[${PY2_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/simplegeneric[${PYTHON_USEDEP}]
-	virtual/pyparsing[${PYTHON_USEDEP}]
+	dev-python/pyparsing[${PYTHON_USEDEP}]
 	virtual/python-argparse[${PYTHON_USEDEP}]
 	emacs? ( app-emacs/python-mode virtual/emacs )
 	matplotlib? ( dev-python/matplotlib[${PYTHON_USEDEP}] )
@@ -36,9 +36,19 @@ CDEPEND="
 	smp? ( dev-python/pyzmq[${PYTHON_USEDEP}] )
 	wxwidgets? ( dev-python/wxpython[${PY2_USEDEP}] )"
 RDEPEND="${CDEPEND}
-	notebook? ( >=www-servers/tornado-2.1[${PY2_USEDEP}]
-			dev-python/pygments[${PYTHON_USEDEP}]
-			dev-python/pyzmq[${PYTHON_USEDEP}] )
+	notebook? (
+		>=www-servers/tornado-2.1[${PY2_USEDEP}]
+		dev-python/pygments[${PYTHON_USEDEP}]
+		dev-python/pyzmq[${PYTHON_USEDEP}]
+		dev-libs/mathjax
+		dev-python/jinja[${PYTHON_USEDEP}]
+	)
+	nbconvert? (
+		app-text/pandoc
+		dev-python/pygments[${PYTHON_USEDEP}]
+		dev-python/sphinx[${PYTHON_USEDEP}]
+		dev-python/jinja[${PYTHON_USEDEP}]
+	)
 	qt4? ( || ( dev-python/PyQt4[${PYTHON_USEDEP}] dev-python/pyside[${PYTHON_USEDEP}] )
 			dev-python/pygments[${PYTHON_USEDEP}]
 			dev-python/pyzmq[${PYTHON_USEDEP}] )"
@@ -51,6 +61,10 @@ REQUIRED_USE="
 	notebook? ( ${PY2_REQUSE} )
 	octave? ( ${PY2_REQUSE} )
 	wxwidgets? ( ${PY2_REQUSE} )"
+
+PATCHES=(
+	"${FILESDIR}/ipython-1.0.0-setuptools.patch"
+)
 
 python_prepare_all() {
 	# fix for gentoo python scripts
@@ -153,8 +167,6 @@ python_test() {
 		"${BUILD_DIR}"/lib/IPython/parallel/tests/test_mongodb.py \
 		|| die "Unable to sed mongod port into tests"
 
-
-
 	local fail
 	run_tests() {
 		# Initialize ~/.ipython directory.
@@ -167,6 +179,12 @@ python_test() {
 
 	[[ ${DB_PORT} != -1 ]] && mongod --dbpath "${dbpath}" --shutdown
 	[[ ${fail} ]] && die "Tests fail with ${EPYTHON}"
+}
+
+python_install() {
+	distutils-r1_python_install
+	ln -snf "${EPREFIX}"/usr/share/mathjax \
+		"${D}$(python_get_sitedir)"/IPython/html/static/mathjax || die
 }
 
 python_install_all() {

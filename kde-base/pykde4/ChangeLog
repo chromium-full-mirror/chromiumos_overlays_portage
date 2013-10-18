@@ -1,6 +1,40 @@
 # ChangeLog for kde-base/pykde4
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/kde-base/pykde4/ChangeLog,v 1.233 2013/08/14 20:23:17 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/kde-base/pykde4/ChangeLog,v 1.241 2013/10/10 03:56:23 creffett Exp $
+
+  10 Oct 2013; Chris Reffett <creffett@gentoo.org>
+  files/kpythonpluginfactorywrapper.c-r1, files/pykde4-4.10.1-arm-sip.patch:
+  Restore kdepim 4.4.11.1, accidentally removed when removing kde 4.11.1
+
+  10 Oct 2013; Chris Reffett <creffett@gentoo.org> -pykde4-4.11.1.ebuild,
+  files/kpythonpluginfactorywrapper.c-r1, files/pykde4-4.10.1-arm-sip.patch:
+  Drop KDE SC 4.11.1
+
+  09 Oct 2013; Chris Reffett <creffett@gentoo.org>
+  files/kpythonpluginfactorywrapper.c-r1, files/pykde4-4.10.1-arm-sip.patch:
+  Version bump KDE SC 4.11.2
+
+*pykde4-4.11.2-r1 (08 Oct 2013)
+
+  08 Oct 2013; Chris Reffett <creffett@gentoo.org> +pykde4-4.11.2-r1.ebuild:
+  Version bump KDE SC 4.11.2
+
+  17 Sep 2013; Michał Górny <mgorny@gentoo.org> pykde4-4.10.5.ebuild,
+  pykde4-4.11.1.ebuild:
+  Add explicit dep on python-exec:0 since the package wraps the script manually.
+
+  05 Sep 2013; Michał Górny <mgorny@gentoo.org> pykde4-4.10.5.ebuild:
+  Clean up PYTHON_COMPAT from old implementations.
+
+  03 Sep 2013; Chris Reffett <creffett@gentoo.org> -pykde4-4.11.0.ebuild,
+  files/kpythonpluginfactorywrapper.c-r1, files/pykde4-4.10.1-arm-sip.patch:
+  Drop KDE 4.11.0
+
+*pykde4-4.11.1 (03 Sep 2013)
+
+  03 Sep 2013; Chris Reffett <creffett@gentoo.org> +pykde4-4.11.1.ebuild,
+  files/kpythonpluginfactorywrapper.c-r1, files/pykde4-4.10.1-arm-sip.patch:
+  Bump KDE to 4.1.1
 
 *pykde4-4.11.0 (14 Aug 2013)
 

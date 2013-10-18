@@ -1,10 +1,10 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-dns/avahi/avahi-0.6.31-r2.ebuild,v 1.12 2013/08/06 13:07:54 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-dns/avahi/avahi-0.6.31-r2.ebuild,v 1.14 2013/10/12 12:14:46 pacho Exp $
 
 EAPI="5"
 
-PYTHON_COMPAT=( python{2_5,2_6,2_7} )
+PYTHON_COMPAT=( python{2_6,2_7} )
 PYTHON_REQ_USE="gdbm"
 
 WANT_AUTOMAKE=1.11
@@ -59,7 +59,6 @@ DEPEND="
 	virtual/pkgconfig
 	doc? (
 		app-doc/doxygen
-		mono? ( virtual/monodoc )
 	)
 "
 
