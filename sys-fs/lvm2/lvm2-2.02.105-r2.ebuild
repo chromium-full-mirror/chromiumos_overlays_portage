@@ -1,6 +1,6 @@
 # Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-fs/lvm2/lvm2-2.02.105-r2.ebuild,v 1.2 2014/02/02 19:56:52 robbat2 Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/lvm2/lvm2-2.02.105-r2.ebuild,v 1.5 2014/02/04 02:46:32 robbat2 Exp $
 
 EAPI=5
 inherit autotools eutils linux-info multilib systemd toolchain-funcs udev flag-o-matic
@@ -12,7 +12,7 @@ SRC_URI="ftp://sources.redhat.com/pub/lvm2/${PN/lvm/LVM}.${PV}.tgz
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-linux ~x86-linux"
 IUSE="readline static static-libs clvm cman lvm1 lvm2create_initrd selinux +udev +thin device-mapper-only"
 REQUIRED_USE="device-mapper-only? ( !clvm !cman !lvm1 !lvm2create_initrd !thin )"
 
@@ -37,6 +37,7 @@ DEPEND="${DEPEND_COMMON}
 	static? (
 		selinux? ( sys-libs/libselinux[static-libs] )
 		udev? ( virtual/udev[static-libs] )
+		>=sys-apps/util-linux-2.16[static-libs]
 	)"
 
 S=${WORKDIR}/${PN/lvm/LVM}.${PV}
@@ -117,7 +118,14 @@ src_configure() {
 	# so we cannot disable them
 	myconf="${myconf} --with-mirrors=${dmbuildmode}"
 	myconf="${myconf} --with-snapshots=${dmbuildmode}"
-	myconf="${myconf} --with-thin=$(use thin && echo internal || echo none)"
+	if use thin; then
+		myconf="${myconf} --with-thin=internal"
+		myconf="${myconf} --with-thin-check=${EPREFIX}/sbin/thin_check"
+		myconf="${myconf} --with-thin-dump=${EPREFIX}/sbin/thin_dump"
+		myconf="${myconf} --with-thin-repair=${EPREFIX}/sbin/thin_repair"
+	else
+		myconf="${myconf} --with-thin=none"
+	fi
 
 	if use lvm1; then
 		myconf="${myconf} --with-lvm1=${buildmode}"
