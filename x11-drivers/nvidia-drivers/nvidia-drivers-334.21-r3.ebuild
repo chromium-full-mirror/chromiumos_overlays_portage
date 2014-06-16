@@ -1,6 +1,6 @@
 # Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-drivers/nvidia-drivers/nvidia-drivers-334.21-r3.ebuild,v 1.5 2014/05/05 18:16:01 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-drivers/nvidia-drivers/nvidia-drivers-334.21-r3.ebuild,v 1.7 2014/06/16 00:29:43 jer Exp $
 
 EAPI=5
 
