@@ -1,6 +1,13 @@
 # ChangeLog for eclass directory
 # Copyright 1999-2014 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/ChangeLog,v 1.1297 2014/06/22 07:01:37 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/ChangeLog,v 1.1299 2014/06/24 18:36:54 pacho Exp $
+
+  24 Jun 2014; Pacho Ramos <pacho@gentoo.org> readme.gentoo.eclass:
+  Allow to handle more README.gentoo files (#513190 by Justin Lecher)
+
+  23 Jun 2014; Sergey Popov <pinkbyte@gentoo.org> qt4-r2.eclass:
+  Simplify documentation files handling by utilizing einstalldocs from eutils
+  eclass
 
   22 Jun 2014; Michał Górny <mgorny@gentoo.org> distutils-r1.eclass:
   Set LD{,CXX}SHARED properly for Darwin, reported by Fabian Groffen on bug
