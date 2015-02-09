@@ -1,10 +1,32 @@
 # ChangeLog for profile directory
 # Copyright 1999-2015 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.9759 2015/02/06 18:51:24 pacho Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.9766 2015/02/08 18:24:10 chithanh Exp $
 #
 # This ChangeLog should include records for all changes in profiles directory.
 # Only typo fixes which don't affect portage/repoman behaviour could be avoided
 # here. If in doubt put a record here!
+
+  08 Feb 2015; Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org>
+  base/package.mask, targets/systemd/package.mask:
+  narrow xinit mask to broken version
+
+  08 Feb 2015; Michael Palimaka <kensington@gentoo.org> package.mask:
+  Unmask media-sound/moodbar.
+
+  08 Feb 2015; Vladimir Smirnov <civil@gentoo.org> package.mask:
+  Remove mask for Alien-SDL 1.444.0
+
+  07 Feb 2015; Ben de Groot <yngwin@gentoo.org> base/package.use.mask:
+  p.use.mask armv7 on games-board/stockfish
+
+  07 Feb 2015; Markos Chandras <hwoarang@gentoo.org> license_groups:
+  Drop the GPL-2.1 from the license_groups. It has been removed from the tree
+
+  07 Feb 2015; Markos Chandras <hwoarang@gentoo.org> license_groups:
+  Add the GPL-2.1 license to the MISC-FREE and FSF-APPROVED-OTHER groups
+
+  07 Feb 2015; Michał Górny <mgorny@gentoo.org> categories:
+  Remove empty net-zope/ category.
 
   06 Feb 2015; Pacho Ramos <pacho@gentoo.org>
   arch/amd64/no-emul-linux-x86/package.use.stable.mask,
