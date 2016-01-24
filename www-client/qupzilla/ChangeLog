@@ -94,3 +94,18 @@
 
   Package-Manager: portage-2.2.27
 
+  22 Jan 2016; Davide Pesavento <pesa@gentoo.org> qupzilla-1.8.9.ebuild:
+  stable on arm
+
+  Gentoo-Bug: 569926
+  Tested-by: David Flogeras <dflogeras2@gmail.com>
+
+  Package-Manager: portage-2.2.27
+
+  23 Jan 2016; Agostino Sarubbo <ago@gentoo.org> qupzilla-1.8.9.ebuild:
+  amd64 stable wrt bug #569926
+
+  Package-Manager: portage-2.2.26
+  RepoMan-Options: --include-arches="amd64"
+  Signed-off-by: Agostino Sarubbo <ago@gentoo.org>
+
