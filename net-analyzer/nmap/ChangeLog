@@ -226,3 +226,16 @@
 
   Package-Manager: portage-2.2.28
 
+  31 May 2016; Markus Meier <maekke@gentoo.org> nmap-7.12.ebuild:
+  arm stable, bug #583558
+
+  Package-Manager: portage-2.3.0_rc1
+  RepoMan-Options: --include-arches="arm"
+
+  01 Jun 2016; Tobias Klausmann <klausman@gentoo.org> nmap-7.12.ebuild:
+  7.12-r0: add alpha keyword
+
+  Gentoo-Bug: 583558
+
+  Package-Manager: portage-2.3.0_rc1
+

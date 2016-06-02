@@ -94,3 +94,17 @@
 
   Package-Manager: portage-2.3.0_rc1
 
+  31 May 2016; Markus Meier <maekke@gentoo.org> Test-Exception-0.430.0.ebuild:
+  arm stable, bug #583708
+
+  Package-Manager: portage-2.3.0_rc1
+  RepoMan-Options: --include-arches="arm"
+
+  01 Jun 2016; Tobias Klausmann <klausman@gentoo.org>
+  Test-Exception-0.430.0.ebuild:
+  0.430.0-r0: add alpha keyword
+
+  Gentoo-Bug: 583708
+
+  Package-Manager: portage-2.3.0_rc1
+
