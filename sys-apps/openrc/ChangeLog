@@ -370,3 +370,15 @@
 
   Package-Manager: portage-2.2.28
 
+*openrc-0.21.3 (31 Jul 2016)
+
+  31 Jul 2016; William Hubbs <williamh@gentoo.org> +openrc-0.21.3.ebuild:
+  0.21.3 version bump
+
+  Package-Manager: portage-2.2.28
+
+  01 Aug 2016; Tobias Klausmann <klausman@gentoo.org> openrc-0.21.3.ebuild:
+  0.21.3-r0: add alpha keyword
+
+  Gentoo-Bug: 588786
+

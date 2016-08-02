@@ -1975,6 +1975,7 @@ dev-libs/folks:utils - Build the folks-inspect utility
 dev-libs/folks:zeitgeist - Add support for Zeitgeist event tracking system
 dev-libs/fstrm:utils - Build fstrm utility programs
 dev-libs/gecode:gist - Enable Gist, the Gecode Interactive Search Tool
+dev-libs/gecode:gmp - Enable trigonometric and transcendental float constraints
 dev-libs/gf2x:bindist - Disable automatic fine-tuning to local processor features like pclmul or sse2.
 dev-libs/glib:dbus - Enable dependencies required by glib libraries using dbus service to manage settings saving
 dev-libs/glib:mime - Pull in shared MIME database that many glib-based applications require at runtime to detect or open files. Warning: do not disable this flag unless installing on a headless server.
@@ -3803,6 +3804,7 @@ media-gfx/exact-image:swig - Adds Swig support dev-lang/swig
 media-gfx/exiv2:webready - Support reading metadata over the internet
 media-gfx/fbida:X - Install the Motif based image viewer "ida"
 media-gfx/fbida:fbcon - Install the framebuffer image viewer "fbi"
+media-gfx/fbida:ghostscript - Install the framebuffer ghostscript viewer "fbgs"
 media-gfx/fbida:webp - Enable support for the WebP image format
 media-gfx/fim:dia - Enable DIA file support via app-office/dia
 media-gfx/fim:graphicsmagick - Enable GraphicsMagick library support
@@ -3966,7 +3968,8 @@ media-libs/grilo:network - Enable network access for media discovery using net-l
 media-libs/grilo:playlist - Enable support for playlists through dev-libs/totem-pl-parser
 media-libs/gst-plugins-bad:egl - Enable EGL support
 media-libs/gst-plugins-bad:gles2 - Enable GLES2 support
-media-libs/gst-plugins-base:ivorbis - Enable integer based vorbis decoder.
+media-libs/gst-plugins-base:ivorbis - Enable integer based vorbis decoder
+media-libs/gst-plugins-base:opus - Enable opus codec support
 media-libs/gst-plugins-base:pango - Enable pango GStreamer plugin
 media-libs/gstreamer:orc - Disable some PaX memory protections to allow plugins that use dev-lang/orc for runtime optimization to be used on hardened PaX systems
 media-libs/harfbuzz:glib - Compile with GLib Unicode support
@@ -4195,6 +4198,7 @@ media-plugins/gst-plugins-meta:libvisual - Enable visualization effects via medi
 media-plugins/gst-plugins-meta:opus - Enable Opus audio codec support
 media-plugins/gst-plugins-meta:vpx - Enables vp8 codec support using libvpx, required to play some HTML5 videos
 media-plugins/gst-plugins-vaapi:drm - Enable DRM renderer
+media-plugins/gst-plugins-vaapi:egl - Enable EGL support
 media-plugins/hexter:gtk2 - Enable x11-libs/gtk+:2 based GUI
 media-plugins/imlib2_loaders:eet - Enable Eet image loader
 media-plugins/imlib2_loaders:xcf - Enable XCF image loader
@@ -6117,7 +6121,6 @@ net-misc/electrum:vkb - Enable plugin for virtual keyboard
 net-misc/fatrat:bittorrent - Use the bittorrent protocol via net-libs/rb_libtorrent.
 net-misc/fatrat:webinterface - Enable builtin webinterface.
 net-misc/flexget:transmission - Support comminucation with net-p2p/transmission
-net-misc/freerdp:channels - Build virtual channel plugins
 net-misc/freerdp:client - Build client binaries
 net-misc/freerdp:server - Build server binaries
 net-misc/gnome-online-miners:flickr - Enable Flickr support
@@ -7057,6 +7060,7 @@ sci-mathematics/msieve:ecm - Enable support for the GMP-ECM library
 sci-mathematics/normaliz:extras - Install sci-mathematics/Macaulay2 and sci-mathematics/singular packages as shipped by upstream
 sci-mathematics/nusmv:minisat - Enable support for MiniSat
 sci-mathematics/octave:glpk - Add support for sci-mathematics/glpk for linear programming
+sci-mathematics/octave:graphicsmagick - Add support for media-gfx/graphicsmagick
 sci-mathematics/octave:gui - Enable the graphical user interface
 sci-mathematics/octave:jit - (EXPERIMENTAL) enable JIT compiler
 sci-mathematics/octave:qhull - Add support for media-libs/qhull, to allow `delaunay', `convhull', and related functions
@@ -7594,11 +7598,14 @@ sys-devel/gettext:cvs - When running `autopoint`, use cvs to store the internal 
 sys-devel/gettext:git - When running `autopoint`, use git to store the internal development files; this requires git at runtime, but will be faster/smaller than raw archives
 sys-devel/kgcc64:regression-test - Run the testsuite and install the results (requires FEATURES=test)
 sys-devel/llvm:clang - Build the clang C/C++ compiler
+sys-devel/llvm:default-compiler-rt - Use compiler-rt instead of libgcc as the default rtlib for clang
+sys-devel/llvm:default-libcxx - Use libc++ instead of libstdc++ as the default stdlib for clang
 sys-devel/llvm:doc - Build and install the HTML documentation and regenerate the man pages
 sys-devel/llvm:gold - Build the gold linker plugin
 sys-devel/llvm:lldb - Build the lldb debugger
 sys-devel/llvm:multitarget - Build all host targets (default: host only)
 sys-devel/llvm:ncurses - Support querying terminal properties using ncurses' terminfo
+sys-devel/llvm:sanitize - Build compiler-rt's sanitizers
 sys-devel/llvm:static-analyzer - Install the Clang static analyzer (requires USE=clang)
 sys-devel/sparse:gtk - Build the test-inspect utility (requires x11-libs/gtk+ version 2)
 sys-devel/sparse:llvm - Build the sparse-llvm utility
@@ -7729,6 +7736,7 @@ sys-fs/quota:rpc - Enable quota interaction via RPC
 sys-fs/s3ql:contrib - Install additional contributed scripts
 sys-fs/squashfs-tools:lz4 - Enable support for LZ4 compression using app-arch/lz4
 sys-fs/squashfs-tools:xz - Enable support for XZ ("LZMA2") compression using app-arch/xz-utils
+sys-fs/squashfuse:lz4 - Enable support for lz4 compression
 sys-fs/udev:firmware-loader - Enable the userspace firmware loader (DEPRECATED, replaced by the in-kernel loader starting from 3.8)
 sys-fs/udev:gudev - Build the gobject interface library
 sys-fs/udev:kmod - Enable kernel module loading/unloading support using sys-apps/kmod
@@ -7789,7 +7797,8 @@ sys-libs/glibc:suid - Make internal pt_chown helper setuid -- not needed if usin
 sys-libs/glibc:systemtap - enable systemtap static probe points
 sys-libs/gwenhywfar:fox - Use x11-libs/fox graphical toolkit
 sys-libs/libcxx:libcxxrt - Build on top of sys-libs/libcxxrt instead of gcc's libsupc++ (avoids depending on gcc).
-sys-libs/libcxxrt:libunwind - Use sys-libs/libunwind instead of libgcc_s for unwinding. This should allow avoiding relying on sys-devel/gcc but for now clang is setup to use libgcc_s.
+sys-libs/libcxx:libunwind - Use libunwind instead of libgcc_s for stack unwinding, thus avoiding dependence on gcc.
+sys-libs/libcxxrt:libunwind - Use libunwind instead of libgcc_s for unwinding. This should allow avoiding relying on sys-devel/gcc but for now clang is setup to use libgcc_s.
 sys-libs/libhugetlbfs:perl - Install the cpupcstat tool and some perl modules
 sys-libs/libunwind:debug-frame - Adds support for DWARF .debug_frame section: Use the information from this section if available
 sys-libs/libunwind:libatomic - Use libatomic instead of builtin atomic operations
